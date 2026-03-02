@@ -1,24 +1,28 @@
-# Daily Paper Reader（免费 / 开源 / Fork即用）
+# Daily Paper Reader — 每日 arXiv / OpenReview 论文推荐与 AI 阅读平台
 
-> 一个智能的 arXiv / openreview 论文推荐系统
-\
-Fork 后每天自动抓取论文、推荐论文。
-\
-每日平均成本￥0.2。
+> Fork 一次，就能获得一个每天自动更新的个性化论文推荐与阅读站点。
+
+* 一个开源的 **arXiv / OpenReview 论文推荐、阅读与 AI 问答平台**。  
+* Fork 一次，即可获得一个 **每天自动更新** 的个性化论文推荐站点。  
+* Open-source daily **arXiv / OpenReview** paper recommendation, reading, and Q&A platform powered by **GitHub Actions** and **GitHub Pages**.
+
+[在线演示](https://ziwenhahaha.github.io/daily-paper-reader) · [5 分钟快速启动](#5-分钟快速启动)
 
 ## 你能快速得到什么
 
-- 每天自动更新个性化论文推荐平台
-- 可按关键词/意图筛选的推荐流
-- 随时提问的gemini-3 论文阅读小助手
-- 5 分钟搭建，无额外成本
+- 每日自动抓取 arXiv / OpenReview 新论文
+- 基于关键词、研究方向与兴趣生成个性化推荐流
+- 沉浸式阅读体验，快速查看摘要、链接与核心信息
+- AI 论文问答助手，支持边读边问
+- GitHub Actions 自动更新，无需手动维护
+- GitHub Pages 一键部署，无需额外服务器
+- Fork 即用，5 分钟完成初始化
 
-示例： https://ziwenhahaha.github.io/daily-paper-reader
+## 适合谁使用
 
-![Demo](others/demo1.png)
-
-
-
+- 想持续追踪某个研究方向新论文的学生、研究者和工程师
+- 想搭建个人论文推荐站点、实验室论文主页或阅读面板的开发者
+- 想把“发现论文 → 阅读论文 → 提问总结”放进同一工作流的人
 
 ## 5 分钟快速启动
 
@@ -53,7 +57,6 @@ Fork 该仓库到自己账号下，建议仓库名字保持原样。
 
 ### 5. 打开站点验收
 访问 `https://<你的用户名>.github.io/<仓库名>/`
-
 
 此后所有操作均在网页端执行
 
