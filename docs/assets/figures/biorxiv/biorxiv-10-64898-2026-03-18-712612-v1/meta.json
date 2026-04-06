@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-18-712612-v1/fig-001.webp",
+      "caption": "Fig. 1. Third-party intervention task and behavioral results. (A) Schematic of the intervention task for punishment (top row) and helping (bottom row) scenarios. In each trial, participants observed the outcome of a resource allocation game in which a violator (orange shirt) allocated tokens between themselves and a victim (blue shirt), for example, 8 (to self):2 (to the victim). In the punishment scenario, participants (white shirt) could pay a cost (ranging from 1 to 5 tokens) to reduce the violator’s payoff (e.g., −1×cost or −3×cost tokens). In the helping scenario, participants could pay a cost to increase the victim’s payoff (e.g., +1×cost or +3×cost tokens). Participants then chose whether to accept (“yes”) or reject (“no”) the intervention offer. (B–E) Main effects of scenario (B), inequality (C), ratio (D), and cost (E) on intervention probability (i.e., the probability of choosing “yes”). Each gray dot represents one participant. Boxes indicate the 25th, 50th (median), and 75th percentiles; whiskers extend to 1.5× the interquartile range. (F) Interaction of scenario × ratio × gender. (G) Interaction of cost × ratio × gender. Each circle denotes group means across participants; error bars represent s.e.m. ***p < 0.001; **p < 0.01; *p < 0.05, Holm–Bonferroni corrected; ns., not significant.",
+      "page": 3,
+      "index": 1,
+      "width": 521,
+      "height": 648
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-18-712612-v1/fig-002.webp",
+      "caption": "Fig. 2. The motive cocktail model and gender differences in prosocial motives. (A) Conceptual illustration of the motive cocktail model. (B–D) Model comparison using PSIS–LOO cross-validation for all participants (B), boys (C), and girls (D). Points indicate differences in expected log predictive density (∆ELPDLOO) relative to the best-performing model (set to zero), with horizontal error bars showing ±1 standard error. The dashed vertical line marks the winning model in each group. (E–G) Posterior distributions of group-level parameters for boys (blue) and girls (pink): disadvantageous inequality aversion (α) (E), reversal preference (κ) (F), and lower-bound intervention probability (pmin) (G). Shaded areas indicate posterior densities. Asterisks denote the posterior probability of a gender difference (*p < 0.05; ***p < 0.001, two-tailed).",
+      "page": 4,
+      "index": 2,
+      "width": 838,
+      "height": 379
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-18-712612-v1/fig-003.webp",
+      "caption": "Fig. 4. Cluster-specific parameter profiles in boys and girls. (A) Clusterspecific parameter profiles in boys and (B) girls. Radar plots illustrate cluster-specific profiles of model parameters after min–max normalization across all participants (i.e., each parameter was scaled to the [0, 1] range using the global minimum and maximum across all participants). Each axis corresponds to one model parameter, and values closer to the outer edge indicate relatively larger parameter magnitudes. Separate radar plots are shown for boys (top) and girls (bottom), with different colors representing distinct clusters identified within each gender (boys: two clusters; girls: three clusters). For each gender, boxplots show the distribution of subject-level posterior means for selected parameters across clusters. Individual dots represent single participants, boxes indicate the interquartile range, and the horizontal line denotes the median. Statistical comparisons were conducted within each gender. (C) For boys (two clusters), Wilcoxon rank-sum tests were used. (D) For girls (three clusters), Kruskal–Wallis tests were first applied, followed by post hoc pairwise comparisons. All reported post hoc p values were corrected for multiple comparisons using the Holm–Bonferroni procedure across parameters (*p < 0.05; ***p < 0.001, two-tailed).",
+      "page": 6,
+      "index": 3,
+      "width": 506,
+      "height": 517
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-18-712612-v1/fig-004.webp",
+      "caption": "Fig. 3. Gender and individual differences in behavioral patterns. (A) Silhouette coefficients across different numbers of clusters are shown to assess clustering quality. The silhouette coefficient quantifies the extent to which individuals are more similar to others within the same cluster than to those in different clusters, with higher values indicating stronger within-cluster consistency and better between-cluster separation. Based on this metric, the optimal number of clusters was two for boys and three for girls. (B–C) Behavioral patterns of the two boy clusters (blue), and (D–F) behavioral patterns of the three girl clusters (pink). Each panel depicts the average probability of choosing to intervene across experimental contexts for a given cluster. Within each panel, each cell represents a specific experimental condition. The x-axis indicates the degree of inequality between the violator and the victim (e.g., 8:2 indicates that the violator keeps 8 of 10 units and allocates 2 units to the victim), and the y-axis denotes the cost of intervention ranging from 1 to 5. Color intensity represents the probability of intervention, ranging from 0 to 1, where 0 indicates never intervening (i.e., choosing “no”) and 1 indicates always intervening (i.e., choosing “yes”) in that condition. In each panel, the left column corresponds to the punishment condition and the right column to the helping condition; the top row shows ratio = 3, and the bottom row shows ratio = 1. Blue and pink color scales represent boys and girls, respectively.",
+      "page": 5,
+      "index": 4,
+      "width": 640,
+      "height": 427
+    }
+  ]
+}

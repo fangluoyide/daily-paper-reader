@@ -1,0 +1,521 @@
+{
+  "mode": "skims",
+  "generated_at": "2026-04-06T08:18:21.490762+00:00",
+  "stats": {
+    "mode": "skims",
+    "forced_all_quick": true,
+    "min_score": 8.0,
+    "deep_divecandidates": 13,
+    "deep_cap": null,
+    "deep_selected": 0,
+    "quick_candidates": 13,
+    "quick_skim_target": null,
+    "quick_selected": 13
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-03-24-713388-v1",
+      "source": "biorxiv",
+      "title": "Pretend Comprehension Enhances Social and Exploratory Behaviors in Human Toddlers and Adults.",
+      "abstract": "Pretend play is a hallmark behavior in childhood where children create nonliteral meanings. Empirical data supporting the role of social cognition and the decoupling from literality are still scarce during early development. We explored here how the comprehension of pretense affects the visual exploratory behavior of toddlers (n = 44) and adults (n = 65) when they were exposed to short video clips in which an actress performed either real actions (e.g., eating jelly) or pretend actions (e.g., pretending to eat with imaginary food), while varying the complexity of those actions. We analyzed participants exploration of the face in the videos as exploitation of social information. We showed that all observers paid more attention to the face in pretend scenarios than in real ones, measured as longer total looking time in adults and more fixations and revisits to the face in both age groups. We also found more gaze shifts (a measure of information sampling) between the face and the moving hand in the pretend videos in both age groups, mainly at the initial stages of the actions. Additionally, analyses of the scanpaths structure using gaze entropy showed less order in the exploration of pretend videos in both age groups, suggesting that pretense involved greater uncertainty and increased information seeking. The less structured trajectories were observed again mainly in complex pretend scenarios. Taken together, our gaze results indicate that from its developmental origins, the comprehension of pretense relies on social processes linked with information seeking and exploration.\n\nSignificance StatementDevelopmental theories have long debated whether pretend games are born in conjunction with social capacities in the second year or become integrated later in life. Our study shows that, much like adults, toddlers visually explore pretend scenes gathering more social information and in a less structured manner compared to real-world scenarios, suggesting that the emerging capacity to play with the meaning of things is linked with that of thinking of other minds early in life.",
+      "authors": [
+        "Gouet, C.",
+        "Jara, C.",
+        "Moenne, C.",
+        "Collao, D.",
+        "Pena, M."
+      ],
+      "primary_category": "animal behavior and cognition",
+      "categories": [
+        "animal behavior and cognition"
+      ],
+      "published": "2026-03-25T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.24.713388v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 10.0,
+      "llm_evidence_en": "Pretend play and social exploratory behavior in toddlers",
+      "llm_evidence_cn": "幼儿的假装游戏和社会探索行为",
+      "llm_evidence": "幼儿的假装游戏和社会探索行为",
+      "canonical_evidence": "幼儿的假装游戏和社会探索行为",
+      "llm_tldr_en": "Examines how understanding pretend play enhances social information exploitation in toddlers and adults.",
+      "llm_tldr_cn": "研究了理解假装游戏如何增强幼儿和成人的社会信息利用能力。",
+      "llm_tldr": "研究了理解假装游戏如何增强幼儿和成人的社会信息利用能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2603.24389v1",
+      "source": "arxiv",
+      "title": "When AI Meets Early Childhood Education: Large Language Models as Assessment Teammates in Chinese Preschools",
+      "abstract": "High-quality teacher-child interaction (TCI) is fundamental to early childhood development, yet traditional expert-based assessment faces a critical scalability challenge. In large systems like China's-serving 36 million children across 250,000+ kindergartens-the cost and time requirements of manual observation make continuous quality monitoring infeasible, relegating assessment to infrequent episodic audits that limit timely intervention and improvement tracking.   In this paper, we investigate whether AI can serve as a scalable assessment teammate by extracting structured quality indicators and validating their alignment with human expert judgments.   Our contributions include: (1) TEPE-TCI-370h (Tracing Effective Preschool Education), the first large-scale dataset of naturalistic teacher-child interactions in Chinese preschools (370 hours, 105 classrooms) with standardized ECQRS-EC and SSTEW annotations; (2) We develop Interaction2Eval, a specialized LLM-based framework addressing domain-specific challenges-child speech recognition, Mandarin homophone disambiguation, and rubric-based reasoning-achieving up to 88% agreement; (3) Deployment validation across 43 classrooms demonstrating an 18x efficiency gain in the assessment workflow, highlighting its potential for shifting from annual expert audits to monthly AI-assisted monitoring with targeted human oversight. This work not only demonstrates the technical feasibility of scalable, AI-augmented quality assessment but also lays the foundation for a new paradigm in early childhood education-one where continuous, inclusive, AI-assisted evaluation becomes the engine of systemic improvement and equitable growth.",
+      "authors": [
+        "Xingming Li",
+        "Runke Huang",
+        "Yanan Bao",
+        "Yuye Jin",
+        "Yuru Jiao",
+        "Qingyong Hu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "published": "2026-03-25T15:05:34+00:00",
+      "link": "https://arxiv.org/pdf/2603.24389v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "AI assessment of teacher-child interaction in Chinese preschools",
+      "llm_evidence_cn": "中国幼儿园师幼互动的AI评估",
+      "llm_evidence": "中国幼儿园师幼互动的AI评估",
+      "canonical_evidence": "中国幼儿园师幼互动的AI评估",
+      "llm_tldr_en": "Uses LLMs to assess teacher-child interaction quality in the Chinese preschool context.",
+      "llm_tldr_cn": "利用大语言模型在中国幼儿园背景下评估师幼互动质量。",
+      "llm_tldr": "利用大语言模型在中国幼儿园背景下评估师幼互动质量。",
+      "llm_tags": [
+        "query:q5"
+      ],
+      "matched_query_tag": "query:q5",
+      "matched_query_text": "Chinese scale for measuring children 's sociality",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.00300v1",
+      "source": "arxiv",
+      "title": "Play-Testing REMind: Evaluating an Educational Robot-Mediated Role-Play Game",
+      "abstract": "This paper presents REMind, an innovative educational robot-mediated role-play game designed to support anti-bullying bystander intervention among children. REMind invites players to observe a bullying scenario enacted by social robots, reflect on the perspectives of the characters, and rehearse defending strategies by puppeteering a robotic avatar. We evaluated REMind through a mixed-methods play-testing study with 18 children aged 9--10. The findings suggest that the experience supported key learning goals related to self-efficacy, perspective-taking, understanding outcomes of defending, and intervention strategies. These results highlight the promise of Robot-Mediated Applied Drama (RMAD) as a novel pedagogical framework to support Social-Emotional Learning.",
+      "authors": [
+        "Elaheh Sanoubari",
+        "Neil Fernandes",
+        "Keith Rebello",
+        "Alicia Pan",
+        "Andrew Houston",
+        "Kerstin Dautenhahn"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.ET",
+        "cs.HC"
+      ],
+      "published": "2026-03-31T22:51:53+00:00",
+      "link": "https://arxiv.org/pdf/2604.00300v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "robot-mediated role-play game for social-emotional learning in children",
+      "llm_evidence_cn": "机器人介导的角色扮演游戏，用于儿童社会情感学习",
+      "llm_evidence": "机器人介导的角色扮演游戏，用于儿童社会情感学习",
+      "canonical_evidence": "机器人介导的角色扮演游戏，用于儿童社会情感学习",
+      "llm_tldr_en": "Evaluates a robot-mediated game to support social-emotional learning and perspective-taking in children.",
+      "llm_tldr_cn": "评估了一种机器人介导的游戏，旨在支持儿童的社会情感学习和观点采择能力。",
+      "llm_tldr": "评估了一种机器人介导的游戏，旨在支持儿童的社会情感学习和观点采择能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-18-712612-v1",
+      "source": "biorxiv",
+      "title": "The motive cocktail in childrens altruistic behaviors",
+      "abstract": "Children frequently intervene in social conflicts by punishing violators or helping victims, yet the motivational mechanisms underlying such third-party altruistic behavior remain poorly understood. It remains unclear how children balance fairness concerns against self-interest, how these motivations interact with intervention costs and impact on outcomes, and whether gender and individual differences reflect distinct motivational structures. Here, we applied the motive cocktail model, which assumes that altruistic behavior arises from multiple prosocial motives, to dissociate motivations underlying third-party interventions. We studied 229 children aged 8-12 years (123 boys), an age when fairness and inequality aversion are reliably expressed. The third-party intervention task manipulated inequality between others, the personal cost of intervention, its impact on outcomes, and the form of intervention (punishment versus helping). Children intervened more as inequality increased and less as intervention costs rose, indicating a trade-off between moral benefits and self-interest. Gender differences emerged only under high-cost and high-impact conditions, with boys engaging in more punishment interventions. The motive cocktail model outperformed alternative models and revealed that boys showed stronger aversion to disadvantageous inequality and a greater tendency to reverse victims disadvantage than girls. Clustering analyses further identified distinct motivational profiles within each gender. These findings demonstrate that childrens third-party altruistic behavior is governed by multiple dissociable motives. This study provides a mechanistic account of how social motivations are organized and weighted during late childhood.",
+      "authors": [
+        "WU, X. N.",
+        "Ren, X.",
+        "Dreher, J.-c.",
+        "Liu, C."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-18T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.18.712612v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Study of altruistic behavior and prosocial motives in children aged 8-12",
+      "llm_evidence_cn": "研究8-12岁儿童的利他行为和亲社会动机",
+      "llm_evidence": "研究8-12岁儿童的利他行为和亲社会动机",
+      "canonical_evidence": "研究8-12岁儿童的利他行为和亲社会动机",
+      "llm_tldr_en": "This study uses a motive cocktail model to analyze the psychological drivers of altruistic behavior in children.",
+      "llm_tldr_cn": "该研究采用动机鸡尾酒模型分析了儿童利他行为背后的心理驱动因素。",
+      "llm_tldr": "该研究采用动机鸡尾酒模型分析了儿童利他行为背后的心理驱动因素。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-18-712612-v2",
+      "source": "biorxiv",
+      "title": "The motive cocktail in childrens altruistic behaviors",
+      "abstract": "Children frequently intervene in social conflicts by punishing violators or helping victims, yet the motivational mechanisms underlying such third-party altruistic behavior remain poorly understood. It remains unclear how children balance fairness concerns against self-interest, how these motivations interact with intervention costs and impact on outcomes, and whether gender and individual differences reflect distinct motivational structures. Here, we applied the motive cocktail model, which assumes that altruistic behavior arises from multiple prosocial motives, to dissociate motivations underlying third-party interventions. We studied 229 children aged 8-12 years (123 boys), an age when fairness and inequality aversion are reliably expressed. The third-party intervention task manipulated inequality between others, the personal cost of intervention, its impact on outcomes, and the form of intervention (punishment versus helping). Children intervened more as inequality increased and less as intervention costs rose, indicating a trade-off between moral benefits and self-interest. Gender differences emerged only under high-cost and high-impact conditions, with boys engaging in more punishment interventions. The motive cocktail model outperformed alternative models and revealed that boys showed stronger aversion to disadvantageous inequality and a greater tendency to reverse victims disadvantage than girls. Clustering analyses further identified distinct motivational profiles within each gender. These findings demonstrate that childrens third-party altruistic behavior is governed by multiple dissociable motives. This study provides a mechanistic account of how social motivations are organized and weighted during late childhood.",
+      "authors": [
+        "Wu, X.",
+        "Ren, X.",
+        "Dreher, J.-c.",
+        "Liu, C."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-19T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.18.712612v2.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "altruistic behavior and prosocial motives in children",
+      "llm_evidence_cn": "儿童的利他行为与亲社会动机",
+      "llm_evidence": "儿童的利他行为与亲社会动机",
+      "canonical_evidence": "儿童的利他行为与亲社会动机",
+      "llm_tldr_en": "Applies a motive model to understand the development of altruism and fairness in children aged 8-12.",
+      "llm_tldr_cn": "应用动机模型研究8-12岁儿童利他行为和公平感背后的亲社会动机。",
+      "llm_tldr": "应用动机模型研究8-12岁儿童利他行为和公平感背后的亲社会动机。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-26-714609-v1",
+      "source": "biorxiv",
+      "title": "Developmental links between play behavior and brain network integration",
+      "abstract": "Play is a fundamental aspect of childhood and plays a crucial role in the development of creativity, yet its neural mechanisms remain poorly understood. We tested the hypothesis that more frequent play is associated with stronger functional integration among the default mode network (DMN), executive control network (CN), and salience network (SAL), as these cortical networks have been implicated in creativity in adults. In a preregistered study of infants and toddlers (Study 1; N = 143, 10 months-3 years, 67 boys, Baby Connectome Project), parent-reported play and imitation behaviors increased sharply from 1 to 2 years, and were associated with stronger within-DMN connectivity and DMN-CN coupling, controlling for age, sex, and head motion. In middle childhood (Study 2; N = 108, ages 4-11 years, 52 boys), parent-reported play frequency declined with age, as did cross-network coupling involving SAL. However, children who engaged more frequently in play showed higher DMN-SAL and CN-SAL connectivity. Finally, in a quasi-experimental comparison (Study 3; N = 45; ages 4-12 years, 20 boys), children enrolled in a curriculum that includes guided play (Montessori) showed higher DMN-SAL and DMN-CN connectivity than peers in traditional schools, suggesting that pedagogies that center child-led exploration might enable protracted brain network integration. Across these three studies, play was consistently associated with greater integration among DMN, SAL, and CN, a pattern previously linked to creativity in adults. Our findings offer a potential mechanism linking childhood play to later creativity through its role in supporting brain integration during development.\n\nPublic Significant StatementO_LIPlay is widely believed to nurture childrens creativity, yet the brain mechanisms behind this link are not well understood.\nC_LIO_LIAcross three studies from infancy to middle childhood, we found that more frequent play was associated with stronger integration among brain networks tied to imagination, attention, and control.\nC_LIO_LIThese findings suggest that play may help build the neural foundation for later creative thinking.\nC_LI",
+      "authors": [
+        "Nishio, M.",
+        "Ziv, M.",
+        "Ellwood-Lowe, M. E.",
+        "Ignachi Sanguinetti, J.",
+        "Denervaud, S.",
+        "Hirsh-Pasek, K.",
+        "Golinkoff, R. M.",
+        "Mackey, A. P."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-28T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.26.714609v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "links between play behavior and brain network integration in toddlers",
+      "llm_evidence_cn": "幼儿游戏行为与脑网络整合的联系",
+      "llm_evidence": "幼儿游戏行为与脑网络整合的联系",
+      "canonical_evidence": "幼儿游戏行为与脑网络整合的联系",
+      "llm_tldr_en": "Links parent-reported play behavior to functional brain network integration in early childhood.",
+      "llm_tldr_cn": "研究了幼儿期家长报告的游戏行为与大脑功能网络整合之间的联系。",
+      "llm_tldr": "研究了幼儿期家长报告的游戏行为与大脑功能网络整合之间的联系。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2603.22759v1",
+      "source": "arxiv",
+      "title": "Human vs. NAO: A Computational-Behavioral Framework for Quantifying Social Orienting in Autism and Typical Development",
+      "abstract": "Responding to one's name is among the earliest-emerging social orienting behaviors and is one of the most prominent aspects in the detection of Autism Spectrum Disorder (ASD). Typically developing children exhibit near-reflexive orienting to their name, whereas children with ASD often demonstrate reduced frequency, increased latency, or atypical patterns of response. In this study, we examine differential responsiveness to quantify name-calling stimuli delivered by both human agents and NAO, a humanoid robot widely employed in socially assistive interventions for autism. The analysis focuses on multiple behavioral parameters, including eye contact, response latency, head and facial orientation shifts, and duration of sustained interest. Video-based computational methods were employed, incorporating face detection, eye region tracking, and spatio-temporal facial analysis, to obtain fine-grained measures of children's responses. By comparing neurotypical and neuroatypical groups under controlled human-robot conditions, this work aims to understand how the source and modality of social cues affect attentional dynamics in name-calling contexts. The findings advance both the theoretical understanding of social orienting deficits in autism and the applied development of robot-assisted assessment tools.",
+      "authors": [
+        "Vartika Narayani Srinet",
+        "Anirudha Bhattacharjee",
+        "Braj Bhushan",
+        "Bishakh Bhattacharya"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.RO"
+      ],
+      "published": "2026-03-24T03:37:28+00:00",
+      "link": "https://arxiv.org/pdf/2603.22759v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "quantifying social orienting behaviors in typical development",
+      "llm_evidence_cn": "量化典型发育中的社会定向行为",
+      "llm_evidence": "量化典型发育中的社会定向行为",
+      "canonical_evidence": "量化典型发育中的社会定向行为",
+      "llm_tldr_en": "A framework to quantify social orienting behaviors like eye contact and response latency in children.",
+      "llm_tldr_cn": "一个量化儿童社交定向行为（如眼神接触和反应潜伏期）的计算行为框架。",
+      "llm_tldr": "一个量化儿童社交定向行为（如眼神接触和反应潜伏期）的计算行为框架。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.02629v1",
+      "source": "arxiv",
+      "title": "Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys",
+      "abstract": "Generative AI (genAI) is increasingly being integrated into children's everyday lives, not only through screens but also through so-called \"screen-free\" AI toys. These toys can simulate emotions, personalize responses, and recall prior interactions, creating the illusion of an ongoing social connection. Such capabilities raise important questions about how children understand boundaries, agency, and relationships when interacting with AI toys. To investigate this, we conducted two participatory design sessions with eight children ages 6-11 where they engaged with three different AI toys, shifting between play, experimentation, and reflection. Our findings reveal that children approached AI toys with genuine curiosity, profiling them as social beings. However, frequent interaction breakdowns and mismatches between apparent intelligence and toy-like form disrupted expectations around play and led to adversarial play. We conclude with implications and design provocations to navigate children's encounters with AI toys in more transparent, developmentally appropriate, and responsible ways.",
+      "authors": [
+        "Aayushi Dangol",
+        "Meghna Gupta",
+        "Daeun Yoo",
+        "Robert Wolfe",
+        "Jason Yip",
+        "Franziska Roesner",
+        "Julie A. Kientz"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "published": "2026-04-03T01:37:31+00:00",
+      "link": "https://arxiv.org/pdf/2604.02629v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Children's social connection and play interactions with AI toys",
+      "llm_evidence_cn": "儿童与人工智能玩具的社会连接和游戏互动",
+      "llm_evidence": "儿童与人工智能玩具的社会连接和游戏互动",
+      "canonical_evidence": "儿童与人工智能玩具的社会连接和游戏互动",
+      "llm_tldr_en": "Investigates how children perceive and interact socially with generative AI toys during play sessions.",
+      "llm_tldr_cn": "调查了儿童在游戏过程中如何看待生成式人工智能玩具并与其进行社交互动。",
+      "llm_tldr": "调查了儿童在游戏过程中如何看待生成式人工智能玩具并与其进行社交互动。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.02642v1",
+      "source": "arxiv",
+      "title": "Engagement Is Not Transfer: A Withdrawal Study of a Consumer Social Robot with Autistic Children at Home",
+      "abstract": "This study examines whether engagement with social robots translates into improved human-directed social abilities in autistic children. We conducted an 8-week home-based randomized controlled trial with 40 children aged 5--9 using a commercial social robot (Qrobot). Families were assigned to either continued robot access or robot withdrawal. Quantitative measures and caregiver interviews assessed anxiety, social motivation, emotion inference, and empathy. Results showed that continued robot access significantly reduced anxiety, confirming strong affective benefits and high usability. However, children in the withdrawal group demonstrated greater improvements in social motivation, emotion understanding, and empathic behaviors toward caregivers and peers. Qualitative findings revealed a \"handoff versus siloing\" pattern: withdrawal promoted reorientation toward human social interaction, while continued access concentrated engagement within the child--robot dyad and limited transfer to real-world contexts. We interpret these results as evidence that high engagement does not guarantee social transfer.",
+      "authors": [
+        "Yibo Meng",
+        "Guangrui Fan",
+        "Bingyi Liu",
+        "Yingfangzhong Sun",
+        "Ruiqi Chen",
+        "Haipeng Mi"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-03T02:11:16+00:00",
+      "link": "https://arxiv.org/pdf/2604.02642v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "measuring social motivation and emotion understanding in children",
+      "llm_evidence_cn": "测量儿童的社交动机与情绪理解",
+      "llm_evidence": "测量儿童的社交动机与情绪理解",
+      "canonical_evidence": "测量儿童的社交动机与情绪理解",
+      "llm_tldr_en": "Investigates if social robot engagement improves human-directed social abilities in children.",
+      "llm_tldr_cn": "调查了与社交机器人的互动是否能提高儿童对人的社交能力。",
+      "llm_tldr": "调查了与社交机器人的互动是否能提高儿童对人的社交能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-20-706527-v2",
+      "source": "biorxiv",
+      "title": "Protracted development in children of perceptual segregation of competing talking faces in the multisensory cocktail party problem",
+      "abstract": "Successful communication with our social partners requires binding, integrating, and perceptually segregating the audible and visible attributes of the multiple talking faces that we often encounter in social situations, a challenge known as the multisensory cocktail party problem (MCPP). Although audiovisual (AV) temporal synchrony is a powerful cue for binding speech signals, how children develop the ability to use this cue to segregate a target talker remains unclear. Here, we examined the development of gaze dynamics supporting multisensory segregation in 3-7-year-old children (N = 149) and adults (N = 37) viewing four talking faces accompanied by a single auditory utterance synchronized with one of the faces (i.e., target). Using metrics of gaze dynamics from information theory, namely proportion of total looking time, stationary entropy, transition entropy, and transition rates, we show that even though sensitivity to AV synchrony is present by age 3, it is insufficient for efficient target segregation. It is not until ages 5-6, following a qualitative shift in dynamic gaze control and more structured distractor transitions, that target selection becomes more efficient, but still not as efficient as it is in adults. We interpret these developmental changes as reflecting a shift from early detection of multisensory cues to later-emerging strategies that organize visual sampling in relation to auditory information in a task-dependent manner. Together, they demonstrate that solving complex multisensory challenges depends on AV integration as well as on the development of dynamic gaze organization that supports efficient multisensory perceptual segregation over time.\n\nSignificance StatementSocial communication requires segregating one talker from others, a challenge known as the multisensory cocktail party problem. Although adults solve this efficiently, how this ability develops remains unclear. Using dynamic gaze measures derived from information theory, we show that multisensory segregation in childhood depends not only on detecting audiovisual synchrony but also on the emergence of structured gaze strategies. Only by ages 5-6 do children combine sustained target fixation with organized sampling of competing talkers. Even by age 7, these audiovisually guided strategies remain immature relative to adults. These findings reveal probabilistic sampling mechanisms through which gaze supports multisensory segregation, offering a mechanistic account of how children learn to navigate complex social environments, with implications for language development and education.",
+      "authors": [
+        "Steinfeld, K.",
+        "Murray, M. M.",
+        "Lewkowicz, D."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-31T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.20.706527v2.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "development of social communication in 3-7 year old children",
+      "llm_evidence_cn": "3-7岁儿童社交沟通能力的发展",
+      "llm_evidence": "3-7岁儿童社交沟通能力的发展",
+      "canonical_evidence": "3-7岁儿童社交沟通能力的发展",
+      "llm_tldr_en": "Explores how children develop gaze dynamics to manage multisensory social communication in crowded settings.",
+      "llm_tldr_cn": "探讨儿童在拥挤社交场景中如何发展注视动力学以支持多感官社交沟通。",
+      "llm_tldr": "探讨儿童在拥挤社交场景中如何发展注视动力学以支持多感官社交沟通。",
+      "llm_tags": [
+        "query:q2"
+      ],
+      "matched_query_tag": "query:q2",
+      "matched_query_text": "social skills development in preschoolers",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-20-713084-v1",
+      "source": "biorxiv",
+      "title": "Social Functioning in Autism: A Systematic Review and Meta-analysis",
+      "abstract": "Atypical social functioning is a core feature of autism, yet findings remain fragmented across components and development. We aimed to systematically integrate this literature and characterize the organization, development, and moderators of social functioning in autism. We conducted a systematic review and meta-analysis of behavioral studies published between January 1990 and August 2025, identified through PubMed, Web of Science, and prior reviews, including studies with clinically diagnosed autistic individuals and neurotypical controls. A qualitative synthesis and two complementary quantitative meta-analyses were performed, with risk of bias evaluated through study-level characteristics. A total of 2,622 studies (94,114 autistic and 172,847 neurotypical individuals across 32 countries) were included, covering 22 social components that clustered into five domains. Overall group differences were substantial (Hedges g = -0.744, 95% CI [-0.797, -0.690]). Differences emerged earliest in motivation-based processes ([~]6 months), followed by motor, emotion, and inference domains, and showed age-related divergence alongside improvement in some skills. Cross-domain analyses revealed stronger interdependencies in autism and an organizational pattern most consistent with serial relationships among domains. These findings should be interpreted in light of methodological heterogeneity, underpowered samples, and uneven cultural representation. Together, the results provide an integrative framework for understanding the organization and development of social functioning in autism, with implications for precision subtyping, developmentally timed interventions, and neurodiversity-informed research and policy. This study was pre-registered (PROSPERO: CRD42024566141).",
+      "authors": [
+        "Li, S.",
+        "Wang, H.",
+        "Wang, Y.",
+        "Zang, Y."
+      ],
+      "primary_category": "developmental biology",
+      "categories": [
+        "developmental biology"
+      ],
+      "published": "2026-03-23T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.20.713084v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "meta-analysis of social functioning development in children",
+      "llm_evidence_cn": "关于儿童社会功能发展的元分析",
+      "llm_evidence": "关于儿童社会功能发展的元分析",
+      "canonical_evidence": "关于儿童社会功能发展的元分析",
+      "llm_tldr_en": "A systematic review and meta-analysis of the organization and development of social functioning.",
+      "llm_tldr_cn": "对社会功能组织和发展的系统回顾与元分析。",
+      "llm_tldr": "对社会功能组织和发展的系统回顾与元分析。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-23-713749-v1",
+      "source": "biorxiv",
+      "title": "Pregistered movie-fMRI analyses reveal altered visual feature encoding in autism in pSTS",
+      "abstract": "Sensory-perceptual differences are widely reported in autism, yet their underlying mechanisms remain unclear. We tested preregistered hypotheses using stacked encoding models applied to naturalistic movie-viewing fMRI from children and adolescents with and without an autism diagnosis from the Healthy Brain Network. We mapped cortical responsiveness to low- and high-level auditory and visual feature spaces. Contrary to enhanced perceptual functioning predictions, autism was not associated with increased low-level encoding in primary sensory cortices. Instead, autistic children and adolescents had reduced high-level visual representations and a relative shift toward low-level over high-level feature encoding in integration and social brain regions including the pSTS and adjacent face/social areas. In pSTS, this high-low weighting tracked Social Responsiveness Scale (SRS) scores. By contrast, audio-visual modality preference and sensory dominance were broadly conserved across groups. Developmentally, encoding exhibited strong, lateralized, modality-congruent age effects. Together, these findings favor weak central coherence accounts over early sensory enhancement, constrain mechanisms to altered visual feature weighting within social/multisensory networks, and demonstrate the value of naturalistic stimuli and encoding models for characterizing sensory-perceptual neurodevelopmental differences.",
+      "authors": [
+        "Mentch, J.",
+        "Chen, Y.",
+        "Vanderwal, T.",
+        "Ghosh, S. S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-24T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.23.713749v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "social brain encoding in children with autism",
+      "llm_evidence_cn": "自闭症儿童社会脑的编码研究",
+      "llm_evidence": "自闭症儿童社会脑的编码研究",
+      "canonical_evidence": "自闭症儿童社会脑的编码研究",
+      "llm_tldr_en": "Analyzes altered visual and social brain feature encoding in children with autism.",
+      "llm_tldr_cn": "分析了自闭症儿童在视觉和社会脑特征编码方面的改变。",
+      "llm_tldr": "分析了自闭症儿童在视觉和社会脑特征编码方面的改变。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-25-714118-v1",
+      "source": "biorxiv",
+      "title": "Over-Synchrony: Higher Maternal Neuroticism Associates with Stronger Interpersonal Neural Synchrony with Child During Passive and Free Interactions",
+      "abstract": "Interpersonal neural synchrony (INS) in mother-child dyads is often interpreted as a neural marker of relational quality and sensitive caregiving, yet findings on its predictors remain heterogeneous. One possible source of this variability is the diversity of interactional paradigms used in hyperscanning research. This study examined how maternal personality, child temperament, and affective states relate to INS across interaction contexts varying in social interactivity. Thirty-three mother-child dyads (n = 20 female children) participated in a functional near-infrared spectroscopy hyperscanning experiment involving passive video co-exposure, a structured cooperative task, and free interaction. Fronto-temporal activity was recorded simultaneously, and INS was computed using wavelet transform coherence. Above-chance levels of INS emerged in inter-brain region combinations primarily involving the mothers left inferior frontal gyrus (IFG) and the childs right IFG (adjusted ps < 0.030, Cohens d range = 0.14-0.31). Maternal neuroticism was the only significant predictor of INS, with higher levels associated with increased synchrony during passive video co-exposure (adjusted p = 0.012) and free interaction (adjusted p = 0.021), but not during the structured game. These findings indicate that maternal dispositional traits shape INS in a context-dependent manner. Notably, the positive association between neuroticism and INS suggests that heightened neural synchrony may reflect over-attunement in more anxious caregivers, rather than optimal coordination. Excessive synchrony may therefore index tightly coupled, over-monitoring interaction dynamics, consistent with models of affiliative vigilance in anxious parenting. Overall, INS may follow a non-linear pattern in which moderate levels are most adaptive, highlighting its flexible, dynamic, and context-sensitive nature.",
+      "authors": [
+        "Carollo, A.",
+        "Bizzego, A.",
+        "Shermadhi, D.",
+        "Dimitriou, D.",
+        "Gordon, I.",
+        "Esposito, G.",
+        "Hoehl, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-26T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.25.714118v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "mother-child interpersonal neural synchrony during social interaction",
+      "llm_evidence_cn": "社交互动中的母子人际神经同步",
+      "llm_evidence": "社交互动中的母子人际神经同步",
+      "canonical_evidence": "社交互动中的母子人际神经同步",
+      "llm_tldr_en": "Investigates how maternal personality and child temperament affect neural synchrony during social interactions.",
+      "llm_tldr_cn": "研究母亲人格与儿童气质如何影响社交互动中的人际神经同步。",
+      "llm_tldr": "研究母亲人格与儿童气质如何影响社交互动中的人际神经同步。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    }
+  ]
+}

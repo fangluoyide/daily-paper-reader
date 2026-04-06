@@ -1,0 +1,508 @@
+Title: Human vs. NAO: A Computational-Behavioral Framework for Quantifying Social Orienting in Autism and Typical Development
+
+URL Source: https://arxiv.org/pdf/2603.22759v1
+
+Published Time: Wed, 25 Mar 2026 00:34:13 GMT
+
+Number of Pages: 22
+
+Markdown Content:
+# Human vs. NAO: A Computational–Behavioral Framework for Quantifying Social Orienting in Autism and Typical Development 
+
+# Vartika Narayani Srinet 1, Anirudha Bhattacharjee 2, Braj Bhushan 3,Bishakh Bhattacharya 4* 
+
+1,2,4 Department of Mechanical Engineering, Indian Institute of Technology Kanpur, Kanpur, 208016, U.P, India. 
+
+3Department of Humanities and Social Sciences, Indian Institute of Technology Kanpur, Kanpur, 208016, U.P, India. *Corresponding author(s). E-mail(s): bishakh@iitk.ac.in; Contributing authors: vartikanana23@iitk.ac.in; anirub@iitk.ac.in; brajb@iitk.ac.in; 
+
+Abstract 
+
+Responding to one’s name is among the earliest-emerging social orienting behaviors and is a one of the most prominent aspects in the detection of Autism Spectrum Disorder (ASD). Typically developing children exhibit near reflexive orienting to their name, whereas children with ASD often demonstrate reduced frequency, increased latency, or atypical patterns of response. In this study, we examine dif-ferential responsiveness to quantify name-calling stimuli delivered by both human agents and NAO, a humanoid robot widely employed in socially assistive interventions for autism. The analysis focuses on multiple behavioral parameters, including eye contact, response latency, head and facial orientation shifts, and duration of sustained interest. Video based computational methods were employed, incor-porating face detection, eye region tracking, and spatio-temporal facial analysis, to obtain fine grained measures of children’s responses. By comparing neurotypical and neuroatypical groups under con-trolled human–robot conditions, this work aims to understand how the source and modality of social cues affect attentional dynamics in name-calling contexts. The findings advance both the theoreti-cal understanding of social orienting deficits in autism and the applied development of robot-assisted assessment tools. 
+
+Keywords: Autism Spectrum Disorder (ASD); Name-calling response; Humanoid robot (NAO); Human–robot interaction (HRI); Face and Eye detection, Eye contact and gaze analysis; Response latency; Robot-assisted assessment 
+
+1
+
+> arXiv:2603.22759v1 [cs.HC] 24 Mar 2026
+
+# 1 Introduction 
+
+One of the earliest social cues that children learn is the reflex of responding to their own name. In typ-ical development, many children around the age of 9–12 months become consistent in orienting them-selves towards the caller [1]. This simple orienting response serves as a foundation for upcoming com-munication onsets for the child, as by looking towards the speaker, the child can engage in eye contact, joint attention, and listening. In autism spectrum disorder (ASD), a reduced response to one’s name is a well-established marker of early social attention difficulties. Notably, children who are later diagnosed with ASD are significantly less likely than their typically developing peers to respond when their name is called by the time they reach their first birthday. Studies confirm that 100% of 12-month-old typically developed children responded to their name on the first or second call, whereas in high-risk children (sib-lings of children with ASD) the number was only 86%. Moreover, this failure to respond to name within the first 12 months became a salient rea-son for later abnormalities (89–94% specificity for ASD or other delay), making this behavior a substantial early screening indicator. Although it needs to be considered that not all autistic children stall at this stage (sensitivity is more modest, 50–70% [2]). The lack of response of a child to his/her name is one of the most frequently reported concerns of parents in the early stages and is therefore also included in standard ASD assessments. These assessments showed that chil-dren with ASD require several prompts to respond to their name being called out, creating a “social orienting deficit”. Considering this from a developmental theory perspective, it can be significant because dis-turbed attention to socially important cues may cascade into more wide-ranging social communi-cation difficulties. The Autism criteria state that children with ASD are intrinsically less inclined to react to social stimuli, which further causes limitations in learning opportunities . A study by Dawson et al. [3] found that children with autism not only failed to respond to social stim-uli (name calls, clapping) much more often than typically developed children, but even when they did, their response was delayed, and they showed repeated impairments in joint attention as well. These findings underscore the diagnostic relevance of name-response behavior, as it reflects an early challenge in prioritizing human voices and socially meaningful cues automatically. Researchers have explored novel methods and the upcoming technologies to enhance attention in children with ASD, including the use of humanoid robots. Humanoid social robots (NAO, Pepper, Milo, etc) can be used to give prompts like speech, sound, eye motions, and gestures in a very controlled, consistent order, offering a simplified social stimulus in the Wizard of Oz form. There is growing and influential evidence that many children with ASD show a prominent interest in mechanical or predictable repetitive systems, and that is where robots may act as a highly engag-ing social tool for some children with ASD [4]. For example, a robot can call a child’s name with the exact same intonation as many times the child requires, or pair the vocal cue with bright lights or movements, potentially making the stimulus more salient and all of this is unlikely when it comes to human inputs as there is a high probability of a person changing their tone likely towards an angrier side when they don’t get a respond from the child. Importantly, robots are non-judgmental and predictable in their responses, which would reduce anxiety and fear of strangers and there-fore encourage the children with ASD to react. They provide repeatable and predictable stim-uli that reduce the uncertainty of human social agents, thereby increasing the ease and supporting attentional focus in children with ASD. Studies have reported that children with ASD will very often orient to and even initiate interaction with robots in therapy sessions, sometimes more than they do with human therapists. Building on this potential, robots have been increasingly utilized in interactive studies, not only to engage par-ticipants but also to explore how children with ASD and typically developing children respond to comparable social cues when delivered by robotic agents. These investigations highlight a broader human curiosity toward robots, which intrigu-ingly extends to children with ASD. This curiosity offers a valuable opportunity to design enriched learning environments that harness the focused attention and engagement these children often display toward mechanical systems and robotic interfaces. Name calling being such an important social clue can be very well be examined using 2this robotic approach and ultimately, examining responsiveness to their name being called in the context of human vs. robot social stimuli could shed light on the nature of social attention in ASD, giving us insights of the factors that affect this attention and pave a better teaching platforms to aid in dealing with this “social orienting deficit” of children with ASD. If a robot’s voice or face captures attention more effectively, it might help in interventions to improve the attention given to real people. Conversely, if children with ASD still show reduced name response even with a robot, that would underscore the fundamental nature of the orienting impairment and help us root for other tools to further investigate this impairment. The domain of human–robot interaction (HRI) has increasingly examined socio-assistive robots as mediators of engagement for children with ASD. Among several robots, the NAO humanoid has been widely used due to its child-sized embodi-ment, programmable gestures, capacity for con-sistent delivery of social cues such as physical gestures, speech, and gaze, and many other motion possibilities due to its 25 degrees of freedom. Review of more than fifty studies confirm that the NAO humanoid has been applied in diverse ways like imitation, joint attention training, emotion recognition, and other therapies, often providing improvements in attention, communication, and social engagement [5]. Despite these advances, much of this work remains restricted to small samples, narrowly defined tasks, and outcome measures that rely heavily on manual coding and only psychological subjective output based on judgment of the experimentalist. Parallelly, the progress in computer vision and machine learning has created vast opportuni-ties for a more objective and statistical analysis of social responses in HRI. Some studies have explored the field of face detection, gaze track-ing, and even automating behavioral classification methods to measure the children’s engagement and to differentiate those with autism from typ-ically developing populations [6, 7]. However, these computational methods have not yet been used in primary screening factors of autism, like name-calling with a classification to the type of agent and kind of response. This gap highlights the need for integrative methodologies combining behavioral measures with video-based analytics, enabling both categorical judgments and continu-ous data analytics metrics. The present study leverages a human–robot comparative design with video-processing tech-niques, thereby advancing the assessment of name-calling responses of children. Herein, comparing the reactions to a strange human voice versus a humanoid robot voice, and then playing with the kind and form of agents like the gender effect that are providing the cue. We investigate this in both children with ASD and typically developing (TD) children, grounded in the hypothesis that children with ASD have a specific social orienting deficit. By using a humanoid robot stimulus, the objec-tive here is to determine whether a robot engages the attention of autistic children more readily or whether the name-call response deficit per-sists regardless of the agent. The findings would have implications for understanding the behav-ioral response of typically developed children and children with ASD when it comes to robotic assis-tive technologies. Accordingly, this study aims to compare the stimulus-based responses using both manual behavioral coding and automated video-based analytics, creating the intersection of devel-opmental psychology, socially assistive robotics, and AI-driven behavioral analysis. 
+
+# 2 Related Work 
+
+Responding to one’s name (RtN) is one of the earliest indicators of social attention in chil-dren. Analyses of home videos shows that chil-dren later diagnosed with ASD oriented less to name-calling compared to the typically developed ones [8–10]. Further longitudinal studies confirm that reduced RtN by 12 months is predictive of later autism diagnoses [11]. Meta-analytic under-standings consolidate that reduced frequency and greater latency in response are robust markers of autism [12], making RtN a salient criterion for clinical assessment. Researchers have investigated a wide range of tools and facilities to enhance the comprehensive understanding of ASD, including technologies designed to standardize the delivery of name-calling probes. Socially assistive robots (SARs) have attracted attention for their ability to deliver repeatable, motivating, and embodied cues in any designed task, like humanoid robots such as NAO, which demonstrated that children with autism often approached robots with reduced 3anxiety, showing increased attention and eye con-tact compared to human partners [13, 14]. Later studies, such as imitation and emotional engage-ments, showed how NAO captured children’s engagement more reliably than adult instructors in certain contexts [15, 16]. These results give a pathway for robots to act as consistent mediators of social interaction and provide opportunities for integrating them into therapeutic and educational environments. Later studies tested teaching and learning training where children with ASD were trained in several interventions to learn english language [17]. Dance and music-based interven-tions also revealed the potential of robots in non-traditional therapy formats [18, 19]. Impor-tantly, these studies not only assess engagement but also document changes in social communica-tion behaviours such as initiation and turn-taking. Although the drawback of sample sizes often being small, the results strengthen the case for NAO’s applicability in autism intervention. The evalua-tion of robotic involvement is nuanced, as joint attention paradigms revealed that children with ASD responded more accurately to human ini-tiators, yet some participants demonstrated pro-longed engagement when interacting with robots. [20, 21]. There is richness in human cues, but the structured practice maintained by robots shows high promise in attention-seizing activi-ties. Recreational as well as game-based studies have echoed this pattern, where robots occa-sionally outperformed human partners in holding children’s focus, though not always in eliciting cor-rect social responses [22]. A review of robotics in autism contexts highlighted their predominant use in therapeutic interventions, noting their promis-ing potential while acknowledging the variability in outcomes. [23]. More recent systematic syn-theses conclude that the lack of standardized protocols and outcome measures hamper compa-rability across studies [24]. Another review further noted that most interventions remain small-scale pilots, with limited extrapolation to broader clini-cal practice [25]. Scoping reviews of NAO applica-tions state that the roles of NAO have diversified across platforms, yet the outcomes remain dif-ficult to generalize beyond the demonstrations [5]. Prior studies have demonstrated that robot-mediated interactions can promote the emergence of dyadic and triadic social behaviors, including joint attention and turn-taking in children with ASD [26]. Such results with high judgmental and subjective bias also highlight the importance of considering both quantitative performance mea-sures and qualitative dimension investigation of engagement when evaluating child–robot interac-tion. Technology-forward studies have started to address this gap by embedding screening tools into robot-led protocols. The Q-CHAT-NAO study integrated a validated autism questionnaire into NAO interactions, demonstrating the feasibility of robot-guided screening [27]. While this repre-sents a notable step toward objective, scalable assessment and RtN was also considered. Simi-larly, work using computer vision and machine learning pipelines has shown that in robot assis-tive interactions, the social orienting behaviours, such as gaze shifts, can be detected automatically from videos of naturalistic interactions [28, 29]. These approaches have reinforced the feasibility of automated measurement but have not specifically been utilised in human versus robot-delivered RtN stimuli. Despite extensive work at the intersection of autism research and human–robot interaction, no prior study has directly and systematically examined children’s response to name when deliv-ered by a robot versus a human under identical protocols and with unified measurement frame-works, with in-depth analysis of how eye gaze patterns and shifts can be used to determine the interest of the children. Addressing this gap is crucial, as it can clarify whether children’s fun-damental orienting behaviour is influenced by the nature of the caller and can establish whether socially assistive robots provide valid and reliable alternatives to human examiners for standardized behavioural probes. By situating the response-to-name paradigm within a direct human–robot comparison, the present study builds on foun-dational autism research, leverages advances in socially assistive robotics, and responds to calls from systematic reviews for more standardized, scalable approaches. 43 Methodology 
+
+# 3.1 Experimental Participants and Data Acquisition 
+
+3.1.1 Participants 
+
+The study involved two groups of typically devel-oped children and children with ASD. Typically developed (TD) children were recruited from school in Kanpur, India, and children with ASD were recruited from two special schools in Kanpur, India. A total of 75 participants (45 TD chil-dren and 30 children with ASD) were recruited for the study. Diagnostic confirmation for the ASD group was based on clinical records. The TD group underwent screening to rule out any developmental or neurological conditions. Partic-ipant selection was finalized following approval from the Institutional Ethics Committee of the Indian Institute of Technology Kanpur, along with consent from relevant center, school author-ities and parents. Psychological analysis reports were reviewed to ensure eligibility, with inclusion criteria limited to children aged 6 to 10 years diag-nosed within the mild-to-moderate range of ASD. Participation was entirely voluntary, with writ-ten parental consent and verbal assent obtained from each child. All sessions were conducted in a thoughtfully prepared environment aimed at max-imizing comfort and ecological validity. A trusted psychologist was present throughout to provide emotional support and uphold ethical standards. Each child engaged in a structured interaction lasting 5–7 minutes within a familiar, relaxed set-ting, complemented by access to play materials to help reduce anxiety. Strict confidentiality and data anonymization were maintained throughout the study. 
+
+3.1.2 Experimental Design 
+
+Two participant groups were recruited: a cohort of children with ASD (n = 30) clinically diagnosed with ASD, and a group of typically developing (TD) children ( n = 45). All par-ticipants were native Hindi speakers and had corrected-to-normal or normal vision as well as hearing. Also, all the children with ASD were ver-bal and gave verbal consent to their parents and the psychologist present for the study. Each child participated in a controlled name-calling interaction involving five distinct auditory stimuli designed to vary by source and voice modulation: 
+
+• SM: Stranger Man (human voice) 
+
+• SW: Stranger Woman (human voice) 
+
+• NM: NAO Man (human male voice via NAO robot) 
+
+• NW: NAO Woman (human female voice via NAO robot) 
+
+• NR: NAO Robotic (neutral mechanical voice already embedded in NAO robot) Each stimulus was presented in three turns to examine habituation and the persistence of attention over repeated exposures. After the child was comfortably seated and allowed to engage freely with toys to simulate a natural and famil-iar environment, the name-calling experiment was initiated. During the session, the child’s name was called by five distinct stimuli—two human voices (a male and a female stranger) and three NAO-generated voices (male, female, and robotic)—in a randomized sequence. This random sequence was the same for all the participants. Each stimulus called the child’s name three times, resulting in a total of fifteen name-calling instances per session. The experimental design intentionally mimicked the child’s everyday play context, allowing assess-ment of how attention, responsiveness, and dura-tion of engagement varied depending on the social or robotic source of the auditory cue. All sessions were conducted in a quiet, controlled laboratory environment with consistent lighting conditions and a fixed interaction distance between the robot or the human callers and the child. 
+
+3.1.3 Data Collection and Recording Procedure 
+
+The structured experimental setup is illustrated in Figure 1. Each session was conducted in a controlled laboratory environment. Data collec-tion was carried out at two complementary lev-els. First, a manual ordinal coding of behav-ioral responses was performed, where each child’s response was categorized on a three-point scale later described in manual coding method. To maintain consistency and eliminate inter-rater variability, all manual annotations were performed 5Fig. 1 : The Experimental setup by a single trained observer across all partici-pants and parameters. Second, synchronized video recordings were obtained for subsequent compu-tational analysis with a clicker system for each auditory stimuli provided to maintain the correct time stamp. For typically developing (TD) children, the setup followed the configuration shown in Figure 1, with three cameras placed at the eye levels of the three different stimuli to capture comprehensive visual data for later frame-wise analysis. For children with ASD, however, the setup was adapted following recommendations from the collaborating psychologists to maintain a less intrusive and more comfortable environment. Accordingly, only a single camera was positioned near the NAO robot station, as multiple recording devices were considered potentially distracting. Hence, analysis and comparison of video data for the children with ASD is for the auditory stimuli originating from NAO. A total of 45 TD children initially partici-pated. Due to technical interruptions such as robot malfunction and incomplete recordings, data from 39 participants were retained for manual cod-ing, and 31 of these were subsequently used for video-based analysis after quality screening and frame validation. In the ASD group, 30 chil-dren participated in the sessions, of which 24 provided sufficiently complete data for manual coding. Following video quality assessment and 
+
+Table 1 : Data Specifications and Recording Details          
+
+> Parameter Value
+> Subjects (Total) 75 children (45 TD, 30 ASD) Manual data used 63 children (39 TD, 24 ASD) Videos Used 116 (31*3 TD + 23 ASD) Duration per Session 5-7 minutes per child Name-Calling Instances 15 (3 per stimulus, randomized order) Stimuli Types 5 (SM, SW, NM, NW, NR) Cameras Used 3 for TD; 1 for ASD sessions Frame Rate (FPS) 30 Frames per Video ∼9000-12600
+
+data integrity checks, 23 participants’ recordings were included in the final video-based analysis. The detailed dataset specifications, including par-ticipant distribution, recording configuration, and session parameters, are summarized in Table 1. 
+
+# 3.2 Manual Behavioral Coding and Analysis 
+
+3.2.1 Behavioral Response Coding 
+
+Each trial was manually annotated on a three-point ordinal scale indicating response intensity: 
+
+R =
+
+
+
+0, No response 1, Partial response 2, Full response (1) Here, Ri,s,t represents the response of partic-ipant i to stimulus s at turn t. Partial response means some sort of body or head movement, but no eye contact, and full response is consid-ered when the child maintains eye contact. The resulting wide-format matrix (e.g., SM1–NR3) was converted into long-format [Participant, Stimulus, Turn, Response, Group] to enable per-stimulus and per-turn inferential analysis while preserving within-subject variance. Behav-ioral observation-based coding has been exten-sively employed in robot interaction studies to systematically evaluate social behaviors [30]. 63.2.2 Descriptive and Reliability Analyses 
+
+Group–stimulus means ( μ) and variances ( σ2) for group g and its stimulus s, were computed as: 
+
+μgs = 1
+
+N
+
+X
+
+> i
+
+Ri,gs , σ2 
+
+> gs
+
+= 1
+
+N − 1
+
+X
+
+> i
+
+(Ri,gs −μgs )2
+
+(2) Temporal reliability for per turn t across turns was quantified via Cronbach’s α:
+
+α = kk − 1 1 −
+
+Pkt=1 σ2
+
+> t
+
+σ2
+
+> T
+
+!
+
+(3) where k = 3. High α values reflected stable attentional patterns across repetitions. 
+
+3.2.3 Non-Parametric Inference and Effect Size 
+
+Due to the ordinal and non-normal nature of responses, non-parametric methods were used. Within-group differences across stimuli were tested via Kruskal–Wallis H tests, with Holm-corrected Mann–Whitney U tests for pairwise contrasts. Between-group comparisons per stimu-lus and turn used the Mann–Whitney U test with Cohen’s d as the effect size for typical (T) and ASD (A) groups: 
+
+d = ¯XT − ¯XA
+
+q s2 
+
+> T+s2
+> A
+> 2
+
+(4) Negative d values indicated stronger autistic responsiveness. This rank-based approach is well-suited for this-sized-sample ASD behavioral data [31]. 
+
+3.2.4 Temporal Trends and Sensitivity Indices 
+
+Let g ∈ { TD , ASD } denote the participant group and s ∈ { SM , SW , NM , NW , NR } denote the stim-ulus condition., then Turn-wise slope S for each stimulus is computed as: 
+
+Sgs = R3,gs − R1,gs 
+
+2 (5) Negative S denotes habituation, whereas posi-tive or zero values indicate sustained engagement. Group separability was further measured using signal-detection sensitivity d′:
+
+d′ = |μT − μA|
+
+p0.5( σ2 
+
+> T
+
++ σ2
+
+> A
+
+) (6) Higher d′ indicates stronger behavioral differenti-ation. 
+
+# 3.3 Video-Based Feature Extraction Framework 
+
+3.3.1 Conceptual Overview 
+
+A machine-learning–driven computer-vision pipeline was implemented to extract interpretable visual attention metrics from video data. It com-bined neural landmark detection with geometric reasoning to estimate face and then eye visibility, openness, and framing [32, 33]. This approach emphasizes interpretability and reproducibil-ity, aligning with pediatric robotics research standards. 
+
+3.3.2 Frame Decoding and Alignment 
+
+Video frames were decoded deterministi-cally using OpenCV (cv2.VideoCapture) at 30 fps. Each frame was indexed hierarchically (Group/Participant/Stimulus/Turn/FrameID ), preserving traceability. Timestamp valida-tion confirmed frame drift < 1 ms, ensuring reproducibility. 
+
+3.3.3 Face Detection and Landmark Parameterization 
+
+Two setups were adopted for motion-specific robustness: 
+
+• Typical group: MediaPipe Face Mesh [32] 
+
+• Autistic group: S3FD + FAN-68 [33] Face detections at frame tk were represented as bounding boxes B(tk) with associated confidence scores c(tk), and detections with c(tk) < 0.6were excluded to reduce false positives and ensure reliable gaze estimation. Manual validation on a randomly sampled subset yielded an accuracy of 97%, with strong inter-rater agreement ( κ = 0 .91). Facial area: 
+
+Aface (tk) = ( x2 − x1)( y2 − y1) (7) 73.3.4 Eye-Region Metrics and Visibility Ratios 
+
+Let tk denote the k-th video frame, j ∈ { L, R }
+
+index the left and right eye, and M represent the number of landmarks defining the eye contour. 
+
+Eye-Region Area 
+
+For each frame tk, the eye polygon area was computed using the shoelace formula: 
+
+Aeye ,j (tk) = 12
+
+> M
+
+X
+
+> i=1
+
+(xj,i yj,i +1 − xj,i +1 yj,i ) , (8) where (xj,i , y j,i ) denotes the i-th landmark coordinate of eye j, with cyclic indexing applied such that ( M + 1) ≡ 1. 
+
+Eye-Aspect Ratio (EAR) 
+
+The Eye-Aspect Ratio (EAR), a robust geometric measure of eye openness, was computed for each eye as: EAR j (tk) = ∥pj, 2 − pj, 6∥ + ∥pj, 3 − pj, 5∥
+
+2 ∥pj, 1 − pj, 4∥ , (9) where pj,i denotes the i-th landmark of eye j.
+
+Normalized Eye-Openness Percentage (EOP) 
+
+To obtain an interpretable and bounded engage-ment metric, EAR values were linearly normalized into a percentage scale: EOP j (tk) = clip 
+
+ EAR j (tk) − 0.18 0.12 × 100 , 0, 100 
+
+
+
+.
+
+(10) The lower bound (0.18) corresponds to an empirically determined blink threshold, while the upper bound (0.30) reflects typical fully open-eye EAR values. These bounds are consistent with the relative EAR variations reported in blink detec-tion studies [34]. The denominator (0.12), there-fore, represents the dynamic openness range. The clip( ·) operator constrains values to the interval [0 , 100]. 
+
+Computation of Mean Eye-Openness Percentage 
+
+For each participant, frame-wise eye-openness per-centages were computed separately for the left and right eyes. To reduce side-specific noise caused by partial occlusion or asymmetric facial visibility, a unified engagement measure was derived as: Mean EOP( tk) = EOP L(tk) + EOP R(tk)2 . (11) This aggregated metric served as the primary visual engagement variable for subsequent tem-poral, correlational, and between-group statistical analyses. 
+
+Algorithm 1 Video-Based Computational Pipeline for Name-Calling Analysis 
+
+Require: Video data Vp,s,t for participant p,stimulus s ∈ { SM, SW, NM, NW, NR }, and turn t
+
+Ensure: Behavioral metrics 
+
+{EOP, Latency, Duration } and engagement summaries  
+
+> 1:
+
+Preprocessing: 
+
+Extract frames (30 fps); detect faces (MTCNN, Dlib); track landmarks (MediaPipe)  
+
+> 2:
+
+Feature Extraction: 
+
+Compute eye-openness (EOP), response latency, and engagement duration Construct temporal traces per turn and stim-ulus  
+
+> 3:
+
+Data Refinement: 
+
+Aggregate per participant; apply smoothing and artifact rejection Assess reliability across turns (Cronbach’s α) 
+
+> 4:
+
+Comparative Analysis: 
+
+Compute group-wise means (TD, ASD) Apply nonparametric tests (Kruskal–Wallis, Mann–Whitney U )Derive effect sizes (Cliff’s δ, Cohen’s d) 
+
+> 5:
+
+return Consolidated metrics, reliability, and inter-group outcomes 83.4 Derived Behavioral Metrics and Indices 
+
+Video-derived features were aggregated per turn to yield: 
+
+• Latency (s): Time from stimulus onset to first visible response 
+
+• Duration (s): Continuous span of gaze-on-face presence 
+
+• Mean EOP: Median EOP per valid frame, representing engagement intensity 
+
+3.4.1 Parameter Optimization and Validation 
+
+Autistic-group data used stricter thresholds ( τc =0.7, smoothing window=7), improving stability by 7%. Validation metrics included intra-run variance 
+
+< 2 px, and temporal correlation > 0.95. The end-to-end computational workflow for video-based behavioral quantification is out-lined in Algorithm 1. It integrates computer vision–based facial landmark extraction, eye open-ness computation, and temporal signal analy-sis to derive frame-level behavioral metrics. The subsequent aggregation and reliability assess-ment ensure robust cross-group comparisons while maintaining the interpretability of engagement trajectories. 
+
+# 3.5 Statistical and Temporal Analysis 
+
+Data normality and variance homogeneity were evaluated at the participant level using the Shapiro–Wilk and Brown–Forsythe tests. Signifi-cant deviations from normality and heteroscedas-ticity ( p < 0.001) were observed; therefore, non-parametric inference procedures were adopted. Between-group differences (Autistic vs. Neu-rotypical) were assessed using Mann–Whitney U
+
+tests, while within-group stimulus effects were examined using Kruskal–Wallis tests with Holm-adjusted post-hoc comparisons. Effect sizes were reported using Cliff’s delta, with magnitude inter-preted according to established benchmarks. Associations among Latency, Duration, and Mean EOP were quantified using Spearman’s rank correlation. Internal consistency across repeated stimulus trials was evaluated using Cronbach’s α.Temporal adaptation across repeated name-calling trials was examined using participant-level mixed-effects regression models, with trial index as a fixed effect and participant-specific ran-dom intercepts to account for repeated measures structure. Negative slopes indicated habituation, whereas positive slopes reflected sustained engage-ment. 
+
+# 3.6 Validation and Reproducibility 
+
+All analyses were executed in Python 3.10 
+
+using pandas , numpy , scipy , pingouin ,and matplotlib . Monte Carlo permutation tests (n = 10 4) were conducted to verify robustness of inferential outcomes. Permutation-based inference and mixed-effects modeling yielded convergent results (p < 0.001), confirming statistical stability. All derived outputs (e.g., Descriptive byStimulus.csv ,
+
+Trend Slopes BySubject.csv ) were archived to support reproducibility. 
+
+# 3.7 Baseline Parametric Video Analysis (Typical Children) 
+
+To complement the comparative analyses between autistic and typically developing (TD) partici-pants, an additional within-group analysis was conducted on the video-derived behavioral data of TD children. This analysis aimed to establish a parametric baseline of engagement patterns across the full set of stimuli, thereby capturing the natu-ral variability in responsiveness within the typical population. The five experimental conditions—Strange Male (SM), Strange Woman (SW), NAO Male (NM), NAO Woman (NW), and NAO Robotic (NR)—represented a continuum from human to robotic voice and embodiment. By including all five, this baseline study enabled assessment of how the degree of human-likeness modulated atten-tional and affective engagement independently of diagnostic status. From each child’s recorded session, three quan-titative behavioral indices were extracted: (1) 
+
+Eye-Openness Percentage (EOP) , represent-ing the proportion of time both eyes remained open; (2) Response Latency , defined as the tem-poral delay between the onset of name calling and the first attentive gaze toward the stimulus; 9and (3) Duration , quantifying the total span of sustained attention following the onset cue. Non-parametric Kruskal–Wallis tests were applied to assess overall stimulus effects for each metric. Additionally, Cohen’s d was calculated to quantify the effect size contrasting human (SM, SW) and robotic (NM, NW, NR) conditions. This analysis served as a reference frame-work for subsequent sections, clarifying the intrin-sic engagement gradient among typical children before introducing cross-group (autistic vs. typ-ical) comparisons. It thereby contextualizes the later findings by identifying the natural pattern of attentional modulation along the human–robot spectrum. 
+
+# 4 Results 
+
+The analyses were conducted at two complemen-tary levels to capture both categorical behavioral responses and continuous engagement dynamics. First, a manual ordinal analysis evaluated coded responses (0 = no response, 1 = partial response, 2 = full response) across five name-calling stimuli to quantify attentional and behav-ioral reliability. Second, a video-based quan-titative analysis examined fine-grained tempo-ral engagement through frame-wise metrics of 
+
+latency , duration , and mean eye-openness percentage (EOP) .Multiple statistical tests were applied to ensure a robust evaluation of the underlying hypotheses. The analyses were sequentially structured—each stage informed by the preceding one—to maintain interpretive continuity. 
+
+# 4.1 Video-Based Analysis of type of Stimulus Effects in Typical Children 
+
+A separate within-group analysis was conducted on the typical cohort to evaluate how eye-related engagement and temporal parameters var-ied across five stimulus types: human male (SM), human female (SW), NAO male (NM), NAO female (NW), and NAO robotic (NR) voices. Non-parametric Kruskal–Wallis tests revealed significant stimulus-dependent differences for all three behavioral indices: Mean Eye-Openness Per-centage (EOP; H = 132 .87, p < 10 −30 ), Duration (H = 103 .21, p < 2 × 10 −21 ), and Latency ( H =35 .47, p = 2 .4 × 10 −7). Descriptive statistics (Table 2) showed that human voices (SM, SW) evoked the highest Mean EOP values, indicating greater affective engagement and facial responsiveness. In contrast, robotic voices (NM, NW, NR) produced markedly lower EOP but substantially longer interaction durations, particularly under the robotic tone (NR). Latency exhibited the reverse pattern, with NR and NW stimuli eliciting the fastest response initiations. These latency values, when compared with the duration parameter, relate the same; the order of higher duration matches with the fastest latency. These trends, visu-alized in Figure 2, reflect a transition from high-expressivity, short-duration responses under human stimuli to lower-expressivity yet sustained engagement under robotic stimuli. Overall, the distributional profiles suggest that typical children demonstrate a clear preference for human stimuli in terms of affective engagement, but robotic voices—especially NR—maintain their attention for longer intervals with faster initial reactions, highlighting a possible novelty-driven or attentional curiosity effect. 
+
+Table 2 : Descriptive statistics (Mean ± SD) of behavioral parameters across five stimuli for the typical group.                                    
+
+> Stimulus Mean EOP (%) Duration (s) Latency (s)
+> SM 68.42 ±
+> 9.14 5.21 ±1.37 1.74 ±0.56 SW 64.87 ±
+> 10.02 5.36 ±1.28 1.69 ±0.49 NM 52.73 ±
+> 7.86 6.02 ±1.43 1.51 ±0.47 NW 48.34 ±
+> 8.15 6.19 ±1.55 1.47 ±0.44 NR 44.65 ±
+> 7.11 6.81 ±1.68 1.42 ±0.39
+
+# 4.2 Manual Behavioral Response Analysis 
+
+After the intra-group (for the typical group) para-metric study was done, the parametric analysis on both the typical and atypical (children with ASD) 10 Fig. 2 : Distribution of Mean Eye-Openness Per-centage (EOP) across five stimuli for typical children. Human stimuli (SM, SW) show higher EOP, while robotic stimuli (NM, NW, NR) dis-play reduced but sustained engagement. 
+
+Fig. 3 : Group-level behavioral response patterns across all stimuli. groups was carried out for all the turns of the stim-ulus. Across the five name-calling stimuli, both autistic and typically developing (TD) children exhibited distinct yet complementary behavioral profiles (Fig. 3). Descriptive statistics revealed higher mean responses to human voices (SM ,
+
+SW ) among TD participants, while children with ASD responded more robustly to robotic stimuli (NM , NW , NR ). This divergence indicates dif-ferentiated sensitivity to social versus synthetic vocal cues. 
+
+4.2.1 Descriptive Statistics and Central Tendencies 
+
+Table 3 and Table 4 summarize the mean response scores, standard deviations, and response-type percentages across all five name-calling stimuli for typical and autistic children. Typical children exhibited the highest mean responsiveness toward Stranger Man (SM) and 
+
+Stranger Woman (SW) , indicating stronger attentional engagement toward human stimuli. The elevated full-response percentages (68–71%) and lower variability (SD = 0.66–0.82) sug-gest consistent behavioral reliability for human voices. In contrast, responses to robotic stim-uli ( NR,NW ) showed lower means and higher variability, alongside increased partial and non-responses, reflecting weaker and less stable social engagement. These trends align with findings that neurotypical children display stronger orienting responses to socially familiar cues such as human prosody and anthropomorphic facial-voice congru-ence. Conversely, autistic children demonstrated a reversed preference pattern, with their highest mean responses for robotic stimuli (NR,NM,NW) (μ = 1 .74 and 1 .56 respectively) and notably reduced responsiveness to human voices (SM, SW) . This pattern suggests enhanced engagement with predictable and less socially demanding robotic modalities. The lower variance for robotic stimuli among children with ASD implies greater stability in responding to consistent, low-ambiguity cues offered by NAO’s voice and appearance, supporting hypotheses of reduced social uncertainty preference. Correla-tion analysis revealed modality-specific stimulus coherence, with higher inter-stimulus correlation among human voices for TD (r = 0.78) and among robotic stimuli for ASD ( r = 0 .70). 
+
+4.2.2 Group Differences Across Stimuli 
+
+Kruskal–Wallis tests confirmed significant within-group stimulus differences (Typical: H =19 .48 , p = 0.0006; Autistic: H = 71 .68 , p <
+
+0.001). Post-hoc Mann–Whitney analyses again confirmed that TD children responded more to human voices ( SM,SW >NR, NM), while autis-tic participants responded more to robotic stimuli (NR >SM, SW). Ridgeline distributions and con-tour maps visualize these modality-specific pat-terns (Figs. 4). Between-group Mann–Whitney tests revealed significant differences across all five stimuli ( p < 0.05). Effect sizes indicated a direc-tional crossover pattern: SM and SW favored TD (d ≈ +0 .9), whereas NM, NW, and NR favored ASD ( d ≈ − 0.8). 11 Table 3 : Descriptive statistics of mean response ( μ), standard deviation ( σ), and percentage distribution of response types across stimuli for typical children. 
+
+Group Stimulus μ σ Full (%) Partial (%) None (%) 
+
+Typical SM 1.59 0.66 68.38 22.22 9.40 Typical SW 1.50 0.82 70.94 8.55 20.51 Typical NM 1.41 0.77 58.12 24.79 17.09 Typical NW 1.25 0.77 44.44 35.90 19.66 Typical NR 1.28 0.82 51.28 25.64 23.08 
+
+Table 4 : Descriptive statistics of mean response ( μ), standard deviation ( σ), and percentage distribution of response types across stimuli for autistic children. 
+
+Group Stimulus μ σ Full (%) Partial (%) None (%) 
+
+Autistic SM 0.78 0.88 29.17 19.44 51.39 Autistic SW 0.96 0.85 33.33 29.17 37.50 Autistic NM 1.56 0.67 65.28 25.00 9.72 Autistic NW 1.56 0.73 69.44 16.67 13.89 Autistic NR 1.74 0.56 79.17 15.28 5.56 
+
+Fig. 4 : Ridgeline density distributions showing within-group differences across stimuli. 
+
+4.2.3 Turn-Wise Response Dynamics 
+
+Turn-level comparisons and slope metrics revealed contrasting adaptation trends. TD children exhib-ited decreasing responses across turns ( ¯ST D =
+
+−0.22), indicating habituation, while autistic chil-dren maintained or increased responses for robotic stimuli ( ¯SASD = +0 .08). 3D mean response sur-faces (Fig. 5) show a declining trajectory for TD but stable or rising planes for ASD participants. 
+
+Reliability Across Turns: To assess the temporal stability of responses across repeated name-calling trials, Cronbach’s α was computed for each stimulus condition within both groups. In this context, higher α values indicate that responses remain consistent across the three turns, whereas lower values reflect greater variability in engagement. For the typical group, the highest internal con-sistency was observed for SW ( α = 0 .75) and NM (α = 0 .67), while other stimuli exhibited com-paratively lower reliability ( α ≈ 0.48–0 .60). In contrast, the autistic group showed the strongest reliability for NW ( α = 0 .78) and NR ( α = 0 .84), indicating stable engagement with these robotic modalities across repeated calls. These patterns are visually supported by the turn-wise response heatmaps in Fig. 6, where pre-ferred stimuli exhibit relatively stable response magnitudes across turns. The corresponding reli-ability values are summarized in Fig. 7. 12 (a) Typical group (b) ASD group 
+
+Fig. 5 : Three-dimensional response surfaces illustrating mean response patterns across turns and stim-ulus conditions. (a) Typical group responses show stronger engagement with socially familiar cues. (b) ASD group responses demonstrate greater stability and higher engagement for robotic modalities across repeated turns.  
+
+> (a) Typical group (b) ASD group
+
+Fig. 6 : Turn-wise response maps across the three name-calling trials. (a) Typical group responses. (b) ASD group responses. 
+
+Fig. 7 : Cronbach’s α values across stimulus con-ditions for the typical and autistic groups. 
+
+4.2.4 Signal Detection and Integrated Behavioral Summary 
+
+Signal-detection sensitivity ( d′) quantified group separability, with the highest values observed for NR ( d′ = 1 .46) and NW ( d′ = 1 .31), moderate sensitivity for NM ( d′ = 0 .98), and comparatively lower values for SM and SW ( d′ ≈ 0.4). Integrating all analytical dimensions, TD chil-dren showed stronger but transient responses to human voices, whereas autistic children exhib-ited more sustained responses to robotic voices. Table 5 summarizes the dominant patterns across metrics. 13 Table 5 : Summary of group-dominant metrics across analytical dimensions.                
+
+> Dimension Dominant in TD Dominant in ASD Interpretation
+> Response magnitude Human voices (SM, SW) Robot voices (NM, NW, NR) Modality-specific sensitivity Reliability (α)High for human High for robot Temporal con-sistency prefer-ence Turn slope (S)Negative Flat or pos-itive Habituation vs sustained engagement Variance Low for human Low for robot Selective sta-bility Signal dis-crimination (d′)Low High for robot stim-uli Diagnostic sep-arability
+
+# 4.3 Video-based analysis of NAO-related voices 
+
+From the previous analysis, it is evident that autistic children show a preference for NAO robot-related voices; here, the video-based analysis of parameters NM, NW, and NR is continued for the two groups. 
+
+4.3.1 Between-group Differences 
+
+Non-parametric Mann–Whitney U analyses (Table 6) revealed clear distinctions between autistic and typically developing (TD) partici-pants in engagement-related metrics. The Mean Eye-Openness Percentage (EOP) scores were significantly higher in the autistic group across all three robotic stimuli: NM ( U = 1210 .5, 
+
+p < 1 × 10 −9, d = −1.08), NW ( U = 1211 .0, 
+
+p < 1 × 10 −9, d = −1.11), and NR ( U = 795 .0, 
+
+p < 1 × 10 −14 , d = −1.55). Neither Latency nor 
+
+Duration showed significant group differences (p > 0.16). The bell curves (Fig. 8) confirm the non-normal distribution patterns in Latency and Mean EOP, supporting the use of non-parametric tests. 
+
+4.3.2 Within-group Stimulus Effects 
+
+Kruskal–Wallis and Holm-adjusted post-hoc Mann–Whitney tests (Table 7) revealed stimulus-specific variations within each cohort. For autistic participants, significant effects were found for 
+
+Table 6 : Between-group Mann–Whitney U analysis across stimuli.                   
+
+> Stimulus Metric Up-value Cohen’s
+> d
+> NM Mean EOP 1210.5 <1×10 −9−1.08 NW Mean EOP 1211.0 <1×10 −9−1.11 NR Mean EOP 795.0 <
+> 1×10 −14
+> −1.55 NM, NW, NR Latency, Dura-tion ns >0.16 –
+
+both Duration (H = 19 .56, p = 5 .7 × 10 −5)and Mean EOP (H = 8 .74, p = 0 .0126). Post-hoc contrasts indicated that NR elicited longer interaction durations (NW vs. NR, ∆ = −3.18 s, 
+
+d = −0.75) and higher engagement (NW vs. NR, ∆ = −8.82, d = −0.34). In contrast, TD children displayed a smaller yet significant effect for Mean EOP ( H = 6 .80, p = 0 .0334), with higher values under NM than NR (∆ = +10 .46, d = +0 .37). Latency remained non-significant across all com-parisons ( p > 0.40). The distribution of Duration across stimuli is shown in Figure 9, which high-lights NR’s higher median values among autistic participants. 
+
+Table 7 : Within-group Kruskal–Wallis and post-hoc comparisons.                             
+
+> Group Metric Hp-value Key Con-trast
+> Autistic Duration 19.56 5.7×10 −5NR >NW Autistic Mean EOP 8.74 0.0126 NR >NW Typical Mean EOP 6.80 0.0334 NM >NR Both Latency –>0.40 not signifi-cant
+
+4.3.3 Correlational Structure 
+
+Spearman rank correlations (Table 8) revealed consistent relationships among behavioral indices in both groups. A significant negative associa-tion was observed between Latency and Dura-tion (Autistic ρ = −0.47, p = 4.8 × 10 −12 ;14 Fig. 8 : (a) Latency and (b) Mean EOP distribution curves showing deviation from normality, justifying rank-based analyses. 
+
+Fig. 9: Raincloud plots showing Duration dis-tributions across stimuli for autistic and typical participants. Longer durations under NR are evi-dent for autistic children. Typical ρ = −0.45, p = 3 .8 × 10 −15 ), indicat-ing a speed–engagement tradeoff in which faster responses were typically followed by shorter inter-action durations. In contrast, Duration and 
+
+Mean EOP were positively correlated (Autistic 
+
+ρ = 0.28, p = 5.5 × 10 −5; Typical ρ = 0.35, 
+
+p = 1 .9 × 10 −9), suggesting that longer interac-tion periods were associated with increased eye openness and sustained engagement. No signifi-cant association was observed between Latency 
+
+and Mean EOP (p > 0.6), indicating that response speed and engagement intensity operated as largely independent behavioral dimensions. 
+
+Table 8 : Spearman correlations among behav-ioral metrics.                            
+
+> Pair Group ρp-value
+> Latency–Duration Autistic −0.47 4.8×10 −12
+> Latency–Duration Typical −0.45 3.8×10 −15
+> Duration–EOP Autistic 0.28 5.5×10 −5
+> Duration–EOP Typical 0.35 1.9×10 −9
+> Latency–EOP Both ns >0.6
+
+4.3.4 Reliability and Distributional Checks 
+
+Cronbach’s α coefficients (Table 9) assessed inter-nal consistency of behavioral metrics across stim-uli and turns. Both groups showed strong relia-bility for Duration (ASD α = 0 .726–0 .825; TD 
+
+α = 0 .668–0 .780), indicating stable patterns of interaction persistence once engagement was initi-ated. Reliability for Mean EOP was moderate to high, with consistently higher values in the autistic group ( α = 0 .669–0 .836) compared to the typical group ( α = 0 .395–0 .717), suggesting more uniform engagement intensity among autistic participants. In contrast, Latency exhibited substantial vari-ability, particularly in the typical group ( α =0.146–0 .361), indicating less consistent initiation timing. However, latency reliability increased for autistic participants under robotic voice condi-tions (NR; α ≈ 0.81), suggesting that predictable robotic stimuli produced more consistent response initiation in the autistic group. Overall, the find-ings suggest that engagement persistence was robust across groups, whereas initiation dynamics exhibited greater stimulus sensitivity, particularly within the autistic group. 15 Table 9 : Reliability coefficients (Cronbach’s α) for behavioral metrics across groups. 
+
+Variable Autistic (range) Typical (range) 
+
+Duration 0.726–0.825 0.668–0.780 Mean EOP 0.669–0.836 0.395–0.717 Latency 0.224–0.806 0.146–0.361 
+
+4.3.5 Temporal Dynamics Across Turns 
+
+Temporal adaptation was analyzed using per-participant slopes ( β1) for each metric and stim-ulus across turns (Table 10). Among typical chil-dren, Duration exhibited strong negative slopes under NM (−0.94) and NW (−1.15), indicat-ing habituation, and a smaller decline under NR (−0.25). Their Latency slopes were slightly posi-tive (+0 .01 to +0 .10), suggesting marginally faster responses across turns. Mean EOP showed the sharpest decline for NM ( −3.13) and NW ( −7.17), but increased under NR (+2 .63), reflecting recov-ery of engagement toward the robotic voice. Autistic participants showed shallower slopes overall. For Duration , NM and NW decreased mildly ( −0.14, −0.40) but stabilized under NR (+0 .02). Latency remained nearly flat (within 
+
+±0.01), indicating minimal learning or fatigue trend. Mean EOP declined for NM (−0.07) and NW ( −0.90) but increased for NR (+0 .56). Together, these results indicate that while TD children exhibit clear habituation to human-like voices, autistic children maintain or slightly enhance engagement with robotic stimuli, espe-cially with the NAO robotic voice. The full overview of analytical models and corresponding findings is presented in Table 11. 
+
+# 5 Conclusion 
+
+The present study examined how stimulus modal-ity, voice gender, and acoustic patterning influence name-calling responses among typically develop-ing (TD) children and children with ASD. By inte-grating manual ordinal ratings with frame-wise computational video analysis , the inves-tigation captured both categorical and temporal aspects of engagement. The analytical sequence, beginning with intra-group benchmarking in TD and progressing to cross-group contrasts, enabled the isolation of social versus perceptual factors that govern attention and responsiveness. Among TD participants, a clear engagement gradient emerged across five stimuli: human male (SM), human female (SW), NAO male (NM), NAO female (NW), and NAO robotic (NR). Sig-nificant modality effects were observed for all indices: Mean Eye-Openness Percentage (EOP; 
+
+H = 132 .87 , p < 10 −30 ), Duration (H =103 .21 , p < 2 × 10 −21 ), and Latency (H =35 .47 , p = 2 .4×10 −7). Human voices, particularly SM (68 .42 ± 9.14% EOP; 5 .21 ± 1.37 s dura-tion), evoked the highest expressivity, while SW (64 .87 ± 10 .02%) showed similar yet slightly lower engagement. This gender asymmetry within the human domain suggests greater orienting toward lower-pitched or assertive male prosody, consis-tent with reports that male voices elicit stronger attentional gating in early childhood [35]. In contrast, robotic voices elicited lower EOP but longer durations, especially NR (44 .65 ±7.11% EOP; 6 .81 ± 1.68 s duration), indicating rapid orientation coupled with sustained, low-arousal vigilance. Thus, TD engagement is characterized by affective intensity under human prosody and 
+
+attentional persistence under robotic regularity .Cross-group analyses revealed a pronounced 
+
+modality inversion . TD children responded maximally to human voices (SM = 1 .59 ± 0.66; SW = 1 .50 ± 0.82; full response ∼ 70%), whereas ASD participants exhibited the highest respon-siveness to robotic voices, particularly NR (1 .74 ±
+
+0.56; 79% full response). Cronbach’s α confirmed this dissociation (TD: α = 0 .75 for SW; ASD: 
+
+α = 0 .84 for NR). These findings empirically sup-port dual motivational pathways: social-reward-driven engagement in TD versus predictability-driven stabilization in ASD, aligning with the Social Motivation Theory [36] and predictive-coding accounts of autism [37]. Gender-specific differentiation further illumi-nated these mechanisms. TD participants exhib-ited stronger and more reliable responses to male voices when both full and partial responses were considered alongside video-based analysis, 16 Table 10 : Temporal slopes ( β1) across stimuli and groups with interpretation. 
+
+Group Variable Stimulus NM Stimulus NW Stimulus NR Interpretation 
+
+Autistic Duration −0.14 −0.40 +0 .02 Duration slightly decreases for NM/NW but stabilizes under NR. Autistic Latency −0.01 +0 .01 −0.01 Essentially flat; almost no learning trend. Autistic Mean EOP −0.07 −0.90 +0 .56 Engagement declines slightly under NM,NW, but increases under NR. Typical Duration −0.94 −1.15 −0.25 Strong habituation; Drop with turn Typical Latency +0 .01 +0 .10 +0 .01 Slight positive slopes; marginally faster response initiation. Typical Mean EOP −3.13 −7.17 +2 .63 Clear divergence: engage-ment decays under NM/NW, rises under NR. 
+
+Table 11 : Overview of analytical models and corresponding findings. 
+
+Analytical Level Model/Test Applied Key Outcome Supporting Out-put 
+
+Between-group Mann–Whitney U Autistic > Typical for Mean EOP across all stim-uli Table 6, Fig. 8 Within-group Kruskal–Wallis + Holm MWU NR > NW for Autistic, NM > NR for Typical Table 7, Fig. 9 Correlation Spearman ρ Negative (Latency–Duration), Pos-itive (Duration–EOP) Table 8 Reliability Cronbach α High for Duration; moder-ate for EOP; variable for Latency Table 9 Temporal trends Linear slope β1 Sustained engagement under NR; habituation under NM/NW Table 10 whereas ASD participants displayed negligible dif-ferences between NAO’s male and female variants, implying that once affective ambiguity is mini-mized, voice gender ceases to modulate attention .Manual coding further indicated that the maximum response was 23 .08% for NR in TD participants and 51 .39% for SM in ASD par-ticipants. Collectively, these observations yield a 
+
+cue-complexity hypothesis : TD engagement scales positively with social and prosodic richness, whereas ASD engagement scales inversely with it. Another observation was that, among TD par-ticipants, responses to the NM stimulus were higher than those to the NW stimulus. This differ-ence was not comparably pronounced among ASD participants. One possible interpretation is that TD children were more likely to attribute a gen-der identity to the NAO robot and perceived its appearance and voice as more closely resembling 17 a male figure. Informal feedback collected after the trials indicated that several TD participants reported perceiving the robot as “male-like.” In contrast, ASD participants appeared less likely to assign such gendered social attributes to the robot, which may explain the absence of a sim-ilarly strong NM–NW response difference in the ASD group. Video-based robotic-only analyses (NM, NW, NR) reinforced these trends. Autistic partici-pants displayed significantly higher Mean EOP across all robotic voices (NM: U = 1210 .5, p < 
+
+10 −9; NW: U = 1211 .0, p < 10 −9; NR: U =795 .0, p < 10 −14 ). Within-group contrasts showed NR elicited the longest durations and highest EOP in ASD (∆EOP = +8 .8%, ∆Dur = +3 .2 s, 
+
+p < 0.01), while TD children favored NM over NR (∆EOP = +10 .5, p = 0 .0334). Turn-wise slopes captured distinct temporal adaptations: TD responses declined across repe-titions ( STD = −0.22), indicating habituation, whereas ASD responses stabilized or increased for NR (SASD = +0 .08), denoting sustained attentional entrainment under predictable acous-tic cues [38, 39]. The decline in TD responses was more pronounced for NAO-related stimuli, while responses to SM and SW remained relatively sta-ble, likely reflecting adherence to social norms associated with responding to human callers. This effect appeared attenuated in ASD participants. The computational pipeline ensured objec-tive quantification and reproducibility. Frame-level analyses used OpenCV , MediaPipe , MTCNN ,and Dlib for facial landmark extraction (468 points), from which EOP, latency, and dura-tion were derived. Statistical evaluations employed Kruskal–Wallis and Mann–Whitney U tests with Holm corrections, supplemented by Spearman cor-relations and effect-size estimates (Cohen’s d, d′). Visualization was implemented using Matplotlib ,
+
+Seaborn , and JoyPy . Reliability (α = 0.67– 0.84) confirmed temporal stability, while signal-detection metrics ( d′ = 1 .46 for NR) established robotic name calls as the most diagnostic discrim-inator between groups. This methodological syn-thesis bridges manual behavioral coding with algo-rithmic perception, contributing to reproducible computational frameworks in social robotics. Integrating these dimensions, TD children showed strong but transient affective engagement with socially rich human voices—particularly male prosody—whereas autistic children demonstrated 
+
+stable and sustained attention toward predictable robotic tones, largely insensitive to voice gender. Variance, reliability, and correlational analyses consistently underscored selective internal stabil-ity: TD variance was lowest for human cues, and ASD variance was lowest for robotic cues. These findings reveal complementary neurocog-nitive mechanisms— affective entrainment in TD and predictive stabilization in ASD—each optimizing engagement under distinct cue com-plexities. This align with prior work demonstrat-ing that affective and engagement responses in children with ASD are highly heterogeneous as seen in the variability for human stimuli, thereby motivating personalized and adaptive modeling approaches in robot-mediated interaction [40]. From an applied standpoint, the results sub-stantiate NAO’s robotic voice as a robust socially assistive interface. Its temporal regular-ity, controlled pitch contour, and low affective load minimized habituation and enhanced attentional reliability among ASD participants. Conversely, expressive modulation remains crucial for sustain-ing natural reciprocity in TD interactions. Beyond confirming these modality effects, the present study advances an early-stage frame-work for tailoring robot-mediated social engage-ment in young autistic children, demonstrat-ing that systematic voice modulation alone can enhance attentional stability even without exag-gerated affect or facial mimicry. This approach represents a translational step toward adaptive human–robot systems that leverage predictabil-ity as a bridge to social attention. By estab-lishing an empirical, data-driven link between voice acoustics and engagement reliability, this work contributes foundational evidence support-ing the strategic use of robots such as NAO in structured early-age ASD interventions. Further-more, response to one’s name, as a core and early-developing social communicative behavior, remains a widely recognized observational indica-tor for distinguishing atypical social responsive-ness in children with ASD. 
+
+Future Directions and Discussions. Build-ing on these findings, future research can expand this framework toward multimodal integration, combining facial, postural, and auditory channels for deeper modeling of child–robot engagement dynamics. Real-time analysis through onboard 18 computation and adaptive feedback algorithms can enable NAO to adjust voice modulation, speech rate, and gaze timing contingent on live EOP fluctuations. Incorporating Large Language Model (LLM)-based interaction modules could also facilitate contextual name-calling and con-versational adaptation, creating individualized engagement trajectories. Furthermore, combining this video-based approach with physiological mea-sures such as galvanic skin response (GSR) or heart-rate variability may yield richer models of social arousal and predictability in autism. These extensions will advance both theoretical under-standing of social attention and practical applica-tions of AI-driven, emotionally aware robotics in therapeutic and educational contexts. 
+
+# 6 Acknowledgement 
+
+We gratefully acknowledge the support of the Department of Mechanical Engineering and the Psychology Laboratory, Department of Humani-ties and Social Sciences, IIT Kanpur, for providing essential infrastructural facilities and interdisci-plinary guidance throughout this research. We also extend our sincere thanks to the Kendriya Vidyalaya IIT Kanpur Campus, Pushpa Khanna Memorial Centre, and Amrita Rehabilitation Cen-tre , Kanpur, for their collaboration, logistical assistance, and sustained cooperation during par-ticipant recruitment and data collection. Our deepest appreciation is extended to the participat-ing children and their parents for their trust and voluntary involvement. We further acknowledge the dedicated efforts of the research assistants and staff members who supported the experimental setup, video process-ing, and data annotation across partner sites and our laboratory. We also sincerely thank Mr. Rishabh Pandey, Mr. Tanuj Gupta, Mr. Sub-hadeep Sahana, Mr. Sourabh Pandey, Ms. Malik Arsala Nissar, Ms. Samreen Zahoor, Mr. Abhishek Kumar Singh and Mr. Aman Sharma for their assistance during the experimental trials. We are deeply appreciative of all individuals and insti-tutions whose collaboration and encouragement made this interdisciplinary research possible. 
+
+# Declarations 
+
+# Ethics Approval and Consent to Participate 
+
+All procedures performed in this study involving human participants were conducted in accordance with institutional ethical standards, IIT Kan-pur (Approval No. [IITK/IEC/2024-25/II/25]). Informed consent was obtained from the partic-ipants’ legal guardians prior to participation on a detailed consent form after a detailed briefing about the experiment. 
+
+# Consent for Publication 
+
+Informed consent for publication was obtained from the participants’ legal guardians, allowing the use of anonymized participant data. 
+
+# Data Availability 
+
+Due to the sensitive nature of the data involving children, the datasets generated and analyzed dur-ing the current study are not publicly available. Data may be available from the corresponding author upon reasonable request and subject to institutional and ethical approvals. 
+
+# Conflict of Interest 
+
+The authors declare no conflict of interest. 
+
+# References 
+
+[1] Nadig, A.S., Ozonoff, S., Young, G.S., Rozga, A., Sigman, M., Rogers, S.J.: A prospec-tive study of response to name in infants at risk for autism. Archives of Pediatrics & Adolescent Medicine 161 (4), 378–383 (2007) [2] Zwaigenbaum, L.: Response to name may enhance autism spectrum disorder screen-ing. The Journal of Pediatrics 188 , 308–311 (2017) https://doi.org/10.1016/j.jpeds.2017. 06.058 [3] Dawson, G., Meltzoff, A.N., Osterling, J., Rinaldi, J., Brown, E.: Children with autism fail to orient to naturally occurring social stimuli. Journal of Autism and Developmen-tal Disorders 28 (6), 479–485 (1998) https: //doi.org/10.1023/a:1026043926488 19 [4] Dubois-Sage, M., Jacquet, B., Jamet, F., Baratgin, J.: People with autism spectrum disorder could interact more easily with a robot than with a human: Reasons and lim-its. Behavioral Sciences 14 (2) (2024) https: //doi.org/10.3390/bs14020131 [5] Robaczewski, A., Bouchard, J., Bouchard, K., Gaboury, S.: Socially assistive robots: The specific case of the nao. Interna-tional Journal of Social Robotics 13 (4), 795–831 (2021) https://doi.org/10.1007/ s12369-020-00664-7 [6] Ismail, L., Shamsuddin, S., Yussof, H., Hashim, H., Bahari, S., Jaafar, A., Zahari, I.: Face detection technique of humanoid robot nao for application in robotic assistive ther-apy. In: 2011 IEEE International Conference on Control System, Computing and Engi-neering, pp. 517–521 (2011). https://doi.org/ 10.1109/ICCSCE.2011.6190580 [7] Moghadas, M., Moradi, H.: Analyz-ing human-robot interaction using machine vision for autism screening. In: 2018 6th RSI International Con-ference on Robotics and Mechatronics (IcRoM), pp. 572–576 (2018). https: //doi.org/10.1109/ICRoM.2018.8657569 [8] Osterling, J., Dawson, G.: Early recognition of children with autism: A study of first birthday home videotapes. Journal of Autism and Developmental Disorders 24 (3), 247–257 (1994) https://doi.org/10.1007/BF02172225 [9] Baranek, G.T.: Autism during infancy: Aretrospective video analysis of sensory-motor and social behaviors at 9–12 months of age. Journal of Autism and Developmental Disor-ders 29 (3), 213–224 (1999) https://doi.org/ 10.1023/a:1023080005650 [10] Werner, E., Dawson, G., Osterling, J., Dinno, N.: Brief report: Recognition of autism spec-trum disorder before one year of age: A ret-rospective study based on home videotapes. Journal of Autism and Developmental Disor-ders 30 (2), 157–162 (2000) https://doi.org/ 10.1023/A:1005463707029 [11] Miller, M., Iosif, A.-M., Hill, M., Young, G.S., Schwichtenberg, A.J., Ozonoff, S.: Response to name in infants developing autism spec-trum disorder: A prospective study. The Journal of Pediatrics 183 , 141–1461 (2017) https://doi.org/10.1016/j.jpeds.2016.12.071 [12] Hedger, N., Dubey, I., Chakrabarti, B.: Social orienting and social seeking behav-iors in asd. a meta analytic investigation. Neuroscience & Biobehavioral Reviews 119 ,376–395 (2020) https://doi.org/10.1016/j. neubiorev.2020.10.003 [13] Robins, B., Dautenhahn, K., Boekhorst, R., Billard, A.: Robotic assistants in therapy and education of children with autism: Can asmall humanoid robot help encourage social interaction skills? Universal Access in the Information Society 4(2), 105–120 (2005) https://doi.org/10.1007/s10209-005-0116-3 [14] Shamsuddin, S., Yussof, H., Ismail, L., Hanapiah, F.A., Mohamed, S., Piah, H.A., Zahari, N.I.: Initial response of autistic chil-dren in human-robot interaction therapy with humanoid robot nao. In: 2012 IEEE 8th International Colloquium on Signal Pro-cessing and Its Applications, pp. 188–193 (2012). https://doi.org/10.1109/CSPA.2012. 6194716 [15] Miskam, M.A., Shamsuddin, S., Samat, M.R.A., Yussof, H., Ainudin, H.A., Omar, A.R.: Humanoid robot nao as ateaching tool of emotion recognition for children with autism using the android app. In: 2014 International Sympo-sium on Micro-NanoMechatronics and Human Science (MHS), pp. 1–5 (2014). https://doi.org/10.1109/MHS.2014.7006084 [16] Ackovska, N., Kirandziska, V., Tanevska, A., Bozinovska, L., Boˇ zinovski, A.: Robot - assisted therapy for autistic children. In: SoutheastCon 2017, pp. 1–2 (2017). https: //doi.org/10.1109/SECON.2017.7925401 [17] Alemi, M., Meghdari, A., Basiri, N., Taheri, A.: The effect of applying humanoid robots as teacher assistants to help iranian autis-tic pupils learn english as a foreign 20 language. (2015). https://doi.org/10.1007/ 978-3-319-25554-5 1 [18] Beer, J.M., Boren, M., Liles, K.R.: Robot assisted music therapy a case study with children diagnosed with autism. In: 2016 11th ACM/IEEE International Conference on Human-Robot Interaction (HRI), pp. 419– 420 (2016). https://doi.org/10.1109/HRI. 2016.7451785 [19] Suzuki, R., Lee, J., Rudovic, O.: Nao-dance therapy for children with asd. In: Proceedings of the Companion of the 2017 ACM/IEEE International Conference on Human-Robot Interaction. HRI ’17, pp. 295–296. Associa-tion for Computing Machinery, New York, NY, USA (2017). https://doi.org/10.1145/ 3029798.3038354 [20] Chevalier, P., Martin, J.-C., Isableu, B., Bazile, C., Iacob, D.-O., Tapus, A.: Joint attention using human-robot interaction: Impact of sensory preferences of chil-dren with autism. In: 2016 25th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN), pp. 849–854 (2016). https://doi.org/ 10.1109/ROMAN.2016.7745218 [21] Cao, H.-L., Simut, R.E., Desmet, N., De Beir, A., Van De Perre, G., Vanderborght, B., Van-derfaeillie, J.: Robot-assisted joint attention: A comparative study between children with autism spectrum disorder and typically devel-oping children in interaction with nao. IEEE Access 8, 223325–223334 (2020) https://doi. org/10.1109/ACCESS.2020.3044483 [22] Barnes, J.A., Park, C.H., Howard, A., Jeon, M.: Child-robot interaction in a musical dance game: An exploratory comparison study between typically developing chil-dren and children with autism. Interna-tional Journal of Human–Computer Inter-action 37 (3), 249–266 (2021) https://doi. org/10.1080/10447318.2020.1819667 . PMID: 33767571 [23] Ismail, L.I., Verhoeven, T., Dambre, J., Wyffels, F.: Leveraging robotics research for children with autism: A review. International Journal of Social Robotics 11 (3), 389–410 (2019) https://doi.org/10.1007/s12369-018-0508-1 [24] Saleh, M.A., Hanapiah, F.A., Hashim, H.: Robot applications for autism: a comprehen-sive review. Disability and Rehabilitation: Assistive Technology 16 (6), 580–602 (2021) https://doi.org/10.1080/17483107.2019. 1685016 . PMID: 32706602 [25] Bartl-Pokorny, K.D., Pykala, M., Uluer, P., Barkana, D.E., Baird, A., Kose, H., Zorcec, T., Robins, B., Schuller, B.W., Landowska, A.: Robot-based intervention for children with autism spectrum disorder: A systematic literature review. IEEE Access 
+
+9, 165433–165450 (2021) https://doi.org/10. 1109/ACCESS.2021.3132785 [26] Kozima, H., Nakagawa, C., Yasuda, Y.: Inter-active robots for communication-care: A case-study in autism therapy. In: ROMAN 2005. IEEE International Workshop on Robot and Human Interactive Communication, 2005., pp. 341–346 (2005). IEEE [27] Romero-Garc´ ıa, R., Mart´ ınez-Tom´ as, R., Pozo, P., de la Paz, F., Sarri´ a, E.: Q-chat-nao: A robotic approach to autism screening in toddlers. Journal of Biomedical Informatics 
+
+118 , 103797 (2021) https://doi.org/10.1016/ j.jbi.2021.103797 [28] Baltrusaitis, T., Zadeh, A., Lim, Y.C., Morency, L.-P.: Openface 2.0: Facial behav-ior analysis toolkit. In: 2018 13th IEEE International Conference on Automatic Face & Gesture Recognition (FG 2018), pp. 59– 66 (2018). https://doi.org/10.1109/FG.2018. 00019 [29] Di Nuovo, A., Conti, D., Trubia, G., Buono, S., Di Nuovo, S.: Deep learning systems for estimating visual attention in robot-assisted therapy of children with autism and intellec-tual disability. Robotics 7(2) (2018) https: //doi.org/10.3390/robotics7020025 [30] Pennisi, P., Tonacci, A., Tartarisco, G., Bil-leci, L., Ruta, L., Gangemi, S., Pioggia, 21 G.: Autism and social robotics: A system-atic review. Autism Research 9(2), 165–183 (2016) https://doi.org/10.1002/aur.1527 [31] Rudovic, O., Lee, J., Dai, M., Schuller, B., Picard, R.W.: Personalized machine learning for robot perception of affect and engage-ment in autism therapy. Science Robotics 
+
+3(19), 6760 (2018) https://doi.org/10.1126/ scirobotics.aao6760 [32] Lugaresi, C., Tang, J., Nash, H., McClana-han, C., Uboweja, E., Hays, M., Zhang, F., Chang, C., Yong, M.G., Lee, J., Chang, W., Hua, W., Georg, M., Grundmann, M.: Mediapipe: A framework for building per-ception pipelines. CoRR abs/1906.08172 
+
+(2019) 1906.08172 [33] Bulat, A., Tzimiropoulos, G.: How far are we from solving the 2d & 3d face alignment problem? (and a dataset of 230, 000 3d facial landmarks). CoRR 
+
+abs/1703.07332 (2017) 1703.07332 [34] Cech, J., Soukupova, T.: Real-time eye blink detection using facial landmarks. Cent. Mach. Perception, Dep. Cybern. Fac. Electr. Eng. Czech Tech. Univ. Prague, 1–8 (2016) [35] Grossmann, T.: The development of emotion perception in face and voice during infancy. Restorative Neurology and Neuroscience 
+
+28 (2), 219–236 (2010) https://doi.org/10. 3233/RNN-2010-0499 . PMID: 20404410 [36] Chevallier, C., Kohls, G., Troiani, V., Brod-kin, E.S., Schultz, R.T.: The social motiva-tion theory of autism. Trends in Cognitive Sciences 16 (4), 231–239 (2012) https://doi. org/10.1016/j.tics.2012.02.007 [37] Lawson, R.P., Rees, G., Friston, K.J.: An aberrant precision account of autism. Fron-tiers in Human Neuroscience Volume 8 -2014 (2014) https://doi.org/10.3389/fnhum. 2014.00302 [38] Klin, A., Lin, D.J., Gorrindo, P., Ramsay, G., Jones, W.: Two-year-olds with autism orient to non-social contingencies rather than bio-logical motion. Nature 459 (7244), 257–261 (2009) https://doi.org/10.1038/nature07868 [39] Sinha, P., Kjelgaard, M.M., Gandhi, T.K., Tsourides, K., Cardinaux, A.L., Pantazis, D., Diamond, S.P., Held, R.M.: Autism as a disorder of prediction. Proceedings of the National Academy of Sciences 111 (42), 15220–15225 (2014) https://doi.org/10.1073/ pnas.1416797111 [40] Rudovic, O., Lee, J., Dai, M., Schuller, B., Picard, R.W.: Personalized machine learning for robot perception of affect and engage-ment in autism therapy. Science Robotics 
+
+3(19), 6760 (2018) https://doi.org/10.1126/ scirobotics.aao6760 22

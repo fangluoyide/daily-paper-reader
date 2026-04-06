@@ -1,0 +1,616 @@
+Title: Developmental links between play behavior and brain network integration
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.03.26.714609v1.full.pdf
+
+Number of Pages: 46
+
+Markdown Content:
+1
+
+# Developmental links between play behavior 1
+
+# and brain network integration 2
+
+3
+
+Monami Nishio 1, Maayan Ziv 1, Monica E. Ellwood-Lowe 2, Juan Ignacio Sanguinetti 1, Solange 4Denervaud 3, Kathy Hirsh-Pasek 4,5 , Roberta M. Golinkoff 6, Allyson P. Mackey 1
+
+5 
+
+> 1
+
+Department of Psychology, School of Arts and Sciences, University of Pennsylvania, 6Philadelphia, US. 7 
+
+> 2
+
+Graduate School of Education, Stanford University 8 
+
+> 3
+
+CIBM MRI imaging and technology, Polytechnical School of Lausanne, Swiss Federal Institute 9of Technology Lausanne (EPFL), Lausanne, Switzerland. 10  
+
+> 4
+
+Department of Psychology, Temple University, Philadelphia, US. 11  
+
+> 5
+
+Brookings Institution, Washington, US. 12  
+
+> 6
+
+School of Education, University of Delaware, Newark, US 13 
+
+Date of submission: March, 3, 2026. 14 
+
+Keywords: play, creativity, default mode network, salience network, control network, functional 15 connectivity , Montessori 16 
+
+Public Significant Statement: 17 
+
+• Play is widely believed to nurture children’s creativity, yet the brain mechanisms behind this 18 link are not well understood. 19 
+
+• Across three studies from infancy to middle childhood, we found that more frequent play was 20 associated with stronger integration among brain networks tied to imagination, attention, and 21 control. 22 
+
+• These findings suggest that play may help build the neural foundation for later creative 23 thinking. 24 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+2
+
+# Abstract 25 
+
+Play is a fundamental aspect of childhood and plays a crucial role in the development of creativity, 26 yet its neural mechanisms remain poorly understood. We tested the hypothesis that more frequent 27 play is associated with stronger functional integration among the default mode network (DMN), 28 executive control network (CN), and salience network (SAL), as these cortical networks have been 29 implicated in creativity in adults. In a preregistered study of infants and toddlers (Study 1; N = 143, 30 10 months–3 years, 67 boys, Baby Connectome Project), parent-reported play and imitation 31 behaviors increased sharply from 1 to 2 years, and were associated with stronger within-DMN 32 connectivity and DMN-CN coupling, controlling for age, sex, and head motion. In middle 33 childhood (Study 2; N = 108, ages 4–11 years, 52 boys), parent-reported play frequency declined 34 with age, as did cross-network coupling involving SAL. However, children who engaged more 35 frequently in play showed higher DMN-SAL and CN-SAL connectivity. Finally, in a quasi-36 experimental comparison (Study 3; N = 45; ages 4-12 years, 20 boys), children enrolled in a 37 curriculum that includes guided play (Montessori) showed higher DMN-SAL and DMN-CN 38 connectivity than peers in traditional schools, suggesting that pedagogies that center child-led 39 exploration might enable protracted brain network integration. Across these three studies, play was 40 consistently associated with greater integration among DMN, SAL, and CN, a pattern previously 41 linked to creativity in adults. Our findings offer a potential mechanism linking childhood play to 42 later creativity through its role in supporting brain integration during development. 43 44 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+3
+
+# Introduction 45 
+
+Play is widely considered to be critical for children’s cognitive development (Gilpin et al., 46 2015; Jaggy et al., 2023; Mireille Smits-van der Nat et al., 2024; Muentener et al., 2018; Stagnitti 47 & Lewis, 2015; White et al., 2021). Children who engage in more play tend to have stronger 48 executive functioning skills (Muentener et al., 2018; White et al., 2021), socioemotional skills 49 (Gilpin et al., 2015; Jaggy et al., 2023; Mireille Smits-van der Nat et al., 2024), and language 50 development (Stagnitti & Lewis, 2015). One of the most consistently documented skills associated 51 with play is creativity (Burgdorf & Panksepp, 2006; Golinkoff et al., 2006; Hoffmann & Russ, 52 2012; Luo et al., 2024; Moore & Russ, 2008; Mullineaux & Dilalla, 2009; Russ 2014; Russ, 2020; 53 Russ et al., 1999; Russ & Wallace, 2012; Siviy, 2016; Wallace & Russ, 2015; Yogman et al., 2018), 54 the ability to generate novel and useful ideas (Runco & Jaeger, 2012; Skene et al., 2022). Play is 55 not only correlated with creativity, it also been shown to causally enhance creativity (Howard-56 Jones et al., 2002; Moreau & Engeset, 2016): Children given the opportunity for free play created 57 more imaginative and colorful drawings than children who received direct instruction (Howard-58 Jones et al., 2002). Why does play enhance creativity? One explanation could be that play creates 59 a more open mindset, changing neural dynamics (Siviy, 2016; Weisberg et al., 2014). Here, we 60 test the hypothesis that repeated engagement in play is associated with the development of neural 61 networks implicated in creativity. 62 Across multiple studies, three large-scale brain networks, the default mode network (DMN), 63 executive control network (CN), and salience network (SAL) have been consistently implicated in 64 creativity in adults (Beaty et al., 2014, 2016, 2018; Hoffmann & Russ, 2012; S. Lee et al., 2021). 65 The DMN is involved in processing everything we cannot sense directly, including the past, the 66 future, and the minds of other people (Buckner et al., 2008; Buckner & Carroll, 2007). It is 67 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+4involved in imagination: generating ideas that are not, or are not yet, true (Buckner & Carroll, 68 2007). The CN plays a key role in setting goals and selecting actions (Miller & Cohen, 2001). The 69 SAL is concerned with the here and now: spotlighting what is important and filtering out 70 distractions (Seeley et al., 2007). The interactions among these networks can be quantified with 71 resting-state fMRI: regions that frequently work together show positive correlations in fMRI signal, 72 while regions that suppress each other are negatively correlated. In adults, the DMN is typically 73 negatively correlated with both the CN and SAL (Fox et al., 2005), consistent with the idea that 74 there is a tradeoff between attention to the internal world and attention to the external world 75 (Buckner et al., 2008; Fox et al., 2005). These anticorrelation get significantly stronger over the 76 course of childhood (Tooley et al., 2022). However, highly creative adults show a correlation 77 structure more similar to that of children: DMN is less segregated from both CN and SAL (Beaty 78 et al., 2014, 2016, 2018; Hoffmann & Russ, 2012; S. Lee et al., 2021). If play boosts creativity, 79 then it may do so by maintaining connections among these networks. 80 Play encompasses a wide variety of behaviors, and the frequency of these behaviors varies 81 over the course of childhood (Lillard et al., 2013; Sidhu et al., 2022; Yogman et al., 2018). 82 Sensorimotor play involves touching and manipulating objects. In infancy, this play may be 83 primarily about discovering the sensory properties of objects and their motor affordances, but later 84 in childhood, this could involve more goal-directed forms of play, such as stacking blocks to build 85 a tower (Lillard, 2015). Sensorimotor play is important for the development and coordination of 86 sensory and motor skills (Lillard, 2015). It also provides a primary context for exploratory learning 87 about object properties and action-outcome contingencies (Sidhu et al., 2022). Symbolic pretend 88 play involves simple object substitution, such as using a block as a car (Bergen & Mauer, 2000), 89 while dramatic pretend play includes more complex social role-playing, such as assigning 90 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+5characters and acting out roles (Hoffmann & Russ, 2012; Russ, 2020), which requires taking on 91 the perspective of another. Play can be either independent or social and is often guided by adults 92 to support learning while still preserving children’s agency (Skene et al., 2022; Weisberg et al., 93 2016). 94 We can combine what we know about the developmental trajectories of cortical networks 95 with changes in play behavior to create a hypothetical framework for their interplay (Figure 1). 96 From birth to around 1.5 years, infants engage primarily in exploratory sensorimotor play 97 (Herzberg et al., 2022). At this age, sensorimotor networks change rapidly, as these regions 98 develop relatively early (Gao, 2025). From around 18 months to three years of age, children 99 transition to pretend play (Campbell et al., 2018), a shift that likely depends on the maturation of 100 the DMN. During childhood, unstructured free play tends to decline, although some forms of play 101 or playful learning may follow different developmental trajectories (Hirsh-Pasek et al., 2010; 102 Hofferth & Sandberg, 2001). In parallel with declines of free play, connectivity among cortical 103 networks differentiates: DMN–CN coupling shifts from positive to the characteristic adult 104 anticorrelation (Yin et al., 2025), and competitive interactions between DMN and SAL emerge 105 (Yin et al., 2025). 106 Parallels between the development of play and changes in network dynamics raise the 107 possibility that play not only reflects, but may also contribute to the maturation of functional 108 networks. The integrative nature of pretend play, requiring flexible transitions between 109 imagination and external cues (Hoffmann & Russ, 2012; Russ, 2020; Russ & Wallace, 2012), 110 could foster dynamic coupling among DMN, CN, and SAL. Notably, although greater integration 111 among these networks has been linked to creativity, certain cognitive functions depend on network 112 segregation (Kelly et al., 2008; Fox et al., 2005; Owens et al., 2020). For example, the 113 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+6anticorrelation between the DMN and SAL is thought to be essential for efficient goal-directed 114 performance (Kelly et al., 2008). Thus, the flexible modulation between segregated and integrated 115 network states may be particularly adaptive (Beaty et al., 2018). 116 Here, we examined associations between play experience and functional network 117 development. In Study 1, we tested the hypothesis that higher levels of play behavior in infancy 118 would be associated with stronger within-network connectivity among the DMN, and greater 119 functional coupling between the DMN and the CN, beyond age-related changes in network 120 organization. In Study 2, we tested whether age-related changes in connectivity within and 121 between the DMN, CN, and SAL corresponded to declines in play behaviors observed during 122 childhood. In Study 3, we examined whether children attending Montessori schools, educational 123 contexts that emphasize self-directed, exploratory, and hands-on learning (Marshall, 2017; Rand 124 & Montessori, 1941), showed greater functional network integration than peers in traditional 125 schools. Across all studies, we controlled for socioeconomic status (SES), given its known 126 associations with the nature and frequency of children’s play (Clearfield et al., 2014; S. Li et al., 127 2022; Mohan & Bhat, 2022; Rubin et al., 1976). Together, these studies test the hypothesis that 128 play is linked to the integration of cortical networks throughout development. 129 
+
+130 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+7
+
+# Study 1 131 
+
+In Study 1, we examined how play behavior in infancy relates to patterns of connectivity 132 among major brain networks. 133 
+
+# Method 134 This study's design and hypotheses were preregistered; see 135 https://osf.io/42qru/overview?view_only=483cccb179f94ac98b4295df9d1fcfbe. 136 
+
+Participants 137 
+
+The Baby Connectome Project (BCP) dataset (https://nda.nih.gov/edit_collection.html?id=2848) 138 includes 343 infants and 812 scans (Howell et al., 2019). Participants were screened to exclude 139 infants born before 37 weeks of gestation, weighing less than 2000 g, or experiencing significant 140 delivery complications (e.g., neonatal hypoxia, NICU stay > 2 days). Additional exclusions applied 141 to children who were adopted, had a first-degree relative with autism, intellectual disability, 142 schizophrenia, or bipolar disorder, presented with significant medical/genetic conditions affecting 143 development, or had contraindications for MRI. Children were also excluded if their mothers had 144 pre-eclampsia, placental abruption, HIV, alcohol/drug use, or were unable to consent in English. 145 After quality control procedures on structural and functional data, the final BCP sample included 146 458 resting-state fMRI scans from 222 infants. Of these, 143 infants had measures of play behavior. 147 The participants' demographic characteristics are presented in Table 1. 148 
+
+Behavioral and parent-reported measures 149 
+
+Play and imitation behaviors were assessed using the imitation/play subscale of the Infant-150 Toddler Social and Emotional Assessment (ITSEA) (Briggs-Gowan & Carter, 1998; Carter et al., 151 2003). The subscale included six items: 1) pretends to do grown-up activities, such as shaving; 2) 152 imitates playful sounds when prompted; 3) imitates simple adult movements, such as clapping 153 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+8hands or waving goodbye in response to a model; 4) pretends that objects are something else (e.g., 154 using a banana as a phone); 5) hugs or feeds dolls or stuffed animals; and 6) rolls a ball back to 155 another person. Parents rated each item on a three-point scale: Not True/Rarely (0 points), 156 Somewhat True/Sometimes (1 point), or Very True/Often (2 points). The average score across 157 these six items was used to quantify play and imitation behaviors. The timing of the brain scans 158 relative to ITSEA assessments is illustrated in Figure S1. 159 Language and cognitive abilities were measured by the MacArthur-Bates Communicative 160 Development Inventories (CDI) (Mayor & Mani, 2019) and the Mullen Scales of Early Learning 161 (MSEL) (E. B. Lee, 2021), respectively. CDI is a widely used parent-report instrument that 162 assesses early language development in infants and toddlers, including vocabulary comprehension, 163 word production, and gesture use. The MSEL is a standardized developmental assessment that 164 evaluates multiple domains of early learning. For the MSEL, we calculated the average across the 165 five subscales: gross motor, visual reception, fine motor, receptive language, and expressive 166 language. Autistic traits were measured with the Repetitive Behavior Scale–Revised (Wolff et al., 167 2016). 168 
+
+fMRI Image Acquisition 169 
+
+Scanning was performed at the University of North Carolina at Chapel Hill and University 170 of Minnesota (Howell et al., 2019) on a 3T Siemens Prisma scanner with a 32-channel head coil. 171 Structural imaging included a T1-weighted 3D-MPRAGE (TR/TE/TI = 2400/2.24/1600 ms, 172 resolution = 0.8 mm isotropic) and a T2-weighted turbo spin-echo sequence (TR/TE = 3200/564 173 ms, resolution = 0.8 mm isotropic). Resting-state fMRI was acquired with a BOLD-sensitive EPI 174 sequence (TR/TE = 800/37 ms, resolution = 2 mm isotropic, 420 volumes, 72 slices, flip angle = 175 80°). Additional single-band reference and AP/PA scans were obtained for distortion correction. 176 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+9
+
+fMRI Image Processing 177 
+
+Preprocessed data were made available as part of the publication process by (Q. Li et al., 178 2024). Preprocessing was implemented using AFNI (v17.0.08) (Cox, 1996) and FSL (v6.0.1) 179 (Jenkinson et al., 2012). Functional volumes were truncated by discarding the first 10 volumes, 180 reoriented, and motion-corrected by alignment to the single-band EPI reference image (SBRef). 181 Distortion correction leveraged AP/PA pairs. Functional data were co-registered with structural 182 images (T1 for those older than 6 months; T2 for those 6 months or younger), then normalized to 183 age-specific templates using ANTs SyN. All scans were then aligned to a common six-month 184 template via pairwise deformation minimization. Functional data were resampled to 2 mm 185 isotropic resolution, spatially smoothed (4 mm FWHM), detrended, and subjected to nuisance 186 regression including 24 motion parameters, white matter, cerebrospinal fluid, global signal, and 187 regressors for volumes with framewise displacement > 0.5 mm. Last, temporal band-pass filtering 188 was applied (0.01–0.1 Hz). 189 
+
+fMRI Image Quality and Exclusion Criteria 190 
+
+A total of 292 infants with 587 task-free functional MRI scans were initially released in 191 the BCP dataset. Data quality control followed several key steps. First, scans with incomplete 192 volumes—fewer than the standard 420—were excluded ( N = 8). Next, functional scans that lacked 193 structural MRIs were excluded ( N = 60). Scans with mean frame-wise displacement (mFD) greater 194 than 0.5 and more than 40% high motion volumes were excluded ( N = 42). Finally, visual 195 inspection of all preprocessed scans led to the exclusion of 19 scans due to registration or 196 preprocessing issues. After applying these quality control steps, the final dataset included 222 197 infants with 458 task-free fMRI. All scans of children under 3 years old (429 scans) were 198 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+10 conducted during sleep, while scans of children over 3 years old (29 scans) included a mix of sleep 199 and awake states. Of these, 143 infants had measures of play behavior. 200 
+
+Functional connectivity 201 
+
+Functional connectivity was calculated using preprocessed BOLD time series from each 202 participant. Time series were extracted for all 400 Schaefer parcels, and pairwise Pearson 203 correlations were computed between parcels to generate a 400 × 400 connectivity matrix for each 204 participant. These correlation matrices were then Fisher z-transformed to improve normality. To 205 facilitate network-level analyses, the parcel-wise connectivity values were subsequently averaged 206 within each of the seven Yeo functional networks, resulting in mean connectivity estimates per 207 network for each participant. 208 
+
+Clustering coefficient / Participation coefficient 209 
+
+For graph-theoretical analyses, we extracted the preprocessed time series from the same 210 400 Schaefer parcels. Using these data, we computed the clustering coefficient for each parcel, 211 which quantifies the extent to which a node’s neighbors are interconnected, reflecting local 212 network segregation. Participation coefficient was calculated for each parcel to assess the extent 213 to which a node connects across different functional networks. For this calculation, the seven Yeo 214 networks were used as the canonical network assignments, allowing us to quantify between-215 network integration. Graph metrics were computed using weighted, undirected networks derived 216 from the Fisher z-transformed connectivity matrices. Metrics were averaged across parcels within 217 each Yeo network to obtain network-level estimates of clustering and participation coefficients for 218 each participant. 219 
+
+Generalized additive models 220 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+11 For each regional GAM, we assessed the significance of the association between the 221 functional connectivity and age using an analysis of variance (ANOVA), comparing the full GAM 222 model to a nested model without the age term. A significant result indicates that including a smooth 223 term for age significantly reduced the residual deviance, as determined by the chi-squared test 224 statistic. P-values were corrected for multiple comparisons across the six networks using the False 225 Discovery Rate (FDR) procedure. 226 
+
+# Results 227 
+
+From ages 1 to 2 years, play scores increased sharply and then reached a plateau (Figure 228 2A, R2 = 0.111, P < 0.001). Similarly, within-DMN connectivity increased until around 2 years of 229 age (Figure 2B, R2 = 0.029, PFDR < 0.001). In contrast, within-CN connectivity remained relatively 230 stable throughout infancy (Figure 2C, R2 = 0.012, PFDR = 0.036). Between-network connectivity 231 generally decreased with age (Figure 2D, DMN-CN R2 = 0.100, PFDR < 0.001, Table S1), 232 consistent with increasing functional network differentiation during early development. 233 Controlling for age, sex and head motion, higher play scores were associated with stronger 234 within-DMN and within-CN connectivity, and with more positive DMN-CN coupling (Figure 2E, 235 F: Within Default: R2 = 0.015, PFDR = 0.021, Fig 2G: Within Control: R2 = 0.013, PFDR = 0.021, 236 Fig 2H: Between Default-Control: R2 = 0.013, PFDR = 0.021). No other network pairs showed 237 significant associations with play scores (Table S1). 238 We repeated our analyses controlling for potential confounds. Since opportunities for play 239 have been previously linked to socioeconomic status (SES) (S. Li et al., 2022; Mohan & Bhat, 240 2022), which in turn has been linked to brain development (Kasari et al., 2006; Tooley et al., 2020), 241 we examined whether controlling for SES altered results. In infancy, household income and parent 242 education showed no significant relationships with play behavior (Figure S2A, B). Controlling for 243 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+12 SES measures did not change the association between play score and brain functional connectivity 244 (Figure S2K, L). SES was also not correlated with language or cognitive skills. We next considered 245 whether associations between play and network connectivity were driven by cognitive abilities. 246 Although play scores were positively correlated with language ( r = 0.154, P < 0.001) and general 247 cognitive abilities ( r = 0.158, P < 0.001; Figure S2C, D), all associations between play behavior 248 and network connectivity remained significant even after controlling for language and cognition 249 (Figure S2M, N), suggesting that the observed brain-play relationships are at least partially 250 independent of general cognitive development. Finally, we considered whether autistic traits 251 influenced the play–brain association (even if the population was non-clinical), given that reduced 252 imitation play (González-Sala et al., 2021; Kasari et al., 2006) and altered brain connectivity have 253 been observed in individuals with autism (Padmanabhan et al., 2017). We did not find a significant 254 correlation between autistic traits and play scores (Figure S2E), and controlling for autistic traits 255 did not alter the brain–play associations (Figure S2O). 256 To assess whether the DMN, CN, and SAL emerged as key systems related to play without 257 restricting analyses solely to predefined network-level connectivity, we additionally conducted 258 whole-brain graph-theory analyses. The clustering coefficient indexes the extent of local 259 connectivity among neighboring regions, reflecting the degree of local network segregation (Watts 260 & Strogatz, 2011) (Figure 3A). The associations between clustering coefficient and age/play were 261 generally symmetric across hemispheres; therefore, for clarity, we focus on the right hemisphere 262 in Figure 3, and present results for the left hemisphere in Figure S3. During infancy, clustering 263 coefficient decreased in most networks except the visual network (Figure 3B), reflecting a 264 developmental shift toward reduced local segregation. In contrast, higher play scores were 265 associated with higher clustering coefficients within the CN and DMN (Figure 3C), indicating 266 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+13 greater local integration within these networks, consistent with the stronger within-network 267 connectivity of CN and DMN reported earlier (Figure 2E-G). The participation coefficient is a 268 graph-theoretical measure of between-network integration, indexing the extent to which a given 269 brain region connects across multiple functional networks rather than primarily within its own 270 network (Guimerà & Amaral, 2005) (Figure 3D). During infancy, participation coefficients 271 increased across most networks except the visual network (Figure 3E). Play showed a modest 272 positive association with the participation coefficients of parcels in the SAL and negative 273 associations with participation coefficients in the CN (Figure 3F). Together, evidence from the 274 graph metrics analysis converges with the idea that play in infancy relates to both emergent local 275 integration within DMN and CN and selective cross-network integration involving SAL regions. 276 
+
+# Discussion 277 Play in infancy is positively associated with stronger within- and between-network 278 connectivity of the DMN and CN. Interestingly, during this stage, within-DMN connectivity 279 increases and DMN-CN connectivity decreases through development, consistent with previous 280 reports (Yin et al., 2025). Notably, these normative trends toward increasing network segregation 281 coexist with play-related differences characterized by greater within-network coherence and 282 stronger DMN-CN coupling, indicating that play tracks individual variability in functional 283 integration beyond typical developmental changes. 284 Several limitations of this study should be acknowledged. First, the BCP collected brain 285 imaging and play questionnaire at separate timepoints, which limited the temporal precision 286 possible in linking neural and behavioral data. In addition, the ITSEA play questionnaire did not 287 differentiate between types of play. Some of the items captured dramatic role-play and some 288 captured social imitation, which may rely on different neural networks. Another limitation 289 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+14 concerns the scanning conditions: infants in the BCP are typically scanned while asleep, which 290 may influence the estimation of the functional connectivity. However, resting-state connectivity 291 during sleep is thought to reflect stable, trait-like aspects of functional brain organization, and prior 292 work has demonstrated meaningful individual differences in network architecture under these 293 conditions. Finally, although infants’ limited ability to remain still presents substantial practical 294 challenges, recent advances in imaging technology and motion-correction methods may help 295 address this limitation (Ellis & Turk-Browne, 2018). 296 Together, and consistent with our preregistered hypotheses, Study 1 showed that play 297 increased through infancy and was associated with stronger connectivity within the DMN, as well 298 as greater connectivity between the DMN and CN. 299 
+
+# Study 2 300 
+
+Building on Study 1, which examined the emergence of play in infancy, Study 2 301 investigates whether age-related changes in connectivity among the DMN, CN, and SAL 302 correspond to the decline of play behaviors during middle childhood. 303 
+
+# Method 304 
+
+This study was not preregistered. 305 
+
+Participants 306 
+
+The childhood dataset was collected at the University of Pennsylvania with Institutional 307 Review Board approval. A subset of these data were previously published ( N = 92) (Tooley et al., 308 2022). Children were recruited from Philadelphia and surrounding areas through schools, 309 advertisements, outreach programs, and community events. Exclusion criteria included diagnosis 310 of neurological, mental or developmental disorder, adoption, and MRI contraindications. Parents 311 provided informed written consent; children gave verbal assent (if < 8 years old) or written assent 312 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+15 (≥ 8 years old). Participants ranged from 4.11–10.59 years (M = 6.55, SD = 1.36; 47% male, 53% 313 female). Demographics are shown in Table 1. The final sample included 128 children after 314 exclusions for incomplete resting-state scans ( N = 17), undisclosed diagnoses based on Child 315 Behavior Checklist scores ( N = 4), and additional data quality criteria described below ( N = 40). 316 The participants’ demographic characteristics are shown in Table 1. 317 
+
+Parent-reported measures 318 
+
+Play behavior was measured using items from the Home Literacy and Numeracy 319 questionnaire (Manolitsis et al., 2013). The play frequency section consists of twelve items 320 assessing the frequency of engagement in activities such as: 1) Sorting things by size, color, or 321 shape, 2) Putting pegs in a board or shapes into holes, playing with puzzles; 3) Building Lego or 322 construction set (Duplo, Megablocks, etc.); 4) Playing with "Playdoh" or clay; 5) Playing with 323 blocks; 6) Coloring, painting, writing; 7) Doing crafts involving scissors and glue; 8) "Paint-by-324 number" activities; 9) Movement songs (i.e., Itsy Bitsy Spider); 10) Playing musical instruments; 325 11) Playing store and 12) Playing teacher. 326 Responses were recorded on a six-point scale: Did not occur, Less than once a week but a 327 few times in a month, Once a week, A few times a week, Almost daily, Activity not applicable to 328 your child, or Prefer not to answer. 329 
+
+fMRI Image Acquisition 330 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+16 Scanning was conducted at the University of Pennsylvania on a Siemens MAGNETOM 331 Prisma 3T scanner with a 32-channel head coil. Structural imaging included a T1-weighted multi-332 echo MEMPRAGE (TR = 2530 ms, TI = 1330 ms, voxel size = 1 mm isotropic). Resting-state 333 fMRI was acquired with a BOLD-sensitive sequence (TR = 2000 ms, TE = 30.2 ms, resolution = 334 2 mm isotropic, flip angle = 90°). Children underwent a mock scan prior to imaging and were 335 monitored with the Framewise Integrated Real-time MRI Monitor system. When possible, 10 336 minutes of low-motion resting-state data (two runs, FD < 1 mm) were collected. 337 
+
+fMRI Image Processing 338 
+
+Preprocessing was implemented using fMRIPrep (v20.2.0) and XCP-D (v0.5.0) (Ciric et 339 al., 2018), with ANTs, FSL (Jenkinson et al., 2002), and AFNI (Cox, 1996). The T1-weighted 340 image underwent intensity nonuniformity correction, skull stripping, and spatial normalization to 341 the ICBM 152 Nonlinear 2009c atlas, followed by tissue segmentation into CSF, white matter, and 342 gray matter. For each resting-state BOLD run, a reference volume was generated, BOLD data were 343 coregistered to the T1-weighted reference using boundary-based registration, and head-motion 344 parameters were estimated using mcflirt . Slice timing correction was applied, and BOLD time 345 series were resampled to MNIPediatricAsym space using a single composite transform with 346 Lanczos interpolation. Confounding time series including framewise displacement, DVARS, and 347 global signals were calculated, and nuisance regression using a 36-parameter model was applied 348 on the fsLR cortical surface. Motion censoring flagged volumes exceeding FD = 0.3 mm, which 349 were interpolated using cubic splines, and runs with less than 100 seconds of usable data were 350 excluded. 351 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+17 
+
+fMRI Image Quality and Exclusion Criteria 352 
+
+The imaging data quality was evaluated through fMRIPrep visual reports and MRIQC 353 0.14.2 software. Two reviewers manually evaluated all structural and functional images at each 354 preprocessing stage for any image quality concerns. Functional images underwent visual 355 inspection to ensure adequate whole-brain field of view coverage, absence of signal blurring or 356 artifacts, and correct alignment with the anatomical image. Exclusions were made for participants 357 with unusable structural images ( N = 1), functional data artifacts (e.g., hair glitter, N = 1), incorrect 358 scanner registration ( N = 1), registration failure ( N = 18), less than 100 seconds usable data after 359 high-motion outlier volumes ( N = 13), and average framewise displacement > 1 mm ( N = 6). For 360 participants with multiple usable resting-state runs, framewise displacement was averaged across 361 runs. 362 
+
+Network Analyses 363 
+
+Functional connectivity, clustering coefficients, and participation coefficients were 364 calculated in the same was as in Study 1. Generalized additive models were used as in Study 1. 365 
+
+# Results 366 Between ages 4 and 12 years old, parent-reported play frequency declined linearly (Figure 367 4A R2 = 0.042, P = 0.035). In parallel, DMN–SAL and CN–SAL connectivity also decreased 368 linearly throughout childhood (Figure 4B R2 = 0.074, PFDR = 0.007, C R2 = 0.008, PFDR = 0.366), 369 consistent with increasing large-scale network segregation during childhood. Higher play scores 370 were associated with stronger DMN–SAL and CN–SAL connectivity (Figure 4D, E R2 = 0.080, 371 
+
+PFDR = 0.012, F R2 = 0.067, PFDR = 0.012), suggesting that children who engaged more in play 372 were characterized by greater cross-network integration, particularly involving the SAL. No other 373 network pairs showed significant associations with play scores (Table S2). 374 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+18 Household income and parental education were negatively associated with play frequency 375 (Figure S4A,B), a pattern that contrasts with some prior reports and motivated sensitivity analyses 376 controlling for socioeconomic factors. Controlling for median income or parental education, the 377 DMN-SAL association with play was attenuated and no longer survived FDR correction (Figure 378 S4C; R2 = 0.039, P = 0.049, PFDR = 0.093, D; R2 = 0.032, P = 0.038, PFDR = 0.113), whereas CN-379 SAL remained robust (Figure S4E R2 = 0.065, P = 0.007, PFDR = 0.045, F; R2 = 0.071, P = 0.004, 380 
+
+PFDR = 0.022). 381 Across childhood, clustering coefficients generally showed weak negative associations 382 with age in lateral prefrontal and superior temporal areas and showed significantly positive 383 associations with age in visual areas (Figure 5A). None of the clustering coefficients for any brain 384 parcel showed a significant association with play (Figure 5B), indicating that play-related effects 385 in childhood were not driven by differences in local network segregation. Participation coefficients 386 showed broad negative associations with age, with significant effects in visual and medial 387 prefrontal areas (Figure 5C). A few parcels within the DMN, CN, and SAL showed positive 388 associations with play (Figure 5D), although these parcel-level effects were sparse and did not 389 survive correction for multiple comparisons, consistent with the positive relationship between play 390 and between-network functional connectivity involving the SAL (Figure 4D-F). 391 
+
+# Discussion 392 
+
+Children who engaged in more play showed relatively greater connectivity between DMN-393 SAL and CN-SAL networks, suggesting that play may help preserve network integration. Overall, 394 DMN-SAL and CN-SAL connectivity decreased through childhood, consistent with previous 395 reports of a general trend toward increasing network segregation (Tooley et al., 2022). 396 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+19 One limitation to note is that the Home Literacy and Numeracy questionnaire (Manolitsis 397 et al., 2013) does not differentiate between types of play; it includes sensorimotor play as well as 398 symbolic and dramatic pretend play, which may depend on different forms of neural network 399 integration. This heterogeneity may contribute to the prominence of salience-related effects in 400 childhood, given the SAL’s role in coordinating diverse cognitive and behavioral demands. 401 Moreover, the questionnaire primarily captures free, unstructured play, while structured activities, 402 including guided play, playful learning, or more social forms of play that remain important in 403 childhood, are not well represented. Therefore, the decline in play scores observed in this study 404 may not necessarily reflect a true decrease in play behavior. It is also possible that it reflects a 405 transition or change in the forms of play (Hofferth & Sandberg, 2001; Weisberg et al., 2016; Zosh 406 et al., 2018), which our questionnaire was unable to capture. 407 In summary, Study 2 showed that higher levels of play were associated with preserved 408 integration among large-scale brain networks in childhood, specifically greater between-network 409 connectivity between DMN-SAL, as well as between CN-SAL. Notably, this pattern resembles 410 that seen in infancy (Study 1), where play was most strongly associated with integration between 411 the DMN and CN, highlighting a developmental reorganization in the network systems linked to 412 play across development. 413 
+
+# Study 3 414 
+
+While the results of Study 1 and 2 provide converging evidence for an association between 415 play behavior and functional brain network integration development, they do not resolve the 416 directionality of this relationship—specifically, whether children with more integrated brain 417 networks are more likely to engage in play, or whether children educated in Montessori settings, 418 learning environments that emphasize child-led, materials-rich, and hands-on play-like exploration, 419 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+20 exhibit greater network integration among DMN, CN, and SAL compare to peers in traditional 420 schools. 421 
+
+# Method 422 
+
+This study was not preregistered. 423 
+
+Participants 424 
+
+The Montessori dataset was previously collected and published by (Duval et al., 2023). 425 Participants were drawn from over 20 schools across Switzerland, representing either Montessori 426 or traditional educational settings. Eligibility required children to be between 4 and 18 years old 427 and to have a consistent educational background (Montessori or traditional for at least three years, 428 or since age 4 for children younger than 7 years old). Children were excluded if parents reported 429 learning or behavioral difficulties, or if they had sensory impairments. Since Montessori schools 430 in Switzerland are exclusively private, recruitment was geographically restricted to regions with 431 traditional schools matched for higher-income levels, based on official city salary statistics. Ethical 432 approval was granted by the Commission d’Ethique Romande Vaud (CER-VD 2018-00244), and 433 all procedures followed the Declaration of Helsinki. Written informed consent was obtained from 434 parents, with verbal assent from the children. 435 
+
+SES composite score 436 
+
+An SES composite score was derived from a parental questionnaire (Genoud, 2011) that 437 gathered information on professional status, occupational category, and education level. Higher 438 scores indicated higher SES ( M = 3.117, SD = 0.532, range 2-4). After narrowing the age range to 439 under 12 years to align with the Study 2 dataset and applying further data quality checks (described 440 below), the final sample comprised 44 children. The participants’ demographic characteristics are 441 shown in Table 1. The groups did not significantly differ by age or sex, but the children in the 442 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+21 traditional schooling group did come from slightly higher SES backgrounds (Figure S7A, t = 1.742, 443 
+
+p = 0.089). 444 
+
+fMRI Image Acquisition 445 
+
+Scanning was performed at the CIBM Center for Biomedical Imaging at Lausanne 446 University Hospital on a Siemens 3T Prisma-Fit scanner with a 64-channel head coil. Structural 447 imaging included a T1-weighted scan (TR/TE/TI = 2000/2.47/900 ms, flip angle = 8°, voxel size 448 = 1 mm isotropic, FOV = 256 × 256 mm²). Resting-state fMRI was acquired with a BOLD-449 sensitive EPI sequence (TR/TE = 500/33 ms, flip angle = 80°, voxel size = 2.4 mm isotropic, 450 matrix size = 94 × 94, FOV = 224 × 224 mm², 48 slices, 720 volumes, scan duration = 6 min, slice 451 acceleration factor = 8, bandwidth = 2418 Hz/Px). 452 
+
+fMRI Image Processing 453 
+
+The preprocessing was implemented using fMRIPrep (v20.2.1) and XCP-D (v0.12.0) 454 (Ciric et al., 2018). The Montessori pipeline applied band-pass filtering between 0.01–0.08 Hz 455 using a second-order Butterworth filter and included a despiking step, and no frame censoring or 456 motion filtering was applied. 457 
+
+fMRI Image Quality and Exclusion Criteria 458 
+
+Six reviewers manually evaluated all structural and functional images and rated their 459 quality as poor (dental brace interferences, FD and DVARS <1.5), medium (FD and DVARS mean 460 values in range, but peaks outside range), or good. Participants with poor or medium image quality 461 were excluded ( N = 10). 462 
+
+Network Analysis 463 
+
+We examined the relationship between brain network connectivity and school 464 environments using linear regression. Both the network measures and school environments were 465 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+22 residualized for covariates (age, sex, motion, and, in the sensitivity analysis, the SES composite 466 score) to isolate variance independent of these factors. Each residualized network was regressed 467 onto the residualized outcome, and the resulting p-values were corrected for multiple comparisons 468 across the six networks using the FDR procedure. 469 
+
+# Results 470 Children in Montessori schools showed higher DMN-SAL connectivity (Figure 6B, β =471 3.48, PFDR = 0.049), as well as DMN-CN connectivity (Figure 6C, β = 3.55, PFDR = 0.049) than 472 those in traditional schools. No other significant differences were observed. No school 473 environment by age interactions were observed (Table S3, Figure S6). While the SES composite 474 scores did not differ significantly between the school environments, SES was slightly higher in 475 children attending traditional schools. When controlling for SES composite score, the differences 476 between school environments for both DMN–SAL and DMN–CN connectivity were attenuated 477 and no longer survived FDR correction (Figure S7C, DMN-SAL t = 2.939, P = 0.056, PFDR =478 0.127, DMN-CN t = 3.087, P = 0.020, PFDR = 0.120). 479 
+
+# Discussion 480 
+
+Children who attended Montessori programs showed higher DMN–SAL and DMN–CN 481 functional connectivity than peers in traditional schools, suggesting that environments which 482 facilitate playful learning may help maintain or enhance functional integrations. These findings 483 are consistent with the broader pattern observed in Study 1 and 2, in which play and play-like 484 exploration were associated with greater integration among large-scale brain networks. 485 Importantly, however, the attenuation of effects after controlling for SES indicates that school-486 related differences in network integration cannot be attributed uniquely to educational context. 487 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+23 Because Study 3 did not include direct measures of play, it remains unclear whether 488 differences in play opportunities contributed to the observed differences between school 489 environments, or whether other features of the Montessori approach, such as child-led exploration, 490 multisensory learning, or minimal external evaluation (Denervaud et al., 2019; Denervaud, Fornari, 491 et al., 2020; Denervaud, Knebel, et al., 2020; Denervaud, Mumenthaler, et al., 2020; Lopata et al., 492 2005; Rathunde & Csikszentmihalyi, 2005), played a larger role. In addition, because children 493 were not randomly assigned to school type, these findings are correlational and may reflect 494 selection effects, such as pre-existing differences in cognitive style, family values, or 495 socioeconomic factors, rather than causal effects of the educational environment itself. 496 
+
+Overall, Study 3 provides convergent but qualified evidence that educational environments 497 that promote play-like exploration, such as Montessori programs, are associated with greater 498 functional integration among large-scale brain networks, although causal mechanisms remain to 499 be established. 500 
+
+# General Discussion 501 
+
+Across three studies spanning infancy to middle childhood, we found converging evidence 502 that play is associated with greater integration both within and between large-scale brain networks. 503 In infancy, as play behavior increases rapidly, more frequent play was associated with stronger 504 within-network connectivity for the DMN and CN, and greater DMN-CN coupling. During 505 childhood, when play behavior declines, more frequent play was associated with preserved 506 integration of SAL with DMN and with CN. Moreover, children in Montessori schools showed 507 stronger connectivity between DMN-CN and DMN-SAL than peers in traditional schools, 508 suggesting that learning environments centering child-led play may support the integration of the 509 brain networks. Together, these findings are consistent with our pre-registered hypothesis that 510 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+24 more frequent play is associated with greater integration between the DMN and other large-scale 511 functional networks, a pattern previously linked to creative cognition in adults (Beaty et al., 2014, 512 2016, 2018; Hoffmann & Russ, 2012; S. Lee et al., 2021). 513 We consistently observed that more frequent play is associated with greater integration of 514 the DMN, CN, and SAL in both infancy (Study 1) and childhood (Study 2), a pattern also seen in 515 highly creative adults (Beaty et al., 2014, 2018). Although play is not always goal-directed, 516 children often generate functional goals (e.g. “build a tower,” “connect the puzzle pieces”) and 517 imaginative goals (e.g., “save the princess,” “host a feast”) and monitor progress toward them, 518 thereby exercising flexible modulation between more integrated and more segregated network 519 states as they shift between ideation and evaluation (Jung et al., 2013). This dynamic may support 520 both the development and coordination of DMN and CN, as well as the ability to flexibly switch 521 between them. In addition, by linking external stimuli and objects to imaginative scenarios (such 522 as a cardboard box as a spaceship or a puddle as a magical portal), play may also enhance 523 coordination between the DMN and SAL. While the increasing segregation of brain networks is a 524 hallmark of typical childhood development (He et al., 2019; Tooley et al., 2022) and is essential 525 for efficient information processing and task performance (Sims et al., 2022; R. Wang et al., 2021), 526 this segregation may, in some contexts, be associated with reduced creativity and imagination. 527 The greater integration of DMN, CN and SAL observed in children attending Montessori 528 schools in Study 3 is consistent with these ideas. Montessori emphasizes child-led exploration, 529 multisensory materials, minimal extrinsic evaluation, and no time pressure (Rand & Montessori, 530 1941; Sobe, 2004). Although these features overlap with key characteristics of play, such as 531 autonomy, exploration, and intrinsic motivation, they are not synonymous with play per se and 532 may engage partially distinct cognitive processes. In contrast, traditional schooling typically places 533 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+25 greater emphasis on teacher-directed instruction, structured curricula, and external evaluation, 534 though practices vary widely across educational contexts. Prior research has shown that 535 Montessori students often demonstrate greater creative thinking, knowledge integration, and self-536 monitoring compared to children attending traditional schools (Denervaud et al., 2019; Denervaud, 537 Fornari, et al., 2020; Denervaud, Knebel, et al., 2020; Denervaud, Mumenthaler, et al., 2020; 538 Lopata et al., 2005; Rathunde & Csikszentmihalyi, 2005). Taken together with the present findings, 539 it is possible that more frequent opportunities for learning through play in Montessori education 540 foster integration of the DMN, CN and SAL, which in turn could contribute to higher creativity 541 (Beaty et al., 2018; Denervaud et al., 2019; Denervaud, Fornari, et al., 2020; Denervaud, Knebel, 542 et al., 2020; Denervaud, Mumenthaler, et al., 2020; Duval et al., 2023). 543 Although previous studies have reported a negative association between SES and play in 544 infancy (Clearfield et al., 2014; S. Li et al., 2022; Mohan & Bhat, 2022), we did not find any 545 significant relationship between SES and play in Study 1. This could be due to limited variation in 546 SES within the dataset, as over 90% of parents in the dataset hold a college degree or higher. The 547 lack of correlation between SES and language or cognitive skills further supports this explanation. 548 In Study 2, a negative correlation between SES and play was observed, suggesting that children 549 from lower-SES households engaged in play more frequently. This negative correlation may 550 suggest several possibilities. One is that parents in high-SES households are more likely to be dual-551 income earners, so their children are watched by other caregivers during the day, which may limit 552 their opportunities to observe their children engaging in play. Another possibility is that high-SES 553 families may place greater emphasis on academic achievement (Z. Li & Qiu, 2018) or encourage 554 participation in extracurricular activities, which may reduce opportunities for play. Speculatively, 555 several non-mutually exclusive factors may contribute to this relationship, including differences 556 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+26 in caregiving arrangements, parental expectations, or the structure of children’s daily activities 557 across socioeconomic contexts. 558 Several limitations of this work should be acknowledged. Importantly, these limitations 559 also highlight key directions for future research aimed at establishing causal links between play 560 behavior and brain network development. First, our measures of play relied on parent reports and 561 included only a few items for each type of play, which limits the precision and depth of the 562 behavioral data. In addition, most of these measures focus on play conducted by children alone 563 and therefore do not fully capture important social aspects, such as interactions with parents and 564 other children. Direct observational assessments of play, both at home and in school, with 565 differentiation between play types (e.g., sensorimotor, symbolic, sociodramatic) and inclusion of 566 social dynamics, such as dyadic interactions, would provide a more detailed and accurate 567 characterization of play-related behaviors. Second, all data were correlational, precluding causal 568 inference, although Study 3 provides quasi-experimental evidence through comparison of 569 educational contexts, school assignment was non-random and remains subject to selection effects. 570 Future studies could strengthen causal claims through longitudinal designs, experimental 571 interventions, or assignment to play-promoting environments, such as Montessori programs, to 572 test whether changes in play lead to measurable changes in brain network development. 573 Additionally, the sample sizes across studies are relatively small ( N = 143 for Study 1, N = 108 for 574 Study 2, N = 44 for Study 3) and the observed effect sizes were generally modest; however, similar 575 patterns emerged across independent samples, age ranges, and analytic approaches, supporting the 576 robustness of the core associations. Parcel-level analyses did not reveal any effects that survived 577 FDR correction, suggesting that the relationship between play and cortical connectivity is not 578 localized to specific brain regions and is likely subtle. Furthermore, our analyses focused on 579 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+27 cortical networks defined using an adult atlas (Thomas Yeo et al., 2011), which may be less 580 accurate for infants, and did not include subcortical contributions, such as thalamic or hippocampal 581 connectivity (Sydnor, 2025). Future work incorporating infancy- and childhood-specific 582 functional atlases (Tooley, Bassett, et al., 2022; F. Wang et al., 2023) and explicitly examining 583 subcortical dynamics could further clarify the neural substrates of play. 584 Across three studies, more frequent play was consistently associated with greater 585 functional integration among large-scale brain networks, including the DMN, CN, and SAL, with 586 a developmental shift from play-related integration primarily between the DMN and CN in infancy 587 to SN-mediated integration in childhood. As academic pressures increase and young children gain 588 earlier and easier access to virtual activities and digital games, opportunities for play may be 589 diminishing in some contexts. The present findings generate the hypothesis that such shifts could 590 involve neural trade-offs of reduced play: prioritization of segregation beneficial for focused 591 performance versus integration that may scaffold creativity and adaptive switching, skills crucial 592 for children's future in a tech-driven era. 593 
+
+# Transparency and Openness 594 
+
+Data for Study 1 were obtained from the Baby Connectome Project (BCP), publicly available via 595 the NIMH Data Archive (NDA; https://nda.nih.gov/), with access requiring an approved Data Use 596 Certification. The derivative data needed to replicate Studies 1–3 are provided with the analysis 597 code, which is publicly available on GitHub at https://github.com/monami-598 nishio/play_functional_connectivity. 599 
+
+# References 600 
+
+Beaty, R.E., Benedek, M., Silvia, P.J., and Schacter, D.L. (2016). Creative Cognition and Brain 601 Network Dynamics. Trends Cogn Sci . 20 .https://doi.org/10.1016/j.tics.2015.10.004. 602 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+28 Beaty, R.E., Benedek, M., Wilkins, R.W., Jauk, E., Fink, A., Silvia, P.J., Hodges, D.A., 603 Koschutnig, K., and Neubauer, A.C. (2014). Creativity and the default network: A 604 functional connectivity analysis of the creative brain at rest. Neuropsychologia 64 .605 https://doi.org/10.1016/j.neuropsychologia.2014.09.019. 606 Beaty, R.E., Kenett, Y.N., Christensen, A.P., Rosenberg, M.D., Benedek, M., Chen, Q., Fink, A., 607 Qiu, J., Kwapil, T.R., Kane, M.J., et al. (2018). Robust prediction of individual creative 608 ability from brain functional connectivity. Proc. Natl. Acad. Sci. U. S. A. 115 .609 https://doi.org/10.1073/pnas.1713532115. 610 Bergen, D., and Mauer, D. (2000). Symbolic play, phonological awareness, and literacy skills at 611 three age levels. Play and literacy in early childhood: Research from multiple perspectives. 612 Lawrence Erlbaum Associates Publishers. 613 Briggs-Gowan, M.J., and Carter, A.S. (1998). Preliminary acceptability and psychometrics of the 614 infant-toddler social and emotional assessment (ITSEA): A new adult-report questionnaire. 615 
+
+Infant Ment. Health J. 19 . https://doi.org/10.1002/(SICI)1097-616 0355(199824)19:4<422::AID-IMHJ5>3.0.CO;2-U. 617 Buckner, R.L., and Carroll, D.C. (2007). Self-projection and the brain. Trends Cogn. Sci. 11 .618 https://doi.org/10.1016/j.tics.2006.11.004. 619 Buckner, R.L., Andrews-Hanna, J.R., and Schacter, D.L. (2008). The brain’s default network: 620 Anatomy, function, and relevance to disease. Ann N Y Acad Sci. 1124 .621 https://doi.org/10.1196/annals.1440.011. 622 Burgdorf, J., and Panksepp, J. (2006). The neurobiology of positive emotions. Neurosci Biobehav 623 
+
+Rev. 30 . https://doi.org/10.1016/j.neubiorev.2005.06.001. 624 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+29 Campbell, S.B., Mahoney, A.S., Northrup, J., Moore, E.L., Leezenbaum, N.B., and Brownell, C.A. 625 (2018). Developmental Changes in Pretend Play from 22- to 34-Months in Younger 626 Siblings of Children with Autism Spectrum Disorder. J. Abnorm. Child Psychol. 46 .627 https://doi.org/10.1007/s10802-017-0324-3. 628 Carter, A.S., Briggs-Gowan, M.J., Jones, S.M., and Little, T.D. (2003). The Infant-Toddler Social 629 and Emotional Assessment (ITSEA): Factor structure, reliability, and validity. J. Abnorm. 630 
+
+Child Psychol. 31 . https://doi.org/10.1023/A:1025449031360. 631 Ciric, R., Rosen, A.F.G., Erus, G., Cieslak, M., Adebimpe, A., Cook, P.A., Bassett, D.S., 632 Davatzikos, C., Wolf, D.H., and Satterthwaite, T.D. (2018). Mitigating head motion artifact 633 in functional connectivity MRI. Nat. Protoc. 13 . https://doi.org/10.1038/s41596-018-0065-634 y. 635 Kelly, C.A.M., Uddin, L.Q., Biswal, B.B., Castellanos, F.X., and Milham, M.P. (2008). 636 Competition between functional brain networks mediates behavioral variability. 637 
+
+Neuroimage 39 . https://doi.org/10.1016/j.neuroimage.2007.08.008. 638 Clearfield, M.W., Bailey, L.S., Jenne, H.K., Stanger, S.B., and Tacke, N. (2014). Socioeconomic 639 status affects oral and manual exploration across the first year. Infant Ment. Health J. 35 .640 https://doi.org/10.1002/imhj.21423. 641 Cox, R.W. (1996). AFNI: Software for analysis and visualization of functional magnetic resonance 642 neuroimages. Computers and Biomedical Research 29 .643 https://doi.org/10.1006/cbmr.1996.0014. 644 Denervaud, S., Fornari, E., Yang, X.F., Hagmann, P., Immordino-Yang, M.H., and Sander, D. 645 (2020). An fMRI study of error monitoring in Montessori and traditionally-schooled 646 children. NPJ Sci. Learn. 5. https://doi.org/10.1038/s41539-020-0069-6. 647 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+30 Denervaud, S., Knebel, J.F., Hagmann, P., and Gentaz, E. (2019). Beyond executive functions, 648 creativity skills benefit academic outcomes: Insights from Montessori education. PLoS 649 
+
+One 14 . https://doi.org/10.1371/journal.pone.0225319. 650 Denervaud, S., Knebel, J.F., Immordino-Yang, M.H., and Hagmann, P. (2020). Effects of 651 Traditional Versus Montessori Schooling on 4- to 15-Year Old children’s Performance 652 Monitoring. Mind, Brain, and Education 14 . https://doi.org/10.1111/mbe.12233. 653 Denervaud, S., Mumenthaler, C., Gentaz, E., and Sander, D. (2020). Emotion recognition 654 development: Preliminary evidence for an effect of school pedagogical practices. Learn. 655 
+
+Instr. 69 . https://doi.org/10.1016/j.learninstruc.2020.101353. 656 Duval, P.E., Fornari, E., Décaillet, M., Ledoux, J.B., Beaty, R.E., and Denervaud, S. (2023). 657 Creative thinking and brain network development in schoolchildren. Dev. Sci. 26 .658 https://doi.org/10.1111/desc.13389. 659 Ellis, C.T., and Turk-Browne, N.B. (2018). Infant fMRI: A Model System for Cognitive 660 Neuroscience. Trends Cogn Sci. 22 . https://doi.org/10.1016/j.tics.2018.01.005. 661 Fox, M.D., Snyder, A.Z., Vincent, J.L., Corbetta, M., Van Essen, D.C., and Raichle, M.E. (2005). 662 The human brain is intrinsically organized into dynamic, anticorrelated functional 663 networks. Proc. Natl. Acad. Sci. U. S. A. 102 . https://doi.org/10.1073/pnas.0504136102. 664 Gao, W. (2025). A hierarchical model of early brain functional network development. Trends Cogn. 665 
+
+Sci. 29 . https://doi.org/10.1016/j.tics.2025.04.001. 666 Genoud, P.A. (2011). Indice de position socioéconomique (IPSE): Un calcul simplifié. Université 667 de Fribourg. 668 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+31 Gilpin, A.T., Brown, M.M., and Pierucci, J.M. (2015). Relations Between Fantasy Orientation and 669 Emotion Regulation in Preschool . Early Educ. Dev. 26 .670 https://doi.org/10.1080/10409289.2015.1000716. 671 Golinkoff, R.M., Hirsh-Pasek, K., and Singer, D.G. (2006). Play = Learning: How Play Motivates 672 and Enhances Children’s Cognitive and Social-Emotional Growth. Oxford University 673 Press. https://doi.org/10.1093/acprof:oso/9780195304381.001.0001. 674 González-Sala, F., Gómez-Marí, I., Tárraga-Mínguez, R., Vicente-Carvajal, A., and Pastor-675 Cerezuela, G. (2021). Symbolic play among children with autism spectrum disorder: A 676 scoping review. Children 8 . https://doi.org/10.3390/CHILDREN8090801. 677 Guimerà, R., and Amaral, L.A.N. (2005). Functional cartography of complex metabolic networks. 678 
+
+Nature 433 . https://doi.org/10.1038/nature03288. 679 He, W., Sowman, P.F., Brock, J., Etchell, A.C., Stam, C.J., and Hillebrand, A. (2019). Increased 680 segregation of functional networks in developing brains. Neuroimage 200 .681 https://doi.org/10.1016/j.neuroimage.2019.06.055. 682 Herzberg, O., Fletcher, K.K., Schatz, J.L., Adolph, K.E., and Tamis-LeMonda, C.S. (2022). Infant 683 exuberant object play at home: Immense amounts of time-distributed, variable practice. 684 
+
+Child Dev. 93 . https://doi.org/10.1111/cdev.13669. 685 Hirsh-Pasek, K., Michnick Golinkoff, R., Berk, L.E., and Singer, D. (2010). A Mandate for Playful 686 Learning in Preschool: Presenting the Evidence. Oxford Academic. 687 https://doi.org/10.1093/acprof:oso/9780195382716.001.0001. 688 Hofferth, S.L., and Sandberg, J.F. (2001). How American children spend their time. Journal of 689 
+
+Marriage and Family 63 . https://doi.org/10.1111/j.1741-3737.2001.00295.x. 690 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+32 Hoffmann, J., and Russ, S. (2012). Pretend play, creativity, and emotion regulation in children. 691 
+
+Psychol. Aesthet. Creat. Arts 6. https://doi.org/10.1037/a0026299. 692 Howard-Jones, P.A., Taylor, J.R., and Sutton, L. (2002). The effect of play on the creativity of 693 young children during subsequent activity. Early Child Dev. Care 172 .694 https://doi.org/10.1080/03004430212722. 695 Howell, B.R., Styner, M.A., Gao, W., Yap, P.T., Wang, L., Baluyot, K., Yacoub, E., Chen, G., 696 Potts, T., Salzwedel, A., et al. (2019). The UNC/UMN Baby Connectome Project (BCP): 697 An overview of the study design and protocol development. Neuroimage 15 .698 https://doi.org/10.1016/j.neuroimage.2018.03.049. 699 Jaggy, A.K., Kalkusch, I., Bossi, C.B., Weiss, B., Sticca, F., and Perren, S. (2023). The impact of 700 social pretend play on preschoolers’ social development: Results of an experimental study. 701 
+
+Early Child. Res. Q. 64 . https://doi.org/10.1016/j.ecresq.2023.01.012. 702 Jenkinson, M., Bannister, P., Brady, M., and Smith, S. (2002). Improved optimization for the 703 robust and accurate linear registration and motion correction of brain images. Neuroimage 704 
+
+17 . https://doi.org/10.1016/S1053-8119(02)91132-8. 705 Jenkinson, M., Beckmann, C.F., Behrens, T.E.J., Woolrich, M.W., and Smith, S.M. (2012). FSL. 706 
+
+Neuroimage 62 . https://doi.org/10.1016/j.neuroimage.2011.09.015. 707 Jung, R.E., Mead, B.S., Carrasco, J., and Flores, R.A. (2013). The structure of creative cognition 708 in the human brain. Front. Hum. Neurosci. 7. https://doi.org/10.3389/fnhum.2013.00330. 709 Kasari, C., Freeman, S., and Paparella, T. (2006). Joint attention and symbolic play in young 710 children with autism: A randomized controlled intervention study. J. Child Psychol. 711 
+
+Psychiatry 47 . https://doi.org/10.1111/j.1469-7610.2005.01567.x. 712 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+33 Lee, E.B. (2021). Mullen Scales of Early Learning. Encyclopedia of Autism Spectrum Disorders. 713 https://doi.org/10.1007/978-3-319-91280-6_596. 714 Lee, S., Parthasarathi, T., and Kable, J.W. (2021). The ventral and dorsal default mode networks 715 are dissociably modulated by the vividness and valence of imagined events. Journal of 716 
+
+Neuroscience 41 . https://doi.org/10.1523/JNEUROSCI.1273-20.2021. 717 Li, Q., Xia, M., Zeng, D., Xu, Y., Sun, L., Liang, X., Xu, Z., Zhao, T., Liao, X., Yuan, H., et al. 718 (2024). Development of segregation and integration of functional connectomes during the 719 first 1,000 days. Cell Rep. 28 . https://doi.org/10.1016/j.celrep.2024.114168. 720 Li, S., Sun, J., and Dong, J. (2022). Family Socio-Economic Status and Children’s Play Behaviors: 721 The Mediating Role of Home Environment. Children 9.722 https://doi.org/10.3390/children9091385. 723 Li, Z., and Qiu, Z. (2018). How does family background affect children’s educational 724 achievement? Evidence from Contemporary China. Journal of Chinese Sociology 5.725 https://doi.org/10.1186/s40711-018-0083-8. 726 Lillard, A.S. (2015). The development of play. Handbook of child psychology and developmental 727 science: Cognitive processes. John Wiley & Sons, Inc. 728 https://doi.org/10.1002/9781118963418.childpsy211. 729 Lillard, A.S., Lerner, M.D., Hopkins, E.J., Dore, R.A., Smith, E.D., and Palmquist, C.M. (2013). 730 The impact of pretend play on children’s development: A review of the evidence. Psychol. 731 
+
+Bull . 139 . https://doi.org/10.1037/a0029321. 732 Lopata, C., Wallace, N. V., and Finn, K. V. (2005). Comparison of academic achievement between 733 montessori and traditional education programs. Journal of Research in Childhood 734 
+
+Education 20 . https://doi.org/10.1080/02568540509594546. 735 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+34 Luo, W., Liu, B., Tang, Y., Huang, J., and Wu, J. (2024). Rest to Promote Learning: A Brain 736 Default Mode Network Perspective. Behavioral Sciences 14 .737 https://doi.org/10.3390/bs14040349. 738 Manolitsis, G., Georgiou, G.K., and Tziraki, N. (2013). Examining the effects of home literacy 739 and numeracy environment on early reading and math acquisition. Early Child. Res. Q. 28 .740 https://doi.org/10.1016/j.ecresq.2013.05.004. 741 Marshall, C. (2017). Montessori education: a review of the evidence base. npj Science Learn 2.742 https://doi.org/10.1038/s41539-017-0012-7. 743 Mayor, J., and Mani, N. (2019). A short version of the MacArthur–Bates Communicative 744 Development Inventories with high validity. Behav. Res. Methods 51 .745 https://doi.org/10.3758/s13428-018-1146-0. 746 Miller, E.K., and Cohen, J.D. (2001). An integrative theory of prefrontal cortex function. Annu 747 
+
+Rev Neurosci. 24 . https://doi.org/10.1146/annurev.neuro.24.1.167. 748 Mireille Smits-van der Nat, Martijn Meeter, Chiel van der Veen, and Femke van der Wilt (2024). 749 The Value of Pretend Play for Social Competence in Early Childhood: A Meta-Analysis. 750 
+
+Educ. Psychol. Rev. 36 . https://doi.org/10.1007/s10648-024-09884-z. 751 Mohan, M., and Bhat, J.S. (2022). Influence of socio-economic status on play development in 752 toddlers – a mother child dyadic interaction based study. Neuropsychiatr. Enfance. Adolesc. 753 
+
+70 . https://doi.org/10.1016/j.neurenf.2021.11.005. 754 Moore, M., and Russ, S.W. (2008). Follow-up of a pretend play intervention: Effects on play, 755 creativity, and emotional processes in children. Creat. Res. J. 20 .756 https://doi.org/10.1080/10400410802391892. 757 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+35 Moreau, C.P., and Engeset, M.G. (2016). The downstream consequences problem- solving 758 mindsets: How playing with LEGO influences creativity. Journal of Marketing Research 759 
+
+53 . https://doi.org/10.1509/jmr.13.0499. 760 Muentener, P., Herrig, E., and Schulz, L. (2018). The efficiency of infants’ exploratory play is 761 related to longer-term cognitive development. Front. Psychol. 9. 762 https://doi.org/10.3389/fpsyg.2018.00635. 763 Mullineaux, P.Y., and Dilalla, L.F. (2009). Preschool Pretend Play Behaviors and Early 764 Adolescent Creativity. Journal of Creative Behavior 43. https://doi.org/10.1002/j.2162-765 6057.2009.tb01305.x. 766 Owens, M.M., Yuan, D.K., Hahn, S., Albaugh, M., Allgaier, N., Chaarani, B., Potter, A., and 767 Garavan, H. (2020). Investigation of psychiatric and neuropsychological correlates of 768 default mode network and dorsal attention network anticorrelation in children. Cerebral 769 
+
+Cortex 30 . https://doi.org/10.1093/cercor/bhaa143. 770 Padmanabhan, A., Lynch, C.J., Schaer, M., and Menon, V. (2017). The Default Mode Network in 771 Autism. Biol Psychiatry Cogn Neurosci Neuroimaging 2.772 https://doi.org/10.1016/j.bpsc.2017.04.004. 773 Pretend play in childhood: foundation of adult creativity (2014). Choice Reviews Online 51 .774 https://doi.org/10.5860/choice.51-4734. 775 Rand, W., and Montessori, M. (1941). The Secret of Childhood. Marriage Fam. Living 3.776 https://doi.org/10.2307/348766. 777 Rathunde, K., and Csikszentmihalyi, M. (2005). Middle school students’ motivation and quality 778 of experience: A comparison of Montessori and traditional school environments. American 779 
+
+Journal of Education 111 . https://doi.org/10.1086/428885. 780 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+36 Rubin, K.H., Maioni, T.L., and Hornung, M. (1976). Free Play Behaviors in Middle- and Lower-781 Class Preschoolers: Parten and Piaget Revisited. Child Dev. 47 .782 https://doi.org/10.2307/1128796. 783 Runco, M.A., and Jaeger, G.J. (2012). The Standard Definition of Creativity. Creat. Res. J. 24 .784 https://doi.org/10.1080/10400419.2012.650092. 785 Russ, S.W. (2020). Mind wandering, fantasy, and pretend play: A natural combination. Creativity 786 
+
+and the Wandering Mind: Spontaneous and Controlled Cognition. 787 https://doi.org/10.1016/B978-0-12-816400-6.00010-9. 788 Russ, S.W., and Wallace, C.E. (2012). Pretend Play and Creative Processes. Am. J. Play 6.789 Russ, S.W., Robins, A.L., and Christiano, B.A. (1999). Pretend play: Longitudinal prediction of 790 creativity and affect in fantasy in children. Creat. Res. J. 12 .791 https://doi.org/10.1207/s15326934crj1202_5. 792 Seeley, W.W., Menon, V., Schatzberg, A.F., Keller, J., Glover, G.H., Kenna, H., Reiss, A.L., and 793 Greicius, M.D. (2007). Dissociable intrinsic connectivity networks for salience processing 794 and executive control. Journal of Neuroscience 27 .795 https://doi.org/10.1523/JNEUROSCI.5587-06.2007. 796 Sidhu, J., Barlas, N., and Lifter, K. (2022). On the Meanings of Functional Play: A Review and 797 Clarification of Definitions. Topics in Early Childhood Special Education 42 .798 https://doi.org/10.1177/0271121420951859. 799 Sims, S., Faulkner, M., Stewart, P., Fleming, L., Merritt, S., Rezaei, R., Bharadwaj, P., Franchetti, 800 M., Raichlen, D., Jessup, C., et al. (2022). Network segregation is associated with 801 processing speed in the cognitively healthy oldest-old. eLife 14 .802 https://doi.org/10.7554/eLife.78076. 803 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+37 Siviy, S.M. (2016). A brain motivated to play: Insights into the neurobiology of playfulness. 804 
+
+Behaviour 153 . https://doi.org/10.1163/1568539X-00003349. 805 Skene, K., O’Farrelly, C.M., Byrne, E.M., Kirby, N., Stevens, E.C., and Ramchandani, P.G. (2022). 806 Can guidance during play enhance children’s learning and development in educational 807 contexts? A systematic review and meta-analysis. Child Development 93 .808 https://doi.org/10.1111/cdev.13730. 809 Sobe, N.W. (2004). Challenging the gaze: the subject of attention and a 1915 montessori 810 demonstration classroom. Educ. Theory 54 . https://doi.org/10.1111/j.0013-811 2004.2004.00020.x. 812 Stagnitti, K., and Lewis, F.M. (2015). Quality of pre-school children’s pretend play and subsequent 813 development of semantic organization and narrative re-telling skills. Int. J. Speech. Lang. 814 
+
+Pathol. 17 . https://doi.org/10.3109/17549507.2014.941934. 815 Sydnor, V.J. (2025). Human thalamocortical structural connectivity develops in line with a 816 hierarchical axis of cortical plasticity. Nat Neurosci. 28. https://doi.org/10.1038/s41593-817 025-01991-6. 818 Thomas Yeo, B.T., Krienen, F.M., Sepulcre, J., Sabuncu, M.R., Lashkari, D., Hollinshead, M., 819 Roffman, J.L., Smoller, J.W., Zöllei, L., Polimeni, J.R., et al. (2011). The organization of 820 the human cerebral cortex estimated by intrinsic functional connectivity. J. Neurophysiol. 821 
+
+106 . https://doi.org/10.1152/jn.00338.2011. 822 Tooley, U.A., Bassett, D.S., and Mackey, A.P. (2022). Functional brain network community 823 structure in childhood: Unfinished territories and fuzzy boundaries. Neuroimage 247 .824 https://doi.org/10.1016/j.neuroimage.2021.118843. 825 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+38 Tooley, U.A., MacKey, A.P., Ciric, R., Ruparel, K., Moore, T.M., Gur, R.C., Gur, R.E., 826 Satterthwaite, T.D., and Bassett, D.S. (2020). Associations between Neighborhood SES 827 and Functional Brain Network Development. Cerebral Cortex 30 .828 https://doi.org/10.1093/cercor/bhz066. 829 Tooley, U.A., Park, A.T., Leonard, J.A., Boroshok, A.L., McDermott, C.L., Tisdall, M.D., Bassett, 830 D.S., and Mackey, A.P. (2022). The Age of Reason: Functional Brain Network 831 Development during Childhood. Journal of Neuroscience 42 .832 https://doi.org/10.1523/JNEUROSCI.0511-22.2022. 833 Wallace, C.E., and Russ, S.W. (2015). Pretend play, divergent thinking, and math achievement in 834 girls: A longitudinal study. Psychol. Aesthet. Creat. Arts 9.835 https://doi.org/10.1037/a0039006. 836 Wang, F., Zhang, H., Wu, Z., Hu, D., Zhou, Z., Girault, J.B., Wang, L., Lin, W., and Li, G. (2023). 837 Fine-grained functional parcellation maps of the infant cerebral cortex. eLife 12 .838 https://doi.org/10.7554/eLife.75401. 839 Wang, R., Liu, M., Cheng, X., Wu, Y., Hildebrandt, A., and Zhou, C. (2021). Segregation, 840 integration, and balance of large-scale resting brain networks configure different cognitive 841 abilities. Proc. Natl. Acad. Sci. U. S. A. 118 . https://doi.org/10.1073/pnas.2022288118. 842 Watts, D.J., and Strogatz, S.H. (2011). Collective dynamics of “small-world” networks. Nature 843 
+
+393 . https://doi.org/10.1038/30918. 844 Weisberg, D.S., Hirsh-Pasek, K., Golinkoff, R.M., and McCandliss, B.D. (2014). Mise en place: 845 Setting the stage for thought and action. Trends Cogn Sci. 18 .846 https://doi.org/10.1016/j.tics.2014.02.012. 847 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+39 Weisberg, D.S., Hirsh-Pasek, K., Golinkoff, R.M., Kittredge, A.K., and Klahr, D. (2016). Guided 848 Play: Principles and Practices. Curr. Dir. Psychol. Sci. 25 .849 https://doi.org/10.1177/0963721416645512. 850 White, R.E., Thibodeau-Nielsen, R.B., Palermo, F., and Mikulski, A.M. (2021). Engagement in 851 social pretend play predicts preschoolers’ executive function gains across the school year. 852 
+
+Early Child. Res . Q. 56 . https://doi.org/10.1016/j.ecresq.2021.03.005. 853 Wolff, J.J., Boyd, B.A., and Elison, J.T. (2016). A quantitative measure of restricted and repetitive 854 behaviors for early childhood. J. Neurodev. Disord. 8. https://doi.org/10.1186/s11689-016-855 9161-x. 856 Yin, W., Li, T., and Wu, Z. (2025). Charting brain functional development from birth to 6 years 857 of age . Nat Hum Behav 9. https://doi.org/10.1038/s41562-025-02160-2. 858 Yogman, M., Garner, A., Hutchinson, J., Hirsh-Pasek, K., Golinkoff, R.M., Baum, R., Gambon, 859 T., Lavin, A., Mattson, G., and Wissow, L. (2018). The power of play: A pediatric role in 860 enhancing development in young children. Pediatrics 142 .861 https://doi.org/10.1542/peds.2018-2058. 862 Zosh, J.M., Hirsh-Pasek, K., Hopkins, E.J., Jensen, H., Liu, C., Neale, D., Solis, S.L., and 863 Whitebread, D. (2018). Accessing the inaccessible: Redefining play as a spectrum. Front 864 
+
+Psychol. 2 . https://doi.org/10.3389/fpsyg.2018.01124. 865 866 
+
+867 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+40 
+
+Table1 868 
+
+Demographics of participants 869 
+
+870 
+
+Study 1 (N = 143) 
+
+Study 2 (N = 108) 
+
+Study 3 Montessori (N = 22) 
+
+Study 3 Traditional (N = 23) 
+
+Age (years) 1.910 ± 0.6090 6.729 ± 1.382 8.567 ± 1.869 8.564 ± 1.826 
+
+Sex (male) 67 (47%) 52 (48%) 11 (50%) 9 (39%) 
+
+Ethnicity 
+
+Hispanic or Latino 
+
+No Response 11 (8%) 0 (0%) 17 (16%) 1 (0%) 0 (0%) 22 (100%) 0 (0%) 23 (100%) 
+
+Race 
+
+White 117 (82%) 45 (42%) 22 (100%) 23 (100%) 
+
+Black 2 (1%) 61 (56%) 0 (0%) 0 (0%) 
+
+Asian 1 (0%) 14 (13%) 0 (0%) 0 (0%) 
+
+Others 
+
+No Response 23 (16%) 0 (0%) 1 (0%) 0 (0%) 0 (0%) 0 (0%) 0 (0%) 0 (0%) 
+
+Income N/A N/A 
+
+25-35k 6 (4%) 37 (34%) 
+
+35-50k 3 (2%) 17 (16%) 
+
+50-75k 27 (19%) 11 (10%) 
+
+75-100k 24 (17%) 4 (4%) 
+
+100-150k 48 (34%) 0 (0%) 
+
+150-200k 22 (15%) 17 (16%) 
+
+200k-
+
+No Response 12 (8%) 1 (0%) 12 (11%) 9 (8%) 
+
+Parent Education 
+
+N/A N/A 
+
+Less than college 22 (15%) 66 (61%) 
+
+College degree 91 (64%) 17 (16%) 
+
+Graduate degree 
+
+No Response 29 (20%) 1 (0%) 23 (21%) 2 (2%) 
+
+SES Composite Score N/A N/A 3.034 ± 0.403 3.299 ± 0.602 
+
+871 
+
+872 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+41 
+
+873 
+
+Figure 1 
+
+Hypothetical framework linking play and brain functional network development 
+
+.CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint 42 
+
+874 
+
+(A) Generalized additive model (GAM)-predicted developmental trajectory of play behavior in infancy, 
+
+accompanied by a 95% confidence interval ( R2 = 0.111, P < 0.001). (B, C, D) GAM-predicted 
+
+developmental trajectory of within DMN (B, R2 = 0.029, PFDR < 0.001), within CN (C, R2 = 0.012, PFDR 
+
+= 0.036) and between DMN-CN (D, R2 = 0.100, PFDR < 0.001) connectivity. (E) Heatmap map of 
+
+correlational strength between play behavior and functional connectivity. * P < 0.05. (F, G, H) 
+
+Correlation between play and within DMN (F, R2 = 0.015, PFDR = 0.021), within CN (G, R2 = 0.013, 
+
+PFDR = 0.021) and between DMN-CN (H, R2 = 0.013, PFDR = 0.021) connectivity. 
+
+Figure 2 
+
+Associations between play behavior and functional connectivity 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+43 
+
+875 
+
+(A) Schematic of the calculation of the clustering coefficient. (B) Associations between age and clustering 
+
+coefficients across cortex. (C) Associations between play and clustering coefficients across cortex. (D) 
+
+Schematic of the calculation of the participation coefficient. (E) Associations between age and 
+
+participation coefficients across cortex. (F) Associations between play and participation coefficients across 
+
+cortex. For panels B,C,E and F, the upper rows show results for all brain parcels, and the lower rows 
+
+display uncorrected results with p < 0.05. Results for the left hemisphere are presented in Figure S3. 
+
+Figure 3 
+
+Associations between age, play and functional network measures 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+44 
+
+876 
+
+877 
+
+878 
+
+879 
+
+(A) Generalized additive model (GAM) predicted developmental trajectory of play behavior in 
+
+childhood, accompanied by a 95% confidence interval ( R2 = 0.042, P = 0.035). (B, C) GAM-predicted 
+
+developmental trajectory of between DMN-SAL (B, R2 = 0.074, PFDR = 0.007) and between CN-SAL 
+
+(C, R2 = 0.008, PFDR = 0.366) connectivity. (D) Heatmap map of correlational strength between play 
+
+behavior and functional connectivity. * P < 0.05. (E, F) Correlation between play and between DMN-
+
+SAL (E, R2 = 0.080, PFDR = 0.012) and between CN-SAL (F, R2 = 0.067, PFDR = 0.012) connectivity. vb 
+
+Figure 4 
+
+Associations between play behavior and functional connectivity 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+45 
+
+880 
+
+(A) Associations between age and clustering coefficients across cortex. (B) Associations between play 
+
+and clustering coefficients across cortex. (C) Associations between age participation coefficients across 
+
+cortex. (D) Associations between play and participation coefficients across cortex. For panels A-D, the 
+
+upper rows show results for all brain parcels, and the lower rows display uncorrected results with p <
+
+0.05. Results for the left hemisphere are presented in Figure S5. 
+
+Figure 5 
+
+Associations between age, play and functional network measures 
+
+> .CC-BY-NC 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 28, 2026. ;https://doi.org/10.64898/2026.03.26.714609 doi: bioRxiv preprint
+
+46 
+
+881 
+
+882 
+
+(A) Heatmap showing the strength of correlations between play behavior and functional connectivity. 
+
+*PFDR < 0.05. Age, sex, and mean framewise displacement were controlled as covariates. (B) Group 
+
+comparison of DMN-SAL connectivity between children in traditional (gray) and Montessori (purple) 
+
+schools ( β = 3.48, PFDR = 0.049). (C) Group comparison of DMN-CN connectivity between children in 
+
+traditional (gray) and Montessori (purple) schools ( β = 3.55, PFDR = 0.049). 
+
+Figure 6 
+
+Relationship between school environment and brain functional network connectivity

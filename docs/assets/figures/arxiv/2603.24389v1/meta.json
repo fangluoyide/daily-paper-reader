@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-001.webp",
+      "caption": "Fig. 4: Overview of the pilot deployment study and key outcomes.",
+      "page": 11,
+      "index": 1,
+      "width": 580,
+      "height": 435
+    },
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-002.webp",
+      "caption": "Table 3: Indicator-level agreement between LLM predictions and human expert annotations for ECQRS-EC [34] and SSTEW [30] scales, measured by percentage agreement (%Agr.) and Cohen’s Kappa (κ) which quantifies true agreement beyond chance following [6].",
+      "page": 11,
+      "index": 2,
+      "width": 725,
+      "height": 257
+    },
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-003.webp",
+      "caption": "Fig. 1: Overview of the TEPE-TCI dataset, comprising over 370 hours of teacher–child interaction audio from 41 public preschools (105 classrooms). Data were ethically approved, expert-annotated, and analyzed across levels. the technical feasibility and practical scalability of AI-augmented quality assessment in early childhood education.",
+      "page": 3,
+      "index": 3,
+      "width": 725,
+      "height": 452
+    },
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-004.webp",
+      "caption": "Fig. 2: Overview of the Interaction2Eval pipeline.",
+      "page": 8,
+      "index": 4,
+      "width": 647,
+      "height": 330
+    },
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-005.webp",
+      "caption": "Table 1: Summary of children’s speech and educational interaction datasets. K denotes kindergarten, G denotes grade. Diar. indicates speaker diarization and Quality FW indicates quality assessment framework.",
+      "page": 4,
+      "index": 5,
+      "width": 725,
+      "height": 267
+    },
+    {
+      "url": "assets/figures/arxiv/2603.24389v1/fig-006.webp",
+      "caption": "Fig. 3: Frequently misrecognized terms in raw ASR outputs (term size reflects error frequency).",
+      "page": 9,
+      "index": 6,
+      "width": 582,
+      "height": 331
+    }
+  ]
+}

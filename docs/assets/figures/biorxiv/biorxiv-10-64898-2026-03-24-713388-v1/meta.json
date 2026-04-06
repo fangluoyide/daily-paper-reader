@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-24-713388-v1/fig-001.webp",
+      "caption": "Figure 2. Gaze shifts between the face and the active hand. A, drawings illustrating the action 'serving and eating jelly' with all gaze shifts between the face and the active hand measured for this action across age groups overlaid as straight lines. B, estimated marginal mean (EMM) of shift counts for each action type, arranged top-to-bottom from more complex to simpler ones. C, drawings illustrating the five stages the actions were divided in, depicted here for 'serving and eating jelly', but shared across actions Opening: the actress looks to the front smiling with both hands standing still over the table; onset: the actress moves her active hand towards the center of the table, grasps an object (spoon in this case) and serves a piece of jelly; middle: the actress moves her hand from the table towards the face, eats the jelly, and then moves the hand downwards; offset: she leaves the object over the table and returns the hand to its original position; closing: the actress looks again to the front and smiles. D, EMM of shift counts per action stage, combined for simple and complex actions, respectively. In B and D, error bars correspond to SE of the EEM counts *, P < 0.05.",
+      "page": 24,
+      "index": 1,
+      "width": 910,
+      "height": 663
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-24-713388-v1/fig-002.webp",
+      "caption": "Figure 3. Structure during visual exploration of actions. A, main steps in the analysis of gaze entropy, a measure of order of the gaze signal34. For each stimulus presentation, gaze shifts among the AOIs are obtained from the eye tracking data, yielding a string of visited AOIs (illustrated in the middle of the panel); then, a transition matrix is derived with the probabilities (proportions) of shifts between each pair of AOI (excluding the diagonal, i.e., shifts within an AOIs). From this matrix, a measure of entropy is calculated using the formulas indicated on the right. The one below normalizes entropy values so that they range between 0 and 1 (the higher the values, the less structured the exploration) (see further details in Methods). B, estimated levels of entropy (marginal means) with SE as error bars; dots are the measured entropy values of included trials. *, P < 0.05.",
+      "page": 25,
+      "index": 2,
+      "width": 898,
+      "height": 638
+    }
+  ]
+}

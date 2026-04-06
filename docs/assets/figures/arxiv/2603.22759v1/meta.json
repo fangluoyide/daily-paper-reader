@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-001.webp",
+      "caption": "Fig. 1: The Experimental setup",
+      "page": 6,
+      "index": 1,
+      "width": 454,
+      "height": 419
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-002.webp",
+      "caption": "Fig. 3: Group-level behavioral response patterns across all stimuli.",
+      "page": 11,
+      "index": 2,
+      "width": 454,
+      "height": 283
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-003.webp",
+      "caption": "Fig. 8: (a) Latency and (b) Mean EOP distribution curves showing deviation from normality, justifying rank-based analyses.",
+      "page": 15,
+      "index": 3,
+      "width": 862,
+      "height": 254
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-004.webp",
+      "caption": "Fig. 9: Raincloud plots showing Duration distributions across stimuli for autistic and typical participants. Longer durations under NR are evident for autistic children.",
+      "page": 15,
+      "index": 4,
+      "width": 454,
+      "height": 294
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-005.webp",
+      "caption": "Table 5: Summary of group-dominant metrics across analytical dimensions.",
+      "page": 14,
+      "index": 5,
+      "width": 487,
+      "height": 342
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-006.webp",
+      "caption": "Fig. 5: Three-dimensional response surfaces illustrating mean response patterns across turns and stimulus conditions. (a) Typical group responses show stronger engagement with socially familiar cues. (b) ASD group responses demonstrate greater stability and higher engagement for robotic modalities across repeated turns.",
+      "page": 13,
+      "index": 6,
+      "width": 950,
+      "height": 316
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-007.webp",
+      "caption": "Fig. 6: Turn-wise response maps across the three name-calling trials. (a) Typical group responses. (b) ASD group responses.",
+      "page": 13,
+      "index": 7,
+      "width": 950,
+      "height": 331
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-008.webp",
+      "caption": "Table 11: Overview of analytical models and corresponding findings.",
+      "page": 17,
+      "index": 8,
+      "width": 932,
+      "height": 406
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-009.webp",
+      "caption": "Table 10: Temporal slopes (β1) across stimuli and groups with interpretation.",
+      "page": 17,
+      "index": 9,
+      "width": 981,
+      "height": 456
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22759v1/fig-010.webp",
+      "caption": "Fig. 4: Ridgeline density distributions showing within-group differences across stimuli.",
+      "page": 12,
+      "index": 10,
+      "width": 454,
+      "height": 508
+    }
+  ]
+}

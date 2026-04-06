@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-713084-v1/fig-001.webp",
+      "caption": "Fig. 3| Methodological heterogeneity and its effects on reported social differences in 257 autism. (a) Four major sources of methodological variabilities in autism research that had 258 significant effects on the degree of social difficulties: tools (e.g., more alterations observed in 259 surveys than experiments, independent samples t(1386) = 7.477, 95% CI = [0.355, 0.607], η2 260 = 0.039, p <.001), task paradigms (e.g., atypical social motivation was only observed in social 261 seeking paradigm, but not social reward paradigm, t(9) = 7.439, 95% CI = [0.606, 1.135], η² 262 = 0.860, p <.001), indices (e.g., plot-light task performance of action perception was worse 263 when analyzing reaction time variables than accuracy variables, t(33) = 2.373, 95% CI = [0.119, 264 1.556], η² = 0.146, p = 0.024), and ecological validity (e.g., more social differences detected 265 by naturalistic/interactive games than tightly controlled lab tasks, p = 0.012). Hedges’ g values 266 on the y-axis represent altered performance (i.e., ASC-NT difference, more negative values 267 indicate poorer performance in ASC). While dots indicate the estimated effect size; Red and 268",
+      "page": 11,
+      "index": 1,
+      "width": 932,
+      "height": 1038
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-713084-v1/fig-002.webp",
+      "caption": "Fig. 2| PRISMA flow chart of the systematic review process. 210",
+      "page": 8,
+      "index": 2,
+      "width": 941,
+      "height": 908
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-713084-v1/fig-003.webp",
+      "caption": "Fig. 5 | A hierarchical model of social functioning in autism. This figure illustrates social 443 functioning as a five-level hierarchy, progressing from foundational to complex abilities. Each 444 level represents a domain—motivation-based, motor-based, emotion-based, inference-based, 445 and complex social skills—arranged according to prior theories of developmental sequence in 446 NT (neurotypical) 27 as well as our findings of cross-sectional ordering in ASC (Fig. 4a). Darker 447 red shading indicates greater reported differences between ASC and NT individuals (from Fig. 448 1c). In neurotypical development, social motivation appears in early infancy, supporting social 449 learning through joint attention and engagement with caregivers. Motor-based skills 450 subsequently facilitate these interactions, emotional understanding enriches them, and higher-451 level inference abilities refine them, together contributing to complex social functioning 27. In 452 autism, early differences in social motivation may alter child-caregiver interactions, reducing 453 opportunities for social input and interactive learning. These early differences can set off 454 cascading effects, which are associated with progressively greater differences in higher-order 455 social skills over time due to accumulating developmental influences. Notably, although motor-456 based skills arise early in this sequence, their differences in autism are less pronounced than 457 those in motivation-based domain. This may be because imitation and action perception can 458 develop through alternative pathways (e.g., associative sensorimotor learning and 459 environmental feedback60), making them less reliant on social engagement. This hierarchical 460 model reflects both the vertical developmental organization of social cognition and the dynamic 461 relationships among domains, offering insight into the interconnected nature of social 462 difficulties in autism and contributing to a broader understanding of how human social 463 capacities develop, interact, and vary across conditions. 464",
+      "page": 19,
+      "index": 3,
+      "width": 939,
+      "height": 437
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-713084-v1/fig-004.webp",
+      "caption": "Fig. 4| Onset, dynamics, and moderators of social difficulties in autism. (a) Developmental 376 onset of social difference reported in each domain. Red dots represented each study and the 377 density heatmap below showed the distribution of studies showing an effect across early 378 childhood development (infancy and preschool age). The earliest observed group differences in 379 autism, based on available cross-sectional data, are in motivation (~6 months), followed by 380 motor (~12 months), emotion (~18.2 months), and inference (~36.8 months). These age 381 estimates should be interpreted as the earliest ages at which group differences have been 382 reported in literature, not as evidence of a within-individual longitudinal developmental 383 trajectory. Meta-regression analyses are performed for (b-c) demographic factors (i.e. mean age 384 and male ratio) of autistic samples, and (d) sociocultural moderators (i.e., perceived social 385 support and masculinity in the country of residence). Hedges’ g values on the y-axis represent 386 altered performance (i.e., ASC-NT difference, more negative values indicate poorer 387 performance in ASC). Regression lines and p-values indicate the significance of correlations 388 after hyperbolic and symmetric Gaussian transformation. (e) Changeability and dynamics of 389 social difficulties across time. Proportion of reported alterations (y-axis) by component (x-axis) 390 across five domains, comparing period of childhood (≤18 years, open circles) versus adulthood 391 (>18 years, filled circles). Red lines indicate social difficulties become significantly worsening 392",
+      "page": 16,
+      "index": 4,
+      "width": 953,
+      "height": 835
+    }
+  ]
+}

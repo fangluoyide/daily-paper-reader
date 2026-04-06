@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-001.webp",
+      "caption": "Figure 3: Participant flow diagram (CONSORT-style).",
+      "page": 6,
+      "index": 1,
+      "width": 498,
+      "height": 339
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-002.webp",
+      "caption": "Figure 4: Usability and engagement context for interpreting downstream outcomes. (A) Distribution of SUS total scores (T3; continued-access group). (B) SUS item-level mean scores (1–5). Panels (C–D) contextualize the “high usability ≠ transfer” paradox and the scaffold-versus-substitute pathways.",
+      "page": 11,
+      "index": 2,
+      "width": 1026,
+      "height": 380
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-003.webp",
+      "caption": "Table 1: Qrobot platform characteristics and interaction modalities relevant to the present study.",
+      "page": 7,
+      "index": 3,
+      "width": 1029,
+      "height": 277
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-004.webp",
+      "caption": "Table 2: Participant characteristics and baseline balance between groups. SMD = Standardized Mean Difference (absolute values closer to 0 indicate better balance).",
+      "page": 7,
+      "index": 4,
+      "width": 856,
+      "height": 322
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-005.webp",
+      "caption": "Table 5: Descriptive statistics for primary outcomes by group and timepoint. Higher SMS, RMET, and BES scores indicate better functioning; lower SCARED and RCADS scores indicate less anxiety.",
+      "page": 10,
+      "index": 5,
+      "width": 1050,
+      "height": 387
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-006.webp",
+      "caption": "Table 7: Joint display aligning quantitative outcomes with qualitative themes. Code labels refer to Supplementary Table S19.",
+      "page": 14,
+      "index": 6,
+      "width": 1052,
+      "height": 265
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-007.webp",
+      "caption": "Figure 6: Effect size analysis illustrating the cross-domain trade-off pattern. (A) Cohen’s 𝑑 at T3 with 95% confidence intervals. (B) Effect-size trajectories across time. (C) Transfer outcomes at T3. (D) Statistical summary. For anxiety outcomes, negative 𝑑 indicates lower (better) scores under continued access; for transfer outcomes, negative 𝑑 indicates lower (worse) human-oriented scores under continued access.",
+      "page": 14,
+      "index": 7,
+      "width": 1024,
+      "height": 376
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-008.webp",
+      "caption": "Figure 5: Enhanced trajectories across outcome domains for continued access (robot access) versus withdrawal. Panels D–E show anxiety outcomes (SCARED and RCADS; lower is better).",
+      "page": 12,
+      "index": 8,
+      "width": 1023,
+      "height": 607
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-009.webp",
+      "caption": "Table 6: Follow-up post-intervention (T3) between-group comparisons with effect sizes and 95% confidence intervals. These 𝑡-tests provide simple-effect contrasts complementing the primary longitudinal mixed-effects models (Group×Time). All comparisons use independent samples 𝑡-tests with Holm correction for multiple outcomes.",
+      "page": 12,
+      "index": 9,
+      "width": 1050,
+      "height": 420
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-010.webp",
+      "caption": "Table 4: Quantitative measures: respondent, format, and scoring.",
+      "page": 9,
+      "index": 10,
+      "width": 1031,
+      "height": 241
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02642v1/fig-011.webp",
+      "caption": "Table 3: Assessment schedule and data sources across timepoints.",
+      "page": 9,
+      "index": 11,
+      "width": 1031,
+      "height": 265
+    }
+  ]
+}

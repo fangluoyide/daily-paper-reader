@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-001.webp",
+      "caption": "Figure 2: Overview of design sessions with children: (a) circle time, (b) free play, (c) stickies from likes, dislikes, and design ideas activity, and (d) comicboarding activity.",
+      "page": 6,
+      "index": 1,
+      "width": 1056,
+      "height": 232
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-002.webp",
+      "caption": "Figure 3: Overview of the comic panels that were used in the Comicboarding Activity: What Happens Next?Appendix A presents the full set of comic boards.",
+      "page": 6,
+      "index": 2,
+      "width": 476,
+      "height": 296
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-003.webp",
+      "caption": "Figure 8: Emotional Misalignment Scenario: An AI toy responds in an unexpected way during a child’s emotionally vulnerable moment, raising questions over the empathy and support an AI toy offers during distressing moments.",
+      "page": 15,
+      "index": 3,
+      "width": 304,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-004.webp",
+      "caption": "Figure 11: Inconsistent Recall Scenario: A child asks the AI toy to retell a story it previously narrated. However, this time the AI toy narrates a different version of the story, prompting questions about the toy’s memory and reliability.",
+      "page": 15,
+      "index": 4,
+      "width": 304,
+      "height": 446
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-005.webp",
+      "caption": "Figure 9: Embodied Continuity Scenario: An AI toy is physically damaged and later repaired by the parent, with its voice emerging from a different plush toy, raising questions over its physical form and attachment (contd. next page).",
+      "page": 15,
+      "index": 5,
+      "width": 304,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-006.webp",
+      "caption": "Figure 10: Embodied Continuity Scenario: An AI toy is physically damaged and later repaired by the parent, with its voice emerging from a different plush toy, raising questions over its physical form and attachment.",
+      "page": 15,
+      "index": 6,
+      "width": 304,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-007.webp",
+      "caption": "Figure 5: Overview of comics from the comicboarding activity.",
+      "page": 10,
+      "index": 7,
+      "width": 1056,
+      "height": 309
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-008.webp",
+      "caption": "Figure 6: Unpredictability Scenario: After a child recalls a friend’s mean comment, the toy references the remark during group play, raising questions over unpredictability and social appropriateness.",
+      "page": 14,
+      "index": 8,
+      "width": 304,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-009.webp",
+      "caption": "Figure 7: Shared Secrets Scenario: A child confides a personal secret to the AI toy, which the toy later references in front of other family members, raising questions about privacy and information control.",
+      "page": 14,
+      "index": 9,
+      "width": 304,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-010.webp",
+      "caption": "Figure 4: Photos from the free-play activity across the two design sessions, showing children interacting with the AI toys.",
+      "page": 8,
+      "index": 10,
+      "width": 1056,
+      "height": 211
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-011.webp",
+      "caption": "Table 1: Child Participant Demographics and Prior AI Use (Self-Reported)",
+      "page": 4,
+      "index": 11,
+      "width": 1050,
+      "height": 271
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-012.webp",
+      "caption": "Figure 12: Mimicry Scenario: The AI toy begins mimicking, repeating words or phrases the child has recently used in their interactions, raising questions about whether such imitation feels playful or uncomfortable over time.",
+      "page": 16,
+      "index": 12,
+      "width": 304,
+      "height": 444
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-013.webp",
+      "caption": "Figure 14: Paywalled Memory Scenario: The AI toy forgets the child’s friends and then prompts the child to subscribe to a paid plan to extend its memory, raising questions about memory and monetization.",
+      "page": 16,
+      "index": 13,
+      "width": 304,
+      "height": 444
+    },
+    {
+      "url": "assets/figures/arxiv/2604.02629v1/fig-014.webp",
+      "caption": "Figure 13: Paywalled Memory Scenario: The AI toy forgets the child’s friends and then prompts the child to subscribe to a paid plan to extend its memory, raising questions about memory and monetization (contd. next page).",
+      "page": 16,
+      "index": 14,
+      "width": 304,
+      "height": 444
+    }
+  ]
+}

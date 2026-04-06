@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-001.webp",
+      "caption": "Fig. 1: REMind engages players in role-playing with three social robots to practice anti-bullying bystander intervention.",
+      "page": 1,
+      "index": 1,
+      "width": 477,
+      "height": 306
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-002.webp",
+      "caption": "Fig. 6: (a) Empathy scores before and after the intervention. No significant change was observed. (b) Relationship between empathy toward humans and the robot avatar.",
+      "page": 6,
+      "index": 2,
+      "width": 504,
+      "height": 691
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-003.webp",
+      "caption": "Fig. 7: Player interaction in REMind demonstrating an example of multi-robot drama facilitating perspective-taking.",
+      "page": 7,
+      "index": 3,
+      "width": 1014,
+      "height": 293
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-004.webp",
+      "caption": "Fig. 2: Three Robot Characters in REMind.",
+      "page": 3,
+      "index": 4,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-005.webp",
+      "caption": "Fig. 3: Experiment room layout.",
+      "page": 4,
+      "index": 5,
+      "width": 504,
+      "height": 291
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-006.webp",
+      "caption": "Fig. 4: Self-efficacy for defending increased postintervention. Boxes show the interquartile range (IQR); whiskers extend to 1.5× IQR.",
+      "page": 5,
+      "index": 6,
+      "width": 504,
+      "height": 318
+    },
+    {
+      "url": "assets/figures/arxiv/2604.00300v1/fig-007.webp",
+      "caption": "Fig. 5: Post-test responses reflected more accurate expectations about defending outcomes. Red and blue lines mark bully- and victim-related targets, respectively.",
+      "page": 5,
+      "index": 7,
+      "width": 504,
+      "height": 279
+    }
+  ]
+}

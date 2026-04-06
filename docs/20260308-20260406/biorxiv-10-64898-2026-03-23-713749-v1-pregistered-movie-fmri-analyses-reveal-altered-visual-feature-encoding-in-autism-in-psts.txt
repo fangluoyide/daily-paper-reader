@@ -1,0 +1,2415 @@
+Title: 2026.03.23.713749v1.full.pdf
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.03.23.713749v1.full.pdf
+
+Number of Pages: 41
+
+Markdown Content:
+# Pregistered movie-fMRI analyses 1
+
+# reveal altered visual feature 2
+
+# encoding in autism in pSTS 3
+
+Jeff Mentch 1,2 , Yibei Chen 2, Tamara Vanderwal 3,4 , Satrajit S Ghosh 1,2,5* 4  
+
+> *For correspondence:
+> satra@mit.edu (SSG)
+
+1Program in Speech and Hearing Bioscience and Technology, Harvard University, 5
+
+Cambridge, United States; 2McGovern Institute for Brain Research, Massachusetts 6
+
+Institute of Technology, Cambridge, United States; 3Department of Psychiatry, 7
+
+University of British Columbia, Vancouver, British Columbia, Canada; 4BC Children’s 8
+
+Hospital Research Institute, Vancouver, British Columbia, Canada; 5Department of 9
+
+Otolaryngology, Harvard Medical School, Boston, United States 10 11 
+
+Abstract Sensory–perceptual differences are widely reported in autism, yet their underlying 12 
+
+mechanisms remain unclear. We tested preregistered hypotheses using stacked encoding 13 
+
+models applied to naturalistic movie-viewing fMRI from children and adolescents with and 14 
+
+without an autism diagnosis from the Healthy Brain Network. We mapped cortical 15 
+
+responsiveness to low- and high-level auditory and visual feature spaces. Contrary to enhanced 16 
+
+perceptual functioning predictions, autism was not associated with increased low-level encoding 17 
+
+in primary sensory cortices. Instead, autistic children and adolescents had reduced high-level 18 
+
+visual representations and a relative shift toward low-level over high-level feature encoding in 19 
+
+integration and social brain regions including the pSTS and adjacent face/social areas. In pSTS, 20 
+
+this high–low weighting tracked Social Responsiveness Scale (SRS) scores. By contrast, 21 
+
+audio–visual modality preference and sensory dominance were broadly conserved across groups. 22 
+
+Developmentally, encoding exhibited strong, lateralized, modality-congruent age effects. 23 
+
+Together, these findings favor weak central coherence accounts over early sensory enhancement, 24 
+
+constrain mechanisms to altered visual feature weighting within social/multisensory networks, 25 
+
+and demonstrate the value of naturalistic stimuli and encoding models for characterizing 26 
+
+sensory-perceptual neurodevelopmental differences. 27 28 
+
+## Introduction 29 
+
+Sensory processing differences are a common and clinically meaningful feature of autism with a 30 
+
+profound impact on daily life ( Ben-Sasson et al., 2007 ; Chamak et al., 2008 ). As many as 90% of 31 
+
+autistic individuals exhibit altered sensory function ( Leekam et al., 2007 ; Tavassoli et al., 2014 ) with 32 
+
+differences reported across all senses ( Robertson and Baron-Cohen, 2017 ; Dakin and Frith, 2005 ;33 
+
+Nieto Del Rincón, 2008 ; Bennetto et al., 2007 ; Balasco et al., 2020 ; DuBois et al., 2016 ), includ-34 
+
+ing features such as hyper- and hypo-sensitivities, enhanced perceptual abilities ( Lefebvre et al., 35 
+
+2023 ; Mottron et al., 2006 ; O’riordan, 2004 ; Mottron and Burack, 2001 ), altered susceptibility to 36 
+
+perceptual illusions ( Happé, 1996 ; Feldman et al., 2022 ), and differences in multisensory integra-37 
+
+tion (MSI) ( Stevenson et al., 2014b ,a; Feldman et al., 2018 ). These traits emerge early, track with 38 
+
+social and cognitive outcomes, and vary across individuals and modalities ( Uljarević et al., 2017 ;39 
+
+Williams et al., 2023 ; Georgiades et al., 2017 ; Chen et al., 2022 ; Simonoff et al., 2020 ; Smith et al., 40 
+
+1 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint 2012 ). Despite their prevalence and impact, the neurobiological substrates of these altered sen-41 
+
+sory functions remain relatively uncharacterized ( Marco et al., 2011 ; Robertson and Baron-Cohen, 42 
+
+2017 ). 43 
+
+Theories of sensory differences 44 
+
+A number of different theories exist surrounding autistic sensory differences. Enhanced percep-45 
+
+tual functioning (EPF) emphasizes heightened low-level processing and improved discrimination 46 
+
+(Mottron and Burack, 2001 ; Mottron et al., 2006 ), while weak central coherence (WCC) highlights 47 
+
+a local-over-global perceptual preference ( Frith, 1989 ; Happé et al., 2006 ) (see Figure 1 A for an 48 
+
+illustrated comparison). Related Bayesian accounts propose altered use or updating of perceptual 49 
+
+priors or an atypical balance between statistical likelihood and priors ( Pellicano and Burr, 2012 ;50 
+
+Schneebeli et al., 2022 ; Brock, 2012 ) and further, predictive-coding, a process-level instantiation 51 
+
+of these Bayesian ideas, implicates imbalances between prediction errors and top-down predic-52 
+
+tions ( Mumford, 1992 ; Rao and Ballard, 1999 ; Friston, 2005 ; Lawson et al., 2014 ; Van de Cruys 53 
+
+et al., 2014 ; Lawson et al., 2017 ). More mechanistically, neurobiological accounts emphasize exci-54 
+
+tation–inhibition (E/I) imbalances and neural noise, with support from EEG, genetics, and animal 55 
+
+studies ( Rubenstein and Merzenich, 2003 ; Dinstein et al., 2012 ; Puts et al., 2017 ; Wei et al., 2021 ;56 
+
+Hollestein et al., 2023 ; Han et al., 2012 ; Robertson et al., 2016 ). An integrative view links E/I alter-57 
+
+ations to disrupted divisive normalization central to causal inference and predictive coding ( Noel 58 
+
+and Angelaki, 2023 ). In recent years, “Sensory-first” accounts of autism argue that perceptual dif-59 
+
+ferences precede and scaffold downstream social–communicative phenotypes ( Levit-Binnun et al., 60 
+
+2013 ; Cascio et al., 2016 ; Robertson and Baron-Cohen, 2017 ; Falck-Ytter and Bussu, 2023 ; Russo 61 
+
+et al., 2025 ; Takesian and Hensch, 2013 ). 62    
+
+> Figure 1. (A) A visual depiction contrasting how perceptual processing is thought to be different in autism across the two prominent theories of WCC and EPF. (B) An illustration comparing visual sensory dominance (the Colavita effect) with decreased visual dominance or auditory sensory dominance (a reverse Colavita effect), which has been observed in autism.
+
+Overall, these varied accounts yield some 63 
+
+testable predictions for naturalistic representa-64 
+
+tions, among them: relatively amplified low-level 65 
+
+and reduced high-level encoding and altered lo-66 
+
+cal–global and unimodal–multisensory balance; 67 
+
+Another axis of sensory organization relevant 68 
+
+to autism is the balance between auditory and vi-69 
+
+sual channels during naturalistic perception. Clas-70 
+
+sic multisensory work shows that audiovisual (AV) 71 
+
+integration engages regions including the supe-72 
+
+rior temporal sulcus (STS), which can be supra-73 
+
+additive for congruent AV events ( Calvert et al., 74 
+
+2000 , 2001 ), with multisensory influences present 75 
+
+even in regions often treated as unisensory ( Ghaz-76 
+
+anfar and Schroeder, 2006 ; Stein and Stanford, 77 
+
+2008 ). Developmentally, AV integration is pro-78 
+
+tracted, approaching adult-like levels around late 79 
+
+childhood, and may follow altered trajectories in 80 
+
+autism ( Neil et al., 2006 ; Burr and Gori, 2012 ;81 
+
+Russo et al., 2025 ). Behaviorally, autism has 82 
+
+been associated with differences in multisensory 83 
+
+integration and temporal binding (e.g., widened 84 
+
+temporal binding windows and reduced MSI en-85 
+
+hancements), with downstream implications for 86 
+
+domains including speech processing ( Stevenson 87 
+
+et al., 2014b ,a; Feldman et al., 2018 ; Wang et al., 88 
+
+2024 ). Classic work on sensory dominance shows 89 
+
+a robust visual-dominance in adults (the Colavita 90 
+
+> 2 of 41
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint effect) that develops from earlier auditory pre-91 
+
+dominance in childhood ( Colavita, 1974 ; Hirst 92 
+
+et al., 2018 ; Ross et al., 2021 ). In autism, findings 93 
+
+include reduced or reversed visual dominance, in-94 
+
+cluding a reverse Colavita effect and a shift to-95 
+
+ward auditory bias ( Ross et al., 2021 ; Moro et al., 96 
+
+2012 ; O’connor and Hermelin, 1965 ), hinting at po-97 
+
+tentially altered audio vs. visual sensory feature weightings in autism (see Figure 1 B). 98 
+
+Developmental maturation of sensory and association systems 99 
+
+Beyond autism, it is useful to note several robust developmental trends. Primary sensory cortices 100 
+
+mature relatively early, whereas higher-order association regions (e.g., pSTS, TPJ, FFA) show pro-101 
+
+tracted structural–functional specialization into adolescence ( Thompson and Nelson, 2001 ; Sydnor 102 
+
+et al., 2021 ). Multisensory processing also sharpens with age: audiovisual temporal binding win-103 
+
+dows narrow, and cross-modal influences in STS become more reliable and congruent with task 104 
+
+demands ( Neil et al., 2006 ; Burr and Gori, 2012 ). These maturational trends imply that group dif-105 
+
+ferences observed in association cortices and multisensory networks must be interpreted against 106 
+
+a baseline of ongoing developmental tuning. 107 
+
+Neuroimaging evidence for altered sensory processing in autism 108 
+
+Within autism, neuroimaging findings have consistently implicated primary sensory brain regions 109 
+
+(e.g. motion-related differences in visual cortex ( Robertson et al., 2014 ), enlarged population recep-110 
+
+tive fields ( Schwarzkopf et al., 2014 ), and heightened connectivity within primary visual and audi-111 
+
+tory cortices ( Martínez et al., 2020 ; Cerliani et al., 2015 )). Increased trial-to-trial variability of evoked 112 
+
+responses has also been observed across early visual, auditory, and somatosensory cortices ( Din-113 
+
+stein et al., 2012 ). Atypical early auditory discrimination has been further measured through mis-114 
+
+match negativity (MMN), with MMN amplitudes directly linked to sensory over-responsivity and 115 
+
+autistic traits ( Cary et al., 2024 ). During audiovisual integration tasks, autistic participants were 116 
+
+found to exhibit auditory-led phase resets in visual cortex, opposite the visual-led synchroniza-117 
+
+tion typical of neurotypical observers, consistent with altered precision and reliability weighting of 118 
+
+sensory cues and tying primary sensory processing alterations to audiovisual perception ( Ronconi 119 
+
+et al., 2023 ). 120 
+
+Alongside these early sensory processing differences, a growing body of research highlights 121 
+
+significant involvement of higher-order cortical regions. These include but are not limited to the 122 
+
+temporoparietal junction (TPJ; found to have decreased cortical thickness ( You et al., 2024 ) and 123 
+
+altered connectivity to the cerebellum ( Igelström et al., 2017 )), the posterior superior temporal sul-124 
+
+cus (pSTS; found to have reduced activation during biological motion perception ( Koldewyn et al., 125 
+
+2011 ; Federici et al., 2020 ) and altered intrinsic and dynamic functional connectivity ( Alaerts et al., 126 
+
+2015 , 2014 ; Shih et al., 2011 ; Guo et al., 2019 )), and the fusiform face area (FFA; found to have 127 
+
+altered volume and hemispheric asymmetry ( Herbert et al., 2002 ; Floris et al., 2025 ) along with 128 
+
+reduced activation in response to faces ( Pierce et al., 2001 ; Schultz et al., 2003 ; Hadjikhani et al., 129 
+
+2007 ), though some later studies found no difference for familiar faces ( Pierce et al., 2004 ; Had-130 
+
+jikhani et al., 2007 )). 131 
+
+Beyond specific low- and high-level regions with altered connectivity, there have been widespread 132 
+
+reports of more generally altered connectivity across the brain, in the form of under-connectivity 133 
+
+(Damarla et al., 2010 ; Abrams et al., 2013 ; Alaerts et al., 2014 ), over-connectivity ( Rudie and Dapretto, 134 
+
+2013 ; Keown et al., 2013 ), and differing local and global connectivity ( Courchesne and Pierce, 2005 ). 135 
+
+These patterns are thought to be dynamic and changing with age ( Lawrence et al., 2019 ). Some 136 
+
+findings point to an anterior to posterior gradient across the brain of under- to over-connectivity 137 
+
+in autism, perhaps explaining enhanced perceptual performance with increased local connectivity 138 
+
+in early sensory areas and disrupted social behavior with decreased local connectivity in frontal 139 
+
+> 3 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Table 1. Table of preregistered hypotheses (accessible at osf.io/h92gr and osf.io/47kj6).                                   
+
+> Hypothesis Feature sets / metrics Low- vs. high-level encoding
+> 1.1 Primary perceptual cortices will encode more information about low-level perceptual features in an autistic relative to a non-autistic group. Low-level audio and visual fea-tures; 𝑅 2,𝑅 2
+> 𝑢
+> 1.2 Perceptual regions of the brain will be more tuned towards low- as op-posed to high-level sensory information in an autistic relative to a non-autistic group. Low- vs. high- level audio and vi-sual feature classes; (𝑊 𝐻𝐴 −𝑊 𝐿𝐴 ),
+> (𝑊 𝐻𝑉 −𝑊 𝐿𝑉 )
+> 1.3 Encoding model-derived differences will be related to autism severity and sensory symptoms. SRS/SSS associations with high-and low-level, audio and visual 𝑅 2,
+> 𝑅 2
+> 𝑢 ,(𝑊 𝐻 −𝑊 𝐿 )
+> Audio vs. visual encoding
+> 2.1 Auditory and visual regions of the brain will be more unimodal in autistic compared to non-autistic people and encode more congruent unimodal information relative to incongruent cross-modal information. Audio-only vs. visual-only contri-butions; audio and visual 𝑅 2,𝑅 2
+> 𝑢
+> 2.2 Autistic individuals will have reduced visual dominance compared to non-autistic individuals. Visual vs. audio stacked weights;
+> (𝑊 𝑉 −𝑊 𝐴 )
+> 2.3 Audiovisual encoding model-derived differences in autistic participants will be significantly correlated with autism severity. SRS/SSS associations with audio and visual 𝑅 2,𝑅 2
+> 𝑢 and (𝑊 𝑉 −𝑊 𝐴 )
+
+areas ( Keown et al., 2013 ; Supekar et al., 2013 ; Di Martino et al., 2014 ; Rudie and Dapretto, 2013 ). 140 
+
+While most studies assess activation or connectivity, fewer examine what or how information is 141 
+
+represented during rich, dynamic perception and a clear gap remains. 142 
+
+Naturalistic stimuli and autism 143 
+
+Naturalistic stimuli (such as movies and narratives) in neuroimaging studies can improve ecological 144 
+
+validity and compliance while also implicitly including rich sensory, semantic, and social features 145 
+
+(Sonkusare et al., 2019 ; Nastase et al., 2020 ; Vanderwal et al., 2019 ; Redcay and Moraczewski, 146 
+
+2020 ; Haxby et al., 2014 ). In autism, movie paradigms have revealed reduced ISC and ISFC and id-147 
+
+iosyncratic responses (foundational and follow-up work by Hasson et al. 2009 ; Salmi et al. 2013 ;Byrge 148 
+
+et al. 2015 ), links to comprehension and symptomatology (e.g., default-mode/control networks; 149 
+
+Bolton and colleagues ( 2018 ; 2020 )), region- or event-specific effects (TPJ, theory-of-mind; Pantelis 150 
+
+et al. 2015 ; Lyons et al. 2020 ), and cross-national replication of ISFC reductions ( Lin et al., 2025 ). 151 
+
+Deficits in audiovisual synchrony relevant to speech have also been reported ( Wang et al., 2024 ). 152 
+
+Most work to date leverages metrics of brain synchrony, while feature-resolved accounts of what 153 
+
+and where information may be differentially represented in these naturalistic contexts remains 154 
+
+relatively unexplored. 155 
+
+Encoding models 156 
+
+Encoding models enable the direct mapping of stimulus features to brain responses, allowing us 157 
+
+to quantify the representation of information across the brain ( Naselaris et al., 2011 ; Diedrichsen 158 
+
+and Kriegeskorte, 2017 ). Encoding models are readily adaptable to high-dimensional, naturalis-159 
+
+tic features ( Samara et al., 2025 ; Khosla et al., 2021 ; Huth et al., 2016 ; Haxby et al., 2011 ) and 160 
+
+some specific implementations, such as as stacked encoding models ( Lin et al., 2024 ) and banded 161 
+
+regression ( Dupré la Tour et al., 2022 ) enable joint tests across feature spaces. In stacked encod-162 
+
+ing models, instead of relying solely on the predictive performance of separate feature models, the 163 
+
+secondary “stacking” stage yields weights that index the relative contribution of each feature space 164 
+
+to the joint prediction, providing, for example, a direct measure of high- vs. low-level or audio vs. 165 
+
+visual perceptual preferences when these feature classes compete to explain the same responses. 166 
+
+Despite their successful applications in vision and language research, encoding model approaches 167 
+
+are relatively underutilized in autism research relative to ISC based methods, particularly in studies 168 
+
+using naturalistic designs ( Dupré la Tour et al., 2025 ; Kriegeskorte and Douglas, 2019 ). 169 
+
+4 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint This study: dataset, features, analyses, preregistration, hypotheses 170 
+
+Here, naturalistic movie-viewing fMRI data from children and adolescents with and without autism 171 
+
+is analyzed to test a set of preregistered hypotheses (accessible at osf.io/h92gr and osf.io/47kj6; 172 
+
+summarized in Table 1 ). Feature sets are constructed spanning low-level (e.g., brightness, motion 173 
+
+and loudness) through high-level (faces, bodies, and audio categories such as speech and music), 174 
+
+separately for audio and visual streams and feed these into whole-brain grayordinate-level encod-175 
+
+ing models that quantify the explained variance for each feature class. Primary hypotheses : (i) 176 
+
+Relative to non-autistic peers, autistic participants will show greater encoding of low-level percep-177 
+
+tual features in primary sensory and other perceptual regions (H1.1), with a shift in stacked-weight 178 
+
+preference toward low- over high-level features (H1.2); (ii) autistic auditory and visual cortices will 179 
+
+be more unimodal (H2.1), preferentially encoding modality-congruent information and exhibiting 180 
+
+reduced visual dominance (H2.2). Secondary hypotheses : Encoding-model metrics will covary 181 
+
+with clinical phenotype including autism severity and sensory symptoms (H1.3, H2.3). 182 
+
+Key findings 183 
+
+During naturalistic viewing fMRI, autistic children and adolescents have a relative shift toward low-184 
+
+level over high-level feature encoding in integration and social brain regions (including the pSTS), 185 
+
+with a broadly conserved audio–visual feature balance but robust age-related effects. These find-186 
+
+ings inform sensory theories, argue against large, pervasive shifts in modality dominance, and 187 
+
+demonstrate the utility of naturalistic encoding model methods for the investigation of sensory-188 
+
+perceptual neurodevelopmental differences. 189 
+
+## Results 190 
+
+Conventions 191 
+
+We report explained variance ( 𝑅 2), unique explained variance ( 𝑅 2 
+
+> 𝑢
+
+, from variance partitioning), and 192 
+
+stacked encoding model weights ( 𝑊 ) for audio and visual models. Perceptual preference indices 193 
+
+are defined as 𝑊 𝑉 − 𝑊 𝐴 (visual vs. audio modality preference) and 𝑊 𝐻 − 𝑊 𝐿 (high- vs. low-level 194 
+
+feature preference), with positive values indicating visual (or high-level) preference and negative 195 
+
+values indicating audio (or low-level) preference. Unless otherwise noted, all p-values are FDR-196 
+
+corrected across parcels, and results are shown across three framewise displacement (FD) thresh-197 
+
+olds of 40%, 60%, and 80%. 198 
+
+Encoding models recover known sensory hierarchies 199 
+
+Aggregating across all (both autistic and non-autistic) participants, audiovisual stacked encoding 200 
+
+models produced patterns of performance and feature representation in audio and visual cortical 201 
+
+regions that are in keeping with known sensory hierarchies. This is evident by examining the per-202 
+
+ceptual preference index (the difference in visual and auditory model stacked weights (𝑊 𝑉 − 𝑊 𝐴 )), 203 
+
+across both perceptual ROIs and the cortical surface more broadly ( Figure 2 ). Mean 𝑅 2 peaked 204 
+
+along the superior temporal sulcus (STS), and split–half, Spearman–Brown–corrected noise ceil-205 
+
+ings (an upper bound on explainable variance given response reliability/measurement noise) were 206 
+
+highest in parcels along the STS and in parietal/occipital cortices ( Figure 2 —figure Supplement 1 ). 207 
+
+Looking at model performance by sensory modality, auditory cortices showed greater audio 𝑅 2
+
+> 208
+
+and increased audio model weights, whereas visual cortices showed the converse pattern for visual 209 
+
+performance and weights ( Figure 2 —figure Supplement 2 ). Comparing stacked low- and high-level 210 
+
+models within audio and visual models further reproduced canonical hierarchical gradients. For 211 
+
+vision, low-level features dominated early visual cortex (e.g., V1/V2), with relatively stronger high-212 
+
+level contributions in downstream ventral regions (e.g., FFC, Figure 2 —figure Supplement 3 A). For 213 
+
+the audition, high-level model 𝑅 2 and weights increased from A1 into association areas (A4/A5, 214 
+
+Figure 2 —figure Supplement 3 B). Model weights followed this same pattern along with the high 215 
+
+vs. low preference index (𝑊 𝐻 − 𝑊 𝐿 ), which was negative in early sensory cortex and approached 216 
+
+> 5 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 2. (A) Visual vs audio perceptual preference ( 𝑊 𝑉 − 𝑊 𝐴 ) for all participants (ASD and nonASD) across visual (red), audiovisual (purple), and auditory (blue) ROIs. Perceptual preference is calculated by taking the difference of visual and audio stacked model weights. Perceptual preference is in the range -1 to 1 as stacked encoding model weights range from 0 to 1. (B) Whole-brain plot of mean visual vs audio perceptual preference ( 𝑊 𝑉 − 𝑊 𝐴 ) across all participants (ASD and nonASD). This metric is the same as in A, but now plotted at each grayordinate and colored on a scale of visual (red) to audio (blue) with purple indicating regions with a relative balance between visual and audio feature weights. 
+
+or exceeded zero in higher-order regions ( Figure 2 —figure Supplement 3 C-F, see Figure 2 —figure 217 
+
+Supplement 4 for a whole-brain mean visualization). These results establish that the feature spaces 218 
+
+and model architecture employed here are capable of recovering known sensory hierarchies. 219 
+
+H1.1: No evidence for increased low-level encoding in primary sensory cortices in 220 
+
+autism 221 
+
+The preregistered hypothesis that primary perceptual cortices contain more information about 222 
+
+low-level perceptual features in autism was not supported. For the low-level auditory model, no 223 
+
+significant group differences in 𝑅 2 or 𝑅 2 
+
+> 𝑢
+
+were observed in primary auditory regions (all FDR q>0.05, 224 
+
+Figure 3 , Figure 3 —figure Supplement 1 ). Outside auditory ROIs, some uncorrected effects ap-225 
+
+peared for 𝑅 2 (V4t, MST) and 𝑅 2 
+
+> 𝑢
+
+(V4t, V7), but none survived FDR correction. Likewise, no significant 226 
+
+group-level differences in low-level visual performance were observed in primary visual regions (all 227 
+
+FDR q>0.05, Figure 3 , Figure 3 —figure Supplement 2 ). Trends in STSvp, STSdp, and STGa (uncor-228 
+
+rected 𝑝 < . 05 ) did not survive FDR correciton for 𝑅 2, whereas STSvp showed a significant difference 229 
+
+for 𝑅 2 
+
+> 𝑢
+
+(40% FD; replicated at 80% FD; Figure 3 ). Overall, early sensory-cortex encoding increases 230 
+
+for low-level features in autism were not observed. 231 
+
+H1.2: In autism, pSTS is weighted towards low-level visual features 232 
+
+Although audio models had no significant difference in low- vs. high-level preference, stacked 233 
+
+visual models revealed a group difference in high- vs. low-level preference localized to the pSTS. 234 
+
+Visual 𝑊 𝐻 − 𝑊 𝐿 was significantly lower in the autistic group in STSvp across all three FD thresholds 235 
+
+and in STSdp at the strictest 40% threshold ( Figure 3 , Figure 4 ). 236 
+
+H1.3: pSTS encoding differences are related to autism severity as measured by the 237 
+
+SRS 238 
+
+Across visual and auditory models and the SRS and SSS measures, visual high- vs. low-level pref-239 
+
+erence was significantly related to SRS after FDR correction in STSdp at the 40% threshold where 240 
+
+lower 𝑊 𝐻 − 𝑊 𝐿 (increased low-level preference) was associated with higher SRS score (coefficients 241 
+
+summarized in Figure 3 ). 242 
+
+Exploratory: High-level visual representations are reduced in face and social brain 243 
+
+regions in autism 244 
+
+Although the preregistered hypotheses focused on low-level feature representation and the bal-245 
+
+ance of low- and high-level feature weights, the stacked models also provide high-level feature 246 
+
+representation metrics. High-level audio 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+showed no group differences ( Figure 3 —figure 247 
+
+6 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 3. Heatmaps of fixed-effect coefficients for (A) diagnostic group (Dx: nonASD vs. ASD), (B) SRS and (C) sensory subset score (SSS), across 40%, 60% and 80% FD thresholds (left to right within each cortical parcel column). Within each of the three horizontal panels, rows denote encoding model-derived metrics (low-level 
+
+𝑅 2 
+
+> 𝑢
+
+, high-level 𝑅 2 
+
+> 𝑢
+
+, and their preference index ( 𝑊 𝐻 − 𝑊 𝐿 ) and columns denote Glasser ROIs ordered from early visual areas through association cortex and then auditory areas. Color indicates the magnitude and sign of the coefficient (purple=negative effect with ASD>nonASD; green=positive effect with ASD<nonASD). Asterisks (∗) mark FDR-corrected significance at q < .05; open circles ( ◦) mark uncorrected p < .05. The visual modality encoding models are coded with red text and the auditory with blue. Low-level visual 𝑅 2 
+
+> 𝑢
+
+was significantly different across diagnosis in STSvp and low-level audio 𝑅 2 
+
+> 𝑢
+
+was not significant anywhere (A; contradicting H1.1). Visual though not audio 𝑊 𝐻 − 𝑊 𝐿 was significantly different in STSvp and STSdp (A; supporting H1.2). Visual but not audio 𝑊 𝐻 − 𝑊 𝐿 was significantly related to SRS in STSdp at the 40% threshold (B; H1.3) but not SSS (C). Generally, results were often consistent across the three FD thresholds. 7 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 4. (A) Box plot of audio stacked encoding model perceptual preference across ASD (white) and nonASD (gray) groups for all perceptual ROIs. (B) Corresponding box plot of the visual stacked encoding models. Results correspond to the 40% FD threshold. Boxes annotated with an asterisk indicate a significant group difference (FDR q<0.05) while a circle indicates an initially significant difference between groups that did not survive FDR correction. Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean perceptual preference from a single subject from all statistically significant grayordinates within each ROI. 8 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Table 2. Table of post-hoc whole-brain significance results. Only significant regions and features (after FDR correction) are included in the table. In each column, results from FD thresholds of 40%, 60%, and 80% are separated by commas. VL=low-level visual, VH=high-level visual, AH=high-level audio, 𝑊 𝑉 𝐿 =low-level visual model weight, 𝑊 𝑉 𝐻 =high-level visual model weight, 𝑅 2=explained variance, 𝑅 2 
+
+> 𝑢
+
+=unique explained variance, -=q>0.05, *=q<0.05, **=q<0.005                                                                                      
+
+> Right_SFL Right_TE1p Right_PF Left_8BL Left_6r Left_IFSa Left_STSvp CAU-DA-lh CAU-body-lh
+> VL 𝑅 2--------, *, --
+> VL 𝑅 2
+> 𝑢 *, -, --, -, *-** ,*,*-----
+> VH 𝑅 2*, -, --, -, *--, ** ,*-----
+> VH 𝑅 2
+> 𝑢 --, *, --, *, --, *,*--, *, --, *, ---, *, -
+> Pref. ( 𝑊 𝐻𝑉 −𝑊 𝐿𝑉 )---*,*, ------
+> AH 𝑅 2
+> 𝑢 ----** , -, -----
+
+Table 3. Perceptual regions of interest ADHD subgroup significance summary. All effects listed here are between the nonASD and ADHD+ASD subgroups, as there were no significant differences between nonASD and ADHD-ASD and ADHD+ASD and ADHD-ASD. Only the three regions with significant effects after FDR correction are included. In each column, the results from FD thresholds of 40%, 60% and 80% are separated by columns. VL=low-level visual, VH=high-level visual 
+
+IFSp STSvp STSdp 
+
+𝐕𝐋 𝐑 𝟐 (𝑁𝑇 , 𝐴𝐷𝐻𝐷 −) - -, -, * -
+
+𝐕𝐋 𝐑 𝟐 𝐮 (𝑁𝑇 , 𝐴𝐷𝐻𝐷 −) -, *, - *, *, ** -, *, -
+
+𝐕𝐇 𝐑 𝟐 (𝑁𝑇 , 𝐴𝐷𝐻𝐷 −) *, -, - *, *, * *, -, -
+
+𝐕𝐇 𝐑 𝟐 𝐮 (𝑁𝑇 , 𝐴𝐷𝐻𝐷 −) - -, -, * -
+
+𝐏𝐫𝐞𝐟 . (𝐖 𝐕𝐋 − 𝐖 𝐕𝐇 ) ( 𝑁𝑇 , 𝐴𝐷𝐻𝐷 −) - -, *, ** -
+
+Supplement 3 ). By contrast, high-level visual features showed reliable group effects in face- and 248 
+
+social-perception related regions including FFC, STS, STG, and inferior frontal cortex. The effects 249 
+
+were largely consistent across both 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+(Figure 3 —figure Supplement 4 ), indicating robust 250 
+
+differences in high-level visual information that are not explained by variance shared with low-level 251 
+
+features. 252 
+
+Exploratory: Whole-brain parcel-wise visual encoding differences and ASD ±ADHD 253 
+
+stratification 254 
+
+Whole-brain low- and high-level stacked encoding model analyses identified additional parcels be-255 
+
+yond the a priori ROIs with significant visual encoding differences. At the 40% FD threshold, low-256 
+
+level visual 𝑅 2 
+
+> 𝑢
+
+was greater in the autism group in left 8BL (lateral BA8, posterior superior frontal 257 
+
+gyrus; DLPFC; 𝑞 < 0.005 ) and right SFL ( 𝑞 < 0.05 ); across thresholds, left 8BL also showed higher 258 
+
+high-level preference in the non-autistic group ( Table 2 ; cortical maps in Figure 5 ). Other parcels 259 
+
+with significant visual 𝑅 2/𝑅 2 
+
+> 𝑢
+
+differences at one or more thresholds included right TE1p, right PF, 260 
+
+left IFSa, left STSvp, and striatal regions CAU-DA-lh and CAU-body-lh ( Table 2 ). 261 
+
+Given the high ADHD comorbidity in the sample (and in autism generally), the autism group 262 
+
+was further subdivided into ASD +ADHD and ASD −ADHD subgroups. Across perceptual ROIs, sig-263 
+
+nificant differences in visual encoding metrics were observed between nonASD and ASD −ADHD 264 
+
+participants, but not between nonASD and ASD +ADHD (note the nonASD control group has no 265 
+
+participants with a diagnosis of ADHD), and there were no differences between ASD subgroups 266 
+
+(Table 3 ). The ASD −ADHD vs. nonASD results largely mirrored the broader autistic group at the 267 
+
+ROI level as well as at the whole-brain level (e.g. a significant difference in left 8BL). A robust au-268 
+
+ditory model finding also emerged at the whole-brain level in the left Middle Insular area (MI) for 269 
+
+low-level audio 𝑅 2 
+
+> 𝑢
+
+at 40% FD in ASD +ADHD vs. nonASD. 270 
+
+9 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 5. Cortical surface maps showing visual encoding model-derived fixed-effect coefficients for diagnostic group comparisons (ASD vs. nonASD) at the 40% FD threshold. Colors represent coefficient magnitude and direction (pink: negative effect, ASD > nonASD; green: positive effect, ASD < nonASD). Asterisks denote significance after FDR correction (*: FDR 𝑞 < 0.05 , **: FDR 𝑞 < 0.005 ). 10 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 6. Visual encoding model metrics across left and right pSTS subregions. (A) Low-level visual unique explained variance ( 𝑅 2 
+
+> 𝑢
+
+) for ASD (white) and nonASD (gray) groups in left and right STSvp and STSdp regions. 
+
+(B) High-level visual 𝑅 2 
+
+> 𝑢
+
+across the same groups and regions. (C) High- vs. low-level perceptual preference (derived from the stacked visual encoding models), where positive values indicate a high-level preference, negative values indicate a low-level preference, and values near zero indicate no preference. (D) Low-level visual 𝑅 2 
+
+> 𝑢
+
+for ASD-ADHD (white), ASD+ADHD (light gray), and nonASD (gray) groups across left and right STSvp and STSdp regions. (E) High-level visual 𝑅 2 
+
+> 𝑢
+
+across groups in the same regions. (F) Stacked encoding model visual perceptual preference metrics (high- vs. low-level); positive values indicate a preference for high-level features, negative values indicate a low-level preference, and values near zero indicate no strong perceptual preference. All results are from the 40% FD threshold. Boxes annotated with an asterisk (*) indicate significant group differences (FDR-corrected 𝑝 < 0.05 ); circles indicate nominal significance prior to FDR correction (uncorrected 𝑝 < 0.05 ). Boxes represent quartiles; whiskers indicate data range excluding outliers. Individual dots represent mean metrics per subject, averaged across statistically significant grayordinates within each left or right ROI. Pairwise significance tests were conducted between all groups; annotations indicate significant differences, all of which occurred between the ASD-ADHD and nonASD subgroups. 11 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 7. Audio vs. visual modality preference. Higher values indicate an audio preference and lower values indicate a visual preference. These results correspond with the 40% FD threshold. Boxes annotated with circles indicate a difference between groups that did not survive FDR correction (uncorrected p<0.05 but FDR q>0.05). Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean value from a single subject from all statistically significant grayordinates within each ROI. 
+
+Exploratory: pSTS left-hemisphere predominance with ASD ±ADHD corroboration 271 
+
+Given converging effects in the pSTS, hemispheric laterality in that region was examined in a post-272 
+
+hoc analysis. For low-level visual features, group differences in 𝑅 2 
+
+> 𝑢
+
+were evident in right STSvp 273 
+
+but not left ( Figure 6 A). In contrast, for high-level visual 𝑅 2 
+
+> 𝑢
+
+and 𝑊 𝐻 − 𝑊 𝐿 , group differences were 274 
+
+stronger and more consistent in the left hemisphere (STSvp and STSdp; Figure 6 B,C). Right STSvp 275 
+
+trended in the same direction for both 𝑅 2 
+
+> 𝑢
+
+and 𝑊 𝐻 − 𝑊 𝐿 but did not survive FDR at the 40% FD 276 
+
+threshold (uncorrected 𝑝 < . 05 ). Taken together, this pattern suggests a hemispheric division of 277 
+
+effects. ADHD-stratified analyses corroborated this laterality. Comparing ASD −ADHD with nonASD 278 
+
+reproduced the pSTS effects with the same left-hemisphere predominance across metrics ( Figure 6 279 
+
+D-F)). 280 
+
+H2: Audio–visual feature representation and modality preference is conserved across 281 
+
+groups and not related to autism severity 282 
+
+There were no significant ASD vs. nonASD differences in visual vs. audio preference ( 𝑊 𝑉 − 𝑊 𝐴 ,283 
+
+Figure 7 ) or audio and visual 𝑅 2 (Figure 7 —figure Supplement 1 ) or 𝑅 2 
+
+> 𝑢
+
+(Figure 7 —figure Supple-284 
+
+ment 2 ) within their corresponding cortical regions, with the singular exception of TPOJ2 at the 285 
+
+60% FD threshold (greater visual 𝑅 2 in the nonASD relative to ASD group, Figure 7 —figure Sup-286 
+
+plement 3 ). Overall we observed minimal evidence of reduced visual dominance (or increased 287 
+
+auditory dominance) related to audio and visual feature representation in autism during naturalis-288 
+
+tic viewing. Beyond diagnostic group differences, audio and visual model 𝑅 2, 𝑅 2 
+
+> 𝑢
+
+and 𝑊 𝑉 − 𝑊 𝐴 were 289 
+
+also not significantly related to SRS or SSS ( Figure 7 —figure Supplement 3 B,C). 290 
+
+Exploratory: Age exerts prominent effects on modality preference 291 
+
+Focusing on age without regard to diagnostic group, robust relationships emerged across percep-292 
+
+tual ROIs ( Figure 8 ). Visual 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+increased with age in V3, MT, MST, V3A, IFSa, TPOJ3, and A4; 293 
+
+auditory 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+increased with age in VMV2, V3A, IFSa, IFSp, IFJa, STSdp, STGa, TPOJ1, PBelt, A4, 294 
+
+TA2, and A5. Modality preference ( 𝑊 𝑉 −𝑊 𝐴 ) shifted with age in V3A, IFSa, IFSp, A4, and A5, such that 295 
+
+the visual region V3A had an increase in visual preference and the other auditory and multisensory 296 
+
+regions had an increased auditory preference. Notably, these age effects were prominent at the 297 
+
+60% and 80% FD thresholds but not at the 40% threshold, plausibly because this stricter criteria 298 
+
+disproportionately excluded more younger participants due to their increased motion. 299 
+
+12 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 8. Heatmaps of fixed-effect coefficients from exploratory parcel-wise linear mixed models examining 
+
+(A) main effects of age, (B) age-by-diagnosis (ASD vs. nonASD), and (C) age-by-SRS interactions. Within each horizontal panel, rows represent encoding model-derived metrics (visual 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+, audio 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+, and their perceptual preference index 𝑊 𝑉 − 𝑊 𝐴 ), while columns represent Glasser MMP parcels ordered roughly from early visual through higher-order association to auditory areas. Each parcel is further subdivided by FD thresholds (40%, 60%, 80%, left to right). Color indicates magnitude and direction of coefficients (green: positive effects; pink: negative effects). In panel A, green indicates encoding metrics increase with age, pink indicates metrics decrease with age. In panel B (Age × Diagnosis), green indicates the age-related slope is more positive in nonASD (greater increases with age), whereas pink indicates a more positive age-related slope in ASD. Asterisks mark FDR-corrected significance ( ∗= 𝑞 < 0.05 ,∗∗= 𝑞 < 0.005 ,∗∗∗= 𝑞 < 0.0005 ); open circles mark uncorrected significance ( 𝑝 < 0.05 ). Visual metrics are labeled in red; auditory metrics in blue. 
+
+Table 4. Significance of Age effects on visual, audio, and audio–visual encoding model metrics across all left and right hemisphere, cortical and subcortical parcels at the whole-brain level. 
+
+𝐕𝐢𝐬𝐮𝐚𝐥 𝐑 𝟐 𝐕𝐢𝐬𝐮𝐚𝐥 𝐮𝐧𝐢𝐪𝐮𝐞 𝐑 𝟐 𝐀𝐮𝐝𝐢𝐨 𝐑 𝟐 𝐀𝐮𝐝𝐢𝐨 𝐮𝐧𝐢𝐪𝐮𝐞 𝐑 𝟐 𝐏𝐫𝐞𝐟 . (𝐖 𝐕𝐢𝐬𝐮𝐚𝐥 − 𝐖 𝐀𝐮𝐝𝐢𝐨 )
+
+Right V3A - - - -, -, * -Right MT - -, -, * - - -Right IFSp - - -, -, * -, -, * -Right OP4 - - -, -, * -, -, * -Right A5 - - -, -, * -, *, * -, -, *
+
+Right LO3 - - - *, -, - *, -, -Right VVC - -, *, - - - -Right TGv - - - -, *, - -Left 55b - - -, -, * -, -, * -Left PSL - - -, -, ** -, *, * -Left SFL - - -, -, * -, *, * -Left 45 - - -, -, * - -Left 9a - - - *, -, - -Left RI - - -, *, ** -, *, * -Left A5 - - -, -, * -, -, * -Left STSda - - -, -, * -, -, * -Left STSdp - - -, -, * -, *, * -Left TPOJ1 - - -, -, * -, -, * -Left DVT *, -, - - - *, -, - *, -, -Left LO3 - - - *, -, - -Left A4 - - -, -, ** -, *, ** -, -, *
+
+13 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Whole-brain analyses (where all cortical and subcortical parcels were considered separately 300 
+
+across the left and right hemispheres) confirmed many ROI effects and further revealed some 301 
+
+hemispheric specificities ( Table 4 ): for example, auditory 𝑅 2 related to age in A5 bilaterally, whereas 302 
+
+V3A/MT effects were right-lateralized and A4/STSdp/TPOJ1 were left-lateralized. Beyond the prede-303 
+
+fined perceptual ROIs, additional parcels with significant age relationships included bilateral LO3, 304 
+
+right TGv, left 9a, and left RI, adjacent to primary auditory cortex ( Glasser et al., 2016 ). Several 305 
+
+language-network parcels (pSTS/55b/PSL/SFL/area 45) also showed age effects for auditory 𝑅 2 and 306 
+
+𝑅 2 
+
+> 𝑢
+
+, predominantly left-lateralized ( Glasser et al., 2016 ). In all cases, the directionality matched 307 
+
+modality (auditory metrics increased with age in auditory regions; visual metrics increased with 308 
+
+age in visual regions), and modality preference became more congruent with regional specializa-309 
+
+tion (See Figure 8 —figure Supplement 1 and Figure 8 —figure Supplement 2 for examples from 310 
+
+perceptual and whole-brain regions respectively). 311 
+
+Post-hoc whole-brain ADHD subgroup comparisons revealed one region with consistent audi-312 
+
+tory 𝑅 2 differences that survived correction across all 410 parcels: left PoI2 (insula), with ASD −ADHD 313 
+
+vs. noNASD differences across all three FD thresholds (FDR 𝑞 = 0 .03 , 0.003 , 0.008 for 40%, 60%, and 314 
+
+80%, respectively). No other pairwise subgroup contrasts (ASD −ADHD vs. ASD +ADHD; ASD +ADHD 315 
+
+vs. nonASD) yielded auditory effects that survived FDR correction. 316 
+
+Exploratory: Age-by-diagnosis and Age-by-SRS interactions are sparse and localized 317 
+
+At the ROI level, only VMV3 showed a significant Age ×Diagnosis interaction for visual 𝑅 2 where in 318 
+
+the autistic group, visual 𝑅 2 was relatively stable across age, whereas in the non-autistic group it de-319 
+
+creased with age ( Figure 8 —figure Supplement 3 ). Whole-brain analyses identified two additional 320 
+
+Age ×Diagnosis interactions for visual 𝑅 2 
+
+> 𝑢
+
+: right area 52 and left p32pr, where visual 𝑅 2 
+
+> 𝑢
+
+increased 321 
+
+with age in autism but decreased with age in non-autistic participants. For Age ×SRS, only audio 322 
+
+𝑅 2 in IFJp showed a significant interaction at the ROI level (autism: slight increase with age; non-323 
+
+autism: decrease), and at the whole-brain level, interactions appeared for visual 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+in right 324 
+
+7PL (the autistic group measure slightly decreasing with age while the non-autistic group measure 325 
+
+increases with age). 326 
+
+Results Summary 327 
+
+Overall, this study finds (i) no evidence for increased low-level encoding specific to primary sensory 328 
+
+cortices in autism; (ii) reduced high-level visual feature representations in social and face brain re-329 
+
+gions (STSvp, STGa, FFC) in autism; (iii) a relative preference towards low-level visual features in 330 
+
+the pSTS in autism, strongest in the left hemisphere and linked to SRS score; and (iv) conserved 331 
+
+audio–visual modality dominance and feature encoding in autism. Further, results show that fea-332 
+
+ture encoding becomes increasingly more modality-congruent with age, with lateralized parcel-333 
+
+specific trajectories, though interactions of age with diagnosis or SRS score are sparse. Post-hoc 334 
+
+whole-brain and ADHD-stratified analyses further identify additional brain regions with significant 335 
+
+encoding differences, including left 8BL and left PoI2. 336 
+
+## Discussion 337 
+
+We asked where and how sensory features are differentially represented in the brain during nat-338 
+
+uralistic viewing in autism. First, we found no evidence for stronger low-level encoding in primary 339 
+
+sensory cortices in autism; instead, differences localized to higher-order association regions, most 340 
+
+notably the pSTS and adjacent frontal parcels. Second, in the autistic group, pSTS showed a prefer-341 
+
+ence for lower-level visual information over high-level visual encoding, with perceptual preference 342 
+
+significantly related to SRS scores. Third, audio–visual modality balance was broadly conserved in 343 
+
+autism, with significant effects predominantly observed developmentally in relation to age rather 344 
+
+than phenotypically across diagnostic groups. 345 
+
+> 14 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Implications for sensory theories 346 
+
+The observed pattern of downstream, visual-specific alterations, with reduced high-level represen-347 
+
+tations in social and integration hubs, fits the theory of weak central coherence (WCC) more readily 348 
+
+than enhanced perceptual functioning (EPF), which predicts increased encoding in early sensory 349 
+
+cortex. At a minimum, high-level global integration differences appear to outweigh any enhance-350 
+
+ments of early visual coding in this dataset and experimental context. A hybrid account remains 351 
+
+plausible, where both theories are true or where subtle early differences cascade to association 352 
+
+regions, for example, but our results do not directly support this. 353 
+
+pSTS, lateral pathway, and social perception 354 
+
+The emergence of the pSTS as a locus of autistic group differences in our results is mechanisti-355 
+
+cally informative. The pSTS is known to support perceptual functions including audiovisual speech 356 
+
+(Okada et al., 2013 ), biological motion ( Sokolov et al., 2012 ), and higher-order social perception 357 
+
+(Lahnakoski et al., 2012 ), with changes observed across development ( Xiao et al., 2016 ). Here, 358 
+
+autistic participants showed decreased high-level visual encoding and a relative preference toward 359 
+
+low-level visual features, with a left-hemisphere predominance for the high-level reduction. This 360 
+
+lateralized pattern sits within the context of the proposed third, lateral visual pathway thought to 361 
+
+be specialized for social perception, and raises the possibility that altered visual components of 362 
+
+socially relevant signals might underlie reported downstream effects, such as reduced audiovisual 363 
+
+speech perception, observed behaviorally in autism. One key detail is that the SRS association was 364 
+
+specific to the perceptual preference measure ( 𝑊 𝐻 −𝑊 𝐿 ) rather than raw performance, pointing to 365 
+
+an altered weighting of visual evidence rather than a uniform gain/loss. Another key observation 366 
+
+is that high-level visual 𝑅 2 itself was reduced in social brain regions (FFC/STS/STG), consistent with 367 
+
+a selective reduction in category-level visual information and not a broader effect that might be 368 
+
+attributable to something like increased noise. 369 
+
+Audio–visual dominance: largely conserved 370 
+
+Contrary to predictions related to behavioral “reverse Colavita” reports, we did not observe group 371 
+
+differences in audio–visual modality preference in sensory cortices. Naturalistic, passive viewing 372 
+
+and ceiling/floor constraints in unimodal cortices may attenuate sensitivity to cross-modal shifts 373 
+
+behaviorally measured under different contexts; moreover, the sensory dominance transitions re-374 
+
+ported in psychophysics may precede our sampled age range or require task demands that are 375 
+
+absent here. An interpretation of these findings is that shifts in sensory modality dominance, at 376 
+
+least at the levels measurable by fMRI-based encoding models, are not a hallmark of autistic per-377 
+
+ception during naturalistic movie viewing. 378 
+
+Developmental effects dominate audio and visual encoding 379 
+
+Age explained more variance than the diagnostic group when considering the stacked audio-visual 380 
+
+encoding models. Specifically, encoding performance increased with age within corresponding 381 
+
+modalities (visual model in visual cortex; audio model in auditory cortex, multisensory, and lan-382 
+
+guage areas), and modality preference also became more congruent with regional specialization. 383 
+
+Effects were often lateralized (e.g., right dorsal-stream visual parcels; left language network), con-384 
+
+sistent with known specializations and a general network-specific reweighting. These results demon-385 
+
+strate the ability of encoding models to pick up broad developmental effects while ruling out these 386 
+
+same factors in relation to diagnosis and phenotype. Notably, most age-related effects appeared 387 
+
+only at looser FD thresholds, and stricter FD thresholds disproportionately excluded younger par-388 
+
+ticipants. This highlights the importance of performing analyses with an awareness and trans-389 
+
+parency around factors such as noise and data quality, as this can be a critical factor that affects 390 
+
+downstream results and inferences. 391 
+
+> 15 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+ADHD comorbidity 392 
+
+Post-hoc stratification results suggest that visual encoding differences are driven by autistic par-393 
+
+ticipants without ADHD; the ASD +ADHD subgroup showed little divergence from the non-autistic 394 
+
+group, with a lone insular auditory effect under the strictest motion threshold. This pattern moti-395 
+
+vates explicit modeling of ADHD comorbidity in future work and raises the possibility of potentially 396 
+
+opposing sensory feature encoding in ASD vs. ADHD. This finding is particularly interesting, given 397 
+
+that functional connectivity has been shown to predict SRS across both ADHD and ASD ( Lake et al., 398 
+
+2019 ). 399 
+
+Sex-based considerations. 400 
+
+Autism shows sex-linked differences in prevalence, diagnostic presentation, and neurobiology, 401 
+
+with growing evidence for partly distinct neural phenotypes in females and males ( Napolitano 402 
+
+et al., 2022 ). Although sex was included as a covariate, the present study was neither designed nor 403 
+
+powered to adjudicate sex-specific encoding effects. Consequently, the pSTS findings and high– 404 
+
+vs. low-level visual reweighting could be disproportionately driven by males. Future work should 405 
+
+pre-register sex-stratified analyses (and Sex × Diagnosis and Sex × Age interactions), recruit ade-406 
+
+quately powered female cohorts, and incorporate pubertal status as a moderator. Such designs 407 
+
+will clarify whether the observed reductions in high-level visual encoding within social–perceptual 408 
+
+networks reflect a male-typical autistic phenotype, a shared mechanism across sexes, or qualita-409 
+
+tively different pathways in autistic females. 410 
+
+Limitations and Future Work 411 
+
+• Stimulus duration. The combined movie runs were comparatively brief, which limited en-412 
+
+coding performance, constrained the feasible feature space (due to overfitting when increas-413 
+
+ing the number of features), and limited the ability to perform noise-ceiling and within-subject 414 
+
+reliability estimation. We therefore used compact, theoretically robust features with cross-415 
+
+validation and permutation testing. Future work using longer acquisitions (and/or repetitions) 416 
+
+would permit richer models to probe for finer-grained effects. 417 
+
+• MSI-related inferences are limited by modality and design. With only mixed audiovisual 418 
+
+runs, no unimodal (A-only/V-only) acquisitions, and no behavioral MSI measures (e.g., tempo-419 
+
+ral binding window or Colavita task), direct tests of multisensory integration were not possible. 420 
+
+Moreover, many audiovisual interactions unfold at millisecond scales beyond the resolution 421 
+
+of the BOLD signal. We therefore used modality-resolved encoding and variance partition-422 
+
+ing to separate audio and visual contributions within fMRI’s constraints. Future work should 423 
+
+incorporate unimodal runs and MSI tasks, and pair fMRI with EEG/MEG to capture fast cross-424 
+
+modal dynamics. 425 
+
+• Sensory phenotyping. No dedicated sensory-processing scales (e.g., SSP/SPM) were avail-426 
+
+able to map our results directly to sensory phenotypes. Using the scales available in the 427 
+
+dataset with sensory related questions (SRS-2 and SCQ) we aggregated and used a Sensory 428 
+
+Subset Score (SSS), though it was not psychometrically validated. Future work should pair 429 
+
+encoding model results with dedicated sensory-processing scales or validate the SSS. 430 
+
+• Sample composition and generalizability. The dataset included only verbally fluent partici-431 
+
+pants and the autism cohort had a male-skewed sex distribution and high ADHD comorbidity, 432 
+
+limiting generalizability, particularly excluding minimally and non-verbal autistic individuals 433 
+
+and autistic females. We included age, sex, socioeconomic status, and site as confounds in all 434 
+
+analyses, and in exploratory analyses, stratified by ADHD diagnosis, but future work should 435 
+
+balance sex, ADHD, and verbal ability and model comorbidity a priori. 436 
+
+• Preprocessing/parcellation choices and lack of functional localizers. We used MMP parcels 437 
+
+without full MSMAll alignment and without subject-specific functional localizers (e.g., a face 438 
+
+localizer for FFA) as they were not available. This may have introduced some degree of regis-439 
+
+tration imprecision and ROI mis-localization. We did perform MSMSulc cortical surface regis-440 
+
+> 16 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+tration, allowing for improved surface alignment. Future work could apply MSMAll alignment, 441 
+
+functional localizers, or subject-specific parcellations to improve anatomical specificity. 442 
+
+• Eye gaze and attention. Autistic differences in fixation patterns during naturalistic viewing 443 
+
+are well documented and can alter effective visual input ( Klin et al., 2002 ). As eye-tracking 444 
+
+data was not directly collected during fMRI acquisiton and regressors were not gaze-weighted, 445 
+
+we cannot exclude eye-movement confounding or that our observed differences may be due 446 
+
+to autistic participants watching the movie differently. This warrants future work incorporat-447 
+
+ing eye-tracking and gaze-weighted features. 448 
+
+• Network-level dynamics and directionality. Our analyses were regional and did not assess 449 
+
+how feature representations are coordinated across networks or the direction of informa-450 
+
+tion flow. Within these constraints we limited inference to parcel-wise metrics. Future work 451 
+
+should relate encoding to static and time-varying functional connectivity and apply effective-452 
+
+connectivity approaches to test directionality, with pSTS and adjacent social–integration hubs 453 
+
+as a priori targets. 454 
+
+Conclusion 455 
+
+In conclusion, through preregistered stacked encoding model analyses applied to naturalistic movie-456 
+
+viewing fMRI data from the Healthy Brain Network, we find little support for pervasive early sensory 457 
+
+enhancement accounts of autism at the level of feature-resolved cortical representations. Instead, 458 
+
+autism-related differences are concentrated in higher-order integration and social–perceptual re-459 
+
+gions, most notably the pSTS, where high-level visual representations are reduced and feature 460 
+
+weighting shifts toward lower-level visual information in a manner that tracks social symptom 461 
+
+severity. At the same time, audio–visual modality preference and unimodal dominance appear 462 
+
+largely conserved, arguing against large global shifts in sensory dominance during passive natural-463 
+
+istic viewing. Developmental effects were prominent, lateralized, and modality-congruent, under-464 
+
+scoring the need to interpret group differences against ongoing maturation and motion-related 465 
+
+sampling constraints in pediatric datasets. Together, these results support mechanistic interpre-466 
+
+tations related to altered visual feature weighting within social/multisensory networks and demon-467 
+
+strate that naturalistic stimuli coupled with encoding-models can provide a scalable, theory-relevant 468 
+
+framework for characterizing how neurodevelopmental conditions may reshape sensory represen-469 
+
+tations in the brain. 470 
+
+## Methods 471 
+
+Existing Data 472 
+
+This study is based on two pre-registrations (accessible at osf.io/h92gr and osf.io/47kj6; summa-473 
+
+rized in Table 1 ) relying on data from releases 1-10 from the openly accessible Healthy Brain Net-474 
+
+work (HBN) dataset from the Child Mind Institute ( Alexander et al., 2017 ). The HBN dataset offers a 475 
+
+large cross-sectional population that is highly phenotypically characterized. The combination of a 476 
+
+young population, naturalistic imaging acquisitions, and scales like the social responsiveness score 477 
+
+make it an ideal dataset for this analysis. 478 
+
+Explanation of Existing Data. As additional data is released, a growing body of prior research 479 
+
+has analyzed the HBN dataset ( Kember et al., 2024 ; Mihailov et al., 2020 ; Tong et al., 2024 ; Cohen 480 
+
+et al., 2022 ; Camacho et al., 2023 ; Di et al., 2023 ). To our knowledge, at the time of this writing, 481 
+
+there is no existing research using naturalistic fMRI to predict autism diagnostic status and SRS 482 
+
+score from this dataset. Some metadata relevant to the research plan including summary statistics, 483 
+
+phenotypic data and quality control metrics from the fMRI data were accessed and analyzed prior 484 
+
+to the pre-registration of this work. As part of a pilot study to select features and set thresholds and 485 
+
+methodological parameters for the pre-registrations, functional data from 54 participants who are 486 
+
+neither in the autism nor control groups were accessed. These participants were withheld from all 487 
+
+subsequent analyses. 488 
+
+> 17 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Behavioral Measures 489 
+
+Autism diagnosis. Autism diagnosis relied on clinically synthesized consensus DSM-5 diagnoses. 490 
+
+These diagnoses were generated by the HBN clinical team based on interviews including the Sched-491 
+
+ule for Affective Disorders and Schizophrenia—Children’s version (KSADS) and all materials and 492 
+
+questionnaires collected during study participation in addition to behavioral observations, family 493 
+
+history, previous diagnoses, and history of therapeutic intervention. A limited subset of partici-494 
+
+pants with autism-related traits were administered the Autism Diagnostic Observation Schedule 495 
+
+(ADOS). All phenotypic data were accessed in accordance with a data usage agreement from the 496 
+
+Child Mind Institute. 497 
+
+Social Responsiveness Scale (SRS-2). The SRS is a quantitative measure of autistic traits that 498 
+
+is correlated with other commonly used scales including the ADOS and ADI-R ( Bölte et al., 2008 ;499 
+
+Constantino et al., 2003 ; Constantino, 2007 ). 500 
+
+Sensory subset score. While we aim to link neural signatures to targeted behaviorally mea-501 
+
+sured sensory differences in autism, assessments that specifically target such differences, like the 502 
+
+Short Sensory Profile (SSP), were not included in the HBN study. To overcome this limitation, a 503 
+
+sensory subset score (SSS) was generated from 3 items on the SRS-2 and one item from the Social 504 
+
+Communication Questionnaire (SCQ) ( Rutter et al., 2003 ), both of which all participants took part 505 
+
+in. While the SRS-2 is a well-validated measure, the SSS is not psychometrically validated, but may 506 
+
+be more specific to sensory-related differences. SSS is composed of the sum of items 20, 42, and 507 
+
+58 of the SRS-2 and item 14 of the SCQ relating to unusual sensory interests, sensory oversen-508 
+
+sitivities, and concentrating on parts instead of the whole. Specifically, these are: “I have sensory 509 
+
+differences that others find unusual (for example, smelling or looking at things in a different way).”, “I am 510 
+
+overly sensitive to certain sounds, textures, or smells.”, “I concentrate too much on parts of things rather 511 
+
+than seeing the whole picture.”, and “Has he/she ever seemed to be unusually interested in the sight, 512 
+
+feel, sound, taste, or smell of things or people?” . SSS is a sum of these scores where 0=No/Not True, 513 
+
+1=Sometimes True, 2=Often True, and 3=Almost Always True/Yes with the minimum SSS score 514 
+
+being 0 and the max being 12. 515 
+
+Group-level Confounds 516 
+
+All primary analyses will be conducted at the individual level before demographic confounds are 517 
+
+accounted for. Demographics including age, sex, and socioeconomic status along with site-level 518 
+
+variability will be included as confounds in all group-level statistical analyses. Family socioeco-519 
+
+nomic status will be reported as the total score from the Barratt Simplified Measure of Social Status 520 
+
+(BSMSS). 521 
+
+fMRI data 522 
+
+The analysis focuses on two naturalistic movie-viewing fMRI acquisitions ( Despicable Me , 10 min; 523 
+
+The Present , 4 min). All fMRI data (TR=0.8s) were acquired from 3 scanner sites in the Greater New 524 
+
+York area. 525 
+
+Quality Control Criteria 526 
+
+Motion-based exclusion criteria in neuroimaging studies of autistic children is an important consid-527 
+
+eration ( Elyounssi et al., 2025 ) and quality control criteria have been shown to alter the distribution 528 
+
+of included subjects. Specifically, subjects that are younger and have higher ADOS and SRS scores, 529 
+
+along with more inattentive, hyperactive/impulsive, and motor control features are more likely to 530 
+
+be excluded due to motion ( Nebel et al., 2022 ). To account for this issue, all results are reported 531 
+
+across a sweep of 3 framewise displacement (FD) based functional motion thresholds. Specifically, 532 
+
+functional data is excluded if the number of time points in a run with a mean FD > 0.2mm is greater 533 
+
+than 40%, 60%, or 80%. By starting with a more stringent threshold and sweeping this across more 534 
+
+lenient parameters, we aim to strike a balance between the best quality and more fully characteriz-535 
+
+ing as much of the dataset as possible. In this sample specifically, head motion (fraction of volumes 536 
+
+> 18 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 9. Head motion vs. age and behavioral measures. Scatterplots show the fraction of volumes with framewise displacement > 0.2 mm in relation to (A) age, (B) SRS Total T-score, and (C) Sensory Subset Score (SSS). Solid black lines denote linear fits. Reported coefficients are Spearman correlations ( 𝜌 ); “partial 𝜌 ”controls for age. (A) 𝜌 = −0 .40 ; (B) 𝜌 = −0 .01 , partial 𝜌 = 0 .03 ; (C) 𝜌 = 0 .06 , partial 𝜌 = 0 .08 . Motion decreases with age and shows only weak associations with SRS/SSS. 
+
+with FD > 0.2 mm) decreased with age (Spearman 𝜌 = -0.40), but showed weak linear associations 537 
+
+with SRS Total T and SSS ( 𝜌 = -0.01 and 0.06, respectively), which remained small after controlling 538 
+
+for age (partial 𝜌 = 0.03 and 0.08). As neither SRS nor SSS were correlated with fractional FD, this 539 
+
+pattern suggests that age is a primary driver of motion in this cohort and not symptom severity 540 
+
+(see Figure 9 ). 541 
+
+Quality control is not limited to functional data and is also applied to T1 data. T1 quality is 542 
+
+assessed in a semi-automated procedure via a Bayesian DNN brain parcellation method which 543 
+
+provides an uncertainty metric highly correlated with T1 structural image quality ( McClure et al., 544 
+
+2019 ). Images with mean uncertainty >= 0 .4 are flagged for manual inspection of their structural 545 
+
+images and subjects with excessive artifacts and irregularities are excluded from all analyses. In 546 
+
+addition to these semi-automated approaches, a manual QC evaluation is performed by examining 547 
+
+the reconstructed surfaces both alone and overlaid on subject T1 images across all subjects. This 548 
+
+entire process is performed “blind”, i.e. all visual inspections are performed without knowledge of 549 
+
+which cohort a subject belongs to or any other demographic information. 550 
+
+Diagnostic Inclusion Criteria 551 
+
+A subset of the total subjects (n=4767 before quality control and before excluding pilot subjects) 552 
+
+are included in analyses based on their diagnostic status as determined by the clinician consensus 553 
+
+field from the phenotypic and demographic data. Subjects in the autism group are selected if 554 
+
+they have received the DSM-5 label of ’Autism Spectrum Disorder’ (n=659 before quality control) 555 
+
+and non-autistic participants, referred to here as nonASD, are selected if they have the label ’No 556 
+
+Diagnosis Given’ (n=373 before quality control). Individuals with the labels ’No Diagnosis Given: 557 
+
+Incomplete Eval’ and ’No Diagnosis Given: No Reason Given’ are excluded from all analyses. Any 558 
+
+individuals with co-occurring conditions including ADHD are not excluded from the autism group, 559 
+
+despite the significant overlap (n=176 autism only, n=483 both autism and ADHD) in order to fully 560 
+
+sample the phenotypic space of autism present in the dataset. Additional secondary analyses are 561 
+
+performed to compare the autism only group to controls. 562 
+
+Demographics 563 
+
+After quality control and filtering (see Figure 10 for a flow chart) at the most stringent FD thresh-564 
+
+old, 63 non-autistic participants (mean ± SEM age = 10.96 ± 0.46 years; WISC–FSIQ = 110.8 ± 2.05; 565 
+
+Barratt Total = 54.4 ± 1.39; SRS Total T = 49.3 ± 0.97; SSS = 1.25 ± 0.21) and 108 autistic participants 566 
+
+(mean ± SEM age = 12.76 ± 0.37 years; WISC–FSIQ = 101.4 ± 2.08; Barratt Total = 49.3 ± 1.38; SRS To-567 
+
+tal T = 68.1 ± 1.10; SSS = 4.71 ± 0.28) were retained. Sex distribution differed significantly between 568 
+
+19 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 10. A flow chart illustrating how participants were selected for the final sample including the number that were excluded at each stage. 
+
+groups (𝜒 2(1) = 14 .23 , 𝑝 = 1 .6 × 10 −4 ), with a higher proportion of males in the autism cohort. Nor-569 
+
+mality (Shapiro–Wilk or D’Agostino’s K ²) and homogeneity of variance (Levene’s test) were assessed 570 
+
+for each continuous measure within each diagnostic group. Where both normality and equal vari-571 
+
+ance held, Student’s 𝑡 –tests were applied; where variances differed, Welch’s 𝑡 ; and for non-normal 572 
+
+distributions, two-sided Mann–Whitney 𝑈 –tests were used. Sex differences were evaluated via 𝜒 2,573 
+
+with Fisher’s exact test substituted if any cell count fell below five. To control the family-wise error 574 
+
+rate over six univariate comparisons, 𝑝 –values were adjusted via the Benjamini–Hochberg false dis-575 
+
+covery rate ( 𝛼 = 0.05). All demographic measures differed significantly between non-autistic and 576 
+
+autistic groups after FDR correction, but a multivariate logistic regression (diagnosis ~ Age + FSIQ 577 
+
++ Barratt + SRS + SSS + Sex) confirmed that, when entered simultaneously, only SRS ( 𝑧 = −3 .84 ,578 
+
+𝑝 = 1 .2 × 10 −4 ) and sex ( 𝑧 = 2 .70 , 𝑝 = 6 .8 × 10 −3 ) remained significant independent predictors of 579 
+
+diagnostic status. 580 
+
+Table 5. Descriptive statistics of demographic and clinical variables by diagnostic group. Continuous measures (Age, WISC–FSIQ, Barratt Total, SRS Total T, SSS) are reported along with their mean, SEM, minimum–maximum range in parentheses. “N” indicates the number of non-missing observations. Sex shows counts of males and females. P-values are FDR-corrected (Benjamini–Hochberg, 𝛼 =0.05).                                                                   
+
+> Age WISC FSIQ Barratt Total SRS Total T SSS Sex Group Statistic Autism Mean 12.76 101.43 49.30 68.14 4.71
+> SEM 0.37 2.08 1.38 1.10 0.28
+> Min 5.25 51.00 9.00 44.00 0.00
+> Max 21.48 147.00 66.00 90.00 12.00
+> N108 84 107 103 103 90 M, 18 F
+> Control Mean 10.96 110.76 54.38 49.32 1.25
+> SEM 0.46 2.05 1.39 0.97 0.21
+> Min 5.35 81.00 15.50 38.00 0.00
+> Max 20.49 145.00 66.00 73.00 8.00
+> N63 51 63 62 61 35 M, 28 F
+> p-value 0.004 0.004 0.023 8.51e-19 7.55e-14 3.23e-04
+
+20 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint fMRI Preprocessing 581 
+
+fMRI data from all included subjects was preprocessed using fMRIprep version 23.2.0 ( Esteban 582 
+
+et al., 2019 ). This version of fMRIprep includes MSMSulc cortical surface registration, allowing for 583 
+
+improved surface alignment compared to previous versions of fMRIprep. CIFTI2 outputs (com-584 
+
+bined cortical surface and subcortical volume) were obtained in fsLR 32k space. All subsequent 585 
+
+analyses were performed using CIFTI images to better respect the geometry of brain structures of 586 
+
+interest and prevent issues such as smoothing across cortical folds. The first 10 timepoints from 587 
+
+each run were discarded. Further preprocessing was performed using XCP-D version 0.10.1 ( Mehta 588 
+
+et al., 2024 ). Specific steps included: 4mm FWHM spatial smoothing, despiking, 0.1 Hz low-pass 589 
+
+filtering, confound regression of: six motion estimates and their derivatives, five white matter, and 590 
+
+five CSF ACompCor components, denoising and detrending. 591 
+
+Parcellation Scheme 592 
+
+The Glasser Multi-Modal Parcellation (MMP) ( Glasser et al., 2016 ) was used to select regions of 593 
+
+interest for all analyses. Regions were selected from auditory regions and across the dorsal, ventral, 594 
+
+and lateral visual streams. 595 
+
+Figure 11. Brain regions of interest with labels selected from the MMP span the visual and auditory systems and the dorsal, ventral, and lateral streams. The schematic shows all perceptual regions of interest grouped by their classification from the MMP and with perceptual streams labeled and some simplified connections illustrated. Note that the actual connectivity between these regions is known to be far more complex, for vision, see Felleman and Van Essen (1991). 
+
+Feature Selection 596 
+
+Movie features include automatically extracted and hand-labeled low- and high-level audio and vi-597 
+
+sual classes. These features were selected based on their performance on an independent set of 54 598 
+
+pilot subjects that were excluded from all subsequent analyses. Low-level auditory features were 599 
+
+extracted from the audio track of the movie files and include perceptual loudness extracted via 600 
+
+pyloudnorm ( Steinmetz, 2023 ) and the first 5 principal components of the cochleagram extracted 601 
+
+21 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint via pycochleagram ( McDermott, 2018 ). AudioSet ( Gemmeke et al., 2017 ) labels comprise the high-602 
+
+level auditory features and were extracted using YAMNet. Instead of a 521-dimensional vector 603 
+
+of all AudioSet classes, classes were combined across the highest level of the AudioSet ontology 604 
+
+yielding an 8-dimensional feature consisting of: ’Human Sounds, Speech’, ’Human Sounds, Non-605 
+
+Speech’, ’Animal Sounds’, ’Music’, ’Natural Sounds’, ’Sounds of Things’, ’Source Ambiguous Sounds’, 606 
+
+and ’Channel, Environment, Background’. 607 
+
+Low-level visual features include mean perceptual brightness, extracted from the RGB values 608 
+
+from each movie frame and mean motion, calculated as the mean of 2,139 motion energy filters 609 
+
+from pymoten ( Huth et al., 2012 ; Naselaris et al., 2011 ; Nunez-Elizalde et al., 2022 ). High-level 610 
+
+visual features here include hand-coded labels for the presence of faces and bodies obtained from 611 
+
+the EmoCodes dataset ( Camacho et al., 2022 ). While many more features could be extracted and 612 
+
+included in the models, here we limit features to this number as encoding models from the pilot 613 
+
+study with greater numbers of features resulted in overfitting. 614 
+
+Encoding Models 615 
+
+The hypotheses in this study are tested via encoding models, specifically looking at model per-616 
+
+formance, unique variance explained, and model weights. Individual subject grayordinate-wise 617 
+
+stacked regression ( Lin et al., 2024 ) is used, training a separate encoding model for each grayordi-618 
+
+nate to predict withheld brain activation for each subject. Three different stacked encoding models 619 
+
+are employed here: a low- and high-level audio model with only audio features, a low- and high-620 
+
+level visual model with only visual features, and an audio and visual model with all audio and visual 621 
+
+features (the audiovisual stacked model is depicted in Figure 12 ). For each model and subject, the 622 
+
+significance of each grayordinate is tested via a null model by repeatedly temporally permuting 623 
+
+the order of observations and retraining and testing the models. 1,000 iterations are performed 624 
+
+for each subject. FDR correction is applied to account for multiple comparisons for modeling and 625 
+
+testing a separate model for each grayordinate across the brain. Model weights and performance 626 
+
+are interpreted by pooling data across significant grayordinates within parcels of interest. The en-627 
+
+coding models use 5-fold cross-validation, training on 80% of the movie data and testing on the 628 
+
+remaining 20% across successive folds. To account for the hemodynamic response, all features 629 
+
+are convolved with a canonical double gamma HRF function. Features are z-scored to reduce the 630 
+
+effect of scaling on model weights. Accuracy is quantified for each region as the mean coefficient 631 
+
+of determination ( R2) and mean noise ceiling normalized R2. Spearman-Brown corrected split-half 632 
+
+noise ceilings are calculated to estimate the upper bound of possible performance for each brain 633 
+
+parcel. Unique low-level model R2 is calculated by subtracting the high-level model R2 from the 634 
+
+stacked encoding model R2. For this calculation, when high-level R2 is less than zero, it is clipped to 635 
+
+zero, resulting in low-level R2 = stacked R2. When high-level R2 exceeds stacked R2 it is set to stacked 636 
+
+R2, resulting in low-level R2 = 0. Model weight difference is calculated by subtracting the high-level 637 
+
+stacked encoding model weight 𝛼 𝐻 from the low-level weight 𝛼 𝐿 (for the audiovisual model, the 638 
+
+visual weight 𝛼 𝑉 is subtracted from the audio weight 𝛼 𝐴 ) resulting in a value [-1,1] where 1 indicates 639 
+
+a maximum high-level preference, -1 indicates a maximum low-level preference and 0 indicates no 640 
+
+preference between features. 641 
+
+Statistical Analysis 642 
+
+Linear mixed-effect models are used for significance testing for all hypotheses. While testing the re-643 
+
+lationship between model performance ( R2) and diagnostic group membership (control vs autism), 644 
+
+age, sex, socioeconomic status (SES), and site-level variability are accounted for as covariates. IQ is 645 
+
+not included as a covariate in the model due to too many participants with missing data, but a mul-646 
+
+tivariate logistic regression including all covariates and WISC full-scale IQ (the IQ assessment with 647 
+
+the largest coverage across the included participants) confirmed that only SRS and sex remained 648 
+
+significant independent predictors of diagnostic status. R2, the coefficient of determination, here 649 
+
+represents model fit and serves as the dependent variable. Fixed effects include group member-650 
+
+> 22 of 41
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 12. Schematic diagram illustrating the stacked encoding model approach used to relate movie stimulus features to brain activation measured via fMRI in the case of the audio and visual stacked model. From left to right: audio and visual features are extracted from a naturalistic movie stimulus. Each feature set independently informs its own ridge regression encoding model, which predicts brain activation ( 𝑅 2) on held-out data. The audio and visual ridge regression models are subsequently combined into a stacked regression model, assigning each model a weight ( 𝛼 1, 𝛼 2). The performance of the stacked model is measured by predicting overall brain activation ( 𝑅 2). The difference between stacked model weights ( 𝛼 2 − 𝛼 1) quantifies the relative perceptual preference toward audio or visual features. 
+
+ship (binary: 0 or 1), age (continuous, in years), sex (binary: 0 = Female, 1 = Male), and SES (continu-651 
+
+ous). Site (categorical, across 3 sites) is included as a random intercept to account for unmeasured 652 
+
+heterogeneity across sites, allowing the model to adjust for clustering effects. A generalized linear 653 
+
+mixed-effects model (GLMM) is fit using a logit link function. The model is implemented in Python 654 
+
+using the pymer4 library ( Jolly, 2018 ). Fixed-effect estimates are tested for statistical significance, 655 
+
+and the variance of the random effect is assessed to quantify site-level heterogeneity. This same 656 
+
+procedure is applied to test the other dependent variables in the low- vs. high-level and audio vs. 657 
+
+visual hypotheses: unique explained variance and model weight difference. To test for a relation-658 
+
+ship with autism severity and sensory symptoms, separate mixed-effects models are employed for 659 
+
+each of these metrics, but with the behavioral measures SRS and SSS each included as independent 660 
+
+variables of interest in place of diagnostic group membership. 661 
+
+## Funding 662 
+
+JM, YC, and SSG were partially supported by NIH P4 EB019936, by gifts from Schmidt Futures 663 
+
+and Citadel founder and CEO Ken Griffin, and by the Lann and Chris Woehrle Psychiatric Fund 664 
+
+at the McGovern Institute for Brain Research at MIT. JM was supported by the NIH-NIDCD T32 665 
+
+(5T32DC000038-29). 666 
+
+## Acknowledgments 667 
+
+We would like to thank Cat Camacho along with the members of the Senseable Intelligence Group 668 
+
+for their insightful discussions. 669 
+
+23 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint References 670 
+
+Abrams DA , Lynch CJ, Cheng KM, Phillips J, Supekar K, Ryali S, Uddin LQ, Menon V. Underconnectivity between 671 
+
+voice-selective cortex and reward circuitry in children with autism. Proceedings of the National Academy of 672 
+
+Sciences. 2013; 110(29):12060–12065. 673 
+
+Alaerts K , Nayar K, Kelly C, Raithel J, Milham MP, Di Martino A. Age-related changes in intrinsic function of the 674 
+
+superior temporal sulcus in autism spectrum disorders. Social cognitive and affective neuroscience. 2015; 675 
+
+10(10):1413–1423. 676 
+
+Alaerts K , Woolley DG, Steyaert J, Di Martino A, Swinnen SP, Wenderoth N. Underconnectivity of the superior 677 
+
+temporal sulcus predicts emotion recognition deficits in autism. Social cognitive and affective neuroscience. 678 
+
+2014; 9(10):1589–1600. 679 
+
+Alexander LM , Escalera J, Ai L, Andreotti C, Febre K, Mangone A, Vega-Potler N, Langer N, Alexander A, Kovacs 680 
+
+M, Litke S, O’Hagan B, Andersen J, Bronstein B, Bui A, Bushey M, Butler H, Castagna V, Camacho N, Chan E, 681 
+
+et al. An open resource for transdiagnostic research in pediatric mental health and learning disorders. Sci 682 
+
+Data. 2017 Dec; 4:170181. 683 
+
+Balasco L , Provenzano G, Bozzi Y. Sensory abnormalities in autism spectrum disorders: a focus on the tactile 684 
+
+domain, from genetic mouse models to the clinic. Frontiers in psychiatry. 2020; 10:1016. 685 
+
+Ben-Sasson A , Cermak SA, Orsmond GI, Tager-Flusberg H, Carter AS, Kadlec MB, Dunn W. Extreme sensory 686 
+
+modulation behaviors in toddlers with autism spectrum disorders. The American Journal of Occupational 687 
+
+Therapy. 2007; 61(5):584–592. 688 
+
+Bennetto L , Kuschner ES, Hyman SL. Olfaction and taste processing in autism. Biological psychiatry. 2007; 689 
+
+62(9):1015–1021. 690 
+
+Bolton TAW , Freitas LGA, Jochaut D, Giraud AL, Van De Ville D. Neural responses in autism during movie 691 
+
+watching: Inter-individual response variability co-varies with symptomatology. Neuroimage. 2020 Aug; 692 
+
+216:116571. 693 
+
+Bolton TAW , Jochaut D, Giraud AL, Van De Ville D. Brain dynamics in ASD during movie-watching show idiosyn-694 
+
+cratic functional integration and segregation. Hum Brain Mapp. 2018 Jun; 39(6):2391–2404. 695 
+
+Brock J . Alternative Bayesian accounts of autistic perception: comment on Pellicano and Burr. Trends Cogn 696 
+
+Sci. 2012 Dec; 16(12):573–4; author reply 574–5. 697 
+
+Burr D , Gori M. Multisensory Integration Develops Late in Humans. In: Murray MM, Wallace MT, editors. The 698 
+
+Neural Bases of Multisensory Processes Frontiers in Neuroscience, Boca Raton, FL: CRC Press/Taylor & Francis; 699 
+
+2012. https://www.ncbi.nlm.nih.gov/books/NBK92864/ .700 
+
+Byrge L , Dubois J, Tyszka JM, Adolphs R, Kennedy DP. Idiosyncratic brain activation patterns are associated 701 
+
+with poor social comprehension in autism. J Neurosci. 2015 Apr; 35(14):5837–5850. 702 
+
+Bölte S , Poustka F, Constantino JN. Assessing autistic traits: cross-cultural validation of the social responsive-703 
+
+ness scale (SRS). Autism Res. 2008 Dec; 1(6):354–363. 704 
+
+Calvert GA , Campbell R, Brammer MJ. Evidence from functional magnetic resonance imaging of crossmodal 705 
+
+binding in the human heteromodal cortex. Curr Biol. 2000 Jun; 10(11):649–657. 706 
+
+Calvert GA , Hansen PC, Iversen SD, Brammer MJ. Detection of audio-visual integration sites in humans by 707 
+
+application of electrophysiological criteria to the BOLD effect. Neuroimage. 2001; 14(2):427–438. 708 
+
+Camacho MC , Nielsen AN, Balser D, Furtado E, Steinberger DC, Fruchtman L, Culver JP, Sylvester CM, Barch DM. 709 
+
+Large-scale encoding of emotion concepts becomes increasingly similar between individuals from childhood 710 
+
+to adolescence. Nat Neurosci. 2023 Jun; . 711 
+
+Camacho MC , Williams EM, Balser D, Kamojjala R, Sekar N, Steinberger D, Yarlagadda S, Perlman SB, Barch DM. 712 
+
+EmoCodes: A standardized coding system for Socio-emotional content in complex video stimuli. Affect Sci. 713 
+
+2022 Mar; 3(1):168–181. 714 
+
+Cary E , Pacheco D, Kaplan-Kahn E, McKernan E, Matsuba E, Prieve B, Russo N. Brain signatures of early and late 715 
+
+neural measures of auditory habituation and discrimination in autism and their relationship to autistic traits 716 
+
+and sensory overresponsivity. Journal of Autism and Developmental Disorders. 2024; 54(4):1344–1360. 717 
+
+24 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Cascio CJ , Woynaroski T, Baranek GT, Wallace MT. Toward an interdisciplinary approach to understanding 718 
+
+sensory function in autism spectrum disorder. Autism Res. 2016 Sep; 9(9):920–925. 719 
+
+Cerliani L , Mennes M, Thomas RM, Di Martino A, Thioux M, Keysers C. Increased functional connectivity be-720 
+
+tween subcortical and cortical resting-state networks in autism spectrum disorder. JAMA psychiatry. 2015; 721 
+
+72(8):767–777. 722 
+
+Chamak B , Bonniau B, Jaunay E, Cohen D. What can we learn about autism from autistic persons? Psychother-723 
+
+apy and psychosomatics. 2008; 77(5):271–279. 724 
+
+Chen YJ , Duku E, Georgiades S. Rethinking autism intervention science: A dynamic perspective. Frontiers in 725 
+
+psychiatry. 2022; 13:827406. 726 
+
+Cohen SS , Tottenham N, Baldassano C. Developmental changes in story-evoked responses in the neocortex 727 
+
+and hippocampus. Elife. 2022 Jul; 11. 728 
+
+Colavita FB . Human sensory dominance. Perception & Psychophysics. 1974 Oct; 16(2):409–412. 729 
+
+Constantino JN . Social Responsiveness Scale (SRS). Western Psychological Services; 2007. 730 
+
+Constantino JN , Davis SA, Todd RD, Schindler MK, Gross MM, Brophy SL, Metzger LM, Shoushtari CS, Splinter R, 731 
+
+Reich W. Validation of a brief quantitative measure of autistic traits: comparison of the social responsiveness 732 
+
+scale with the autism diagnostic interview-revised. J Autism Dev Disord. 2003 Aug; 33(4):427–433. 733 
+
+Courchesne E , Pierce K. Why the frontal cortex in autism might be talking only to itself: local over-connectivity 734 
+
+but long-distance disconnection. Curr Opin Neurobiol. 2005 Apr; 15(2):225–230. 735 
+
+Van de Cruys S , Evers K, Van der Hallen R, Van Eylen L, Boets B, de Wit L, Wagemans J. Precise minds in uncertain 736 
+
+worlds: predictive coding in autism. Psychol Rev. 2014 Oct; 121(4):649–675. 737 
+
+Dakin S , Frith U. Vagaries of visual perception in autism. Neuron. 2005 Nov; 48(3):497–507. 738 
+
+Damarla SR , Keller TA, Kana RK, Cherkassky VL, Williams DL, Minshew NJ, Just MA. Cortical underconnectivity 739 
+
+coupled with preserved visuospatial cognition in autism: Evidence from an fMRI study of an embedded 740 
+
+figures task. Autism Res. 2010 Oct; 3(5):273–279. 741 
+
+Di X , Xu T, Uddin LQ, Biswal BB. Individual differences in time-varying and stationary brain connectivity dur-742 
+
+ing movie watching from childhood to early adulthood: Age, sex, and behavioral associations. Dev Cogn 743 
+
+Neurosci. 2023 Jul; 63:101280. 744 
+
+Di Martino A , Yan CG, Li Q, Denio E, Castellanos FX, Alaerts K, Anderson JS, Assaf M, Bookheimer SY, Dapretto 745 
+
+M, Deen B, Delmonte S, Dinstein I, Ertl-Wagner B, Fair DA, Gallagher L, Kennedy DP, Keown CL, Keysers C, 746 
+
+Lainhart JE, et al. The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic 747 
+
+brain architecture in autism. Mol Psychiatry. 2014 Jun; 19(6):659–667. 748 
+
+Diedrichsen J , Kriegeskorte N. Representational models: A common framework for understanding encoding, 749 
+
+pattern-component, and representational-similarity analysis. PLoS Comput Biol. 2017 Apr; 13(4):e1005508. 750 
+
+Dinstein I , Heeger DJ, Lorenzi L, Minshew NJ, Malach R, Behrmann M. Unreliable evoked responses in autism. 751 
+
+Neuron. 2012 Sep; 75(6):981–991. 752 
+
+DuBois D , Ameis SH, Lai MC, Casanova MF, Desarkar P. Interoception in autism spectrum disorder: A review. 753 
+
+International journal of developmental neuroscience. 2016; 52:104–111. 754 
+
+Elyounssi S , Kunitoki K, Clauss JA, Laurent E, Kane KA, Hughes DE, Hopkinson CE, Bazer O, Sussman RF, Doyle 755 
+
+AE, et al. Addressing artifactual bias in large, automated MRI analyses of brain development. Nature Neuro-756 
+
+science. 2025; p. 1–10. 757 
+
+Esteban O , Markiewicz CJ, Blair RW, Moodie CA, Isik AI, Erramuzpe A, Kent JD, Goncalves M, DuPre E, Snyder M, 758 
+
+Oya H, Ghosh SS, Wright J, Durnez J, Poldrack RA, Gorgolewski KJ. fMRIPrep: a robust preprocessing pipeline 759 
+
+for functional MRI. Nat Methods. 2019 Jan; 16(1):111–116. 760 
+
+Falck-Ytter T , Bussu G. The sensory-first account of autism. Neurosci Biobehav Rev. 2023 Oct; 153:105405. 761 
+
+Federici A , Parma V, Vicovaro M, Radassao L, Casartelli L, Ronconi L. Anomalous perception of biological motion 762 
+
+in autism: a conceptual review and meta-analysis. Scientific Reports. 2020; 10(1):4576. 763 
+
+25 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Feldman JI , Conrad JG, Kuang W, Tu A, Liu Y, Simon DM, Wallace MT, Woynaroski TG. Relations between the 764 
+
+McGurk effect, social and communication skill, and autistic features in children with and without autism. J 765 
+
+Autism Dev Disord. 2022 May; 52(5):1920–1928. 766 
+
+Feldman JI , Dunham K, Cassidy M, Wallace MT, Liu Y, Woynaroski TG. Audiovisual multisensory integration in 767 
+
+individuals with autism spectrum disorder: A systematic review and meta-analysis. Neurosci Biobehav Rev. 768 
+
+2018 Dec; 95:220–234. 769 
+
+Felleman DJ , Van Essen DC. Distributed hierarchical processing in the primate cerebral cortex. Cereb Cortex. 770 
+
+1991; 1(1):1–47. 771 
+
+Floris DL , Llera A, Zabihi M, Moessnang C, Jones EJ, Mason L, Haartsen R, Holz NE, Mei T, Elleaume C, et al. A 772 
+
+multimodal neural signature of face processing in autism within the fusiform gyrus. Nature Mental Health. 773 
+
+2025; 3(1):31–45. 774 
+
+Friston K . A theory of cortical responses. Philosophical transactions of the Royal Society B: Biological sciences. 775 
+
+2005; 360(1456):815–836. 776 
+
+Frith U . Autism: Explaining the Enigma. Oxford, UK: Blackwell; 1989. 777 
+
+Gemmeke JF , Ellis DPW, Freedman D, Jansen A, Lawrence W, Moore RC, Plakal M, Ritter M. Audio Set: An 778 
+
+ontology and human-labeled dataset for audio events. In: 2017 IEEE International Conference on Acoustics, 779 
+
+Speech and Signal Processing (ICASSP) IEEE; 2017. p. 776–780. 780 
+
+Georgiades S , Bishop SL, Frazier T, Editorial Perspective: Longitudinal research in autism–introducing the con-781 
+
+cept of ‘chronogeneity’. Wiley Online Library; 2017. 782 
+
+Ghazanfar AA , Schroeder CE. Is neocortex essentially multisensory? Trends Cogn Sci. 2006 Jun; 10(6):278–285. 783 
+
+Glasser MF , Coalson TS, Robinson EC, Hacker CD, Harwell J, Yacoub E, Ugurbil K, Andersson J, Beckmann CF, 784 
+
+Jenkinson M, Smith SM, Van Essen DC. A multi-modal parcellation of human cerebral cortex. Nature. 2016 785 
+
+Aug; 536(7615):171–178. 786 
+
+Guo X , He C, Duan X, Han S, Xiao J, Chen H. Aberrant functional connectivity dynamics of superior temporal 787 
+
+sulcus and its associations with GABA genes expression in autism. In: Proceedings of the 3rd International 788 
+
+Conference on Medical and Health Informatics ; 2019. p. 21–25. 789 
+
+Hadjikhani N , Joseph RM, Snyder J, Tager-Flusberg H. Abnormal activation of the social brain during face 790 
+
+perception in autism. Hum Brain Mapp. 2007 May; 28(5):441–449. 791 
+
+Han S , Tai C, Westenbroek RE, Yu FH, Cheah CS, Potter GB, Rubenstein JL, Scheuer T, De La Iglesia HO, Catterall 792 
+
+WA. Autistic-like behaviour in Scn1a+/- mice and rescue by enhanced GABA-mediated neurotransmission. 793 
+
+Nature. 2012; 489(7416):385–390. 794 
+
+Happé FG . Studying weak central coherence at low levels: children with autism do not succumb to visual 795 
+
+illusions. A research note. Journal of child psychology and psychiatry. 1996; 37(7):873–877. 796 
+
+Happé F , Ronald A, Plomin R. Time to give up on a single explanation for autism. Nat Neurosci. 2006 Oct; 797 
+
+9(10):1218–1220. 798 
+
+Hasson U , Avidan G, Gelbard H, Vallines I, Harel M, Minshew N, Behrmann M. Shared and idiosyncratic cortical 799 
+
+activation patterns in autism revealed under continuous real-life viewing conditions. Autism Res. 2009 Aug; 800 
+
+2(4):220–231. 801 
+
+Haxby JV , Connolly AC, Guntupalli JS. Decoding neural representational spaces using multivariate pattern 802 
+
+analysis. Annu Rev Neurosci. 2014 Jun; 37:435–456. 803 
+
+Haxby JV , Guntupalli JS, Connolly AC, Halchenko YO, Conroy BR, Gobbini MI, Hanke M, Ramadge PJ. A common, 804 
+
+high-dimensional model of the representational space in human ventral temporal cortex. Neuron. 2011 Oct; 805 
+
+72(2):404–416. 806 
+
+Herbert MR , Harris GJ, Adrien KT, Ziegler DA, Makris N, Kennedy DN, Lange NT, Chabris CF, Bakardjiev A, Hodg-807 
+
+son J, et al. Abnormal asymmetry in language association cortex in autism. Annals of Neurology: Official 808 
+
+Journal of the American Neurological Association and the Child Neurology Society. 2002; 52(5):588–596. 809 
+
+Hirst RJ , Cragg L, Allen HA. Vision dominates audition in adults but not children: A meta-analysis of the Colavita 810 
+
+effect. Neurosci Biobehav Rev. 2018 Nov; 94:286–301. 811 
+
+26 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Hollestein V , Poelmans G, Forde NJ, Beckmann CF, Ecker C, Mann C, Schäfer T, Moessnang C, Baumeister S, 812 
+
+Banaschewski T, Bourgeron T, Loth E, Dell’Acqua F, Murphy DGM, Puts NA, Tillmann J, Charman T, Jones EJH, 813 
+
+Mason L, Ambrosino S, et al. Excitatory/inhibitory imbalance in autism: the role of glutamate and GABA 814 
+
+gene-sets in symptoms and cortical brain structure. Transl Psychiatry. 2023 Jan; 13(1):18. 815 
+
+Huth AG , de Heer WA, Griffiths TL, Theunissen FE, Gallant JL. Natural speech reveals the semantic maps that 816 
+
+tile human cerebral cortex. Nature. 2016 Apr; 532(7600):453–458. 817 
+
+Huth AG , Nishimoto S, Vu AT, Gallant JL. A continuous semantic space describes the representation of thou-818 
+
+sands of object and action categories across the human brain. Neuron. 2012 Dec; 76(6):1210–1224. 819 
+
+Igelström KM , Webb TW, Graziano MS. Functional connectivity between the temporoparietal cortex and cere-820 
+
+bellum in autism spectrum disorder. Cerebral Cortex. 2017; 27(4):2617–2627. 821 
+
+Jolly E . Pymer4: Connecting R and python for linear mixed modeling. J Open Source Softw. 2018 Nov; 3(31):862. 822 
+
+Kember J , Patenaude P, Sweatman H, Van Schaik L, Tabuenca Z, Chai XJ. Specialization of anterior and posterior 823 
+
+hippocampal functional connectivity differs in autism. Autism Res. 2024 May; . 824 
+
+Keown CL , Shih P, Nair A, Peterson N, Mulvey ME, Müller RA. Local functional overconnectivity in posterior brain 825 
+
+regions is associated with symptom severity in autism spectrum disorders. Cell reports. 2013; 5(3):567–572. 826 
+
+Khosla M , Ngo GH, Jamison K, Kuceyeski A, Sabuncu MR. Cortical response to naturalistic stimuli is largely 827 
+
+predictable with deep neural networks. Sci Adv. 2021 May; 7(22). 828 
+
+Klin A , Jones W, Schultz R, Volkmar F, Cohen D. Visual fixation patterns during viewing of naturalistic social 829 
+
+situations as predictors of social competence in individuals with autism. Archives of general psychiatry. 830 
+
+2002; 59(9):809–816. 831 
+
+Koldewyn K , Whitney D, Rivera SM. Neural correlates of coherent and biological motion perception in autism. 832 
+
+Dev Sci. 2011 Sep; 14(5):1075–1088. 833 
+
+Kriegeskorte N , Douglas PK. Interpreting encoding and decoding models. Curr Opin Neurobiol. 2019 Apr; 834 
+
+55:167–179. 835 
+
+Lahnakoski JM , Glerean E, Salmi J, Jääskeläinen IP, Sams M, Hari R, Nummenmaa L. Naturalistic FMRI mapping 836 
+
+reveals superior temporal sulcus as the hub for the distributed brain network for social perception. Front 837 
+
+Hum Neurosci. 2012 Aug; 6:233. 838 
+
+Lake EMR , Finn ES, Noble SM, Vanderwal T, Shen X, Rosenberg MD, Spann MN, Chun MM, Scheinost D, Con-839 
+
+stable RT. The Functional Brain Organization of an Individual Allows Prediction of Measures of Social Abil-840 
+
+ities Transdiagnostically in Autism and Attention-Deficit/Hyperactivity Disorder. Biol Psychiatry. 2019 Aug; 841 
+
+86(4):315–326. 842 
+
+Lawrence KE , Hernandez LM, Bookheimer SY, Dapretto M. Atypical longitudinal development of functional 843 
+
+connectivity in adolescents with autism spectrum disorder. Autism Research. 2019; 12(1):53–65. 844 
+
+Lawson RP , Mathys C, Rees G. Adults with autism overestimate the volatility of the sensory environment. 845 
+
+Nature neuroscience. 2017; 20(9):1293–1299. 846 
+
+Lawson RP , Rees G, Friston KJ. An aberrant precision account of autism. Front Hum Neurosci. 2014 May; 8:302. 847 
+
+Leekam SR , Nieto C, Libby SJ, Wing L, Gould J. Describing the sensory abnormalities of children and adults with 848 
+
+autism. J Autism Dev Disord. 2007 May; 37(5):894–910. 849 
+
+Lefebvre A , Tillmann J, Cliquet F, Amsellem F, Maruani A, Leblond C, Beggiato A, Germanaud D, Amestoy A, 850 
+
+Ly-Le Moal M, et al. Tackling hypo and hyper sensory processing heterogeneity in autism: From clinical 851 
+
+stratification to genetic pathways. Autism Research. 2023; 16(2):364–378. 852 
+
+Levit-Binnun N , Davidovitch M, Golland Y. Sensory and motor secondary symptoms as indicators of brain 853 
+
+vulnerability. Journal of Neurodevelopmental Disorders. 2013; 5(1):26. 854 
+
+Lin F , Albantakis L, Noppari T, Santavirta S, Brandi ML, Sun L, Lukkarinen L, Tani P, Salmi J, Nummenmaa L, et al. 855 
+
+Reduced inter-subject functional connectivity during movies in autism: Replicability across cross-national 856 
+
+fMRI datasets. bioRxiv. 2025; p. 2025–02. 857 
+
+Lin R , Naselaris T, Kay K, Wehbe L. Stacked regressions and structured variance partitioning for interpretable 858 
+
+brain maps. Neuroimage. 2024 Sep; 298(120772):120772. 859 
+
+27 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Lyons KM , Stevenson RA, Owen AM, Stojanoski B. Examining the relationship between measures of autistic 860 
+
+traits and neural synchrony during movies in children with and without autism. Neuroimage Clin. 2020 Oct; 861 
+
+28:102477. 862 
+
+Marco EJ , Hinkley LBN, Hill SS, Nagarajan SS. Sensory processing in autism: a review of neurophysiologic 863 
+
+findings. Pediatr Res. 2011 May; 69(5 Pt 2):48R–54R. 864 
+
+Martínez K , Martínez-García M, Marcos-Vidal L, Janssen J, Castellanos FX, Pretus C, Villarroya O, Pina-Camacho 865 
+
+L, Díaz-Caneja CM, Parellada M, Arango C, Desco M, Sepulcre J, Carmona S. Sensory-to-cognitive systems in-866 
+
+tegration is associated with clinical severity in autism spectrum disorder. J Am Acad Child Adolesc Psychiatry. 867 
+
+2020 Mar; 59(3):422–433. 868 
+
+McClure P , Rho N, Lee JA, Kaczmarzyk JR, Zheng CY, Ghosh SS, Nielson DM, Thomas AG, Bandettini P, Pereira F. 869 
+
+Knowing what you know in brain segmentation using Bayesian deep neural networks. Front Neuroinform. 870 
+
+2019 Oct; 13:67. 871 
+
+McDermott J , pycochleagram: Generate cochleagrams natively in Python.; 2018. Accessed: 2024-10-30. https: 872 
+
+//github.com/mcdermottLab/pycochleagram?tab=readme-ov-file .873 
+
+Mehta K , Salo T, Madison TJ, Adebimpe A, Bassett DS, Bertolero M, Cieslak M, Covitz S, Houghton A, Keller 874 
+
+AS, Lundquist JT, Luo A, Miranda-Dominguez O, Nelson SM, Shafiei G, Shanmugan S, Shinohara RT, Smyser 875 
+
+CD, Sydnor VJ, Weldon KB, et al. XCP-D: A robust pipeline for the post-processing of fMRI data. Imaging 876 
+
+Neuroscience. 2024 Aug; 2:1–26. 877 
+
+Mihailov A , Philippe C, Gloaguen A, Grigis A, Laidi C, Piguet C, Houenou J, Frouin V. Cortical signatures in behav-878 
+
+iorally clustered autistic traits subgroups: a population-based study. Transl Psychiatry. 2020 Jun; 10(1):207. 879 
+
+Moro SS , Ghemraoui AA, Steeves JKE. No Colavita effect: Lack of visual dominance in people with autism 880 
+
+spectrum disorder. J Vis. 2012 Aug; 12(9):1038–1038. 881 
+
+Mottron L , Burack JA. Enhanced perceptual functioning in the development of autism. In: Burack JA, Charman 882 
+
+T, Yirmiya N, Zelazo PR, editors. The Development of Autism: Perspectives from Theory and Research Lawrence 883 
+
+Erlbaum Associates Publishers; 2001.p. 131–148. 884 
+
+Mottron L , Dawson M, Soulières I, Hubert B, Burack J. Enhanced perceptual functioning in autism: an update, 885 
+
+and eight principles of autistic perception. J Autism Dev Disord. 2006 Jan; 36(1):27–43. 886 
+
+Mumford D . On the computational architecture of the neocortex: II The role of cortico-cortical loops. Biological 887 
+
+cybernetics. 1992; 66(3):241–251. 888 
+
+Napolitano A , Schiavi S, La Rosa P, Rossi-Espagnet MC, Petrillo S, Bottino F, Tagliente E, Longo D, Lupi E, Casula 889 
+
+L, et al. Sex differences in autism spectrum disorder: diagnostic, neurobiological, and behavioral features. 890 
+
+Frontiers in psychiatry. 2022; 13:889636. 891 
+
+Naselaris T , Kay KN, Nishimoto S, Gallant JL. Encoding and decoding in fMRI. Neuroimage. 2011 May; 56(2):400– 892 
+
+410. 893 
+
+Nastase SA , Goldstein A, Hasson U. Keep it real: rethinking the primacy of experimental control in cognitive 894 
+
+neuroscience. Neuroimage. 2020 Nov; 222:117254. 895 
+
+Nebel MB , Lidstone DE, Wang L, Benkeser D, Mostofsky SH, Risk BB. Accounting for motion in resting-state 896 
+
+fMRI: What part of the spectrum are we characterizing in autism spectrum disorder? Neuroimage. 2022 Aug; 897 
+
+257(119296):119296. 898 
+
+Neil PA , Chee-Ruiter C, Scheier C, Lewkowicz DJ, Shimojo S. Development of multisensory spatial integration 899 
+
+and perception in humans. Developmental science. 2006; 9(5):454–464. 900 
+
+Nieto Del Rincón PL . Autism: alterations in auditory perception. Rev Neurosci. 2008; 19(1):61–78. 901 
+
+Noel JP , Angelaki DE. A theory of autism bridging across levels of description. Trends in Cognitive Sciences. 902 
+
+2023; 27(7):631–641. 903 
+
+Nunez-Elizalde A , la Tour TD, di Oleggio Castello MV, gallantlab/pymoten: v0.0.4. Zenodo; 2022. 904 
+
+O’connor N , Hermelin B. Sensory dominance in autistic imbecile children and controls. Arch Gen Psychiatry. 905 
+
+1965 Jan; 12(1):99–103. 906 
+
+28 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Okada K , Venezia JH, Matchin W, Saberi K, Hickok G. An fMRI Study of Audiovisual Speech Perception Reveals 907 
+
+Multisensory Interactions in Auditory Cortex. PLoS One. 2013 Jun; 8(6):e68959. 908 
+
+O’riordan MA . Superior visual search in adults with autism. Autism. 2004; 8(3):229–248. 909 
+
+Pantelis PC , Byrge L, Tyszka JM, Adolphs R, Kennedy DP. A specific hypoactivation of right temporo-parietal 910 
+
+junction/posterior superior temporal sulcus in response to socially awkward situations in autism. Soc Cogn 911 
+
+Affect Neurosci. 2015 Oct; 10(10):1348–1356. 912 
+
+Pellicano E , Burr D. When the world becomes ’too real’: a Bayesian explanation of autistic perception. Trends 913 
+
+Cogn Sci. 2012 Oct; 16(10):504–510. 914 
+
+Pierce K , Haist F, Sedaghat F, Courchesne E. The brain response to personally familiar faces in autism: findings 915 
+
+of fusiform activity and beyond. Brain. 2004; 127(12):2703–2716. 916 
+
+Pierce K , Müller RA, Ambrose J, Allen G, Courchesne E. Face processing occurs outside the fusiformface area’in 917 
+
+autism: evidence from functional MRI. Brain. 2001; 124(10):2059–2073. 918 
+
+Puts NA , Wodka EL, Harris AD, Crocetti D, Tommerdahl M, Mostofsky SH, Edden RA. Reduced GABA and altered 919 
+
+somatosensory function in children with autism spectrum disorder. Autism Research. 2017; 10(4):608–619. 920 
+
+Rao RP , Ballard DH. Predictive coding in the visual cortex: a functional interpretation of some extra-classical 921 
+
+receptive-field effects. Nature neuroscience. 1999; 2(1):79–87. 922 
+
+Redcay E , Moraczewski D. Social cognition in context: A naturalistic imaging approach. Neuroimage. 2020 Aug; 923 
+
+216:116392. 924 
+
+Robertson CE , Baron-Cohen S. Sensory perception in autism. Nat Rev Neurosci. 2017 Nov; 18(11):671–684. 925 
+
+Robertson CE , Ratai EM, Kanwisher N. Reduced GABAergic action in the autistic brain. Current Biology. 2016; 926 
+
+26(1):80–85. 927 
+
+Robertson CE , Thomas C, Kravitz DJ, Wallace GL, Baron-Cohen S, Martin A, Baker CI. Global motion perception 928 
+
+deficits in autism are reflected as early as primary visual cortex. Brain. 2014 Sep; 137(Pt 9):2588–2599. 929 
+
+Ronconi L , Vitale A, Federici A, Mazzoni N, Battaglini L, Molteni M, Casartelli L. Neural dynamics driving audio-930 
+
+visual integration in autism. Cereb Cortex. 2023 Jan; 33(3):543–556. 931 
+
+Ross P , Atkins B, Allison L, Simpson H, Duffell C, Williams M, Ermolina O. Children cannot ignore what they hear: 932 
+
+Incongruent emotional information leads to an auditory dominance in children. J Exp Child Psychol. 2021 933 
+
+Apr; 204(105068):105068. 934 
+
+Rubenstein JL , Merzenich MM. Model of autism: increased ratio of excitation/inhibition in key neural systems. 935 
+
+Genes, Brain and Behavior. 2003; 2(5):255–267. 936 
+
+Rudie JD , Dapretto M. Convergent evidence of brain overconnectivity in children with autism? Cell reports. 937 
+
+2013; 5(3):565–566. 938 
+
+Russo N , Cascio CJ, Baranek GT, Woynaroski TG, Williams ZJ, Green SA, Schaaf R. A cascading effects model of 939 
+
+early sensory development in autism. Psychological Review. 2025; . 940 
+
+Rutter M , Bailey A, Lord C. SCQ: The Social Communication Questionnaire. Western psychological services; 941 
+
+2003. 942 
+
+Salmi J , Roine U, Glerean E, Lahnakoski J, Nieminen-von Wendt T, Tani P, Leppämäki S, Nummenmaa L, Jääskeläi-943 
+
+nen IP, Carlson S, Rintahaka P, Sams M. The brains of high functioning autistic individuals do not synchronize 944 
+
+with those of others. Neuroimage Clin. 2013 Oct; 3:489–497. 945 
+
+Samara A , Zada Z, Vanderwal T, Hasson U, Nastase SA. Cortical language areas are coupled via a soft hierarchy 946 
+
+of model-based linguistic features. bioRxiv. 2025; p. 2025–06. 947 
+
+Schneebeli M , Haker H, Rüesch A, Zahnd N, Marino S. Disentangling “Bayesian brain” theories of autism spec-948 
+
+trum disorder. medRxiv. 2022; . 949 
+
+Schultz RT , Grelotti DJ, Klin A, Kleinman J, Van der Gaag C, Marois R, Skudlarski P. The role of the fusiform face 950 
+
+area in social cognition: implications for the pathobiology of autism. Philosophical Transactions of the Royal 951 
+
+Society of London Series B: Biological Sciences. 2003; 358(1430):415–427. 952 
+
+29 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Schwarzkopf DS , Anderson EJ, de Haas B, White SJ, Rees G. Larger extrastriate population receptive fields in 953 
+
+autism spectrum disorders. J Neurosci. 2014 Feb; 34(7):2713–2724. 954 
+
+Shih P , Keehn B, Oram JK, Leyden KM, Keown CL, Müller RA. Functional differentiation of posterior superior 955 
+
+temporal sulcus in autism: a functional connectivity magnetic resonance imaging study. Biological psychiatry. 956 
+
+2011; 70(3):270–277. 957 
+
+Simonoff E , Kent R, Stringer D, Lord C, Briskman J, Lukito S, Pickles A, Charman T, Baird G. Trajectories in 958 
+
+symptoms of autism and cognitive ability in autism from childhood to adult life: Findings from a longitu-959 
+
+dinal epidemiological cohort. Journal of the American Academy of Child & Adolescent Psychiatry. 2020; 960 
+
+59(12):1342–1352. 961 
+
+Smith LE , Maenner MJ, Seltzer MM. Developmental trajectories in adolescents and adults with autism: The case 962 
+
+of daily living skills. Journal of the American Academy of Child & Adolescent Psychiatry. 2012; 51(6):622–631. 963 
+
+Sokolov AA , Erb M, Gharabaghi A, Grodd W, Tatagiba MS, Pavlova MA. Biological motion processing: the left 964 
+
+cerebellum communicates with the right superior temporal sulcus. Neuroimage. 2012; 59(3):2824–2830. 965 
+
+Sonkusare S , Breakspear M, Guo C. Naturalistic Stimuli in Neuroscience: Critically Acclaimed. Trends Cogn Sci. 966 
+
+2019 Aug; 23(8):699–714. 967 
+
+Stein BE , Stanford TR. Multisensory integration: current issues from the perspective of the single neuron. 968 
+
+Nature reviews neuroscience. 2008; 9(4):255–266. 969 
+
+Steinmetz CJ , pyloudnorm: Flexible audio loudness meter in Python with implementation of ITU-R BS.1770-4 970 
+
+loudness algorithm; 2023. 971 
+
+Stevenson RA , Segers M, Ferber S, Barense MD, Wallace MT. The impact of multisensory integration deficits 972 
+
+on speech perception in children with autism spectrum disorders. Front Psychol. 2014 May; 5:379. 973 
+
+Stevenson RA , Siemann JK, Woynaroski TG, Schneider BC, Eberly HE, Camarata SM, Wallace MT. Evidence 974 
+
+for diminished multisensory integration in autism spectrum disorders. J Autism Dev Disord. 2014 Dec; 975 
+
+44(12):3161–3167. 976 
+
+Supekar K , Uddin LQ, Khouzam A, Phillips J, Gaillard WD, Kenworthy LE, Yerys BE, Vaidya CJ, Menon V. Brain 977 
+
+hyperconnectivity in children with autism and its links to social deficits. Cell Rep. 2013 Nov; 5(3):738–747. 978 
+
+Sydnor VJ , Larsen B, Bassett DS, Alexander-Bloch A, Fair DA, Liston C, Mackey AP, Milham MP, Pines A, Roalf 979 
+
+DR, et al. Neurodevelopment of the association cortices: Patterns, mechanisms, and implications for psy-980 
+
+chopathology. Neuron. 2021; 109(18):2820–2846. 981 
+
+Takesian AE , Hensch TK. Balancing plasticity/stability across brain development. Progress in brain research. 982 
+
+2013; 207:3–34. 983 
+
+Tavassoli T , Miller LJ, Schoen SA, Nielsen DM, Baron-Cohen S. Sensory over-responsivity in adults with autism 984 
+
+spectrum conditions. Autism. 2014 May; 18(4):428–432. 985 
+
+Thompson RA , Nelson CA. Developmental science and the media: Early brain development. American Psy-986 
+
+chologist. 2001; 56(1):5. 987 
+
+Tong X , Xie H, Fonzo GA, Zhao K, Satterthwaite TD, Carlisle NB, Zhang Y. Symptom dimensions of resting-state 988 
+
+electroencephalographic functional connectivity in autism. Nature Mental Health. 2024 Jan; p. 1–12. 989 
+
+Dupré la Tour T , Eickenberg M, Nunez-Elizalde AO, Gallant JL. Feature-space selection with banded ridge 990 
+
+regression. Neuroimage. 2022 Dec; 264:119728. 991 
+
+Dupré la Tour T , Visconti di Oleggio Castello M, Gallant JL. The Voxelwise Encoding Model framework: A tutorial 992 
+
+introduction to fitting encoding models to fMRI data. Imaging Neuroscience. 2025; https://doi.org/10.1162/ 993 
+
+imag_a_00575 , doi: 10.1162/imag_a_00575. 994 
+
+Uljarević M , Baranek G, Vivanti G, Hedley D, Hudry K, Lane A. Heterogeneity of sensory features in autism 995 
+
+spectrum disorder: Challenges and perspectives for future research. Autism Research. 2017; 10(5):703–710. 996 
+
+Vanderwal T , Eilbott J, Castellanos FX. Movies in the magnet: Naturalistic paradigms in developmental func-997 
+
+tional neuroimaging. Dev Cogn Neurosci. 2019 Apr; 36:100600. 998 
+
+Wang X , Bouton S, Kojovic N, Giraud AL, Schaer M. Atypical audio-visual neural synchrony and speech process-999 
+
+ing in children with autism spectrum disorder. bioRxiv. 2024 Apr; p. 2024.04.19.590044. 1000 
+
+30 of 41 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Wei H , Zhu Y, Wang T, Zhang X, Zhang K, Zhang Z. Genetic risk factors for autism-spectrum disorders: A 1001 
+
+systematic review based on systematic reviews and meta-analysis. Journal of Neural Transmission. 2021; 1002 
+
+128(6):717–734. 1003 
+
+Williams ZJ , Schaaf R, Ausderau KK, Baranek GT, Barrett DJ, Cascio CJ, Dumont RL, Eyoh EE, Failla MD, Feldman 1004 
+
+JI, Foss-Feig JH, Green HL, Green SA, He JL, Kaplan-Kahn EA, Keçeli-Kaysılı B, MacLennan K, Mailloux Z, Marco 1005 
+
+EJ, Mash LE, et al. Examining the latent structure and correlates of sensory reactivity in autism: a multi-site 1006 
+
+integrative data analysis by the autism sensory research consortium. Mol Autism. 2023 Aug; 14(1):31. 1007 
+
+Xiao Y , Friederici AD, Margulies DS, Brauer J. Longitudinal changes in resting-state fMRI from age 5 to age 6 1008 
+
+years covary with language development. Neuroimage. 2016; 128:116–124. 1009 
+
+You W , Li Q, Chen L, He N, Li Y, Long F, Wang Y, Chen Y, McNamara RK, Sweeney JA, et al. Common and dis-1010 
+
+tinct cortical thickness alterations in youth with autism spectrum disorder and attention-deficit/hyperactivity 1011 
+
+disorder. BMC medicine. 2024; 22(1):92. 1012 
+
+Figure 2—figure supplement 1. Overall model performance across the cortex. (A) Whole-brain plot of the percentage of subjects with a significant grayordinate at each region. The significance of each grayordinate was tested via a null model by repeatedly temporally permuting the order of observations and retraining and testing the models over 1,000 permutations. (B) The Spearman-Brown corrected split-half noise ceilings for each MMP parcel. 
+
+> 1013
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 2—figure supplement 2. (A) Model performance ( 𝑅 2) for the visual (red), audio (blue), and stacked (purple) encoding models across perceptual regions of interest for all included participants (both ASD and nonASD). (B) Visual (red) and audio (blue) model weights from the stacked encoding model. 
+
+> 1014
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 2—figure supplement 3. (A) Model performance (R2) for the visual low- (light red) and high-level (dark red) and stacked (grey) encoding models across all nonASD and ASD participants. 
+
+(A) Corresponding R2 for audio models. (C) Model weights from the stacked visual encoding model. 
+
+(D) Model weights from the stacked audio encoding model. (E) , (F) High- vs. low-level visual and audio perceptual preferences ( 𝑊 𝐻 − 𝑊 𝐿 ) are calculated by taking the difference of high- and low-level weights (shown in B and C). Perceptual preference is in the range of -1 to 1, as the stacked encoding model weights range from 0 to 1. Positive values here indicate a high-level preference, negative values indicate a low-level preference, and values around zero indicate no preference. 
+
+> 1015
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 2—figure supplement 4. (A) Whole-brain grayordinate-wise plot of mean high- vs. low-level perceptual preference across all participants (ASD and nonASD). (B) The same corresponding plot but from the audio stacked encoding model. 
+
+> 1016
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint Figure 3—figure supplement 1. (A) Box plot of low-level audio encoding model explained variance (𝑅 2) for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) Box plot of the unique explained variance ( 𝑅 2 
+
+> 𝑢
+
+). The results correspond to the 40% FD threshold. Boxes annotated with circles indicate an initially significant difference between groups that did not survive FDR correction. Boxes show the quartiles of the dataset, and whiskers show the distribution, with the exception of outliers. Each dot is the mean 𝑅 2 from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1017
+
+Figure 3—figure supplement 2. (A) Box plot of low-level visual encoding model 𝑅 2 for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) Corresponding box plot of 𝑅 2 
+
+> 𝑢
+
+. Results correspond to the 40% FD threshold. Boxes annotated with an asterisk indicate a significant group difference (FDR p<0.05), while a circle indicates an initially significant difference between groups that did not survive FDR correction. Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean 𝑅 2 from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1018
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 3—figure supplement 3. (A) Box plot of high-level audio encoding model 𝑅 2 for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) Corresponding box plot of 𝑅 2 
+
+> 𝑢
+
+. Results correspond to the 40% FD threshold. Boxes annotated with an asterisk indicate a significant group difference (FDR p<0.05), while a circle indicates an initially significant difference between groups that did not survive FDR correction. Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean 𝑅 2 from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1019
+
+Figure 3—figure supplement 4. (A) Box plot of high-level visual encoding model 𝑅 2 for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) Corresponding box plot of 𝑅 2 
+
+> 𝑢
+
+. Results correspond to the 40% FD threshold. Boxes annotated with an asterisk indicate a significant group difference (FDR p<0.05), while a circle indicates an initially significant difference between groups that did not survive FDR correction. Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean 𝑅 2 from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1020
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 7—figure supplement 1. (A) Box plot of audio encoding model 𝑅 2 for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) The same but for visual 𝑅 2. Results correspond with the 40% FD threshold. Boxes annotated with circles indicate a difference between groups that did not survive FDR correction (uncorrected p<0.05, FDR q>0.05). Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean value from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1021
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 7—figure supplement 2. (A) Box plot of audio encoding model 𝑅 2 
+
+> 𝑢
+
+for ASD (white) and nonASD (gray) groups across all perceptual ROIs. (B) The same but for visual 𝑅 2 
+
+> 𝑢
+
+. These results correspond with the 40% FD threshold. Boxes annotated with circles indicate a difference between groups that did not survive FDR correction (uncorrected p<0.05, FDR q>0.05). Boxes show the quartiles of the dataset and whiskers show the distribution with the exception of outliers. Each dot is the mean value from a single subject from all statistically significant grayordinates within each ROI. 
+
+> 1022
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 7—figure supplement 3. Heatmaps of fixed-effect coefficients for (A) diagnostic group (Dx: nonASD vs. ASD), (B) SRS Total T-Score and (C) sensory subset score (SSS), across 40%, 60% and 80% FD thresholds (left to right within each cortical parcel column). Within each of the three horizontal panels, rows denote encoding model-derived metrics (visual 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+, audio 𝑅 2 and 𝑅 2 
+
+> 𝑢
+
+,and their preference index ( 𝑊 𝑉 − 𝑊 𝐴 ) and columns denote Glasser MMP ROIs ordered left to right from early visual areas through association cortices followed by auditory areas. Color indicates the magnitude and sign of the coefficient (pink=negative effect with ASD>nonASD; green=positive effect with ASD<nonASD). Asterisks mark FDR-corrected significance at 𝑞 < 0.05 ; open circles mark uncorrected 𝑝 < 0.05 . The visual modality encoding models are labeled in red and the auditory in blue. 
+
+> 1023
+
+Figure 8—figure supplement 1. Scatter plots showing the relationship between age and per-ceptual preference in three example cortical regions (A5, V3A, and IFSp) where significant effects were observed across all participants. Perceptual preference values above zero indicate an audi-tory preference, and values below zero indicate a visual preference. Although no significant age-by-diagnosis interactions are displayed here, autistic (ASD; white) and non-autistic (nonASD; gray) groups are colored separately for clarity. Lines show model fits for each group colored correspond-ingly, with estimated age-related slopes ( 𝛽 𝐴𝑔𝑒 ) reported for ASD, nonASD, and the overall sample (black dashed line). 
+
+> 1024
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 8—figure supplement 2. Scatter plots showing the relationship between age and percep-tual preference in two example lateralized cortical regions, Right LO3 (a visual region between early visual cortex and MT+) and Left DVT (Dorsal Visual Transitional area; a region located on the posterior bank of the parieto-occipital sulcus), where significant effects were observed across all participants at the whole-brain level. Perceptual preference values above zero indicate an audi-tory preference, and values below zero indicate a visual preference. Although no significant age-by-diagnosis interactions are displayed here, autistic (ASD; white) and non-autistic (nonASD; gray) groups are colored separately for clarity. Lines show model fits for each group, with estimated age-related slopes ( 𝛽 𝐴𝑔𝑒 ) reported for ASD, nonASD, and the overall sample (black dashed line). 
+
+> 1025
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint
+
+Figure 8—figure supplement 3. Scatter plot showing the relationship between age and visual 
+
+𝑅 2 in perceptual region VMV3 where a significant age:diagnosis interaction was observed. Autistic (ASD; white) and non-autistic (nonASD; gray) diagnostic groups are displayed. Lines show model fits for each group, with estimated age-related slopes ( 𝛽 𝐴𝑔𝑒 ) reported for ASD, nonASD, and the overall sample (black dashed line). 
+
+> 1026
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted March 24, 2026. ;https://doi.org/10.64898/2026.03.23.713749 doi: bioRxiv preprint

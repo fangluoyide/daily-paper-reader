@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-25-714118-v1/fig-001.webp",
+      "caption": "Table 3: Linear mixed-effects model examining dispositional and situational predictors of interpersonal neural synchrony. Maternal personality traits, child temperament dimensions, and post-pre changes in affect for both mother and child were entered as predictors of global interpersonal neural synchrony computed across region of interest pairs that previously demonstrated a significant hyperscanning effect. Reported statistics include regression coefficients (β), standard errors (SE), degrees of freedom (df), t-values, and associated p-values. Significant predictors are highlighted in bold. (* p-value < 0.050)",
+      "page": 15,
+      "index": 1,
+      "width": 808,
+      "height": 366
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-25-714118-v1/fig-002.webp",
+      "caption": "Table 2: Linear mixed-effects model results comparing true and surrogate mother–child dyads across inter-brain region pairs. Estimates reflect differences in interpersonal neural synchrony between true and randomly paired surrogate dyads for each mother–child region of interest combination (IFG = inferior frontal gyrus; TPJ = temporo-parietal junction). Positive estimates indicate greater synchrony in true dyads relative to surrogate pairs. Reported statistics include fixed-effect estimates, standard errors (SE), degrees of freedom (df), t-values, unadjusted p-values, multiple-comparison–adjusted p-values, and effect sizes where applicable. Significant effects after correction are highlighted in bold. (** Adjusted p-value < 0.010; *** Adjusted p-value < 0.001)",
+      "page": 14,
+      "index": 2,
+      "width": 808,
+      "height": 750
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-25-714118-v1/fig-003.webp",
+      "caption": "Figure 1: Optode configuration used for functional near-infrared spectroscopy (fNIRS) hyperscanning. Each participant wore a cap with eight light sources and eight detectors, forming 16 measurement channels. Optodes were arranged to record hemodynamic activity over bilateral inferior frontal gyrus and temporoparietal junction.",
+      "page": 9,
+      "index": 3,
+      "width": 490,
+      "height": 479
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-25-714118-v1/fig-004.webp",
+      "caption": "Table 4: Linear mixed-effects model results examining whether maternal personality traits, child temperament dimensions, and post-pre affective changes predict interpersonal neural synchrony across region of interest pairs previously identified as showing a hyperscanning effect, separately for each experimental condition. Reported statistics include regression coefficients (β), standard errors (SE), degrees of freedom (df), t-values, unadjusted p-values, and multiple-comparison–adjusted p-values. Significant predictors after correction are highlighted in bold. (* Adjusted p-value < 0.050)",
+      "page": 16,
+      "index": 4,
+      "width": 808,
+      "height": 894
+    }
+  ]
+}

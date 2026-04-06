@@ -1,0 +1,3846 @@
+Title: Social Functioning in Autism: A Systematic Review and Meta-analysis
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.03.20.713084v1.full.pdf
+
+Number of Pages: 67
+
+Markdown Content:
+1
+
+1
+
+2
+
+Title: 3
+
+# Social Functioning in Autism : A Systematic Review 4
+
+# and Meta -analysis 5
+
+6
+
+7
+
+Author list: 8
+
+Siyi Li 1, #, Huanqing Wang 1, #, Guoqiu Chen 1, Xi Cheng 1, Yuxi Wang 2,9
+
+Wanyan Hu 2, Antonia Hamilton 3, Leonhard Schilbach 4,5 , Li Yi 2, Kaat 10 
+
+Alaerts 6, Zhanjun Zhang 1, Xi -Nian Zuo 1, Yin Wang 1* , Yinyin Zang 2* 
+
+11 
+
+12 
+
+13 
+
+14 
+
+Affiliations: 15  
+
+> 1
+
+State Key Laboratory of Cognitive Neuroscience and Learning, and IDG/McGovern 16 
+
+Institute for Brain Research, Faculty of Psychology, Beijing Normal University, Beijing, 17 
+
+China 18  
+
+> 2
+
+School of Psychological and Cognitive Sciences, Beijing Key Laboratory of Behavio r19 
+
+and Mental Health, and Key Laboratory of Machine Perception (Ministry of Education), 20 
+
+Peking University, China 21  
+
+> 3
+
+Institute of Cognitive Neuroscience, University College London, London, UK 22  
+
+> 4
+
+Department of Psychiatry & Psychotherapy, Ludwig -Maximilians -Univ ersität, Munich, 23 
+
+Germany 24  
+
+> 5
+
+Department of General Psychiatry 2, LVR -Klinikum Düsseldorf, Düsseldorf, Germany 25  
+
+> 6
+
+Research Group for Neurorehabilitation, Department of Rehabilitation Sciences, KU 26 
+
+Leuven, Leuven, Belgium 27 
+
+28  
+
+> #
+
+These authors contributed equally 29 
+
+30 
+
+* Corresponding author s (contributed equally ):31 
+
+Dr. Yin Wang ( mirrorneuronwang@gmail.com ORCID ID: 0000 -0002 -34 44 -000X) 32 
+
+Dr. Yinyin Zang ( yinyin.zang@pku.edu.cn ORCID ID: 0000 -0001 -7482 -8511) 33 
+
+34 
+
+35 
+
+36 
+
+37 
+
+38 
+
+39 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+2
+
+# Abstract 40 
+
+Atypical social functioning is a core feature of autism, yet findings remain fragmented 41 
+
+across components and development. We aimed to systematically integrate this 42 
+
+literature and characterize the organization, development, and moderators of social 43 
+
+functio ning in autism. We conducted a systematic review and meta -analysis of 44 
+
+behavioral studies published between January 1990 and August 2025, identified 45 
+
+through PubMed, Web of Science, and prior reviews, including studies with clinically 46 
+
+diagnosed autistic indi viduals and neurotypical controls. A qualitative synthesis and two 47 
+
+complementary quantitative meta -analyses were performed, with risk of bias evaluated 48 
+
+through study -level characteristics. A total of 2,622 studies (94,114 autistic and 172,847 49 
+
+neurotypical individuals across 32 countries) were included, covering 22 social 50 
+
+components that clustered into five domains. Overall group differences were substantial 51 
+
+(Hedges ’ g = -0.744, 95% CI [ -0.797, -0.690]). Differences emerged earliest in 52 
+
+motivation -based proce sses (~6 months), followed by motor, emotion, and inference 53 
+
+domains, and showed age -related divergence alongside improvement in some skills. 54 
+
+Cross -domain analyses revealed stronger interdependencies in autism and an 55 
+
+organizational pattern most consistent w ith serial relationships among domains. These 56 
+
+findings should be interpreted in light of methodological heterogeneity, underpowered 57 
+
+samples, and uneven cultural representation. Together, the results provide an integrative 58 
+
+framework for understanding the or ganization and development of social functioning 59 
+
+in autism, with implications for precision subtyping, developmentally timed 60 
+
+interventions, and neurodiversity -informed research and policy. This study was pre -61 
+
+registered (PROSPERO: CRD42024566141). 62 
+
+63 
+
+64 
+
+65 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+3
+
+# Introduction 66 
+
+Atypical social functioning is a core feature of autism spectrum condition (ASC), 67 
+
+affecting around 1% of the global population and impacting communication, 68 
+
+relationships, and social navigation across the lifespan 1–3. Despite decades of research, 69 
+
+interventions for social difficulties in autism have shown limited real -world efficacy. 70 
+
+While some therapies improve specific social skills in structured settings, these gains 71 
+
+often fail to generalize to everyday interactions , and their long -term sustainability 72 
+
+remains unclear 4,5 .73 
+
+This lack of progress reflects a persistent gap between basic research and clinical 74 
+
+practice —a challenge amplified by the complexity and heterogeneity of autism 6,7 .75 
+
+Basic research often isolates individual aspects of social functioning, adopting a 76 
+
+reductionist approach that overlooks the broader, interdependent nature of social 77 
+
+abilities in autism 8,9 . Clinically, interventions focus primarily on observa ble social 78 
+
+performance —such as verbal communication and nonverbal behavior s—while 79 
+
+underlying cognitive mechanisms that shape these abilities remain underexplored 10 .80 
+
+However, social difficulties in autism are neither static nor isolated but rather part of a 81 
+
+dynamic system of interrelated abilities, spanning basic processes (e.g., social attention ,82 
+
+imitation ) to highe r-order skills (e.g., theory of mind, social communication) 11,12 . Here ,83 
+
+we use the term social functioning to encompass this full range —from foundational 84 
+
+socio -cognitive and motivational processes to observable social behaviors —as all 85 
+
+contribute to how individuals engage with the social world 92 . Despite growing 86 
+
+recognition of these complexities, research remains fragmented and poorly integrated, 87 
+
+making it difficult to translate scientific advances into clinical applications. As a result, 88 
+
+critical questions —which aspects of social functio ning show the greatest divergence 89 
+
+from neurotypical (NT) expectations and what mechanisms drive these differences —90 
+
+remain unresolved, limiting the development of targeted supports tailored to different 91 
+
+social profiles .92 
+
+Critical methodological challenges continue to limit progress in understanding 93 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+4
+
+social functioning in autism. Issues such as underpowered samples, unbalanced age 94 
+
+distributions, and skewed sex ratios have led to inconsistent findings 13 –15 . Additionally, 95 
+
+the widespread use of artificial experimental tasks often fails to reflect the complexity 96 
+
+and variability of real -world social interactions, reducing the clinical and pract ical 97 
+
+relevance of laboratory -based research 16 –18 . Compounding these challenges, different 98 
+
+studies focus on different aspects of social functioning, making it difficult to integrate 99 
+
+findings into a cohesive framework 19,20 . Even within the same domain, studies use 100 
+
+varying methodologies, and even when employing the same methodology, they often 101 
+
+rely on differen t measurement indices (e.g., multiple eye -tracking metrics have been 102 
+
+adopted for social attention studies 21 ). These inconsistencies contribute to conflicting 103 
+
+conclusions and constrain efforts to identify meaningful patterns that could improve 104 
+
+autism interventions and better align scientific inquiry with the lived exp eriences of 105 
+
+autistic individuals. 106 
+
+Developmental trajectories add further complexity to the understanding of social 107 
+
+functioning in autism. Different aspects of social abilities emerge at different ages and 108 
+
+can change across the lifespan 1. For instance, foundational skills such as imitation may 109 
+
+generally improve with age, while more complex abilities, like perspective -taking and 110 
+
+social reciprocity , often become increasingly challenging during adolescence and 111 
+
+adulthood as social interactio ns become more nuanced and demanding 22 –24 . These age -112 
+
+specific patterns suggest that there may be critical windows where targeted support 113 
+
+could be most e ffective. However, many existing approaches do not fully account for 114 
+
+developmental change, often applying the same interventions across all ages 6.115 
+
+Understanding how social abilities evolve over time is essential for optimizing 116 
+
+intervention timing and improving long -term outcome s 25,26 .117 
+
+Theoretical and empirical models suggest that social cognition is organized 118 
+
+hierarchically, with lower -level processes scaffolding the development of more 119 
+
+complex social abilities. For instance, Malle (2020) 27 proposed a tree -like hierarchical 120 
+
+model in which foundational skills —such as social attention, imitation, and action 121 
+
+understanding —support the development of higher -order capacities like me ntalizing, 122 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+5
+
+social reasoning, and moral judgment. Supporting this view, Schurz et al. (2021) 28 
+
+123 
+
+conducted a large -scale meta -analysis of neuroimaging studies and identified a 124 
+
+functional gradient in social cognition, showing that brain regions involved in low -level 125 
+
+mirroring processes are systematically distinct yet interconnected with those supporting 126 
+
+high -level inferential functions. Beyon d these structural models, developmental 127 
+
+theories such as the social motivation hypothesis 29 suggest that early atypicalities in 128 
+
+social orienting and reward sensitivity may contribute to later challenges in joint 129 
+
+attention, empathy, and communication. This cascading view aligns with broader 130 
+
+theoretical frameworks highlighting the developmental interdependence of social 131 
+
+cognitive processes 12 . Longitudinal findings further support this idea, indicating that 132 
+
+early social attention and motivation can predict later social abilities, including 133 
+
+language and theory of min d 30 –32 . Taken together, these frameworks suggest that social 134 
+
+abilities may become apparent at different developmental periods and are 135 
+
+interdependent and developmentally scaffolded —an insight that m otivates our effort to 136 
+
+map their organization in autism more comprehensively. Here, we examine cross -137 
+
+sectional patterns across ages to explore potential ordering and interdependence among 138 
+
+social abilities, while acknowledging that such patterns cannot esta blish causal 139 
+
+developmental sequences. Our goal is not to test developmental order per se, but rather 140 
+
+to evaluate whether observed inter -domain dependencies in autism reflect 141 
+
+organizational patterns consistent with these well -supported theoretical framework s. 142 
+
+Although autism is one of the most heritable neurodevelopmental conditions 33 ,143 
+
+social behavior is also shaped by sociocultural norms, which influence both the 144 
+
+expression of au tism -related traits and how these behaviors are perceived 34,35 . What is 145 
+
+considered socially appropriate, atypical, or unexpected varies widely across cultures, 146 
+
+affecting diagnostic practices, intervention approaches, and lived experiences. However, 147 
+
+research on social function ing in autism has largely prioritized biological mechanisms, 148 
+
+often overlooking the critical role of cultural context 36 . While there is growing 149 
+
+recognition that cultural norms shape social behaviors and perceptions of autism, 150 
+
+em pirical data on these influences remain limited 37 –39 . Systematic research is needed to 151 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+6
+
+determine how sociocultural factors interact with autis tic social development, identify 152 
+
+global patterns and cultural variations, and develop more inclusive, contextually 153 
+
+relevant models of social functioning 40,41 . Additionally, recent perspectives on 154 
+
+neurodiversity emphasize valuing diff erences rather than enforcing conformity to social 155 
+
+norms, reinforcing the need for culturally responsive frameworks that support diverse 156 
+
+styles of social interaction. 157 
+
+Despite these challenges, no integrated synthesis has integrated findings across all 158 
+
+majo r aspects of social functioning in autism while accounting for methodological 159 
+
+variability, developmental change, and sociocultural influences 6. Prior meta -analyses 160 
+
+have typically focused on isolated components, limited age ranges, or single -context 161 
+
+designs, leaving the field without an integrative framework that reflects the full 162 
+
+complexity of autistic social experience. To address this gap, we ad opted a multi -163 
+
+layered analytic strategy. First, we conducted a qualitative systematic review to map the 164 
+
+breadth and distribution of reported social differences across 22 social components. 165 
+
+Second, we performed a quantitative meta -analysis of group differen ces to estimate the 166 
+
+magnitude of autistic –neurotypical differences and to examine developmental, 167 
+
+methodological, and sociocultural moderators. Third, recognizing that social abilities 168 
+
+are interdependent rather than isolated, we conducted a quantitative met a-analysis of 169 
+
+behavioral correlations, including meta -analytic structural equation modeling, to 170 
+
+evaluate how different domains of social functioning relate to one another and whether 171 
+
+these relationships conform to theoretically proposed organizational arch itectures. 172 
+
+Together, these complementary analyses provide a structured framework for 173 
+
+understanding how social abilities are organized, develop over time, and are shaped by 174 
+
+contextual factors in autism, with implications for future research, developmentally 175 
+
+timed interventions, and precision -based clinical applications 42,43 .176 
+
+177 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+7
+
+# Result 178 
+
+## Study Characteristics and Scope 179 
+
+Based on prior theoretical frameworks (see details in Methods section) 44 –47 , a 180 
+
+systematic review identified 2,622 eligible studies published between January 1990 and 181 
+
+August 2025 from PUBMED, Web of Science, and previous meta -analyses. The review 182 
+
+involved data from 94,114 autistic and 172,847 neurotypical individuals across 32 183 
+
+countries. The studies examined 22 key social components 48 (e.g., social attention, 184 
+
+action perception, person perception , empathy, theory of mind, self -processing ,185 
+
+imitation, pretend play, deception , communication , see the complete list in Fig. 1a ). 186 
+
+Definitions of these components are provided in Extended Data Table 1. The PRISMA 187 
+
+flowchart (Fig. 2 ) illustrates the study selection process. As the present review focused 188 
+
+on social difficulties without int ellectual disability , studies on autistic individuals with 189 
+
+co -occurring intellectual disabilities were excluded. Th is meta -analysis was pre -190 
+
+registered on PROSPERO (see details in Methods) .191 
+
+192 
+
+Fig. 1| Overall social functioning in autism. (a) Study distribution across 22 social 193 
+
+components. Each study was coded into one of five categories based on its main conclusion: 194 
+
+Impaired ( i.e., poor er performance in AS C), Different ( i.e., different performance without 195 
+
+superiority/inferiority ), Complex ( i. e., varying group differences across conditions ), Intact ( i.e., 196 
+
+comparable performance with NT populations ), or Outperformed ( i.e., better performance in 197 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+8
+
+ASC ). (b) Proportion of conditions across all studies. Overall, 75.21% of the studies reported 198 
+
+alterations (i.e., impaired + different + complex + outperformed ) in the autistic group . (c) 199 
+
+Prevalence of alterations in each component, ranked as the proportion of each category. Guided 200 
+
+by prominent neurocognitive theories in autism (see details in Metho ds section), we grouped 201 
+
+social difficulties into five domains (Ⅰ-Ⅴ), with motor -based components as impacted the least 202 
+
+and complex skills as impacted the most. The percentage figures in parentheses represent the 203 
+
+reported alterations averaged across components in each domain. Panel (c) summarizes a 204 
+
+qualitative classification of study outcomes. This five -category system was not used in any of 205 
+
+the quantitative meta -analyses (e.g., effect size calculations, moderator analyses, or correlation 206 
+
+tests), which were conducted solely using continuous effect size metrics ( see ‘Selection criteria 207 
+
+and analytical strategy’ in Methods ). 208 
+
+209 
+
+Fig. 2| PRISMA flow chart of the systematic review process. 210 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+9
+
+## Methodological Scrutiny 211 
+
+Significant methodological variabilit y and biased distributions were observed 212 
+
+across studies. Research efforts were unevenly distributed across social components 213 
+
+(Fig. 1a) , with theory of mind having been extensively studied ( 552 studies), whereas 214 
+
+social learning was notably underrepresented (8 studies). The ages of autistic 215 
+
+participants ranged from 0.5 to 54.6 years (median = 13.41 years), displaying a bimodal 216 
+
+distribution (Extended Data Fig. 2b ). S ex ratios were highly skewed, with a median 217 
+
+male ratio of 0.83 3 (Extended Data Fig. 2c ). Sample size s varied widely, ranging from 218 
+
+3 to 1,905 participants (median = 22) (Extended Data Fig. 2a ). Power analyses 219 
+
+indicated that 69.957% (971/1388) of studies did not meet the minimally required 220 
+
+sample size (Extended Data Table 3), increasing the risk of false -positives and reduced 221 
+
+reproducibility, though underpowered studies did not significantly inf late effect sizes 222 
+
+(p = 0.926 ) (Extended Data Fig. 4).223 
+
+Four major sources of methodological heterogeneity influenced the reported social 224 
+
+differences in autism (Fig. 3a ). First, self -report surveys yielded larger social 225 
+
+differences than experimental tasks ( t = 7.477 , p < .001 ), raising concerns about 226 
+
+subjective biases. This is consistent with prior findings of weak convergence between 227 
+
+survey and experiment 49 . Second, differences in the experimental paradigms used 228 
+
+significantly impacted findings . For example, two task paradigms have been used for 229 
+
+studying social motivation: social seeking —the tendency to preferentially select social 230 
+
+over non -social stimuli in simultaneous -choice paradigms —and social reward, defined 231 
+
+as behavioral enhancement in response to socially rewarding outc omes (e.g., increased 232 
+
+accuracy or speed when a smiling face is used as a reward). We found significant group 233 
+
+differences in social seeking ( Hedges’ g = -0.735, 95% CI [ -1.453, -0.016]) but not in 234 
+
+social reward ( Hedges ’ g = 0.025 , 95% CI [ -0.054, 0.103 ]; t = 7.439 , p < .001), 235 
+
+indicating that while autistic individuals show reduced preference for social stimuli, 236 
+
+they do not differ in reward -driven task performance when the reward is social. This 237 
+
+dissociation is consistent with prior meta -analyses (see direct comparison in 238 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+10 
+
+Supplementary Fig . 2) and underscores the value of task -specific characterizations of 239 
+
+social functioning 50 . Third, the choice of performance indices also influenced results, 240 
+
+as reaction time measures revealed greater differences than accuracy measures in action 241 
+
+perception tasks ( t = 2.373, p = 0.024). Finally, ecological validity played a crucial role, 242 
+
+with naturalistic free play detecting more pronounced social differences than structured 243 
+
+laboratory tasks ( rho = -0.460 , p = 0.012 ). Notably, task paradigms significantly 244 
+
+influenced reported so cial differences in empathy, self -processing, person perception, 245 
+
+and social motivation but had minimal influence on theory of mind (ToM), emotion 246 
+
+perception, joint attention, and imitation (Fig. 3b ). We also examined whether effect 247 
+
+sizes varied by reporter (self vs. proxy) and no significant moderation was observed ( t248 
+
+(209) = 1.194, 95% CI = [ -1.447, -1.076] , p = 0.234 ). Although previous studies have 249 
+
+reported discrepancies between self - and proxy -reports in autism 51,52 , we did not detect 250 
+
+such an effect in our meta -analysis. Given that fewer than 10% of studies used proxy 251 
+
+reports and that reporter type was strongly confounded with age group, this null result 252 
+
+should be interpreted cautiously. It is possible that true discre pancies exist but are 253 
+
+masked at the aggregated level due to heterogeneity across tasks, populations, and 254 
+
+contexts .255 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+11 
+
+256 
+
+Fig. 3| Methodological heterogeneity and its effects on reported social differences in 257 
+
+autism . (a) Four major sources of methodological variabilities in autism research that had 258 
+
+significant effects on the degree of social difficulties : tools (e.g., more alterations observed in 259 
+
+surveys than experiments, independent samples t(1386) = 7.477 , 95% CI = [0.355, 0.607] , η2
+
+260 
+
+= 0.039 , p <.001), task paradigms (e.g., atypical social motivation was only observed in social 261 
+
+seeking paradigm, but not social reward paradigm, t(9) = 7.439, 95% CI = [0.606, 1.135],  η² 262 
+
+= 0.860, p <.001), indices (e.g., plot -light task performance of action perception was worse 263 
+
+when analyzing reaction time variables than accuracy variables, t(33) = 2.373, 95% CI = [0.119, 264 
+
+1.556],  η²  = 0.146, p = 0.024), and ecological validity (e.g., more social differences detected 265 
+
+by natura listic/interactive games than tightly controlled lab tasks, p = 0.012 ). Hedges ’ g values 266 
+
+on the y -axis represent altered performance (i.e., ASC -NT difference, more negative values 267 
+
+indicate poorer performance in ASC) . While dots indicate the estimated effect size; Red and 268 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+12 
+
+blue violin plots represent greater and lesser alteration , respectively; the bounds of the box 269 
+
+demonstrates the ±1 s tandard error(SE); *p < 0.05; ** p < 0.01; *** p < 0.001; The shaded area 270 
+
+in the line plot represents the 95% confidence interval. (b) Alteration degree and density 271 
+
+distribution for each task paradigm . Only components with multiple task paradigms (and meet 272 
+
+the criteria for effect size calculation) were shown here. Red dots and error bars indicate the 273 
+
+estimate d effect size s and 95% CI , respectively . All statistical tests were two sided .274 
+
+Publication bias was detected in several tasks based on funnel plot asymmetry 275 
+
+(Extended Data Fig. 3). Rightward asymmetry in tasks such as the Toronto 276 
+
+Alexithymia Scale (TAS), false belief task, and emotion labeling task suggested 277 
+
+overestimated effect size s. Some tasks, such as visual perspective -taking and emotion 278 
+
+judgment , showed non -significant Egger’s test results, suggesting either high 279 
+
+heterogeneity or a genuine absence of bias (Supplementary Table 4) .280 
+
+## Group -difference meta -analysis 281 
+
+Across all 22 soci al components, 75.21% of studies reported differences in social 282 
+
+functioning in autism, while 24.79% found no significant group differences (Fig. 1) .283 
+
+For a qualitative systematic review , s tudy conclusion s were categorized into five groups :284 
+
+“Impaired” ( 62.55% , indicating poorer performance in autistic individuals), “Different” 285 
+
+(1.26% , distinct but not necessarily better or worse), “Complex” ( 11.29% , varying 286 
+
+group differences depending on conditions), “Intact” (24.79% , comparable 287 
+
+performance t o neurotypical populations), and “Outperformed” ( 0.11% , superior 288 
+
+performance in autistic individuals). A quantitative meta -analysis on effect size 289 
+
+confirmed substantial group differences (Hedges ’ g = -0.744 [ -0.797, -0.690] , p < .001), 290 
+
+with findings remaining stable after excluding small -sample studies ( Supplementary 291 
+
+Fig. 1 ). These results were highly consistent with previous meta -analyses on individual 292 
+
+social components ( Supplementary Fig. 2), reinforcing the validity of our f indings 293 
+
+against the established literature. 294 
+
+Using a theory -driven framework (see details in Methods section) , social 295 
+
+differences in autism were organized into five domains, reflecting a progression from 296 
+
+mild to more pronounced differences ( Fig. 1c ). Moto r-based differences (e.g., action 297 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+13 
+
+perception, imitation) were the least pronounced, followed by emotion -based (e.g., 298 
+
+emotion recognition, empathy) and inference -based domains (e.g., ToM, social 299 
+
+reasoning). Motivation -based differences (e.g., social attenti on, social motivation) were 300 
+
+reported as more severe, while complex social skills (e.g., social communication, 301 
+
+relationship -building) exhibited the largest overall differences. 302 
+
+To estimate the earliest observed social differences, we analyzed the reported age 303 
+
+of onset for each domain ( Fig. 4a ): Motivation -based differences (e.g., joint attention) 304 
+
+were the earliest to appear, with reports as early as 6 months of age 53 , followed by 305 
+
+motor -based differences ( i.e., imitation) at 12 months 54 , emotion -based differences at 306 
+
+18.2 months (i.e., empathic concern) 55 , and inference -based differences at 36.8 months 307 
+
+(i.e., implicit theory of mind) 56 . This sequence of ‘motivation → motor → emotion →308 
+
+inference’ closely follows the typical developmental pattern of social functioning in 309 
+
+neurotypical children 27 , where foundational social abilities emerge first and provide the 310 
+
+basis for more complex social skills 57 .311 
+
+## Cross -domain correlation meta -analysis 312 
+
+To examine how different domains of social functioning relate to one another, we 313 
+
+conducted the correlation analyses in two stages. First, we performed an exploratory 314 
+
+analysis comparing the strength of cross -domain correlations be tween autistic (ASC) 315 
+
+and neurotypical (NT) groups, asking whether associations among domains differed in 316 
+
+magnitude between groups. Second, we used meta -analytic structural equation 317 
+
+modeling (MASEM) to evaluate whether these correlations were organized acco rding 318 
+
+to alternative theoretically motivated architectures. This two -stage approach allows 319 
+
+group differences in association strength to be distinguished from differences in higher -320 
+
+order organizational structure. 321 
+
+In the exploratory analysis, we found that a utistic individuals exhibited stronger 322 
+
+cross -domain correlations than neurotypical individuals ( F (1, 98.2) = 8.278 , partial R 2
+
+323 
+
+= 0.078, 95% CI = [0.008, 0.201] , p = 0.005 ), especially between emotion -based and 324 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+14 
+
+inference -based domains ( F (1,25.806) = 10.38 5, p = 0.034 ), suggesting tighter 325 
+
+coupling among social (Extended Data Fig. 1a & 1b ).326 
+
+To further examine the organizational structure of these interdependencies, we 327 
+
+tested whether the observed correlations were most consistent with a cascading 328 
+
+architecture proposed in prior literature 12 . Building on established developmental 329 
+
+theories 27 , as well as our observation that different social differences are first reported 330 
+
+at different ages in aggregated cross -sectional data ( Fig. 4a), we evaluated whether 331 
+
+more foundational domains were structurally associated with more complex domains 332 
+
+in a manner consistent with cascading models of social functioning. We applied meta -333 
+
+analytic structural equation modeling (MASEM) to compare three theory -driven 334 
+
+directional architectures 12,27 : a Serial model, in which influence proceeds sequentially 335 
+
+from motivation - to motor -, emotion -, inference -based domains and ultimately to 336 
+
+complex social skills; a Radial model, in which motivation -based processes directly 337 
+
+influence all other domains; and a Network model allowing all pairwise influences. 338 
+
+Model comparison favored the Serial model, which showed the best fit (lowest BIC) 339 
+
+(Extended Data Fig. 1c ; Supplementary Data Table 6 ). A permutation test validated 340 
+
+its superiority over 120 alternative unidirectional permutations ( 3/120, p = 0.025 ), and 341 
+
+a likelihood ratio test revealed significant group differences in model paths ( p = 0.023 ). 342 
+
+Notably, autistic individuals showed stronger paths from emotion -based to inference -343 
+
+based domains and from inference -based doma ins to complex social skills ( Extended 344 
+
+Data Fig. 1c , red arrows). While the MASEM results support the Serial model as best 345 
+
+fitting the observed cross -domain correlations, this finding does not imply a fixed 346 
+
+developmental sequence or causal influence, but rather reflects an organizational 347 
+
+pattern consistent with prior developmental theory. 348 
+
+## Moderating Factors Influencing Social Functioning 349 
+
+Moderating effects analysis identified several key factors influencing social 350 
+
+functioning in autism. Overall, social performance declined with age ( β = -0. 008 , p =351 
+
+0. 003 , Fig. 4b ). Due to data scarcity and heterogeneity, we were unable to delineate 352 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+15 
+
+reliable developmental patterns for each individual social component. Instead, given 353 
+
+the bimodal age distribution in the literature ( Extended Data Fig. 2b ), we compared 354 
+
+childhood and adulthood to examine the developmental shifts and dynamics of social 355 
+
+functioning in autism (Fig. 4e ). Two distinct patterns emerged: emotion -based, 356 
+
+inference -based, and motivation -based components, as well as certain complex social 357 
+
+skills (e.g., social regulation and social relationships), declines with age. In contrast, 358 
+
+motor -based components and some co mplex social abilities (e.g., social alignment, 359 
+
+social learning, and social communication) improve in adulthood. Sex ratios in study 360 
+
+samples also appeared to influence reported outcomes. A higher proportion of males in 361 
+
+autistic samples was associated with better reported social functioning ( β = 0.473 , p =362 
+
+0.037 , Fig. 4c ), suggesting that sex -related factors may contribute to variability in social 363 
+
+outcomes. 364 
+
+Sociocultural factors also played a role ( Supplementary Table 5 ). Higher 365 
+
+perceived social support in a country was associated with smaller differences in social 366 
+
+functioning between autistic and neurotypical individuals (β = 2.020 , p = 0.003 ), while 367 
+
+higher national masculinity (i.e., societal emphasis on achievement and competition) 368 
+
+was linked to greater differences in social functioning (β = -0. 003 , p = 0.047 ) (Fig. 4d ). 369 
+
+Other factors, including participant characteristics (IQ scores, diagnos tic criteria, 370 
+
+comorbidities), study attributes (sample size, publication year, journal impact factor, 371 
+
+citations), and national indicators (incidence of autism, econom y, democracy , etc. ),372 
+
+showed no significant effects ( Extended Data Fig. 4 and Supplementary Table 5 ). 373 
+
+374 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+16 
+
+375 
+
+Fig. 4| Onset , dynamics , and moderators of social difficulties in autism. (a) Developmental 376 
+
+onset of social difference reported in each domain. Red dots represented each study and the 377 
+
+density heatmap below showed the distribution of studies showing an effect across early 378 
+
+childhood development (infancy and preschool age ). The earliest observed group differences in 379 
+
+autism, based on available cross -sectional data, are in motivation (~6 months), followed by 380 
+
+moto r (~12 months), emotion (~18.2 months), and inference (~36.8 months). These age 381 
+
+estimates should be interpreted as the earliest ages at which group differences have been 382 
+
+reported in literature, not as evidence of a within -individual longitudinal developmental 383 
+
+trajectory . Meta -regression analyses are performed for (b-c) demographic factors (i.e. mean age 384 
+
+and male ratio ) of autistic samples, and (d) sociocultural moderators (i.e., perceived social 385 
+
+support and masculinity in the country of residence ). Hedges ’ g values on the y -axis represent 386 
+
+altered performance (i.e., ASC -NT difference, more negative values indicate poorer 387 
+
+performance in ASC) . Regression lines and p -values indicate the significance of correlations 388 
+
+after hyperbolic and symmet ric Gaussian transformation. (e) Changeability and dynamics of 389 
+
+social difficulties across time . Proportion of reported alterations (y -axis) by component (x -axis) 390 
+
+across five domains , comparing period o f childhood (≤18 years, open circles) versus adulthood 391 
+
+(>18 years, filled circles). Red lines indicate social difficulties become significantly worsening 392 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+17 
+
+in adulthood, whereas blue lines indicate mitigation in adulthood. 393 
+
+394 
+
+# Discussion 395 
+
+This study presents the largest and most systematic synthesis of social functioning 396 
+
+in autism, integrating findings from over 2,500 empirical studies spanning 35 years. 397 
+
+Unlike previous meta -analyses, which focus on single social components in isolation, 398 
+
+our study unc overs the interconnected nature of social difficulties in autism , showing 399 
+
+how 22 social components cluster into five hierarchical domains —motor -based, 400 
+
+emotion -based, inference -based, motivation -based, and complex skills (Fig. 1c) .401 
+
+Crucially, this study pro vides new insights into: (1) the hierarchical organization of 402 
+
+social functioning, consistent with theoretical models suggesting that lower -level 403 
+
+processes scaffold the development of higher -order abilities 12,27,2 8; (2) age -related 404 
+
+patterns in group differences and their malleability across development (Fig. 4); (3) 405 
+
+stronger cross -domain behavioral correlations in autism (Extended Data Fig. 1),406 
+
+suggesting tighter coupling among social processes; and (4) methodological and 407 
+
+sociocultural influences that may account for prior inconsistent findings (Fig. 3 & 4).408 
+
+These findings advance understanding of autism’s complex social profiles and provide 409 
+
+a foundation for developmentally tailored and culturally informed public health 410 
+
+strategies . Importantly, this work also advances our understanding of the underlying 411 
+
+structure and development of human social cognition more broadly, revealing how 412 
+
+different soc ial capacities emerge, interact, and diverge across individuals and 413 
+
+populations. 414 
+
+Our results highlight a potential ordering of social functioning differences across 415 
+
+age groups, wherein differences in social motivation are observed earlier in life than 416 
+
+diff erences in more complex abilities (Fig. 5). While our meta -analysis does not rely on 417 
+
+longitudinal datasets and cannot establish causality, the integration of multiple lines of 418 
+
+evidence —including the early reported motivation -based differences ( Fig. 4a ), their 419 
+
+larger proportion of difficulties (Fig. 1c ), and the downstream pathways identified by a 420 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+18 
+
+new MASEM analysis ( Extended Data Fig. 1c ) —suggests that social motivation may 421 
+
+play a pivotal role in shaping later developmental outcomes. This interpretati on aligns 422 
+
+with both developmental theories and empirical findings. Theoretical models propose 423 
+
+that foundational social processes, such as motivation and joint attention, enable infants 424 
+
+to engage with caregivers and learn from social input 12,29 . Empirical evidence supports 425 
+
+this view: for example, infants’ gaze following at 10 months predicts mental -state 426 
+
+language use at 2.5 years and ToM at 4.5 years 31 ; social motivation between 6 and 12 427 
+
+months correlates with joint attention skills at 15 months and language abilities at 24 428 
+
+months, which is important for developing so cial communication skills 32 ; and 429 
+
+longitudinal studies show that infants later diagnosed with ASC exhibit declined social 430 
+
+motivation as early as 2 months 30,58 . Moreover, a series of intervention studies also use 431 
+
+declined social engagement as an early detection index and perform effective 432 
+
+interventions to improve high -risk in fants ’ social skills 58,59 . Taken together, these 433 
+
+findings are consistent with a functional cascade 12,29 , whereby initial differences in 434 
+
+motivation may limit opportunities for interactive learning, subsequently influencing 435 
+
+downstream domains such as emotion understanding, inference -making, and complex 436 
+
+social skills. By mapping interdependencies among social processes ( Fig. 5 and 437 
+
+Extended Data Fig. 1), our results offer a scaffold for evaluating and timing 438 
+
+interventions more precisely —especially in early childhood, when motivational and 439 
+
+motor -based skills are still formin g and may influence the developmental pathways of 440 
+
+downstream abilities. 441 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+19 
+
+442 
+
+Fig. 5 | A hierarchical model of social functioning in autism . This figure illustrates social 443 
+
+functioning as a five -level hierarchy, progressing from foundational to complex abilities. Each 444 
+
+level represents a domain —motivation -based, motor -based, emotion -based, inference -based, 445 
+
+and complex social skills —arranged according to prior theories of developmental sequence in 446 
+
+NT (neurotypical) 27 as well as our findings of cross -sectional ordering in ASC (Fig. 4a ). Darker 447 
+
+red shading indicates greater reported differences between ASC and NT individuals (from Fig. 448 
+
+1c ). In neurotypical development, social motivation appears in early infancy, supporting social 449 
+
+learning through joint attention and engagement with caregivers. Motor -based skills 450 
+
+subsequently facilitate these interactions, emotional understanding enriches them , and higher -451 
+
+level inference abilities refine them, together contributing to complex social functioning 27 . I n452 
+
+autism, early differences in social motivation may alter child -caregiver interactions, reducing 453 
+
+opportunities for social input and interactive learning. These early differences can set off 454 
+
+cascading effects, which are associated with progressively greate r differences in higher -order 455 
+
+social skills over time due to accumulating developmental influences . Notably, although motor -456 
+
+based skills arise early in th is sequence, their differences in autism are less pronounced than 457 
+
+those in motivation -based domain . Th is may be because imitation and action perception can 458 
+
+develop through alternative pathways (e.g., associative sensorimotor learning and 459 
+
+environmental feedback 60 ), making them less reliant on social engagement. This hie rarchical 460 
+
+model reflects both the vertical developmental organization of social cognition and the dynamic 461 
+
+relationships among domains, offering insight into the interconnected nature of social 462 
+
+difficulties in autism and contributing to a broader understand ing of how human social 463 
+
+capacities develop , interact, and vary across condition s. 464 
+
+Our findings underscore the dynamic and malleable nature of social functioning in 465 
+
+autism, revealing both developmental shifts and interdependent challenges across 466 
+
+domains. Overall, social difficulties tend to intensify with age, consistent with an 467 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+20 
+
+accumula ted effect (Fig. 4b ), where increasing social complexity in adulthood 468 
+
+exacerbates interactional challenges. However, not all social components follow a 469 
+
+uniform pattern of change . While foundational motor -based skills (e.g., imitation) and 470 
+
+certain higher -or der abilities (e.g., aligning behavior with social norms) improve in 471 
+
+adulthood —likely due to learning from experience and compensatory adaptation —472 
+
+other skills, particularly those requiring real -time social judgment (e.g., prosocial 473 
+
+decision -making) and fle xible social adaptation (e.g., social regulation for reputation), 474 
+
+tend to decline over time ( Fig. 4e ). These developmental changes are further illuminated 475 
+
+by cross -domain associations. We found that autistic individuals exhibit significantly 476 
+
+stronger corre lations between emotion -based and inference -based domains compared to 477 
+
+neurotypical peers ( Extended Data Fig. 1), indicating tighter coupling between 478 
+
+affective and cognitive processes in social functioning . This may reflect reduced 479 
+
+modularity or greater int erdependence between emotional understanding and 480 
+
+mentalizing in autism 61 . Rather than operating as distinct systems, these processes may 481 
+
+co -develop or compensate for each other, especially when intuitive social understanding 482 
+
+is limited 62,63 . Clinicall y, these findings suggest that interventions targeting social 483 
+
+difficulties in autism may benefit from integrated approaches that simultaneously 484 
+
+engage both emotional and inferential components 64 . For instance, emotion recognition 485 
+
+training could be more effective when paired with explicit perspective -taking exercises, 486 
+
+and vice versa. Addressing the interplay between emotion and inference —rather than 487 
+
+treating them in isolat ion —may offer more robust pathways for enhancing adaptive 488 
+
+social functioning 65,66 .489 
+
+Emerging perspectives, such as the Double Empathy Theory 67 and the Social 490 
+
+Interaction Mismatch Hypothesis 9, challenge the traditional view that social difficulties 491 
+
+in autism stem solely from intrinsic deficits. Instead, these theories highlight 492 
+
+bidirectional interactional challenges, where autistic and non -auti stic individuals 493 
+
+experience mismatches in social cognition, communication styles, and expectations. 494 
+
+Our hierarchical framework provides a structured, empirical approach to systematically 495 
+
+assess these mismatches by quantifying 22 distinct components across five social 496 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+21 
+
+functioning domains. This fine -grained profiling could support the development of a 497 
+
+standardized social functioning assessment, allowing clinicians to track individualized 498 
+
+profiles of social functioning and benchmark them against population -lev el norms akin 499 
+
+to pediatric growth charts. Such profiling also enables data -driven subtyping of autism 500 
+
+> 68
+
+, identifying distinct social difficulties profiles rather than relying on broad diagnostic 501 
+
+classifications. Achieving clinically meaningful subtyping will require moving beyond 502 
+
+traditional behavioral measures —many of which our analysis indicates have limited 503 
+
+reliability —toward multi -modal assessm ent batteries that integrate optimized 504 
+
+behavioral paradigms with objective neurophysiological markers, in line with the NIH 505 
+
+Research Domain Criteria (RDoC) framework 69 .506 
+
+Beyond advancing understanding, our review id entified systematic 507 
+
+methodological issues in autism psychometrics and provides specific recommendations 508 
+
+for improving research rigor . Sampling biases —such as underpowered sample sizes, 509 
+
+unbalanced age distributions, and skewed male -to -female ratios ( Extended Data Fig. 510 
+
+2)—undermine the generalizability and replicability of findings (see sample size 511 
+
+recommendations in Extended Data Table 3 ). Methodological heterogeneity in tools, 512 
+
+tasks, and measurements (Fig. 3) further limits comparability across studies. 513 
+
+Importantly, however, such diversity also offers substantial advantages, enabl ing 514 
+
+researchers to identify paradigms with greater ecological validity and sensitivity, and 515 
+
+fostering methodological innovation and refinement. Earlier studies, despite variability, 516 
+
+provided foundational insights and essential groundwork that have guided 517 
+
+contemporary research. Building on this groundwork, our meta -analysis systematically 518 
+
+quantif ies how task sensitivity, robustness, and ecological validity influence reported 519 
+
+effects across the autism literature. Rather than endorsing specific paradigms, we 520 
+
+propose a data -driven framework for selecting them, emphasizing three empirically 521 
+
+supported principles: high sensitivity to between -group differences, robustness against 522 
+
+bias, and strong ecological validity (e.g., interaction -based, real -world assessment) 57,70 –
+
+523  
+
+> 72
+
+(Fig. 3). Applying these principles could help converge on harmonized toolkits 524 
+
+suitable for both research and clinical assessment, enabling cross -site comparability and 525 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+22 
+
+facilitating the translation of our five -domain framework into reliable, clinically 526 
+
+applicable subtyping. In parallel, standardizing terminology and reporting practices, 527 
+
+promoting data transparency and sharing, and providing detailed statistics beyond 528 
+
+significance tests (e.g., means, standard errors, effect sizes, and behavioral correlations 529 
+
+across multiple assessments) will be essential for improving the robustness, 530 
+
+reproducibility, and clinical utility of autism research. 531 
+
+Our findings hold significant global relevance, highlighting the critical r ole of 532 
+
+sociocultural factors in shaping the social d ifficulties experienced by individuals with 533 
+
+autism . The significant correlation between the skewed male -to -female ratio and 534 
+
+alterations in social functioning (Fig. 4c) underscores entrenched gender stereotypes in 535 
+
+diagnostic practices. Autistic females often present with subtler or less disruptive 536 
+
+symptoms that align more with social norms for women ( i.e., the camouflaging effect), 537 
+
+which makes them more likely to be ove rlooked or misdiagnosed. Consequently, those 538 
+
+who are diagnosed often exhibit more severe symptoms 73 –76 . Future diagnostic 539 
+
+frameworks must address this sex bias by enhancing sensitivity to subtler presentations 540 
+
+of autism in women and ensuring more equitable diagnostic outcomes 74,77,78 . Cultural 541 
+
+contexts , such as low perceived social support or high levels of masculinity (reinforcing 542 
+
+rigid gender roles and competition) —can amplify the challenges faced by autistic 543 
+
+individu als ( Fig. 4d). Societal pressures to conform to strict norms can amplify 544 
+
+difficulties in social adaptation, further marginalizing individuals with autism . To 545 
+
+overcome these barriers, public health policies should prioritize inclusive education, 546 
+
+reduce structural inequalities, and foster more widespread acceptance of neurodiversity 547 
+
+> 6,43
+
+. Recognizing how cultural contexts shape the expression and recognition of autism 548 
+
+will also be crucial for designing tailored support options and equitable care systems 549 
+
+> 38,79
+
+. This culturally informed approach will particularly benefit historically 550 
+
+underserved populations while advancing evidence -based, equitable care systems. 551 
+
+This review , although large in scope , has several limitations. First, variability in 552 
+
+the quality and methods of the 2,500 studies synthesized —such as differences in sample 553 
+
+sizes, diagnostic criteria, cultural representation, and task paradigms —may have 554 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+23 
+
+influenced our findings. The large -scal e nature of this meta -analysis required grouping 555 
+
+diverse tasks within each social component, which may obscure subtle but important 556 
+
+differences between studies. Second, the estimation of the developmental onset of 557 
+
+social differences could be limited by the availability of appropriate measurement tasks. 558 
+
+The observed sequence (motivation at 6 months → motor at 12 months → emotion at 559 
+
+18 months → inference at 36 months ) may reflect research focus and task design rather 560 
+
+than strictly representing cognitive onset in autism. For example, while early social 561 
+
+motivation differences are well -documented in infancy, higher -order social abilities, 562 
+
+such as theory of mind, are rarely assessed in toddlers, making it unclear whether their 563 
+
+later first observed differences in autism reflects true developmental timing or 564 
+
+measurement gaps. Addressing this limitation will require the development of infant -565 
+
+appropriate tasks that can capture early cognitive differences. Third, the hierarchical 566 
+
+framework of social difficulties is base d primarily on cross -sectional data and requires 567 
+
+future validation through longitudinal studies to confirm developmental patterns over 568 
+
+time and clarify causal relationships. Fourth , this review focuses on autism without 569 
+
+intellectual disabilities , leaving individuals with co -occurring intellectual disability 570 
+
+underexplored. Given the significant influence of cognitive abilities on social 571 
+
+performance and adaptation , future studies should systematically investigate h ow 572 
+
+intellectual disability shapes social functioning in autism. Fifth , global representation 573 
+
+is uneven, with limited research from low - and middle -income countries, which restricts 574 
+
+the generalizability of our findings. Finally, while we provide recommendat ions, 575 
+
+implementing these insights into standardized clinical practices and culturally sensitive 576 
+
+policies will require interdisciplinary collaboration and longitudinal validation. 577 
+
+In conclusion, by offering a hierarchical framework of social functioning in autism, 578 
+
+this meta -analysis has direct implications for clinical diagnostics, intervention 579 
+
+development, and precision medicine approaches. Understanding the early cascading 580 
+
+effects of social motivation alterations can inform early screening programs, while the 581 
+
+identified cross -component compensatory patterns suggest novel rehabilitation and 582 
+
+therapy strategies that leverage structured learning and motor -supported social 583 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+24 
+
+engagement. These insights can be integrated into clinical decision -making algorithms, 584 
+
+int ervention trials, and digital health platforms to tailor therapies based on an 585 
+
+individual’s specific social profile. Our findings further highlight the importance of 586 
+
+culturally sensitive diagnostic criteria, addressing long -standing biases in autism 587 
+
+assess ment (e.g., underdiagnosis in females). Moving forward, future research should 588 
+
+validate these insights in longitudinal and intervention -based studies to refine precision -589 
+
+based interventions for autism and related neurodevelopmental disorders. 590 
+
+591 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+25 
+
+# Method s592 
+
+## Selection criteria and analytic al strategy 593 
+
+In line with our conceptual framework, we included studies targeting a broad 594 
+
+range of constructs related to social functioning —including not only observable social 595 
+
+behaviors (e.g., communication, imitati on) but also underlying cognitive, affective, and 596 
+
+motivational processes (e.g., social attention, emotion recognition, social motivation, 597 
+
+theory of mind) —as all contribute to an individual’s capacity for social interaction 92 .598 
+
+Twenty -two key social components were identified through an extensive review of 599 
+
+textbooks, systematic reviews, and primary literature in cognitive, developmental, and 600 
+
+clinical psychology 47,80,81 . Expert consultations were conducted iteratively to ensure 601 
+
+comprehensive coverage of relevant components . See Extended Data Table 1 for the 602 
+
+defin itions and related terms of each component. The literature search was conducted 603 
+
+in May 2024. We identified studies published in PubMed and Web of Science between 604 
+
+January 1, 1990, and August 10, 2025 , using titles, abstracts, and keywords (for search 605 
+
+terms, see Supplementary Table 1 ). In addition to database searches, articles were 606 
+
+extracted from prior reviews and meta -analyses to ensure inclusiveness. Eligible studies 607 
+
+were based on three criteria ( Fig. 2). First, they had to be behavioral studies or had 608 
+
+col lected behavioral data in neuroimaging experiments that evaluate at least one social 609 
+
+component. Second, they should include clinical participants diagnosed with autistic 610 
+
+disorder, autism, ASD, high -functioning autism disorder, Asperger ’s syndrome, or 611 
+
+perva sive developmental disorder. All ASC participants were required to have a formal 612 
+
+clinical diagnosis confirmed by qualified clinicians using standardized diagnostic 613 
+
+instruments (e.g., DSM, ADOS, ADI, ICD, KADI, RAADS, ASDI, ASSQ, CARS) or 614 
+
+equivalent expert -applied criteria. Studies relying solely on self -report (e.g., AQ) or 615 
+
+‘high -risk ’ status without formal diagnosis were excluded (see Supplementary Table 616 
+
+2 for full coding instructions). They should also include control groups such as 617 
+
+neurotypically developing participants, unaffected siblings, or developmentally delayed 618 
+
+children . Third, they had to be peer -reviewed research articles in English. Fourth, we 619 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+26 
+
+excluded intervention studies, defined as studies applying controlled manipulations 620 
+
+(e.g., behavioral training, pharmacological treatment, neurostimulation, educational 621 
+
+programs) to autistic participants and assessing effects on outcomes over time. These 622 
+
+we re excluded to ensure that our synthesis captured naturalistic patterns of social 623 
+
+functioning, uncontaminated by treatment effects, consistent with prior systematic 624 
+
+reviews 50,82,83 .625 
+
+A total of 2,622 studies met our broad inclusion criteria and were included in the 626 
+
+qualitative systematic review. These studies assessed group differences in at least one 627 
+
+component of social functioning in autistic and neurotypical participants. For the 628 
+
+quantitative meta -analysis, we applied stricter eligibility criteria: a) Task comparability 629 
+
+—only paradigms demonstrating sufficient methodological homogeneity were retained 630 
+
+for cross -study effect size synthesis; and b) Statistical completeness —studies were 631 
+
+included only if they reported sufficient data (e.g., means and standard dev iations, or 632 
+
+t/F -values with exact p -values) to compute standardized effect sizes. Applying these 633 
+
+criteria yielded a final dataset of 1,388 independent effect sizes for quantitative meta -634 
+
+analysis (with 34 tasks across 13 components) (see the PRISMA flowchart in Fig. 2 ). 635 
+
+This study involved two complementary meta -analytic approaches: (1) Group -636 
+
+difference meta -analysis —we synthesized standardized mean differences between 637 
+
+autistic and neurotypical participants using Hedges’ g as the effect size metric. These 638 
+
+models estimated the magnitude of group differences for each task and social 639 
+
+functioning component, and assessed po tential moderators (e.g., age, IQ, measurement 640 
+
+type). (2) Cross -domain correlation meta -analysis —to quantify relationships between 641 
+
+social functioning domains . Pearson’s r values were converted to Fisher’s Z prior to 642 
+
+synthesis to stabilize variance estimates, and then back -transformed for reporting 643 
+
+purposes. 644 
+
+## Data extraction and coding quality assessment 645 
+
+Following a Codebook (Supplementary Table 2), twenty well -trained 646 
+
+postgraduate students extracted information from included articles . Information 647 
+
+inc ludes publication details (article name, journal, year of publication, study type, 648 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+27 
+
+impact factor, citation counts), participant demographics (participant type, clinical 649 
+
+population, diagnostic criteria , nationality, age group, mean age, sample size , mean IQ, 650 
+
+clinical number, female included, male included, control population, mean age of the 651 
+
+control group, diagnosed comorbidity), methodological details (task paradigm, index, 652 
+
+task design), and outcome details (conclusion, effect size, and behavioral correlations 653 
+
+with other tasks). The ecological validity of each task was rated 70 , following the criteria 654 
+
+outlined in Supplementary Table 3 . We also coded the reporter type (self vs. proxy) 655 
+
+for survey -based measures, task index (accuracy vs. reaction time) for action perception 656 
+
+studies , and measurement modality (task -based vs. surve y-based) for the entire literature .657 
+
+To enhance coding reliability, each human coder was assigned to only 2~4 658 
+
+components to ensure they had a good understanding of the studies and were familiar 659 
+
+with the coding of component -specific variables. Ten percent of studies were coded by 660 
+
+two or three independent coders, and the inter -coder correlation (Pearson’s r) was 0.91 661 
+
+(comparable to other large -scale m eta -analysis projects 84 ). Discrepancies were resolved 662 
+
+through consensus meetings and consultation with senior researchers. 663 
+
+According to the author’s conclusion (p -value of group main effect between the 664 
+
+autistic and non -autistic group), each study was coded into one of five categories: 665 
+
+impaired, different, complex , intact, and outperformed. Operational definitions for each 666 
+
+category are detailed in Supplementary Table 2 to ensure coding consistency across 667 
+
+studies. Impaired means the autistic group performed significantly poorer than the non -668 
+
+autistic group, intact means no significant differences, outperformed means t hat the 669 
+
+autistic group outperformed the non -autistic group, different means that the autistic 670 
+
+group performed differently from the non -autistic group and did not indicate inferior or 671 
+
+superior performance. When the conclusion varied across different experim ental 672 
+
+conditions, it would be marked as complex .673 
+
+This five -category system was used to support a qualitative synthesis of global 674 
+
+trends in reported outcomes, especially for visualizing the overall distribution of 675 
+
+alterations across 22 social components ( Fig. 1c ). Many studies could not be included 676 
+
+in quantitative meta -analysis d ue to incomplete statistical reporting (e.g., missing means 677 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+28 
+
+or standard deviations) or highly heterogeneous experimental designs, making effect 678 
+
+size estimation infeasible. The five -category coding thus enabled the inclusion of a 679 
+
+broader evidence base, maxi mizing the scope of our review. Crucially, this 680 
+
+categorization was not used in any of the main quantitative analyses. All effect size 681 
+
+calculations, moderator tests, and behavioral correlation analyses were conducted using 682 
+
+continuous metrics (Hedges ’ g). 683 
+
+To address the ambiguity and arbitrariness in terminology usage across the 684 
+
+literature, we adhered to a standardized coding strategy. Specifically, for tasks with 685 
+
+inconsistent component labels (e.g., gaze preference tasks have been labelled in the 686 
+
+literature either as social attention or social motivation; read mind in the eyes (RMET) 687 
+
+have been labelled either as theory of mind or emotion perception) , we adopted the 688 
+
+label most commonly used in the field, rather than relying on the terminology arbitrarily 689 
+
+appli ed by individual study authors. 690 
+
+## Categorize social difficulties in autism into five domains 691 
+
+Four prominent neurocognitive theories of autism (each citation > 2,000) guided 692 
+
+our grouping of social difficulties in autism. The broken mirror theory builds on 693 
+
+al terations in motor -based components like action perception and imitation 85,86 . The 694 
+
+empathizing -systemizing theory is associated with emotion -based components like 695 
+
+emotion perception and empathy 87 . The mind -blindness theory ascribes autism to 696 
+
+components involving understanding self and others, such as theory of min d and social 697 
+
+reasoning 88 . The social motivation theory centered on components lik e social attention 698 
+
+and reward responsiveness 29 . Components not explicitly covered by these theories, 699 
+
+such as social learning, pretend play, and communication, were grouped as complex 700 
+
+skills, reflecting higher -order social abilities. This systematic approach e nsured logical, 701 
+
+evidence -based grouping within established autism research frameworks. 702 
+
+## Statistical Analysis of Effect Size s703 
+
+To ensure the stability and robustness of our meta -analytic estimates, only task 704 
+
+paradigms with data from at least four independent studies were included in the 705 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+29 
+
+quantitative synthesis of effect sizes . To standardize outcomes across studies, Hedges ’706 
+
+g was selected as the primary effect size metric due to its correction for small -sample 707 
+
+bias. For components where multiple out come indices were available, we selected the 708 
+
+most frequently reported index across the literature for that component to ensure 709 
+
+consistency in our analysis. Effect sizes were calculated from reported statistics (e.g., 710 
+
+means, standard deviations, t -values, o r F -values) using the esc package 89 in R. By 711 
+
+convention, a negative Hedges’ g indicates that the ASC group performed more poorly 712 
+
+than the neurotypical group. This process yielded a standardized effect size and its 713 
+
+corresponding variance for every eligible outcome, preparing the data for meta -analytic 714 
+
+synthesis . To enhance transparency and interpretability, forest plots for each component 715 
+
+were provided in OSF repository ( https://osf.io/jzw45/files/osfstorage ).716 
+
+All meta -analyses were conducted using random -effects models in conjunction 717 
+
+with robust variance estimation (RVE). This approach was necessary because many 718 
+
+included studies contributed multiple, potentially correlated effect sizes, including 719 
+
+multiple outcomes reported within the same task and social component (e.g., separate 720 
+
+stimulus categories, experimental conditions , subscales, or participant subgroups). 721 
+
+These finer -grained outcomes were reported inconsistently across studies, and the 722 
+
+correlations among them were rarely available. As a result, the within -study dependence 723 
+
+structure was heterogeneous and only partially observed, making it difficult to specify 724 
+
+a single multilevel or cross -classified random -effects structure. To robustly account for 725 
+
+this non -independence without imposing strong structural assumptions, we employed 726 
+
+RVE as implemented in the robumeta package in R, clustering effect sizes by study and 727 
+
+specifying the correlated -effects (CE) working model. The intra -study correlation ( ρ) 728 
+
+was set to 0.5 90,91 and verified through sensitivity analyses showing that varying ρ729 
+
+between 0 and 0.9 did not meaningfully affect the results. Heterogeneity was quantified 730 
+
+using the I² statistic and the variance of the true effect sizes ( τ²). 731 
+
+Moderat ion analysis included two levels: study level and country level (for the 732 
+
+definition of each factor, see Extended Data Table 2 ). Exploratory meta -regression 733 
+
+was employed to test the existence of moderating effects (using the R package 734 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+30 
+
+rob umet a). For categorical factors, we compared the effect sizes of all categories using 735 
+
+the Wald F test. For continuous moderators, we assessed their association with effect 736 
+
+sizes  via meta -regression coefficients tested with two -tailed t -tests . Countries with less 737 
+
+than five studies were excluded from the meta -regression of sociocultural factors to 738 
+
+ensure model stability . Here n o adjustments were made for multiple comparisons, as 739 
+
+these moderator analyses were exploratory and intended to identify po tentially relevant 740 
+
+demographic and sociocultural factors rather than to provide definitive hypothesis tests. 741 
+
+## Meta -Analysis of Behavioral Correlations 742 
+
+To characterize how different domains of social functioning relate to one another, 743 
+
+we conducted the correl ation analyses in two stages, separating the comparison of 744 
+
+association strength from the evaluation of higher -order organizational structure. We 745 
+
+extracted all available behavioral correlation coefficients across the five social 746 
+
+functioning domains. Correla tions were categorized by domain pair (e.g., emotion –747 
+
+inference) and converted to Fisher’s z scores prior to analysis. 748 
+
+In the first (exploratory) stage, we compared the strength of cross -domain 749 
+
+correlations between autistic (ASC) and neurotypical (NT) group s using a single, 750 
+
+unified correlated -effects robust variance estimation (RVE) meta -regression model. All 751 
+
+Fisher’s z-transformed correlations from both groups and all domain pairs were 752 
+
+analyzed simultaneously within this model, with domain pair and diagnostic group 753 
+
+(ASC vs NT) treated as categorical predictors. Effect sizes were clustered by study to 754 
+
+account for dependency arising from multiple correlations contributed by the same 755 
+
+study. This approach allows pooled correlations for each domain pair and group to be 756 
+
+estimated concurrently, rather than via separate subgroup meta -analyses. Group 757 
+
+differences for each domain pair were tes ted using Wald -type linear contrasts within the 758 
+
+same model, with small -sample corrected variance estimates (CR2) and false discovery 759 
+
+rate (FDR) correction for multiple comparisons ( Extended Data Fig. 1b ). 760 
+
+In the second (confirmatory) stage, we examined dir ectional dependencies among 761 
+
+domains using meta -analytic structural equation modeling (MASEM). For each study, 762 
+
+we constructed a 5 × 5 correlation matrix; when multiple correlations were available 763 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+31 
+
+for a given domain pair, they were aggregated into a single v ariance -weighted estimate. 764 
+
+Using the metaSEM package, we compared three theory -driven directional models 765 
+
+(Extended Data Fig. 1c ): (1) a Serial model, where influence flows sequentially from 766 
+
+motivation to complex skills following the developmental order ide ntified in Fig. 4a ;767 
+
+(2) a Radial model, in which motivation -based processes directly influence all other 768 
+
+domains; and (3) a Network model allowing all pairwise connections. Model fit was 769 
+
+evaluated using the Bayesian Information Criterion (BIC), and group d ifferences in path 770 
+
+strengths were tested using likelihood ratio tests. The robustness of the best -fitting 771 
+
+model was further evaluated via permutation testing against 120 alternative 772 
+
+unidirectional cascade permutations. 773 
+
+## Publication Bias Assessment 774 
+
+For each task paradigm with ≥10 studies, we tested for publication bias using an 775 
+
+RVE -adjusted approach. Specifically, we applied Egger’s regression within a robust 776 
+
+variance estimation framework (robumeta), clustering effect sizes by study to a ccount 777 
+
+for within -study dependencies. A significance threshold of p < 0.10 was used for 778 
+
+detecting funnel plot asymmetry. When asymmetry was present, PET -PEESE 779 
+
+corrections were conducted within the same RVE model to obtain adjusted effect size 780 
+
+estimates. Th is method preserves statistical power and precision while properly 781 
+
+accommodating non -independent data structures .782 
+
+## Pre -registration and Deviations 783 
+
+This meta -analysis was pre -registered on PROSPERO in July 202 4784 
+
+(www.crd.york.ac.uk/PROSPERO/view/CRD42024566141). The pre -registration 785 
+
+outlined key inclusion criteria (e.g., participants aged ≥3 years, IQ ≥75), search 786 
+
+strategies, coding procedures, and statistical models (e.g., random -effects meta -analysis, 787 
+
+meta -regr ession). During study screening and coding, two deviations from the protocol 788 
+
+were made. First, we expanded the age inclusion range to allow studies including 789 
+
+infants under 3 years, provided they were confirmed to have ASC through longitudinal 790 
+
+follow -up or validated early diagnostic assessments. This change was based on growing 791 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+32 
+
+evidence for the predictive value of early social markers and impacted 94 studies ( 3.59 %792 
+
+of total). Second, in cases where individual IQ data were unavailable, we included 793 
+
+studies onl y if the mean IQ of ASC group was ≥75 or if the authors reported that the ir 794 
+
+participants did not have intellectual disability. These modifications were documented 795 
+
+prior to analysis and did not qualitatively alter the main findings (see sensitivity test s796 
+
+in Supplementary Fig. 3). 797 
+
+Following editorial guidance during the final revision stage, we conducted an 798 
+
+additional updated literature search to ensure that the meta -analysis reflected the most 799 
+
+recent research in the field. The original pre -registration co vered studies published up 800 
+
+to March 2024. The updated search, using the same databases and search strategy, 801 
+
+extended the coverage to all eligible studies published before August 2025. This update 802 
+
+identified 3,886 additional records, which after screening r esulted in 141 additional 803 
+
+studies included in qualitative synthesis and 40 additional studies included in 804 
+
+quantitative meta -analyses, and expanded the geographical coverage from 29 to 32 805 
+
+countries. All newly included studies were coded using the same proce dures and criteria 806 
+
+as the original dataset. Re -running the analyses with the expanded dataset produced 807 
+
+only minor numerical changes in some statistics, while all key findings and statistical 808 
+
+significance patterns remained unchanged, indicating that the con clusions of the study 809 
+
+are robust to the inclusion of the most recent literature. 810 
+
+# Data Availability 811 
+
+All data in this project have been deposited in the Open Science Framework 812 
+
+(https://osf.io/jzw45). 813 
+
+# Code Availability 814 
+
+All data analysis code in is available on the Open Science Framework 815 
+
+repository(https://osf.io/jzw45 ). 816 
+
+# Acknowledgement s817 
+
+We thank Jialu Yu, Jiamin Bao, Xiuli Zheng, L iangyu Liu, Y i Li, M ingxue Fu, 818 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+33 
+
+Hengsen Dai, Y uxing Yang, X iaoxiao Zeng, Lingfang Wang, Xinru Liu, Yutong Zhao, 819 
+
+Yuchen Liu, Nan Zhang, and B ingsu Wang for literature coding and manual check, 820 
+
+Shuxian Jin for valuable discussions and comments. This work was supported by the 821 
+
+National Natural Science Foundation of China (32422033 , 32430041 to Y.W.; 822 
+
+32371139, 32000776 to Y.Z.), the National Science and Technology Innovation 2030 823 
+
+Major Program (2022ZD0211000, 2021ZD0200500 to Y.W.), the Fundamental 824 
+
+Research Funds for the Central Universities , and the Open Research Fund of the State 825 
+
+Ke y Laboratory of Cognitive Neuroscience and Learning (Grant No. CNLZD2103 to 826 
+
+Y.Z.) .827 
+
+## Author Contributions Statement 828 
+
+S.L., H.W., designed and planned the research. S.L., H.W., G.C., X.C, Y.W., W.H. 829 
+
+performed the literature search, data coding and data analys is. S.L., H.W., G.C. wrote 830 
+
+the initial draft of the manuscript, and A.H., L.S., L.Y., K.A., Z.Z., X.Z. edited and 831 
+
+reviewed the final manuscript. Y.W. and Y.Z. conceived and supervised the project and 832 
+
+were involved in all aspects of the research. 833 
+
+## Competing Interests Statement 834 
+
+The authors declare no competing interests. 835 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+34 
+
+# Extend Data 836 
+
+837 
+
+Extended Data Fig. 1 | Cross -domain correlations and meta -analytic structural equation 838 
+
+modeling (MASEM) of social functioning domains. (a) ASC individuals showed stronger 839 
+
+cross -domain behavioral correlations across the five social domains than NT 840 
+
+individuals ( F (1, 98.2) = 8.278, partial R 2 = 0.078, 95% CI = [0.008, 0.201], p = 0.005). 841 
+
+The center line of the box plot represents the mean estimate of cross -domain 842 
+
+correlations(Z(ASC) = 0.392, Z(NT) = 0.246), the gray dots represents individual 843 
+
+study -level effect sizes (Fisher's Z -transformed correlations), and the bounds of the b ox 844 
+
+demonstrates the ±1 standard error(SE). (b) Cross -domain correlation matrices for 845 
+
+ASC (upper triangle) and NT (lower triangle), with study counts in parentheses. 846 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+35 
+
+Significant ASC > NT differences are in red, strongest between emotion and inference 847 
+
+(r = 0.437 vs. 0.214, post hoc Cohen’s q = 0.252, 95% CI = [0.091, 0.413], F = 10.385, 848 
+
+p = 0.034). Group differences for each domain pair were tested using Wald -type linear 849 
+
+contrasts with small -sample corrected variance estimates (CR2), and p -values were 850 
+
+adjust ed for multiple comparisons using the false discovery rate (FDR) correction. (c) 851 
+
+MASEM model comparison. Three theoretically derived directional architectures were 852 
+
+compared: Serial model (influences proceed along the developmental sequence: 853 
+
+motivation → mo tor → emotion → inference → complex skills), Radial model (social 854 
+
+motivation directly influences all other domains), and Network model (all pairwise 855 
+
+influences allowed). Paths were constrained to follow the developmental order 856 
+
+proposed in prior theory as w ell as found in Fig. 4a 12,27 . The Serial model provided the 857 
+
+best fit (lowest BIC) and outperformed 120 alternative unidirectional permutations 858 
+
+(permutation test, 3/120, p = 0.025). Likelihood ratio tests (LRT) revealed significant 859 
+
+group differences in specific paths ( p = 0.024), with ASC individuals showing stronger 860 
+
+influen ces from emotion to inference and from inference to complex skills (red arrows). 861 
+
+Dashed arrows indicate non -significant paths in NT. No adjustments were made for 862 
+
+multiple comparisons. All statistical tests were two sided. 863 
+
+864 
+
+865 
+
+866 
+
+867 
+
+868 
+
+869 
+
+Extended Data Fig. 2 | Bias ed distribution of studies (a) across sample size, (b) mean age and 870 
+
+(c) ratio of male in ASC group. The median sample size was 22, and that of male ratio was 871 
+
+0.833 (indicated by dash lines). The mean age showed a bimodal distribution: childhood 872 
+
+(<18 yrs) a nd adulthood (>18 yrs). 873 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+36 
+
+874 
+
+Extended Data Fig. 3 | Funnel plot for each task. (a) ‘Over -estimated’ indicated the existence of 875 
+
+publication bias. (b) ‘no evidence’ indicated the egger’s test was not significant, X-axis represents 876 
+
+the Hedges’ g value (ASC -NT difference), and the y -axis represents the standard error. Negative 877 
+
+values on the x -axis indicate studies that reported poorer performance in indiv iduals with autism. 878 
+
+The symmetrical triangular region represents the expected distribution of studies under no 879 
+
+publication bias, with points distributed around the centerline (zero effect size). 880 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+37 
+
+881 
+
+Extended Data Fig. 4 | Non -significant moderators. Study -le vel moderators include cognitive 882 
+
+measures (Full -scale IQ, Verbal IQ, Performance IQ), sample sizes for ASC and NT groups, 883 
+
+publication metrics (5 -year journal impact factor, publication year), diagnostic criteria (ADOS, 884 
+
+ADI -R, AQ, ICD, and DSM versions III, IV, and V, “0” indicates studies that did not use the 885 
+
+specified tool as a diagnostic criterion), comorbidity inclusion, and economic status (developed vs. 886 
+
+developing countries). Data are represented as scatter plots with regression lines or violin plots f or 887 
+
+categorical variables; Regression lines and p-values indicate the significance of correlations after 888 
+
+hyperbolic and symmetric Gaussian transformation. Hedges’ g values are plotted on the y -axis, 889 
+
+indicating altered performance (i.e., ASC -NT difference, m ore negative values indicate poorer 890 
+
+performance in ASC). Red dots and error bars in violin plots indicate the estimated effect sizes and 891 
+
+95% CI, respectively; All statistical tests were two sided, and no adjustments were made for multiple 892 
+
+comparisons. 893 
+
+894 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+38 
+
+Extended Data Table 1 | List of 22 social components, definitions, and related functions. 895 
+
+Component  Definition  Related functions 
+
+Action 
+
+perception 
+
+Identification and intention -understanding of an agent's actions.  biological motion, action/posture recognition, animacy detection 
+
+Deception  An ability that individual can intentionally carry out an action that is likely 
+
+to be misinterpreted to obtain a strategic advantage. 
+
+deception 
+
+Emotion 
+
+perception 
+
+The ability to recognize and identify emotions in others  affect recognition, social threat detection 
+
+Empathy  The ability to have an emotional reaction to (or understanding of) another 
+
+person’s feelings. 
+
+affective processing, sympathy, compassion, emotional pr ocessing, 
+
+embarrassment 
+
+Imitation  The ability that individual learn actions/skills by copying other.  imitation 
+
+Joint attention  Perception of gestures and eye -gaze -direction used by another person to 
+
+share about an object or an event. 
+
+gaze following 
+
+Person 
+
+perception 
+
+Various mental processes that are used to form impressions of other agents, 
+
+such as face, body, and voice processing 
+
+face perception/discrimination/memory, body recognize, voice 
+
+perception, person/name familiarity, agent/person identification 
+
+Pretend play  An ability that using an object as something else, pretending that the object 
+
+has properties that it has not, or using imaginary objects. 
+
+pretend play, symbolic play 
+
+Prosocial 
+
+tendency 
+
+A tendency that individual recognize the intension of others and to adjust 
+
+their behavior in a motivation for the welfare of others. 
+
+social decision -making, cooperation, prosocial behavior 
+
+Self -processing  The conscious attention towards one’s source and the concept of oneself.  self -emotion(alexithymia), social/interpersonal/personal space, self 
+
+recognition/identity/schema, self esteem, self awareness, self concept, 
+
+self efficacy, self serving, self flattery, autobiographical, sense of agency 
+
+Social alignment  The alignment of processes and behavior across individuals, including 
+
+coordination, compliance and conformity. 
+
+social coordination, social attunement, social alignment, social 
+
+reciprocity, compliance, conformity 
+
+Social attention  A form of attention that involves the allocation of limited processing 
+
+resources in a social context 
+
+gaze perception, mutual gaze 
+
+Social 
+
+communication 
+
+The ability that an individual can communicate with others successfully and 
+
+efficiently. It involves the ability to use verbal and non -verbal signals to 
+
+communication skills, persuasion ability, sense of humor, story -telling, 
+
+verbal and nonverbal communication, emotional expression 39 
+
+efficiently communicate, the ability to persuade others and the ability to 
+
+detect and tell jokes. 
+
+Social knowledge  Individual’s semantic knowledge of social events, emotion, social 
+
+relationships, social norms, etc. 
+
+action knowledge, emotion knowledge, person knowledge, stereotype, 
+
+social norms, relational knowledge, social script, social memory 
+
+Social learn ing  A learning process in which new skills or behaviors can be acquired by 
+
+observing social stimuli. 
+
+observational learning, social reward learning 
+
+Social motivation  A set of psychological dispositions and biological mechanisms biasing the 
+
+individual to preferentially orient to the social world (social orienting), to 
+
+seek and take pleasure in social interactions (social reward), and to work to 
+
+foster and maintain social bonds (social maintaining). 
+
+social seeking, social reward 
+
+Social reasoning  The ability to draw reasoning (including other’s intention, reason and 
+
+action’s valence) based on social context, and provide optimal solution to 
+
+solve social problem. 
+
+social reasoning, morality 
+
+Social regulation  The ability that individual can regulate or adjust themselves in response to 
+
+the change of social environment. 
+
+reputation management, self -presentation, emotion regulation, 
+
+aggression, social anxiety 
+
+Social 
+
+relationships 
+
+The ability to start and maintain a relationship  so cial relationships 
+
+Social skills  The set of behaviors employed to achieve social goals in different contexts 
+
+and environments. 
+
+social skills, social competence, social comprehension 
+
+Theory of Mind  The ability to attribute mental states, such as thoughts, intentions, beliefs, 
+
+and desires, to oneself and to others. 
+
+theory of mind, mentalizing, mind reading, perspective taking, role 
+
+taking, false belief, social attribution 
+
+Unconscious 
+
+mimicry 
+
+A tendency that people unconsciously copy each other’s p osture, gestures, 
+
+facial expressions, and emotions during social interaction. 
+
+automatic imitation, mimicry 
+
+896 40 
+
+Extended Data Table 2 | Definitions of 25 moderating factors. There are 2 levels, study level means that the values of factors were coded by each study, country 897 
+
+level means that the effect size was grouped by the countries before meta -regression, countries with less than five studies were excluded to control the bias. 898 
+
+Level  Factor  Definition  Type  Range 
+
+Study  Mean age  Mean age of the ASC group.  Continuous  > 1 
+
+Study  Male ratio  Percentage of male participants in the clinical group.  Continuous  [0, 1] 
+
+Study  Sample size  Number of participants with ASC included in the 
+
+study. 
+
+Continuous  > 2 
+
+Study  FIQ  Full -scale IQ  Continuous  > 65 
+
+Study  PIQ  Performance IQ  Continuous  > 65 
+
+Study  VIQ  Verbal IQ  Continuous  > 65 
+
+Study  Diagnostic criteria  The tools used to make a diagnosis on clinical 
+
+participants. 
+
+Categorical  DSM, ADOS, AQ, ADI, 
+
+ICD, other 
+
+Study  DSM version  The version of DSM  Categorical  Ⅲ, Ⅳ, Ⅴ 
+
+Study  Existence of comorbidity  Whether the participants with ASC who had other 
+
+mental disease were included or excluded. 
+
+Categorical  Include, exclude. 
+
+Study  Publish year  Year of publish  Continuous  [1990, 2024] 
+
+Study  Impact factor  Impact factor of the journal in 2020.  Continuous  > 0 
+
+Study  Economic development level  Whether the participants were from the developed 
+
+countries or the developing ones. 
+
+Categorical  Developed, Developing 
+
+Country  Masculinity  The extent of the use of force and the differentiation of 
+
+gender roles. 
+
+Continuous  (0,100) 
+
+Country  Power distance  The inequality of power among individuals.  Continuous  (0,100) 
+
+Country  Indulgence  The extent and tendency for a society to fulfill the 
+
+individual decisions. 
+
+Continuous  (0,100) 
+
+Country  Long -term Orientation  The extent to which society views forward to the 
+
+future. 
+
+Continuous  (0,100) 41 
+
+Country  Individualism  The degree to which individuals are integrated into 
+
+groups and their perceived obligations and dependence 
+
+on groups. 
+
+Continuous  (0,100) 
+
+Country  Uncertainty avoidance  Society’s tolerance to unknown situations, uncertainty 
+
+and unexpected events. 
+
+Continuous  (0,100) 
+
+Country  Social support  Perceived social support, average of the binary 
+
+response to the question “If you were in trouble, do 
+
+you have relatives or friends you can count on to help 
+
+you whenever you need them, or not?” 
+
+Continuous  (0,1) 
+
+Country  Subjective well -being  Average of the rating to the question “Please imagine 
+
+a ladder, with steps numbered from 0 at the bottom to 
+
+10 at the top. The top of the ladder represents the best 
+
+possible life for you and the bottom of the ladder 
+
+represents the worst possible life for you. On which 
+
+step of the ladder would you say you personally feel 
+
+you stand at this time?” 
+
+Continuous  (0,10) 
+
+Country  Corruption  Perceived levels of public sector corruption (from 
+
+highly corrupt to very clean) 
+
+Continuous  (0,100) 
+
+Country  Democracy  Based on five categories: electoral process and 
+
+pluralism; the functioning of government; political 
+
+participation; political culture; and civil liberties 
+
+Continuous  (0, 10) 
+
+Country  Historical prevalence of infectious 
+
+disease 
+
+Rating of the prevalence of 7 infectious diseases 
+
+(leishmania, schistosomes, trypanosomes, malaria, 
+
+typhus, filariae and dengue). 
+
+Continuous  (0,4) 
+
+Country  Incidence  The prevalence rate by countries.  Continuous  (0,100) 
+
+Country  Gender inequality index  Reflects regional gender -based disadvantage in three  Continuous  (0,1) 42 
+
+dimensions (reproductive health, empowerment and 
+
+the labor market), computed using the association -
+
+sensitive inequality measure. 
+
+Country  Subsistence style  Measures the cultural reliance on different subsistence 
+
+strategies, reflecting the degree of interdependence in 
+
+a society, calculated by summing the area dedicated to 
+
+wheat and rice farming, then subtracting the area 
+
+devoted to herding. 
+
+Continuous  > 0 
+
+899 43 
+
+Extended Data Table 3 | Power analysis with recommendations of sample size for each task paradigm. Columns include components, paradigms, indices, effect 900 
+
+size (Hedges’ g) and range of random effect, study number (# study), median sample size, minimally req uired sample size (based on Power Analysis Estimation, power 901 
+
+of 0.8, two -sided test), and proportion of underpowered studies (with sample size below the minimally required one). Tasks containing les s than 4 studies were not 902 
+
+included. We recommend future re search to recruit autistic participants larger than the minimally required sample size. 903 
+
+Components  Paradigms  Indices  g [lower, upper]  # Study  Median 
+
+sample size 
+
+Minimally required 
+
+sample size 
+
+Proportion (%) of 
+
+Underpowered studies 
+
+Action 
+
+perception 
+
+Non -affective plot -light 
+
+display 
+
+Accuracy  -0.451 [ -0.794, -0.108]  26  16  78  96.15 
+
+Unconscious 
+
+mimicry 
+
+Facial mimicry  Performance  -0.703 [ -1.174, -0.233]  6 19.25  32  83.33 
+
+Imitation 
+
+Face expression  Performance  -0.783 [ -0.98, -0.585]  4 20  20  75 
+
+Hand/body gesture  Performance  -0.728 [ -1.054, -0.402]  17  18.5  32  94.44 
+
+Object  Performance  -1.005 [ -1.404, -0.606]  11  20  16  27.27 
+
+Emotion 
+
+perception 
+
+Judgment  Accuracy  -0.685 [ -0.887, -0.483]  46  20  34  97.83 
+
+Labelling  Accuracy  -0.617 [ -0.702, -0.532]  308  23  42  70.13 
+
+Matching  Accuracy  -0.501 [ -0.68, -0.321]  28  22.5  63  75 
+
+Empathy 
+
+Empathy quotient (EQ)  Total score  -1.857 [ -2.107, -1.606]  58  31  5 0
+
+Interpersonal reactivity 
+
+index (IRI) 
+
+Score  -0.480 [ -0.661, -0.299]  102  24.25  69  93.14 44 
+
+Empathy accuracy  Score  -0.615 [ -1.074, -0.156]  5 19  42  100 
+
+Rating for pain  Rating  -0.460 [ -0.768, -0.152]  6 17.5  75  100 
+
+Person 
+
+perception 
+
+Face discrimination  Accuracy  -0.590 [ -0.836, -0.343]  22  20  46 90.91 
+
+Face memory  Accuracy  -0.718 [ -0.836, -0.599]  79  17.5  31 74.07 
+
+Facial trait judgement  Rating  -0.334 [ -0.484, -0.185]  39  20  142  87.18 
+
+Self -processing 
+
+Toronto Alexithymia 
+
+Scale (TAS) 
+
+Total score  -1.336 [ -1.571, -1.101]  39  24.5  10 0
+
+Rosenberg Self -esteem 
+
+scale (RSES) 
+
+Total score  -0.698 [-1.119, -0.276]  7 46  33 28.57 
+
+Theory of mind 
+
+Location -change false 
+
+belief 
+
+Accuracy  -0.568 [ -0.747, -0.389]  74  26  49  83.78 
+
+Social animation task  Accuracy  -0.529 [ -0.689, -0.37]  48  26 .5 57  72.92 
+
+Faux Pas test  Accuracy  -0.657 [ -1.028, -0.287]  22  31  37  86.36 
+
+NEPSY -ToM  Accuracy  -0.778 [ -0.930, -0.626]  10  35.75  27  20 
+
+Strange story task  Rating score  -0.703 [ -0.887, -0.52]  32  23.5  32  71.88 
+
+Read mind in the eyes 
+
+task (RMET) 
+
+Accuracy  -0.760 [ -0.910, -0.610]  77  25  28  54.54 
+
+The awareness of social 
+
+inference test (TASIT) 
+
+Score  -0.817 [ -1.095, -0.539]  6 38  24  16.67 45 
+
+Visual perspective 
+
+taking (VPT) 
+
+Accuracy  -1.213 [ -2.536, 0.11]  11  21  11  0
+
+Movie for the 
+
+assessment of social 
+
+cognition (MASC) 
+
+Score  -1.419 [ -1.958, -0.879]  9 22.5  9 0
+
+Social attention  Passive viewing  Fixation time/ 
+
+percentage 
+
+-0.573 [ -0.751, -0.394]  109  26  49  79.82 
+
+Joint attention 
+
+Responding (RJA)  Performance  -0.529 [ -0.703, -0.355]  85  18  57  94.12 
+
+Interactive RJA  Performance  -0.797 [ -1.609, 0.016]  38  20  25  73.68 
+
+Initiating (IJA)  Performance  -0.625 [ -1.244, -0.006]  31  16  41  80.65 
+
+Prosocial 
+
+tendency 
+
+Prosocial subscale of 
+
+strengths and difficulties 
+
+questionnaire (SDQ) 
+
+Score  -1.013 [ -1.641, -0.385]  4 97.75  16  25 
+
+Social 
+
+motivation 
+
+Social seeking  Performance  -0.735 [ -1.453, -0.016]  4 31.5  30  50 
+
+Social 
+
+communication 
+
+Social communication 
+
+questionnaire (SCQ) 
+
+Score  -1.986 [ -2.296, -1.675]  5 18  5 0
+
+904 
+
+905 46 
+
+# Reference 
+
+1.  Lord, C. et al. Autism spectrum disorder. Nat. Rev. Dis. Primer 6, 5 (2020). 
+
+2.  World Health Organization. Autism. World Health Organization https://www.who.int/news -
+
+room/fact -sheets/detail/autism -spectrum -disorders (2023). 
+
+3.  Zeidan, J. et al. Global prevalence of autism: A systematic review update. Autism Res. 15 , 778 –
+
+790 (2022). 
+
+4.  Gates, J. A., Kang, E. & Lerner, M. D. Efficacy of group social skills interventions for youth 
+
+with autism spectrum disorder: A systematic review and meta -analysis. Clin. Psychol. Rev. 52 ,
+
+164 –181 (2017). 
+
+5.  Ke, F., Whalon, K. & Yun, J. Social Skill Interventions for Youth and Adults With Autism 
+
+Spectrum Disorder: A Systematic Review. Rev. Educ. Res. 88 , 3 –42 (2018). 
+
+6.  Lord, C. et al. The Lancet Commission on the future of care and clinical research in autism. 
+
+The Lancet 399 , 271 –334 (2022). 
+
+7.  Vivanti, G., Prior, M., Williams, K. & Dissanayake, C. Predictors of Outcomes in Autism Early 
+
+Intervention: Why Don’t We Know More? Front. Pediatr. 2, (2014). 
+
+8.  Happé, F., Ronald, A. & Plomin, R. Time to give up on a single explanation for autism. Nat. 
+
+Neurosci. 9, 1218 –1220 (2006). 
+
+9.  Bolis, D., Balsters, J., Wenderoth, N., Becchio, C. & Schilbach, L. Beyond Autism: Introducing 
+
+the Dialectical Misattunement Hypothesis and a Bayesian Account of Intersubjectivity. 
+
+Psychopathology 50 , 355 –372 (2017). 
+
+10.  Pelphrey, K., Adolphs, R. & Morris, J. P. Neuroanatomical substrates of social cognition 
+
+dysfunction in autism. Ment. Retard. Dev. Disabil. Res. Rev. 10 , 259 –271 (2004). 
+
+11.  Gallotti, M. & Frith, C. D. Social cognition in the we -mode. Trends Cogn. Sci. 17 , 160 –165 
+
+(2013). 
+
+12.  Happé, F., Coo k, J. L. & Bird, G. The Structure of Social Cognition: In(ter)dependence of 
+
+Sociocognitive Processes. Annu. Rev. Psychol. 68 , 243 –267 (2017). 
+
+13.  Lai, M. -C., Lombardo, M. V., Auyeung, B., Chakrabarti, B. & Baron -Cohen, S. Sex/Gender 
+
+Differences and Autism: Setting the Scene for Future Research. J. Am. Acad. Child Adolesc. 
+
+Psychiatry 54 , 11 –24 (2015). 
+
+14.  Loth, E. et al. The EU -AIMS Longitudinal Euro pean Autism Project (LEAP): design and 
+
+methodologies to identify and validate stratification biomarkers for autism spectrum disorders. 
+
+Mol. Autism 8, 24 (2017). 
+
+15.  Pagni, B. A., Walsh, M. J. M., Rogers, C. & Braden, B. B. Social Cognition in Autism Spectr um 
+
+Disorder Across the Adult Lifespan: Influence of Age and Sex on Reading the Mind in the Eyes 
+
+Task in a Cross -sectional Sample. Front. Integr. Neurosci. 14 , 571408 (2020). 
+
+16.  Bottema -Beutel, K. Associations between joint attention and language in autism spectrum 
+
+disorder and typical development: A systematic review and meta -regression analysis: 
+
+Associations between joint attention. Autism Res. 9, 1021 –1035 (2016). 
+
+17.  Klin, A., Jones, W., Schultz, R., Volkmar, F. & Cohen, D. Defining and Quantifying the Social 
+
+Phenotype in Autism. Am. J. Psychiatry 159 , 895 –908 (2002). 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+47 
+
+18.  Konstantin, G. E., Nordgaard, J. & Henriksen, M. G. Methodological issues in social cognition 
+
+research in autism spectrum disorder and schizophrenia spectrum disorder: a systematic revi ew. 
+
+Psychol. Med. 53 , 3281 –3292 (2023). 
+
+19.  Fletcher -Watson, S. & Happé, F. Autism: A New Introduction to Psychological Theory and 
+
+Current Debate . (Routledge, London, 2019). doi:10.4324/9781315101699. 
+
+20.  Happé, F. & Frith, U. Annual Research Review: Looki ng back to look forward – changes in the 
+
+concept of autism and implications for future research. J. Child Psychol. Psychiatry 61 , 218 –
+
+232 (2020). 
+
+21.  Guillon, Q., Hadjikhani, N., Baduel, S. & Rogé, B. Visual social attention in autism spectrum 
+
+disorder: In sights from eye tracking studies. Neurosci. Biobehav. Rev. 42 , 279 –297 (2014). 
+
+22.  Seltzer, M. M., Shattuck, P., Abbeduto, L. & Greenberg, J. S. Trajectory of development in 
+
+adolescents and adults with autism. Ment. Retard. Dev. Disabil. Res. Rev. 10 , 234 –247 (2004). 
+
+23.  Vivanti, G. & Hamilton, A. Imitation in Autism Spectrum Disorders. in Handbook of Autism 
+
+and Pervasive Developmental Disorders, Fourth Edition (John Wiley & Sons, Ltd, 2014). 
+
+doi:10.1002/9781118911389.hautc12. 
+
+24.  Wermelinger, S., Gampe, A. & Daum, M. M. The dynamics of the interrelation of perception 
+
+and action across the life span. Psychol. Res. 83 , 116 –131 (2019). 
+
+25.  Magiati, I., Tay, X. W. & Howlin, P. Cognitive, language, social and behavioural outcomes in 
+
+adults with autism spectrum d isorders: A systematic review of longitudinal follow -up studies 
+
+in adulthood. Clin. Psychol. Rev. 34 , 73 –86 (2014). 
+
+26.  Whitehouse, A. J. O. et al. Pre -emptive intervention versus treatment as usual for infants 
+
+showing early behavioural risk signs of autis m spectrum disorder: a single -blind, randomised 
+
+controlled trial. Lancet Child Adolesc. Health 3, 605 –615 (2019). 
+
+27.  Malle, B. F. The Tree of Social Cognition: Hierarchically Organized Capacities of Mentalizing. 
+
+in The Neural Basis of Mentalizing (eds. Gi lead, M. & Ochsner, K. N.) 337 –370 (Springer 
+
+International Publishing, Cham, 2021). doi:10.1007/978 -3-030 -51890 -5_17. 
+
+28.  Schurz, M. et al. Toward a hierarchical model of social cognition: A neuroimaging meta -
+
+analysis and integrative review of empathy and theory of mind. Psychol. Bull. 147 , 293 –327 
+
+(2021). 
+
+29.  Chevallier, C., Kohls, G., Troiani, V., Brodkin, E. S. & Schultz, R. T. The social motivation 
+
+theory of autism. Trends Cogn. Sci. 16 , 231 –239 (2012). 
+
+30.  Jones, W. & Klin, A. Attention to eyes is pres ent but in decline in 2 –6-month -old infants later 
+
+diagnosed with autism. Nature 504 , 427 –431 (2013). 
+
+31.  Brooks, R. & Meltzoff, A. N. Connecting the dots from infancy to childhood: A longitudinal 
+
+study connecting gaze following, language, and explicit theo ry of mind. J. Exp. Child Psychol. 
+
+130 , 67 –78 (2015). 
+
+32.  Stallworthy, I. C. et al. Quantifying latent social motivation and its associations with joint 
+
+attention and language in infants at high and low likelihood for autism spectrum disorder. Dev. 
+
+Sci. 26 , e13336 (2023). 
+
+33.  Sandin, S. et al. The Heritability of Autism Spectrum Disorder. JAMA 318 , 1182 (2017). 
+
+34.  Mandell, D. S. & Novak, M. The role of culture in families’ treatment decisions for children 
+
+with autism spectrum disorders. Ment. Retard. Dev. Disabil. Res. Rev. 11 , 110 –115 (2005). 
+
+35.  Tick, B., Bolton, P., Happé, F., Rutter, M. & Rijsdijk, F. Heritabili ty of autism spectrum 
+
+disorders: a meta -analysis of twin studies. J. Child Psychol. Psychiatry 57 , 585 –595 (2016). 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+48 
+
+36.  Bernier, R. et al. Developmental trajectories for young children with 16p11.2 copy number 
+
+variation. Am. J. Med. Genet. B Neuropsychiatr. Genet. 174 , 367 –380 (2017). 
+
+37.  Freeth, M., Sheppard, E., Ramachandran, R. & Milne, E. A Cross -Cultural Comparison of 
+
+Autistic Traits in the UK, India and Malaysia. J. Autism Dev. Disord. 43 , 2569 –2583 (2013). 
+
+38.  Kim, H. U. Autism across cultures: rethinking autism. Disabil. Soc. 27 , 535 –545 (2012). 
+
+39.  Norbury, C. F. & Sparks, A. Difference or disorder? Cultural issues in understanding 
+
+neurodevelopmental disorders. Dev. Psychol. 49 , 45 –58 (2013). 
+
+40.  Bernier, R., Mao, A. & Yen, J. Psychopathology, Families, and Culture: Autism. Child Adolesc. 
+
+Psychiatr. Clin. N. Am. 19 , 855 –867 (2010). 
+
+41.  Daley, T. C. The Need for Cross -Cultural Research on the Pervasive Developmental Disorders. 
+
+Transcult. Psychiatry 39 , 531 –550 (2002). 
+
+42.  Lai, M. -C., Anagnostou, E., Wiznitzer, M., Allison, C. & Baron -Cohen, S. Evidence -based 
+
+support for autistic people across the lifespan: maximising potential, minimisi ng barriers, and 
+
+optimising the person –environment fit. Lancet Neurol. 19 , 434 –451 (2020). 
+
+43.  Pellicano, E. & den Houting, J. Annual Research Review: Shifting from ‘normal science’ to 
+
+neurodiversity in autism science. J. Child Psychol. Psychiatry 63 , 381 –396 (2022). 
+
+44.  Chasson, G. & Jarosiewicz, S. R. Social Competence Impairments in Autism Spectrum 
+
+Disorders. in Comprehensive Guide to Autism (eds. Patel, V. B., Preedy, V. R. & Martin, C. R.) 
+
+1099 –1118 (Springer, New York, NY, 2014). doi:10.1007/978 -1-461 4-4788 -7_60. 
+
+45.  Frith, C. D. & Frith, U. Social Cognition in Humans. Curr. Biol. 17 , R724 –R732 (2007). 
+
+46.  Frith, C. D. & Frith, U. Mechanisms of Social Cognition. Annu. Rev. Psychol. 63 , 287 –313 
+
+(2012). 
+
+47.  Frith, C. & Frith, U. What Makes Us Social? (MI T Press, 2023). 
+
+48.  Adolphs, R. Conceptual Challenges and Directions for Social Neuroscience. Neuron 65 , 752 –
+
+767 (2010). 
+
+49.  Eisenberg, I. W. et al. Uncovering the structure of self -regulation through data -driven ontology 
+
+discovery. Nat. Commun. 10 , 2319 ( 2019). 
+
+50.  Hedger, N., Dubey, I. & Chakrabarti, B. Social orienting and social seeking behaviors in ASD. 
+
+A meta analytic investigation. Neurosci. Biobehav. Rev. 119 , 376 –395 (2020). 
+
+51.  Johnson, S. A., Filliter, J. H. & Murphy, R. R. Discrepancies Between Self - and Parent -
+
+Perceptions of Autistic Traits and Empathy in High Functioning Children and Adolescents on 
+
+the Autism Spectrum. J. Autism Dev. Disord. 39 , 1706 –1714 (2009). 
+
+52.  Milner, V., Colvert, E., Mandy, W. & Happé, F. A comparison of self -report and discrepancy 
+
+measures of camouflaging: Exploring sex differences in diagnosed autistic versus high autistic 
+
+trait young adults. Autism Res. 16 , 580 –590 (2023). 
+
+53.  Maestro, S. et al. Early Behavioral Development in Autistic Children: The First 2 Years of Life 
+
+through Home Movies. Psychopathology 34 , 147 –152 (2001). 
+
+54.  Young, G. S. et al. Imitation from 12 to 24 months in autism and typical development: A 
+
+longitudinal Rasch analysis. Dev. Psychol. 47 , 1565 –1578 (2011). 
+
+55.  Hutman, T. et al. Response to distress in infants at risk for autism: a prospective longitudinal 
+
+study. J. Child Psychol. Psychiatry 51 , 1010 –1020 (2010). 
+
+56.  Senju, A., Southgate, V., White, S. & Frith, U. Mindblind Eyes: An Absence of Spontaneous 
+
+Theory of Mind in Asperger Syndrome. Science 325 , 883 –885 (2009). 
+
+57.  Schilbach, L. et al. Toward a second -person neuroscience. Behav. Brain Sci. 36 , 393 –414 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+49 
+
+(2013). 
+
+58.  Barbaro, J. et al. Diagnostic Accuracy of the Social Attention and Communication 
+
+Surveillance –Revised With Preschool Tool for Early Autism Detection in Very Young Children. 
+
+JAMA Netw. Open 5, e2146415 (2022). 
+
+59.  Whitehouse, A. J. O. et al. Effect of Preemptive Intervention on Developmental Outcomes 
+
+Among In fants Showing Early Signs of Autism: A Randomized Clinical Trial of Outcomes to 
+
+Diagnosis. JAMA Pediatr. 175 , e213298 (2021). 
+
+60.  Heyes, C. Where do mirror neurons come from? Neurosci. Biobehav. Rev. 34 , 575 –583 (2010). 
+
+61.  Harms, M. B., Martin, A. & Walla ce, G. L. Facial Emotion Recognition in Autism Spectrum 
+
+Disorders: A Review of Behavioral and Neuroimaging Studies. Neuropsychol. Rev. 20 , 290 –
+
+322 (2010). 
+
+62.  Jankowski, K. F. & Pfeifer, J. H. Self -Conscious Emotion Processing in Autistic Adolescents: 
+
+Over -Reliance on Learned Social Rules During Tasks with Heightened Perspective -Taking 
+
+Demands May Serve as Compensatory Strategy for Less Reflexive Mentalizing. J. Autism Dev. 
+
+Disord. 51 , 3514 –3532 (2021). 
+
+63.  Butera, C. et al. The relationship between alexith ymia, interoception, and neural functional 
+
+connectivity during facial expression processing in autism spectrum disorder. 
+
+NEUROPSYCHOLOGIA 180 , (2023). 
+
+64.  Begeer, S. et al. Theory of Mind Training in Children with Autism: A Randomized Controlled 
+
+Trial. J. Autism Dev. Disord. 41 , 997 –1006 (2011). 
+
+65.  Peiqi, C. et al. Transposition Social Group Intervention Improves Symptoms and Empathy in 
+
+Children with Autism. J. Psychol. Sci . 47 , 590 –597 (2024). 
+
+66.  Grazzani, I. Promoting theory of mind and emotion understanding in preschool settings: an 
+
+exploratory training study. Front. Psychol. 15 , (2024). 
+
+67.  Milton, D. E. M. On the ontological status of autism: the ‘double empathy proble m’. Disabil. 
+
+Soc. 27 , 883 –887 (2012). 
+
+68.  Constantino, J. N. & Charman, T. Diagnosis of autism spectrum disorder: reconciling the 
+
+syndrome, its diverse origins, and variation in expression. Lancet Neurol. 15 , 279 –291 (2016). 
+
+69.  Cuthbert, B. N. The RDoC fr amework: facilitating transition from ICD/DSM to dimensional 
+
+approaches that integrate neuroscience and psychopathology. World Psychiatry 13 , 28 –35 
+
+(2014). 
+
+70.  Holleman, G. A., Hooge, I. T. C., Kemner, C. & Hessels, R. S. The ‘Real -World Approach’ and 
+
+Its Problems: A Critique of the Term Ecological Validity. Front. Psychol. 11 , (2020). 
+
+71.  Livingston, L. A., Colvert, E., Team, the S. R. S., Bolton, P. & Happé, F . Good social skills 
+
+despite poor theory of mind: exploring compensation in autism spectrum disorder. J. Child 
+
+Psychol. Psychiatry 60 , 102 –110 (2019). 
+
+72.  Fattal, J., McAdams, D. P. & Mittal, V. A. Interpersonal synchronization: An overlooked factor 
+
+in dev elopment, social cognition, and psychopathology. Neurosci. Biobehav. Rev. 106037 (2025) 
+
+doi:10.1016/j.neubiorev.2025.106037. 
+
+73.  Cook, J., Hull, L., Crane, L. & Mandy, W. Camouflaging in autism: A systematic review. Clin. 
+
+Psychol. Rev. 89 , 102080 (2021). 
+
+74.  Hull, L. The Female Autism Phenotype and Camouflaging: a Narrative Review | Review 
+
+Journal of Autism and Developmental Disorders. (2020). 
+
+75.  Rynkiewicz, A. et al. An investigation of the ‘female camouflage effect’ in autism using a 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+50 
+
+computerized ADOS -2 and a test of sex/gender differences. Mol. Autism 7, 10 (2016). 
+
+76.  Tubío -Fungueiriño, M., Cruz, S., Sampaio, A., Carracedo, A. & Fernández -Prieto, M. Social 
+
+Camouflaging in Females with Autism Spectrum Disorder: A Systematic Review. J. Autism Dev. 
+
+Disord. 51 , 2190 –2199 (2021). 
+
+77.  Navarro -Pardo. Children | Free Full -Text | Diagnostic Tools for Autism Spectrum Disorders by 
+
+Gender: Analysis of Current Status and Future Lines. (2021). 
+
+78.  Zhang, Y. Genetic evidence of gender difference in autism spectrum diso rder supports the 
+
+female -protective effect | Translational Psychiatry. (2020). 
+
+79.  de Leeuw, A., Happé, F. & Hoekstra, R. A. A Conceptual Framework for Understanding the 
+
+Cultural and Contextual Factors on Autism Across the Globe. Autism Res. 13 , 1029 –1050 
+
+(2020). 
+
+80.  Junge, C., Valkenburg, P. M., Deković, M. & Branje, S. The building blocks of social 
+
+competence: Contributions of the Consortium of Individual Development. Dev. Cogn. Neurosci. 
+
+45 , 100861 (2020). 
+
+81.  Semrud -Clikeman, M. Social Competence in Chi ldren with Autism Spectrum Disorders. in 
+
+Social Competence in Children (ed. Semrud -Clikeman, M.) 107 –129 (Springer US, Boston, 
+
+MA, 2007). doi:10.1007/978 -0-387 -71366 -3_7. 
+
+82.  Blake, J. J., Gracey, F., Whitmore, S. & Broomfield, N. M. Comparing the Symptoma tology of 
+
+Post -stroke Depression with Depression in the General Population: A Systematic Review. 
+
+Neuropsychol. Rev. 34 , 768 –790 (2024). 
+
+83.  Spain, D., Sin, J., Linder, K. B., McMahon, J. & Happé, F. Social anxiety in autism spectrum 
+
+disorder: A systematic review. Res. Autism Spectr. Disord. 52 , 51 –68 (2018). 
+
+84.  Spadaro, G. et al. The Cooperation Databank: Machine -Readable Science Accelerates Research 
+
+Synthesis. Perspect. Psychol. Sci. 17 , 1472 –1489 (2022). 
+
+85.  Ramachandran, L. M. O., Vilayanur S. Broken Mi rrors: A Theory of Autism. Scientific 
+
+American https://www.scientificamerican.com/article/broken -mirrors -a-theory -of -autism -
+
+2007 -06/ (2007). 
+
+86.  Williams, J. H. G., Whiten, A., Suddendorf, T. & Perrett, D. I. Imitation, mirror neurons and 
+
+autism. Neurosci. Biobehav. Rev. 25 , 287 –295 (2001). 
+
+87.  Baron -Cohen, S. Autism: The Empathizing –Systemizing (E -S) Theory. Ann. N. Y. Acad. Sci. 
+
+1156 , 68 –80 (2009). 
+
+88.  Baron -Cohen, S. Mindblindness: An Essay on Autism and Theory of Mind . (The MIT Press, 
+
+1995). doi:10.7551 /mitpress/4635.001.0001. 
+
+89.  Gunnerud, H. L., ten Braak, D., Reikerås, E. K. L., Donolato, E. & Melby -Lervåg, M. Is 
+
+bilingualism related to a cognitive advantage in children? A systematic review and meta -
+
+analysis. Psychol. Bull. 146 , 1059 –1083 (2020). 
+
+90.  Tanner -Smith, E. E. & Tipton, E. Robust variance estimation with dependent effect sizes: 
+
+practical considerations including a software tutorial in Stata and spss. Res. Synth. Methods 5,
+
+13 –30 (2014). 
+
+91.  Hedges, L. V., Tipton, E. & Johnson, M. C. Robust va riance estimation in meta -regression with 
+
+dependent effect size estimates. Res. Synth. Methods 1, 39 –65 (2010). 
+
+92. Yager, J. A., & Ehmann, T. S. Untangling Social Function and Social Cognition: A Review of 
+
+Concepts and Measurement.  Psychiatry: Interpersonal and Biological Processe s, 69 (1), 47 –
+
+68.  (2006). 
+
+> preprint (which was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this this version posted March 23, 2026. ;https://doi.org/10.64898/2026.03.20.713084 doi: bioRxiv preprint
+
+51 
+
+# Supplementary Material 
+
+Title: Social Functioning in Autism: A Systematic Review and Meta -analysis 
+
+Supplementary Fig. 1 | Sensitivity tests of excluding small sample size studies (N < 30). 
+
+Supplementary Fig. 2 | Testing the reliability of our study by comparing our results with previous meta -analyses .
+
+Supplementary Fig. 3 | Deviation from pre -registration and sensitivity test. 
+
+Supplementary Tabl e 1 | A list of searching terms in PUBMED and WOS. 
+
+Supplementary Table 2 | Codebook. 
+
+Supplementary Table 3 | Ecological validity scoring manual .
+
+Supplementary Table 4 | Publication bias  analysis .
+
+Supplementary Table 5 | Exploratory meta -regression analysis for socio cultural factors (dependent variable = performance) .
+
+Supplementary Table 6 | Comparison of three competing MASEM models. 52 
+
+Supplementary Fig. 1 | Sensitivity tests of excluding small sample size studies (N < 30). 53 
+
+Supplementary Fig. 2 | Testing the reliability of our study by comparing our results with previous meta -analyses . For each component, we only selected its 
+
+most recent meta -analyses or the one with the highest citations ( as of February 1, 2025 ). Effect sizes p reviously reported as Cohen's d were converted to Hedges’ g
+
+with 95% confidence intervals. Negative effect siz es indicate worse performance for autism compared with neurotypical peers . Though o ur meta -analysis is the latest 
+
+and include s much larger number of studies , our effect sizes are highly consistent with prior meta -analyses, supporting the robustness and rel iability of our findings 1–
+
+> 7
+
+.54 
+
+Supplementary Fig. 3 | Deviation from pre -registration and sensitivity test . (a -d) Study distribution , proportion of conditions across all studies, prevalence 
+
+of alterations in each component, an d t he moderating effect of age (i.e., mean age of autistic samples) all remained stable after excluding infants (age under 3) 
+
+diagnosed with ASC. (e) The moderatin g effect of full -scale IQ remain s stable after excluding studies containing ambiguous IQ reporting (e.g., with no individual 
+
+IQ information, or IQ range cover <75 so that certain proportion of participants’ IQ under 75 ). Hedges’ g values on the y -axis repr esent altered performance 
+
+(i.e., ASC -NT difference, more negative values indicate poorer performance in ASC). Regression lines and p-values indicate the significance of correlations 
+
+after hyperbolic and symmetric Gaussian transformation. All statistical te sts were two sided, and no adjustments were made for multiple comparisons. 55 
+
+Supplementary Table 1 | A list of searching terms in PubMed and WoS. 
+
+Component  PubMed  WoS 
+
+Social attention  (“autism” OR “ASD”) AND (“social”) AND (”social attention” 
+
+OR ”gaze perception” OR ”mutual gaze”) 
+
+TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social attention” OR 
+
+“gaze perception” OR “mutual gaze”) 
+
+joint attention  (“autism” OR “ASD”) AND (“social”) AND (“ joint attention”)  TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND AB = 
+
+(”joint attention”) 
+
+Person 
+
+perception 
+
+((“autism” OR “ASD”) AND (“social”) AND (”voice”) AND 
+
+(“identification” OR “recognition” OR “familiarity”)) OR 
+
+((“autism” OR “ASD”) AND (“social”) AND (“face recognition” 
+
+OR “agent identification” OR “person identification” OR “person 
+
+recognition” OR “mutual gaze” OR “face familiarity” OR “name 
+
+familiarity” OR “person familiarity” OR “body perception”)) 
+
+(TI = (“autism” OR “ASD” OR “autist ic”) AND TS = (“social”) AND TS = 
+
+(“voice”) AND TS = (“identification” OR “recognition” OR “familiarity”)) 
+
+OR (TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND 
+
+TS = (“face recognition” OR “agent identification” OR “person 
+
+identification” OR “person recognition” OR “face familiarity” OR “name 
+
+familiarity” OR “person familiarity” OR “body perception” )) 
+
+Action 
+
+perception 
+
+(“autism” OR “ASD”) AND (“action recognition” OR “action 
+
+perception” OR “posture recognition” OR “gesture recognition” 
+
+OR “action understanding” OR “biological motion” OR “posture” 
+
+OR “gesture” OR “animacy” OR “Social touch”) 
+
+TI = (“autism” OR “ASD” OR “autistic”) AND TS = (((“posture” OR 
+
+“gesture” OR “action”) AND (“recognition” OR “perception”)) OR “action 
+
+understanding” OR “biological motion” OR “animacy” OR “Social touch”) 
+
+Emotion 
+
+perception 
+
+((“autism” OR “ASD”) AND (“soc ial”) AND (“voice” OR “body” 
+
+OR “face”) AND (“emotion”)) OR ((“autism” OR “ASD”) AND 
+
+(“social threat detection”)) 
+
+(TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND TS = 
+
+(“voice” OR “body” OR “face”) AND TS = (“emotion”)) OR (TI = 
+
+(“autism” OR “ASD” OR “autistic”) AND TS = (“social threat detection”)) 
+
+Self -processing 
+
+(“autism” OR “ASD”) AND (“social”) AND (“self recognition” 
+
+OR “self schema” OR “self identity” OR “self perception” OR 
+
+“self esteem” OR “self awareness” OR “self concept” OR “self 
+
+efficacy” OR “self serving” OR “self flattery” OR 
+
+“autobiographical” OR “sense of agency” OR “Alexithymia” OR 
+
+“social space” OR “interpersonal space” OR “personal space”) 
+
+TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND TS = 
+
+(“self recogniti on” OR “self schema” OR “self identity” OR “self 
+
+perception” OR “self esteem” OR “self awareness” OR “self concept” OR 
+
+“self efficacy” OR “self serving” OR “self flattery” OR “autobiographical” 
+
+OR “sense of agency” OR “Alexithymia” OR “social space” OR 
+
+“in terpersonal space” OR “personal space”) 
+
+Theory of mind 
+
+(“autism” OR “ASD”) AND (“social”) AND (“theory of mind” 
+
+OR “ToM” OR “mindreading” OR “perspective taking” OR “role -
+
+taking” OR “self -other distinction” OR “mentalizing” OR 
+
+“mentalising”) 
+
+TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND TS = 
+
+(“theory of mind” OR “ToM” OR “mindreading” OR “perspective taking” 
+
+OR “role -taking” OR “self -other distinction” OR “mentalizing” OR 
+
+“mentalising”) 
+
+Empathy 
+
+(“autism” OR “ASD”) AND (“social”) AND (“emotional 
+
+processing” OR “affective processing” OR “empathy” OR 
+
+“sympathy” OR “compassion”) 
+
+TI = (“autism” OR “ASD” OR “autistic”) AND TS = (“social”) AND TS = 
+
+(“emotional processing” OR “affective processing” OR “empathy” OR 
+
+“sympathy” OR “compassi on”) 
+
+Social 
+
+motivation 
+
+("autism" OR "ASD") AND ("social motivation" OR "social 
+
+reward" OR "social preference" OR "social interest") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social motivation" 
+
+OR "social reward" OR "social preference" OR "social interest") 56 
+
+Social 
+
+knowledge 
+
+("autism" OR "ASD") AND ("social concept" OR "social 
+
+knowledge" OR "social semantic" OR "social schema" OR 
+
+"emotion knowledge" OR "emotion semantic" OR "emotion 
+
+labelling" OR "action knowledge" OR "action concept" OR 
+
+"a ction semantic" OR "person knowledge" OR "personal schema" 
+
+OR "person memory" OR "relational knowledge" OR "social 
+
+categorization" OR "racial bias" OR "ingroup" OR "outgroup" OR 
+
+"meta -stereotype" OR "stereotype" OR "social script" OR "social 
+
+norm" OR "soci al rule" OR "social role" OR "social memory" ) 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social concept" OR 
+
+"social knowledge" OR "social semantic" OR "social schema" OR "emotion 
+
+knowledge" OR "emotion semantic" OR "emotion labelling" OR "action 
+
+knowledge" OR "action concept" OR "action semantic" OR "person 
+
+knowledge" OR "personal schema" OR "person memory" OR "relational 
+
+knowledge" OR "social categorization" OR "racial bias" OR "ingroup" OR 
+
+"outgroup" OR "meta -stereotype" OR "stereotype" OR "socia l script" OR 
+
+"social norm" OR "social rule" OR "social role" OR "social memory" ) 
+
+Social reasoning 
+
+("autism" OR "ASD") AND ("social") AND ("reasoning" OR 
+
+"judgment" OR "attribution" OR "rational" OR "meaning -
+
+making" OR "moral judgement" OR "anthropomorphism" OR 
+
+"personification") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social") AND TS = 
+
+("reasoning" OR "judgment" OR "attribution" OR "rational" OR "meaning -
+
+making" OR "moral judgement" OR "anthropomorphism" OR 
+
+"personification") 
+
+Soc ial learning 
+
+("autism" OR "ASD") AND ("social") AND ("mutual trust" OR 
+
+"ostension" OR "ostensible" OR "ostensive" OR "natural 
+
+pedagogy" OR "social learning" OR "observational learning") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social") AND TS = 
+
+("mutual trust" OR "ostension" OR "ostensible" OR "ostensive" OR "natural 
+
+pedagogy" OR "social learning" OR "observational learning") 
+
+Social 
+
+regulation 
+
+(("autism" OR "ASD") AND ("social regulation" OR "social 
+
+adjustment" OR "emotional regulation" OR "repu tation 
+
+management" OR "self -presentation" OR "self -enhancement" OR 
+
+"self -protection")) OR (("autism" OR "ASD") AND ("inhibition" 
+
+OR "regulate" OR "adjust") AND ("antisocial" OR "social 
+
+anxiety" or "inappropriate")) 
+
+(TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social regulation" 
+
+OR "social adjustment" OR "emotional regulation" OR "reputation 
+
+management" OR "self -presentation" OR "self -enhancement" OR "self -
+
+protection")) OR (TI = ("autism" OR "ASD" OR "autistic") AND TS = 
+
+("inhibition" OR " regulate" OR "adjust") AND TS = ("antisocial" OR 
+
+"social anxiety" or "inappropriate")) 
+
+Unconscious 
+
+mimicry 
+
+("autism" OR "ASD") AND ("social") AND ("mimicry" OR 
+
+"copying behavior") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social") AND TS = 
+
+("mimi cry" OR "copying behavior") 
+
+Imitation  ("autism" OR "ASD") AND ("social") AND ("imitation" OR 
+
+"emulation" OR "over -imitation") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social") AND TS = 
+
+("imitation" OR "emulation" OR "over -imitation") 
+
+Pretend play  ("autism" OR "ASD") AND ("pretend play")  TI = ("autism" OR "ASD" OR "autistic") AND AB = ("pretend play") 
+
+Social 
+
+alignment 
+
+("autism" OR "ASD") AND ("social") AND ("alignment" OR 
+
+"attunement" OR "coordination" OR "social influence" OR "social 
+
+priming" OR "persuaded" OR "affiliation" OR "sense of 
+
+belonging" OR "sharing" OR "compliance" OR "obedience" OR 
+
+"conformity" OR "competition" OR "herding") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social") AND TS = 
+
+("alignment" OR "attunement" OR "coordination" OR "social influence" 
+
+OR "social priming" OR "persuaded" OR "affiliation" OR "sense of 
+
+belonging" OR "sharing" OR "compliance" OR "obedience" OR 
+
+"conformity" OR "competition" OR "herding") 
+
+Prosociality 
+
+("autism" OR "ASD") AND ("social decision -making" OR "social 
+
+insight" OR "social strategy" OR "social problem -solving" OR 
+
+"altruism" OR "prosocial" OR "cooperation" OR "reciprocity") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social decision -
+
+making " OR "social insight" OR "social strategy" OR "social problem -
+
+solving" OR "altruism" OR "prosocial" OR "cooperation" OR "reciprocity") 
+
+Deception  ("autism" OR "ASD") AND ("deception")  TI = ("autism" OR "ASD" OR "autistic") AND TS = ("deception") 57 
+
+Social 
+
+communication 
+
+("autism" OR "ASD") AND ("communication skill" OR "story 
+
+telling" OR "humor" OR "emotional expression" OR "persuasion" 
+
+OR "verbal expression" OR "non -verbal expression") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("communication skill" 
+
+OR "story tell ing" OR "humor" OR "emotional expression" OR 
+
+"persuasion" OR "verbal expression" OR "non -verbal expression") 
+
+Social skills 
+
+("autism" OR "ASD") AND ("social skill" OR "social 
+
+comprehension" OR "social intelligence" OR "social 
+
+competence") 
+
+TI = ("autism" O R "ASD" OR "autistic") AND TS = ("social skill" OR 
+
+"social comprehension" OR "social intelligence" OR "social competence") 
+
+Social 
+
+relationships 
+
+("autism" OR "ASD") AND ("social relationship" OR "social 
+
+relation" OR "interpersonal relation" OR "attachment") 
+
+TI = ("autism" OR "ASD" OR "autistic") AND TS = ("social relationship" 
+
+OR "social relation" OR "interpersonal relation" OR "attachment") 58 
+
+Supplementary Table 2 | Codebook. There are four parts (publication details, demographics, method and outcome) and two major types of coding (force -coding and 
+
+open -coding). The inter -coder consistency of force -choice items in 10% articles were double -checked by a third coder, and the consistency rate was 91%. 
+
+Part  Item  Definition  Type of coding 
+
+Publication 
+
+details 
+
+Title  Article title  Open 
+
+Name of journal  Name of the journal  Force, string 
+
+Publish year  Year of publish  Force, int 
+
+Type of study  Check if the study meets the inclusion criteria: 
+
+1 = survey/questionnaire 
+
+2 = computerized task 
+
+3 = neuroimaging 
+
+4 = naturalistic behavior (involves interpersonal interaction) 
+
+5 = others (please specify) 
+
+6 = unknown 
+
+5 and 6 need double -check. 
+
+Intervention studies: systematically applies a controlled manipulation (e.g., behavioral training, 
+
+pharmacological treatment, or educational programs, neurostimulation) to ASC population and 
+
+evaluates its effects on predefined outcomes (e.g., symptom reduction, functional improvement, or 
+
+neurobiologica l changes) over a specified period. Code as 5. Only code behavioral performance 
+
+before intervention. 
+
+Force, int 
+
+Demographics 
+
+-Diagnosis  type of participant  1 = only healthy 
+
+2 = healthy & patients 
+
+3 = only patients 
+
+The included ASC participants should have a pre -existing clinical diagnosis of autism meet formal 
+
+diagnosis, or diagnosed by expert clinicians. 
+
+Force, int 
+
+Diagnostic criteria  Diagnostic criteria, specify to the version 
+
+“DSM -”, “ADOS -”, “ADI -”, “ICD -”, “KADI (Krug Asperger’s Disorder Index)”, “RAADS (Ritvo 
+
+Autism and Asperger Diagnostic Scale)”, “ASDI (Asperger Syndrome Diagnostic Interview)”, 
+
+“ASSQ (Autism Spectrum Screening Questionnaire)”, “CARS (Childhood Autism Rating Scale)” 
+
+Force, string 59 
+
+or other criteria applied by expert clinicians. 
+
+Note that “self -report AQ(autism quotient) score” and other self -report measures cannot be 
+
+regarded as qualified criteria, unless combined with other criteria. 
+
+Existence of comorbidity  1 = exist 
+
+0 = exclude population with como rbidity 
+
+Nan = did not report 
+
+Force, int 
+
+-ASC group  Nationality  Participants Nationality, if not specified, code the country of the school the first author belongs to.  Force, string 
+
+Mean age  Mean age of individuals with ASC  Force, int 
+
+# ASC  Number of included individuals with ASC  Force, int 
+
+# female  Number of included female participants with ASC  Force, int 
+
+# male  Number of included male participants with ASC  Force, int 
+
+IQ Average IQ of ASC group, specify to full -scale IQ, performance IQ, and verbal IQ  Force, int 
+
+-NT group  # control  Number of included typically developed group  Force, int 
+
+Mean age  Mean age of typically developed group  Force, int 
+
+Method 
+
+Component of the task  Check the definition of social functioning components as inference.  Force, string 
+
+Task paradigm  Task paradigm name or survey name  Open 
+
+Task design  Describe the stimuli and the procedure of the task.  Open 
+
+Index  Measurement 
+
+1 = reaction time 
+
+2 = accuracy 
+
+3 = survey score 
+
+4 = complex behavioral pattern (e.g. frequency, decision ，trajectory) 
+
+5 = eye -tracking 
+
+Force 60 
+
+6 = skin -conductance 
+
+7 = EMG (electromyography )
+
+8 = others (please specify) 
+
+Multiple choice is allowed. 
+
+Outcome 
+
+Conclusion  0 = as good as TD 
+
+1 = complex, varies between subscales or different levels. 
+
+2 = impaired. 
+
+3 = different, the significant difference in ASC group doesn’t mean the superior or inferior 
+
+performance. 
+
+4 = outperformed. 
+
+Force, int 
+
+Effect size  The effect size (Cohen’s d, Hedge’s g) Open 
+
+Correlation with other tasks  T he linear relationship between social abilities, and between social and non -social abilities 
+
+e.g. TaskA  × Tas kB (r = 0.2) 
+
+Open 
+
+Detail of results  Specific findings (bullet points, be concise). Note that findings are different from the conclusion  Open 61 
+
+Supplementary Table 3 | Ecological validity scoring manual. 
+
+Task 
+
+Stimuli  Manipulation of stimuli  Feature of stimuli  Data collection  Response 
+
+Sum 
+
+Visual, word, verbal, 
+
+gesture, 1 point each 
+
+Strict -controlled = 0 
+
+with noises = 1 
+
+Static = 1 
+
+both = 2 
+
+dynamic = 3 
+
+non -interactive = 1 
+
+interactive = 2 
+
+passive perception = 1 
+
+binary -choice = 2 
+
+multiple -choice = 3 
+
+physical movement = 4 
+
+verbal expression = 5 
+
+Face memory  1 0 0 1 2 4
+
+Face discrimination  1 0 0 1 2 4
+
+Social reward  1 0 0 1 2 4
+
+Social attention: free viewing  1 1 0 1 1 4
+
+Facial trait judgement  1 0 0 1 3 5
+
+RMET  1 0 0 1 3 5
+
+Emotion matching  1 0 0 2 2 5
+
+Social seeking  1 0 0 2 2 5
+
+Emotion judgment  1 0 0 2 2 5
+
+Rating for pain  1 0 0 1 3 5
+
+Non -affective plot -light 
+
+display 
+
+1 0 0 3 2 6
+
+Emotion labelling  1 0 0 2 3 6
+
+Visual perspective -taking  2 0 1 1 2 6
+
+Social animation  1 0 0 3 3 7
+
+False belief  2 0 1 2 2 7
+
+Affective plot -light display  1 0 0 3 3 7
+
+Facial mimicry  1 0 0 3 4 8
+
+RJA  2 1 1 3 1 8
+
+Strange story  2 0 1 1 5 962 
+
+Face expression imitation  1 0 1 3 4 9
+
+Hand/body gesture imitation  1 0 1 3 4 9
+
+Object imitation  1 0 1 3 4 9
+
+NEPSY -ToM  2 0 1 1 5 9
+
+Faux pas  2 0 1 1 5 9
+
+TASIT  2 0 1 1 5 9
+
+Initiate joint attention  3 1 1 3 3 11 
+
+Interactive RJA  3 1 1 3 3 11 
+
+Empathy accuracy  2 1 0 3 5 11 
+
+MASC  2 1 1 3 5 12 63 
+
+Supplementary Table 4 | Publication bias  analysis for different tasks. Including the number of studies and articles, heterogeneity (I 2 and τ2), p-value of asymmetry 
+
+test (Egger’s test), PET test and adjusted effect sizes, PEESE test and adjusted effect sizes with 95% confidence intervals. “over -estimated” indicated the existence of 
+
+publication bias, “no evidence” indicated or the egger’s test was not significant. PET test and PEESE estimate was applie d for over -estimated tasks. for tasks with 
+
+substantial heterogeneity (I² > 75%), this adjusted estimate was interpreted as a sensitivity analysis, as asymmetry may stem from true between -study variance rather 
+
+than publication bias. 
+
+Component  Task 
+
+Num. 
+
+of 
+
+studies 
+
+Num. 
+
+of 
+
+arti -
+
+cles 
+
+g [lower, upper]  I2 τ2
+
+Egge 
+
+r’s 
+
+test 
+
+PET estimate 
+
+g [lower, upper]  p PEESE estimate 
+
+g [lower, upper]  p
+
+Over -estimated 
+
+Emotion 
+
+perception 
+
+matching  28  16  -0.501 [ -0.68, -0.321]  14.179  0.012  0.009  -0.35 [ -1.346, 0.645]  0.35  -0.432 [ -1.042, 0.178]  0.111 
+
+Person 
+
+perception 
+
+face memory  81  36  -0.718 [ -0.836, -0.599]  48.623  0.074  0.001  -0.623 [ -1.054, -0.191]  0.012  -0.676 [ -0.921, -0.431]  <.00 1
+
+Imitation  object  11  10  -1.005 [ -1.404, -0.606]  54.48  0.16  0.025  0.474 [-1.507, 2.455]  0.498  -0.411 [ -1.231, 0.409]  0.240 
+
+Person 
+
+perception 
+
+facial trait 
+
+judgment 
+
+39  15  -0.334 [ -0.484, -0.185]  58.028  0.085  0.02  -0.139 [ -0.564, 0.285]  0.385  -0.203 [ -0.483, 0.077]  0.113 
+
+Imitation  hand/body 
+
+gesture 
+
+18  15  -0.728 [ -1.054, -0.402]  63.584  0.219  0.049  2.787 [ -0.853, 6.426]  0.116  1.01 [ -0.672, 2.692]  0.207 
+
+Theory of mind  strange story  32  28  -0.703 [ -0.887, -0.52]  66.996  0.148  0.011  0.228 [ -0.697, 1.154]  0.569  -0.173 [ -0.624, 0.278]  0.402 
+
+Person 
+
+perception 
+
+Face 
+
+discriminatio 
+
+n
+
+22  13  -0.59 [ -0.836, -0.343]  72.642  0.159  0.01  -0.147 [ -1.045, 0.751]  0.657  -0.378 [ -0.85, 0.093]  0.093 
+
+Emotion 
+
+perception 
+
+labelling  308  130  -0.616 [ -0.699, -0.532]  73.743  0.202  < .00 1 -0.226 [ -0.503, 0.05]  0.106  -0.423 [ -0.575, -0.27]  <.00 1
+
+Theory of mind  social 
+
+animation 
+
+48  42  -0.529 [ -0.689, -0.37]  75.018  0.149  < .00 1 0.125 [ -0.267, 0.517]  0.506  -0.177 [ -0.393, 0.038]  0.101 
+
+Joint attention  RJA  85  33  -0.529 [ -0.703, -0.355]  77.354  0.246  0.021  0.116 [ -0.56, 0.792]  0.708  -0.17 [ -0.503, 0.164]  0.293 
+
+Theory of mind  RMET  77  67  -0.7 60 [ -0.910, -0.610]  77. 567  0.22 4 0.001  0. 496 [-0.1 25 , 1.1 17 ] 0. 110  -0.0 88 [-0.3 76, 0.2 00 ] 0. 530 
+
+Self -processing  TAS  39  35  -1.336 [ -1.571, -1.101]  83.553  0.422  0.001  -0.248 [ -1.258, 0.763]  0.582  -0.842 [ -1.315, -0.37]  0.004 
+
+Theory of mind  false belief  74  31  -0.568 [ -0.747, -0.389]  83.784  0.295  0.001  -0.177 [ -0.818, 0.464]  0.538  -0.375 [ -0.802, 0.052]  0.079 
+
+Social attention  passive 
+
+viewing 
+
+109  39  -0.573 [ -0.751, -0.394]  86.737  0.356  0.003  0.29 [ -0.72, 1.301]  0.53  -0.164 [ -0.408, 0.08]  0.164 64 
+
+Empathy  EQ  58  42  -1.857 [ -2.107, -1.606]  90.047  0.325  < .001  -0.698 [ -1.911, 0.515]  0.237  -1.231 [ -1.72, -0.742]  <.00 1
+
+No evidence 
+
+Theory of mind  NEPSY -ToM  10  10  -0.778 [ -0.93, -0.626]  0 0 0.054 
+
+Emotion 
+
+perception 
+
+judgment  46  29  -0.685 [ -0.887, -0.483]  63.295  0.185  0.079 
+
+Action 
+
+perception 
+
+plot -light 
+
+display 
+
+26  17  -0.451 [ -0.794, -0.108]  77.816  0.329  0.088 
+
+Theory of mind  Faux pas  22  10  -0.657 [ -1.028, -0.287]  77.859  0.211  0.284 
+
+Empathy  IRI  102  31  -0.48 [ -0.661, -0.299]  84.938  0.417  0.057 
+
+Joint attention  IJA  31  13  -0.625 [ -1.244, -0.006]  90.813  0.838  0.3 
+
+Joint attention  interactive 
+
+RJA 
+
+38  8 -0.797 [ -1.609, 0.016]  90.869  1.209  0.144 
+
+Theory of mind  VPT  11  9 -1.213 [ -2.536, 0.11]  94.064  1.732  0.072 65 
+
+Supplementary Table 5 | Exploratory meta -regression analysis for socio cultural factors (dependent variable = performance) .
+
+Cultural Factor s (predictors)  slope [lower, upper]  df p intercept 
+
+Perceived social support  2.02 [0.727, 3.312]  79.606  0.003  -2.540 
+
+Masculinity  -0.003 [ -0.006, 0]  94.471  0.047  -0.552 
+
+Long -term orientation  -0.002 [ -0.004, 0.001]  269.286  0.145  -0.643 
+
+Indulgence  0.003 [ -0.001, 0.007]  144.961  0.168  -0.906 
+
+Incidence of autism  0.007 [ -0.003, 0.018]  197.595  0.184  -1.297 
+
+Subjective well -being  0.085 [ -0.044, 0.215]  82.038  0.195  -1.321 
+
+Power distance  -0.002 [ -0.006, 0.002]  99.390  0.307  -0.645 
+
+Uncertainty avoidance  -0.001 [-0.004, 0.002]  180.482  0.344  -0.663 
+
+Corruption  0.003 [ -0.004, 0.01]  79.295  0.384  -0.949 
+
+Gender inequality index  0.367 [ -0.646, 1.379]  280.884  0.476  -0.772 
+
+Subsistence style  -0.054 [ -0.294, 0.186]  123.215  0.656  -0.718 
+
+Individualism  0 [ -0.003, 0.003]  89.456  0.818  -0.762 
+
+Historical disease  -0.009 [ -0.116, 0.098]  92.247  0.863  -0.737 
+
+Democracy  0.001 [ -0.039, 0.041]  34.631  0.960  -0.741 66 
+
+Supplementary Table 6 | Comparison of three competing MASEM models. Estimate = unstandardized parameter estimate; SE = standard error of the estimate; Z 
+
+= Wald test statistic (Estimate/SE); Pr(>|z|) = two -tailed p -value for the Wald test. 
+
+NT ASC -NT 
+
+Estimate  SE Z Pr(>|z|)  Estimate  SE Z Pr(>|z|) 
+
+Serial model 
+
+Motor  → Emotion  0.476  0.113  4.219  <.001  -0.055  0.151  -0.363  0.717 
+
+Emotion  → Inference  0.264  0.046  5.751  <.001  0.144  0.068  2.114  0.035 
+
+Inference  → Com plex  0.226  0.041  5.545  <.001  0.160  0.066  2.428  0.015 
+
+Motivation  → Motor  0.175  0.068  2.578  0.010  0.193  0.141  1.369  0.171 
+
+Radial model 
+
+Motor  → Emotion  0.384  0.098  3.926  <.001  0.046  0.181  0.255  0.798 
+
+Emotion  → Inference  0.198  0.053  3.753  <.001  0.185  0.081  2.281  0.023 
+
+Inference  → Complex  0.180  0.047  3.821  <.001  0.147  0.086  1.722  0.085 
+
+Motivation  → Motor  0.153  0.065  2.349  0.019  0.263  0.143  1.834  0.067 
+
+Motivation  → Emotion  0.203  0.111  1.830  0.067  -0.339  0.220  -1.537  0.124 
+
+Motivation  → Inference  0.197  0.065  3.013  0.003  0.037  0.143  0.262  0.794 
+
+Motivation  → Complex  0.170  0.066  2.570  0.010  0.064  0.190  0.336  0.737 
+
+Network model 
+
+Motor  → Emotion  0.350  0.086  4.056  <.001  0.071  0.172  0.409  0.682 
+
+Motor  → Inference  0.272  0.068  3.992  <.001  -0.279  0.160  -1.742  0.082 
+
+Motor  → Complex  -0.025  0.109  -0.229  0.819  0.532  0.250  2.131  0.033 
+
+Emotion  → Inference  0.076  0.069  1.089  0.276  0.310  0.121  2.569  0.010 
+
+Emotion  → Complex  0.082  0.098  0.837  0.403  -0.042  0.228  -0.182  0.855 
+
+Inference  → Complex  0.173  0.058  2.995  0.003  0.070  0.134  0.525  0.600 
+
+Motivation  → Motor  0.132  0.064  2.063  0.039  0.234  0.142  1.656  0.098 
+
+Motivation  → Emotion  0.223  0.107  2.080  0.038  -0.378  0.220  -1.721  0.085 
+
+Motivation  → Inference  0.191  0.065  2.939  0.003  0.090  0.180  0.501  0.616 67           
+
+> Motivation →Complex 0.144 0.072 1.996 0.046 -0.168 0.243 -0.691 0.489
+
+# Reference 
+
+1.  Yeung, M. K. A systematic review and meta -analysis of facial emotion recognition in autism spectrum disorder: The specificity of deficits and the role of task 
+
+characteristics. Neurosci. Biobehav. Rev. 133 , 104518 (2022). 
+
+2.  Uljarevic, M. & Hamilton, A. Re cognition of Emotions in Autism: A Formal Meta -Analysis. J. Autism Dev. Disord. 43 , 1517 –1526 (2013). 
+
+3.  Gao, S., Wang, X. & Su, Y. Examining whether adults with autism spectrum disorder encounter multiple problems in theory of mi nd: a study based on meta -
+
+analysis. Psychon. Bull. Rev. 30 , 1740 –1758 (2023). 
+
+4.  Fatima, M. & Babu, N. Cognitive and Affective Empathy in Autism Spectrum Disorders: A Meta -analysis. Rev. J. Autism Dev. Disord. 11 , 756 –775 (2024). 
+
+5.  Chita -Tegmark, M. Social attention in ASD: A revi ew and meta -analysis of eye -tracking studies. Res. Dev. Disabil. 48 , 79 –93 (2016). 
+
+6.  Todorova, G. K., Hatton, R. E. M. & Pollick, F. E. Biological motion perception in autism spectrum disorder: a meta -analysis. Mol. Autism 10 , 49 (2019). 
+
+7.  Hedger, N., Du bey, I. & Chakrabarti, B. Social orienting and social seeking behaviors in ASD. A meta analytic investigation. Neurosci. Biobehav. Rev. 119 , 376 –
+
+395 (2020).
