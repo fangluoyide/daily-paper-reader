@@ -1,0 +1,290 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-06T20:02:15.812937+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2604.00300v1",
+      "source": "arxiv",
+      "title": "Play-Testing REMind: Evaluating an Educational Robot-Mediated Role-Play Game",
+      "abstract": "This paper presents REMind, an innovative educational robot-mediated role-play game designed to support anti-bullying bystander intervention among children. REMind invites players to observe a bullying scenario enacted by social robots, reflect on the perspectives of the characters, and rehearse defending strategies by puppeteering a robotic avatar. We evaluated REMind through a mixed-methods play-testing study with 18 children aged 9--10. The findings suggest that the experience supported key learning goals related to self-efficacy, perspective-taking, understanding outcomes of defending, and intervention strategies. These results highlight the promise of Robot-Mediated Applied Drama (RMAD) as a novel pedagogical framework to support Social-Emotional Learning.",
+      "authors": [
+        "Elaheh Sanoubari",
+        "Neil Fernandes",
+        "Keith Rebello",
+        "Alicia Pan",
+        "Andrew Houston",
+        "Kerstin Dautenhahn"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.ET",
+        "cs.HC"
+      ],
+      "published": "2026-03-31T22:51:53+00:00",
+      "link": "https://arxiv.org/pdf/2604.00300v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "robot-mediated role-play game for social-emotional learning in children",
+      "llm_evidence_cn": "机器人介导的儿童社会情感学习角色扮演游戏",
+      "llm_evidence": "机器人介导的儿童社会情感学习角色扮演游戏",
+      "canonical_evidence": "机器人介导的儿童社会情感学习角色扮演游戏",
+      "llm_tldr_en": "Evaluates a robot-mediated game to support children's social-emotional skills and perspective-taking.",
+      "llm_tldr_cn": "评估一种机器人介导的游戏，旨在支持儿童的社会情感技能和观点采择能力。",
+      "llm_tldr": "评估一种机器人介导的游戏，旨在支持儿童的社会情感技能和观点采择能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.02642v1",
+      "source": "arxiv",
+      "title": "Engagement Is Not Transfer: A Withdrawal Study of a Consumer Social Robot with Autistic Children at Home",
+      "abstract": "This study examines whether engagement with social robots translates into improved human-directed social abilities in autistic children. We conducted an 8-week home-based randomized controlled trial with 40 children aged 5--9 using a commercial social robot (Qrobot). Families were assigned to either continued robot access or robot withdrawal. Quantitative measures and caregiver interviews assessed anxiety, social motivation, emotion inference, and empathy. Results showed that continued robot access significantly reduced anxiety, confirming strong affective benefits and high usability. However, children in the withdrawal group demonstrated greater improvements in social motivation, emotion understanding, and empathic behaviors toward caregivers and peers. Qualitative findings revealed a \"handoff versus siloing\" pattern: withdrawal promoted reorientation toward human social interaction, while continued access concentrated engagement within the child--robot dyad and limited transfer to real-world contexts. We interpret these results as evidence that high engagement does not guarantee social transfer.",
+      "authors": [
+        "Yibo Meng",
+        "Guangrui Fan",
+        "Bingyi Liu",
+        "Yingfangzhong Sun",
+        "Ruiqi Chen",
+        "Haipeng Mi"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-03T02:11:16+00:00",
+      "link": "https://arxiv.org/pdf/2604.02642v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Measures social motivation and emotion understanding in children aged 5-9 through robot interaction",
+      "llm_evidence_cn": "通过机器人互动测量5-9岁儿童的社交动机和情绪理解",
+      "llm_evidence": "通过机器人互动测量5-9岁儿童的社交动机和情绪理解",
+      "canonical_evidence": "通过机器人互动测量5-9岁儿童的社交动机和情绪理解",
+      "llm_tldr_en": "Study on how social robots affect social motivation and emotion understanding in autistic children.",
+      "llm_tldr_cn": "研究社交机器人如何影响自闭症儿童的社交动机和情绪理解能力。",
+      "llm_tldr": "研究社交机器人如何影响自闭症儿童的社交动机和情绪理解能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2604.02629v1",
+      "source": "arxiv",
+      "title": "Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys",
+      "abstract": "Generative AI (genAI) is increasingly being integrated into children's everyday lives, not only through screens but also through so-called \"screen-free\" AI toys. These toys can simulate emotions, personalize responses, and recall prior interactions, creating the illusion of an ongoing social connection. Such capabilities raise important questions about how children understand boundaries, agency, and relationships when interacting with AI toys. To investigate this, we conducted two participatory design sessions with eight children ages 6-11 where they engaged with three different AI toys, shifting between play, experimentation, and reflection. Our findings reveal that children approached AI toys with genuine curiosity, profiling them as social beings. However, frequent interaction breakdowns and mismatches between apparent intelligence and toy-like form disrupted expectations around play and led to adversarial play. We conclude with implications and design provocations to navigate children's encounters with AI toys in more transparent, developmentally appropriate, and responsible ways.",
+      "authors": [
+        "Aayushi Dangol",
+        "Meghna Gupta",
+        "Daeun Yoo",
+        "Robert Wolfe",
+        "Jason Yip",
+        "Franziska Roesner",
+        "Julie A. Kientz"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "published": "2026-04-03T01:37:31+00:00",
+      "link": "https://arxiv.org/pdf/2604.02629v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Investigates children's social connection and play interactions with AI toys",
+      "llm_evidence_cn": "调查儿童与AI玩具的社交连接和游戏互动",
+      "llm_evidence": "调查儿童与AI玩具的社交连接和游戏互动",
+      "canonical_evidence": "调查儿童与AI玩具的社交连接和游戏互动",
+      "llm_tldr_en": "Explores how children perceive and interact socially with generative AI toys during play.",
+      "llm_tldr_cn": "探索儿童在游戏中如何感知并与生成式人工智能玩具进行社交互动。",
+      "llm_tldr": "探索儿童在游戏中如何感知并与生成式人工智能玩具进行社交互动。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "biorxiv-10-64898-2026-03-20-706527-v2",
+      "source": "biorxiv",
+      "title": "Protracted development in children of perceptual segregation of competing talking faces in the multisensory cocktail party problem",
+      "abstract": "Successful communication with our social partners requires binding, integrating, and perceptually segregating the audible and visible attributes of the multiple talking faces that we often encounter in social situations, a challenge known as the multisensory cocktail party problem (MCPP). Although audiovisual (AV) temporal synchrony is a powerful cue for binding speech signals, how children develop the ability to use this cue to segregate a target talker remains unclear. Here, we examined the development of gaze dynamics supporting multisensory segregation in 3-7-year-old children (N = 149) and adults (N = 37) viewing four talking faces accompanied by a single auditory utterance synchronized with one of the faces (i.e., target). Using metrics of gaze dynamics from information theory, namely proportion of total looking time, stationary entropy, transition entropy, and transition rates, we show that even though sensitivity to AV synchrony is present by age 3, it is insufficient for efficient target segregation. It is not until ages 5-6, following a qualitative shift in dynamic gaze control and more structured distractor transitions, that target selection becomes more efficient, but still not as efficient as it is in adults. We interpret these developmental changes as reflecting a shift from early detection of multisensory cues to later-emerging strategies that organize visual sampling in relation to auditory information in a task-dependent manner. Together, they demonstrate that solving complex multisensory challenges depends on AV integration as well as on the development of dynamic gaze organization that supports efficient multisensory perceptual segregation over time.\n\nSignificance StatementSocial communication requires segregating one talker from others, a challenge known as the multisensory cocktail party problem. Although adults solve this efficiently, how this ability develops remains unclear. Using dynamic gaze measures derived from information theory, we show that multisensory segregation in childhood depends not only on detecting audiovisual synchrony but also on the emergence of structured gaze strategies. Only by ages 5-6 do children combine sustained target fixation with organized sampling of competing talkers. Even by age 7, these audiovisually guided strategies remain immature relative to adults. These findings reveal probabilistic sampling mechanisms through which gaze supports multisensory segregation, offering a mechanistic account of how children learn to navigate complex social environments, with implications for language development and education.",
+      "authors": [
+        "Steinfeld, K.",
+        "Murray, M. M.",
+        "Lewkowicz, D."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-03-31T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.20.706527v2.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "development of communication with social partners in children",
+      "llm_evidence_cn": "儿童与社会伙伴沟通能力的发展",
+      "llm_evidence": "儿童与社会伙伴沟通能力的发展",
+      "canonical_evidence": "儿童与社会伙伴沟通能力的发展",
+      "llm_tldr_en": "Explores how children develop the ability to segregate talking faces in complex social environments.",
+      "llm_tldr_cn": "探讨儿童在复杂社会环境中区分说话面孔能力的发展过程。",
+      "llm_tldr": "探讨儿童在复杂社会环境中区分说话面孔能力的发展过程。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2603.29312v1",
+      "source": "arxiv",
+      "title": "A Preliminary Theory of Infantile Dynamics",
+      "abstract": "We present a concise dynamical picture of infant-driven household chaos. The framework has three postulations: recurrent daily chaos, overall entropy growth in household organization, and transient local ordering episodes with switching rules (a volatile Maxwell-demon effect). We illustrate entropy growth with a two-region toy model (organizer vs. play area), where entropy production is nonnegative and long-time behavior is typically play-area dominated. We also model toy diffusion and curiosity-driven behavior, where novelty matters more than punishment in the short term, while gradual learning still occurs.",
+      "authors": [
+        "Lei Ma"
+      ],
+      "primary_category": "physics.soc-ph",
+      "categories": [
+        "physics.soc-ph"
+      ],
+      "published": "2026-03-31T06:31:18+00:00",
+      "link": "https://arxiv.org/pdf/2603.29312v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "modeling infant play area and curiosity-driven behavior",
+      "llm_evidence_cn": "婴儿游戏区域与好奇心驱动行为的模型化",
+      "llm_evidence": "婴儿游戏区域与好奇心驱动行为的模型化",
+      "canonical_evidence": "婴儿游戏区域与好奇心驱动行为的模型化",
+      "llm_tldr_en": "Proposes a dynamical theory of household chaos involving infant play and learning behaviors.",
+      "llm_tldr_cn": "提出了一种关于婴儿游戏和学习行为导致的家庭动态混沌理论。",
+      "llm_tldr": "提出了一种关于婴儿游戏和学习行为导致的家庭动态混沌理论。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-02-716239-v1",
+      "source": "biorxiv",
+      "title": "A supervised digital game intervention supports language and communication in young children.",
+      "abstract": "The role of digital media in early childhood development remains highly debated, particularly regarding its impact on language acquisition. While excessive or unsupervised screen exposure has been linked to poorer outcomes, less is known about whether structured and interactive uses of technology can support learning. Building on previous research, we evaluated a brief, educator-supervised tablet-based intervention in 246 children aged 2-5 years from low- to middle-socioeconomic backgrounds attending public early education centers. Using a pre-post design with matched study and control groups, children completed 4-8 short training sessions (15 minutes each) involving interactive word-image associations spanning multiple linguistic categories. Preschoolers additionally engaged in prompted vocalization. Across age groups (2-3, 3-4, and 4-5 years), children in the intervention showed greater gains in language comprehension than controls, including receptive language in toddlers ({beta} = 0.49, p = 0.009), vocabulary and morphology in younger preschoolers ({beta} = 0.59-0.68, all p < 0.05), and grammar comprehension in older preschoolers ({beta} = 0.30, p = 0.038). These effects were consistent after accounting for child and parental characteristics. Together, these findings suggest that the developmental impact of digital media depends less on exposure itself than on how it is used. When embedded in structured, socially guided interactions, even brief tablet-based activities may support early language development.",
+      "authors": [
+        "Pena, M.",
+        "Dehaene-Lambertz, G.",
+        "Pino, E.",
+        "Pittaluga, E.",
+        "Cortes, P.",
+        "de la Riva, C.",
+        "Palacios, O.",
+        "Guevara, P."
+      ],
+      "primary_category": "developmental biology",
+      "categories": [
+        "developmental biology"
+      ],
+      "published": "2026-04-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.02.716239v1.full.pdf",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "digital game intervention for communication in children aged 2-5",
+      "llm_evidence_cn": "针对2-5岁幼儿语言与沟通能力的数字游戏干预研究",
+      "llm_evidence": "针对2-5岁幼儿语言与沟通能力的数字游戏干预研究",
+      "canonical_evidence": "针对2-5岁幼儿语言与沟通能力的数字游戏干预研究",
+      "llm_tldr_en": "A study showing that supervised digital games can support language and communication development in preschoolers.",
+      "llm_tldr_cn": "研究表明，在教育者监督下的数字游戏干预能有效促进2-5岁幼儿的语言与沟通能力发展。",
+      "llm_tldr": "研究表明，在教育者监督下的数字游戏干预能有效促进2-5岁幼儿的语言与沟通能力发展。",
+      "llm_tags": [
+        "query:q2"
+      ],
+      "matched_query_tag": "query:q2",
+      "matched_query_text": "social skills development in preschoolers",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.00284v1",
+      "source": "arxiv",
+      "title": "Improvisational Games as a Benchmark for Social Intelligence of AI Agents: The Case of Connections",
+      "abstract": "We formally introduce a improvisational wordplay game called Connections to explore reasoning capabilities of AI agents. Playing Connections combines skills in knowledge retrieval, summarization and awareness of cognitive states of other agents. We show how the game serves as a good benchmark for social intelligence abilities of language model based agents that go beyond the agents' own memory and deductive reasoning and also involve gauging the understanding capabilities of other agents. Finally, we show how through communication with other agents in a constrained environment, AI agents must demonstrate social awareness and intelligence in games involving collaboration.",
+      "authors": [
+        "Gaurav Rajesh Parikh",
+        "Angikar Ghosal"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published": "2026-03-31T22:16:25+00:00",
+      "link": "https://arxiv.org/pdf/2604.00284v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Uses games to evaluate social intelligence and awareness of others' states",
+      "llm_evidence_cn": "利用游戏评估社交智能和对他人的认知状态意识",
+      "llm_evidence": "利用游戏评估社交智能和对他人的认知状态意识",
+      "canonical_evidence": "利用游戏评估社交智能和对他人的认知状态意识",
+      "llm_tldr_en": "Proposes a wordplay game to benchmark social intelligence and collaborative communication.",
+      "llm_tldr_cn": "提出一种文字游戏来基准化社交智能和协作沟通能力。",
+      "llm_tldr": "提出一种文字游戏来基准化社交智能和协作沟通能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

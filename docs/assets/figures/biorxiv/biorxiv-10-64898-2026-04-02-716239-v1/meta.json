@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716239-v1/fig-001.webp",
+      "caption": "Table 2. Robust rank-based regression models for linguistic gains. B represents 506 unstandardized regression coefficients, indicating the change in the outcome for each one-unit 507 increase in the predictor. For vocabulary gain, child age is reported as a standardized coefficient (β) 508 to allow direct comparison with the factor Group. SE denotes the standard error. Overall model fit 509 was assessed using the reduction in dispersion test (p-value). Robust R² indicates the proportion of 510 dispersion explained by the rank-based model. Significance’s codes: *: p < 0 .05; **: p < 0.01. 511",
+      "page": 18,
+      "index": 1,
+      "width": 986,
+      "height": 1180
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716239-v1/fig-002.webp",
+      "caption": "Table 1. Baseline demographic characteristics by group at pre-training evaluation 498",
+      "page": 16,
+      "index": 2,
+      "width": 914,
+      "height": 1272
+    }
+  ]
+}
