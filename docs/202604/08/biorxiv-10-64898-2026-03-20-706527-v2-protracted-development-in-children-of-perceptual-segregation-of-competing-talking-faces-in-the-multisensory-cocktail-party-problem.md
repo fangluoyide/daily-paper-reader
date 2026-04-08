@@ -1,0 +1,28 @@
+---
+title: Protracted development in children of perceptual segregation of competing talking faces in the multisensory cocktail party problem
+title_zh: 儿童在多感官鸡尾酒会问题中对竞争性说话面孔知觉分离的漫长发育过程
+authors: "Steinfeld, K., Murray, M. M., Lewkowicz, D."
+date: 2026-03-31
+pdf: "https://www.biorxiv.org/content/10.64898/2026.03.20.706527v2.full.pdf"
+tags: ["query:q1"]
+score: 7.0
+evidence: 研究3-7岁儿童社交沟通和注视动态的发展
+tldr: 本研究探讨了3-7岁儿童在多感官“鸡尾酒会”场景下，如何利用视听同步性从多个竞争面孔中分离目标说话者。通过分析149名儿童和37名成人的眼动追踪数据，研究发现虽然3岁儿童已具备视听同步敏感性，但直到5-6岁才出现高效的动态注视控制策略。该研究揭示了多感官知觉隔离能力的漫长发育过程，强调了从早期线索检测到后期任务导向视觉采样策略的转变。
+source: biorxiv
+selection_source: fresh_fetch
+figures_json: "[{\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-706527-v2/fig-001.webp\", \"caption\": \"Figure 1. (A) Difference between target-PTLT and distractor-PTLT in Sync and Async. (B) Stationary entropy across all face AOIs. (C) Stationary entropy across distractors. Error bars are standard errors of the mean and asterisks indicate statistically significant differences.\", \"page\": 12, \"index\": 1, \"width\": 932, \"height\": 1148}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-706527-v2/fig-002.webp\", \"caption\": \"Table 1. Dependent Variables Used in the Data Analyses.\", \"page\": 9, \"index\": 2, \"width\": 908, \"height\": 1164}, {\"url\": \"assets/figures/biorxiv/biorxiv-10-64898-2026-03-20-706527-v2/fig-003.webp\", \"caption\": \"Table 2. Summary of Significant Sync vs. Async Differences by Age and Dependent Measures (DVs). Cells marked with x and highlighted in blue indicate positive condition effects in the direction hypothesized and reported in the DVs column. Cells marked -x and highlighted in grey indicate a significant negative effect. Cells marked n.s. indicate non-significant effects.\", \"page\": 16, \"index\": 3, \"width\": 843, \"height\": 627}]"
+motivation: 探究儿童如何发展利用视听同步线索在复杂社交环境中分离目标说话者的能力。
+method: 采用信息论指标分析3-7岁儿童和成人在观看四个说话面孔（仅一个与声音同步）时的动态注视轨迹。
+result: 5-6岁是注视控制策略转变的关键期，但即便到7岁，儿童的视听引导采样效率仍未达到成人水平。
+conclusion: 解决复杂多感官挑战不仅依赖视听整合，更取决于支持高效知觉隔离的动态注视组织能力的发展。
+---
+
+## 摘要
+与社交伙伴的成功沟通需要对我们在社交场合中经常遇到的多个说话面孔的听觉和视觉属性进行绑定、整合和知觉分离，这一挑战被称为多感官鸡尾酒会问题（MCPP）。尽管视听（AV）时间同步是绑定语音信号的强大线索，但儿童如何发展利用该线索分离目标说话者的能力仍不清楚。在本研究中，我们考察了支持 3-7 岁儿童（N = 149）和成人（N = 37）多感官分离的注视动力学发育情况，实验中受试者观看四个说话面孔，并伴有与其中一个面孔（即目标）同步的单一听觉话语。利用信息论中的注视动力学指标（即总注视时间比例、平稳熵、转移熵和转移率），我们表明，尽管 3 岁时就已具备对视听同步的敏感性，但这不足以实现高效的目标分离。直到 5-6 岁，随着动态注视控制的质变和更具结构性的干扰项转移，目标选择才变得更加高效，但仍不如成人高效。我们将这些发育变化解释为反映了从早期对多感官线索的检测，向后期出现的、以任务依赖方式结合听觉信息组织视觉采样的策略的转变。总之，这些结果表明，解决复杂的多感官挑战不仅取决于视听整合，还取决于支持随时间推移实现高效多感官知觉分离的动态注视组织能力的发展。
+
+意义声明：社交沟通需要从他人中分离出某位说话者，这一挑战被称为多感官鸡尾酒会问题。尽管成人能高效地解决这一问题，但这种能力如何发展尚不明确。通过使用源自信息论的动态注视测量方法，我们表明儿童时期的多感官分离不仅取决于对视听同步的检测，还取决于结构化注视策略的出现。只有到 5-6 岁时，儿童才能将持续的目标注视与对竞争说话者的有组织采样结合起来。即使到 7 岁，这些视听引导的策略相对于成人而言仍不成熟。这些发现揭示了注视支持多感官分离的概率采样机制，为儿童如何学习应对复杂的社交环境提供了机制性解释，对语言发展和教育具有重要意义。
+
+## Abstract
+Successful communication with our social partners requires binding, integrating, and perceptually segregating the audible and visible attributes of the multiple talking faces that we often encounter in social situations, a challenge known as the multisensory cocktail party problem (MCPP). Although audiovisual (AV) temporal synchrony is a powerful cue for binding speech signals, how children develop the ability to use this cue to segregate a target talker remains unclear. Here, we examined the development of gaze dynamics supporting multisensory segregation in 3-7-year-old children (N = 149) and adults (N = 37) viewing four talking faces accompanied by a single auditory utterance synchronized with one of the faces (i.e., target). Using metrics of gaze dynamics from information theory, namely proportion of total looking time, stationary entropy, transition entropy, and transition rates, we show that even though sensitivity to AV synchrony is present by age 3, it is insufficient for efficient target segregation. It is not until ages 5-6, following a qualitative shift in dynamic gaze control and more structured distractor transitions, that target selection becomes more efficient, but still not as efficient as it is in adults. We interpret these developmental changes as reflecting a shift from early detection of multisensory cues to later-emerging strategies that organize visual sampling in relation to auditory information in a task-dependent manner. Together, they demonstrate that solving complex multisensory challenges depends on AV integration as well as on the development of dynamic gaze organization that supports efficient multisensory perceptual segregation over time.
+
+Significance StatementSocial communication requires segregating one talker from others, a challenge known as the multisensory cocktail party problem. Although adults solve this efficiently, how this ability develops remains unclear. Using dynamic gaze measures derived from information theory, we show that multisensory segregation in childhood depends not only on detecting audiovisual synchrony but also on the emergence of structured gaze strategies. Only by ages 5-6 do children combine sustained target fixation with organized sampling of competing talkers. Even by age 7, these audiovisually guided strategies remain immature relative to adults. These findings reveal probabilistic sampling mechanisms through which gaze supports multisensory segregation, offering a mechanistic account of how children learn to navigate complex social environments, with implications for language development and education.
