@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.29967v1/fig-001.webp",
+      "caption": "Fig. 1. (A) After generating FNC from rs-fMRI and SBM from sMRI, a hybrid brain graph was constructed with unimodal, cross-modal (CMC) and multi-scale detour connections (MDC) measuring structural detour (SD). (B) MAGNet’s flowchart: scaled dot-product attention enabled local message passing with node features and edge attributes, followed by multi-head selfattention for global refinement for l layers. Refined node embeddings then underwent global average pooling (GAP) and a fully connected layer (FCL) for intelligence score prediction optimized with a joint loss.",
+      "page": 2,
+      "index": 1,
+      "width": 744,
+      "height": 345
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29967v1/fig-002.webp",
+      "caption": "Table 1. Comparison with SOTA baselines (mean±standard deviation).",
+      "page": 4,
+      "index": 2,
+      "width": 1052,
+      "height": 247
+    }
+  ]
+}

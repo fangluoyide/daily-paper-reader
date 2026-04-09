@@ -1,0 +1,295 @@
+Title: CogPic: A Multimodal Dataset for Early Cognitive Impairment Assessment via Picture Description Tasks
+
+URL Source: https://arxiv.org/pdf/2604.01626v1
+
+Published Time: Fri, 03 Apr 2026 00:29:41 GMT
+
+Number of Pages: 10
+
+Markdown Content:
+# COG PIC : A M ULTIMODAL DATASET FOR EARLY COGNITIVE 
+
+# IMPAIRMENT ASSESSMENT VIA PICTURE DESCRIPTION TASKS 
+
+Liuyu Wu ∗
+
+Nanjing Medical University Nanjing, China 
+
+wuliuyu@stu.njmu.edu.cn 
+
+Rui Feng ∗
+
+Nanjing Medical University Nanjing, China 
+
+bmefr@stu.njmu.edu.cn 
+
+Jie Li 
+
+Nanjing Medical University Nanjing, China 
+
+jerry@njmu.edu.cn 
+
+Wentao Xiang 
+
+Nanjing Medical University Nanjing, China 
+
+xiangbmu@njmu.edu.cn 
+
+Yi Zhang 
+
+Changzhou Second People’s Hospital Changzhou, China 
+
+zhangyi_1111@njmu.edu.cn 
+
+Yin Cao 
+
+Changzhou Second People’s Hospital Changzhou, China 
+
+czcaoyin@njmu.edu.cn 
+
+Siyang Song 
+
+University of Exeter Exeter, United Kingdom 
+
+s.song@exeter.ac.uk 
+
+Xiao Gu 
+
+University of Oxford Oxford, United Kingdom 
+
+xiao.gu@eng.ox.ac.uk 
+
+Jianqing Li †
+
+Nanjing Medical University Nanjing, China 
+
+jqli@njmu.edu.cn 
+
+Wei Wang †
+
+Nanjing Medical University Nanjing, China 
+
+bmeww@njmu.edu.cn 
+
+# ABSTRACT 
+
+The automated evaluation of cognitive status utilizing multimedia technologies presents a promising frontier in early dementia diagnosis. However, the development of robust machine learning models for cognitive impairment detection is frequently hindered by the scarcity of large-scale, strictly synchronized, and clinically validated multimodal datasets. To bridge this critical gap, we introduce the CogPic database, a comprehensive multimodal benchmark meticulously designed for fine-grained cognitive impairment detection. The dataset comprises strictly synchronized audio, visual, and linguistic data continuously collected from 574 participants during a naturalistic picture description task. To establish highly reliable diagnostic ground truth, expert clinical neuropsychologists conducted exhaustive evaluations, stratifying participants into distinct cognitive groups through a comprehensive clinical consensus. Consequently, CogPic stands as the largest, most modality-rich, and most meticulously evaluated dataset of its kind to date. By conducting extensive benchmark experiments on the CogPic dataset, we establish an exceptionally robust, unbiased, and clinically generalizable foundation to propel future multimedia research in automated cognitive health assessment. Detailed information and access application procedures for our CogPic database are available at https: //cogpic.github.io/ .
+
+Keywords Cognitive Assessment Dataset · Multimodal Benchmark · Cognitive Impairment Detection · Alzheimer’s Disease 
+
+> ∗
+
+Both authors contributed equally to this work. 
+
+> †
+
+Corresponding author. 
+
+> arXiv:2604.01626v1 [cs.DB] 2 Apr 2026
+
+# 1 Introduction 
+
+The accurate assessment of cognitive function is crucial for the early detection of neurodegenerative diseases such as Alzheimer’s Disease (AD) and Mild Cognitive Impairment (MCI) [ 1]. Early identification allows for timely intervention, which can help mitigate disease progression and improve patients’ quality of life. However, current clinical diagnosis heavily relies on standard neuropsychological tests and imaging techniques, which are often time-consuming and expensive. Consequently, there is an urgent need for accessible, non-invasive, and automated screening paradigms. Recent studies have demonstrated that subtle external behavioral anomalies, including alterations in speech patterns and facial expressions, can serve as reliable indicators of prodromal AD [ 2 , 3 , 4 ]. Motivated by this, a growing body of research has focused on extracting digital biomarkers from such non-contact signals for cognitive assessment. Among various methodologies, the Picture Description Task has emerged as a widely adopted approach. As a non-invasive and naturalistic elicitation paradigm, it can effectively reflect a subject’s underlying language, memory, and executive functions. Despite the proven efficacy of the Picture Description Task, existing public datasets suffer from several critical limitations that hinder the advancement of comprehensive multimodal diagnostic systems for cognitive impairment detection. First, constrained by stringent privacy regulations regarding facial identifiability and the logistical challenges of high-fidelity synchronous recording, established databases, including widely used repositories like DementiaBank, predominantly provide audio recordings and their corresponding text transcripts. However, cognitive decline manifests well beyond linguistic and acoustic dimensions, heavily involving visual behaviors. Subtle visual cues, including gaze wandering during word retrieval, diminished facial expressivity, and psychomotor retardation, serve as vital clinical indicators. Without a synchronized video modality, existing computational models are forced to rely on a fundamentally incomplete representation. This modality bottleneck restricts models to capturing merely fragmented aspects of a patient’s cognitive state, severely limiting their capacity to detect early-stage impairments. Second, the inherent difficulty of recruiting vulnerable elderly cohorts, coupled with the immense clinical burden and high cost of obtaining expert neuropsychological annotations, has severely restricted the scale of prevailing datasets. This bottleneck fails to satisfy the data-hungry nature of modern deep learning architectures. With many highly cited cohorts consisting of fewer than 300 participants [ 5, 6], the optimization of complex, highly parameterized multimodal networks is inherently constrained. This scarcity of training samples severely exacerbates the risk of overfitting and hinders the development of robust, clinically generalizable diagnostic models. Finally, the majority of established datasets are heavily biased toward English-speaking populations. This lack of linguistic and cultural diversity creates a significant barrier to developing and validating automated screening tools for the Chinese-speaking community, thereby limiting the global applicability of these technologies. To overcome the aforementioned barriers, we introduce the CogPic database, a novel, large-scale, comprehensively annotated, and unconstrained multimodal repository. Utilizing a standardized, tablet-based acquisition framework, we successfully recruited a diverse, demographically representative cohort of 574 participants. Specifically, CogPic distinguishes itself through three fundamental advancements. First, it employs a multi-task elicitation paradigm featuring three distinct picture description tasks, explicitly facilitating cross-task comparative analysis to capture task-sensitive behavioral variations. Second, it features the synchronous collection of audio and visual modalities, achieving high-fidelity cross-modal alignment based on strict timestamps. Finally, it transcends the limitations of rigid, score-based thresholding; instead, its diagnostic ground truth relies entirely on a highly reliable, comprehensive clinical consensus formulated by expert neuropsychologists. Ultimately, by providing this exceptionally rich, clinically pure, and task-diverse repository, CogPic offers a fundamentally more robust foundation for next-generation automated cognitive screening. Our contributions are as follows: 1) Dataset Construction : We introduce CogPic , a comprehensive multimodal repository for cognitive assessment featuring a large-scale cohort of 574 participants. By encompassing a broad demographic spectrum across diverse ages, genders, educational backgrounds, and cognitive states, the database provides an exceptionally rich and representative collection of dynamic audio-visual data, establishing a robust foundation for multi-dimensional behavioral analysis. 2) Baseline Benchmarking : We establish a standardized benchmark for cognitive state classification by evaluat-ing both unimodal and cross-modal architectures. This provides a rigorous baseline for assessing the diagnostic utility of different modeling approaches on the CogPic dataset. 3) Open Resource and Clinical Impact : We open-source CogPic to bridge multimedia research and clinical application. Grounded in expert consensus, it facilitates the discovery of digital biomarkers and the develop-ment of non-invasive screening tools, ultimately alleviating the diagnostic burden on healthcare systems and promoting early dementia intervention. 2visual stimulus 
+
+> <There's a cookie jar, and the lid is off the cookie jar, the boy is about to come down on the floor…>
+
+Audio ：
+
+Text ：
+
+Video ：
+
+Label: 
+
+
+
+
+
+ HC 
+
+MCI 
+
+AD 
+
+Inclusion 
+
+criteria  
+
+> ~ 1 min
+
+Task 
+
+Introduction  
+
+> < 3 min
+
+Data 
+
+Collection  
+
+> ~ 30 min
+
+Clinical 
+
+Assessment 
+
+> TRADITIONAL CLINICAL ASSESSMENT
+
+Pic. 3 Pic. 1  Pic. 2    
+
+> AUTOMATED MULTIMODAL
+> SCREENING
+> CONSISTENCY
+> MoCA
+> MMSE
+> ADL …
+> Heavy Burden & Long Duration
+> Fast & Objective
+> Stage 4 Stage 3 Stage 2 Stage 1
+
+Figure 1: The overall pipeline of CogPic dataset construction, consisting of four stages: 1). Strict inclusion screening; 
+
+2). Task introduction; 3). Synchronized multimodal data collection; and 4). Expert clinical assessment for diagnostic consensus. 
+
+# 2 Related Work 
+
+Existing Datasets for Cognitive Assessment 
+
+The development of automated cognitive assessment tools has been significantly supported by various public datasets, as summarized in Table 1. Foundational repositories, including the widely utilized Pitt Corpus and its derived challenge datasets like ADReSS [ 5] and ADReSSo [ 6], have provided crucial audio recordings and text transcripts of the Picture Description task. Similarly, initiatives like Dem@Care [ 7] and TAUKADIAL [ 8] have played vital roles in advancing acoustic and linguistic analyses. However, these pioneering resources predominantly focus on English-speaking populations and critically omit the visual modality, restricting diagnostic models to partial behavioral representations. While certain recent efforts have attempted to incorporate visual cues, they often exhibit distinct structural limitations. For instance, the I-CONECT dataset [ 9] captures both video and audio data, yet it relies on unconstrained conversational tasks rather than standardized elicitation paradigms, alongside a relatively restricted sample size. Within the Chinese linguistic context, available resources remain similarly fragmented. The NCMMSC2021 challenge provided valuable Chinese audio data for picture description, whereas the ADReFV dataset [ 10 ] focuses exclusively on the visual modality during human-computer interactions with a limited cohort of 102 subjects. Consequently, a profound gap remains for a large-scale, standardized, and fully multimodal resource tailored to the Chinese community. Table 1: Summary of representative datasets re-lated to cognitive assessment. 
+
+Database Subj. Task Modal Lang. 
+
+Pitt Corpus 312 P.D. A EN ADReSS [5] 204 P.D. A, T EN ADReSSo [6] 237 P.D. A EN TAUKADIAL [8] 387 P.D. A EN / ZH Dem@Care [7] 32 P.D. A EN I-CONECT [9] 186 V.C. A, V EN NCMMSC2021 53 P.D. A ZH ADReFV [10] 102 HCI V ZH 
+
+CogPic 574 P.D. A, V, T ZH 
+
+P.D.: Picture Description task. HCI: Human-computer interaction. V.C.: Video Chat, V: Video, A: Audio, T: Text. EN: English, ZH: Chinese. 
+
+3(a)  (b)  (c) Figure 2: Characteristics of the CogPic dataset: (a) demographic distributions across cognitive cohorts, gender, and education levels; (b) task-specific mean response durations; and (c) high-frequency linguistic tokens visualized via word cloud. 
+
+2.1 AI-Driven Cognitive Assessment. 
+
+Recent research has increasingly focused on leveraging AI to extract digital biomarkers for early cognitive impairment detection, transitioning from unimodal analysis to sophisticated multimodal frameworks. Significant efforts have been dedicated to identifying acoustic and linguistic markers in spontaneous speech. For instance, Thomas et al. [ 11 ] utilized spectral slopes and Mel-frequency cepstral coefficients (MFCCs) to predict neuropsychological scores. Similarly, Liu et al. [ 12 ] demonstrated that involuntary prosodic variations during reading tasks could distinguish MCI patients with high precision, highlighting the diagnostic potential of fine-grained acoustic features. Complementary to audio, visual cues offer vital psychomotor information. Burgio et al. [ 13 ] explored the neurocognitive correlates of facial recognition, identifying selective impairments in fear recognition and facial memory among individuals with MCI. Furthermore, Alsuhaibani et al. [ 14 ] employed convolutional autoencoders and Transformers to capture spatio-temporal facial dynamics from video recordings, achieving significant accuracy in elderly MCI screening. Despite the progress in unimodal methods, they often face limitations regarding feature reliability and susceptibility to individual variations. Consequently, the field is shifting towards multimodal paradigms that integrate visual, auditory, and linguistic streams to provide a holistic assessment [15]. 
+
+# 3 CogPic Database 
+
+3.1 Data Acquisition 
+
+The comprehensive workflow, as illustrated in Fig. 1, began with recruiting community-dwelling elderly individuals. To ensure the clinical purity of CogPic and mitigate confounding variables, we enforced rigorous exclusion criteria: (1) alternative neurological disorders (e.g., stroke, traumatic brain injury, or Parkinson’s disease); (2) unstable psychiatric conditions (e.g., major depression or schizophrenia); (3) severe systemic diseases (e.g., hepatic / renal failure); (4) use of cognitive-impacting medications; and (5) severe communication barriers. Following institutional clearance from the Ethics Committee of Changzhou Second People’s Hospital ([2023]KY323-01), objectives were explained and written informed consent was secured. This procedure ensured all subjects were fully briefed regarding the scientific nature of the study alongside the exact procedures of the audio-visual recordings. A tablet-based system then facilitated the standardized assessment, ensuring strictly synchronized recording of auditory and facial responses during three tasks: “Cookie Theft”, “Picnic Scene”, and “Accident Scene”. Each image was presented sequentially, and subjects were guided to articulate the visual content with maximum detail. To capture genuine multimodal biomarkers, all descriptions were spontaneous and unprompted, followed by a comprehensive clinical evaluation by neurologists to establish the final diagnostic consensus. Brief rest intervals were scheduled to minimize fatigue, and all descriptions remained spontaneous. 
+
+3.2 Data Annotation 
+
+Establishing highly reliable ground truth labels is paramount for multimodal medical benchmarks. For the CogPic dataset, comprehensive clinical evaluations were meticulously conducted by experienced neurologists to annotate each participant’s cognitive status. These diagnostic procedures systematically incorporated detailed medical histories, physi-cal examinations, and standardized cognitive assessments, specifically the Mini-Mental State Examination (MMSE) [ 16 ]and the Montreal Cognitive Assessment (MoCA) [ 17 ], alongside rigorous evaluations of Activities of Daily Living (ADL). Based on these holistic clinical profiles, participants were initially stratified to establish a normative baseline. The Healthy Control (HC) group was strictly defined as individuals presenting absolutely no subjective memory 4complaints and possessing no prior history of major neurological, psychiatric, or metabolic disorders. Conversely, participants exhibiting verified cognitive deficits were assigned to the overarching Cognitive Impairment (CI) cohort for further pathological subtyping. Crucially, the subsequent subdivision into MCI and AD categories was not determined by rigid numerical thresholds, but rather through a comprehensive clinical consensus. While quantitative metrics offer valuable reference ranges, with MCI patients typically scoring between 19 and 25 on the MoCA and early AD patients scoring between 11 and 21, the definitive diagnostic ground truth heavily weighted the individual’s functional independence. Consequently, the definitive MCI label was assigned to individuals experiencing subjective memory decline reported either by the participants themselves or their families. These individuals exhibited objective cognitive deficits but maintained fully intact ADL without a formal dementia diagnosis. In stark contrast, the AD label was designated for individuals strictly meeting the established clinical criteria for dementia. This specific classification necessitated verifiable multi-domain cognitive impairment, a significant and measurable decline in ADL, and persistent neurodegenerative characteristics, frequently accompanied by a MoCA score falling below the clinical reference point of 18. This rigorous, consensus-driven annotation process ensures that the CogPic dataset provides an exceptionally robust foundation for training and evaluating automated diagnostic models. Table 2: Detailed clinical statistics of the CogPic dataset.                          
+
+> Group Subj. Sex (M / F) Age ( y)Edu. MoCA HC 178 62 / 116 62.2 (7.6) 1.4 (0.8) 27.1 (1.2)
+> MCI 256 134 / 122 68.9 (7.0) 0.8 (0.8) 22.4 (2.0)
+> AD 140 47 / 93 69.7 (4.7) 0.2 (0.6) 13.8 (3.3)
+> Total 574 243/331 67.0 (7.5) 0.9 (0.9) 21.0 (5.7)
+> Edu. (Education Level) : Categorized as 0: Primary school or below, 1: Junior high school, 2: High school, and 3: University or above.
+
+Table 3: Performance comparison of different models across single modalities (%). † denotes ML-extracted features.                                                                         
+
+> Method UAR ↑WAR ↑AUC ↑
+> w / Acoustic Modality
+> LR †58.13 57.10 75.42 SVM †60.38 58.55 76.06
+> XGBoost †54.25 55.65 74.52 LSTM [18] 49.57 44.64 66.87 ResNet18 [19] 52.14 47.83 68.23 ResNetSE [20] 55.06 51.59 70.10 CRNN [21] 54.45 46.09 68.25 ViT [22] 47.56 51.01 68.46
+> w / Visual Modality
+> LR †42.33 35.65 55.86 SVM †45.02 38.26 58.06 XGBoost †35.96 44.35 56.82 MC3_18 [23] 56.16 54.49 74.80
+> C3D [24] 50.97 49.86 67.77 R3D18 [25] 54.10 55.65 74.39 ResNet-LSTM [26] 49.22 47.83 72.23
+> w / Textual Modality
+> LR †49.75 46.09 65.73 SVM †51.17 47.25 66.22 XGBoost †47.81 50.43 65.76 TextCNN [27] 51.28 52.17 72.68
+> BiLSTM [28] 51.69 50.43 69.68 Attention-BiLSTM [29] 55.13 51.30 71.16 BERT [30] 49.13 49.28 70.30
+
+53.3 Dataset Statistics 
+
+Following the rigorous clinical annotation protocol, the finalized CogPic database comprises 574 participants. The detailed demographic distribution and clinical characteristics across the three distinct cognitive states are comprehen-sively summarized in Table 2. To ensure a robust and transparent evaluation baseline, we meticulously recorded key demographic variables, specifically sex, age, and education level, alongside the quantitative clinical scores derived from the MoCA. Fig. 2 provides a multifaceted visual summary of the dataset characteristics. Specifically, Fig. 2(a) illustrates the hierarchical demographic distribution, explicitly detailing the complex intersections of cognitive status, gender, and educational background. Furthermore, analyzing the temporal dynamics of the clinical sessions reveals distinct behavioral biomarkers. As depicted in Fig. 2(b), the mean response durations vary notably across the three picture description tasks and the diagnostic cohorts. Interestingly, the MCI group consistently exhibits prolonged articulation times compared to both HC and AD patients, potentially reflecting the hesitation and word-retrieval difficulties characteristic of this transitional stage. Finally, Fig. 2(c) presents a comprehensive word cloud, visually capturing the high-frequency semantic vocabulary, including key task-specific nouns and action verbs, spontaneously generated by the participants during the naturalistic elicitations. 
+
+3.4 Multimodal Data Processing 
+
+To establish a high-fidelity benchmark, we implemented a rigorous processing pipeline for each behavioral stream. Regarding multimodal data processing, the raw audio signals were uniformly resampled to 16 kHz to maintain acoustic consistency. For the textual modality, to mitigate the potential impact of recognition errors on downstream cognitive assessment, we employed the FunASR [ 31 ] framework for automated speech-to-text transcription. To empirically validate the reliability of the generated transcripts, we conducted a manual calibration using stratified random sampling, selecting 30 samples from each of the three diagnostic categories. The measured Word Error Rate was 5.86%, demonstrating high phonetic fidelity across the diverse clinical groups. Furthermore, we implemented a standardized normalization protocol for disfluencies (e.g., filler words and pauses) and punctuation to ensure linguistic consistency across the dataset. For the visual modality, the facial video frames extracted utilizing the OpenFace toolkit were center-cropped and resized to a standard resolution of 224 × 224. Finally, to safeguard participant privacy for public release, we enforced a stringent de-identification protocol by redacting all Personally Identifiable Information across modalities, stripping metadata, and assigning randomized identifiers, thereby ensuring strict anonymity while preserving diagnostic fidelity. 
+
+# 4 Baseline Experiments 
+
+4.1 Experoimental setup Data and Protocol. To evaluate the model’s performance at the subject level, the CogPic dataset was partitioned following a strict subject-independent protocol. Participants were randomly assigned to the training and testing sets with an 8:2 ratio. This subject-level partitioning ensures that all samples from a single individual are confined to a specific set, strictly preventing data leakage. 
+
+Evaluation Metrics. To ensure a holistic and clinically-robust assessment under potential class imbalance, we primarily report Unweighted Average Recall (UAR) to treat each diagnostic cohort with equal importance. This is complemented by Weighted Average Recall (WAR) and Area Under the ROC Curve (AUC) to provide a comprehensive measure of overall accuracy and discriminative power across operating thresholds, establishing a rigorous benchmark for the CogPic dataset. 
+
+Implementation Details. All baseline architectures were implemented using the PyTorch framework and trained with acceleration on NVIDIA RTX 5090 GPUs. Optimization was performed via the AdamW optimizer, with learning rates meticulously tuned through grid search to ensure optimal convergence. Early stopping was further applied to prevent overfitting. 
+
+4.2 Baseline Methods 
+
+To establish a rigorous benchmark for CogPic, we implemented a dual-track evaluation framework consisting of two distinct paradigms. 
+
+Handcrafted Feature Engineering. We employed widely adopted foundational methods to extract clinically inter-pretable biomarkers across three modalities, providing a robust baseline for diagnostic interpretability. 1) Acoustic :Physical parameters, including fundamental frequency and pause profiles, were extracted via Parselmouth . High-order 6Table 4: Ablation study of multi-modal combinations (%). † denotes ML-extracted features.                                                       
+
+> Method UAR ↑WAR ↑AUC ↑
+> w / Acoustic + Visual Modality
+> CRNN + ResNet-LSTM 50.33 46.38 70.92 ResNet18 + R3D18 52.95 53.91 71.29
+> ResNetSE + MC3_18 48.41 49.28 67.77 CRNN + R3D18 51.99 51.30 69.96
+> w / Acoustic + Textual Modality
+> CRNN + Att-BiLSTM 54.71 51.59 72.35 ResNet18 + BERT-base 57.17 55.94 74.36
+> SEResNet50 + BERT-base 53.19 49.57 70.53
+> w / Visual + Textual Modality
+> ResNet+LSTM + Att-BiLSTM 53.09 48.12 69.82 R3D18 + BERT-base 56.11 53.91 73.40 MC3_18 + TextCNN 55.42 56.27 76.13 w / Acoustic + Visual + Textual Modality
+> LR †56.47 56.81 74.33 SVM †57.66 55.65 77.20
+> XGBoost †56.44 57.97 75.62 CRNN + ResNet+LSTM + Att-BiLSTM 52.69 49.27 72.54 ResNet18 + R3D18 + BERT-base 54.77 54.23 72.91 ResNetSE + MC3_18 + TextCNN 62.16 59.77 76.61
+
+temporal statistics of MFCCs were further computed using Librosa and SciPy . 2) Visual : We employed OpenFace 2.2 to capture frame-level facial action units and 3D head poses. After data cleaning with Pandas , these signals were aggregated into structured temporal statistics [ 32 ]. 3) Linguistic : We utilized Stanza for dependency and constituency parsing to measure syntactic complexity, and Jieba for quantifying lexical richness. Semantic coherence was calculated via sentence-level cosine distances using scikit-learn . These representations were evaluated using traditional classifiers, including Logistic Regression (LR), SVM, and XGBoost [33]. 
+
+Deep Learning Models. We evaluated a suite of widely adopted, foundational deep learning models to establish a robust representation learning baseline. 1) Acoustic : We modeled Mel-spectrograms using ResNet-18 and CRNN, alongside raw waveform modeling via LSTM. 2) Visual : Video data were standardized into 120-frame tensors and processed using 3D-CNNs, specifically MC3, C3D, and R3D. 3) Linguistic : Textual sequences were evaluated via TextCNN, BiLSTM, and fine-tuned BERT. 4) Multimodal Fusion : Optimized unimodal backbones served as feature encoders for acoustic, visual, and linguistic representations. These embeddings were integrated via feature-level concatenation and processed by a Multi-Layer Perceptron for final diagnostic classification. Table 5: Performance of multimodal methods on different image description tasks (%).                                                
+
+> Method Pic. 1 Pic. 2 Pic. 3 UAR ↑WAR ↑AUC ↑UAR ↑WAR ↑AUC ↑UAR ↑WAR ↑AUC ↑
+> CRNN + ResNet-LSTM + Att-BiLSTM 54.51 51.30 72.08 54.23 51.30 74.85 49.24 45.13 70.66 ResNet18 + R3D18 + BERT-base 52.84 53.04 71.61 55.91 53.91 74.67 55.57 55.75 72.45 ResNetSE + MC3_18 + TextCNN 63.95 61.74 75.87 62.37 60.00 78.28 60.14 57.52 75.97
+
+4.3 Unimodal Performance Comparison 
+
+The unimodal benchmarking results, as summarized in Table 3, reveal distinct diagnostic strengths across different behavioral streams. In the acoustic modality, traditional Machine Learning (ML) trained on handcrafted features consistently outperforms end-to-end models. Specifically, SVM achieves the highest UAR of 60.38% and AUC of 76.06%, underscoring the efficacy of expert-driven prosodic and pause-related biomarkers over raw spectral 7-0.5 0.0 0.5 
+
+SHAP value (impact on model output)                     
+
+> pose_Ry_mean Video
+> mfcc_skew_t_13 Audio
+> mfcc_mean_t_7 Audio
+> pos_count_VERB Text
+> mfcc_mean_t_21 Audio
+> pronoun_to_noun_ratio Text
+> mfcc_skew_t_15 Audio
+> f0_mean Audio
+> mfcc_skew_t_7 Audio
+> f3_mean Audio
+> mfcc_skew_t_9 Audio
+> pos_ratio_ADJ Text
+> hnr_mean Audio
+> pose_Rx_mean Video
+> mfcc_mean_t_15 Audio
+> pos_count_NOUN Text
+> shimmer_local Audio
+> mfcc_mean_t_22 Audio
+> mfcc_mean_t_13 Audio
+> mfcc_mean_t_8 Audio
+
+## Global Feature Attribution for AD Prediction (XGBoost) 
+
+> Low
+> High
+> Feature value
+
+Figure 3: Interpretability analysis via SHAP global feature attribution. The beeswarm plot ranks the top 20 most influential cross-modal handcrafted features for AD prediction using the optimal XGBoost classifier. representations. Conversely, the visual modality benefits significantly from deep spatio-temporal modeling. The 3D-CNN architecture MC3_18 yields the peak UAR of 56.16%, significantly outperforming the best handcrafted SVM baseline at 45.02%. This performance gap highlights the necessity of end-to-end encoders in capturing subtle facial and head dynamics within our synchronized recordings. In the textual domain, the Attention-BiLSTM architecture exhibits superior class-balanced sensitivity, achieving a UAR of 55.13% and outperforming both TextCNN and fine-tuned BERT. These findings establish that while the acoustic stream remains the most potent individual predictor, the complementary performance of visual and linguistic modalities justifies a multimodal fusion approach for robust cognitive impairment detection. 
+
+4.4 Multimodal Performance Comparison 
+
+The multimodal ablation study presented in Table 4 demonstrates that integrating multiple behavioral streams generally enhances diagnostic robustness. The tri-modal configuration consisting of ResNetSE, MC3_18, and TextCNN achieves a peak UAR of 62.16%, which significantly outperforms the best unimodal results. These findings confirm the presence of significant complementary information across acoustic, visual, and linguistic streams. However, this improvement is not strictly additive; certain bi-modal combinations, such as the MC3_18 and TextCNN ensemble, achieve performance comparable to more complex tri-modal architectures. This suggests that while cross-modal synergy is vital, redundant information or misaligned behavioral signals can occasionally introduce stochastic noise, necessitating sophisticated fusion strategies to isolate pathologically relevant evidence. To elucidate underlying clinical markers, we conducted an interpretability analysis using SHAP global feature attribution for the optimal XGBoost classifier. As illustrated in Fig. 3, the top 20 most influential handcrafted features span all three modalities. Acoustic indicators such as MFCC mean t_8 and shimmer local occupy the highest rankings, while linguistic features including noun counts and adjective ratios provide critical diagnostic evidence. Visual markers such as mean head rotation further contribute to the classification, confirming that the dataset captures a wide range of biomarkers to distinguish cognitive impairment cohorts. Furthermore, the task wise evaluation detailed in Table 5 reveals that the three visual stimuli elicit varying levels of diagnostic sensitivity. While all tasks provide stable results, Pic. 1 yields the peak UAR of 63.95% for the champion tri-modal model, whereas Pic. 2 achieves the highest AUC of 78.28%. This divergence suggests that different scenes offer distinct advantages in either class balanced sensitivity or discriminative power. These findings validate CogPic as a multi-task benchmark for exploring the interplay between cognitive demands and behavioral expressions while offering researchers a multi-dimensional perspective for future investigation. 85 Conclusion 
+
+In this paper, we presented the CogPic database as a comprehensive multimodal benchmark for automated cognitive evaluation. By collecting strictly synchronized acoustic, visual, and linguistic data from 574 participants, we addressed the critical scarcity of clinically validated multimodal resources. Our benchmarking experiments demonstrate that multimodal fusion significantly enhances diagnostic robustness compared to unimodal baselines, while task-wise analysis highlights the varying sensitivity across different visual stimuli. CogPic establishes a rigorous foundation for next generation cognitive screening and advances the state of the art in clinical multimodal assessment. 
+
+# References 
+
+[1] Longfei Jia, Yifeng Du, Lan Chu, Zhanjun Zhang, Fangyu Li, Diyang Lyu, Yan Li, Min Zhu, Haishan Jiao, Yang Song, et al. Prevalence, risk factors, and management of dementia and mild cognitive impairment in adults aged 60 years or older in china: a cross-sectional study. The Lancet public health , 5(12):e661–e671, 2020. [2] Samad Amini, Boran Hao, Lifu Zhang, Mengting Song, Aman Gupta, Cody Karjadi, Vijaya B Kolachalama, Rhoda Au, and Ioannis Ch Paschalidis. Automated detection of mild cognitive impairment and dementia from voice recordings: a natural language processing approach. Alzheimer’s & Dementia , 19(3):946–955, 2023. [3] Elisabeth M Weiss, Christian G Kohler, Julia Vonbank, Edith Stadelmann, Georg Kemmler, Hartmann Hinterhuber, and Josef Marksteiner. Impairment in emotion recognition abilities in patients with mild cognitive impairment, early and moderate alzheimer disease compared with healthy comparison subjects. The American journal of geriatric psychiatry , 16(12):974–980, 2008. [4] Abderrahim Oulhaj, Gordon K Wilcock, A David Smith, and Celeste A De Jager. Predicting the time of conversion to mci in the elderly: role of verbal expression and learning. Neurology , 73(18):1436–1442, 2009. [5] Matej Martinc and Senja Pollak. Tackling the adress challenge: A multimodal approach to the automated recognition of alzheimer’s dementia. In Interspeech , pages 2157–2161, 2020. [6] Saturnino Luz, Fasih Haider, Sofia De la Fuente, Davida Fromm, and Brian MacWhinney. Detecting cognitive decline using speech only: The adresso challenge. arXiv preprint arXiv:2104.09356 , 2021. [7] Anastasios Karakostas, Alexia Briassouli, Konstantinos Avgerinakis, Ioannis Kompatsiaris, and Magda Tsolaki. The dem@ care experiments and datasets: a technical report. arXiv preprint arXiv:1701.01142 , 2016. [8] Benjamin Barrera-Altuna, Daeun Lee, Zaima Zarnaz, Jinyoung Han, and Seungbae Kim. The interspeech 2024 taukadial challenge: multilingual mild cognitive impairment detection with multimodal approach. group , 25:26, 2024. [9] Hiroko H Dodge, Yuriko Katsumata, Jian Zhu, Nora Mattek, Molly Bowman, Mattie Gregor, Katherine Wild, and Jeffrey A Kaye. Characteristics associated with willingness to participate in a randomized controlled behavioral clinical trial using home-based personal computers and a webcam. Trials , 15(1):508, 2014. [10] Tao Xu, Xinheng Wang, Xie Lun, Hang Pan, and Zhiliang Wang. Adrefv: Face video dataset based on human-computer interaction for alzheimer’s disease recognition. Computer Animation and Virtual Worlds , 34(1):e2127, 2023. [11] Jason A Thomas, Hannah A Burkhardt, Safina Chaudhry, Anthony D Ngo, Saransh Sharma, Larry Zhang, Rhoda Au, and Reza Hosseini Ghomi. Assessing the utility of language and voice biomarkers to predict cognitive impairment in the framingham heart study cognitive aging cohort data. Journal of Alzheimer’s Disease , 76(3):905– 922, 2020. [12] Ye Liu, Xi-Xi Wang, Xu-Jun Wang, Min-Min Yin, Mo-Yao Tan, Chang-Peng Wang, Tie-Nan Feng, Jie Liu, Yu Wang, Xuan Li, et al. Acoustic prosodic parameters associated with parkinson’s disease cognitive impairment. 
+
+Parkinsonism & Related Disorders , 132:107306, 2025. [13] Francesca Burgio, Arianna Menardi, Silvia Benavides-Varela, Laura Danesin, Andreina Giustiniani, Jan Van den Stock, Roberta De Mitri, Roberta Biundo, Francesca Meneghello, Angelo Antonini, et al. Facial emotion recognition in individuals with mild cognitive impairment: An exploratory study. Cognitive, Affective, & Behavioral Neuroscience , 24(3):599–614, 2024. [14] Muath Alsuhaibani, Hiroko H Dodge, and Mohammad H Mahoor. Detection of mild cognitive impairment using facial features in video conversations. arXiv preprint arXiv:2308.15624 , 2023. [15] Farida Far Poor, Hiroko H Dodge, and Mohammad H Mahoor. A multimodal cross-transformer-based model to predict mild cognitive impairment using speech, language and vision. Computers in biology and medicine ,182:109199, 2024. 9[16] Ingrid Arevalo-Rodriguez, Nadja Smailagic, Marta Roqué-Figuls, Agustín Ciapponi, Erick Sanchez-Perez, Antri Giannakou, Olga L Pedraza, Xavier Bonfill Cosp, and Sarah Cullum. Mini-mental state examination (mmse) for the early detection of dementia in people with mild cognitive impairment (mci). Cochrane database of systematic reviews , (7), 2021. [17] Ziad S Nasreddine, Natalie A Phillips, Valérie Bédirian, Simon Charbonneau, Victor Whitehead, Isabelle Collin, Jeffrey L Cummings, and Howard Chertkow. The montreal cognitive assessment, moca: a brief screening tool for mild cognitive impairment. Journal of the American Geriatrics Society , 53(4):695–699, 2005. [18] Xuchu Chen, Wei-Qiang Zhang, and Yong Ma. Raw waveform-based end-to-end alzheimer’s disease detection method. Acta Electronica Sinica , 51(12):3582–3590, 2023. [19] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In 
+
+Proceedings of the IEEE conference on computer vision and pattern recognition , pages 770–778, 2016. [20] Jie Hu, Li Shen, and Gang Sun. Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition , pages 7132–7141, 2018. [21] Ke Tan and DeLiang Wang. A convolutional recurrent neural network for real-time speech enhancement. In 
+
+Interspeech , volume 2018, pages 3229–3233, 2018. [22] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929 , 2020. [23] Mingxing Tan and Quoc V Le. Mixconv: Mixed depthwise convolutional kernels. arXiv preprint arXiv:1907.09595 ,2019. [24] Du Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, and Manohar Paluri. Learning spatiotemporal features with 3d convolutional networks. In 2015 IEEE International Conference on Computer Vision (ICCV) ,pages 4489–4497, 2015. [25] Du Tran, Heng Wang, Lorenzo Torresani, Jamie Ray, Yann LeCun, and Manohar Paluri. A closer look at spatiotemporal convolutions for action recognition. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , pages 6450–6459, 2018. [26] Kensho Hara, Hirokatsu Kataoka, and Yutaka Satoh. Learning spatio-temporal features with 3d residual networks for action recognition. In 2017 IEEE International Conference on Computer Vision Workshops (ICCVW) , pages 3154–3160, 2017. [27] Yoon Kim. Convolutional neural networks for sentence classification. In Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP) , pages 1746–1751, 2014. [28] Zafi Sherhan Syed, Muhammad Shehram Shah Syed, Margaret Lech, and Elena Pirogova. Tackling the adresso challenge 2021: The muet-rmit system for alzheimer’s dementia recognition from spontaneous speech. In 
+
+Interspeech , pages 3815–3819, 2021. [29] Ning Liu, Zhenming Yuan, Yan Chen, Chuan Liu, and Lingxing Wang. Learning implicit sentiments in alzheimer’s disease recognition with contextual attention features. Frontiers in Aging Neuroscience , 15:1122799, 2023. [30] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. Bert: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 conference of the North American chapter of the association for computational linguistics: human language technologies, volume 1 (long and short papers) ,pages 4171–4186, 2019. [31] Zhifu Gao, Zerui Li, Jiaming Wang, Haoneng Luo, Xian Shi, Mengzhe Chen, Yabin Li, Lingyun Zuo, Zhihao Du, and Shiliang Zhang. Funasr: A fundamental end-to-end speech recognition toolkit. In Proc. Interspeech 2023 ,pages 1593–1597, 2023. [32] Wenhao Qi, Xiaohong Zhu, Bin Wang, Yankai Shi, Chaoqun Dong, Shiying Shen, Jiaqi Li, Kun Zhang, Yunfan He, Mengjiao Zhao, et al. Alzheimer’s disease digital biomarkers multidimensional landscape and ai model scoping review. npj Digital Medicine , 8(1):366, 2025. [33] Ravi Shankar, Ziyu Goh, Fiona Devi, and Qian Xu. A systematic review of explainable artificial intelligence methods for speech-based cognitive decline detection. npj Digital Medicine , 8(1):724, 2025. 10

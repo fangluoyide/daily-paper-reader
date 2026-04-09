@@ -1,0 +1,1745 @@
+Title: General cognitive function and the brain’s structural connectome
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.03.30.715223v1.full.pdf
+
+Number of Pages: 26
+
+Markdown Content:
+1
+
+# Ge neral cognitive function and the brain’ s
+
+# structural connectome 
+
+Colin R. Buchanan 1,2,3 *, Joanna E. Moodie 1,2 , Venia Batziou 4, Eleanor L. S. Conole 1,2 ,5, Susana Muñoz 
+
+Maniega 1,3, 6, Mathew A. Harris 1,2 , Hon Wah Yeung 1,2 , Janie Corley 1,2 , David C. Liewald 1,2 , Paul 
+
+Redmond 1,2 , J. Douglas Steele 7, Gordon D. Waiter 3, 8, Heather C. Whalley 9,10 , Andrew M. McIntosh 9,10 ,
+
+Joanna M. Wardlaw 1,3, 6,1 1, Mark E. Bastin 1,3, 6, Ian J. Deary 1,2 , E lliot M. Tucker -Drob 12, Simon R. Cox 1,2,3 
+
+1. Lothian Birth Cohorts , Department of Psychology , The University of Edinburgh, Edinburgh, UK .
+
+2. Lothian Birth Cohorts, Edinburgh Futures Institute, The University of Edinburgh, Edinburgh, UK .
+
+3. Scottish Imaging Network, A Platform for Scientific Excellence (SINAPSE) Collaboration, UK .
+
+4. College of Medicine & Veterinary Medicine, The University of Edinburgh, Edinburgh, UK .
+
+5. Department of Biochemistry, University of Oxford, Oxford, UK. 
+
+6. Centr e for Clinical Brain Sciences, The University of Edinburgh, Edinburgh, UK .
+
+7. Division of Neuroscience , University of Dundee, Dundee, UK 
+
+8. Aberdeen Biomedical Imaging Centre , University of Aberdeen, Aberdeen UK 
+
+9. Department of Psychiatry, The University of Edinburgh, Edinburgh, UK. 
+
+10. Generation Scotland, Centre for Medical Informatics, Usher Institute , The University of 
+
+Edinburgh, Edinburgh, UK 
+
+11. UK Dementia Research Institute Centre, The University of Edinburgh, Edinburgh, UK 
+
+12. Department of Psycho logy, The University of Texas at Austin, Austin, USA 
+
+* Corresponding author: Colin R. Buchanan , Lothian Birth Cohort s, Department of Psychology, The 
+
+University of Edinburgh, 7 George Square, Edinburgh , EH8 9JZ, UK. Email:  Colin.Buchanan@ed.ac.uk 
+
+.CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint 2
+
+# Abstract 
+
+General cognitive function (‘ g’) reflects a broad capacity for flexible information processing, yet how 
+
+it is supported by brain -wide structural connectiv ity remains unclear. We mapped th is relationship in 
+
+38,824 individuals (26 –84 years ) across three cohorts, show ing that g is supported by a widely 
+
+distributed white matter network whose macroscopic wiring capacity, microstructural organisation, 
+
+and age sensitivity contribute in distinct ways . Across streamline count (SC), fractional anisotropy 
+
+(FA), and mean diffusivity (MD) weightings, meta -analytic associations with g were widespread at 
+
+global, nodal and edge levels, spanning all cerebral lobes and key subcortical structures and 
+
+depend ent on both inter - and int ra -hemispheric connectivity, particularly ipsilate ral long -range 
+
+inter -lobar connections. White matter n ode -g associations spatial ly mirrored independent cortical 
+
+morphometry -g associations, indicating convergence of grey and white matter contributions to 
+
+cognitive performance. Effect sizes increased with age: MD associations bec ame more negative and 
+
+FA more positive, particularly in frontal regions. Edge -level findings replicated across cohorts and 
+
+predicted g in a hold -out sample. Together , these findings indicate that g reflects a distributed 
+
+structural communication backbone whose integrity become s increasingly relevant across 
+
+adulthood. 
+
+Keywords : brain networks, connectome, diffusion MRI , cognitive function .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+3
+
+# Introduction 
+
+General cognitive function ing (‘g’) reflects the fact that, in humans, scores on diverse cognitive tests 
+
+all correlate positively; g is an important predictor of lifelong outcomes, such as educational 
+
+attainment, job performance , socioeconomic status , health, and mortality 1–3. Individual differences 
+
+in cognitive capability can be measured using a battery of tests (reasoning, memory, processing 
+
+speed, visual -spatial ability, executive function) . Latent g scores can be calculated by data -reduction 
+
+methods such as principal component analysis 4, re flecting the consistent positive correlatio n among 
+
+diverse cognitive task scores, which typically account s for a pproximately 40% of the variation in 
+
+overall cognitive performance 5–7. Furthermore, the relative ranking of individual s based on their g
+
+scores has found to be largely invariant to the test battery used 8,9 , making them particularly suit ed 
+
+for multiple cohort studies 4.
+
+The prospect of cognitive decline is one of the most feared aspects of ageing , as it can signal the 
+
+onset of illness, dementia, and even mortality 10,11 . Cognitive decline can severely impact daily 
+
+functioning and quality of life, leading to increased dependency and reduced autonomy 12,13 .
+
+Consequently, identifying the brain biomarkers associated with cognitive differences may be of value 
+
+for early intervention and developing strategies to main tain cognitive health throughout the 
+
+lifespan 14,15 . Exploring the biolog ical basis of variation in g has practical implications for informing 
+
+education al approaches, promoting healthy cognitive ageing, and advancing research into 
+
+neurological conditions that impair cognitive functioning 16 .
+
+Neuroimaging , particularly magnetic resonance imaging (MRI), has been used to explore the neu ral 
+
+correlates of g, consistently finding that individual differences in cognitive abilities are moderately 
+
+associated with differences in brain structure, function, and connectivity 7. In particular, t here is a 
+
+robust positive correlation (r ≈ 0.3) between g and total brain volume 17 –19 . The Parieto -Frontal 
+
+Integration Theory (P -FIT) has been prominent in understanding g’s association with brain imaging 
+
+variables based on an extensive review of 37 structural, functional, and diffusion MRI (dMRI) 
+
+studies 20 . P-FIT attributes intelligence differences to specific brain regions, particularl y frontal, 
+
+parietal, and temporal areas . However, the initial P-FIT study ha s limitations including small sample 
+
+sizes, methodological variations, and very limited dMRI coverage 21 . Subsequent s tructural MRI 
+
+stu dies have associated higher g scores to greater cortical volume and thickness, particularly in 
+
+regions aligned with P -FIT 19,22 . However, a large -scale stud y discovered substantial associations (r
+
+range: 0.13 –0.2 6) between g and volumes of the insula, posterior cingulate , precuneus, and 
+
+thalam us 19 . These region s, absent from the original P-FIT , were also identified in a subsequent meta -
+
+analysis 23 , and reinforced by fi ndings from cortical morphometry 24 , underscor ing the evolving 
+
+understanding of the neural correlates of g. These efforts have focussed on grey matter structures 
+
+rather than the anatomical connections between them. 
+
+Previous dMRI studies have associated individual differences in g with the organisation of the brain's 
+
+white matter, which facilitates efficient communication between brain region s23,25,26 . Higher g scores 
+
+are associated with healthier white matter , specifically greater fractional anisotropy (FA), which 
+
+reflects more coherent fibre organisation , and lo wer mean diffusivity (MD) , indicating reduced 
+
+overall water molecule diffusion consistent with more intact white matter microstructure 19,25 –28 .
+
+These relationships are observed at both global and tract -specific levels. Certain pathways, including 
+
+long -range cortico -cortical connections , the genu of the corpus callosu m, and subcortico -cortical 
+
+pathways have provided robust but modest associations (r < 0.11) with g19 . Age -related white matter 
+
+hyperintensities (WMH) , often linked to cerebral small vessel disease , ha ve been related to poorer 
+
+cognitive function, especially in older age groups 29 –31 . Additionally, the peak width of skeletonized 
+
+mean diffusivity (PSMD) has shown to be a sensitive marker of diffuse white matter microstructural 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+4
+
+alterations related to cognitive performance 32 , but is derived from only a small propo rtion of total 
+
+white matter. Tract -based studies have focus ed on a very limited number of long -range connections, 
+
+which constitut e only ~2% of cortico -cortical projections, overlooking the majority of local U -fibre 
+
+connections 33 , which are thought to support local information integration .
+
+Advances in neuroimaging have enabled the measurement of the connectome, which seeks to map 
+
+whole -brain connectivity a s a network 34 , either as a structural network of anatomical connections 
+
+between brain regions 35 , or as a functional network of neural activity 36 . Functional MRI studies have 
+
+found that individual differences in g are associated with functional connectivity throughout the 
+
+brain, particularly in frontal and parietal regions 37 –39 . A recent structural connectivity study 
+
+predicting complex traits from all network connections reported modest correlations with g (r range: 
+
+0.13 –0.20 ), with streamline count measures providing the highe st prediction accurac y40 . Structural 
+
+connectivity has previously been related to visuospatial reasoning, information processing speed, 
+
+and crystallized ability in 73 -year -olds (β range: 0.10 –0.22 ), with WMH volume partly mediating the 
+
+connectome -processing speed rela tionship 41 . A related connectome study found that elements of 
+
+the central executive network were particularly important for late r-life cognitive function, especially 
+
+for processing speed 42 .
+
+Importantly, measures of structural connectivity differ in the biological properties they capture. 
+
+Streamline count (SC) is strongly influenced by tractography sampling and macroscopic anatomical 
+
+factors suc h as tract size and brain volume rather than reflecting direct axonal counts 43 –45 . In 
+
+contrast, diffusion tensor metrics such as FA and MD show only weak associations with volumetric 
+
+measures and reflect microstructural features of white matter such as axonal organisation and 
+
+myelination 46,47 . Considering these complementar y network weightings together allows us to assess 
+
+how cognitive differences are supported by brain size -linked wiring capacity and microstructural 
+
+organisation , capturing both volume -related and volume -independent asp ects of connectivity .
+
+The precise relationship between g and brain connectivity remains an active area of research. Much 
+
+work to -date has focused on selective pathways in small samples, making the robustness of these 
+
+associations uncertain. Recent evidence suggest s that small sa mple sizes in brain -behavio ur studies 
+
+can inflate effect sizes and limit replicability, with reliable brain -wide associations often requiring 
+
+thousands of participant s48,49 . Consequently, robust characteri sation of connectome -g relationships 
+
+requires both large cohorts a nd independent replication, which are critical gaps in the current 
+
+literature. There is a need for well -powered meta -analytic approaches at the network level , which 
+
+would enable robust mapping of g’s correlations across thousands of white matter pathways with 
+
+unprecedented detail .
+
+Here , we conduct ed the most comprehensive analysis to -date of the relationship between cognitive 
+
+functioning and structural brain connectivity . By applying connectome construction and meta -
+
+analysis across three cohorts , we examined how macroscopic wiring capacity, microstructural 
+
+organisation, and age -related differences contribute to individual differences in g. We standardised 
+
+macroscale network construction across scanners, estimated g from multiple cognitive tests within 
+
+each cohort, and tested associations between g and netwo rk properties while accounting for age, 
+
+sex, and scanner effects. We then meta -analysed and assessed cross -cohort consistency of brain -g
+
+associations across global networks, network nodes, and individual network connections. Finally, we 
+
+examined correlatio ns between network -g and cortical morphometry -g associations, tested age 
+
+moderation, and evaluated replicability by predicting g in a large hold -out sample using meta -
+
+analytic estimates. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+5
+
+# Results 
+
+Using all available brain scans, we applied whole -brain tractography and stan dardised connectome 
+
+processing to map the brain ’s axonal wiring as a network of anatomical connections at the 
+
+macroscale 50 . Whole -br ain networks were constructed for 38,824 participants. The largest sample 
+
+was from the UK Biobank (UKB, n = 37,284, 45 –83 years) 51 , randomly split into a main (n = 18,642, 
+
+45 –82 years), and hold -out replication sample (n = 18,642, 45 –83 years). Additional cohorts were 
+
+Generation Scotland: Stratifying Resilience and Depression Longitudinally (STRADL , n = 93 7, 26 –84 
+
+years) 52 , and the Lothian Birth Cohort 1936 (LBC1936 , n = 603 , ~73 years) 53,54 . Structural n etworks 
+
+were constructed using 85 neuroanatomical regions (network nodes) segmented from T1 -weighted 
+
+volumes 55 –57 , with white matter connections (edges) determine d by dMRI and probabilistic 
+
+tractography 58 –60 . Individual differences in node connectivity refl ect how strongly regions are 
+
+connected to the rest of the brain, while edges capture variation in the presence and strength of 
+
+specific white matter connections. For each participant, three network types were computed to 
+
+capture different aspects of connec tivity: streamline count (SC), fractional anisotropy (FA), and mean 
+
+diffusivity (MD), representing the total number of streamlines and mean diffusion values along 
+
+streamlines between node pairs 50 . Conceptually, SC indexes the number of macroscale connections 
+
+between a pair of regions, FA indicates how well -organised or coherent those connections are, and 
+
+MD reflects how easily water di ffuses within them, as a marker of microstructural integrity. 
+
+## A new reference brain network for c ross -cohort comparison 
+
+Overall , network organisation was comparable across cohorts, although expected scanner -related 
+
+differences were observed in network density and weight distribution s (Supplementary Fig. 1)61,62 .
+
+To minimise spurious connections and to ensure a unifor m network density , w e applied a two -step 
+
+thresholding procedure informed by findings from a prior single -scanner study 50 . Firstly, consistency -
+
+thresholding 63 was conducted independently in each cohort at 30% network density, resulting in 
+
+1071 network edges . Secondly, we intersected the resulting network masks from the three cohorts, 
+
+each containing potentially distinct edges, and retained only the edges pr esent in all three cohorts. 
+
+Agreement between cohort pairs was high : UKB and STRADL shared 943 edges (88.0%), STRADL and 
+
+LBC1936 shared 898 edges (83.8%), and UKB and LBC1936 shared 850 edges (79.4%). Overall, t he 
+
+shared edges were highly consistent across all three cohorts and resulted in a network of 818 edges 
+
+(76.4% of 1071 thresholded; 22.9 % of all possible connections ). 
+
+The resultant macro scale connectome (Fig. 1) reflected a hierarchical and integra tive topology ,
+
+comprising 647 intra -hemispheric connections (79.1% of total connections ) and 166 inter -
+
+hemispheric connections (20.3%), with a near -symmetric distribution between hemispheres (left: 
+
+328; right: 319). Total i nter -lobar connections ( 558 ) were roughly double the number of intra -lobar 
+
+connections (230), indicating a predominantly integrative and ipsilateral network organi sation at this 
+
+scale . The parietal, temporal, and frontal lobes contributed most to inter -lobar connectivity (241, 
+
+224, and 212 connections, respectively), while the frontal lobe exhibited the highest intra -lobar 
+
+connectivity (83). Subcortical regions exhibited both substantial intra -lobar connections (51) and the 
+
+highest inter -lobar c onnectivity (279), highlighting their central role in overall network integration. 
+
+This 818 -edge network was used for all subsequent analyses and is provided as a definitive multi -
+
+cohort macro -connectivity network for connectome research in the Supplementa ry Information .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+6
+
+Fig 1: A robust, cross -cohort macroscale structural connectome. A) Anatomical plot (818 edges) where link colour indicates mean streamline count across participants (scaled) , and nodes are 
+
+coloured by lobe. B) Macroscale connectivity edge counts . C) Lobe -level connectivity edge counts, comparing inter - and intra -lobe connections. D) Relative lobe -level connectivity. E) Radar 
+
+plots showing the proportion of edges involved in lobe -to -lobe connectivity. 7
+
+## Global brain network s and general cognitive functioning 
+
+A latent factor of g was estimated for each cohort using diverse cognitive tests assessing multiple 
+
+cognitive domains 52,64,65 , and confirmatory factor analysis within a structural equation modelling 
+
+(SEM) framework. All models provided acceptable fit (CFI > 0.94; TLI > 0.92; RMSEA < 0.06 ; SRMR < 
+
+0.05 ), with factor loadings on g predominantly moderate -to -high acros s tests (0.28 –0.73 ;
+
+Supplementary Tables 1 -4). These g scores showed consistent correlations with age and education 
+
+across cohorts (Supplementary Table 5). Brain network associations with g (standardised βs) were 
+
+computed using structural regression in SEM , adjusting for age, sex, and scanner (scanner applies to 
+
+UKB and STRADL). For each network, three global graph -theoretic metrics were calculated using 
+
+weighted metrics 66 : mean edge weight, global network efficiency , and mean clustering coefficient. 
+
+Mean edge weight quantifies the overall strength of connection across the network. Global 
+
+efficiency reflects how effectively information can be integrated across the brain, with higher 
+
+ef ficiency indicating a more optimally connected network. Clustering coefficient captures the 
+
+tendency of regions to form local clusters that support segregated processing, with higher values 
+
+suggesting more specialised and modular network organisation. 
+
+Glob al network analyses ( Fig. 2) revealed positive associations with g for SC network metrics 
+
+(median β = 0.18, range: 0.12 to 0.28), and for FA metrics (median β = 0.13, range: 0.06 to 0.30). As 
+
+expected, all MD metrics were negatively associated with g (medi an β = -0.08, range: -0.22 to -0.01). 
+
+CIs were narrower in UKB, reflecting its larger sample size compared with the other cohorts. Across 
+
+cohorts, SC metrics showed more consistent associations (β ≈ 0.2) than for FA and MD metrics . For 
+
+FA networks, UK B provided considerably lower estimates (β < 0.1) than STRADL, although LBC1936 
+
+confidence intervals overlapped with both other cohorts. For MD networks, although the confidence 
+
+intervals overlapped, both UKB and LBC1936 provided lower estimates ( |β| < ~0. 1) than STRADL (β ≈ 
+
+0.2) , and LBC1936 associations were non -significant. A three -way meta -analysis was then performed 
+
+using a random effects model to calculate meta -analytic coefficients from the cohort -specific 
+
+network -g associations. The meta -analytic βs were significant for all global metrics tested ( p < 0.05, 
+
+FDR; Supplementary Table 6). 
+
+Our main analyses included all available participants . A supplementary sensitivity analysis exclu ding 
+
+participants with neurological conditions (e.g., dementia, stroke; see Supplementary Information )
+
+show ed an attenuation of g associations (0.8 –7.3% in UKB; 2.1 –28.2% in LBC1936). However, 
+
+because neurological exclusion criteria were unavailable for STRADL and differed acros s cohorts, all 
+
+subsequent analyses used the full samples, which also preserved statistical power.              
+
+> Fig. 2:Associations between general cognitive function ( ‘g’) and global network organisation. Forest plots of
+> standardised regressio n coefficients (βs) for associations between gand global network metrics. Associations are shown
+> across three network weightings, three cohorts, and the meta -analysis. Solid markers indicate significan ce (p< 0.05, FDR) ,
+> with error bars representing standard errors . Network weightings are uncorrected streamline count (SC), fractional
+> anisotropy (FA), and mean diffusivity (MD ).
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+8
+
+## Regional n ode -g associations 
+
+We localised our analyses by computing weighted local efficiency, which reflects each node ’s
+
+capacity for information transfer within its immediate neighbourhood 66 . Across all three cohorts, 
+
+associations between g and local efficiency were mainly positive for SC and FA, and negative for MD 
+
+(Fig. 3; Supplementary Tables 7 –10). STRADL showed the strongest associations (mean β: 0.15 for 
+
+SC, 0.18 for FA, –0.18 for MD) , whereas associations were weaker in UKB (mean β: 0.09 for SC, 0.05 
+
+for FA, –0.05 for MD) and LBC1936 (mean β: 0.06 for SC, 0.07 for FA, –0.08 for MD). A fuller 
+
+summary, including medians and ranges, is provided in Supplementary Table 11 .
+
+The m eta -analy sis of local efficiency across 85 network nodes ( Fig. 3) revealed widespread significant 
+
+g associations involving both cerebral hemispheres, all lobes, and some subcortical areas: 72/85 
+
+nodes (84.7%) for SC, 62/85 (72.9%) for FA, and 70/85 (82.4%) for MD ( p < 0.05, FDR). Strong meta -
+
+analytic node -g associations (|β| > 0.1) were observed across all brain lobes, forming a distributed 
+
+frontotemporoparietal -subcortical network, with some strong associations in occipital, cingulate, 
+
+and insular regions. Notably, almost all parietal nodes showed strong as sociations across SC, FA, and 
+
+MD networks . By calculating the correlation between all left and right hemisphere nodes, we found 
+
+that these meta -analytic associations were highly symmetrical ( r = 0.84 for SC, r = 0.86 for FA, r =
+
+0.88 for MD; p < 0.001; Sup plementary Table 1 2). 
+
+To evaluate cross -cohort agreement, we calculated correlations between the set of node βs for each 
+
+of the three possible cohort pairs ( Fig. 3C). Despite differences in the absolute values of node βs 
+
+across cohorts (mean |β|: ~0.17 in STRADL, ~0.07 in LBC1936, ~0.06 in UKB) , these correlations were 
+
+weak -to -strong (r range: 0.11 to 0.66, Supplementary Fig. 2), although strongest for SC ( r ≥ 0.42) and 
+
+FA ( r ≥ 0.37) , and lowest for MD (r ≥ 0.11) . However, some FA estimates varied to the e xtent that 
+
+substantial meta -analytic βs were rendered non -significant , such as for the thalamus (β < 0.13, p >
+
+0.07) . Cross -cohort differences were more pronounced for MD networks ( r range: 0.11 to 0.58), with 
+
+STRADL and UKB showing moderate agreement ( r = 0.58), but weaker agreement for LBC1936 ( r ≤
+
+0.1 8). While UKB and LBC1936 provided comparable node -g magnitudes for both FA and MD 
+
+networks, in LBC1936 all nodal estimates were non -significant after FDR correction , likely reflecting 
+
+reduced statistical power due to the smaller sample size . The direction of node -g associations was 
+
+consistent across cohort s for most nodes: 72/85 (84.7%) for SC, 76/85 (89.4%) for FA, and 82/85 
+
+(96.5%) for MD. 
+
+Our main analyses used uncorrected SC , which was strongly correlated with total brain volume (TBV; 
+
+r = 0.80, p < 0.001). In contrast, FA and MD networks showed only wea k correlations with TBV (| r| < 
+
+0.10, p < 0.001). Given the strong SC -TBV correlation, we conducted a supplementary analysis using 
+
+streamline density (SD), which applies regional volumetric correction to SC values, to assess SC -
+
+specific contributions. Overa ll, SD provided weaker node -g associations and fewer significant nodes 
+
+than SC, and the meta -analytic associations were lower for SD (mean β = 0.03; range = –0.06 to 0.11) 
+
+than for SC (mean β = 0.10; range = –0.02 to 0.20; Supplementary Table 8). This atte nuation may 
+
+indicate that a substantial component of SC -g associations reflects volumetrically -scaled 
+
+macroscopic wiring capacity, rather than measurement artefact. However, in line with prior work 
+
+noting limitations of SD as a correction approach 44, 50 , we report uncorrected SC in subsequent 
+
+analyses, with results interpreted in light of the strong SC -TBV correlation .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+9
+
+Fig. 3: Regional associations between g and local efficiency. Standardised regression coefficients (β) for associations between g and local efficiency in streamline count (SC), fractional 
+
+anisotropy (FA), and mean diffusivity (MD) networks, shown across three cohorts and the meta -analysis. A) Forest plots of nodal associations with nodes ordered by the average magnitude of 
+
+the meta -analytic βs across hemispheres and the brainstem is not plotted . Solid markers indicate significan ce (p < 0.05, FDR) , with error bars representing standard errors . B) Anatomical plots 
+
+of significant nodes, where colour represents the meta -analytic β. C) Correlations of β coefficients between cohorts. 10 
+
+## Network edge -g associations 
+
+We further localised our analys es to the 818 individual network connections (edges) identified from 
+
+the cross -cohort reference connectome . Rather than being confined to a small set of specialised 
+
+pathways, g-related associations were widely distributed across the structural connectome (Fig. 4) ,
+
+consistent with the view that general cognitive performance reflects the efficiency and robustness of 
+
+distributed communication across brain systems. 
+
+Co nsistent with global and nodal analys es, associations between g and edg e weights were mainly 
+
+positive for SC (mean β = 0.030, median = 0.030, range: -0.152 to 0.229) and FA (mean β = 0.052, 
+
+median = 0.046, range: -0.146 to 0.240), and negative for MD (mean β = -0.046, median = -0.039, 
+
+range: -0.278 to 0.162). Effect sizes varied across cohorts and were generally smaller in LBC1936 and 
+
+UKB than in STRADL ( Supplementary Fig. 3; Supplementary Table 1 4). In particul ar, STRADL provided 
+
+stronger and broader MD associations (mean β = -0.078, median = -0.076, range: -0.278 to 0.124) 
+
+than UKB (mean β = -0.038, median = -0.036, range: -0.104 to 0.024) or LBC1936 (mean β = -0.021, 
+
+median = -0.023, range: -0.219 to 0.162), w hich may partly reflect the broader age range in the 
+
+STRADL cohort. After FDR correction, few edges were significant in LBC1936 (16 for SC, 4 for FA, 7 for 
+
+MD; p < 0.05, FDR) , likely reflecting limited statistical power , although spatial patterns were visually 
+
+similar across cohorts ( Supplementary Fig. 3). We quantified cross -cohort agreement by the 
+
+correlation s between edge -level β estimates across cohort pairs ( Fig. 4B ; Supplementary Fig. 4). 
+
+Agreement was moderate ( r range: 0.10 –0.48) and lower than at the node level ( r range: 0.1 1–0.6 6;
+
+Fig. 3C). 
+
+Meta -analysis revealed significant edge -g associations for 39.7 –52.9% of 818 edges ( p < 0.05, FDR), 
+
+distributed widely acros s all lobes and broadly symmetrical across hemispheres ( Fig. 4). Significant 
+
+edges comprised 47.8% (391/818) of edges in SC networks, 52.9% (433/818) in FA, and 39.7% 
+
+(325/818) in MD. A moderate overlap was o bserved among the significant edges across the three 
+
+network weightings (SC, FA, and MD), with 369 edges shared by at least two weightings but only 94 
+
+common to all three weightings. This highlights the distinct aspects of connectivity captured by 
+
+these dMRI -based measures, particularly for MD. 
+
+Significant g-related associations were more prevalent for intra -hemispheric than inter -hemispheric 
+
+connections, with a ratio exceeding 4:1 across network weightings (Supplementar y Table 1 5). Inter -
+
+hemispheric associations were most pronounced between frontal and parietal regions, but inter -
+
+hemispheric connectivity was more widespread in MD than in SC or FA networks ( Fig. 4 ;
+
+Supplementary Fig. 5). Additionally , significant inter -lobe connections were considerably more 
+
+numerous than intra -lobe connections and were predominantly ipsilateral ( Fig 4; Supplementary 
+
+Table 16). Strong associations ( |β| > 0.1) were found for the precuneus and insula, which are 
+
+considered integral to network communication. Notably, s trong subcortic o-cortical associations 
+
+included the thalamus, caudate, putamen and hippocampus (Fig. 4) .
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+11 
+
+Fig. 4: Edge -leve l associations between g and white matter connections. Significant edge -g associations ( p < 0.05, FDR) from separate meta -analyses of streamline count (SC), fractional 
+
+anisotropy (FA), and mean diffusivity (MD) networks. A) Significant associations, where link colour represents standardised β coefficients and link thickness reflects the magnit ude of the 
+
+association. The number of significant edges was 391 for SC, 433 for FA, and 3 25 for MD. Node abbreviations are listed in Supplementary Table 1 3. B) Correlation of β coefficients between 
+
+cohorts (cf. Fig. 3 for node -level correlations). 12 
+
+## Co mparison of node -g and cortical morphometry -g associations 
+
+Additionally, we assessed the relationship between network node -g associations from this study and 
+
+co rresponding g associations of cortical morphometry reported in a prior analysis of the same 
+
+cohorts 24 . This approach allows direct quantitative comparison between regional white matter 
+
+connectivity and cortical grey matter properties in the same atlas. Specifically, correlations were 
+
+calculated between the meta -analytic β coefficients from our node -g associations and the β
+
+coefficients from the structural MRI -based cortex -g associations. Correlations were calculated across 
+
+68 cortical regions from the Desikan -Killiany atlas 55 , for all nine pairings of network weightings (SC, 
+
+FA, and MD) and cortical measures (cortical volume, surface area, and thickness) . Despite the 
+
+conceptua l distinction between grey and white matter measurements, correlations between node -g
+
+and cortex -g coefficients ranged from weak to strong (| r| range: 0.12 –0.65; Supplementary Table 
+
+17). As expected, SC and FA measures showed positive correlations, and MD showed negative 
+
+correlations. Across all three network weightings, cortical volume showed the strongest correlations 
+
+with node -g (| r| = 0.41 –0.65), followed by surface area (| r| = 0.35 –0.56) and cortical thickness (| r|
+
+= 0.12 –0.3 3). All correlations were statistically significant ( p < 0.05), except for the thickness -MD 
+
+correlation. Scatter plots coloured by lobe did not reveal any particular regional drivers of these 
+
+relationships (Supplementary Fig. 6). 
+
+## Age moderation of network -g
+
+Age m oderation analyses were conducted for UKB (45 –81 years) and STRADL (26 –84 years) for 
+
+global and nodal properties (Fig. 5 and Supplementary Tables 1 8–21). No significant age moderation 
+
+effects for n etwork -g associations were observed in STRADL after FDR c orrection (all |β| < 0.12) ,
+
+likely reflecting limited statistical power . In the larger UKB cohort, significant age moderation effects 
+
+were observed at both global and node levels. Five of nine global network metrics showed significant 
+
+age moderation ( p < 0.05, FDR). All three MD metrics showed negative moderation (β = –0. 047 to –
+
+0. 041 per SD increase in age ; p < 0.001), indicating that the absolute magnitude of these negative 
+
+MD -g associations strengthened with age . Two FA metrics (mean edge weight and clustering 
+
+coefficient ) showed positive moderation (β ≈ 0.017 per SD increase in age ; p < 0.05), whereas global 
+
+efficiency did not reach significance (β = 0.013). Overall , FA -based network -g associations also 
+
+tended to strengthen with age , but moderation effects were weaker than for MD .
+
+At the nodal level, similar patterns were observed for local efficiency (Fig. 5). Significant age 
+
+moderation was identified in 72/85 nodes in MD networks (all β ≥ -0.071), 37/85 nodes in FA 
+
+networks (all β ≤ 0.039), and 23/85 nodes in SC networks (all β ≤ 0.039 ). Among these, 71 /72 nodes 
+
+in MD networks showed negative moderation, and all 37 significant nodes in FA networks showed 
+
+positive moderation , consistent with stronger n ode -g associations at older ages . Notably, the 
+
+magnitude of age moderation in MD networks appeared to follow an anterior -posterior gradient, 
+
+with the strongest effects in frontal regions , but this gradient was less pronounced in FA networks 
+
+and absent in SC networks. 
+
+In UKB, we also computed spatial correlations of age -moderation effects between dMRI weightings. 
+
+Correlations were moderate for FA -MD ( r = −0.401) and SC -FA ( r = 0.346), but weak for SC -MD ( r =
+
+0.149), indi cating partial spatial correspondence while suggesting that these network weightings 
+
+reflect distinct, age -sensitive aspects of connectivity and microstructure. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+13 
+
+Fig. 5 : Age moderation of node -g associations . A) Forest plots of age × node interactions ( standardised β coefficients showing per SD increase in age ) for local efficiency in streamline count 
+
+(SC), fractional anisotropy (FA), and mean diffusivity (MD) networks (UK Biobank data only ). Nodes are ordered by average β magnitude across hemi spheres and the brainstem is not shown. 
+
+Solid markers indicate significan ce (p < 0.05, FDR) , with error bars representing standard errors. B) Anatomical plots of significant nodes, with colo ur indicating the magnitude and direction of 
+
+age moderation .14 
+
+## Replicati on of network -g associations in a h old -out sample 
+
+To assess how well network connectivity predicts g, we calculated composite scores by weighting 
+
+each of the 818 network edges by its meta -analytic β coefficient and summing across edges. 
+
+Correlations between these predicted scores and the observed g values were calc ulated both within 
+
+the training samples and in the unseen UKB hold -out sample (Supplementary Table 2 2). Within the 
+
+training samples (UKB, STRADL, and LBC1936) these correlations ranged from r = 0.08 to 0.26 .
+
+Notably, p redictions remained stable between the UKB main (r range: 0.1 4 to 0.26) and h old -out 
+
+samples (r range: 0.13 to 0.26 ). SC networks showed the strongest correlations in UKB and STRADL ( r
+
+≈ 0.26) but were lower in LBC1936 ( r = 0.19). FA correlations were cons istent across samples ( r
+
+range: 0.13 to 0.17). MD correlations were comparable between UKB samples ( r ≈ 0.18) but lower in 
+
+STRADL ( r = 0.13) and LBC1936 ( r = 0.08). Notably, for UKB and LBC1936, predictions based on edge -
+
+wise composite scores ( r range: 0.0 8 to 0.26) exceeded the associations between g and global 
+
+network metrics across weightings (|β|range: 0.01 to 0.18; Fig. 2). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+15 
+
+# Discussion 
+
+This study, involving nearly 39 ,000 part icipants across three cohorts, provides the most extensive 
+
+and well -powered analysis to date of brain connectivity relates to general cognitive function, a 
+
+cardinal human behavio ural trait. In addition, we established a robust reference brain network of 
+
+the most consistently identified white matter connections across three di fferent cohorts. This 
+
+approach reduces false -positive connections while ensuring an anatomically plausible network 
+
+density at the macroscale 50,63 . We share this resource with the research community to support 
+
+future connectom e analys es. 
+
+Our mapping of network -g associations advances understanding of the relationship between general 
+
+cognitive function (g) and brain structure . Consistent with prior dMRI studies, we observed 
+
+predominantly positive g associations with fractional anisotropy (FA), while associations with me an 
+
+diffusivity (MD) were mainly negativ e19,25,26,28 . Network -based streamline counts (SC), which index 
+
+the number of fibre connections between regions, showed primarily positive associations with g and 
+
+provided the strongest and most replicable effects . The strongest network -g associations w ere 
+
+observed for SC and FA networks , where som e β values approached ~0.3 , and are of comparable 
+
+magnitude with some of the most robust brain -g associations reported in the literature, such as 
+
+those involving brain size 17 –19 . Our findings suggest that associations between brain size and 
+
+cognitive function may be partl y instantiated through the macroscopic organisation of white matter 
+
+connectivity. Streamline count networks (which are strongly correlated with total brain volume )
+
+showed the largest and most replicable associations with g, consistent with the idea that in dividuals 
+
+with larger brains possess a greater number of long -range anatomical connections that support 
+
+distributed information integration 67 . In this view, SC represents a structural pathway through which 
+
+volumetric differences translate into functional cognitive capacity. At the same time, the presence of 
+
+widespread g associations in FA and MD networks (which were largely independent of brain size )
+
+identifies aspects of white matter connectivity that contribute meaningfully to cognitive variation 
+
+beyond gross anatomical scaling 46 . Together, these findings quantify robustly how general cognitive 
+
+function is supported by both the quantity and quality of large -scale brain wiring. 
+
+We found that meta -analytic network -g associations for nodes (mean |β| = 0.03 –0.10) and edges 
+
+(mean |β| = 0.03 –0.05) were modest but comparable in magnitude to prior tract -g associations 
+
+reported in UKB (|β| < 0.11) 19 , and similar to meta -analytic cortical morphometry -g associations 
+
+(mean β = 0.10 –0.30) observed in the same cohorts 24 . Our regional meta -analysis found widespread 
+
+significant nodal associations of g across all cerebral lobes and several subcortical regions : 73 -85% of 
+
+all network nodes had significant associations . The strongest associations ( |β| > 0.1) form ed a
+
+frontotemporoparietal -subcortical network , with multiple brain regions contributing to cognitive 
+
+function , highlight ing the distributed nature of g. This widespread distribution of significant edge –g
+
+associations suggests that general cognitive function is supported less by isolated ‘critical’ 
+
+connections than by the collective integrity of a large -scale communication backbone 44,67 . Such a 
+
+distributed architecture may support cognitive performance b y enabling flexible routing of 
+
+information, redundancy against local inefficiencies, and efficient integration across functionally 
+
+diverse regions. From a behavioural perspective, this implies that individual differences in g reflect 
+
+differences in the ove rall capacity for coordinated information processing rather than reliance on 
+
+specific cognitive modules 7. The symmetrical distribution of node -g associations across cerebral 
+
+hemispheres supports the idea that cognitive functions often depend on the coordinated activity of 
+
+both hemispheres through callosal fibres 68 .
+
+Our m eta -analysis of network connections (edges), found that 40 -53 % of all edges had significant 
+
+edge -g associatio ns, which again were widespread across all lobes, and were broad ly symmetr ical 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+16 
+
+across hemispheres. While the magnitude of the edge associations varied across cohorts, the overall 
+
+pattern of associations was relatively consistent. Our analyses at t he edge level revealed that 
+
+significant intra -hemisphere connections considerably outnumbered significant inter -hemisphere 
+
+connections. However, significant intra -lobe connections were fewer than significant inter -lobe 
+
+connections, which were predominantly ipsilateral rather than contralateral. This suggests that, at 
+
+the macroscopic network level, g is supported more by ipsilateral , long -range , inter -lobe 
+
+connectivity than by local , within -lobe connectivity . However, strong associations for inter -
+
+hemispheric connections were observed, particularly between frontal regions, but also between 
+
+bilateral parietal regions (mainly SC networks) . Within -hemisphere connections with strong g
+
+associations were observed in subcortica l, parietal, temporal and frontal regions across all three 
+
+networks weightings. Strong associations were found for subcortic o-cortical connectivity, 
+
+particularly for the thalamus, caudate, putamen and hippocampus, which mainly involved ipsilateral 
+
+connecti vity for SC networks, but some contralateral cortical connectivity for FA and MD networks .
+
+The widespread distribution of significant network edges across cerebral lobes, demonstrate s a 
+
+complex network that relies on both intra - and inter -hemispheric conne ctivity 19,38,40 . These findings 
+
+resonate with previous studies indicating that long -range cortico -cortical connections, the genu of 
+
+the corpus callosum, and subcort ico -cortical pathways play a significant role in cognitive 
+
+performance 19,28,38,69 .
+
+The findings from our study broadly align with the Parieto -Frontal Integration Theory (P -FIT), which 
+
+attributes intelligence to predominately frontal, parietal and temporal brain regions 20 . Previous 
+
+research has provided supporting evidence for specific patterns of functional connectivity related to 
+
+g, particularly in frontal and parietal regions 37 –39 . Ne vertheless, our study, conducted on a larger 
+
+scale, demonstrates an evolving understanding by revealing additional brain areas including the 
+
+insula, cingulate, subcortical and some occipital regions as potential contributors to g, some of which 
+
+align with prior reports 19,23,38 . Subcortical regions, including the thalamus, hippocampus, caudate and 
+
+putamen, have traditionally been associated with sensory processi ng, memory, and motor control 70 .
+
+However, emerging research suggests that these regions a nd their connections play a more 
+
+prominent role in shaping g than previously thought 19,38,71 . These results reinforce the vie w that g is 
+
+a multifaceted trait supported by the coordinated function of multiple brain regions 7,72,73 .
+
+Our research contributes to a broader understanding of the neural bas es of g by comparing the 
+
+findings of our white matter network analysis with a previous study of cortical grey matter 24 . We 
+
+observed strong sp atial correlations (|r| range: 0.12 to 0.65 ) between node -g and cort ical 
+
+morphometry -g association s. Our findings provide quantitative evidence that the brain regions most 
+
+strongly associated with cognitive performance differences ar e those that possess both larger 
+
+volumes and greater local network efficiency , with both factors contributing to a distributed g-
+
+related network . The strongest correlations were observed for cortical volume and streamline count 
+
+networks, both of which are volume -drive n, suggesting that overall brain size influences both 
+
+cortical structure and efficient white matter organisation to facilitate cognitive functioning 7.
+
+Age moderation effects were subtle and only significant in the large UKB sample, especially in MD 
+
+networks where 7 8% of all nodes showed a significant age moderation. These effects appeared to 
+
+follow an anterior -posterior gradient, with stronger age -related alterations observed in frontal 
+
+regions, consistent with the established pattern of brain ag eing where age -related changes tend to 
+
+begin earlier in the late -maturing anterior areas 74,75 . These effects indicate that white matter 
+
+microstructural differences become increasingly pertinent to cognitive performance with age, 
+
+perhaps because the diffusion signal indexes a greater proportion of age ing -related pathological 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+17 
+
+processes in older age, compared to a greater proportion of developmental variation among 
+
+you nger adults 69,76 .
+
+A key strength of our study is the large sample, with over 20,000 participants included in t he meta -
+
+analysis and an additional 18,000 for replication, far exceeding previous white -matter meta -analyses 
+
+(n < 2,000) 25 , and enabling robust estimation of network -g associations across cohorts and age 
+
+ranges. We also conducted network -g mapping at the level of individual network connections 
+
+(edges), which have not been reported previously . Our network approach highlights t he benefit of 
+
+mapping short -range connections (e.g., U -fibres), which appear to support g but would likely be 
+
+overlooked in tract -based studies focused on long -range pathways. We use d standardised 
+
+connectome processing, as well as a cross -cohort thresholdi ng step to ensure consistent network 
+
+density and therefore comparable network measures across cohorts. 
+
+The use of large and relatively di fferent cohorts allowed us to assess cross -cohort consistency . While 
+
+network -g associations showed considerable overlap across cohorts, we also identified notable 
+
+differences . Relatively w eak correlations, especially for FA and MD networks at both the node and 
+
+edge levels, demonstrate the challenges of replicating connectomic findin gs35,77 . Key sources of 
+
+variability likely include differences in cohort composition, MRI field strength, and acquisition 
+
+protocols 62,78 . In particular, differences between 1.5T and 3T scanners are known to affect dMRI 
+
+me asure s and network density , potentially impacting the reproducibility of our findings 62 . However, 
+
+in spite of these differences, cross -cohort agre ement was often good and further cohort 
+
+discrepancies may have been partly mitigated by use of standardised connectome processing .
+
+Our network analysis also showed that associations between g and uncorrected SC networks were 
+
+inflated by the strong correlation between SC and total brain volume; more inter -regional 
+
+streamlines are identified in large r brains 44,50 . These associations we re attenuated after correcting 
+
+for regional node volumes . Nonetheless, the strong SC -g associations raise the possibility that total 
+
+brain volume is partly shaped by the number of macroscopic fibre bundles , implying that individuals 
+
+with more extensive brain wiring may also have larger brains, which could contribut e to high er 
+
+cognitive perf ormance 73 .
+
+Although we used g models known to be comparable across cohorts 5,7 , our analyses were restricted 
+
+by the brief, unsupervised touchscreen asses sments in UK Biobank 64 , which provided limited 
+
+coverage of cognitive domains and only moderate test -retest reliabili ty for several measures. These 
+
+limitations likely attenuated the observed network -g associations. Never theless, the shared pattern 
+
+of association across cohorts and the fact that network -g associations were well replicated in a 
+
+further h old -out sample of U KB data, demonstrate the robustness of these regional relationships 
+
+with g.
+
+We summarise our findings as follows. First, g is supported by a highly distributed white matter 
+
+network , indicat ing that cognitive performance reflects the integrity of a large -scale communication 
+
+backbone that includes both volumetrically scaled wiring capacity and size -independent 
+
+microstructural organisation . T he se extend more widely than previous white matter tract studies 
+
+suggest , involving substantial cortico -subcortical connectivity , including the thalamus, hippocampus, 
+
+caudate, and putamen . Second, edge -level composite scores appear to outperform global network 
+
+metrics in out -of -sample prediction, suggesting that behaviourally -relevant information is embedded 
+
+in fine -grained patterns of connectivity . Third, age reshapes which aspects of neurobiology matter 
+
+for cognitive functioning : the moderation patterns observed for FA and M D networks indicate that 
+
+the biological features of white matter most relevant to cognitive differences change across 
+
+adulthood, consistent with shifting constraints on information processing in the ageing brain. 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+18 
+
+# Materials and m ethods 
+
+## Participants 
+
+We mapped the associations between structural brain networks and general cognitive function ( g)
+
+using data from three cohorts. The largest was the UK Biobank (UKB , n = 37,284; 19,857 female, 
+
+17,427 male, 45 –83 years )51 , randomly split into a main sample (n = 18,642 , 9,911 female, 8,731 
+
+male, 45 –82 years ), and a h old -out replication sample ( n = 18, 642 , 9,946 female, 8,696 male, 45 –83 
+
+years ). The other cohorts were Generation Scotland: Stratifying Resilience and Depression 
+
+Longitudinally (STRADL , n = 93 7, 553 female, 384 male, 26 –84 years )52 , and the Lothian Birth Cohort 
+
+1936 (LBC1 936 , n = 603 , 282 female, 321 male , ~73 years) 53,54 , result ing in a total meta -analytic 
+
+sample of 20,18 2 participants. All participants provided informed consent. 
+
+These cohorts are outlined below with further details in the Supplementary Information . The UK 
+
+Biobank is a large -scale epidemiology study which recruited ~500,000 adults aged 40 –69 years 
+
+across Great Britain (2006 –2010), collecting demographic, medical, and cognitive data 51 . A subset 
+
+(~40,000) underwent brain MRI 9.0 ± 1.8 years after baseline assessment . Participants were 
+
+generally healthy . Ethical approval was granted by the North West Multi -centre Research Ethics 
+
+Committee (11/NW/0382), and this study was conducted under UK Biobank application 10279. 
+
+STRADL is a population -based study (n=1188) and a sub -cohort of Generation Scotland 79 , designed to 
+
+study major depressive disorder, although participants were not selected based on depres sion 52 .
+
+Data included br ain MRI, cognitive assessment, and health measures. Participants were generally 
+
+healthy, although ~30% had a lifetime history of a mood disorder. Ethical approval was obtained 
+
+from the NHS Tayside Research Ethics Committee (14/SS/0039). The LBC1936 is a lo ngitudinal study 
+
+of community -dwelling older adults, most of whom took part in the Scottish Mental Survey of 1947 
+
+at ~11 years old, and who volunteered to participate in this cohort study at ~70 years old 53,54,65 . Data 
+
+were drawn from the first brain imaging wave (~73 years) and included cognitive testing and medical 
+
+data . Participants were ge nerally healthy, with no self -reported symptoms of dementia, although 76 
+
+(12.6%) met criteria for neuroradiologically identified stroke . Ethical approval was given by the 
+
+Multi -Centre Research Ethics Committee for Scotland, (MREC/01/0/56), the Lothian Research Ethics 
+
+Committee (LREC/2003/2/29) , and the Scotland A Research Ethics Committee (07/MRE00/58). 
+
+Our primary analyses included all participants. A supplementary sensitivity analysis excluded 
+
+part icipants with neurological conditions (see Supplementary Information ), but the full sample was 
+
+otherwise retained because exclusion criteria were unavailable for STRADL and differed across 
+
+cohorts. 
+
+## MRI acquisitio n and image processing 
+
+Full details of MRI a cquisitions are provided in the Supplementary Information . Briefly, UKB imaging 
+
+was conducted with Siemens Skyra 3T scanners at four UK sites, acquiring 3D T1 -weighted (1 mm 
+
+isotropic voxels) and dMRI volumes (100 directions; 2 mm isotropic voxels )80,81 . STRADL imaging was 
+
+conducted at Aberdeen (Philips Achieva 3T) and Dundee (Siemens Prisma -FIT 3T) with closely 
+
+matched protocols, acquiring T1 -weighted (1 mm isotropic) and dMRI (6 4 directions; 2.3 mm 
+
+isotropic voxels) 52 . LBC1936 imaging was conducted with a GE Signa Horizon 1.5T scanner, acquiring 
+
+T1 -weighted (1 × 1 × 1.3 mm resolution) and dMRI (64 directions; 2 mm isotropic voxels )82 .
+
+All T1 -weighted volumes were segmented into 85 neuroanatomical regions using FreeSurfer, 
+
+incorporating the Desikan -Killiany atlas (68 cortical regions) 55,56 , and 17 subcortical structures 57,83 .
+
+Grey and white matter masks were also extracted. Processing was performed with FreeSu rfer v5.1.0 
+
+for LBC1936, v5.3.0 for STRADL, and v6.0 for UKB. All dMRI volumes were processed using the FSL 
+
+toolkit, with cohort -specific pipelines reflecting differences in acquisition. LBC1936 (FSL v4.1.9) and 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+19 
+
+STRADL (FSL v5.0.9) data were processed loca lly, applying brain extraction 84 , and eddy current 
+
+correction using affine registration 85 . UKB data were processed by the UKB i maging team (FSL v6.0), 
+
+using a multi -shell pipeline with reverse phase encoding and distortion correction 81 . Diffusion 
+
+tensors were fitted to derive mean diffusivity (MD) and fractional anisotropy (FA) 86 . Whole -brain 
+
+probabilistic tractography was performed using BEDPOSTX/ProbtrackX 58 –60 , with tracking initiated 
+
+from white matter voxels 50 . Full processing details and quality control procedures are provided in 
+
+the Supplementary Information .
+
+## Network construction 
+
+Whole -brain structural networks were constructed using an automated pipeline harmonised across 
+
+cohorts. Using T1 -wei ghted and dMRI data, 85×85 connectivity matrices were constructed based on 
+
+the 85 neuroanatomical regions described above and streamline connections obtained from 
+
+probabilistic tractography 50 . Quality control and processing details are available in the 
+
+Supplementary Information . After exclusions, the STRADL dataset included 93 7 participants (age 
+
+range: 26 –84 years), LBC1936 included 603 (71 –74 years), and UKB included 18,642 (44.6 –81.7 
+
+years). An additional 18,642 UKB participants formed the h old -out replication sample. 
+
+For each participant, three network types were computed to capture different aspects of 
+
+connectivity. Streamline count (SC) represented the total uncorrected number of streamlines 
+
+connecting each pair of grey matter node s. FA and MD networks were computed as the mean values 
+
+of these water diffusion measures across all voxels along the streamlines connecting each node pair. 
+
+Additionally, streamline density (SD), a variant of SC, was computed by normalising streamline 
+
+counts by the volumes of the corresponding grey matter regions 87 . To address variability in network 
+
+density across cohorts – resulting from diffe rences in MRI field strength, acquisition parameters, and 
+
+dMRI processing – a cross -cohort thresholding procedure was applied. First, consistency -
+
+thresholding 63 was independently performed for each cohort, retaining the top 30% most consistent 
+
+connections based on findings from a large single -scanner study 50 . Second, the three cohort -specific 
+
+masks were intersected to identify edges consistently present acr oss all cohorts. This unified cross -
+
+cohort mask was then applied to all networks, ensuring comparability across cohorts .
+
+For each network, three global graph -theoretic metrics were calculated using weighted metrics 66 :
+
+mean edge weight (mean of all edge weights per participant), global network efficiency (a measure 
+
+of integration) and mean clustering coefficient (a measure of segregation). Although these metrics 
+
+are highly correlated (S upplementary Fig . 7)88 , we selected them for their widespread use in the 
+
+literature . Additionally, at the node level, weighted local efficiency 66 was computed to assess the 
+
+efficiency of information exchange within the immediate neighbo urhood of each node. Anatomical 
+
+network plots were generated with BrainNet Viewer 89 , and circular chord diagrams using the Circos 
+
+visualisation tool 90 .
+
+## Cognitive testing 
+
+Cognitive testing data were collected from cohort -specific test batteries, which covered both 
+
+crystallised and fluid abilities. UKB included ten tests 51,64 , STRADL five 52 , and LBC1936 thirteen tests 65 
+
+(details in Supplementary Information ). This approach allowed us to estimate a latent factor of g
+
+that is known to be highly consistent across samples despite having been extracted from different 
+
+tests 8,9 . For each cohort, a latent factor of g was estimated from these multi -domain cognitive tests 
+
+using confirmatory factor analysis in a structural equation modelling (SEM) framework. For STRADL, 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+20 
+
+a residual covariance was set between Mill Hill vocabulary and digit symbol substitution tests. For 
+
+LBC 1936 , within -domain residual covariances were added fo r four cognitive domains (visuospatial, 
+
+crystalised ability, verbal memory , and processing speed) in keeping with previous models 24 . We 
+
+used a full information maximum likelihood (FIML) estimator to handle participants with missing test 
+
+data. Model fits were ass essed using the following fit indices: Comparative Fit Index (CFI), Tucker 
+
+Lewis Index (TLI), Root Mean Square Error of Approximation (RMSEA), and the Root Mean Square 
+
+Residual (SRMR). 
+
+## Statistical analysis 
+
+To ensure g estimates were comparable across coh orts, correlations were calculated between g
+
+scores and g-related variables, e.g., age, years of education, and highest qualification. SEM was used 
+
+to estimate g and network associations with g via structural regression , adjusting for age, sex, and 
+
+site as required . Analyses were conducted across three network weightings (SC, FA, MD) and for 
+
+three scales: global network metrics, nodal metrics (85 regions), and edge weights (818 
+
+connections). SEM provided standardised βs, standard errors, confidence intervals, and p-values. 
+
+The separate network -g associations from each of the three cohorts were then used to compute a 
+
+three -way meta -analysis u sing the 'metafor' package in R 91 . The meta -analysis was calculated using 
+
+the βs and SEs obtained from structural regression using a random effects model with a restricted 
+
+maximum likelihood estimator . This provided a meta -analytic coefficient (i.e., average β), confidence 
+
+intervals and p-value. To evaluate cross -cohort agreement at the nodal and edge level, we computed 
+
+correlations (Pearson’s r) between each set of βs for each of the three possible cohort pairs. Node 
+
+plots were ordered by the β value average d across cerebral hemispheres for each of the 42 bilateral 
+
+grey matter regions ; the brainstem , as the only unpaired midline node , was included in all analys es
+
+but was not shown in node plots . Lateralisation of network -g associations was evaluated by 
+
+correl ating meta -analytic βs across hemispheres at the node level. For all significant meta -analysed 
+
+edge -g associations, we quantified intra - and inter -hemispheric and intra - and inter -lobar edges to 
+
+summarise the distribution of g-related connectivity. 
+
+Additionally , we assessed the relationship between the meta -analytic node -g associations and 
+
+previously repo rted g associations of cortical surface measures in the same cohorts 24 . Using 68 
+
+Desikan -Killiany regions 55 , correlations w ere computed between βs from node -g associations and 
+
+those from cortical surface measures (volume, area, thickness). Given LBC1936’s narrow age range 
+
+(71 –74 years), age moderation analyses were only conducted for UKB (45 –81 years) and STRADL 
+
+(26 –84 years) for global and nodal properties. 
+
+To assess the capacity to predict g from network edges, we calculated a composite score using 
+
+bivariate prediction. For all samples including the UKB hold -out sample, variables were standardised, 
+
+and a weighted sum was computed ( ∑ βk × edge k, where k=818) using the β coefficients from the 
+
+meta -analysis. 
+
+Statistical analyses were performed in R v4.2.2 using lavaan v0.6 -12 and metafor v3.8 -1. Significance 
+
+was determined at p < 0.05 and a ll p-values were corrected for multiple comparisons using false 
+
+discovery rate (FDR). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+21 
+
+# Acknowledgements 
+
+We thank all study participants, the respective study imaging team s, the local research teams and 
+
+radiographers who contributed to data collection. UK Biobank research was conducte d using the UK 
+
+Biobank Resource under approved project 10279 at The University of Edinburgh. Generation 
+
+Scotland/STRADL is supported by the Wellcome Trust [216767/Z/19/Z, 104036/Z/14/Z], CSO of the 
+
+Scottish Government Health Directorates [CZD/16/6], and th e Scottish Funding Council [HR03006]. 
+
+The LBC1936 is supported by the BBSRC and the ESRC [BB/W008793/1], Age UK [Disconnected Mind 
+
+project], the MRC [G0701120, G1001245, MR/M013111/1, MR/R024065/1], and the University of 
+
+Edinburgh. CRB, MEB, IJD, EMT -D and SRC were also supported by a NIH research grant 
+
+[R01AG054628]. ELSC is Junior Research Fellow in Applied AI supported by Lady Margeret Hall, 
+
+University of Oxford [EPT -AI ]. EMT -D is a member of the Population Research Center at the 
+
+University of Texas at A ustin, which is supported by NIH Center Grant [P2CHD042849 ]. SRC and JEM 
+
+are supported by SRC’s Sir Henry Dale Fellowship, jointly funded by the Wellcome Trust and the 
+
+Royal Society [221890/Z/20/Z]. JMW is part funded by the UK Dementia Research Institute ( UKDRI –
+
+4002 ; UKDRI – 4205) which receives its funding from the UK Medical Research Council, Alzheimer’s 
+
+Society and Alzheimer’s Research UK, and by the UK National Institutes of Health and Care Re search 
+
+Health Technology Assessment Panel (NIHR159009). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+22 
+
+# References 
+
+1. Deary, I. J., Strand, S., Smith, P. & Fernandes, C. Intelligence and educational achievement. 
+
+Intelligence 35 , 13 –21 (2007). 
+
+2. Christense n, G. T., Mortensen, E. L., Christensen, K. & Osler, M. Intelligence in young 
+
+adulthood and cause -specific mortality in the Danish Conscription Database – A cohort study 
+
+of 728,160 men. Intelligence 59 , 64 –71 (2016). 
+
+3. Calvin, C. M. et al. Childhood intel ligence in relation to major causes of death in 68 year 
+
+follow -up: prospective population study. BMJ 357 , (2017). 
+
+4. Davies, G. et al. Study of 300,486 individuals identifies 148 independent genetic loci 
+
+influencing general cognitive function. Nat. Commun. 2018 91 9, 1 –16 (2018). 
+
+5. Spearman, C. ‘General Intelligence’ Objectively Determined and Measured. Am. J. Psychol. 15 ,
+
+201 –293 (1904). 
+
+6. Carroll, J. B. Human Cognitive Abilities: A Survey of Factor -Analytic Studies. Hum. Cogn. Abil. 
+
+(1993) doi:10.1017/CBO9780511571312. 
+
+7. Deary, I. J., Penke, L. & Johnson, W. The neuroscience of human intelligence differences. 
+
+Nature Reviews Neuroscience (2 010) doi:10.1038/nrn2793. 
+
+8. Johnson, W., Bouchard, T. J., Krueger, R. F., McGue, M. & Gottesman, I. I. Just one g: 
+
+consistent results from three test batteries. Intelligence 32 , 95 –107 (2004). 
+
+9. Johnson, W., Nijenhuis, J. te & Bouchard, T. J. Still just 1 g: Consistent results from five test 
+
+batteries. Intelligence 36 , 81 –95 (2008). 
+
+10. Petersen, R. C. et al. Mild cognitive impairment: ten years later. Arch. Neurol. 66 , 1447 –1455 
+
+(2009). 
+
+11. Salthouse, T. Major Issues in Cognitive Aging. Major Issues Cogn . Aging 1–256 (2009) 
+
+doi:10.1093/ACPROF:OSO/9780195372151.001.0001. 
+
+12. Stern, Y. Cognitive reserve in ageing and Alzheimer’s disease. Lancet. Neurol. 11 , 1006 –1012 
+
+(2012). 
+
+13. Plassman, B. L., Williams, J. W., Burke, J. R., Holsinger, T. & Benjamin, S. Systematic review: 
+
+Factors associated with risk for and possible prevention of cognitive decline in later life. Ann. 
+
+Intern. Med. 153 , 182 –193 (2010). 
+
+14. Cabeza, R., Nyberg, L. & Park, D. C. Cognitive Neuroscience of Aging: Emergence of a New 
+
+Discipline. Cogn. Neurosci. Aging Link. Cogn. Cereb. aging (2004) 
+
+doi:10.1093/ACPROF:OSO/9780195156744.003.0001. 
+
+15. Raz, N. & Rodrigue, K. M. Differential aging of the brain: Patterns, cogni tive correlates and 
+
+modifiers. Neurosci. Biobehav. Rev. 30 , 730 –748 (2006). 
+
+16. Deary, I. J. Looking for ‘System Integrity’ in Cognitive Epidemiology. Gerontology 58 , 545 –553 
+
+(2012). 
+
+17. Pietschnig, J., Penke, L., Wicherts, J. M., Zeiler, M. & Voracek, M. Meta -analysis of 
+
+associations between human brain volume and intelligence differences: How strong are they 
+
+and what do they mean? Neurosci. Biobehav. Rev. 57 , 411 –432 (2015). 
+
+18. Gignac, G. E. & Bates, T. C. Brain volume and intelligence: The moderating ro le of intelligence 
+
+measurement quality. Intelligence 64 , 18 –29 (2017). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+23 
+
+19. Cox, S. R., Ritchie, S. J., Fawns -Ritchie, C., Tucker -Drob, E. M. & Deary, I. J. Structural brain 
+
+imaging correlates of general intelligence in UK Biobank. Intelligence 76 , 101376 (2019). 
+
+20. Jung, R. E. & Haier, R. J. The Parieto -Frontal Integration Theor y (P -FIT) of intelligence: 
+
+Converging neuroimaging evidence. Behav. Brain Sci. 30 , 135 –154 (2007). 
+
+21. Deary, I. J., Cox, S. R. & Hill, W. D. Genetic variation, brain, and intelligence differences. Mol. 
+
+Psychiatry 2021 271 27 , 335 –353 (2021). 
+
+22. Karama, S . et al. Childhood cognitive ability accounts for associations between cognitive 
+
+ability and brain cortical thickness in old age. Mol. Psychiatry 2013 195 19 , 555 –559 (2013). 
+
+23. Basten, U., Hilger, K. & Fiebach, C. J. Where smart brains are different: A q uantitative meta -
+
+analysis of functional and structural brain imaging studies on intelligence. Intelligence 51 , 10 –
+
+27 (2015). 
+
+24. Moodie, J. E. et al. General and specific patterns of cortical gene expression as spatial 
+
+correlates of complex cognitive funct ioning. Hum. Brain Mapp. 45 , e26641 (2024). 
+
+25. Holleran, L. et al. The relationship between white matter microstructure and general 
+
+cognitive ability in patients with schizophrenia and healthy participants in the ENIGMA 
+
+consortium. Am. J. Psychiatry 177 , 537 –547 (2020). 
+
+26. Stammen, C. et al. Robust associations between white matter microstructure and general 
+
+intelligence. Cereb. Cortex 33 , 6723 –6741 (2023). 
+
+27. Penke, L. et al. Brain white matter tract integrity as a neural foundation for general 
+
+intellig ence. Mol. Psychiatry 2012 1710 17 , 1026 –1030 (2012). 
+
+28. Booth, T. et al. Brain white matter tract integrity and cognitive abilities in community -
+
+dwelling older people: The Lothian Birth Cohort, 1936. Neuropsychology 27 , 595 (2013). 
+
+29. Puzo, C. et al. Independent effects of white matter hyperintensities on cognitive, 
+
+neuropsychiatric, and functional decline: A longitudinal investigation using the National 
+
+Alzheimer’s Coordinating Center Uniform Data Set. Alzheimer’s Res. Ther. 11 , 1 –13 (2019). 
+
+30. Ritc hie, S. J. et al. Brain volumetric changes and cognitive ageing during the eighth decade of 
+
+life. Hum. Brain Mapp. 36 , 4910 –4925 (2015). 
+
+31. Maniega, S. M. et al. Spatial gradient of microstructural changes in normal -appearing white 
+
+matter in tracts affect ed by white matter hyperintensities in older age. Front. Neurol. 10 ,
+
+462179 (2019). 
+
+32. Deary, I. J. et al. Brain Peak Width of Skeletonized Mean Diffusivity (PSMD) and Cognitive 
+
+Function in Later Life. Front. Psychiatry 10 , (2019). 
+
+33. Mollon, J. D., Taka hashi, C. & Danilova, M. V. What kind of network is the brain? Trends Cogn. 
+
+Sci. 26 , 312 –324 (2022). 
+
+34. Sporns, O., Tononi, G. & Kötter, R. The Human Connectome: A Structural Description of the 
+
+Human Brain. PLoS Comput. Biol. 1, e42 (2005). 
+
+35. Sotiropoul os, S. N. & Zalesky, A. Building connectomes using diffusion MRI: Why, how and 
+
+but. NMR in Biomedicine (2017) doi:10.1002/nbm.3752. 
+
+36. Kelly, C., Biswal, B. B., Craddock, R. C., Castellanos, F. X. & Milham, M. P. Characterizing 
+
+variation in the functional connectome: promise and pitfalls. Trends Cogn. Sci. 16 , 181 –188 
+
+(2012). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+24 
+
+37. Finn, E. S. et al. Functional connectome fingerprinting: identifying individuals using patterns 
+
+of brain connectivity. Nat. Neurosci. 2015 1811 18 , 1664 –1671 (2015). 
+
+38. Hilger, K ., Ekman, M., Fiebach, C. J. & Basten, U. Intelligence is associated with the modular 
+
+structure of intrinsic brain networks. Sci. Reports 2017 71 7, 1 –12 (2017). 
+
+39. Jiang, R. et al. Gender Differences in Connectome -based Predictions of Individualized 
+
+Intelligence Quotient and Sub -domain Scores. Cereb. Cortex 30 , 888 –900 (2020). 
+
+40. Yeung, H. W. et al. Predicting sex, age, general cognition and mental health with machine 
+
+learning on brain structural connectomes. Hum. Brain Mapp. 44 , 1913 –1933 (2023). 
+
+41. Wiseman, S. J. et al. Cognitive abilities, brain white matter hyperintensity volume, and 
+
+structural network connectivity in older age. Hum. Brain Mapp. 39 , 622 –632 (2018). 
+
+42. Madole, J. W. et al. Aging -Sensitive Networks Within the Human Structural Connectome Are 
+
+Implicated in Late -Life Cognitive Declines. Biol. Psychiatry 89 , 795 –806 (2021). 
+
+43. Jones, D. K., Knösche, T. R. & Turner, R. White matter integrity, fiber count, and other 
+
+fallacies: The do’s and don’ts of diffusion MRI. NeuroImage vol. 73 239 –254 (2013). 
+
+44. Van Den Heuvel, M. P. & Sporns, O. Rich -Club Organization of the Human Connectome. J. 
+
+Neurosci. 31 , 15775 –15786 (2011). 
+
+45. Yeh, C. H., Smith, R. E., Dhollander, T., Calamante, F. & Connelly, A. Connectomes from 
+
+streamlines tractography: Assigning streamlines to brain parcellations is not trivial but highly 
+
+consequential. Neuroimage 199 , 1 60 –171 (2019). 
+
+46. Fjell, A. M. et al. The relationship between diffusion tensor imaging and volumetry as 
+
+measures of white matter properties. Neuroimage 42 , 1654 –1668 (2008). 
+
+47. Beaulieu, C. The basis of anisotropic water diffusion in the nervous system - a technical 
+
+review. NMR Biomed. 15 , 435 –455 (2002). 
+
+48. Marek, S. et al. Reproducible brain -wide association studies require thousands of individuals. 
+
+Nat. 2022 6037902 603 , 654 –660 (2022). 
+
+49. Liu, S., Abdellaoui, A., Verweij, K. J. H. & van Wingen, G. A. Replicable brain –phenotype 
+
+associations require large -scale neuroimaging data. Nat. Hum. Behav. 2023 78 7, 1344 –1356 
+
+(2023). 
+
+50. Buchanan, C. R. et al. The effect of network thresholding and weighting on structural brain 
+
+networks in the UK Biobank. Neuroimage 211 , 116443 (2020). 
+
+51. Sudlow, C. et al. UK Biobank: An Open Access Resource for Identifying the Causes of a Wide 
+
+Range of Complex Diseases of Mid dle and Old Age. PLOS Med. 12 , e1001779 (2015). 
+
+52. Habota, T. et al. Cohort profile for the STratifying Resilience and Depression Longitudinally 
+
+(STRADL) study: A depression -focused investigation of Generation Scotland, using detailed 
+
+clinical, cognitive, and neuroimaging assessments. Wellcome Open Res. 2021 4185 4, 185 
+
+(2021). 
+
+53. Deary, I. J., Gow, A. J., Pattie, A. & Starr, J. M. Cohort profile: The lothian birth cohorts of 1921 
+
+and 1936. Int. J. Epidemiol. 41 , 1576 –1584 (2012). 
+
+54. Taylor, A. M., Patti e, A. & Deary, I. J. Cohort profile update: The Lothian birth cohorts of 1921 
+
+and 1936. Int. J. Epidemiol. 47 , 1042 -1042r (2018). 
+
+55. Desikan, R. S. et al. An automated labeling system for subdividing the human cerebral cortex 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+25 
+
+on MRI scans into gyral based regions of interest. Neuroimage 31 , 968 –980 (2006). 
+
+56. Fischl, B. et al. Automatically parcellating the human cerebral cortex. Cereb. Cortex 14 , 11 –22 
+
+(2004). 
+
+57. Fischl, B. et al. Whole brain segmentation: Automated labeling of neuroanatomical structure s
+
+in the human brain. Neuron 33 , 341 –355 (2002). 
+
+58. Behrens, T. E. J. et al. Characterization and propagation of uncertainty in diffusion -weighted 
+
+MR imaging. Magn. Reson. Med. 50 , 1077 –1088 (2003). 
+
+59. Behrens, T. E. J., Berg, H. J., Jbabdi, S., Rushwort h, M. F. S. & Woolrich, M. W. Probabilistic 
+
+diffusion tractography with multiple fibre orientations: What can we gain? Neuroimage 34 ,
+
+144 –155 (2007). 
+
+60. Jbabdi, S., Sotiropoulos, S. N., Savio, A. M., Graña, M. & Behrens, T. E. J. Model -based analysis 
+
+of m ultishell diffusion MR data for tractography: How to get over fitting problems. Magn. 
+
+Reson. Med. 68 , 1846 –1855 (2012). 
+
+61. Maier -Hein, K. H. et al. The challenge of mapping the human connectome based on diffusion 
+
+tractography. Nat. Commun. (2017) doi:10.1038/s41467 -017 -01285 -x. 
+
+62. Buchanan, C. R. et al. Comparison of structural MRI brain measures between 1.5 and 3 T: 
+
+Data from the Lothian Birth Coho rt 1936. Hum. Brain Mapp. 42 , 3905 –3921 (2021). 
+
+63. Roberts, J. A., Perry, A., Roberts, G., Mitchell, P. B. & Breakspear, M. Consistency -based 
+
+thresholding of the human connectome. Neuroimage 145 , 118 –129 (2017). 
+
+64. Fawns -Ritchie, C. & Deary, I. J. Reliab ility and validity of the UK Biobank cognitive tests. PLoS 
+
+One 15 , e0231627 (2020). 
+
+65. Deary, I. J. et al. The Lothian Birth Cohort 1936: A study to examine influences on cognitive 
+
+ageing from age 11 to age 70 and beyond. BMC Geriatr. (2007) doi:10.1186/1 471 -2318 -7-28. 
+
+66. Rubinov, M. & Sporns, O. Complex network measures of brain connectivity: uses and 
+
+interpretations. Neuroimage 52 , 1059 –1069 (2010). 
+
+67. Bullmore, E. & Sporns, O. The economy of brain network organization. Nat. Rev. Neurosci. 
+
+2012 135 13 , 336 –349 (2012). 
+
+68. Gazzaniga, M. S. Cerebral specialization and interhemispheric communication: Does the 
+
+corpus callosum enable the human condition? Brai n 123 , 1293 –1326 (2000). 
+
+69. Penke, L. et al. A general factor of brain white matter integrity predicts information 
+
+processing speed in healthy older people. J. Neurosci. 30 , 7569 –7574 (2010). 
+
+70. McHaffie, J. G., Stanford, T. R., Stein, B. E., Coizet, V. & Redgrave, P. Subcortical loops through 
+
+the basal ganglia. Trends Neurosci. 28 , 401 –407 (2005). 
+
+71. Haber, S. N. Corticostriatal circuitry. Dialogues Clin. Neurosci. 18 , 7 (2016). 
+
+72. Colom, R., Jung, R. E. & Haier, R. J. Distributed brain sites for the g -factor of intelligence. 
+
+Neuroimage 31 , 1359 –1365 (2006). 
+
+73. Colom, R., Karama, S., Jung, R. E. & Haier, R. J. Human intelligence and brain networks. 
+
+Dialogues Clin. Neurosci. 12 , 489 (2010). 
+
+74. Sullivan, E. V. & Pfefferbaum, A. Diffusion tensor imaging and aging. Brain 30 , 749 –761 
+
+(2006). 
+
+> .CC-BY 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 1, 2026. ;https://doi.org/10.64898/2026.03.30.715223 doi: bioRxiv preprint
+
+26 
+
+75. Westlye, L. T. et al. Life -Span Changes of the Human Brain White Matter: Diffusion Tensor 
+
+Imaging (DTI) and Volumetry. Cereb. Cortex 20 , 2055 –20 68 (2010). 
+
+76. Ryan, L. et al. Age -related differences in white matter integrity and cognitive function are 
+
+related to APOE status. Neuroimage 54 , 1565 –1577 (2011). 
+
+77. Sporns, O. The human connectome: Origins and challenges. Neuroimage (2013) 
+
+doi:10.1016/ j.neuroimage.2013.03.023. 
+
+78. Qi, S., Meesters, S., Nicolay, K., ter Haar Romeny, B. M. & Ossenblok, P. The influence of 
+
+construction methodology on structural brain network measures: A review. Journal of 
+
+Neuroscience Methods (2015) doi:10.1016/j.jneumeth. 2015.06.016. 
+
+79. Smith, B. H. et al. Generation Scotland: The Scottish Family Health Study; a new resource for 
+
+researching genes and heritability. BMC Med. Genet. 7, 1 –9 (2006). 
+
+80. Miller, K. L. et al. Multimodal population brain imaging in the UK Biobank prospective 
+
+epidemiological study. Nat. Neurosci. (2016) doi:10.1038/nn.4393. 
+
+81. Alfaro -Almagro, F. et al. Image processing and Quality Control for the first 10,000 brain 
+
+imaging datasets from UK Biobank. Neuroimage (2018) 
+
+doi:10.1016/j.neuroimage.2017.1 0.034. 
+
+82. Wardlaw, J. M. et al. Brain aging, cognition in youth and old age and vascular disease in the 
+
+Lothian Birth Cohort 1936: Rationale, design and methodology of the imaging protocol. Int. J. 
+
+Stroke 6, 547 –559 (2011). 
+
+83. Fischl, B. et al. Sequence -independent segmentation of magnetic resonance images. 
+
+Neuroimage 23 Suppl 1 , S69 -84 (2004). 
+
+84. Smith, S. M. Fast robust automated brain extraction. Hum. Brain Mapp. 17 , 143 –155 (2002). 
+
+85. Jenkinson, M. & Smith, S. A global optimisation method for robust affine registration of brain 
+
+images. Med. Image Anal. 5, 143 –156 (2001). 
+
+86. Pierpaoli, C. & Basser, P. J. Toward a quantitative assessment of diffusion anisotropy. Magn. 
+
+Reson. Med. 36 , 893 –906 (1996). 
+
+87. Hagmann, P. et al. Mapping the Structural Core of Human Cerebral Cortex. PLoS Biol. 6, 15 
+
+(2008). 
+
+88. Madole, J. W. et al. Strong intercorrelations among global graph -theoretic indices of 
+
+structural connectivity in the human brain. Neuroim age 275 , 120160 (2023). 
+
+89. Xia, M., Wang, J. & He, Y. BrainNet Viewer: A Network Visualization Tool for Human Brain 
+
+Connectomics. PLoS One (2013) doi:10.1371/journal.pone.0068910. 
+
+90. Krzywinski, M. et al. Circos: An information aesthetic for comparative genomics. Genome Res. 
+
+(2009) doi:10.1101/gr.092759.109. 
+
+91. Viechtbauer, W. Conducting meta -analyses in R with the metafor package. J. Stat. Softw. 36 ,
+
+(2010).

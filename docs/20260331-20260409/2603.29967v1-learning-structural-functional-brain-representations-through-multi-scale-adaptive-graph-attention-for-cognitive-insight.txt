@@ -1,0 +1,219 @@
+Title: Learning Structural-Functional Brain Representations through Multi-Scale Adaptive Graph Attention for Cognitive Insight
+
+URL Source: https://arxiv.org/pdf/2603.29967v1
+
+Published Time: Wed, 01 Apr 2026 01:25:50 GMT
+
+Number of Pages: 5
+
+Markdown Content:
+LEARNING STRUCTURAL–FUNCTIONAL BRAIN REPRESENTATIONS THROUGH MULTI–SCALE ADAPTIVE GRAPH ATTENTION FOR COGNITIVE INSIGHT 
+
+Badhan Mazumder ⋆† Sir-Lord Wiafe ⋆† Aline Kotoski ‡† Vince D. Calhoun ⋆† Dong Hye Ye ⋆† 
+
+> ⋆
+
+Department of Computer Science, Georgia State University 
+
+> ‡
+
+Neuroscience Institute, Georgia State University 
+
+> †
+
+Tri-Institutional Center for Translational Research in Neuroimaging and Data Science (TReNDS), Georgia State University, Georgia Institute of Technology, and Emory University 
+
+ABSTRACT 
+
+Understanding how brain structure and function interact is key to explaining intelligence yet modeling them jointly is challenging as the structural and functional connectome capture complementary aspects of organization. We in-troduced Multi-scale Adaptive Graph Net work ( MAGNet ), a Transformer-style graph neural network framework that adaptively learns structure-function interactions. MAGNet 
+
+leverages source-based morphometry from structural MRI to extract inter-regional morphological features and fuses them with functional network connectivity from resting-state fMRI. A hybrid graph integrates direct and indirect pathways, while local-global attention refines connectivity importance and a joint loss simultaneously enforces cross-modal coher-ence and optimizes the prediction objective end-to-end. On the ABCD dataset, MAGNet outperformed relevant baselines, demonstrating effective multimodal integration for advancing our understanding of cognitive function. 
+
+Index Terms — Structural-functional connectome, Graph neural network, Transformer, Cognition 
+
+1. INTRODUCTION 
+
+A core challenge in neuroscience is explaining how structural and functional connectivity jointly enable cognition. Among cognitive abilities, intelligence is a central, multi-dimensional construct encompassing fluid intelligence (problem-solving and logical reasoning in novel scenarios) [1, 2], crystal-lized intelligence (applying learned knowledge to resolve problems) [2], and total intelligence (overall cognitive per-formance) [2]. Because these dimensions arise from the interplay between anatomical architecture and dynamic ac-tivity [3], integrative analyses of structural and functional systems are essential. Source-based morphometry (SBM) from structural MRI (sMRI) maps gray-matter covariation, while functional net-work connectivity (FNC) from resting-state fMRI (rs-fMRI) captures temporal co-activation. Extracted via independent component analysis (ICA), both reside in a shared repre-sentational space that enables coherent multimodal fusion. Prior studies [3,4] showed that jointly modeling morphology-informed and functional features clarifies neural correlates of cognitive performance, motivating deeper study of their com-bined contribution to individual differences in intelligence. Graph neural networks (GNNs) have emerged for structure-function analysis [5–8], but typical approaches [9–11] em-ployed the structural connectome as a static adjacency, lim-iting dynamic learning of structure-function interplay. Other methods [9, 12] processed structure and function separately with late fusion, under-capturing cross-modal interactions. Many models [9, 10] further assumed uniform structure-function coupling and emphasize local aggregation [1, 9–11], overlooking global dependencies essential for functional net-work organization and neglecting indirect structural pathways (Detours [13]) that mediated interactions between networks without direct links. We addressed these gaps by constructing a hybrid brain graph that integrated SBM with FNC, incorporating uni-modal, cross-modal, and multi-scale detour connections to capture both direct and indirect structure-function in-teractions. Building on this, we proposed the MAGNet ,a Transformer-style GNN framework that first applied lo-cal edge-aware attention to selectively aggregate structure-function relations, then performed global self-attention to en-code long-range dependencies and improve structure-function alignment. To enforce biologically meaningful coupling, we introduced a joint loss that combined a structure-function consistency term with the downstream prediction objective. In summary, our major contributions are three-fold: 1. We constructed a hybrid brain graph with unimodal, cross-modal, and multi-scale detour connections for comprehensive connectivity representations. 2. We designed an adaptive GNN framework with local-global attention that prioritizes connectivity types, yielding neurologically grounded embeddings. 3. We formulated a joint objective combining structure-function consistency and prediction losses to improve alignment and end-to-end performance.              
+
+> arXiv:2603.29967v1 [cs.CV] 31 Mar 2026 (B) Multi-scale Adaptive Graph Network (MAGNet)
+> Scaled Dot-Product Attention
+> QV
+> Multi-head Self-attention
+> QKV
+> Add & Norm
+> Linear Linear
+> Node Features
+> Edge Attributes
+> Predicted FNC Ground FNC Joint Loss
+> GAP
+> FCL
+> Node Features Readout
+> Prediction
+> K
+> Local  Global
+> CMC MDC
+> SBM
+> 53 * 53
+> 53 * 53 53 * 53
+> 53 * 53
+> FNC
+> rs-fMRI sMRI
+> (A) Hybrid Brain Graph Construction
+> Connecting Cross-modal Nodes
+> SD#1 SD#2 SD#3 SD#4
+> NeuroMark ICA Pipeline
+> Hybrid Brain Graph
+> NeuroMark ICA Pipeline
+> Measuring SDs
+
+Fig. 1 . (A) After generating FNC from rs-fMRI and SBM from sMRI, a hybrid brain graph was constructed with unimodal, cross-modal (CMC) and multi-scale detour connections (MDC) measuring structural detour (SD). (B) MAGNet ’s flowchart: scaled dot-product attention enabled local message passing with node features and edge attributes, followed by multi-head self-attention for global refinement for l layers. Refined node embeddings then underwent global average pooling (GAP) and a fully connected layer (FCL) for intelligence score prediction optimized with a joint loss. 
+
+2. METHODOLOGY 
+
+Assume D = {(( M sn, M fn ), G tn)}Pn=1 , where P is the num-ber of subjects; for subject n, M s and M f denote structural and functional modalities, and Gt with t ∈ { t1, t 2, t 3} =
+
+{fluid , crystallized , total } are the intelligence scores. As in Fig. 1A, we build a hybrid brain graph linking M s =(O, A s, W s) and M f = ( O, A f , W f ), where O = {oϵ}ηϵ=1 
+
+(with η brain networks) and edges As = O × O, Af = O × O
+
+are weighted by W s, W f ∈ Rη×η . SBM is typically a group-wise P × η matrix (rows are η-dimensional loading vectors); we converted it to subject-specific SBM matrices 
+
+M sn ∈ Rη×η via vector transposition and multiplication, modeling gray matter volume (GMV) covariation to cap-ture structure-function interaction. From W s and W f , we formed k-nearest neighbor (k-NN) graphs by keeping the top 
+
+k edges per node to promote sparsity and relevance. Our objective is to obtain refined node embeddings that leverage structure-function interaction for improved intelligence score prediction at the graph level. 
+
+2.1. Hybrid Brain Graph Construction 
+
+The retained edges from W s and W f define the direct structural and functional pathways, which we considered as unimodal direct connections as : Cs = {Csi,j | (i, j ) ∈
+
+W s}, Cf = {Cfi,j | (i, j ) ∈ W f } where Cs and Cf de-note the sets of direct structural and functional connections, respectively, and each element Csi,j or Cfi,j defines the con-nection between node (network) i and j.To establish high-level associations between modalities, we constructed cross-modal connections (CMC) by quan-tifying the relationship between node connectivity across structural and functional modalities using cosine similarity as: Ccmc = {Ccmc i,j | Ccmc i,j = Esi ·Efj   
+
+> |Esi|| Efj|
+
+, (i, j ) ∈ W s ×W f }
+
+where Esi and Efj ∈ Rη represent the connectivity profiles of node i in W s and node j in W f , respectively. The term 
+
+Ccmc i,j ∈ R captures the degree of alignment between the connectivity profiles of the two nodes across both modalities. Each node was linked to its top γ(= 8) most similar nodes from the other modality, ensuring effective cross-modal links. Detour connectivity (DC) [13] quantifies alternative path-ways within the structural connectivity by identifying struc-tural detours (SD) defining indirect connections between functionally linked regions via Depth-First Search (DFS). However, standard DC relies on a fixed search radius r,limiting its ability to capture multi-scale structural interac-tions. In our work, we adapted and proposed multi-scale detour connectivity (MDC), which extends DC in SBM by incorporating short, medium, and long-range detour path-ways, ensuring a hierarchical representation of indirect struc-tural connections as follows: Cmdc = {Cmdc i,j (r) | (i, j ) ∈
+
+¯W s × ¯W f , r ∈ { r1, r 2, r 3}} , where ¯W ∗ defines the binary adjacency matrix form and Cmdc represents the set of MDC matrices, each corresponding to a different search radius 
+
+r ∈ { r1, r 2, r 3}, preserving connectivity for short ( r1 = 2 
+
+hop), medium ( r2 = 3 or 4 hop), and long ( r3 ≥ 5 hop) detours. Here, Cmdc i,j (r) = |DF S ( ¯W s, i, j, r )| if ¯W fi,j >
+
+0, otherwise 0. The function DF S ( ¯W s, i, j, r ) returns the number of valid detour paths between nodes i and j
+
+within the given radius r. By capturing indirect interactions across multiple scales, MDC offers a comprehensive view of structural dependencies shaping functional organization. The final hybrid graph ρ integrates all four edge types, with node features as per-network averages of structure-function strengths. 
+
+ρ = Cs ∪ Cf ∪ Ccmc ∪ Cmdc (1) 2.2. Multi-scale Adaptive Graph Network (MAGNet) 
+
+2.2.1. Local Edge-Aware Message Passing MAGNet updates node features through an edge-aware at-tention mechanism, where information is selectively aggre-gated from neighboring nodes based on both node features and the type of connection between them. This mechanism enables the model to differentiate among edges in the hybrid brain graph ρ (Eq. 1), which includes structural, Cs, Cf ,
+
+Ccmc , and multi-scale detour Cmdc connections. For a node 
+
+i, the updated representation was computed by attending to its neighbors j ∈ N (i) ⊆ ρ, where each neighbor contributed proportionally based on an attention weight derived from both node features and edge attributes indicating the source modal-ity of the connection. This allowed the model to learn atten-tion patterns specific to the type of structure-function relation-ship. The node update is defined as: 
+
+zi = X 
+
+> j∈N (i)⊆ρ
+
+exp 
+
+ Qi·Kρi,j 
+
+> √h
+
+P  
+
+> j∈N (i)⊆ρ
+
+exp 
+
+ Qi·Kρi,j 
+
+> √h
+
+ · Vρi,j , (2) where Qi defines the query vector derived from the features of node i, and Kρi,j and Vρi,j are the key and value vectors computed from the edge attributes eρi,j , which encode the con-nection type (e.g., FNC, SBM, CMC, MDC) from graph ρ. h
+
+is the hidden dimension, and N (i) ⊆ ρ denotes the neighbor-hood of node i defined by the edge structure of ρ.
+
+2.2.2. Global Self-Attention Refinement 
+
+After the initial edge-aware message passing, where each node aggregates information from its local neighbors to pro-duce an updated feature representation zi, the node features were assembled into a matrix form: X = [ z1, z2, ..., zη ]⊤ ∈
+
+Rη×h; where each row of X corresponds to the feature vec-tor of a node after local attention-based aggregation. To further refine these node embeddings, we applied a global self-attention mechanism, allowing all nodes to interact and capture long-range dependencies within the graph. This was obtained employing a multi-head self-attention mecha-nism followed by a residual connection and layer normaliza-tion: Xf inal = LN (X + M ultiHeadAttention (X , X , X )) ,
+
+where LN is layer normalization and X serves as the query, key, and value matrices, enabling global feature integration. 
+
+2.2.3. Joint Loss Optimization 
+
+To train MAGNet , we used a composite loss function com-bining a task-specific loss Ltask and a structure-function consistency loss Lsf . Ltask measures the difference be-tween the predicted graph-level intelligences scores ˆGt
+
+and the ground truth Gt using mean squared error (MSE) as: Ltask = 1
+
+> B
+
+PBb=1 || Gtb − ˆGtb|| 22, where B denotes the num-ber of graphs per batch. Since structure and function are neu-rologically intertwined, we enforced that structure-function alignment on the refined node embeddings by generating predicted FNC matrix: ˆW f = Xf inal X ⊤ 
+
+> f inal
+
+and measuring MSE with the ground-truth FNC matrix W f to define Lsf as follows: Lsf = 1 
+
+> η2
+
+∥ ˆW f − W f ∥2 
+
+> F
+
+, where ∥ · ∥ 2 
+
+> F
+
+defines the squared Frobenius norm. The proposed final joint loss term combined both objectives as follows: 
+
+Ljoint = λsf Lsf + λtask Ltask (3) where λsf and λtask balance the influence of the consistency term and the task term, respectively. 
+
+3. EXPERIMENTS AND RESULTS 3.1. Dataset and Preprocessing 
+
+The Adolescent Brain Cognitive Development (ABCD) study is a nationwide longitudinal cohort across 21 U.S. sites exam-ining determinants of physical and mental health from child-hood through adolescence [14]. We utilized baseline data from 7,656 children (Male: 3,951; Female: 3,705; ages 9–10) with rs-fMRI and sMRI, alongside fluid, crystallized, and to-tal composite intelligence assessments. Standard preprocessing (slice-timing correction, realign-ment, spatial normalization, smoothing) was applied to fMRI. The N euroM ark [15] ICA pipeline extracted 53 intrinsic connectivity networks (ICNs). Signals were bandpass fil-tered ( 0.01 –0.15 Hz), z-scored, and normalized dynamic time warping (nDTW) [16] was used to form 53 × 53 FNC matrices. Following previous work [16], the nDTW window was set by the low-frequency limit yielded 110 time points (TR = 0.8 s for ABCD). For sMRI, we performed fully automated constrained ICA with the N euroM ark [15] 53 -component template. SBM estimated subject-specific loadings, identifying spatially in-dependent structural patterns across the 53 areas [4]. Using GMV as input, we obtained independent components captur-ing co-varying structural patterns, and encoded each subject’s structural features as a 53 -dimensional vector. 
+
+3.2. Experimental Settings 
+
+To identify the optimal hyperparameters for MAGNet , we per-formed a grid search. Each configuration was assessed using 5-fold CV with an 80 : 20 split ratio. The best-performing model utilized 4 attention heads, a batch size of 16 , and a learning rate of 0.0001 . In all experiments, a hidden dimen-sion of 64 , a dropout rate of 0.2, and loss weightings of λsf =0.3 and λtask = 0 .7 were maintained while optimized using Adam for 50 epochs. Predictive performance was evaluated by measuring mean square error (MSE), mean absolute error (MAE) and correlation, with results reported as the mean ±
+
+standard deviation over five experimental runs. For k-NN and MDC, we evaluated multiple settings and selected k = 5 with 
+
+r ∈ { 2, 3, 5} for this study. 
+
+3.3. Comparison with State-Of-The-Art (SOTA) Methods 
+
+We benchmarked our framework against SOTA GNN-based approaches including: GAT [17], GT [18], SFDN [13], SFIN [1], Joint GCN [11], BrainNN [9], GCNN [10], and Joint DCCA [12], in the intelligence prediction task. As reported Table 1 . Comparison with SOTA baselines (mean ±standard deviation). Method Fluid Crystallized Composite MSE MAE Correlation MSE MAE Correlation MSE MAE Correlation GAT [17] 118.40 ±2.58 10.38 ±0.10 0.15 ±0.0145 62.57 ±3.31 7.63 ±0.17 0.11 ±0.0238 88.57 ±3.17 9.24 ±0.15 0.16 ±0.0238 GT [18] 116.02 ±5.56 9.64 ±0.26 0.24 ±0.0150 57.15 ±5.36 6.90 ±0.36 0.26 ±0.0229 85.74 ±6.06 8.40 ±0.29 0.26 ±0.0187 SFDN [13] 112.43 ±0.80 9.15 ±0.41 0.29 ±0.0162 53.69 ±0.81 6.04 ±0.42 0.34 ±0.0135 83.46 ±0.81 8.02 ±0.41 0.35 ±0.0148 SFIN [1] 113.23 ±0.51 9.66 ±0.15 0.30 ±0.0273 54.91 ±0.32 6.16 ±0.27 0.32 ±0.0226 84.21 ±0.45 8.11 ±0.65 0.33 ±0.0221 Joint GCN [11] 115.29 ±0.31 9.91 ±0.58 0.27 ±0.0186 55.81 ±0.53 6.32 ±0.50 0.28 ±0.0389 84.73 ±0.79 8.57 ±0.43 0.30 ±0.0263 BrainNN [9] 113.60 ±1.59 9.06 ±0.13 0.28 ±0.0158 56.19 ±1.38 6.45 ±0.21 0.30 ±0.0161 86.65 ±1.29 8.19 ±0.16 0.32 ±0.0191 GCNN [10] 116.16 ±1.54 9.56 ±0.18 0.25 ±0.0151 58.10 ±1.05 6.95 ±0.12 0.29 ±0.0197 87.78 ±1.38 8.38 ±0.59 0.31 ±0.0177 Joint DCCA [12] 116.90 ±1.83 9.21 ±0.86 0.26 ±0.0170 59.05 ±2.10 6.69 ±0.36 0.33 ±0.0232 84.97 ±2.34 8.60 ±0.51 0.34 ±0.0284          
+
+> MAGNet 109.61 ±0.45 8.30 ±0.15 0.33 ±0.0137 50.47 ±0.21 5.53 ±0.24 0.36 ±0.0194 81.35 ±0.28 7.14 ±0.31 0.38 ±0.0184
+
+Fig. 2 . Outcomes of the performed ablation experiments (mean ±standard deviation). 
+
+Fig. 3 . Top 3% significant brain network connections identi-fied for (a) fluid, (b) crystallized, and (c) total intelligence. in Table 1, our approach consistently outperformed all base-lines, achieving the lowest MSE and MAE and the highest correlation scores across all three intelligence scores. Com-pared to SFDN, the strongest baseline, our model achieved a 0.04 increase in fluid, 0.02 in crystallized, and 0.03 in to-tal intelligence correlation, highlighting the impact of MDC over fixed radius DC. Although SFIN showed competitive correlation scores, it fell behind in MSE and MAE due to its reliance on direct structure-function interactions, lacking multi-level connectivity modeling and overlooking indirect pathways. Vanilla methods such as GAT and GT were lim-ited by static attention mechanisms, whereas Joint GCN and GCNN failed to integrate MDC, affecting predictive accu-racy. Similarly, BrainNN and Joint DCCA processed struc-tural and functional modality separately, limiting proper mul-timodal alignment. 
+
+3.4. Ablation Experiments 
+
+As demonstrated in Fig. 2, our ablation study was designed to evaluate the contribution of key components of our frame-work. Removing MDC (w/o MDC) resulted in a decline of 0.10 , 0.07 , and 0.08 in correlation for fluid, crystallized, and total intelligence scores, respectively, highlighting the significance of indirect pathways in structure-function inter-play. Excluding CMC (w/o CMC) led to a decrease of 0.06 
+
+in correlation across all three intelligence scores, indicating their role in capturing multimodal interaction. Discarding structure-function consistency loss (w/o Lsf ) caused a huge increase in MSE and MAE, with correlation dropping by 0.12 
+
+(fluid), 0.09 (crystallized and total), demonstrating its impact in reinforcing structure-function alignment. Additionally, models trained on only FNC and only SBM+FNC showed inferior performance, demonstrating higher MSE, MAE and lower correlation, further confirming that MDC and CMC are essential for capturing cross-modal interaction in cognition. 
+
+3.5. Interpretation of Significant Networks 
+
+Fig. 3 illustrates the top 3% of structure-function connections identified by MAGNet ’s attention weights as most relevant to intelligence prediction, revealing distinct yet interconnected pathways critical for cognitive function. Fluid intelligence (Fig. 3a) was found predominantly linked to the subcortical (SC) and cognitive control (CC) networks, highlighting their role in executive function, adaptive reasoning and problem-solving [19]. Crystallized intelligence (Fig. 3b) was pri-marily associated with the CC and default mode (DM) net-works, facilitating knowledge retrieval and semantic integra-tion [3]. Total intelligence (Fig. 3c) exhibited concentrated but distributed connections involving key network across the CC, DM, visual, and sensorimotor networks, reflecting inte-grated processing across multiple systems relevant to overall cognitive function [3]. The recurring involvement of the CC network across all intelligence measures signified its role in higher-order cognition [2], validating our framework’s capa-bility to capture meaningful structure-function interactions. 
+
+4. CONCLUSIONS 
+
+We presented MAGNet , a Transformer-based adaptive GNN framework that employs a hybrid brain graph to capture structure-function interplay and learn multimodal represen-tations for prediction. Through multi-level connections and local-global attention with a joint loss, MAGNet captures cross-modal interactions and provide cognitive insights. Ex-perimental outcomes on the ABCD dataset confirmed its superiority over SOTA baselines. Future work will incorpo-rate dynamic FNC, longitudinal analyses of neurobehavioral change, and broader neurocognitive and clinical applications. 5. REFERENCES 
+
+[1] Jing Xia, Yi Hao Chan, Deepank Girish, and Ja-gath C Rajapakse, “Brain structure-function interac-tion network for fluid cognition prediction,” in ICASSP 2024-2024 IEEE International Conference on Acous-tics, Speech and Signal Processing (ICASSP) . IEEE, 2024, pp. 1706–1710. [2] Bishal Thapaliya, Esra Akbas, Jiayu Chen, Ram Sap-kota, Bhaskar Ray, Pranav Suresh, Vince D Calhoun, and Jingyu Liu, “Brain networks and intelligence: A graph neural network based approach to resting state fmri data,” Medical Image Analysis , vol. 101, pp. 103433, 2025. [3] Elvisha Dhamala, Keith W Jamison, Abhishek Jaywant, Sarah Dennis, and Amy Kuceyeski, “Distinct functional and structural connections predict crystallised and fluid cognition in healthy adults,” Human brain mapping , vol. 42, no. 10, pp. 3102–3118, 2021. [4] Aline Kotoski, Jingyu Liu, Robin Morris, and Vince Calhoun, “Inter-modality source coupling: a fully-automated whole-brain data-driven structure-function fingerprint shows replicable links to reading in a large-scale (n 8k) analysis,” IEEE Transactions on Biomedi-cal Engineering , 2024. [5] Badhan Mazumder, Aline Kotoski, Vince D. Calhoun, and Dong Hye Ye, “Neurokoop: Neural koopman fu-sion of structural–functional connectomes for identify-ing prenatal drug exposure in adolescents,” in 2025 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI) . IEEE, 2025, pp. 1–7. [6] Badhan Mazumder, Lei Wu, Vince D. Calhoun, and Dong Hye Ye, “Unified cross-modal attention-mixer based structural-functional connectomics fusion for neuropsychiatric disorder diagnosis,” in 2025 47th An-nual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) . IEEE, 2025, pp. 1–6. [7] Badhan Mazumder, Lei Wu, Vince D Calhoun, and Dong Hye Ye, “Genetics encoded joint embedding of multimodal connectomes with explainable graph neural network for schizophrenia classification,” in 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) . IEEE, 2025, pp. 1–5. [8] Badhan Mazumder, Lei Wu, Sir-Lord Wiafe, Vince D Calhoun, and Dong Hye Ye, “Kocobrain: Kuramoto-guided graph network for uncovering structure-function coupling in adolescent prenatal drug exposure,” arXiv preprint arXiv:2601.11018 , 2026. [9] Yanqiao Zhu, Hejie Cui, Lifang He, Lichao Sun, and Carl Yang, “Joint embedding of structural and func-tional brain networks with graph neural networks for mental illness diagnosis,” in 2022 44th Annual Interna-tional Conference of the IEEE Engineering in Medicine & Biology Society (EMBC) . IEEE, 2022, pp. 272–276. [10] Sanjay Ghosh, Eshan Bhargava, Chieh-Te Lin, and Srikantan S Nagarajan, “Graph convolutional learning of multimodal brain connectome data for schizophrenia classification,” in 2023 IEEE 20th International Sym-posium on Biomedical Imaging (ISBI) . IEEE, 2023, pp. 1–5. [11] Yueting Li, Qingyue Wei, Ehsan Adeli, Kilian M Pohl, and Qingyu Zhao, “Joint graph convolution for ana-lyzing brain structural and functional connectome,” in 
+
+International Conference on Medical Image Computing and Computer-Assisted Intervention . Springer, 2022, pp. 231–240. [12] Badhan Mazumder, Ayush Kanyal, Lei Wu, Vince D. Calhoun, and Dong Hye Ye, “Physics-guided multi-view graph neural network for schizophrenia clas-sification via structural-functional coupling,” in In-ternational Workshop on PRedictive Intelligence In MEdicine . Springer, 2024, pp. 61–73. [13] Ziquan Wei, Tingting Dan, Jiaqi Ding, Paul Laurienti, and Guorong Wu, “Representing functional connec-tivity with structural detour: A new perspective to de-cipher structure-function coupling mechanism,” in In-ternational Conference on Medical Image Computing and Computer-Assisted Intervention . Springer, 2024, pp. 367–377. [14] B Chaarani, S Hahn, N Allgaier, S Adise, MM Owens, AC Juliano, DK Yuan, H Loso, A Ivanciu, MD Albaugh, et al., “Baseline brain function in the preadolescents of the ABCD Study,” Nature neuroscience , vol. 24, no. 8, pp. 1176–1186, 2021. [15] Yuhui Du, Zening Fu, Jing Sui, Shuang Gao, Ying Xing, Dongdong Lin, Mustafa Salman, Anees Abrol, Md Ab-dur Rahaman, Jiayu Chen, et al., “NeuroMark: An au-tomated and adaptive ICA based pipeline to identify re-producible fMRI markers of brain disorders,” NeuroIm-age: Clinical , vol. 28, pp. 102375, 2020. [16] Sir-Lord Wiafe, Spencer Kinsey, Armin Iraji, Robyn Miller, and Vince D Calhoun, “Normalized dynamic time warping increases sensitivity in differentiating functional network connectivity in schizophrenia,” in 
+
+2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) .IEEE, 2025, pp. 1–4. [17] Petar Veliˇ ckovi´ c, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Lio, and Yoshua Ben-gio, “Graph attention networks,” arXiv preprint arXiv:1710.10903 , 2017. [18] Vijay Prakash Dwivedi and Xavier Bresson, “A gen-eralization of transformer networks to graphs,” arXiv preprint arXiv:2012.09699 , 2020. [19] Joseph DiGuiseppi and Prasanna Tadi, Neuroanatomy, Postcentral Gyrus , StatPearls Publishing, 2023.

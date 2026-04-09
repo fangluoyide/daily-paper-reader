@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-001.webp",
+      "caption": "Table 4: Ablation study of multi-modal combinations (%). † denotes ML-extracted features.",
+      "page": 7,
+      "index": 1,
+      "width": 522,
+      "height": 585
+    },
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-002.webp",
+      "caption": "Figure 1: The overall pipeline of CogPic dataset construction, consisting of four stages: 1). Strict inclusion screening; 2). Task introduction; 3). Synchronized multimodal data collection; and 4). Expert clinical assessment for diagnostic consensus.",
+      "page": 3,
+      "index": 2,
+      "width": 958,
+      "height": 388
+    },
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-003.webp",
+      "caption": "Table 1: Summary of representative datasets related to cognitive assessment.",
+      "page": 3,
+      "index": 3,
+      "width": 402,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-004.webp",
+      "caption": "Figure 3: Interpretability analysis via SHAP global feature attribution. The beeswarm plot ranks the top 20 most influential cross-modal handcrafted features for AD prediction using the optimal XGBoost classifier.",
+      "page": 8,
+      "index": 4,
+      "width": 648,
+      "height": 565
+    },
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-005.webp",
+      "caption": "Figure 2: Characteristics of the CogPic dataset: (a) demographic distributions across cognitive cohorts, gender, and education levels; (b) task-specific mean response durations; and (c) high-frequency linguistic tokens visualized via word cloud.",
+      "page": 4,
+      "index": 5,
+      "width": 817,
+      "height": 213
+    },
+    {
+      "url": "assets/figures/arxiv/2604.01626v1/fig-006.webp",
+      "caption": "Table 3: Performance comparison of different models across single modalities (%). † denotes ML-extracted features.",
+      "page": 5,
+      "index": 6,
+      "width": 398,
+      "height": 684
+    }
+  ]
+}

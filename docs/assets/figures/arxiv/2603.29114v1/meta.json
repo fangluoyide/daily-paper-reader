@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.29114v1/fig-001.webp",
+      "caption": "Figure 3: Top Confirmed Human aspect Predictor",
+      "page": 6,
+      "index": 1,
+      "width": 506,
+      "height": 656
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29114v1/fig-002.webp",
+      "caption": "Figure 5: Key directional SHAP findings linked to interview themes",
+      "page": 7,
+      "index": 2,
+      "width": 506,
+      "height": 285
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29114v1/fig-003.webp",
+      "caption": "Table 1: Taxonomy of Human Aspects for Aged-Care RE: predictor categories (X: Human aspects) and outcome themes (y: Perceived requirements importance).",
+      "page": 4,
+      "index": 3,
+      "width": 506,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2603.29114v1/fig-004.webp",
+      "caption": "Figure 2: Human aspects VS perceptions heatmap",
+      "page": 5,
+      "index": 4,
+      "width": 506,
+      "height": 293
+    }
+  ]
+}

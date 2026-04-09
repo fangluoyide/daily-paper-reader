@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-001.webp",
+      "caption": "Figure 1. Study design and assessment protocol. As part of this feasibility study, participants self-selected in one of three conditions: a choir-based multi-domain intervention (MultiMusic) group, an active control group (engaged in non-musical activities), or a passive control group (no structured activity). Assessments were conducted at baseline (T0) and after 9 months (T1), covering cognitive, audiometric, and neurophysiological domains.",
+      "page": 11,
+      "index": 1,
+      "width": 852,
+      "height": 831
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-002.webp",
+      "caption": "Table 2b. Distribution of activities among participants",
+      "page": 15,
+      "index": 2,
+      "width": 1067,
+      "height": 477
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-003.webp",
+      "caption": "Figure 2. Baseline group comparisons (T0) on cognitive, musical, and neurophysiological measures that survived Benjamini– Hochberg FDR correction. Violin plots display the distribution, median, and interquartile range for each group (Choir, Active Control, Passive Control). These results highlight baseline disadvantages in the Choir group across cognitive reserve, global cognition, musical rhythm aptitude, and specific electrophysiological latency indices.",
+      "page": 30,
+      "index": 3,
+      "width": 577,
+      "height": 793
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-004.webp",
+      "caption": "Figure 4. Multidimensional frailty (Selfy-MPI) at baseline and follow-up by study group. Violin plots show the distribution of Selfy-MPI scores at T0 and T1 in the Choir, Active control, and Passive control groups. Individual participant trajectories are overlaid as connecting lines between repeated measurements, and red points with error bars represent group means ± SE. Exploratory within-group contrasts showed a significant reduction in frailty in the Choir group (Δ=−0.036, p = .049), with no significant change in the Active control (p = .682) or Passive control groups (p = .124).",
+      "page": 34,
+      "index": 4,
+      "width": 804,
+      "height": 392
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-005.webp",
+      "caption": "Table 3. Post- hoc Group contrasts N2-P3 IPL, MIQ, Selfy-MPI, and Flourishing",
+      "page": 34,
+      "index": 5,
+      "width": 931,
+      "height": 199
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-006.webp",
+      "caption": "Figure 3. Longitudinal changes in N2–P3 inter-peak latency (IPL). (A) Spaghetti plot of individual fitted values derived from the linear mixed-effects model. Thin grey lines represent subject-specific trajectories, while colored points and lines indicate estimated marginal means (± SE) at T0 and T1. A significant reduction in N2–P3 IPL was observed only in the Choir group (p < .001), with no longitudinal change in the active or passive control groups. (B) Group-averaged auditory evoked potentials (AEPs) illustrating the N2–P3 IPL by group and hemisphere. The shorter IPL at T1 reflects a faster N2→P3 transition in the Choir group.",
+      "page": 33,
+      "index": 6,
+      "width": 943,
+      "height": 410
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-007.webp",
+      "caption": "Figure 5a. Selfy-MPI scores at baseline (T0) and post-intervention (T1) by activity engagement level. Violins depict score distributions, black dots indicate individual participants, grey lines connect repeated measures, and red points with error bars represent estimated means ± standard error. Post hoc comparisons showed a significant decrease in the High engagement group, whereas no significant change emerged in the Low engagement group.",
+      "page": 35,
+      "index": 7,
+      "width": 767,
+      "height": 621
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-008.webp",
+      "caption": "Table 1b. General sample descriptives for cognitive functioning (MoCa), cognitive reserve (CRI-q) and fluid intelligence (MIQ) at T0",
+      "page": 13,
+      "index": 8,
+      "width": 669,
+      "height": 185
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-03-30-715236-v1/fig-009.webp",
+      "caption": "Table 4. Post- hoc Engagement contrasts N2-P3 IPL, MIQ, Selfy-MPI, and Flourishing",
+      "page": 36,
+      "index": 9,
+      "width": 933,
+      "height": 256
+    }
+  ]
+}
