@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.05249v1/fig-001.webp",
+      "caption": "Figure 1: A collage of collected low-fidelity prototypes from our co-design workshops",
+      "page": 4,
+      "index": 1,
+      "width": 686,
+      "height": 370
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05249v1/fig-002.webp",
+      "caption": "Figure 2: Speculative design of a modular therapeutic gaming platform: (a) conceptual flow showing how identified themes inform the design, (b) therapist interface for creating customized activity sessions, (c) child-facing gameplay interface, and (d) caregiver interface for home use.",
+      "page": 5,
+      "index": 2,
+      "width": 865,
+      "height": 877
+    }
+  ]
+}
