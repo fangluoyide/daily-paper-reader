@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-001.webp",
+      "caption": "Figure 2. Behavioural, physiological, and fNIRS data collected during each trial. (A) Trajectories of the self, the other predator and the prey during an example Hunt trial at each point in time, overlaid onto a top-down schematic of the Minecraft world. Behavioural metrics include the Euclidean distance between self and the prey, the Euclidean distance between the self and the other predator, the heading direction from self to the prey, and the heading direction from the self to the other predator. See Movie1 and Movie2 for plots of the trajectory of the participants over time in hunt and a follow trial. (B-D) Behavioural (B),",
+      "page": 26,
+      "index": 1,
+      "width": 619,
+      "height": 1077
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-002.webp",
+      "caption": "Figure 3. Hunting success (quick capture) is associated with greater synchronisation of the speed of the predators.",
+      "page": 30,
+      "index": 2,
+      "width": 429,
+      "height": 494
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-003.webp",
+      "caption": "Table 2. Model predicting the time taken to catch the prey during Hunt trials based on behavioural and physiological metrics. P-values for the significant associations are highlighted in bold. __________________________________________________________________________________",
+      "page": 29,
+      "index": 3,
+      "width": 896,
+      "height": 679
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-004.webp",
+      "caption": "Figure 5. Interpersonal Neural Synchrony (INS) in Hunt > Chance and Follow > Chance contrasts. (A-B) Brain maps show anatomical locations of channels with significantly greater INS (red) during Hunt and Follow trials vs Chance, across three frequency bands: low (0.02–0.03 Hz), middle (0.03–0.1 Hz), and high (0.1–0.2 Hz). Comparisons to chance reveal greater synchrony in both Hunt and Follow trials across the bilateral medial (frontopolar) and lateral PFC in all frequency bands. There were no significant findings for the Hunt > Follow or Follow > Hunt contrasts. Significant channels are highlighted in red. _________________________________________________________________________________",
+      "page": 32,
+      "index": 4,
+      "width": 888,
+      "height": 431
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-005.webp",
+      "caption": "Figure 1. Minecraft world and experimental design.",
+      "page": 12,
+      "index": 5,
+      "width": 888,
+      "height": 1310
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-006.webp",
+      "caption": "Table 3. Channels with uncorrected significant correlations with spatial metrics. Only significant results (p < .05) are shown. Numbers indicate channel numbers (15 = channel 15). Direction is the egocentric direction, collapsed over left and right where 0 = ahead and 1= behind. Distance is the Euclidean distance where 0 = contact with prey or other predator and 1= maximum distance away. Analysis from all trials combibned, except for column marked * in which the effect is specific to Follow trials indicates significance in Follow trials only. There were no significant findings for Hunt trials alone. __________________________________________________________________________________",
+      "page": 31,
+      "index": 6,
+      "width": 883,
+      "height": 240
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716331-v1/fig-007.webp",
+      "caption": "Table 1. fNIRS channel locations.",
+      "page": 16,
+      "index": 7,
+      "width": 856,
+      "height": 898
+    }
+  ]
+}

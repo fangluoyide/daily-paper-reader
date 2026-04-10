@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716497-v1/fig-001.webp",
+      "caption": "Figure 1. Overview of the analytical workflow. (A) A total of 4,882 local and global brain features were extracted from multimodal neuroimaging data (sMRI, DTI, RSI, and rsfMRI). Longitudinal associations between these features and both the g factor and 112 exposome variables were subsequently examined. (B) Shared brain patterns jointly associated with the g factor and the exposome were first identified. Longitudinal mediation analyses were then conducted to determine which brain changes mediated the effects of exposome on g development. The resulting brain mediation patterns were further characterized through exploratory factor analysis to identify distinct factors underlying brain-mediated effects. A summary pattern was also derived to provide an integrated representation of the overall mediation effects.",
+      "page": 4,
+      "index": 1,
+      "width": 816,
+      "height": 454
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716497-v1/fig-002.webp",
+      "caption": "Figure 2. Longitudinal brain association patterns for g development and the exposome. (A) Brain association pattern for g development. Color intensity reflects the magnitude of association, normalized to a unit sum to facilitate cross-region comparison. (B) Domain-averaged brain association patterns for the six exposome domains. Color intensity reflects the magnitude of association, normalized to a unit sum within each domain to facilitate cross-region comparison. (C) Lobe-level composition of brain association patterns for g development and the six exposome domains, expressed as each lobe's proportional share of the summed association strength within each pattern.",
+      "page": 7,
+      "index": 2,
+      "width": 816,
+      "height": 573
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716497-v1/fig-003.webp",
+      "caption": "Figure 3. Shared longitudinal brain association patterns between g development and the exposome. (A) Brain pattern similarity between the longitudinal association patterns of g development and each of the 112 exposome measures, grouped by domain. The number above each domain indicates the domain-averaged similarity value. Bold labels denote the ten exposome measures with the highest similarity to the g association pattern: area deprivation index (NE03), parental stress-related perseveration (FE13), marital status (FE04), parental DSM-5 hyperactivity (FE29), parental attention problems (FE18), sleep arousal (LE18), parental anxiety/depression (FE14), noise exposure (NE08), mental health and substance use service access (SE08), and parental DSM-5 inattention (FE28). ED, FE, LE, NE, SE, and SU denote early development, family environment, life events, neighborhood environment, school environment, and substance use, respectively. (B) Domain-averaged shared brain association patterns between g development and each exposome domain. Color intensity reflects the magnitude of shared association, normalized to a unit sum within each domain to facilitate cross-region comparison.",
+      "page": 8,
+      "index": 3,
+      "width": 816,
+      "height": 395
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716497-v1/fig-004.webp",
+      "caption": "Figure 4. Brain mediation patterns linking exposome measures to g development. (A) Summary brain mediation pattern aggregated across all 112 exposome measures. Color intensity reflects the total number of significant mediation effects across exposome measures within each brain region. (B) Factor-specific consensus brain mediation patterns derived from EFA of domain-level mediation patterns. Each panel corresponds to one latent factor, with the number of significant brain regions indicated in parentheses. Only brain regions showing significant mediation effects across all exposome domains within a given factor were retained, and color intensity reflects the average mediation count across those domains. Exposome icons above each panel identify the exposome domains contributing to that brain pattern.",
+      "page": 9,
+      "index": 4,
+      "width": 816,
+      "height": 367
+    }
+  ]
+}

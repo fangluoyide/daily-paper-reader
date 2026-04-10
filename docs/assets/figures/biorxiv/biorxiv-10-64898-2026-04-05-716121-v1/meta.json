@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716121-v1/fig-001.webp",
+      "caption": "Fig 1. A. Diffusion Tensor Imaging along the Perivascular Space (DTI-ALPS) for Glymphatic System Efficiency Assessment. The left image is a minimal intensity projection of the",
+      "page": 23,
+      "index": 1,
+      "width": 976,
+      "height": 968
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716121-v1/fig-002.webp",
+      "caption": "Fig 2. A. Structural equation model used to assess the relationship between Age, mLV volume, and ALPS index. B. Scatter plot depicting the relationship between lymphatic latent variable and processing speed scores. C. Structural equation model used to assess the relationship between Age, Lymphatic Latent Variable, and Processing Speed.",
+      "page": 25,
+      "index": 2,
+      "width": 976,
+      "height": 976
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-05-716121-v1/fig-003.webp",
+      "caption": "Table 1: Phenotypic characteristics of mLV",
+      "page": 26,
+      "index": 3,
+      "width": 979,
+      "height": 239
+    }
+  ]
+}

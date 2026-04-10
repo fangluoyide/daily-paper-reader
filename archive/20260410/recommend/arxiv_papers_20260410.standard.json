@@ -1,0 +1,817 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-10T20:08:49.820617+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 10,
+    "deep_cap": 7,
+    "deep_selected": 7,
+    "quick_candidates": 38,
+    "quick_skim_target": 12,
+    "quick_selected": 12
+  },
+  "deep_dive": [
+    {
+      "id": "2604.02642v1",
+      "source": "arxiv",
+      "title": "Engagement Is Not Transfer: A Withdrawal Study of a Consumer Social Robot with Autistic Children at Home",
+      "abstract": "This study examines whether engagement with social robots translates into improved human-directed social abilities in autistic children. We conducted an 8-week home-based randomized controlled trial with 40 children aged 5--9 using a commercial social robot (Qrobot). Families were assigned to either continued robot access or robot withdrawal. Quantitative measures and caregiver interviews assessed anxiety, social motivation, emotion inference, and empathy. Results showed that continued robot access significantly reduced anxiety, confirming strong affective benefits and high usability. However, children in the withdrawal group demonstrated greater improvements in social motivation, emotion understanding, and empathic behaviors toward caregivers and peers. Qualitative findings revealed a \"handoff versus siloing\" pattern: withdrawal promoted reorientation toward human social interaction, while continued access concentrated engagement within the child--robot dyad and limited transfer to real-world contexts. We interpret these results as evidence that high engagement does not guarantee social transfer.",
+      "authors": [
+        "Yibo Meng",
+        "Guangrui Fan",
+        "Bingyi Liu",
+        "Yingfangzhong Sun",
+        "Ruiqi Chen",
+        "Haipeng Mi"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-03T02:11:16+00:00",
+      "link": "https://arxiv.org/pdf/2604.02642v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "social abilities and motivation in children aged 5-9",
+      "llm_evidence_cn": "5-9岁儿童的社会能力与社交动机",
+      "llm_evidence": "5-9岁儿童的社会能力与社交动机",
+      "canonical_evidence": "5-9岁儿童的社会能力与社交动机",
+      "llm_tldr_en": "Evaluates how social robots impact social motivation and emotion understanding in children.",
+      "llm_tldr_cn": "评估了社交机器人如何影响儿童的社交动机和情绪理解能力。",
+      "llm_tldr": "评估了社交机器人如何影响儿童的社交动机和情绪理解能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2025-12-19-695378-v2",
+      "source": "biorxiv",
+      "title": "Charting the cognitive development of children using adult 'polygenic g scores'",
+      "abstract": "The most highly predictive polygenic scores in the behavioural sciences are for cognitive traits, especially general cognitive ability (g) and educational attainment. We combined polygenic scores derived from genome-wide association studies of adult g and educational attainment to create adult  polygenic g scores which we used to chart the course of cognitive development of 10,000 white British children from toddlerhood through early adulthood.\n\nWe integrated cross-sectional regression, latent growth curve, and confirmatory factor analysis to systematically characterise cognitive development. Polygenic g score showed minimal prediction in toddlerhood, modest prediction in childhood, and substantial prediction by early adulthood accounting for 12% of the variance. Higher polygenic g scores were associated with faster cognitive growth in latent growth models. Prediction was strongest for a cross-time latent cognitive factor (15%) capturing cognitive ability across development. By integrating polygenic prediction directly into a structural equation model framework, we provided a theoretical upper bound of genetic influences on g under minimal measurement error. We also examined the polygenic g scores prediction of educational achievement, behaviour problems, and anthropometric outcomes and found similar developmental increases in prediction for educational achievement.\n\nTogether, our findings demonstrate that adult polygenic g scores can be a useful tool for charting the development of cognitive traits.",
+      "authors": [
+        "Lin, Y.",
+        "Plomin, R."
+      ],
+      "primary_category": "genetics",
+      "categories": [
+        "genetics"
+      ],
+      "published": "2026-04-05T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2025.12.19.695378v2.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "charting cognitive development and general cognitive ability (g)",
+      "llm_evidence_cn": "描绘认知发展和一般认知能力 (g)",
+      "llm_evidence": "描绘认知发展和一般认知能力 (g)",
+      "canonical_evidence": "描绘认知发展和一般认知能力 (g)",
+      "llm_tldr_en": "Uses polygenic scores to track the development of general cognitive ability from childhood to adulthood.",
+      "llm_tldr_cn": "利用多基因评分追踪从童年到成年的一般认知能力发展。",
+      "llm_tldr": "利用多基因评分追踪从童年到成年的一般认知能力发展。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive ability",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-02-716060-v1",
+      "source": "biorxiv",
+      "title": "Cerebellar function remains resilient under increased task demands in healthy adults up to 80 years but it is task-specific and independent of cerebellar structure",
+      "abstract": "Healthy aging is associated with progressive structural brain decline, yet the loss of functional abilities varies across individuals, which has been linked to reserve mechanisms. Within the framework of complex systems theory, reserve is thought to manifest as resilience when the system is challenged by stressors, such as increases in task difficulty. The cerebellum has been proposed as a potential source of motor reserve, but empirical evidence linking cerebellar structure, function, and resilience remains limited. We conducted a cross-sectional study including 50 young, 80 older, and 30 older-old adults to examine resilience to increasing task demands across cerebellar-specific and general outcomes. Participants completed three motor tasks (pure elbow motion, motor timing, postural stability) and two cognitive tasks (mental rotation, spatial working memory). Structural MRI was acquired to quantify cerebellar grey matter volume within functionally defined regions.\n\nCerebellar-specific motor measures (anticipatory muscle activation and timing variability) were preserved across age groups and remained resilient under increased task demands, including in adults over 80 years of age. In contrast, general sensorimotor performance (postural sway) declined with age and showed reduced resilience. Within the cognitive domain, both cerebellar-specific and general measures showed comparable age-related declines and reduced resilience. Resilience measures were not correlated across tasks, indicating that resilience is task- and domain-specific. Furthermore, cerebellar grey matter volume did not predict resilience in motor or cognitive outcomes.\n\nThese findings support the cerebellar motor reserve hypothesis, suggesting that cerebellar-dependent motor processes remain resilient despite age-related structural decline. However, resilience appears to be function-specific rather than a generalized individual trait. Overall, the results highlight dissociations between brain structure, function, and resilience, underscoring the selective contribution of the cerebellum to motor preservation in healthy aging.",
+      "authors": [
+        "Matthijs, A.",
+        "de Witte, A.",
+        "Mantini, D.",
+        "Orban de Xivry, J.-J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-05T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.02.716060v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "resilience to task demands in healthy adults up to 80 years",
+      "llm_evidence_cn": "80岁以下健康成人在任务需求下的认知韧性",
+      "llm_evidence": "80岁以下健康成人在任务需求下的认知韧性",
+      "canonical_evidence": "80岁以下健康成人在任务需求下的认知韧性",
+      "llm_tldr_en": "Investigates how cerebellar function and resilience maintain cognitive abilities in healthy aging adults.",
+      "llm_tldr_cn": "研究了健康老年人中小脑功能与韧性如何维持认知能力。",
+      "llm_tldr": "研究了健康老年人中小脑功能与韧性如何维持认知能力。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-02-716239-v1",
+      "source": "biorxiv",
+      "title": "A supervised digital game intervention supports language and communication in young children.",
+      "abstract": "The role of digital media in early childhood development remains highly debated, particularly regarding its impact on language acquisition. While excessive or unsupervised screen exposure has been linked to poorer outcomes, less is known about whether structured and interactive uses of technology can support learning. Building on previous research, we evaluated a brief, educator-supervised tablet-based intervention in 246 children aged 2-5 years from low- to middle-socioeconomic backgrounds attending public early education centers. Using a pre-post design with matched study and control groups, children completed 4-8 short training sessions (15 minutes each) involving interactive word-image associations spanning multiple linguistic categories. Preschoolers additionally engaged in prompted vocalization.\n\nAcross age groups (2-3, 3-4, and 4-5 years), children in the intervention showed greater gains in language comprehension than controls, including receptive language in toddlers ({beta} = 0.49, p = 0.009), vocabulary and morphology in younger preschoolers ({beta} = 0.59-0.68, all p < 0.05), and grammar comprehension in older preschoolers ({beta} = 0.30, p = 0.038). These effects were consistent after accounting for child and parental characteristics.\n\nTogether, these findings suggest that the developmental impact of digital media depends less on exposure itself than on how it is used. When embedded in structured, socially guided interactions, even brief tablet-based activities may support early language development",
+      "authors": [
+        "Pena, M.",
+        "Dehaene-Lambertz, G.",
+        "Pino, E.",
+        "Pittaluga, E.",
+        "Cortes, P.",
+        "de la Riva, C.",
+        "Palacios, O.",
+        "Guevara, P."
+      ],
+      "primary_category": "developmental biology",
+      "categories": [
+        "developmental biology"
+      ],
+      "published": "2026-04-04T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.02.716239v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "digital game intervention for communication in children aged 2-5",
+      "llm_evidence_cn": "针对2-5岁幼儿语言与沟通能力的数字游戏干预",
+      "llm_evidence": "针对2-5岁幼儿语言与沟通能力的数字游戏干预",
+      "canonical_evidence": "针对2-5岁幼儿语言与沟通能力的数字游戏干预",
+      "llm_tldr_en": "Evaluates a supervised digital game intervention to support language and communication in preschoolers.",
+      "llm_tldr_cn": "评估了受监督的数字游戏干预对促进2-5岁幼儿语言和沟通能力的作用。",
+      "llm_tldr": "评估了受监督的数字游戏干预对促进2-5岁幼儿语言和沟通能力的作用。",
+      "llm_tags": [
+        "query:q2"
+      ],
+      "matched_query_tag": "query:q2",
+      "matched_query_text": "social skills development in preschoolers",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-05-716331-v1",
+      "source": "biorxiv",
+      "title": "Prefrontal brain-to-brain synchrony during human group hunting: Evidence from fNIRS hyperscanning",
+      "abstract": "Orca, wolves, chimpanzees and humans share a similarly impressive capacity for group hunting, where individuals coordinate behaviour together to capture prey. Studying hunting behaviours has important implications for understanding how behaviour in group contexts may be indicative of cognitive decline. Despite growing interest in brain circuits for prey capture, the brain regions involved in tracking prey during a hunt and the behaviours in group hunt linked to success remain unclear. Here we combined functional near infrared spectroscopy (fNIRS) and a virtual minecraft world to examine behaviour, brain dynamics and brain synchrony involved in group hunting behaviour. We focused on the prefrontal cortex (PFC) due to its known role in planning and social coordination and recorded from pairs of individuals as they either cooperated to hunt another person (prey) or simply followed another person. Hunters were more successful if they managed to keep a smaller distance to the prey and moved at speeds that were more synchronised with their co-predator. At high-range frequencies for fNIRS (0.1-0.2Hz), we found greater brain-to-brain synchrony in lateral and medial (frontopolar) PFC regions during hunting compared with chance levels. Together, these findings provide insights into what behaviours and brain dynamics associated with successful group hunting.",
+      "authors": [
+        "Yavuz, E.",
+        "Xu, C.",
+        "Liu, W.",
+        "Slinn, C.",
+        "Mitchell, A.",
+        "Ali, J.",
+        "Bloom, N.",
+        "Khatun, N.",
+        "Kirk, P.",
+        "Zisch, F.",
+        "Tachtsidis, I.",
+        "Pinti, P.",
+        "Ronca, F.",
+        "Patai, Z.",
+        "Burgess, P.",
+        "Hamilton, A.",
+        "Spiers, H."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.05.716331v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "virtual minecraft world and cognitive decline indicators",
+      "llm_evidence_cn": "我的世界虚拟世界与认知下降指标",
+      "llm_evidence": "我的世界虚拟世界与认知下降指标",
+      "canonical_evidence": "我的世界虚拟世界与认知下降指标",
+      "llm_tldr_en": "Uses a virtual game world to study brain synchrony during group tasks as an indicator of cognitive health.",
+      "llm_tldr_cn": "利用虚拟游戏世界研究小组任务中的大脑同步性，作为认知健康的指标。",
+      "llm_tldr": "利用虚拟游戏世界研究小组任务中的大脑同步性，作为认知健康的指标。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-03-31-715655-v1",
+      "source": "biorxiv",
+      "title": "Latent brain state dynamics predict early amyloid accumulation and cognitive impairment",
+      "abstract": "Amyloid-{beta} (A{beta}) accumulation is a continuous process central to pathological aging that begins decades before cognitive impairment emerges. While subthreshold A{beta} levels have been linked to future decline in cognitive control, the neural mechanisms connecting this early accumulation to its neurocognitive impact are poorly understood. Brain circuit dynamics, which are essential for cognitive function, may offer a sensitive lens into these initial pathological changes. Here, we tested whether brain state dynamics could serve as sensitive markers for cognitive impairment at an early stage of A{beta} burden. Using the Bayesian Switching Dynamic System (BSDS) model, we identified 4 distinct latent brain states from high-temporal-resolution (800 ms) fMRI data acquired from 116 older adults, including 72 cognitively normal (CN) individuals and 44 with mild cognitive impairment (MCI), during an N-back working-memory task. Adopting a dimensional approach, we examined how latent brain state dynamics relate to early amyloid burden, cognitive performance, and clinical symptoms. While A{beta} levels failed to differentiate clinical groups or predict clinical symptoms and task performance, the dynamics of latent brain states proved highly sensitive to both early A{beta} accumulation and cognition. Canonical correlation analysis revealed a significant relationship between brain state dynamics and early A{beta} burden. Furthermore, the temporal properties of brain states were significantly predictive of working memory performance in CN individuals, a relationship that was selectively disrupted in the MCI group. The features of brain dynamics can also successfully predict cognitive impairment. Our findings establish brain state dynamics as sensitive neural markers of initial A{beta} accumulation and early cognitive impairment, offering a new framework for developing predictive models to identify individuals at risk for future cognitive decline.",
+      "authors": [
+        "Gao, Z.",
+        "Young, C. B.",
+        "Lee, B.",
+        "Roush, R. E.",
+        "Kotulsky, J.",
+        "Cisneros, G.",
+        "Mormino, E.",
+        "Cohen, A. D.",
+        "Menon, V.",
+        "Cai, W."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-03T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.31.715655v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "predicts cognitive impairment in pathological aging and early amyloid accumulation",
+      "llm_evidence_cn": "预测病理性老化和早期淀粉样蛋白积累中的认知障碍",
+      "llm_evidence": "预测病理性老化和早期淀粉样蛋白积累中的认知障碍",
+      "canonical_evidence": "预测病理性老化和早期淀粉样蛋白积累中的认知障碍",
+      "llm_tldr_en": "Identifies brain state dynamics as markers for early cognitive impairment in aging adults.",
+      "llm_tldr_cn": "将大脑状态动态识别为老年人早期认知障碍的标志物。",
+      "llm_tldr": "将大脑状态动态识别为老年人早期认知障碍的标志物。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-05-716121-v1",
+      "source": "biorxiv",
+      "title": "The Role of Meningeal Lymphatic Vessels and Perivascular Cerebrospinal Fluid Flow in Age-Related Processing Speed Decline",
+      "abstract": "Meningeal lymphatic vessels (mLV) play essential roles in draining cerebrospinal fluid (CSF) into peripheral blood. The mLVs are hypothesized to be supportive structures to the glymphatic system, which is thought to remove metabolic byproducts from brain parenchyma and has been most directly studied in rodent models. Previous rodent studies have indicated a correlation between mLV function and cognitive performance, but this relationship in humans remains unexplored. Age-related declines in glymphatic system efficiency in humans and cognitive performance have been observed separately. This study investigates age- and sex-related differences in CSF production via choroid plexus volumes, mLV characteristics, and glymphatic system efficiency, overall elucidating the implication of cerebral lymphatic function on cognition. We recruited 26 healthy adults from Dallas-Fort Worth and acquired magnetic resonance images. mLVs along the sagittal sinus were visualized and segmented from T2-FLAIR images. The glymphatic system was evaluated by measuring diffusivity along the perivascular space. Choroid plexus volume and brain volume were estimated from T1-MPRAGE. Neuropsychological tests were conducted to assess cognitive function. Our findings indicate that glymphatic function diminishes with age, while mLV and choroid plexus volumes increase. Males displayed greater mLV volume than females, yet no sex differences were found in glymphatic function or choroid plexus volume. Notably, mLV volume increased as glymphatic function declined, independent of age. Moreover, a glymphatic-mLV latent variable significantly predicted processing speed, underscoring the influence of cerebral lymphatics on cognition. In conclusion, this study highlights a decline in glymphatic function with age, accompanied by increased mLV volumes and altered processing speed. These lymphatic system changes may underlie or contribute to the cognitive declines observed in healthy and pathological aging.\n\nSignificance StatementThe glymphatic system and meningeal lymphatic vessels play crucial roles in removing brain cell waste. The relationship between these systems and their effect on human cognition, particularly processing speed, is unknown. We demonstrate that these systems change with advancing age. Variations in cerebral lymphatic function contribute to differences in processing speed independent of age, ultimately affecting higher-order cognitive function. The findings presented have implications for cognitive function in both healthy and diseased states.",
+      "authors": [
+        "Andreo, M. N.",
+        "Sivakolundu, D. K.",
+        "Zuppichini, M.",
+        "West, K.",
+        "Spence, J.",
+        "Gauthier, S.",
+        "Nguyen, T.",
+        "Rypma, B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.05.716121v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "investigates age-related cognitive performance and processing speed decline in humans",
+      "llm_evidence_cn": "研究人类与年龄相关的认知表现和处理速度下降",
+      "llm_evidence": "研究人类与年龄相关的认知表现和处理速度下降",
+      "canonical_evidence": "研究人类与年龄相关的认知表现和处理速度下降",
+      "llm_tldr_en": "Explores the link between meningeal lymphatic vessels and age-related cognitive decline in humans.",
+      "llm_tldr_cn": "探讨了人类脑膜淋巴管与年龄相关认知能力下降之间的联系。",
+      "llm_tldr": "探讨了人类脑膜淋巴管与年龄相关认知能力下降之间的联系。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.02629v1",
+      "source": "arxiv",
+      "title": "Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys",
+      "abstract": "Generative AI (genAI) is increasingly being integrated into children's everyday lives, not only through screens but also through so-called \"screen-free\" AI toys. These toys can simulate emotions, personalize responses, and recall prior interactions, creating the illusion of an ongoing social connection. Such capabilities raise important questions about how children understand boundaries, agency, and relationships when interacting with AI toys. To investigate this, we conducted two participatory design sessions with eight children ages 6-11 where they engaged with three different AI toys, shifting between play, experimentation, and reflection. Our findings reveal that children approached AI toys with genuine curiosity, profiling them as social beings. However, frequent interaction breakdowns and mismatches between apparent intelligence and toy-like form disrupted expectations around play and led to adversarial play. We conclude with implications and design provocations to navigate children's encounters with AI toys in more transparent, developmentally appropriate, and responsible ways.",
+      "authors": [
+        "Aayushi Dangol",
+        "Meghna Gupta",
+        "Daeun Yoo",
+        "Robert Wolfe",
+        "Jason Yip",
+        "Franziska Roesner",
+        "Julie A. Kientz"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "published": "2026-04-03T01:37:31+00:00",
+      "link": "https://arxiv.org/pdf/2604.02629v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "children's social connection and interactions with AI toys",
+      "llm_evidence_cn": "儿童与AI玩具的社交连接与互动",
+      "llm_evidence": "儿童与AI玩具的社交连接与互动",
+      "canonical_evidence": "儿童与AI玩具的社交连接与互动",
+      "llm_tldr_en": "Explores how children perceive social agency and relationships when interacting with generative AI toys.",
+      "llm_tldr_cn": "探讨了儿童在与生成式人工智能玩具互动时如何理解社交代理和关系。",
+      "llm_tldr": "探讨了儿童在与生成式人工智能玩具互动时如何理解社交代理和关系。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.01626v1",
+      "source": "arxiv",
+      "title": "CogPic: A Multimodal Dataset for Early Cognitive Impairment Assessment via Picture Description Tasks",
+      "abstract": "The automated evaluation of cognitive status utilizing multimedia technologies presents a promising frontier in early dementia diagnosis. However, the development of robust machine learning models for cognitive impairment detection is frequently hindered by the scarcity of large-scale, strictly synchronized, and clinically validated multimodal datasets. To bridge this critical gap, we introduce the CogPic database, a comprehensive multimodal benchmark meticulously designed for fine-grained cognitive impairment detection. The dataset comprises strictly synchronized audio, visual, and linguistic data continuously collected from 574 participants during a naturalistic picture description task. To establish highly reliable diagnostic ground truth, expert clinical neuropsychologists conducted exhaustive evaluations, stratifying participants into distinct cognitive groups through a comprehensive clinical consensus. Consequently, CogPic stands as the largest, most modality-rich, and most meticulously evaluated dataset of its kind to date. By conducting extensive benchmark experiments on the CogPic dataset, we establish an exceptionally robust, unbiased, and clinically generalizable foundation to propel future multimedia research in automated cognitive health assessment. Detailed information and access application procedures for our CogPic database are available at https://cogpic.github.io/.",
+      "authors": [
+        "Liuyu Wu",
+        "Rui Feng",
+        "Jie Li",
+        "Wentao Xiang",
+        "Yi Zhang",
+        "Yin Cao",
+        "Siyang Song",
+        "Xiao Gu",
+        "Jianqing Li",
+        "Wei Wang"
+      ],
+      "primary_category": "cs.DB",
+      "categories": [
+        "cs.DB"
+      ],
+      "published": "2026-04-02T05:04:31+00:00",
+      "link": "https://arxiv.org/pdf/2604.01626v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "cognitive impairment assessment and multimodal dataset",
+      "llm_evidence_cn": "认知障碍评估与多模态数据集",
+      "llm_evidence": "认知障碍评估与多模态数据集",
+      "canonical_evidence": "认知障碍评估与多模态数据集",
+      "llm_tldr_en": "Introduces a multimodal dataset for early cognitive impairment detection via picture description tasks.",
+      "llm_tldr_cn": "引入了一个通过图片描述任务进行早期认知障碍检测的多模态数据集。",
+      "llm_tldr": "引入了一个通过图片描述任务进行早期认知障碍检测的多模态数据集。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.01941v1",
+      "source": "arxiv",
+      "title": "Captioning Daily Activity Images in Early Childhood Education: Benchmark and Algorithm",
+      "abstract": "Image captioning for Early Childhood Education (ECE) is essential for automated activity understanding and educational assessment. However, existing methods face two key challenges. First, the lack of large-scale, domain-specific datasets limits the model's ability to capture fine-grained semantic concepts unique to ECE scenarios, resulting in generic and imprecise descriptions. Second, conventional training paradigms exhibit limitations in enhancing professional object description capability, as supervised learning tends to favor high-frequency expressions, while reinforcement learning may suffer from unstable optimization on difficult samples.   To address these limitations, we introduce ECAC, a large-scale benchmark for ECE daily activity image captioning, comprising 256,121 real-world images annotated with expert-level captions and fine-grained labels. ECAC is further equipped with a domain-oriented evaluation protocol, the Teaching Toy Recognition Score (TTS), to explicitly measure professional object naming accuracy. Furthermore, we propose RSRS (Reward-Conditional Switch of Reinforcement Learning and Supervised Fine-Tuning), a hybrid training framework that dynamically alternates between RL and supervised optimization. By rerouting hard samples with zero rewards to supervised fine-tuning, RSRS effectively mitigates advantage collapse and enables stable optimization for fine-grained recognition. Leveraging ECAC and RSRS, we develop KinderMM-Cap-3B, a domain-adapted multimodal large language model. Extensive experiments demonstrate that our model achieves a TTS of 51.06, substantially outperforming state-of-the-art baselines while maintaining superior caption quality, highlighting its potential for specialized educational applications.",
+      "authors": [
+        "Sixing Li",
+        "Zhibin Gu",
+        "Ziqi Zhang",
+        "Weiguo Pan",
+        "Bing Li",
+        "Ying Wang",
+        "Hongzhe Liu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-04-02T12:01:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.01941v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "automated activity understanding in early childhood education",
+      "llm_evidence_cn": "幼儿教育中的自动化活动理解",
+      "llm_evidence": "幼儿教育中的自动化活动理解",
+      "canonical_evidence": "幼儿教育中的自动化活动理解",
+      "llm_tldr_en": "Introduces a benchmark for captioning daily activities in early childhood education to support assessment.",
+      "llm_tldr_cn": "引入了幼儿教育日常活动描述基准，以支持教育评估。",
+      "llm_tldr": "引入了幼儿教育日常活动描述基准，以支持教育评估。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.03050v1",
+      "source": "arxiv",
+      "title": "MECO: A Multimodal Dataset for Emotion and Cognitive Understanding in Older Adults",
+      "abstract": "While affective computing has advanced considerably, multimodal emotion prediction in aging populations remains underexplored, largely due to the scarcity of dedicated datasets. Existing multimodal benchmarks predominantly target young, cognitively healthy subjects, neglecting the influence of cognitive decline on emotional expression and physiological responses. To bridge this gap, we present MECO, a Multimodal dataset for Emotion and Cognitive understanding in Older adults. MECO includes 42 participants and provides approximately 38 hours of multimodal signals, yielding 30,592 synchronized samples. To maximize ecological validity, data collection followed standardized protocols within community-based settings. The modalities cover video, audio, electroencephalography (EEG), and electrocardiography (ECG). In addition, the dataset offers comprehensive annotations of emotional and cognitive states, including self-assessed valence, arousal, six basic emotions, and Mini-Mental State Examination cognitive scores. We further establish baseline benchmarks for both emotion and cognitive prediction. MECO serves as a foundational resource for multimodal modeling of affect and cognition in aging populations, facilitating downstream applications such as personalized emotion recognition and early detection of mild cognitive impairment (MCI) in real-world settings. The complete dataset and supplementary materials are available at https://maitrechen.github.io/meco-page/.",
+      "authors": [
+        "Hongbin Chen",
+        "Jie Li",
+        "Wei Wang",
+        "Siyang Song",
+        "Xiao Gu",
+        "Jianqing Li",
+        "Wentao Xiang"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "published": "2026-04-03T14:03:23+00:00",
+      "link": "https://arxiv.org/pdf/2604.03050v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "multimodal dataset for emotion and cognitive understanding in older adults",
+      "llm_evidence_cn": "老年人情绪与认知理解的多模态数据集",
+      "llm_evidence": "老年人情绪与认知理解的多模态数据集",
+      "canonical_evidence": "老年人情绪与认知理解的多模态数据集",
+      "llm_tldr_en": "Introduces a multimodal dataset to study emotion and cognitive decline in aging populations.",
+      "llm_tldr_cn": "介绍了一个用于研究老年群体情绪和认知下降的多模态数据集。",
+      "llm_tldr": "介绍了一个用于研究老年群体情绪和认知下降的多模态数据集。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.02154v1",
+      "source": "arxiv",
+      "title": "Designing Transformational Games to Support Socio-ethical Reasoning about Generative AI",
+      "abstract": "There is an increasing need for young people to become critically AI literate, understanding not only how AI works but also its limitations and ethical nuances. Yet, designing learning experiences that make such complex, serious topics engaging remains a challenge. This paper explores transformational games as a promising approach for supporting youth learning about generative AI (GenAI) and ethics. We designed and implemented two games, Diversity Duel and Secret Agent, that integrate GenAI tools with gameplay elements. This work investigates how the games' elements: (1) peer evaluation, (2) constraint-based creativity, and (3) social deduction supported socio-ethical reasoning about GenAI. Participants recognized and debated bias in GenAI outputs, connected these patterns to real-world inequities, and developed nuanced understandings of bias. Participants further came to see how prompt design shapes AI behavior. Our findings suggest that group-based games with these elements can support fostering critical AI literacy.",
+      "authors": [
+        "Jaemarie Solyst",
+        "Ruth Karen Nakigozi",
+        "Chloe Fong",
+        "R. Benjamin Shapiro"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-02T15:22:24+00:00",
+      "link": "https://arxiv.org/pdf/2604.02154v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "transformational games for socio-ethical reasoning in youth",
+      "llm_evidence_cn": "促进青少年社会伦理推理的转型游戏",
+      "llm_evidence": "促进青少年社会伦理推理的转型游戏",
+      "canonical_evidence": "促进青少年社会伦理推理的转型游戏",
+      "llm_tldr_en": "Uses transformational games to support social deduction and ethical reasoning about AI among young people.",
+      "llm_tldr_cn": "利用转型游戏支持青少年对人工智能进行社会演绎和伦理推理。",
+      "llm_tldr": "利用转型游戏支持青少年对人工智能进行社会演绎和伦理推理。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.02578v1",
+      "source": "arxiv",
+      "title": "High Volatility and Action Bias Distinguish LLMs from Humans in Group Coordination",
+      "abstract": "Humans exhibit remarkable abilities to coordinate in groups. As large language models (LLMs) become more capable, it remains an open question whether they can demonstrate comparable adaptive coordination and whether they use the same strategies as humans. To investigate this, we compare LLM and human performance on a common-interest game with imperfect monitoring: Group Binary Search. In this n-player game, participants need to coordinate their actions to achieve a common objective. Players independently submit numerical values in an effort to collectively sum to a randomly assigned target number. Without direct communication, they rely on group feedback to iteratively adjust their submissions until they reach the target number. Our findings show that, unlike humans who adapt and stabilize their behavior over time, LLMs often fail to improve across games and exhibit excessive switching, which impairs group convergence. Moreover, richer feedback (e.g., numerical error magnitude) benefits humans substantially but has small effects on LLMs. Taken together, by grounding the analysis in human baselines and mechanism-level metrics, including reactivity scaling, switching dynamics, and learning across games, we point to differences in human and LLM groups and provide a behaviorally grounded diagnostic for closing the coordination gap.",
+      "authors": [
+        "Sahaj Singh Maini",
+        "Robert L. Goldstone",
+        "Zoran Tiganj"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CL",
+        "cs.GT"
+      ],
+      "published": "2026-04-02T23:21:37+00:00",
+      "link": "https://arxiv.org/pdf/2604.02578v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "compares human and AI coordination in a common-interest game",
+      "llm_evidence_cn": "在共同利益博弈中比较人类与 AI 的协作",
+      "llm_evidence": "在共同利益博弈中比较人类与 AI 的协作",
+      "canonical_evidence": "在共同利益博弈中比较人类与 AI 的协作",
+      "llm_tldr_en": "Evaluates group coordination strategies in games, comparing human adaptive behavior with LLMs.",
+      "llm_tldr_cn": "评估博弈中的团队协作策略，并将人类的适应性行为与大语言模型进行对比。",
+      "llm_tldr": "评估博弈中的团队协作策略，并将人类的适应性行为与大语言模型进行对比。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-04-716497-v1",
+      "source": "biorxiv",
+      "title": "Separable Brain Maturation Patterns Mediate Exposome Influences on Cognitive Development: A Longitudinal Study",
+      "abstract": "Adolescent cognitive abilities develop within a complex exposomal landscape spanning multiple domains, yet the neural mechanisms through which such domains shape cognition remain poorly understood. Most prior studies have separately modeled longitudinal change in brain or cognition, and have sampled only narrow subsets of brain measures or exposome variables, limiting comprehensive longitudinal inference. Here, we examined whether brain maturation mediates the relationship between the exposome and general cognitive ability (g) in a large longitudinal cohort (N = 1,112; age 9-15), using 4,882 multimodal brain features and 112 exposome variables spanning six domains. We found that brain maturation patterns associated with g development showed moderate but consistent spatial correspondence with those associated with the exposome, with family environment domain showing the strongest correspondence. Mediation analyses identified distributed cortical and subcortical regions through which brain maturation links exposome variation to g development. Factor analysis of domain-level mediation patterns further revealed four latent factors, each associated with a largely distinct neural substrate, suggesting that different exposome domains influence g development through partially separable brain mechanisms. Together, these findings map brain maturation linking the exposome to adolescent cognitive development.",
+      "authors": [
+        "Yan, J.",
+        "Chen, J.",
+        "Wan, B.",
+        "Toussaint, P. J.",
+        "Evans, A. C.",
+        "Karama, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-05T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.04.716497v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "brain maturation mediates exposome influences on general cognitive ability (g)",
+      "llm_evidence_cn": "大脑发育介导环境暴露对一般认知能力(g)的影响",
+      "llm_evidence": "大脑发育介导环境暴露对一般认知能力(g)的影响",
+      "canonical_evidence": "大脑发育介导环境暴露对一般认知能力(g)的影响",
+      "llm_tldr_en": "Investigates how brain maturation mediates the impact of environmental factors on adolescent cognitive ability.",
+      "llm_tldr_cn": "研究大脑发育如何介导环境因素对青少年认知能力的影响。",
+      "llm_tldr": "研究大脑发育如何介导环境因素对青少年认知能力的影响。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2604.03952v1",
+      "source": "arxiv",
+      "title": "Multidimensional physical fitness is associated with reduced dementia risk through proteomic and neuroimaging pathways: a prospective cohort study of the UK Biobank",
+      "abstract": "Dementia affects over 55 million people worldwide, yet whether distinct domains of physical fitness independently protect against neurodegeneration through shared or divergent biological mechanisms remains unknown. Using the UK Biobank (n = 51,517; 12-year follow-up), we integrated epidemiological, proteomic, and neuroimaging analyses to systematically characterize the multidimensional fitness-dementia relationship. Higher handgrip strength, cardiorespiratory fitness, and pulmonary function were each independently associated with reduced dementia risk (HRs 0.50, 0.62, and 0.73, respectively, for highest vs. lowest tertiles), with stronger associations in women and younger individuals. Plasma proteomic profiling revealed domain-specific molecular signatures--neurofilament light chain predominating for muscular and cardiorespiratory fitness, and inflammatory mediators including GDF15 for pulmonary function--with 22-40 proteins per domain independently predicting dementia, converging on neuroinflammatory and neurovascular pathways. Brain MRI analyses identified hippocampal volume as a significant structural mediator (proportion mediated: 3.7-10.1%), indicating structural preservation as one of multiple mechanistic pathways. Population attributable fraction analyses estimated that suboptimal fitness may account for approximately 26% of dementia cases. These findings reveal that multidimensional physical fitness shapes dementia risk through distinct yet converging neuroinflammatory, neurovascular, and structural brain mechanisms, with implications for life-course prevention.",
+      "authors": [
+        "Yiqing Sun",
+        "Runyu Lin",
+        "Jiayue Qin",
+        "Feiyue Pan",
+        "Bingjie Li",
+        "Zhigang Yao"
+      ],
+      "primary_category": "stat.AP",
+      "categories": [
+        "stat.AP",
+        "q-bio.QM"
+      ],
+      "published": "2026-04-05T04:07:37+00:00",
+      "link": "https://arxiv.org/pdf/2604.03952v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "physical fitness associated with reduced dementia risk in older adults",
+      "llm_evidence_cn": "身体机能与降低老年痴呆风险相关",
+      "llm_evidence": "身体机能与降低老年痴呆风险相关",
+      "canonical_evidence": "身体机能与降低老年痴呆风险相关",
+      "llm_tldr_en": "Links physical fitness to reduced dementia risk through neuroimaging and proteomic pathways.",
+      "llm_tldr_cn": "通过神经影像学和蛋白质组学途径将身体素质与降低痴呆风险联系起来。",
+      "llm_tldr": "通过神经影像学和蛋白质组学途径将身体素质与降低痴呆风险联系起来。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.03470v1",
+      "source": "arxiv",
+      "title": "Messages in a Digital Bottle: A Youth-Coauthored Perspective on LLM Chatbots and Adolescent Loneliness",
+      "abstract": "Adolescent loneliness is a growing concern in digitally mediated social environments. This work-in-progress presents a youth-authored critical synthesis on chatbots powered by Large Language Model (LLM) and adolescent loneliness. The first author is a 16-year-old Chinese student who recently migrated to the UK. She wrote the first draft of this paper from her lived experience, supervised by the second author. Rather than treating the youth perspective as one data point among many, we foreground it as the primary interpretive lens, grounded in interdisciplinary literature from social computing, developmental psychology, and Human-Computer Interaction (HCI). We examine how chatbots shape experiences of loneliness differently across adolescent subgroups, including those with anxiety or depression, neurodivergent youth, and immigrant adolescents, and identify both conditions under which they may temporarily reduce isolation and breakdowns that risk deepening it. We derive three population-sensitive design implications. The next phase of this work will expand the youth authorship model to a panel of adolescents across these subgroups, empirically validating the framework presented here.",
+      "authors": [
+        "Jinyao Liu",
+        "Di Fu"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-03T21:34:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.03470v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "discusses adolescent loneliness and social computing from a developmental perspective",
+      "llm_evidence_cn": "从发展角度讨论青少年孤独感和社交计算",
+      "llm_evidence": "从发展角度讨论青少年孤独感和社交计算",
+      "canonical_evidence": "从发展角度讨论青少年孤独感和社交计算",
+      "llm_tldr_en": "Synthesizes youth perspectives on how LLM chatbots influence adolescent loneliness and sociality.",
+      "llm_tldr_cn": "综合了关于大语言模型聊天机器人如何影响青少年孤独感和社交性的青年观点。",
+      "llm_tldr": "综合了关于大语言模型聊天机器人如何影响青少年孤独感和社交性的青年观点。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.05249v1",
+      "source": "arxiv",
+      "title": "Understanding Clinician Experiences with Game-Based Interventions for Autistic Children to Inform a Future Game Platform Focused on Improving Motor Skills",
+      "abstract": "Motor challenges are prevalent among autistic children, and games are able to simultaneously produce clinically meaningful results and provide a motivating context, but many current solutions are too rigid. We conducted a two-phase qualitative study comprised of semi-structured interviews and participatory design workshops with 7 pediatric physical and 5 occupational therapists (PTs/OTs) to investigate their perspectives and experiences with game and play-based interventions. We identified 8 prominent themes describing key characteristics of current successful interventions, opportunities, and barriers to adoption in clinical practice. We present a speculative design informed by thematic analysis that addresses current challenges of rigidity in Serious Games for Health (SG4H). Our modular platform (AutMotion Studio) hosts a suite of interventions as customizable minigames, allowing community members to contribute to and employ Wizard of Oz paradigms for flexible appropriation strategies.",
+      "authors": [
+        "Hunter M Beach",
+        "Devin Jay D San Nicolas",
+        "Carly Miller",
+        "Cathy Ly",
+        "Jared Duval"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-06T23:17:19+00:00",
+      "link": "https://arxiv.org/pdf/2604.05249v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "game-based interventions for children to improve skills",
+      "llm_evidence_cn": "旨在提高儿童技能的游戏干预研究",
+      "llm_evidence": "旨在提高儿童技能的游戏干预研究",
+      "canonical_evidence": "旨在提高儿童技能的游戏干预研究",
+      "llm_tldr_en": "Investigates clinician perspectives on using game-based interventions for children's developmental skills.",
+      "llm_tldr_cn": "调查了临床医生对使用游戏干预来提高儿童发育技能的看法。",
+      "llm_tldr": "调查了临床医生对使用游戏干预来提高儿童发育技能的看法。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.04157v1",
+      "source": "arxiv",
+      "title": "Readable Minds: Emergent Theory-of-Mind-Like Behavior in LLM Poker Agents",
+      "abstract": "Theory of Mind (ToM) -- the ability to model others' mental states -- is fundamental to human social cognition. Whether large language models (LLMs) can develop ToM has been tested exclusively through static vignettes, leaving open whether ToM-like reasoning can emerge through dynamic interaction. Here we report that autonomous LLM agents playing extended sessions of Texas Hold'em poker progressively develop sophisticated opponent models, but only when equipped with persistent memory. In a 2x2 factorial design crossing memory (present/absent) with domain knowledge (present/absent), each with five replications (N = 20 experiments, ~6,000 agent-hand observations), we find that memory is both necessary and sufficient for ToM-like behavior emergence (Cliff's delta = 1.0, p = 0.008). Agents with memory reach ToM Level 3-5 (predictive to recursive modeling), while agents without memory remain at Level 0 across all replications. Strategic deception grounded in opponent models occurs exclusively in memory-equipped conditions (Fisher's exact p < 0.001). Domain expertise does not gate ToM-like behavior emergence but enhances its application: agents without poker knowledge develop equivalent ToM levels but less precise deception (p = 0.004). Agents with ToM deviate from game-theoretically optimal play (67% vs. 79% TAG adherence, delta = -1.0, p = 0.008) to exploit specific opponents, mirroring expert human play. All mental models are expressed in natural language and directly readable, providing a transparent window into AI social cognition. Cross-model validation with GPT-4o yields weighted Cohen's kappa = 0.81 (almost perfect agreement). These findings demonstrate that functional ToM-like behavior can emerge from interaction dynamics alone, without explicit training or prompting, with implications for understanding artificial social intelligence and biological social cognition.",
+      "authors": [
+        "Hsieh-Ting Lin",
+        "Tsung-Yu Hou"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-05T15:54:43+00:00",
+      "link": "https://arxiv.org/pdf/2604.04157v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Theory of Mind and social cognition emergence through interaction",
+      "llm_evidence_cn": "通过互动产生的心理理论和社会认知",
+      "llm_evidence": "通过互动产生的心理理论和社会认知",
+      "canonical_evidence": "通过互动产生的心理理论和社会认知",
+      "llm_tldr_en": "Demonstrates how Theory-of-Mind-like social reasoning emerges in AI agents through dynamic game interaction.",
+      "llm_tldr_cn": "展示了AI智能体如何通过动态游戏互动产生类似心理理论的社会推理能力。",
+      "llm_tldr": "展示了AI智能体如何通过动态游戏互动产生类似心理理论的社会推理能力。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.05533v1",
+      "source": "arxiv",
+      "title": "Experience Transfer for Multimodal LLM Agents in Minecraft Game",
+      "abstract": "Multimodal LLM agents operating in complex game environments must continually reuse past experience to solve new tasks efficiently. In this work, we propose Echo, a transfer-oriented memory framework that enables agents to derive actionable knowledge from prior interactions rather than treating memory as a passive repository of static records. To make transfer explicit, Echo decomposes reusable knowledge into five dimensions: structure, attribute, process, function, and interaction. This formulation allows the agent to identify recurring patterns shared across different tasks and infer what prior experience remains applicable in new situations. Building on this formulation, Echo leverages In-Context Analogy Learning (ICAL) to retrieve relevant experiences and adapt them to unseen tasks through contextual examples. Experiments in Minecraft show that, under a from-scratch learning setting, Echo achieves a 1.3x to 1.7x speed-up on object-unlocking tasks. Moreover, Echo exhibits a burst-like chain-unlocking phenomenon, rapidly unlocking multiple similar items within a short time interval after acquiring transferable experience. These results suggest that experience transfer is a promising direction for improving the efficiency and adaptability of multimodal LLM agents in complex interactive environments.",
+      "authors": [
+        "Chenghao Li",
+        "Jun Liu",
+        "Songbo Zhang",
+        "Huadong Jian",
+        "Hao Ni",
+        "Lik-Hang Lee",
+        "Sung-Ho Bae",
+        "Guoqing Wang",
+        "Yang Yang",
+        "Chaoning Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-07T07:32:20+00:00",
+      "link": "https://arxiv.org/pdf/2604.05533v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "transfer-oriented memory for agents in Minecraft game",
+      "llm_evidence_cn": "Minecraft游戏中智能体的迁移导向记忆",
+      "llm_evidence": "Minecraft游戏中智能体的迁移导向记忆",
+      "canonical_evidence": "Minecraft游戏中智能体的迁移导向记忆",
+      "llm_tldr_en": "Proposes a framework for agents to reuse experience and solve tasks in complex game environments.",
+      "llm_tldr_cn": "提出了一个让智能体在复杂游戏环境中重用经验并解决任务的框架。",
+      "llm_tldr": "提出了一个让智能体在复杂游戏环境中重用经验并解决任务的框架。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

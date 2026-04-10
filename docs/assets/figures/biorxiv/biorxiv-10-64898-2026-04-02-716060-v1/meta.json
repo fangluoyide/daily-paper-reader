@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-001.webp",
+      "caption": "Figure 3: A) Postural sway during the postural balance task. B) Difference in postural sway between the tandem stance with eyes open (most challenging for olderold adults) and the bipodal stance with eyes open (least challenging), representing the resilience measure of the postural balance task (general sensorimotor outcome). Higher values indicate lower resilience (i.e., poorer task performance under increased demands). C) Difference in postural sway between the tandem stance with eyes closed (most challenging for older adults) and the bipodal stance with eyes open (least challenging). Higher values indicate lower resilience (i.e., poorer task performance under increased demands). All panels: Each dot represents an individual participant. Bar height indicates the group mean for each condition and age group. Blue = young adults; orange = older adults; purple = older-old adults.",
+      "page": 25,
+      "index": 1,
+      "width": 592,
+      "height": 566
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-002.webp",
+      "caption": "Figure 7: For each task, the R² value is shown for young (blue) and older (orange) adults, indicating the proportion of variance in the resilience outcome explained by grey matter volume across the four cerebellar functional regions. The dotted horizontal line represents the noise ceiling for each task, reflecting the maximum variance that could be explained by the predictive model.",
+      "page": 30,
+      "index": 2,
+      "width": 892,
+      "height": 256
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-003.webp",
+      "caption": "Figure 6: Overview of the correlations between resilience measures across tasks for young adults (blue) and older adults (orange). Color intensity indicates the strength and direction of the associations: darker hues of blue or orange represent more positive correlations, whereas grey tones indicate more negative correlations. Correlation coefficients are displayed in the upper triangle.",
+      "page": 29,
+      "index": 3,
+      "width": 898,
+      "height": 382
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-004.webp",
+      "caption": "Figure 5: Overview of the effect sizes across all resilience outcomes of the different tasks. Each dot represents the effect size form statistical comparisons (one-way ANOVA) between two age groups (orange: young vs. older adults; purple: young vs. older-old adults). Horizontal error bars indicate 95% confidence intervals. Negative values reflect worse resilience outcome measures in the younger age group, while positive values reflect better resilience outcome measures in the younger age group. Cohen’s d effect sizes could be interpreted as follows: <0.2: no effect (white); 0.2-0.5: small effect (red); 0.5-0.8: medium effect (yellow); >0.8: large effect (green).",
+      "page": 28,
+      "index": 4,
+      "width": 892,
+      "height": 432
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-005.webp",
+      "caption": "Figure 4: A) Reaction time during the mental rotation task. B) Slope of reaction times across all rotation conditions, representing the resilience measure for the mental rotation task (cerebellar-specific outcome). Higher values indicate lower resilience (i.e., poorer task performance under increased demands). C) Percentage of incorrect responses during the spatial working memory task. D) Difference between the mean number of incorrect responses in the most demanding conditions (5–6 targets) and the least demanding conditions (3–4 targets), representing the resilience measure for the spatial working memory task (general cognitive outcome). Higher values indicate lower resilience (i.e., poorer task performance under increased demands). All panels: Each dot represents an individual participant. Bar height indicates the group mean for each condition and age group. Blue = young adults; orange = older adults; purple = older-old adults.",
+      "page": 27,
+      "index": 5,
+      "width": 615,
+      "height": 648
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-716060-v1/fig-006.webp",
+      "caption": "Figure 1: Overview of all different tasks and the included stressor in each task. A) Pure elbow motion task: 2 start positions of the upper arm from which participants performed 30° extension elbow movements in two speed conditions (slow: 250-300 ms; fast: 150-200 ms). The target is positioned in such a way that it can be reached while keeping the shoulder at 60° (external angle). B) Motor timing task: Participants start by tapping the space bar of a computer in sync with the beeps (interval of 600, 1000, or 1400 ms between beeps). The beeps cease after 13 taps, but the participant keeps tapping the same rhythm as accurately as possible for an additional 31 taps without any feedback. C) Postural balance task: visualization of the two possible foot positions on the balance plate (Btracks), with and without visual feedback. Participants are positioned with their hand on their hips and fixate on a cross 1-2 m in front of them. The position is held for 35 seconds, and a beep indicates the start and end of one trial. D) Mental rotation task: overview of the sequence of one trial. A letter stimulus in white was presented on a black background and remained visible until the response. Participants responded by pressing the corresponding arrow on the computer as fast as possible (left arrow: standard form, right arrow: mirrored). Feedback after each trial was provided, followed by a fixation cross. E) Spatial working memory: overview of the sequence of one trial. After a blank grid is displayed for 1 second, three to six targets appear at random positions within the circular grid for 2 seconds. A question mark then appears at one location in the grid, and participants have 5.5 seconds to indicate “yes” or “no” by pointing the KINARM robot to report whether a red target was previously present at that location.",
+      "page": 16,
+      "index": 6,
+      "width": 892,
+      "height": 560
+    }
+  ]
+}

@@ -6,82 +6,79 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-04-09
-- 运行时间：2026-04-09 20:10:24 UTC
+- 最新运行日期：2026-04-10
+- 运行时间：2026-04-10 20:12:08 UTC
 - 运行状态：成功
-- 本次总论文数：20
-- 精读区：8
+- 本次总论文数：19
+- 精读区：7
 - 速读区：12
 
 ### 今日简报（AI）
-今日精选 20 篇前沿成果，深度探讨教育机器人、AI 玩具及多模态认知评估在儿童成长与特殊教育中的应用。
-重点研究指出社交机器人对自闭症儿童的吸引力并不等同于能力的现实迁移，并实证了角色扮演机器人在教学中的潜力。
-建议关注 AI 硬件如何影响儿童的认知构建，理性评估智能玩具在早期教育中的实际转化效果。
-- 详情：[/202604/09/README](/202604/09/README)
+今日聚焦19项认知与AI前沿研究，深度探讨社交机器人对自闭症干预及基因评分预测儿童发育的实证成果。
+核心结论指出社交参与度并不等同于能力迁移，且成人多基因评分可有效追踪儿童认知成长。
+建议家长审慎评估AI玩具的互动深度，并关注多模态技术在老年认知监测中的应用。
+- 详情：[/202604/10/README](/202604/10/README)
 
 ### 精读区论文标签
-1. [Play-Testing REMind: Evaluating an Educational Robot-Mediated Role-Play Game](/202604/09/2604.00300v1-play-testing-remind-evaluating-an-educational-robot-mediated-role-play-game)  
+1. [Engagement Is Not Transfer: A Withdrawal Study of a Consumer Social Robot with Autistic Children at Home](/202604/10/2604.02642v1-engagement-is-not-transfer-a-withdrawal-study-of-a-consumer-social-robot-with-autistic-children-at-home)  
    标签：评分：9.0/10、query:profile-1
-   evidence：支持儿童社交情感学习的机器人介导游戏
-2. [Engagement Is Not Transfer: A Withdrawal Study of a Consumer Social Robot with Autistic Children at Home](/202604/09/2604.02642v1-engagement-is-not-transfer-a-withdrawal-study-of-a-consumer-social-robot-with-autistic-children-at-home)  
-   标签：评分：9.0/10、query:profile-1
-   evidence：使用机器人测量儿童社会动机和共情能力的随机对照试验
-3. [MECO: A Multimodal Dataset for Emotion and Cognitive Understanding in Older Adults](/202604/09/2604.03050v1-meco-a-multimodal-dataset-for-emotion-and-cognitive-understanding-in-older-adults)  
+   evidence：5-9岁儿童的社会能力与社交动机
+2. [Charting the cognitive development of children using adult 'polygenic g scores'](/202604/10/biorxiv-10-64898-2025-12-19-695378-v2-charting-the-cognitive-development-of-children-using-adult-polygenic-g-scores)  
    标签：评分：9.0/10、query:cog-eld
-   evidence：老年人认知理解的多模态数据集
-4. [Cholinergic synaptic plasticity shapes resilience and vulnerability to tau](/202604/09/biorxiv-10-1101-2025-05-27-656174-v4-cholinergic-synaptic-plasticity-shapes-resilience-and-vulnerability-to-tau)  
+   evidence：描绘认知发展和一般认知能力 (g)
+3. [Cerebellar function remains resilient under increased task demands in healthy adults up to 80 years but it is task-specific and independent of cerebellar structure](/202604/10/biorxiv-10-64898-2026-04-02-716060-v1-cerebellar-function-remains-resilient-under-increased-task-demands-in-healthy-adults-up-to-80-years-but-it-is-task-specific-and-independent-of-cerebellar-structure)  
    标签：评分：9.0/10、query:cog-eld
-   evidence：认知正常的健康老年人与认知韧性
-5. [Serum metabolic signatures of cognitive resilience in a longitudinal aging cohort](/202604/09/biorxiv-10-64898-2026-03-29-715122-v1-serum-metabolic-signatures-of-cognitive-resilience-in-a-longitudinal-aging-cohort)  
+   evidence：80岁以下健康成人在任务需求下的认知韧性
+4. [A supervised digital game intervention supports language and communication in young children.](/202604/10/biorxiv-10-64898-2026-04-02-716239-v1-a-supervised-digital-game-intervention-supports-language-and-communication-in-young-children)  
+   标签：评分：9.0/10、query:q2
+   evidence：针对2-5岁幼儿语言与沟通能力的数字游戏干预
+5. [Prefrontal brain-to-brain synchrony during human group hunting: Evidence from fNIRS hyperscanning](/202604/10/biorxiv-10-64898-2026-04-05-716331-v1-prefrontal-brain-to-brain-synchrony-during-human-group-hunting-evidence-from-fnirs-hyperscanning)  
    标签：评分：9.0/10、query:cog-eld
-   evidence：纵向老龄化队列中认知韧性的代谢特征
-6. [General cognitive function and the brain's structural connectome](/202604/09/biorxiv-10-64898-2026-03-30-715223-v1-general-cognitive-function-and-the-brains-structural-connectome)  
-   标签：评分：9.0/10、query:cog-eld
-   evidence：一般认知功能(g)与成年人的年龄敏感性
-7. [Promoting Healthy Ageing through Choral Training: A 9-Month Multidomain Intervention (MultiMusic) Enhances Neural Processing Speed in Community-Dwelling Older Adults](/202604/09/biorxiv-10-64898-2026-03-30-715236-v1-promoting-healthy-ageing-through-choral-training-a-9-month-multidomain-intervention-multimusic-enhances-neural-processing-speed-in-community-dwelling-older-adults)  
-   标签：评分：9.0/10、query:cog-eld
-   evidence：增强老年人认知功能和神经处理速度的多领域干预
-8. [Cerebellar function remains resilient under increased task demands in healthy adults up to 80 years but it is task-specific and independent of cerebellar structure](/202604/09/biorxiv-10-64898-2026-04-02-716060-v1-cerebellar-function-remains-resilient-under-increased-task-demands-in-healthy-adults-up-to-80-years-but-it-is-task-specific-and-independent-of-cerebellar-structure)  
-   标签：评分：9.0/10、query:cog-eld
-   evidence：80岁以下健康老龄化中的小脑功能与韧性
+   evidence：我的世界虚拟世界与认知下降指标
+6. [Latent brain state dynamics predict early amyloid accumulation and cognitive impairment](/202604/10/biorxiv-10-64898-2026-03-31-715655-v1-latent-brain-state-dynamics-predict-early-amyloid-accumulation-and-cognitive-impairment)  
+   标签：评分：8.0/10、query:cog-eld
+   evidence：预测病理性老化和早期淀粉样蛋白积累中的认知障碍
+7. [The Role of Meningeal Lymphatic Vessels and Perivascular Cerebrospinal Fluid Flow in Age-Related Processing Speed Decline](/202604/10/biorxiv-10-64898-2026-04-05-716121-v1-the-role-of-meningeal-lymphatic-vessels-and-perivascular-cerebrospinal-fluid-flow-in-age-related-processing-speed-decline)  
+   标签：评分：8.0/10、query:cog-eld
+   evidence：研究人类与年龄相关的认知表现和处理速度下降
 
 ### 速读区论文标签
-1. [CogPic: A Multimodal Dataset for Early Cognitive Impairment Assessment via Picture Description Tasks](/202604/09/2604.01626v1-cogpic-a-multimodal-dataset-for-early-cognitive-impairment-assessment-via-picture-description-tasks)  
+1. [Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys](/202604/10/2604.02629v1-toys-that-listen-talk-and-play-understanding-childrens-sensemaking-and-interactions-with-ai-toys)  
+   标签：评分：8.0/10、query:q1
+   evidence：儿童与AI玩具的社交连接与互动
+2. [MECO: A Multimodal Dataset for Emotion and Cognitive Understanding in Older Adults](/202604/10/2604.03050v1-meco-a-multimodal-dataset-for-emotion-and-cognitive-understanding-in-older-adults)  
    标签：评分：8.0/10、query:cog-eld
-   evidence：用于早期认知障碍评估的多模态数据集
-2. [Captioning Daily Activity Images in Early Childhood Education: Benchmark and Algorithm](/202604/09/2604.01941v1-captioning-daily-activity-images-in-early-childhood-education-benchmark-and-algorithm)  
-   标签：评分：8.0/10、query:profile-1
-   evidence：幼儿教育中的自动化活动理解与教育评估
-3. [Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys](/202604/09/2604.02629v1-toys-that-listen-talk-and-play-understanding-childrens-sensemaking-and-interactions-with-ai-toys)  
-   标签：评分：8.0/10、query:profile-1
-   evidence：儿童与AI玩具的互动及社会联系
-4. [Understanding Clinician Experiences with Game-Based Interventions for Autistic Children to Inform a Future Game Platform Focused on Improving Motor Skills](/202604/09/2604.05249v1-understanding-clinician-experiences-with-game-based-interventions-for-autistic-children-to-inform-a-future-game-platform-focused-on-improving-motor-skills)  
-   标签：评分：8.0/10、query:profile-1
-   evidence：针对儿童的游戏干预与基于游戏的干预
-5. [Improvisational Games as a Benchmark for Social Intelligence of AI Agents: The Case of Connections](/202604/09/2604.00284v1-improvisational-games-as-a-benchmark-for-social-intelligence-of-ai-agents-the-case-of-connections)  
-   标签：评分：7.0/10、query:profile-1
-   evidence：游戏作为社会智能的基准
-6. [Neuropsychiatric Deviations From Normative Profiles: An MRI-Derived Marker for Early Alzheimer's Disease Detection](/202604/09/2604.00545v1-neuropsychiatric-deviations-from-normative-profiles-an-mri-derived-marker-for-early-alzheimers-disease-detection)  
+   evidence：老年人情绪与认知理解的多模态数据集
+3. [Separable Brain Maturation Patterns Mediate Exposome Influences on Cognitive Development: A Longitudinal Study](/202604/10/biorxiv-10-64898-2026-04-04-716497-v1-separable-brain-maturation-patterns-mediate-exposome-influences-on-cognitive-development-a-longitudinal-study)  
+   标签：评分：8.0/10、query:cog-eld
+   evidence：大脑发育介导环境暴露对一般认知能力(g)的影响
+4. [CogPic: A Multimodal Dataset for Early Cognitive Impairment Assessment via Picture Description Tasks](/202604/10/2604.01626v1-cogpic-a-multimodal-dataset-for-early-cognitive-impairment-assessment-via-picture-description-tasks)  
    标签：评分：7.0/10、query:cog-eld
-   evidence：阿尔茨海默病早期检测与老龄化过程中的认知下降
-7. [Designing Transformational Games to Support Socio-ethical Reasoning about Generative AI](/202604/09/2604.02154v1-designing-transformational-games-to-support-socio-ethical-reasoning-about-generative-ai)  
+   evidence：认知障碍评估与多模态数据集
+5. [Designing Transformational Games to Support Socio-ethical Reasoning about Generative AI](/202604/10/2604.02154v1-designing-transformational-games-to-support-socio-ethical-reasoning-about-generative-ai)  
    标签：评分：7.0/10、query:profile-1
-   evidence：支持青少年社会伦理推理的转型游戏
-8. [Messages in a Digital Bottle: A Youth-Coauthored Perspective on LLM Chatbots and Adolescent Loneliness](/202604/09/2604.03470v1-messages-in-a-digital-bottle-a-youth-coauthored-perspective-on-llm-chatbots-and-adolescent-loneliness)  
-   标签：评分：7.0/10、query:q1
-   evidence：中国青少年的孤独感与社交计算
-9. [Omni-MMSI: Toward Identity-attributed Social Interaction Understanding](/202604/09/2604.00267v1-omni-mmsi-toward-identity-attributed-social-interaction-understanding)  
+   evidence：促进青少年社会伦理推理的转型游戏
+6. [Multidimensional physical fitness is associated with reduced dementia risk through proteomic and neuroimaging pathways: a prospective cohort study of the UK Biobank](/202604/10/2604.03952v1-multidimensional-physical-fitness-is-associated-with-reduced-dementia-risk-through-proteomic-and-neuroimaging-pathways-a-prospective-cohort-study-of-the-uk-biobank)  
+   标签：评分：7.0/10、query:cog-eld
+   evidence：身体机能与降低老年痴呆风险相关
+7. [Understanding Clinician Experiences with Game-Based Interventions for Autistic Children to Inform a Future Game Platform Focused on Improving Motor Skills](/202604/10/2604.05249v1-understanding-clinician-experiences-with-game-based-interventions-for-autistic-children-to-inform-a-future-game-platform-focused-on-improving-motor-skills)  
+   标签：评分：7.0/10、query:profile-1
+   evidence：旨在提高儿童技能的游戏干预研究
+8. [Experience Transfer for Multimodal LLM Agents in Minecraft Game](/202604/10/2604.05533v1-experience-transfer-for-multimodal-llm-agents-in-minecraft-game)  
+   标签：评分：7.0/10、query:cog-eld
+   evidence：Minecraft游戏中智能体的迁移导向记忆
+9. [Captioning Daily Activity Images in Early Childhood Education: Benchmark and Algorithm](/202604/10/2604.01941v1-captioning-daily-activity-images-in-early-childhood-education-benchmark-and-algorithm)  
    标签：评分：6.0/10、query:profile-1
-   evidence：理解身份属性的社会交互与线索
-10. [Not Just Duolingo: Supporting Immigrant Language Preservation Through Family-Based Play](/202604/09/2604.00282v1-not-just-duolingo-supporting-immigrant-language-preservation-through-family-based-play)  
-   标签：评分：6.0/10、query:profile-1
-   evidence：用于亲子互动的互动式家庭中心学习游戏
-11. [Interpretable Electrophysiological Features of Resting-State EEG Capture Cortical Network Dynamics in Parkinsons Disease](/202604/09/2604.01475v1-interpretable-electrophysiological-features-of-resting-state-eeg-capture-cortical-network-dynamics-in-parkinsons-disease)  
+   evidence：幼儿教育中的自动化活动理解
+10. [High Volatility and Action Bias Distinguish LLMs from Humans in Group Coordination](/202604/10/2604.02578v1-high-volatility-and-action-bias-distinguish-llms-from-humans-in-group-coordination)  
    标签：评分：6.0/10、query:cog-eld
-   evidence：EEG特征捕捉神经退行性疾病中的皮层网络动态
-12. [Readable Minds: Emergent Theory-of-Mind-Like Behavior in LLM Poker Agents](/202604/09/2604.04157v1-readable-minds-emergent-theory-of-mind-like-behavior-in-llm-poker-agents)  
+   evidence：在共同利益博弈中比较人类与 AI 的协作
+11. [Messages in a Digital Bottle: A Youth-Coauthored Perspective on LLM Chatbots and Adolescent Loneliness](/202604/10/2604.03470v1-messages-in-a-digital-bottle-a-youth-coauthored-perspective-on-llm-chatbots-and-adolescent-loneliness)  
    标签：评分：6.0/10、query:q1
-   evidence：心理理论与人类社会认知
+   evidence：从发展角度讨论青少年孤独感和社交计算
+12. [Readable Minds: Emergent Theory-of-Mind-Like Behavior in LLM Poker Agents](/202604/10/2604.04157v1-readable-minds-emergent-theory-of-mind-like-behavior-in-llm-poker-agents)  
+   标签：评分：6.0/10、query:profile-1
+   evidence：通过互动产生的心理理论和社会认知
 
 
 <div class="dpr-home-promo-card">
