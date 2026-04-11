@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.06469v1/fig-001.webp",
+      "caption": "Figure 4. Architecture of our HA-GNN model",
+      "page": 4,
+      "index": 1,
+      "width": 990,
+      "height": 243
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06469v1/fig-002.webp",
+      "caption": "Figure 3. Overview of our workflow, from raw rs-fMRI scans to the binary prediction",
+      "page": 4,
+      "index": 2,
+      "width": 814,
+      "height": 299
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06469v1/fig-003.webp",
+      "caption": "Figure 1. Distribution of subjects based on their number of available rs-fMRI scans. The blue bars represent stable subjects, while the orange bars represent converter subjects.",
+      "page": 3,
+      "index": 3,
+      "width": 610,
+      "height": 367
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06469v1/fig-004.webp",
+      "caption": "Figure 2. Distribution of subjects based on their diagnosis in their last visit",
+      "page": 3,
+      "index": 4,
+      "width": 610,
+      "height": 336
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06469v1/fig-005.webp",
+      "caption": "Figure 5. Architecture of the GCN pretraining model",
+      "page": 5,
+      "index": 5,
+      "width": 610,
+      "height": 254
+    }
+  ]
+}

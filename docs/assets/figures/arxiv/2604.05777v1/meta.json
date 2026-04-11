@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.05777v1/fig-001.webp",
+      "caption": "Figure 1: Simulations. a) Grid-world environment composed of four quadrants with fixed walls and designated reward states. b) For each simulation, quadrants were randomly rotated and arranged, while rewards were randomly assigned to designated reward states. The simulations comprised a training phase with an observable expert agent (over-trained model-based RL), followed by a test phase without the expert. A different start position was randomly selected on each episode (from the four central states), and stochastic noise was added to reward observations (see Methods). c) Experimental manipulations applied during the test phase: no change (Exp. 1), swap of two randomly selected rewards (Exp. 2), or shifted start positions (Exp. 3).",
+      "page": 2,
+      "index": 1,
+      "width": 885,
+      "height": 481
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05777v1/fig-002.webp",
+      "caption": "Figure 2: Learning Strategies. Six learning conditions were tested, combining model-free (MF) and model-based (MB) RL with either asocial learning (AS) or social learning from an expert. Social learning was implemented at two levels: policy-based (DB) and value-based (VS).",
+      "page": 3,
+      "index": 2,
+      "width": 457,
+      "height": 279
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05777v1/fig-003.webp",
+      "caption": "Figure 3: Experiment 1. a) Performance: mean cumulative reward for different learning strategies combining (a-)social learning (SL) and reinforcement learning (RL) strategies. The vertical dotted line represents the transition between training and test phase. b) Value transfer: mean correlation between learner’s and expert’s value function, grouped by distance to reward states. c) Belief transfer: mean correlation between learner and expert transition matrices, grouped by distance to reward states. Correlations are shown for model-based social learners normalized relative to the asocial model-based learner (horizontal grey line). Shaded areas and error bars denote the standard error of the mean (SEM) across simulations.",
+      "page": 5,
+      "index": 3,
+      "width": 1046,
+      "height": 270
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05777v1/fig-004.webp",
+      "caption": "Figure 4: Experiments 2 and 3. a) Exp. 2 performance. b) Exp. 2 value accuracy: mean correlation between the learner’s and the optimal value function for the modified reward structure (Eq. 7), grouped by distance to reward. c) Exp. 3 performance. d) Exp. 3 belief transfer comparison (MB only) between the baseline (x-axis) and new start location in the test phase (y-axis). Each point is a single simulation, averaged across distances and the dashed diagonal line shows y = x. The inset shows the distribution of residuals, quantifying the stability of model-based representations.",
+      "page": 6,
+      "index": 4,
+      "width": 498,
+      "height": 412
+    }
+  ]
+}

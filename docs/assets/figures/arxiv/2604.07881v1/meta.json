@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07881v1/fig-001.webp",
+      "caption": "Table 1: Samples of Kinetiq’s data literacy movement games",
+      "page": 3,
+      "index": 1,
+      "width": 519,
+      "height": 398
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07881v1/fig-002.webp",
+      "caption": "Figure 4: Kinetiq affords multiple gestures such as knee lifts to answer data andnumeracy questions; the character walks uphill as the learner progresses.",
+      "page": 4,
+      "index": 2,
+      "width": 476,
+      "height": 300
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07881v1/fig-003.webp",
+      "caption": "Figure 5: Users answer by repeated knee lifts, with the number of lifts matching their intended answer. The character climbs up as the learner gains mastery.",
+      "page": 4,
+      "index": 3,
+      "width": 476,
+      "height": 371
+    }
+  ]
+}

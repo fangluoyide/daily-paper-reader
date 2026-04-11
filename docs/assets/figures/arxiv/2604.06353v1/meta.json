@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.06353v1/fig-001.webp",
+      "caption": "Figure 3: The Intersectional Justice-Oriented Design Framework",
+      "page": 12,
+      "index": 1,
+      "width": 898,
+      "height": 544
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06353v1/fig-002.webp",
+      "caption": "Figure 2: Photos taken by participants during the two-week diary period, illustrating (a) teaching children sweep the floor; (b) taking children to the beach to learn more about the sea; (c) playing the traditional Vietnamese game Ôănquan with children; (d) watching children finishing schoolwork; (e) cooking with children; (f) teaching children Vietnamese with textbook at home.",
+      "page": 8,
+      "index": 2,
+      "width": 636,
+      "height": 421
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06353v1/fig-003.webp",
+      "caption": "Table 2: Overview of the Codebook",
+      "page": 18,
+      "index": 3,
+      "width": 856,
+      "height": 729
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06353v1/fig-004.webp",
+      "caption": "Figure 1: An overview of study procedure: consisted of two semi-structured interviews and an online diary activity",
+      "page": 5,
+      "index": 4,
+      "width": 1056,
+      "height": 255
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06353v1/fig-005.webp",
+      "caption": "Table 1: Participant Demographics",
+      "page": 5,
+      "index": 5,
+      "width": 809,
+      "height": 437
+    }
+  ]
+}
