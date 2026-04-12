@@ -1,0 +1,134 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-001.webp",
+      "caption": "Figure 3. Top 30 most frequently attempted questions in Idiomatica, separately for Grade 2 and Grade 3. Bars show the number of students who attempted each question. Questions selected for the analysis are among the highest-frequency items.",
+      "page": 43,
+      "index": 1,
+      "width": 953,
+      "height": 665
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-002.webp",
+      "caption": "Table 1.",
+      "page": 15,
+      "index": 2,
+      "width": 977,
+      "height": 623
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-003.webp",
+      "caption": "Table 5. Transition matrix of attribute profiles from Time 1 (rows) to Time 2 (columns) for 1,616 students. Each element shows the number of students (proportion). Row sums represent Time 1 distributions; column sums represent Time 2 distributions. Profile labels: 00 = no mastery, 10 = vocabulary skill only, 01 = comprehension skill only, 11 = mastery of both skills.",
+      "page": 21,
+      "index": 3,
+      "width": 772,
+      "height": 346
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-004.webp",
+      "caption": "Table 11. Recovery of the Q-matrix across time points (T ) under varying sample sizes (N) and numbers of items (J), comparing the Baseline model and the Text-prior model. Values are reported as mean (bootstrap SE). The reported metrics include classification accuracy (ACC), false positive rate (FPR), false negative rate (FNR), and mean posterior inclusion probability for true Q-matrix entries (PIP true), and mean posterior inclusion probability for false Q-matrix entries (PIP false).",
+      "page": 30,
+      "index": 4,
+      "width": 1248,
+      "height": 735
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-005.webp",
+      "caption": "Table 6.",
+      "page": 22,
+      "index": 5,
+      "width": 977,
+      "height": 566
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-006.webp",
+      "caption": "Table 14. Estimation accuracy of regression parameters under varying sample sizes (N) and numbers of items (J), comparing the Baseline model and the Text-prior model. Values are reported as mean (bootstrap SE) based on 1,000 bootstrap resamples. The reported metrics include root mean squared error (RMSE) and mean absolute error (mae) for β0, βZ , and γ01. Lower values indicate better estimation accuracy.",
+      "page": 34,
+      "index": 6,
+      "width": 848,
+      "height": 849
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-007.webp",
+      "caption": "Figure 1. The hierarchical structure of the log files. The left column shows the full structure of Boost Reading (skill families, games, levels, questions, and attempts). The right column highlights the subset selected for analysis, including two games, their level and question structure, and the corresponding log-based variables used in the study.",
+      "page": 14,
+      "index": 7,
+      "width": 852,
+      "height": 820
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-008.webp",
+      "caption": "Figure 2. Top 30 most frequently attempted questions in Debate-a-ball, separately for Grade 2 and Grade 3. Bars show the number of students who attempted each question. Questions selected for the analysis are among the highest-frequency items.",
+      "page": 42,
+      "index": 8,
+      "width": 953,
+      "height": 666
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-009.webp",
+      "caption": "Table 13. Estimation accuracy of guessing and slipping parameters across time points (T ) under varying sample sizes (N) and numbers of items (J), comparing the Baseline model and the Text-prior model. Values are reported as mean (bootstrap SE). The reported metrics include RMSE and MAE for guessing (g) and slipping (s) parameters.",
+      "page": 33,
+      "index": 9,
+      "width": 1084,
+      "height": 736
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-010.webp",
+      "caption": "Table 15. True Q-matrices for J = 30 at Time 1 and Time 2.",
+      "page": 46,
+      "index": 10,
+      "width": 272,
+      "height": 1233
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-011.webp",
+      "caption": "Figure 5. Distribution of standardised τ values in the item pool.",
+      "page": 45,
+      "index": 11,
+      "width": 746,
+      "height": 574
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-012.webp",
+      "caption": "Table 3. Example three questions from Idiomatica.",
+      "page": 17,
+      "index": 12,
+      "width": 904,
+      "height": 606
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-013.webp",
+      "caption": "Figure 4. Distribution of τ values in the item pool.",
+      "page": 44,
+      "index": 13,
+      "width": 746,
+      "height": 574
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-014.webp",
+      "caption": "Table 12. Recovery of attribute profiles across time points (T ) under varying sample sizes (N) and numbers of items (J), comparing the Baseline model and the Text-prior model. Values are reported as mean (bootstrap SE). The reported metrics include profile agreement rate (PAR) and attribute agreement rates (AAR1, AAR2).",
+      "page": 31,
+      "index": 14,
+      "width": 882,
+      "height": 735
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-015.webp",
+      "caption": "Table 4. Comparison of estimated Q-matrices, guessing (g), and slipping (s) parameters under the Baseline model and the text-prior model. Entries in italics indicate differences between the two models.",
+      "page": 20,
+      "index": 15,
+      "width": 975,
+      "height": 805
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07179v1/fig-016.webp",
+      "caption": "Table 2.",
+      "page": 16,
+      "index": 16,
+      "width": 883,
+      "height": 354
+    }
+  ]
+}

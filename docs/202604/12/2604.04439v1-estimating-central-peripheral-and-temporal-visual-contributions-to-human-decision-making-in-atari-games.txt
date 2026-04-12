@@ -1,0 +1,437 @@
+Title: Estimating Central, Peripheral, and Temporal Visual Contributions to Human Decision Making in Atari Games
+
+URL Source: https://arxiv.org/pdf/2604.04439v1
+
+Published Time: Tue, 07 Apr 2026 01:27:17 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# IEEE Copyright Notice 
+
+This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible. 
+
+> arXiv:2604.04439v1 [cs.LG] 6 Apr 2026
+
+# Estimating Central, Peripheral, and Temporal Visual Contributions to Human Decision Making in Atari Games 
+
+Henrik Krauss 1 and Takehisa Yairi 2
+
+Abstract — We study how different visual information sources contribute to human decision making in dynamic visual en-vironments. Using Atari-HEAD, a large-scale Atari gameplay dataset with synchronized eye-tracking, we introduce a con-trolled ablation framework as a means to reverse-engineer the contribution of peripheral visual information, explicit gaze information in form of gaze maps, and past-state information from human behavior. We train action-prediction networks under six settings that selectively include or exclude these information sources. Across 20 games, peripheral informa-tion shows by far the strongest contribution, with median prediction-accuracy drops in the range of 35.27–43.90% when removed. Gaze information yields smaller drops of 2.11–2.76%, while past-state information shows a broader range of 1.52– 15.51%, with the upper end likely more informative due to reduced peripheral-information leakage. To complement aggre-gate accuracies, we cluster states by true-action probabilities assigned by the different model configurations. This analysis identifies coarse behavioral regimes, including focus-dominated, periphery-dominated, and more contextual decision situations. These results suggest that human decision making in Atari depends strongly on information beyond the current focus of gaze, while the proposed framework provides a way to estimate such information-source contributions from behavior. 
+
+I. I NTRODUCTION 
+
+The frame problem [2] highlights a core challenge in arti-ficial intelligence of determining which aspects of a complex, changing environment are relevant for determining the next action. A closely related question in cognitive science is how humans allocate attention and integrate task-relevant information across space and time when making decisions in dynamic environments. Recent work studies the relation of human behavior and visual attention to better understand human decision mak-ing. A systematic review by Brams et al. [3] found that experts across domains selectively allocating attention to task-relevant information. Ryu et al. [4] showed that expert decision makers in basketball outperformed novices when predicting match situations under both central and peripheral viewing conditions. Jeong et al. [5] found that StarCraft experts exhibit broader attention and faster gaze movements than less skilled players, and DeCouto et al. [6] showed that basketball players frequently update peripheral information with foveal vision while performance drops for larger eccen-tricities. Together, these studies suggest that human decision               
+
+> 1Henrik Krauss is with Department of Advanced Interdisciplinary Studies, The University of Tokyo, Tokyo, 153-8904, Japan.
+
+henrik1.krauss@gmail.com 
+
+> 2Takehisa Yairi is with the Research Center for Advanced Science and Technology, The University of Tokyo, Tokyo, 153-8904, Japan.
+
+Gaze maps  Past states 
+
+## …
+
+Frame stack 
+
+Focus area 
+
+Action prediction network 
+
+Ablating information sources: 
+
+(I)  Periphery  (II)  Gaze  (III)  Past state 
+
+## (I)  (II)  (III) 
+
+Periphery 
+
+Eye tracking 
+
+Atari -HEAD Dataset 
+
+Gameplay  
+
+> Fig. 1. The controlled ablation framework performed in this study: Human gameplay and eye-tracking data from the Atari-HEAD dataset [1] are used to identify focus and periphery region, and construct gaze maps and past states. These information sources are included and excluded for the training of several action prediction networks to estimate their respective contributions.
+
+making depends on coordinated use of central and peripheral information rather than on gaze, i.e., the focus area alone. Human attention and gaze information have also been used to improve intelligent agents. Zhang et al. identify learning from human attention as one general way of leveraging human guidance for deep reinforcement learning [7]. Prac-tically, gaze information has been used to enhance human action estimation in autonomous driving [8], imitation learn-ing (IL) for visual quadrotor navigation [9], and visual robot manipulation from human demonstrations [10]. In Atari, Attention-Guided Imitation Learning (AGIL) improved ac-tion prediction by augmenting IL with gaze information [11], [1], while Selective Eye-Gaze Augmentation (SEA) intro-duced a gating mechanism that learns when gaze should and should not be used [12]. These studies show that gaze can be useful for training agents, but they mostly exploit gaze as a performance-enhancing signal rather than estimating the relative contribution of different human information sources. Guo et al. [13] compared machine and human attention and found that human attention remains robust in situations where agent attention can fail, but their interpretation is restricted to the focus area and therefore leaves covert, i.e., peripheral attention unresolved. Some previous studies come closer to the question of how focal and peripheral information contribute differently. Larson and Loschky [14] found that peripheral vision contributed more than central vision to maximal scene understanding from brief viewing, although central vision was more efficient when equal image area was compared. Nuthmann [15] showed in real-world ob-ject search that performance remained largely intact without foveal vision, whereas limiting access to extrafoveal infor-mation substantially impaired search. In our previous work, human attention maps derived from Atari gameplay showed high action-prediction performance even under high sparsity. These attention maps exhibited greater similarity to time-integrated human gaze than to artificial agent’s attention, but clearly extend beyond the focus area [16]. This points to the importance of studying covert attention, i.e. peripheral visual information, for human decision making as well. However, despite these findings, we still lack a framework for estimating how different information sources contribute to human decisions. Existing gaze-augmented IL models often include gaze in a largely black-box way, and even approaches that learn to gate gaze do not directly explain when and why human experts rely on focal information, pe-ripheral context, or short-term temporal context. In particular, the relative contributions of focus, periphery, and past-state information to human decision making remain insufficiently understood. In this paper, we argue that these contributing factors can be estimated, or reverse-engineered, from human behavior with eye-tracking data. We use Atari gameplay data with synchronized gaze measurements to estimate central, pe-ripheral, gaze, and temporal information. Estimating these factors is interesting for two main reasons: Firstly, to advance the understanding of human behavioral modes in decision-making. Secondly, to leverage this knowledge to build more intelligent artificial agents that can learn from human atten-tion patterns during decision making beyond feeding gaze information into a black-box model. The contributions of this paper are as follows: 1) We introduce a controlled ablation framework for analyzing peripheral, gaze, and past-state contributions to human action prediction in Atari. The approach is visualized in Fig. 1. 2) We provide an analysis and discussion of how these information sources affect prediction performance over 20 Atari games. 3) We complement this with a cluster analysis of potential behavioral modes and an exploratory single-subject analysis. Section II describes the controlled ablation study, net-work architecture, dataset processing, training procedure, and cluster-analysis methodology. Section III presents the action-prediction, cluster-analysis, and single-subject results. Sec-tion IV concludes the paper with a summary and statement of limitations.                             
+
+> TABLE I MODEL CONFIGURATIONS OF INCLUDING AND EXCLUDING DIFFERENT INFORMATION SOURCES AS USED IN THE CONTROLLED ABLATION STUDY .Model 1) Periphery 2) Gaze 3) Past state Note
+> A❍❍❍All information
+> B❍❍✗comparable to AGIL [11]
+> C❍✗❍
+> D❍✗✗Standard IL
+> E✗❍❍
+> F✗❍✗❍included, ✗excluded.
+
+II. M ETHODS 
+
+A. Approach for a Controlled Ablation Study 
+
+We estimate central, peripheral, and visual contributions to human action prediction when playing Atari games by train-ing IL models under different configurations. Particularly, a controlled ablation study is performed over the following three information sources: 1) Periphery information: This denotes visual content outside a gaze-centered region of a radius of ca. 
+
+6◦ visual angle. We choose a relatively wide central region to make this a conservative test of peripheral-information effects. Parafoveal vision is commonly described as extending to about 4–5◦ [15], while scene-perception work has contrasted central and peripheral contributions using nearby radii in the 5◦ to 7.4◦
+
+range [14]. When periphery information is disabled, pixels outside this region are replaced with the global mean frame. 2) Gaze information: Gaze maps precomputed from eye-tracking data are included as additional inputs. Specifically, we use four gaze maps per frame, each generated by convolving the measured gaze points after the last and up to the current frame with Gaussian distributions (standard deviation corresponding to 1◦,
+
+3◦, 5◦, and 10 ◦ of visual angle, respectively) to provide gaze information at different spatial scales. 3) Past-state information: Visual and gaze inputs from three earlier sampled states together with the current state, using a stride of 15 frames, corresponding to approximately the previous 2.25 s of gameplay. This captures the time window of 2–3 seconds for which humans report low difficulty of integrating visual in-formation, as reported by Fairhall et al. [17]. In total we study six configurations of including or exclud-ing the information sources stated above. The game frames, gaze maps and periphery-removed frames are also visualized in Fig. 2. The resulting six configurations are listed in Table I and denote all possible combinations, except those where periphery is excluded but gaze information not appended. These two configurations are not considered as interpreting their performance may be unclear, because the image with masked periphery already implicitly encodes gaze location. Stacked frames 
+
+3x3 Convolution 
+
+1x1 Convolution 
+
+Predicted 
+
+Action Logits 
+
+Dense Layer 
+
+BlurPool 
+
+Gaze maps 
+
+Gaze masks 
+
+x
+
+Focus -only 
+
+Gate 
+
+Past states & gaze maps 
+
+Image processing module 
+
+(shared)  (shared)  (shared) 
+
+84x84 
+
++
+
+Mean state 
+
+## …
+
+Options  to include 
+
+information source: 
+
+(I)  Periphery: yes/no 
+
+(II)  Gaze:  yes/ no 
+
+(III)  Past state : yes/ no 
+
+## (I)  (II) 
+
++
+
+## (III) 
+
++         
+
+> 𝑡 −0.75 𝑠 𝑡 −1.5𝑠 𝑡 −2.25 𝑠
+
+yes 
+
+no  yes 
+
+no 
+
+yes 
+
+no 
+
+Action  prediction  networ k
+
+concat Fig. 2. Architecture of the human action prediction network with three options of including (I) peripheral information, (II) gaze information, and (III) past-state information. 
+
+B. Neural Network Architecture 
+
+The action prediction network architecture is shown in Fig. 2. The architectural objective is twofold: Firstly, it enables inclusion and exclusion of the three information sources as defined in Sec. II-A. Secondly, it tries to en-sure that adding an informative source will increase action prediction accuracy. This is critical for our study, as we want to measure positive contributions of central, peripheral, and temporal visual information. This is non-trivial in deep learning, where additional inputs can sometimes degrade performance or generalization [18]. All variants share the same overall action-prediction struc-ture. The current state input consists of two stacked, con-secutive 84 × 84 grayscale frames processed by a three-layer convolutional encoder with anti-aliased downsampling (Blurpool [19]), batch normalization, GELU activations, two 
+
+1×1 convolution layers, a 48-unit dense layer, followed by a linear action classifier. Variants with gaze augmentation add a parallel gaze-map encoder and fuse image and gaze features by averaging. Variants with past-state information encode the sampled earlier states with the same shared image processing module, compress their concatenation with dense layers, and combine them with the current representation through a learned sigmoid gate. This gate is a key design element, as it allows the network to ignore past-state information when it increases optimization difficulty without improving action prediction, so past-state information is used only to the extent that it is beneficial. 
+
+C. Dataset Processing and Training 
+
+We use Atari-HEAD [1], a large-scale Atari human demonstration and eye-tracking dataset containing synchro-nized gameplay actions and gaze measurements across 20 Atari games. The dataset comprises approximately 117 hours of gameplay. We convert each game’s record into an HDF5 replay buffer containing the current frame, next frame, human action, reward, terminal flag, source episode iden-tifier, and variable-length gaze coordinates. Human actions are represented as one of 18 discrete Atari actions, where combinations of button presses such as UP+FIRE are treated as separate action classes rather than decomposed into partial matches. Frames are resized to 84 × 84 grayscale, and gaze maps are precomputed offline for efficient sampling. Training uses two stacked frames per state. For vari-ants with past-state information, each sample additionally contains a four-state temporal window with a stride of 15 frames. These past states are treated the same as the current state in terms of including periphery or gaze information, depending on the configuration. Valid temporal windows are restricted to remain within the same source recording so that stacked current/past inputs never cross session boundaries. All models are trained with batch size 64, cross-entropy loss, and AdamW optimizer at 10 −3 initial learning rate, weight decay 10 −2, and gradient clipping of 1.0. All models are trained for 150 quasi-epochs that consist of 200 randomly sampled batches over the training states. The learning rate is dropped to 10 −4 after epoch 100. For model m, the training objective is 
+
+Lm = − 1
+
+|N |
+
+X
+
+> i∈N
+
+log pm(a∗ 
+
+> i
+
+| xi), (1) where N denotes the batch size, a∗ 
+
+> i
+
+the demonstrated human action, and xi the input tuple including current frame stack, gaze maps, and past-state information. We use a block-based 90 /10 train/validation split with block size of 50 corresponding to at least 2.5 s . Block-based split is preferred over fully random, as temporally close actions are strongly correlated. We train all models A–F separately for each of the 20 games in Atari-HEAD, and training and validation partitions contain states from all the subjects playing the same game. In addition, subject-specific models are trained on per-subject replay buffers and analyzed separately in the single-subject evaluation. All non-terminal states with available gaze data from Atari-HEAD are used, and all models use the same hyperparameters. 
+
+D. Cluster-based Analysis of Model Predictions 
+
+Beyond the analysis of the base performance levels of the six model configurations presented in II-A, we perform a cluster analysis to capture patterns in the model’s predictions across all games. For each state i, we form a six-dimensional feature vector 
+
+zi = [ pm(a∗ 
+
+> i
+
+| xi)] m∈{ A,B,C,D,E,F } , (2) where pm(a∗ 
+
+> i
+
+| xi) is the softmax probability assigned by model m to the true human action. K-means with k = 5 is fit on the pooled state set once across all games . Clusters are then summarized through their mean per-model true-action probabilities and named retrospectively. Number of clusters 
+
+k = 5 is chosen empirically, based on the observation that for higher k, clusters emerged that exhibited highly similar patterns of true-action probabilities per models only at slightly different base probability levels. For the single-subject analysis, the same fitted clustering is reused to assign subject-specific states to the common cluster space. Cluster separability is summarized with silhouette scores on random subsamples, where higher values indicate better separation from neighboring clusters. For visualization, we compute a two-dimensional t-distributed stochastic neighbor embedding (t-SNE) on a random subsample of 10 ,000 and 
+
+1,000 pooled states for the overall chart and the individual games respectively, using perplexity of 80. III. R ESULTS 
+
+A. Human Action Prediction Accuracies 
+
+For game g and model m, action prediction accuracy is defined as 
+
+Acc g,m = 1
+
+|Dval  
+
+> g
+
+|
+
+X
+
+> i∈Dval
+> g
+
+1[ˆ ai,m = a∗ 
+
+> i
+
+] , (3) where Dval  
+
+> g
+
+denotes the validation set size for game g, a∗ 
+
+> i
+
+the demonstrated human action, and ˆai,m = arg max a pm(a |
+
+xi) the action predicted by model m. Accuracy therefore requires an exact match of the full discrete action class. For example, predicting FIRE when the demonstrated action is UP+FIRE counts as incorrect. Figure 3 summarizes per-game accuracies and median relative drops with respect to model A. All learned models A–F outperform the common-choice baseline on all 20 games. As stated in Sec. II-B, the architecture design aims that additional information sources yield better action prediction performance. To check this, we evaluate the following rule fulfilment across the 20 games, where A > B means model A exhibits higher average prediction accuracy than model B: 
+
+A > B: 17/20 C > D: 18/20 
+
+A > C: 15/20 E > F: 20/20 
+
+A > E: 20/20 B > D: 18/20 
+
+B > F: 20/20 A–F > common: 20/20 We can see that these rules are overall well fulfilled, with mostly 0–3 outliers, except for 5 games where the addition of gaze information worsens prediction performance. This could be explained by model hyperparameters being the same for all games and not being adapted/optimized toward individual game complexities or varying dataset sizes. Overall, we consider these violations acceptable and include all trained models from all games in the numerical analysis.                                              
+
+> TABLE II MEDIAN NORMALIZED PAIRWISE ACCURACY DIFFERENCES (%) ACROSS GAMES . N ORMALIZED BY THE COLUMN MODEL ’S ACCURACY DIFFERENCE WITH THE COMMON CHOICE .ABCDEFA+0.00 +1.54 +2.16 +4.31 +54.49 +71.75 B-1.52 +0.00 -0.66 +2.84 +54.32 +78.28 C-2.11 +0.66 +0.00 +1.98 +41.52 +64.55 D-4.13 -2.76 -1.94 +0.00 +46.86 +68.34 E-35.27 -35.19 -28.97 -31.84 +0.00 +18.36 F-41.59 -43.90 -38.45 -40.58 -15.51 +0.00 past-state removal gaze removal peripheral removal
+
+To compare models beyond the A-referenced view in Fig. 3, Table II reports the full pairwise matrix of median normalized differences, where the normalization uses the gap between the column model and the most common action. The first column corresponds directly to the right panel of Fig. 3, i.e. the median normalized drop relative to model 
+
+A. Removing past-state information leads to a median drop of 1.52% ( A → B), removing explicit gaze information to 2.11% ( A → C), removing both to 4.13% ( A → D), removing peripheral information to 35.27% ( A → E), and removing both, periphery and past-state information, drops by 41.59% ( A → F). As visible in the right panel of Fig. 3, these relative accuracy differences vary substantially across games, so the reported medians should not be understood as game-invariant effect sizes. The strongest decrease is nevertheless clearly associated with peripheral information removal, which is consistent with our previous findings on the importance of peripheral attention for human decision prediction [16]. By contrast, adding explicit gaze infor-mation improves prediction performance only modestly in the present setting, despite earlier gaze-augmented IL work reporting substantial benefits [11], [12]. The highlighted differences in Table II that correspond to a single information source removal span 1.52–15.51% for past-state removal, 2.11–2.76% for gaze removal, and 35.27– 43.90% for peripheral removal. We regard the magnitudes of these ranges as a main finding, but the exact percentages should be interpreted with caution, since they are expected to differ slightly with architecture choices and do not represent fully clean decompositions. A main leakage issue is that information a human integrated over time may still remain inferable from the current peripheral scene, which would increase the apparent contribution of peripheral information while decreasing the apparent contribution of past-state in-formation. This makes the larger E → F drop (15.51%) 20 30 40 50 60 70 80 90 100 
+
+> Prediction accuracy (%)
+> Alien
+> Asterix
+> BankHeist
+> Berzerk
+> Breakout
+> Centipede
+> DemonAttack
+> Enduro
+> Freeway
+> Frostbite
+> Hero
+> MontezumaRevenge
+> MsPacman
+> NameThisGame
+> Phoenix
+> Riverraid
+> RoadRunner
+> Seaquest
+> SpaceInvaders
+> Venture
+
+Validation Prediction Accuracies by Game           
+
+> Common ABCDEF
+> BCDEF
+> Model type
+> Relative prediction accuracy (%)
+
+-120 -100 -80 -60 -41.6 -40 -35.3 -20 -4.1 -2.1 -1.5 0.0 20 
+
+> 1.5 0.6 2.0 31.1 6.3
+
+Accuracy versus A, relative to common action 
+
+ACommon Fig. 3. Validation action-prediction accuracies across games (left) and median relative performance drops with respect to model A, normalized by the A-common gap (right). 
+
+particularly informative, since in that comparison peripheral information is already removed. Thus, the effective contribu-tion of past-state information is likely closer to the upper end of the reported range than to the smaller drops observed for 
+
+A → B and C → D. Past true actions were also not included as model inputs explicitly to avoid auto-regressive fitting of the past actions. Although it is not clear how high this information leakage for autoregressive action fitting would be, some action history may still remain inferable from past visual states. 
+
+B. Cluster Analysis for Human Action Prediction 
+
+To analyze general human decision-making patterns with respect to the use of focal, peripheral, gaze, and past-state information, we cluster states in the shared six-dimensional model-response space introduced in Sec. II-A, where each dimension is the true-action probability assigned by one model configuration. Figure 4 shows the resulting cluster proportions across games and the mean six-model response profiles used for retrospective interpretation. The five cluster proportions are 14.9%, 17.5%, 32.5%, 12.1%, and 23.0% overall, but distributions vary strongly between the different games. Based on their mean true-action probability profiles, we name the five clusters given the explanations below. It shall be noted that these cluster namings are subjective labels to aid interpretation and analysis in this study, acknowledging that a deeper analysis would be required to confirm them as seperate human behavioral modes. C3 (Focus decides/ Ob-vious choice) and C5 (Periphery decides/ Obvious choice) 
+
+represent highly predictable modes. C3 exhibits the highest overall accuracy (up to ∼95%) and minimal loss without peripheral data, suggesting foveal-driven, reactive play. In contrast, C5 shows a high base accuracy of ∼85% that drops below 40% when peripheral context is removed, identifying actions that are only obvious when the global game state is known. C1 (Complex contextual decision) and C4 (Intent-driven decision) capture more nuanced strategies. C1 maintains a lower base accuracy ( ∼40%) with a reliance on peripheral context. C4 shows a unique profile where accuracy drops when gaze info is removed but increases when peripheral information is removed, suggesting that foveal focus and internal intent are more critical here than the overall game state. Finally, C2 (Unpredictable/ Noise) 
+
+lies at a ∼10% accuracy, possibly representing momentary unattentiveness or motor jitter. Figure 5 summarizes cluster separability for the same representation. The sampled overall silhouette score is 0.38, which suggests meaningful but not perfectly discrete sepa-ration. In particular, some clusters appear relatively compact and well separated (mean silhouette of C2 being 0.52 and Alien Asterix BankHeis. Berzerk Breakout Centiped. DemonAtt. Enduro Freeway Frostbit. Hero Montezum. MsPacman NameThis. Phoenix Riverrai. RoadRunn. Seaquest SpaceInv. Venture 
+
+> Overall
+> 0.00.20.40.60.81.0
+> Proportion
+
+Cluster composition      
+
+> ABCDEF
+
+Model 
+
+> 0.0
+> 0.2
+> 0.4
+> 0.6
+> 0.8
+> 1.0
+> Cluster mean  pm(a∗
+> i | xi)
+
+C1: Complex contextual decision C2: Unpredictable/ Noise C3: Focus decides/ Obvious choice C4: Intend-driven decision C5: Periphery decides / Obvious choice 
+
+Cluster profiles Fig. 4. Cluster composition across games (upper), mean true-action-probability profiles (middle), and namings (lower) for the five clusters. 
+
+C3 being 0.59), whereas others are much more diffuse (C1: 0.10 and C4: 0.08). The silhouette heatmap in Fig. 5 shows that cluster seperability varies substantially across games. The t-SNE visualization in Fig. 6 supports the same observation. The overall clusters occupy distinct regions but do not resemble seperate islands, except from C3 that shows some seperation from C4 and C5. For the individual games’ t-SNE chart, we see some seperated clusters, such as C2 for Centipede or Phoenix, as well as C3 for Seaquest. We therefore interpret the clusters as coarse behavioral regimes that help analyze patterns of decision making, but do not necessarily represent clear behavioral modes. For the more seperated cluster regions in individual games, it is not en-tirely clear how much these correspond to behavioral modes or are a result of the specific game’s mechanic. Fig. 7 shows two example scenes for each cluster from the two games with the highest silhouette scores in this cluster. We highlight three examples: (1) For the complex decision cluster C1, in Riverraid we observe the player’s plane ap-proaching a refueling station and a helicopter approaching flying direction. This indeed requires more complex decision making and the player decides to slow down, but several op-tions are possible and some models predict no button press. (2) For the intent-driven cluster 4 in Freeway, we observe the human is looking at its chicken character being blocked from an incoming car and decides to press no button and wait. It C1 C2 C3 C4 C5 Overall 
+
+Cluster                                                                                                           
+
+> Alien Asterix BankHeist Berzerk Breakout Centipede DemonAtt. Enduro Freeway Frostbite Hero Montezum. MsPacman NameThis. Phoenix Riverraid RoadRunn. Seaquest SpaceInv. Venture All
+> .03 .55 .56 .06 .29 .37 .12 .52 .61 .09 .33 .41 .07 .43 .51 .05 .25 .23 .09 .53 .63 .05 .24 .34 .09 .58 .67 .13 .35 .55 .11 .63 .55 .11 .27 .41 .18 .55 .51 .15 .38 .39 .08 .52 .61 .01 .23 .21 .04 .53 .90 .17 .28 .84 .08 .48 .63 .11 .21 .38 .11 .50 .65 .12 .30 .47 .14 .51 .70 .20 .31 .60 .07 .55 .53 .03 .31 .30 .12 .57 .56 .05 .20 .30 .13 .57 .50 .05 .28 .35 .17 .57 .52 .04 .27 .35 .09 .49 .65 .10 .30 .51 .14 .60 .58 .01 .43 .45 .12 .50 .56 .09 .38 .35 .08 .55 .52 .04 .19 .29 .10 .52 .59 .08 .34 .38 0.00.20.40.60.81.0
+> Silhouette Score
+
+Fig. 5. Mean silhouette scores per game and cluster, with an additional overall column. 
+
+is reasonable that the focus region here was most important here. (3) For the periphery-driven/ obvious choice cluster 5, we observe an expected pattern in SpaceInvaders. The player looks at the alien spaceships above while its character is located under a shield which is obvious from periphery or short-term memory. To attack, the player decides to go right, which is correctly predicted by all models except E–F, which predict firing immediately as they have limited or no information the player is currently below a shield. 
+
+C. Single-Subject Analysis 
+
+As a limited follow-up analysis, we trained subject-specific models for two games where at larger amounts of game-play of at least two subjects are contained and compared them with the corresponding all-subject models in Fig. 8. Additionally to the each two presented single-subject mod-els, gameplay of subject J are contained in the all-subject model, but deemed to little to train an individual model. In DemonAttack, the high-performing subject R’s actions are slightly less predictable than subject L’s, except when periphery is removed. This could hint at subject R deciding more based on focus region, or could denote minor model performance differences due to different dataset sizes. The cluster composition differs only moderately from the all-subject model. This is similar to the results of SpaceInvaders, where subject R again performs strongly while the cluster composition remains broadly similar to the pooled model. Subject K in SpaceInvaders shows an unusual accuracy dropoff for model A and C, which may reflect overfitting of these higher parameter models rather than a meaningful behavioral difference. Overall, these single-subject results do not support strong conclusions about subject-specific decision strategies. The dataset may less suitable for analysing models trained on Overall                  
+
+> C1 C2 C3 C4 C5
+> Alien Asterix BankHeist Berzerk Breakout
+> Centipede DemonAtt. Enduro Freeway Frostbite
+> Hero Montezum. MsPacman NameThis. Phoenix
+> Riverraid RoadRunn. Seaquest SpaceInv. Venture Fig. 6. t-SNE visualization of the clustered six-model response space for all games (top) and per-game subsamples (bottom).
+
+individual subject’s data, as Atari-HEAD contains recordings from only four subjects overall, and individual games include data from only one to three of them. We therefore view the single-subject analysis in this study as exploratory only and do not interpret the observed differences as subject-level behavioral effects. IV. C ONCLUSIONS 
+
+Understanding which information sources humans use to take action in dynamic visual environments is important both for explaining human decision making and for building more intelligent agents that learn from human behavior. In this paper, we addressed this question through a controlled ablation framework for human action prediction in Atari, using behavior with synchronized gaze data to reverse-engineer the contribution of peripheral visual information, explicit gaze information, and past-state information. Across 20 games, peripheral information showed by far the strongest effect, with median prediction-accuracy drops in the range of 35.27–43.90% when removed. By contrast, gaze information removal yielded drops in the narrower range of 2.11–2.76%. Past-state removal showed the broadest range, from 1.52% to 15.51%, where the upper end is likely more informative because it is measured after peripheral information has already been removed. At the same time, these drops vary substantially across games, so the reported ranges should not be understood as fixed effect sizes. A cluster analysis further suggests that these information sources are not used uniformly across states but depend on gameplay situation. Some clusters correspond to highly predictable focus- or periphery-dominated situations, whereas others capture more complex, intent-driven, or noisy decision regimes. Together, the study contributes both a quantitative finding on the strong importance of peripheral information and a general framework for estimating information-source contributions from human behavior. Several limitations should be considered when interpreting these findings. A presented single-subject analysis remained of limited value, due to small number of different subjects. Also, the current ablation study design cannot fully dis-entangle information leakage between sources. Information integrated over time may remain inferable from the current peripheral scene, and some action history may still be recoverable from past visual states even though past true actions are not provided explicitly. In addition, the present model set does not include configurations in which only the focus area is removed, which could provide a more direct complement to the current peripheral-removal analysis. Future work should therefore extend the present analysis in three directions. More informative subject-level studies may require training across multiple games for individual subjects or directly analyzing subject-specific predictions of the shared all-subject models, which was not included here. A more complete disentangling of information sources could be obtained through additional ablation settings or architectures that isolate temporal and autoregressive effects more strictly. Finally, the cluster analysis should be expanded toward a more action-specific interpretation of behavioral modes and their relation to particular game situations. REFERENCES [1] R. Zhang, C. Walshe, Z. Liu, L. Guan, K. Muller, J. Whritner, L. Zhang, M. Hayhoe, and D. Ballard, “Atari-head: Atari human eye-tracking and demonstration dataset,” in Proceedings of the AAAI conference on artificial intelligence , vol. 34, no. 04, 2020, pp. 6811– 6820. [2] J. McCarthy and P. Hayes, “Some philosophical problems from the standpoint of artificial intelligence,” in Readings in Artificial Intelli-gence , B. L. Webber and N. J. Nilsson, Eds. Los Altos, CA: Morgan Kaufmann, 1981, pp. 431–450. [3] S. Brams, G. Ziv, O. Levin, J. Spitz, J. Wagemans, A. M. Williams, and W. F. Helsen, “The relationship between gaze behavior, expertise, and performance: A systematic review.” Psychological bulletin , vol. 145, no. 10, p. 980, 2019. [4] D. Ryu, B. Abernethy, D. L. Mann, J. M. Poolton, and A. D. Gorman, “The role of central and peripheral vision in expert decision making,”     
+
+> Perception , vol. 42, no. 6, pp. 591–607, 2013. [5] I. Jeong, K. Nakagawa, R. Osu, and K. Kanosue, “Difference in gaze control ability between low and high skill players of a real-time strategy game in esports,” PloS one , vol. 17, no. 3, p. e0265526, 2022. [6] B. DeCouto, B. Fawver, J. Thomas, A. Williams, and C. Vater, “The role of peripheral vision during decision-making in dynamic viewing sequences,” Journal of sports sciences , vol. 41, no. 20, pp. 1852–1867, 2023. DemonAttack
+
+Cluster 1 Complex decision 
+
+> RRNRRRF
+> Centipede
+
+Cluster 2 Unpredictable 
+
+> NRRRRRR
+> Freeway
+
+Cluster 3 Focus/ Obvious 
+
+> UUUUUUU
+> MontezumaRevenge
+
+Cluster 4 Intend-driven 
+
+> LLLLLLL
+> Seaquest
+
+Cluster 5 Periphery/ Obvious 
+
+> RRRRRRR
+
+Riverraid 
+
+> DDDNDNN
+
+Seaquest 
+
+> L-F LLLLFF
+
+MontezumaRevenge 
+
+> RRRRRRR
+
+Freeway 
+
+> NUNNNUN
+
+SpaceInvaders       
+
+> RRRRRFF
+> N=NOOP F=FIRE U=UP R=RIGHT L=LEFT D=DOWN True ABCDEF
+
+Fig. 7. Example states from the two games with the highest silhouette score for each cluster. Focus region of six visual degrees is shaded in blue. A B C D E F
+
+Model 
+
+> 40
+> 60
+> 80
+> Accuracy (%)
+
+DemonAttack      
+
+> All LRKABCDEF
+
+Model 
+
+> 50
+> 60
+> 70
+
+SpaceInvaders 
+
+> All LR
+> 0.0
+> 0.5
+> 1.0
+> Proportion
+> All KR
+> 0.0
+> 0.5
+> 1.0All LR
+
+Subject 
+
+> 10 4
+> 10 5
+> Score  Mean Min/max All KR
+
+Subject     
+
+> 10 3
+> 10 4
+> C1 C2 C3 C4 C5
+
+Fig. 8. Single-subject comparison for DemonAttack and SpaceInvaders. Action-prediction accuracy across model types (top). Cluster composition (middle). Score statistics (bottom). [7] R. Zhang, F. Torabi, L. Guan, D. H. Ballard, and P. Stone, “Leveraging human guidance for deep reinforcement learning tasks,” in Proceed-ings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19 . Macao, China: International Joint Conferences on Artificial Intelligence Organization, 7 2019, pp. 6339–6346. [8] C. Liu, Y. Chen, L. Tai, M. Liu, and B. Shi, “Utilizing eye gaze to enhance the generalization of imitation networks to unseen environ-ments,” arXiv preprint arXiv:1907.04728 , 2019. [9] R. Bera, V. G. Goecks, G. M. Gremillion, V. J. Lawhern, J. Valasek, and N. R. Waytowich, “Gaze-informed multi-objective imitation learn-ing from human demonstrations,” arXiv preprint arXiv:2102.13008 ,2021. [10] I. Chuang, J. Zou, A. Lee, D. Gao, and I. Soltani, “Look, focus, act: Efficient and robust robot learning via human gaze and foveated vision transformers,” arXiv preprint arXiv:2507.15833 , 2025. [11] R. Zhang, Z. Liu, L. Zhang, J. A. Whritner, K. S. Muller, M. M. Hayhoe, and D. H. Ballard, “Agil: Learning attention from human for visuomotor tasks,” in Proceedings of the european conference on computer vision (eccv) , 2018, pp. 663–679. [12] C. Thammineni, H. Manjunatha, and E. T. Esfahani, “Selective eye-gaze augmentation to enhance imitation learning in atari games,” 
+
+Neural Computing and Applications , vol. 35, no. 32, pp. 23 401– 23 410, 2023. [13] S. S. Guo, R. Zhang, B. Liu, Y. Zhu, D. Ballard, M. Hayhoe, and P. Stone, “Machine versus human attention in deep reinforcement learning tasks,” Advances in neural information processing systems ,vol. 34, pp. 25 370–25 385, 2021. [14] A. M. Larson and L. C. Loschky, “The contributions of central versus peripheral vision to scene gist recognition,” Journal of Vision , vol. 9, no. 10, pp. 6:1–16, 2009. [15] A. Nuthmann, “How do the regions of the visual field contribute to object search in real-world scenes? evidence from eye movements,” 
+
+Journal of Experimental Psychology: Human Perception and Perfor-mance , vol. 40, no. 1, pp. 342–360, 2014. [16] H. Krauss and T. Yairi, “Revealing human attention patterns from gameplay analysis for reinforcement learning,” 2026. [Online]. Available: https://arxiv.org/abs/2504.11118 [17] S. L. Fairhall, A. Albi, and D. Melcher, “Temporal integration win-dows for naturalistic visual sequences,” PloS one , vol. 9, no. 7, p. e102248, 2014. [18] Y. Huang, J. Lin, C. Zhou, H. Yang, and L. Huang, “Modality competition: What makes joint training of multi-modal network fail in deep learning?(provably),” in International conference on machine learning . PMLR, 2022, pp. 9226–9259. [19] R. Zhang, “Making convolutional networks shift-invariant again,” in 
+
+International conference on machine learning . PMLR, 2019, pp. 7324–7334.

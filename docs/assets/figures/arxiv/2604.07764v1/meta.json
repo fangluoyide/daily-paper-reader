@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-001.webp",
+      "caption": "Table 2: Comparison of parameter estimation and out-of-sample prediction (computed using RPE in the format of mean(SD)) across different models for small sized 3D images (8× 8× 8) in various simulation scenarios. The best prediction performance is obtained under the proposed approach for all settings.",
+      "page": 11,
+      "index": 1,
+      "width": 602,
+      "height": 578
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-002.webp",
+      "caption": "Table 3: Demographic and clinical characteristics of AD and MCI Groups",
+      "page": 15,
+      "index": 2,
+      "width": 686,
+      "height": 680
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-003.webp",
+      "caption": "Figure 2: ROI-Level Longitudinal Prediction Accuracy. Panels (a)– (b) summarize voxel-wise prediction accuracy for cortical thickness across 83 ROIs, using correlation (a), RPE (b). For each ROI, boxplots display the distribution of correlation and RPE values across voxels. Cortical thickness values were extracted using the DKT atlas, and all models were trained and evaluated independently within each group and ROI.",
+      "page": 15,
+      "index": 3,
+      "width": 686,
+      "height": 431
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-004.webp",
+      "caption": "Table 1: Comparison of coefficient estimation and prediction (using RPE in the format of mean(SD)) across different methods based on large-sized 3-D images (32× 32× 32) under different simulation settings. Results are averaged over replicates and variability is reported as standard deviation in parenthesis. Only results for the proposed approach and DL-IIR method are presented since the other competing approaches were not scalable. The better-performing model is highlighted in bold.",
+      "page": 10,
+      "index": 4,
+      "width": 498,
+      "height": 604
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-005.webp",
+      "caption": "Figure 4: Example traceplots for parameters in simulation. The blue curve corresponds to Θ(v) (θ), the orange curve corresponds to Mn,v(XP,n(v)) (µ), and the green curve corresponds to Θ(v) · Mn,v(XP,n(v)) (θµ) for the given voxels.",
+      "page": 23,
+      "index": 5,
+      "width": 786,
+      "height": 491
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-006.webp",
+      "caption": "Figure 3: DIC values for different tensor rank choices for simulation setting 3.a.ii",
+      "page": 23,
+      "index": 6,
+      "width": 786,
+      "height": 542
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-007.webp",
+      "caption": "Figure 1: Illustration of the BTOT-VC model structure and 3D voxel-centered patch construction. (a) A schematic representation of the BTOT-VC model (shown without covariates for clarity). Each cube denotes a 3D tensor, with unit cubes corresponding to voxels. The model is expressed as Yn = Γ + Θ ⊙ Mn,·(XP,n) + En, n = 1, . . . , N , highlighting how voxel-wise dependencies between input and output tensors are captured through a spatially structured Gaussian process, while local information is incorporated via the patch-based mapping Mn,v(XP,n(v)). (b) Illustration of voxel-centered patch extraction in a 5× 5× 5 image. The top panel shows an interior voxel v (red), for which all neighboring voxels (yellow) are observed and included in the patch XP,n(v). The bottom panel shows a boundary voxel v′, with zero-padding (green) applied at image boundaries to ensure consistent patch dimensionality across all voxel locations.",
+      "page": 5,
+      "index": 7,
+      "width": 832,
+      "height": 1057
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-008.webp",
+      "caption": "Table 4: Summary of predictive performance across methods and study groups. For each method, we report the voxel-wise prediction Pearson correlation and RPE, summarized across ROIs in the format of mean(SD), under three evaluation settings: AD longitudinal, MCI longitudinal, and external AD validation.",
+      "page": 16,
+      "index": 8,
+      "width": 586,
+      "height": 404
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07764v1/fig-009.webp",
+      "caption": "Table 5: Prediction and classification performance of brain age gap (BAG) across study groups and modeling strategies. Results are reported separately for AD and MCI cohorts under three evaluation settings. (i) Longitudinal forecasting (AD long, MCI long): month-12 MRI images are predicted using month-6 images using the whole cohort, and BAG is computed from the predicted images. (ii) Out-of-sample forecasting (AD Out-of-sample, MCI-Out-ofsample): month-12 images are predicted from month-6 images using independent training and test splits (75:25), providing external validation of image forecasting performance. (iii) Early-visit prediction (Early-Visit Prediction): BAG is predicted directly from early-visit MRI without image forecasting, using either baseline or month-6 images.For each method, we report BAG prediction correlation and root mean squared error (RMSE), along with classification performance for accelerated brain aging (BAG > 0).",
+      "page": 16,
+      "index": 9,
+      "width": 602,
+      "height": 438
+    }
+  ]
+}

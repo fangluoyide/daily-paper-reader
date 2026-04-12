@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-001.webp",
+      "caption": "Fig. 3. Validation action-prediction accuracies across games (left) and median relative performance drops with respect to model A, normalized by the A-common gap (right).",
+      "page": 6,
+      "index": 1,
+      "width": 1022,
+      "height": 681
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-002.webp",
+      "caption": "Fig. 1. The controlled ablation framework performed in this study: Human gameplay and eye-tracking data from the Atari-HEAD dataset [1] are used to identify focus and periphery region, and construct gaze maps and past states. These information sources are included and excluded for the training of several action prediction networks to estimate their respective contributions.",
+      "page": 2,
+      "index": 2,
+      "width": 494,
+      "height": 460
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-003.webp",
+      "caption": "Fig. 4. Cluster composition across games (upper), mean true-actionprobability profiles (middle), and namings (lower) for the five clusters.",
+      "page": 7,
+      "index": 3,
+      "width": 483,
+      "height": 667
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-004.webp",
+      "caption": "Fig. 5. Mean silhouette scores per game and cluster, with an additional overall column.",
+      "page": 7,
+      "index": 4,
+      "width": 479,
+      "height": 473
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-005.webp",
+      "caption": "Fig. 6. t-SNE visualization of the clustered six-model response space for all games (top) and per-game subsamples (bottom).",
+      "page": 8,
+      "index": 5,
+      "width": 479,
+      "height": 746
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-006.webp",
+      "caption": "Fig. 2. Architecture of the human action prediction network with three options of including (I) peripheral information, (II) gaze information, and (III) past-state information.",
+      "page": 4,
+      "index": 6,
+      "width": 1029,
+      "height": 435
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-007.webp",
+      "caption": "Fig. 8. Single-subject comparison for DemonAttack and SpaceInvaders. Action-prediction accuracy across model types (top). Cluster composition (middle). Score statistics (bottom).",
+      "page": 9,
+      "index": 7,
+      "width": 483,
+      "height": 553
+    },
+    {
+      "url": "assets/figures/arxiv/2604.04439v1/fig-008.webp",
+      "caption": "Fig. 7. Example states from the two games with the highest silhouette score for each cluster. Focus region of six visual degrees is shaded in blue.",
+      "page": 9,
+      "index": 8,
+      "width": 957,
+      "height": 496
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-001.webp",
+      "caption": "Figure 7 Negative networks: receptive language and gross motor predictive anatomy(term cohort). (A,C) Connections plotted as the number of edges within and between each pair of canonical networks for receptive language score and gross motor score respectively(left to right). (B,D) High-degree ROIs for the same models. Only ROIs with a degree ≥ one-sixth of the highest ROI are displayed; node size is proportional to degree.",
+      "page": 38,
+      "index": 1,
+      "width": 1713,
+      "height": 1307
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-002.webp",
+      "caption": "Table 2 Statistics of permutation and independent validation",
+      "page": 42,
+      "index": 2,
+      "width": 1823,
+      "height": 1959
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-003.webp",
+      "caption": "Figure 2. Cohort-specific predictive networks for cognition.",
+      "page": 33,
+      "index": 3,
+      "width": 1748,
+      "height": 299
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-004.webp",
+      "caption": "Figure 4. Predictive networks for language across cohorts and subscales.",
+      "page": 35,
+      "index": 4,
+      "width": 1897,
+      "height": 1855
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-005.webp",
+      "caption": "Figure 9. Inter-/intra-hemispheric connectivity patterns in term and preterm cohorts.",
+      "page": 40,
+      "index": 5,
+      "width": 1721,
+      "height": 215
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-006.webp",
+      "caption": "Figure 1. ROI-constrained CPM pipeline with ROI-constrained feature selection and independent validation. (a) Stage-2 — ROI ranking: ROIs were sorted by iteratively removing the highest-degree ROI to define a high-to-low ROI degree order. No Stage-1 edges were carried forward as features; only the ROI order 𝑅 was passed to Stage 3. (b) Stage-3 — ROI-constrained CPM : For each ROI-set size (n = 1…|R|), edges that survived p<0.05 and connected to at least one of the top-n ROIs were selected via LOO to calculate prediction accuracy. SNR was also computed for each prefix n by dividing the summed occurrence counts of signal edges (occurred in ≥ 90% of LOO iterations) by those of noise edges (occurred in ≥ 90% of LOO iterations);(c) Stage-4 — SNR analysis: As progressively lower-degree ROIs were added, SNR steadily decreased(c2), mirroring the decline in predictive accuracy(c1). And SNR and prediction accuracy were strongly correlated (r = 0.96, p < 0.0001). We conducted a permutation test to confirm that the observed weighted average prediction performance (weighted by degree of each ROI) across all ROI-set sizes n exceeded chance; (d) Independent validation: For each ROI-set size (n = 1…|R|), validation subjects’ network strength—sums of signal edges incident on the top-n ROIs—were correlated with",
+      "page": 32,
+      "index": 6,
+      "width": 1891,
+      "height": 263
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-04-716445-v1/fig-007.webp",
+      "caption": "Table 1 Research participants",
+      "page": 41,
+      "index": 7,
+      "width": 1588,
+      "height": 1294
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-715844-v1/fig-001.webp",
+      "caption": "Figure 2. Sexually dimorphic anterior connectivity reorganization and delayed microstructural integrity decline in female anterior cortical areas. a. In the DMN, clusters showing a significant decrease in functional connectivity in the age range 0-400 PND are shown in blue, whereas clusters with significant increase in the 500-700 PND range are shown in red. In the same network, significant sex x age interactions are shown in pink shadow. b. Within-network functional connectivity in males (green) and females (purple), averaged across voxels belonging to anterior and posterior DMN, and for different ages (light color, PND 210, dark color, PNS 546). In females, connectivity is significantly greater in anterior cortical areas at PND 546 (dark purple) compared to PND 210 (unpaired t-test, p = 0.007), with a trend for increased connectivity in intermediate cortical areas (unpaired t-test, p = 0.08). No significant differences are observed in males. c. Of all RSNs (somatomotor, visual, cingulate, somatosensory, and DMN), the clusters displaying a significant sex × age interaction are localized exclusively in anterior areas. d. Averaged MD breakpoint in males (green) and females (purple) for anterior versus intermediate cortical areas, showing a delayed inflection point in anterior cortical areas only (unpaired t-test, p = 0.005). Error bars represent standard errors. e. Difference in the age at which the MD breakpoint is observed between sexes (purple, breakpoint earlier in males; green, breakpoint earlier in females) shown in regions with significant quadratic trajectories with age. f. Same as e, but for the human cohort of ref. 16.",
+      "page": 7,
+      "index": 1,
+      "width": 976,
+      "height": 423
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-715844-v1/fig-002.webp",
+      "caption": "Figure 4. Cellular and electrophysiological correlates of functional connectivity remodeling in anterior regions from advanced dw-MRI, immunohistochemistry, and local field potential recordings. a. Age-related trajectories of neurite density and dispersion in anterior and posterior representative ROIs: prelimbic cortex at the left, motor cortex in the middle and retrosplenial cortex at the right. Segmented lines represent the best model fits (female in purple, male in green), and shaded areas indicate 95% confidence bands. b. Monte Carlo simulations of different substrates associated with neuronal, microglia or astrocyte alterations. For each altered cellular substrate, the upper graph shows predicted changes in neurite density, and the lower graph shows predicted changes in neurite dispersion. Data are shown as mean ± standard error. c. Immunohistochemistry experimental design (left), and the prelimbic cortex selected for analysis (right), highlighted with a red square. d. NeuN+ cells, GAD67 staining, and segmentation of GAD67+ neuronal cells in two representative animals. e. NeuN cell count (left, unpaired t-test, p=0.23), GAD67+ (center, unpaired t-test, p=0.04) and GAD67+ NeuN cell count (left, unpaired t-test, p=0.29) for regions-of-interest in prelimbic cortex, compared across sexes. f. Experimental scheme for the electrophysiological experiment. Top figure: ages and number of animals from a separate cohort used for the input/output",
+      "page": 12,
+      "index": 2,
+      "width": 976,
+      "height": 587
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-715844-v1/fig-003.webp",
+      "caption": "Figure 3. Temporal sequence and cognitive correlates of sex-specific microstructural integrity and functional connectivity reorganization across the lifespan. a. Mean breakpoint (left) and slope after breakpoint (right) of MD in white matter for female (purple) and male (green) rats (paired t-test, p=0.04 for slope). b. MD slope after breakpoint in white matter is plotted as a function of the anterior-posterior coordinate for females (Pearson correlation test, r= 0.63, p=0.029). The shaded area indicates the 95% confidence band. c. Mean MD trajectory in anterior cortical areas (infralimbic, prelimbic, motor, and orbital cortices) versus age. The breakpoint in female (purple) is around ~270 PND, while in males around ~130 PND (green), as assessed using a segmented regression model (discontinuous line). Shaded areas represent the 95% confidence bands. d. Functional connectivity in the DMN versus age and fitted quadratic model, showing a breakpoint around 250 days in females (purple) and around 410 days in males (green). Shaded areas represent the 95% confidence bands. e. Schematic summary of the temporal sequence of sex-specific microstructural and functional changes",
+      "page": 9,
+      "index": 3,
+      "width": 976,
+      "height": 579
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-02-715844-v1/fig-004.webp",
+      "caption": "Figure 1. Longitudinal structural and functional MRI characterization across the lifespan. a. Experimental design of the longitudinal study. Dw-MRI was acquired at the ages indicated by white dots, whereas rs-fMRI acquisitions are marked by red dots. b. Longitudinal trajectory of FA across all white matter regions and animals. Solid lines indicate model fit for females (purple) and males (green), with shaded areas representing the 95% confidence bands. c. Same for RF. d. Upper panel: illustration of the segmented regression analysis to estimate sex-specific age-related breakpoints in MRI markers. The lower panel shows the average breakpoint across all white matter regions for FA (left) and RF (right); females are shown in purple and males in green, with breakpoints occurring significantly later in females for both markers (paired t-test: FA p = 0.0011, RF",
+      "page": 5,
+      "index": 4,
+      "width": 976,
+      "height": 556
+    }
+  ]
+}
