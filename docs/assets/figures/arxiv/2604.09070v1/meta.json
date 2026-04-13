@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.09070v1/fig-001.webp",
+      "caption": "Figure 4: The speculative user journey map for routine NCD screening with CAI at home or in the community. During the process, it increases awareness of NCDs and provides timely notifications for necessary medical advice. In the hospital, CAI provides the clinician with comprehensive information about the patient, including the previous screening history.",
+      "page": 21,
+      "index": 1,
+      "width": 800,
+      "height": 615
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09070v1/fig-002.webp",
+      "caption": "Figure 2: We presented four scenarios for participants. In sketches a and c, a human assessor administers the MoCA test and the GSDT, respectively. In sketches b and d, CAI administers the same two tests.",
+      "page": 10,
+      "index": 2,
+      "width": 800,
+      "height": 473
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09070v1/fig-003.webp",
+      "caption": "Table 1: Demographic information of the individuals. The individual’s cognitive status is based on their previous screening results. NCDs refer to neurocognitive disorders, and SCD refers to subjective cognitive decline.",
+      "page": 8,
+      "index": 3,
+      "width": 448,
+      "height": 649
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09070v1/fig-004.webp",
+      "caption": "Figure 3: The original user journey map of the hospital NCD screening and its pain points. Individuals and caregivers go to the hospital after experiencing symptoms, usually leading to a delayed diagnosis. Other issues, such as individuals’ social stress, the workload of caregivers and clinicians, and inefficient communication, might also hinder accessible NCD screening.",
+      "page": 19,
+      "index": 4,
+      "width": 799,
+      "height": 352
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09070v1/fig-005.webp",
+      "caption": "Table 2: Demographic information of the caregivers.",
+      "page": 9,
+      "index": 5,
+      "width": 566,
+      "height": 224
+    }
+  ]
+}

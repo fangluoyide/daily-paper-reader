@@ -1,0 +1,272 @@
+Title: Emergent social transmission of model-based representations without inference
+
+URL Source: https://arxiv.org/pdf/2604.05777v1
+
+Published Time: Wed, 08 Apr 2026 00:59:02 GMT
+
+Number of Pages: 9
+
+Markdown Content:
+# Emergent social transmission of model-based representations without inference 
+
+Silja Keßler 1(silja.kessler@student.uni-tuebingen.de), Miriam Bautista-Salinero 1, Claudio Tennie 1
+
+& Charley M. Wu 2,3 (charley.wu@tu-darmstadt.de)  
+
+> 1
+
+University of T¨ ubingen, T¨ ubingen, Germany  
+
+> 2
+
+Technical University Darmstadt, Darmstadt, Germany  
+
+> 3
+
+Hessian AI, Darmstadt, Germany 
+
+Abstract 
+
+How do people acquire rich, flexible knowledge about their environment from others despite limited cognitive capacity? Humans are often thought to rely on computationally costly mentalizing, such as inferring others’ beliefs. In contrast, cul-tural evolution emphasizes that behavioral transmission can be supported by simple social cues. Using reinforcement learn-ing simulations, we show how minimal social learning can indirectly transmit higher-level representations. We simulate a na¨ ıve agent searching for rewards in a reconfigurable en-vironment, learning either alone or by observing an expert— crucially, without inferring mental states. Instead, the learner heuristically selects actions or boosts value representations based on observed actions. Our results demonstrate that these cues bias the learner’s experience, causing its representation to converge toward the expert’s. Model-based learners benefit most from social exposure, showing faster learning and more expert-like representations. These findings show how cultural transmission can arise from simple, non-mentalizing processes exploiting asocial learning mechanisms. 
+
+Keywords: Interactive behavior; Social cognition; Agent-based Modeling; Computational Modeling 
+
+# Introduction 
+
+Reinforcement learning (RL) offers a powerful framework for understanding how agents acquire knowledge through inter-action with their environment (Sutton & Barto, 2018). Tra-ditionally, this framework has focused on solitary learning: individual agents learn by interacting directly with their en-vironment and update internal representations based on indi-vidual experience. While this paradigm has yielded substan-tial theoretical and practical advances (Shteingart & Loewen-stein, 2014; O’Doherty, Lee, & McNamee, 2015), it stands in contrast to how learning often unfolds in natural settings: humans and other animals routinely benefit from social infor-mation (Laland, 2004; Olsson, Knapska, & Lindstr¨ om, 2020), leveraging the experiences of others to accelerate learning (Rendell, Boyd, et al., 2010; Park, Go¨ ıame, O’Connor, & Dreher, 2017), reduce exploration costs (Witt, Toyokawa, Lala, Gaissmaier, & Wu, 2024; Garg, Kello, & Smaldino, 2022), and improve performance in complex environments (Wu et al., 2025; Hawkins et al., 2023). Thus, recent work in RL has increasingly incorporated so-cial learning mechanisms, motivated by both the goal of mod-eling human social cognition (Wu, V´ elez, & Cushman, 2022; Hackel, Mende-Siedlecki, & Amodio, 2020; Najar, Bonnet, Bahrami, & Palminteri, 2020) and for engineering applica-tions where artificial agents learn from observing human be-havior (Peters & Schaal, 2008; Urain et al., 2025). In these approaches, learning from others is often modeled as men-talizing (Baker, Saxe, & Tenenbaum, 2009; Jara-Ettinger, 2019)—inferring latent mental states such as goals, prefer-ences, or beliefs about the structure of the environment from observed actions (also known as Theory of Mind; Tomasello, 1999). Techniques like inverse reinforcement learning (IRL; Russell, 1998; Jara-Ettinger, 2019; Jern, Lucas, & Kemp, 2017; Collette, Pauli, Bossaerts, & O’Doherty, 2017) formal-ize this process by inverting the RL model to “unpack” behav-ior into underlying value or model-based representations of the world (i.e., transition structure). Although powerful, such inference methods are computationally costly and intractable in many settings (Wu et al., 2022). In contrast, cultural evolution research has long empha-sized that surprisingly sophisticated patterns of behavioral transmission can emerge from simple, low-cost social cues (Heyes, 2018; Mesoudi, 2016). Individuals often rely on simple heuristics, such as selectively imitating the most suc-cessful (McElreath et al., 2008) or the most prestigious mem-bers of a group (Jim´ enez & Mesoudi, 2019; Boyd & Rich-erson, 1988), without needing to infer mental states of oth-ers. These mechanisms can nonetheless support the accumu-lation of complex behaviors and knowledge across genera-tions (Legare & Nielsen, 2015; Rendell, Fogarty, & Laland, 2010), suggesting effective social learning may not require expensive inferences required for mentalizing (Roberts-Gaal, Bolic, & Cushman, 2025; Uchiyama, Tennie, & Wu, 2023). In this work, we explore how higher-level representations of value and model-based transition structure can emerge in RL agents from simple forms of social learning—without ex-plicit inference of others’ mental states—and how they sup-port generalization to novel conditions. We simulate agents that search for rewards in a spatially reconfigurable environ-ment, learning either independently or by observing an ex-pert. Crucially, learners do not attempt to infer the expert’s goals or internal model of the environment; instead, they rely on social cues to guide learning, adopting strategies more similar to imitation (Byrne & Russon, 1998) or local enhance-ment (Galef, 1988) than mentalizing. We specifically con-sider two social learning strategies at different representation levels: decision biasing (DB; Toyokawa, Whalen, & Laland, 2019), which shapes the agent’s policy to favor actions that mimic the expert’s behavior, and value shaping (VS; Najar        
+
+> arXiv:2604.05777v1 [cs.AI] 7 Apr 2026 Training phase Test phase
+> identical for all Experiments Exp. 1: Baseline Exp. 2: Value swap Exp. 3: New start location
+> Start states
+> Reward states
+> Walls
+> Rewards
+> +/ -High 100
+> 50
+> 25
+> 0
+> +/ -Medium
+> Low
+> None
+> 0
+> 50
+> 100
+> 25
+> Expert
+> Learner
+> +/ -
+> 111
+> 42
+> 25
+> 0
+> 111
+> 25
+> 42
+> 0
+> 42
+> 111
+> 25
+> 0
+> START START
+> START  START
+> START START
+> START  START
+> 97
+> 41
+> 36
+> 0
+
+a
+
+c
+
+b
+
+> World initialization
+> & reward
+> assignment
+> Training phase
+> (Ep. 1 -10)
+> Learner + Expert
+> Test phase
+> (Ep. 11 -20)
+> Learner only
+> …
+> Simulation 1,000
+> Simulation 2
+> Random
+> start state
+> Reward
+> noise
+
+Figure 1: Simulations . a) Grid-world environment composed of four quadrants with fixed walls and designated reward states. 
+
+b) For each simulation, quadrants were randomly rotated and arranged, while rewards were randomly assigned to designated reward states. The simulations comprised a training phase with an observable expert agent (over-trained model-based RL), followed by a test phase without the expert. A different start position was randomly selected on each episode (from the four central states), and stochastic noise was added to reward observations (see Methods). c) Experimental manipulations applied during the test phase: no change (Exp. 1), swap of two randomly selected rewards (Exp. 2), or shifted start positions (Exp. 3). et al., 2020), which enhances the agent’s expected value for actions performed by the expert. Both strategies are applied to model-free and model-based agents, allowing social cues to guide learning either through model-free habit formation or via model-based planning (Drummond & Niv, 2020; Wu et al., 2022; Hackel, Berg, Lindstr¨ om, & Amodio, 2019). Our simulations show that social learning confers substan-tial benefits even without explicit inference. Across experi-ments, social learners—particularly those with model-based architectures—achieve better performance compared to aso-cial learners and adopt more expert-like value and belief rep-resentations, supporting effective generalization to novel re-ward configurations and starting positions. These results de-monstrate that simple, non-mentalizing social mechanisms can produce higher-level, flexible representations, highlight-ing a computational pathway through which complex cultural transmission can emerge from minimal social information. 
+
+# Methods 
+
+We simulated agent behavior across three experiments ( n =
+
+1, 000 per experiment) using a spatially reconfigurable envi-ronment, resembling a foraging-themed board game. Agents navigated generated grid-worlds over 20 episodes to acquire rewards, learning through a combination of individual expe-rience and observing an expert during training (episodes 1-10 only). Agent performance was then evaluated in the test phase (episodes 11-20) to assess generalization in the absence of the expert. 
+
+Environment and Rewards. The environment was com-posed of four quadrants, each forming a 5 ×5 grid with a fixed configuration of walls blocking movement between adjacent states and a single designated reward state (Fig. 1a). In each simulation, we randomly rotated and rearranged these quad-rants to create a 10 × 10 grid world (4! · 44 = 6, 144 unique configurations), generating different global layouts (Fig. 1b). Reward values for each designated reward state were ran-domly assigned (without replacement) at the start of each simulation, based on four distinct reward values: 0 (no re-ward), 25 (low), 50 (medium), and 75 (high). The learner agent had no prior knowledge of either the locations or the values of the rewards. To introduce stochasticity, random noise ε was added for each reward observation defined us-ing a shifted binomial distribution ε ∼ Binomial (n = 400 , p =
+
+0.5) − 200, which yields integer values with a mean of 0 and a variance of 100. This noise was applied independently to each reward in every episode. 
+
+Procedure. At the start of each episode, the agent is placed randomly in one of four start states at the center of the board. The agent moves between adjacent states by executing ac-tions (up, down, left, right) and is constrained by walls: at-tempts to move into a wall result in the agent remaining in the current state. Actions that do not yield a positive reward incurs a cost (negative reward) of −1. An episode terminates either when a positive reward is obtained or after 40 actions. Simulations are divided into a training phase (episodes Asocial learning 
+
+> (AS)
+> Decision biasing
+> (DB)
+> Model -free
+> (MF)
+> Value shaping
+> (VS)
+> Model -based
+> (MB)
+
+Figure 2: Learning Strategies. Six learning conditions were tested, combining model-free (MF) and model-based (MB) RL with either asocial learning (AS) or social learning from an expert. Social learning was implemented at two levels: policy-based (DB) and value-based (VS). 1-10) and a test phase (episodes 11-20; Fig. 1b). During the training phase, learners were accompanied by an expert, an asocial model-based RL agent (see Fig. 2) that was pre-trained for 120 episodes in the same environment. Thus, the training phase offers social learning agents (defined be-low) the ability to combine information from the expert with knowledge gained through their own experiences. In contrast, asocial learners can only acquire knowledge through their di-rect interaction with the environment. However, in the subse-quent test phase, the expert is no longer present, meaning all learners must continue to learn asocially. 
+
+Experiments. We conducted three experiments to assess the learners’ ability to generalize knowledge acquired during training (Fig. 1c). Exp. 1 establishes baseline performance and examines the transfer of values and model-based beliefs from the expert to social learners, without any changes to the environment. In Exps. 2 and 3, the test phase introduced ad-ditional modifications to the task to assess the learner’s ro-bustness to changes in the environment. Exp. 2 modified the reward structure, by swapping the values of two randomly se-lected reward states. Exp. 3 modified the starting locations, by shifting start states one tile towards the corners (excluding reward states), while keeping the spatial layout fixed. 
+
+Computational models 
+
+We compare six computational learning models (Fig. 2) within a 2 × 3 factorial design that contrasts model-free and model-based RL across three forms of social information in-tegration: asocial learning (AS), decision biasing (DB), and value shaping (VS). Asocial learners exclusively rely on indi-vidual experiences, whereas social learners additionally in-corporate expert information either at the action selection level by biasing their policy toward the expert’s behavior (DB), or at the value learning level by directly shaping value representations (VS) based on observed expert actions. 
+
+Model-free (MF) learning is implemented as Q-learning with Temporal Difference (TD) prediction updates: 
+
+Q(s, a) ← Q(s, a) + α
+
+
+
+R(s) + γ max  
+
+> a′
+
+Q(s′, a′) − Q(s, a)
+
+
+
+(1) where Q(s, a) is the state-action value indicating the expected cumulative rewards for performing action a in state s. Q-values are updated based on the learning rate α and propor-tional to the difference between the prior Q-value and the sum of the reward obtained in the current state R(s) and the maxi-mum next-state Q-value max a′ Q(s′, a′) discounted by a tem-poral discount factor γ ∈ [0, 1].Using these learned Q-values, the asocial learner computes a policy πasoc based on a softmax function whose randomness is controlled by the inverse-temperature parameter β:
+
+πasoc (a|s) ∝ exp (β · Q(s, a)) (2) 
+
+Model-based (MB) learning is implemented using Dyna-Q (Sutton, 1990), which is a variant of Q-learning where the agent maintains an internal belief B about the environment— equivalent to a world model (Hafner, Pasukonis, Ba, & Lil-licrap, 2025; Ha & Schmidhuber, 2018; Mantiuk, Zhou, & Wu, 2025)—that can be used to more efficiently update state-action values through internal simulations, rather than relying solely on direct experience. The agent updates beliefs accord-ing to a Delta-rule update: 
+
+B(s′|s, a) ← B(s′|s, a) + η  δ(s′, s) − B(s′|s, a) (3) where B(s′|s, a) represents the agent’s belief about the tran-sition probabilities between states, and the Kronecker delta 
+
+δ(s′, s) = 1 if the transition s → s′ is successful, and 0 other-wise (Antonov & Dayan, 2025). Q-values can thus be updated through simulated experi-ences (dependent on B), rather than solely relying on direct RL by executing actions in the world. This allows for more efficient planning-based decision-making and is a cornerstone of modern theories of human learning (Daw, Gershman, Sey-mour, Dayan, & Dolan, 2011; Drummond & Niv, 2020; Wu et al., 2022). The following model-based planning loop is ex-ecuted k times after each action, with k ∼ Pois (λ) sampled each time from a Poisson distribution to introduce stochastic-ity and λ is treated as a free parameter (planning rate). 
+
+Algorithm 1 Dyna-Q inner loop                                   
+
+> 1: for i=1,2, . . . , kdo
+> 2: S←random previously observed state 3: A←random action previously taken in S
+> 4: R,S′←B(S,A)
+> 5: Q(s,a)←Q(s,a) + α(R(s) + γmax a′Q(s′,a′)−Q(s,a))
+> 6: end for
+
+Decision-biasing (DB) is inspired by an algorithmic ac-count of social learning in bandit tasks (Toyokawa et al., 2019; Witt et al., 2024), but modified for our sequential navi-gation task. We first introduce a pure social policy πsoc :
+
+πsoc (a | s) = I
+
+
+
+a = arg min  
+
+> a′
+
+D st
+
+> expert
+
+, s′(s, a′)
+
+(4) where the indicator function I[·] assigns 1 to the action that minimizes the distance D, defined as the number of actions needed to reach the expert’s last observed state stexpert from the learner’s current state s′, and 0 otherwise. This social policy is then combined with the asocial policy (Eq. 2) using the mixture parameter ω ∈ [0, 1] to compute an overall policy: 
+
+πDB = ( 1 − ω)πasoc (s, a) + ωπ soc (s, a) (5) When the expert terminates an episode prior to the learner, the location last visited by the expert is frozen to allow continued social learning. 
+
+Value shaping (VS) is inspired by theoretical accounts of the local enhancement of stimuli based on observing others engaging with them (Spence, 1937; Galef, 1988). Follow-ing Najar et al. (2020), we implement VS by augmenting the learner’s value representations of actions performed by the expert in a given state: 
+
+Q(sexpert , aexpert ) ← Q(sexpert , aexpert ) + κI(sexpert , aexpert )
+
+(6) where κ is a bonus parameter that is applied exclusively to the state-action pair observed in the expert. The bonus directly shapes the value function by enhancing state-action pairs ob-served in the expert. The boosted Q-values are then passed through a softmax (cf. Eq. 2), increasing the likelihood of ac-tions observed in the expert in the corresponding state. Once the expert reaches a termination step, the VS learner reduces to asocial learning for the remainder of the episode. 
+
+Parameter optimization. We optimized each model’s hy-perparameters using the differential evolution algorithm (Storn & Price, 1997) to maximize performance (cumulative reward) across 1,000 independent simulations in the base-line environment. Optimization for social learners was based solely on the 10 training episodes, whereas asocial agents and the expert were optimized using all available episodes (20 and 120, respectively). Learning rates α and η for social learners were fixed to the values optimized for asocial learn-ers, due to joint optimization consistently converging to low learning rates that suppressed individual learning and led to poor test performance. Candidate parameters were optimized in a transformed, unbounded space to enforce valid ranges (e.g., log-transform for β ∈ [0, ∞]) and a fixed random seed was used to ensure reproducibility. 
+
+# Results 
+
+We first evaluated the performance of all learning strate-gies across episodes, distinguishing between training and test phases to characterize how effectively agents acquire and ap-ply knowledge, depending on their learning strategy. Next, we examined how information is indirectly transferred from expert to social learners by analyzing value and belief rep-resentations, assessing whether social learners acquire sim-ilar value and state transition representations as encoded by the expert. Finally, we tested the robustness of the learned knowledge under environmental changes: in Experiment 2 we assessed how well learners generalize to modified reward configurations, and in Experiment 3 we modified the start-ing position to evaluate whether the belief transferred from the expert is preserved and continues to support behavior un-der novel start conditions. Across analyses, variability across simulations was quantified using the standard error of the mean (SEM). 
+
+Exp. 1: Value and belief transfer without inference 
+
+Exp. 1 establishes a baseline, where the only change from training to test phases is the absence of the expert. We quan-tified performance as the mean cumulative reward per learner across simulations, demonstrating how effectively different learning strategies enable agents to navigate the environment and collect rewards over the course of the 20 episodes. Starting with the asocial agents (AS), we see a strong ad-vantage of model-based (MB) compared to model-free (MF) learning (Fig. 3a). However, all social learning agents (DB and VS) outperformed the best asocial agent (AS-MB) in the training phase as a result of leveraging social information from the expert. During training, VS agents performed bet-ter than DB agents, with no difference between MB vs. MF. However, we see larger differences in the test phase when the expert disappears. The most striking difference is the collapse of DB-MF performance, which falls below the AS-MF agent. By contrast, the DB-MB agent maintains strong performance and, notably, outperforms the AS-MB agent in the test phase, reaching the level of the VS agents (both MB and MF). These results demonstrate the brittleness of policy-based social learning (DB) using only model-free methods (MF), while also showcasing the robustness of model-based social learning (MB). We then computed indirect value transfer based on the cor-respondence between the learner’s and expert’s state-action value representations at the end of each simulation (averaged across simulations). Specifically, we computed Spearman correlations between value functions across states, grouped by distance from the nearest reward to account for goal-relevance (i.e., states closer to rewards have greater rele-vance). This allows us to assess how effectively the learner reconstructs the expert’s value information. Figure 3b shows that except for DB-MF, all social agents achieved greater value transfer compared to asocial baselines (AS-MB and AS-MF). While asocial agents are bound to acquire similar value representations as the expert due to interacting with the same environment, social agents (except for DB-MF) achieve a substantial boost in this respect, providing a mechanistic explanation for their better performance. This value trans-fer effect (excepting DB-MF), displayed goal-relevance, with stronger transfer for states closer to rewards. Lastly, we quantified indirect belief transfer for model-based learners as the correspondence between the learner’s and expert’s transition matrices at the end of each simulation. Pearson correlations were computed across states grouped by a cb
+
+> Exp. 1
+
+Figure 3: Experiment 1. a) Performance: mean cumulative reward for different learning strategies combining (a-)social learning (SL) and reinforcement learning (RL) strategies. The vertical dotted line represents the transition between training and test phase. b) Value transfer: mean correlation between learner’s and expert’s value function, grouped by distance to reward states. c) Belief transfer: mean correlation between learner and expert transition matrices, grouped by distance to reward states. Correlations are shown for model-based social learners normalized relative to the asocial model-based learner (horizontal grey line). Shaded areas and error bars denote the standard error of the mean (SEM) across simulations. distance from rewards, and normalized relative to AS-MB as an asocial baseline to isolate the effect of social learning (Fig. 3c). Thus, the positive belief transfer for both model-based social learners (equivalent for DB-MB and VS-MB) indicates that they acquired an internal model of state transitions that more closely matches the expert’s, compared the asocial base-line. This effect is also influenced by goal-relevance, with states closer to rewards corresponding to greater belief trans-fer to our model-based social learners. 
+
+Exp. 2: Robustness to changes in reward 
+
+In Exp. 2, the test phase additionally included swapping the values of two randomly selected reward states (Fig. 1c). As in Exp. 1, we quantified performance as the mean cumulative re-ward per learner across simulations to assess how effectively different learning strategies generalize to the altered reward contingencies, focusing on the test phase since the training phase was identical to Exp. 1. Performance initially dropped for all agents in the test phase, except for AS-MF, reflecting the challenge of adapt-ing to new reward contingencies. The most pronounced drop occurred for DB-MF agents, reinforcing the vulnerability of policy-based, model-free social learning. In contrast, all model-based agents adapted to the new reward configuration and recovered performance, with VS-MB performing best. To examine the underlying mechanisms, we analyzed value accuracy by computing the Spearman correlation between each learner’s final value function (averaged across simula-tions) and the optimal value function for the new reward con-figuration, derived from the Bellman (1957) equation: 
+
+Q∗(s, a) = ∑
+
+> s′
+
+P(s′ | s, a)
+
+h
+
+R(s, a, s′) + γ max  
+
+> a′
+
+Q∗(s′, a′)
+
+i
+
+(7) with γ = 0.99. Here, we only included states visited at least once by the learner to avoid distortions from unvisited states. Correlations were again grouped by distance from the nearest reward to account for goal-relevance. Our results show that social learning facilitates better gen-eralization to changes in reward structure, with all social agents achieving greater value accuracy compared to asocial baselines (AS-MB and AS-MF), except for DB-MF, whose poorly aligned value representations explain its poor perfor-mance (Fig. 4b). Thus, even without mentalizing, the trans-fer of knowledge facilitated by simple social learning mecha-nisms is useful even when reward contingencies change. 
+
+Exp. 3: Robustness to changes in starting location 
+
+In Exp. 3, we tested robustness to changes in the starting po-sitions (Fig. 1c). Focusing on the test phase, asocial learn-ers continued to perform well, showing little sensitivity to the new start positions. VS agents (both MF and MB) ex-perienced a small initial dip in performance, but rapidly re-covered to training-level performance. A striking divergence emerged among the DB agents: DB-MB slightly improved its performance, whereas DB-MF suffered a severe collapse similar to Exps. 1 and 2. These results reinforce the finding that policy-based social learning is fragile under environmen-tal changes unless paired with a model-based system. Im-portantly, model-based social learners (DB-MB and VS-MB) maintained a clear performance advantage over the asocial baseline (AS-MB) throughout the test phase, highlighting the robustness of model-based social strategies. To examine whether beliefs acquired via the expert’s ac-tions were preserved under novel starting positions (Fig. 4d), we focused on MB agents and compared the degree of in-direct belief transfer (correlation between agent and expert transition matrices; grouped across distances) between Exp. 1 (baseline start positions) versus Exp. 3 (new start positions). Social learners, particularly VS-MB, maintained high simi-larity across conditions, indicating that the reconstructed be-liefs were largely preserved. Residuals (Fig. 4d inset) re-vealed greater variability for the AS-MB agent compared to the DB and VS agents, showcasing that social learners ac-quire more accurate and robust beliefs by leveraging the ex-a b   
+
+> cd
+> Exp. 2 Value swap
+> Exp. 3 New start location
+
+Figure 4: Experiments 2 and 3. a) Exp. 2 performance. 
+
+b) Exp. 2 value accuracy: mean correlation between the learner’s and the optimal value function for the modified re-ward structure (Eq. 7), grouped by distance to reward. c)Exp. 3 performance. d) Exp. 3 belief transfer comparison (MB only) between the baseline (x-axis) and new start loca-tion in the test phase (y-axis). Each point is a single simula-tion, averaged across distances and the dashed diagonal line shows y = x. The inset shows the distribution of residuals, quantifying the stability of model-based representations. pert’s knowledge, resulting in more stable internal represen-tations. Overall, these results demonstrate that model-based social learners not only acquire similar structural knowledge to the expert, but also exhibit robust performance under environ-mental changes—all without mentalizing. 
+
+# Discussion 
+
+We investigated how rich, flexible knowledge can be socially transmitted without mentalizing, thus sidestepping compu-tationally costly inferences about others’ goals or beliefs. Using simulations with both model-free (MF) and model-based (MB) reinforcement learning (RL) agents, we show that learners can acquire higher-level representations through simple social heuristics. Specifically, decision-biasing (DB) implemented at the policy-level simply seeks to minimize dis-tance to an expert demonstrator (Eqs. 4-5), while value shap-ing (VS) adds a value bonus to state-action pairs observed in the expert, analogous to local enhancement (Eq. 6). Using three simulation-based experiments in a spatial for-aging task, we found that social learning particularly benefits MB agents, which acquire more accurate and robust repre-sentations, while also generalizing better to changes in re-wards and starting locations. Across both MB and MF agents, value-based social learning using VS generally outperformed policy-based methods using DB, echoing a general principle in RL that value is a more generalizable representation than actions (Lehnert, Littman, & Frank, 2020; Wu et al., 2022). What are the mechanisms behind these results? Even sim-ple social heuristics bias the learner’s experience, which, when leveraged by asocial model-based planning, can sup-port more accurate representations of value and environment structure (Wu et al., 2022; Uchiyama et al., 2023). In our simulations, MB agents use Dyna (Alg. 1) to simulate expe-riences and propagate values, analogous to the role of hip-pocampal replay ( ´ Olafsd´ ottir, Bush, & Barry, 2018; Miller, Botvinick, & Brody, 2017; Vikbladh et al., 2019). This sug-gests that insight can emerge from na¨ ıve imitation (Lyons, Young, & Keil, 2007) by exploiting internal planning mecha-nisms, consistent with neural evidence that social observation engages replay-related activity, highlighting a shared neural basis for social and asocial model-based learning. Our findings also offer a perspective on cross-species dif-ferences between humans and non-human primates (NHP; Bandini & Tennie, 2023; Call, Carpenter, & Tomasello, 2005). Humans over-imitate, copying even irrelevant ac-tions (Horner & Whiten, 2005; Lyons et al., 2007), whereas chimpanzees tend to emulate outcomes rather than copy spe-cific behavior (Tennie, Call, & Tomasello, 2010). Our re-sults demonstrate that policy-based social learning (i.e., at the level of actions) is fragile under model-free learning (DB-MF), but robust when paired with model-based mechanisms (DB-MB). While the literature on model-based learning in NHPs is scarce (but see Sato, Sakai, & Hirata, 2023, for a task disincentivizing MB learning), differences in reliance on model-based planning may shift the cost-benefit trade-off between policy-based and value-based social learning (Wu et al., 2022), helping to explain why over-imitation is more adaptive in humans than in chimpanzees. Despite promising results, there are several limitations that could be addressed in future work. First, while we eval-uated robustness to changes in rewards and starting loca-tions, we did not manipulate the underlying environmen-tal structure itself (e.g., changes to transition dynamics or wall layouts), which would allow us to better assess whether non-mentalizing social learning also supports the transfer of deeper structural knowledge. Second, we modeled the ex-pert as a passive demonstrator rather than providing peda-gogical demonstrations (V´ elez, Chen, Burke, Cushman, & Gershman, 2023). Future work could test how such demon-strations might interact with or amplify our minimal social learning mechanisms. Finally, our results are based on sim-ulations, whereas testing these predictions in human behav-ioral experiments will be essential to assess whether similar non-mentalizing processes can also support higher-order so-cial transmission in people. In sum, we provide a computational account of how the indirect transmission of high-level representations can arise from minimal, non-mentalizing forms of social learning that exploit asocial model-based RL mechanisms. Acknowledgments 
+
+We thank Ryutaru Uchiyama and members of the HMC Lab for helpful discussions in the development of this project. This work is supported by the European Re-search Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (C4:101164709), the Hessian research funding programme LOEWE/4b//519/05/01.002(0022)/119, the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG) under Germany’s Excellence Strategy (EXC 3066/1 “The Adaptive Mind”, Project No. 533717223), and the Excellence Cluster “Reasonable AI” by the Deutsche Forschungsgemeinschaft (German Research Foundation, DFG) under Germany’s Excellence Strategy – EXC-3057. 
+
+# References 
+
+Antonov, G., & Dayan, P. (2025). Exploring replay. Nature Communications , 16 (1), 1657. Baker, C. L., Saxe, R., & Tenenbaum, J. B. (2009). Action understanding as inverse planning. Cognition , 113 (3), 329–349. doi: 10.1016/j.cognition.2009.07.005 Bandini, E., & Tennie, C. (2023). Na¨ ıve, adult, captive chimpanzees do not socially learn how to make and use sharp stone tools. Scientific Reports , 13 (1), 22733. Bellman, R. (1957). Dynamic programming (1st ed.). Prince-ton, NJ, USA: Princeton University Press. Boyd, R., & Richerson, P. J. (1988). Culture and the evolu-tionary process . University of Chicago press. Byrne, R. W., & Russon, A. E. (1998, October). Learn-ing by imitation: A hierarchical approach. Be-havioral and Brain Sciences , 21 (5), 667–684. doi: 10.1017/S0140525X98001745 Call, J., Carpenter, M., & Tomasello, M. (2005). Copy-ing results and copying actions in the process of so-cial learning: chimpanzees (pan troglodytes) and hu-man children (homo sapiens). Animal cognition , 8(3), 151–163. Collette, S., Pauli, W. M., Bossaerts, P., & O’Doherty, J. (2017). Neural computations underlying inverse re-inforcement learning in the human brain. Elife , 6,e29718. Daw, N. D., Gershman, S. J., Seymour, B., Dayan, P., & Dolan, R. J. (2011). Model-based influences on hu-mans’ choices and striatal prediction errors. Neuron ,
+
+69 (6), 1204–1215. Drummond, N., & Niv, Y. (2020). Model-based decision making and model-free learning. Current Biology ,
+
+30 (15), R860–R865. Galef, B. G., Jr. (1988). Imitation in animals: History, def-inition and interpretation of the data from the psycho-logical laboratory. In T. R. Zentall & B. G. Galef Jr (Eds.), Social learning: Psychological and biological perspectives (pp. 15–40). Psychology Press. Garg, K., Kello, C. T., & Smaldino, P. E. (2022). Individ-ual exploration and selective social learning: balancing exploration–exploitation trade-offs in collective forag-ing. Journal of the Royal Society Interface , 19 (189), 20210915. Ha, D., & Schmidhuber, J. (2018). Recurrent world models facilitate policy evolution. Advances in neural infor-mation processing systems , 31 .Hackel, L. M., Berg, J. J., Lindstr¨ om, B. R., & Amodio, D. M. (2019). Model-based and model-free social cognition: investigating the role of habit in social attitude forma-tion and choice. Frontiers in psychology , 10 , 2592. Hackel, L. M., Mende-Siedlecki, P., & Amodio, D. M. (2020). Reinforcement learning in social interaction: The distinguishing role of trait inference. Journal of Experimental Social Psychology , 88 , 103948. Hafner, D., Pasukonis, J., Ba, J., & Lillicrap, T. (2025). Mas-tering diverse control tasks through world models. Na-ture , 1–7. Hawkins, R. D., Berdahl, A. M., Pentland, A. S., Tenenbaum, J. B., Goodman, N. D., & Krafft, P. (2023). Flexible so-cial inference facilitates targeted social learning when rewards are not observable. Nature Human Behaviour ,
+
+7(10), 1767–1776. Heyes, C. (2018). Cognitive gadgets: The cultural evolution of thinking . Harvard University Press. Horner, V., & Whiten, A. (2005). Causal knowledge and imitation/emulation switching in chimpanzees (pan troglodytes) and children (homo sapiens). Animal cog-nition , 8(3), 164–181. Jara-Ettinger, J. (2019). Theory of mind as inverse rein-forcement learning. Current Opinion in Behavioral Sciences , 29 , 105–110. Jern, A., Lucas, C. G., & Kemp, C. (2017). People learn other people’s preferences through inverse decision-making. 
+
+Cognition , 168 , 46–64. Jim´ enez, ´ A. V., & Mesoudi, A. (2019). Prestige-biased social learning: Current evidence and outstanding questions. 
+
+Palgrave Communications , 5(1). Laland, K. N. (2004, February). Social learning strate-gies. Learning & Behavior , 32 (1), 4–14. doi: 10.3758/bf03196002 Legare, C. H., & Nielsen, M. (2015). Imitation and innova-tion: The dual engines of cultural learning. Trends in cognitive sciences , 19 (11), 688–699. Lehnert, L., Littman, M. L., & Frank, M. J. (2020). Reward-predictive representations generalize across tasks in re-inforcement learning. PLoS computational biology ,
+
+16 (10), e1008317. Lyons, D. E., Young, A. G., & Keil, F. C. (2007). The hidden structure of overimitation. Proceedings of the National Academy of Sciences , 104 (50), 19751–19756. Mantiuk, F., Zhou, H., & Wu, C. M. (2025). From curios-ity to competence: How world models interact with the dynamics of exploration. In A. Ruggeri, D. Barner, C. Walker, & N. Bramley (Eds.), Proceedings of the 47th Annual Conference of the Cognitive Science So-ciety. San Francisco, CA: Cognitive Science Society. doi: 10.48550/arXiv.2507.08210 McElreath, R., Bell, A. V., Efferson, C., Lubell, M., Richer-son, P. J., & Waring, T. (2008). Beyond existence and aiming outside the laboratory: estimating frequency-dependent and pay-off-biased social learning strate-gies. Philosophical Transactions of the Royal Society B: Biological Sciences , 363 (1509), 3515–3528. Mesoudi, A. (2016). Cultural evolution: a review of the-ory, findings and controversies. Evolutionary biology ,
+
+43 (4), 481–497. Miller, K. J., Botvinick, M. M., & Brody, C. D. (2017). Dor-sal hippocampus contributes to model-based planning. 
+
+Nature neuroscience , 20 (9), 1269–1276. Najar, A., Bonnet, E., Bahrami, B., & Palminteri, S. (2020). The actions of others act as a pseudo-reward to drive imitation in the context of social reinforcement learn-ing. PLoS biology , 18 (12), e3001028. ´Olafsd´ ottir, H. F., Bush, D., & Barry, C. (2018). The role of hippocampal replay in memory and planning. Current Biology , 28 (1), R37–R50. Olsson, A., Knapska, E., & Lindstr¨ om, B. (2020). The neural and computational systems of social learning. Nature Reviews Neuroscience , 21 (4), 197–212. O’Doherty, J. P., Lee, S. W., & McNamee, D. (2015). The structure of reinforcement-learning mechanisms in the human brain. Current Opinion in Behavioral Sciences ,
+
+1, 94–100. Park, S. A., Go¨ ıame, S., O’Connor, D. A., & Dreher, J.-C. (2017). Integration of individual and social information for decision-making in groups of different sizes. PLoS Biology , 15 (6), e2001958. Peters, J., & Schaal, S. (2008). Reinforcement learning of motor skills with policy gradients. Neural networks ,
+
+21 (4), 682–697. Rendell, L., Boyd, R., Cownden, D., Enquist, M., Eriksson, K., Feldman, M. W., . . . Laland, K. N. (2010). Why copy others? insights from the social learning strate-gies tournament. Science , 328 (5975), 208–213. Rendell, L., Fogarty, L., & Laland, K. N. (2010). Rogers’paradox recast and resolved: Population struc-ture and the evolution of social learning strategies. Evo-lution , 64 (2), 534–548. Roberts-Gaal, X., Bolic, M., & Cushman, F. A. (2025). En-vironmental variability shapes the representational for-mat of cultural learning. Proceedings of the National Academy of Sciences , 122 (28), e2505283122. Russell, S. (1998, July). Learning agents for uncertain envi-ronments. In (p. 101–103). Madison Wisconsin USA: ACM. doi: 10.1145/279943.279964 Sato, Y., Sakai, Y., & Hirata, S. (2023). State-transition-free reinforcement learning in chimpanzees (pan troglodytes). Learning & behavior , 51 (4), 413– 427. Shteingart, H., & Loewenstein, Y. (2014). Reinforcement learning and human behavior. Current opinion in neu-robiology , 25 , 93–98. Spence, K. W. (1937, December). Experimental studies of learning and the higher mental processes in infra-human primates. Psychological bulletin , 34 (10), 806– 850. doi: 10.1037/h0061498 Storn, R., & Price, K. (1997). Differential evolution–a simple and efficient heuristic for global optimization over con-tinuous spaces. Journal of Global Optimization , 11 (4), 341–359. doi: 10.1023/A:1008202821328 Sutton, R. S. (1990). Integrated architectures for learn-ing, planning, and reacting based on approximating dynamic programming. In Proceedings of the sev-enth international conference on machine learning 
+
+(p. 216–224). Sutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An introduction . MIT press. Tennie, C., Call, J., & Tomasello, M. (2010). Evidence for emulation in chimpanzees in social settings using the floating peanut task. PLoS One , 5(5), e10544. Tomasello, M. (1999). The cultural origins of human cogni-tion . Cambridge, MA, US: Harvard University Press. (Pages: vi, 248) Toyokawa, W., Whalen, A., & Laland, K. N. (2019, Jan-uary). Social learning strategies regulate the wisdom and madness of interactive crowds. Nature Human Behaviour , 3(2), 183–193. doi: 10.1038/s41562-018-0518-x Uchiyama, R., Tennie, C., & Wu, C. M. (2023). Model-based assimilation transmits and recombines world models. In L. Hunt, C. Summerfield, T. Konkle, E. Fedorenko, & T. Naselaris (Eds.), Proceedings of the 2023 Confer-ence on Cognitive Computational Neuroscience. Ox-ford, UK. doi: 10.31234/osf.io/v69jy Urain, J., Mandlekar, A., Du, Y., Muhammad, N., Xu, D., Fragkiadaki, K., . . . others (2025). A survey on deep generative models for robot learning from multimodal demonstrations. IEEE Transactions on Robotics , 42 ,60–79. V´ elez, N., Chen, A. M., Burke, T., Cushman, F. A., & Gersh-man, S. J. (2023). Teachers recruit mentalizing regions to represent learners’ beliefs. Proceedings of the Na-tional Academy of Sciences , 120 (22), e2215015120. Vikbladh, O. M., Meager, M. R., King, J., Blackmon, K., Devinsky, O., Shohamy, D., . . . Daw, N. D. (2019). Hippocampal contributions to model-based planning and spatial memory. Neuron , 102 (3), 683–693. Witt, A., Toyokawa, W., Lala, K. N., Gaissmaier, W., & Wu, C. M. (2024). Humans flexibly inte-grate social information despite interindividual dif-ferences in reward. Proceedings of the National Academy of Sciences , 121 (39), e2404928121. doi: 10.1073/pnas.2404928121 Wu, C. M., Deffner, D., Kahl, B., Meder, B., Ho, M. K., & Kurvers, R. H. (2025). Adaptive mechanisms of social and asocial learning in immersive foraging en-vironments. Nature Communications , 16 , 3539. doi: 10.1038/s41467-025-58365-6 Wu, C. M., V´ elez, N., & Cushman, F. A. (2022). Represen-tational exchange in human social learning: Balancing efficiency and flexibility. In I. C. Dezza, E. Schulz, & C. M. Wu (Eds.), The Drive for Knowledge: The Science of Human Information-Seeking. Cambridge: Cambridge University Press.

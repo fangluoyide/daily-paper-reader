@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-001.webp",
+      "caption": "Table 1. Demographic and clinical characteristics of the healthy control (HC) and mild cognitive impairment (MCI) groups.",
+      "page": 6,
+      "index": 1,
+      "width": 644,
+      "height": 402
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-002.webp",
+      "caption": "Table 2. ROI-based classification of MCI vs HC using FD and MVF. Cross-validated AUCs are shown for all, gray-matter, and white-matter ROI sets. Model-1 uses PCA-reduced ROI features, Model-2 adds age, and Model-3 adds age + odor identification (ID).",
+      "page": 15,
+      "index": 2,
+      "width": 854,
+      "height": 955
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-003.webp",
+      "caption": "Figure 4. Positive voxel-wise correspondence between FD and MVF. (1) Hippocampus and parahippocampal regions, (2) Insula, (3) Superior corona radiata, (4) Thalamus, (5) Posterior limb of internal capsule.",
+      "page": 18,
+      "index": 3,
+      "width": 923,
+      "height": 383
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-004.webp",
+      "caption": "Figure 2. ROI-based group differences in MVF and FD between HC and MCI samples. (A) Mean FD computed as (FLAIR−DIR)/FLAIR by ROI, (B) Mean MVF for the same ROIs, plotted in the same left-to-right order to enable direct comparison across metrics. Age-adjusted ANCOVA (p < 0.05, uncorrected) showed higher FD in HC than MCI in the corpus callosum (splenium/body), left thalamus, left amygdala, bilateral hippocampus, bilateral anterior olfactory nucleus, and left orbitofrontal cortex. MVF was higher in HC in the left thalamus, left anterior and posterior parahippocampal gyrus, and bilateral anterior olfactory nucleus (p < 0.05, uncorrected).",
+      "page": 13,
+      "index": 4,
+      "width": 1123,
+      "height": 509
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-005.webp",
+      "caption": "Figure 5. Conceptual model for FD in MCI. Changes in tissue microstructure may differentially affect FLAIR and DIR signals, producing either decreased or increased FD values depending on the nature and stage of the underlying myeline alterations.",
+      "page": 19,
+      "index": 5,
+      "width": 956,
+      "height": 639
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-006.webp",
+      "caption": "Figure 1. Illustration of the FLAIR–DIR/FLAIR ratio-based myelin mapping approach. Panel (A) shows the FLAIR image, which suppresses CSF and is sensitive to white matter signal. Panel (B) presents the DIR image, which suppresses both CSF and white matter, enhancing gray matter contrast. Panel (C) displays the resulting FD map computed as (FLAIR−DIR)/FLAIR.",
+      "page": 9,
+      "index": 6,
+      "width": 938,
+      "height": 379
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717271-v1/fig-007.webp",
+      "caption": "Figure 3. Voxel-wise regression and cross-modal analyses. Panels A–C show age-adjusted voxel-wise associations with odor identification (ID). (A) Positive MVF–ID associations (k ≥ 10 voxels) in the insula and genu of the corpus callosum. (B) Positive FD–ID associations (k ≥ 40 voxels) in the insula and hippocampus/parahippocampal regions. (C) Positive FD–ID associations after additionally including voxelwise MVF as an image covariate (age + MVF adjusted), showing clusters in the insula and hippocampus/parahippocampal regions. (1) Insula, (2) Genu of corpus callosum, (3) Hippocampus and parahippocampal regions.",
+      "page": 16,
+      "index": 7,
+      "width": 637,
+      "height": 633
+    }
+  ]
+}

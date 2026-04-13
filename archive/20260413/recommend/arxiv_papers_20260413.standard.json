@@ -1,0 +1,754 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-13T20:08:01.173254+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 5,
+    "deep_cap": 7,
+    "deep_selected": 5,
+    "quick_candidates": 30,
+    "quick_skim_target": 12,
+    "quick_selected": 12
+  },
+  "deep_dive": [
+    {
+      "id": "biorxiv-10-64898-2026-04-02-715844-v1",
+      "source": "biorxiv",
+      "title": "Longitudinal MRI reveals hormone-dependent brain remodeling supporting preserved cognition in aged females",
+      "abstract": "Adaptive plasticity, the brains capacity to counteract structural decline and preserve performance with age, is a hallmark of successful aging, yet its biological underpinnings remain poorly understood. Here, we combined longitudinal magnetic resonance imaging (MRI) spanning the entire lifespan with electrophysiology, immunohistochemistry, and behavioral assays in female and male rats to identify key region- and systems-level mechanisms underlying this process. Resting-state functional MRI revealed a striking sex-specific pattern of connectivity reorganization in anterior brain regions, emerging in midlife and more pronounced in females. Microstructural MRI and histological analyses linked increased connectivity to prolonged white matter preservation and downstream maintenance of neuronal function in the female prefrontal cortex, while electrophysiological recordings demonstrated enhanced effective connectivity in the same region in aged females. Behaviorally, enhanced anterior connectivity was associated with superior memory performance. Ovariectomy at a critical time point for white matter maturation compromised this female-specific neuroprotection, disrupting microstructural integrity and functional reorganization, thereby highlighting the role of sex hormones in shaping these trajectories. Together, these findings identify a novel sexually dimorphic pattern of functional reorganization in anterior brain regions and point to estrogen availability during critical periods as a key modulator of brain aging.",
+      "authors": [
+        "Ugarte-Perez, E.",
+        "Espinos Soler, E.",
+        "Antonio Cerdan Cerda, A.",
+        "S. Maroto, A.",
+        "Martinez-Tazo, P.",
+        "Eggl, M.",
+        "Perez-Cervera, L.",
+        "Canals, S.",
+        "De Santis, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-06T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.02.715844v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "brain remodeling supporting preserved cognition in aged subjects",
+      "llm_evidence_cn": "支持老年个体维持认知能力的脑重塑",
+      "llm_evidence": "支持老年个体维持认知能力的脑重塑",
+      "canonical_evidence": "支持老年个体维持认知能力的脑重塑",
+      "llm_tldr_en": "Identifies sex-specific brain connectivity reorganization that helps preserve cognitive performance during aging.",
+      "llm_tldr_cn": "发现了有助于在衰老过程中维持认知表现的性别特异性大脑连接重组机制。",
+      "llm_tldr": "发现了有助于在衰老过程中维持认知表现的性别特异性大脑连接重组机制。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-02-716060-v1",
+      "source": "biorxiv",
+      "title": "Cerebellar function remains resilient under increased task demands in healthy adults up to 80 years but it is task-specific and independent of cerebellar structure",
+      "abstract": "Healthy aging is associated with progressive structural brain decline, yet the loss of functional abilities varies across individuals, which has been linked to reserve mechanisms. Within the framework of complex systems theory, reserve is thought to manifest as resilience when the system is challenged by stressors, such as increases in task difficulty. The cerebellum has been proposed as a potential source of motor reserve, but empirical evidence linking cerebellar structure, function, and resilience remains limited. We conducted a cross-sectional study including 50 young, 80 older, and 30 older-old adults to examine resilience to increasing task demands across cerebellar-specific and general outcomes. Participants completed three motor tasks (pure elbow motion, motor timing, postural stability) and two cognitive tasks (mental rotation, spatial working memory). Structural MRI was acquired to quantify cerebellar grey matter volume within functionally defined regions.\n\nCerebellar-specific motor measures (anticipatory muscle activation and timing variability) were preserved across age groups and remained resilient under increased task demands, including in adults over 80 years of age. In contrast, general sensorimotor performance (postural sway) declined with age and showed reduced resilience. Within the cognitive domain, both cerebellar-specific and general measures showed comparable age-related declines and reduced resilience. Resilience measures were not correlated across tasks, indicating that resilience is task- and domain-specific. Furthermore, cerebellar grey matter volume did not predict resilience in motor or cognitive outcomes.\n\nThese findings support the cerebellar motor reserve hypothesis, suggesting that cerebellar-dependent motor processes remain resilient despite age-related structural decline. However, resilience appears to be function-specific rather than a generalized individual trait. Overall, the results highlight dissociations between brain structure, function, and resilience, underscoring the selective contribution of the cerebellum to motor preservation in healthy aging.",
+      "authors": [
+        "Matthijs, A.",
+        "de Witte, A.",
+        "Mantini, D.",
+        "Orban de Xivry, J.-J."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-05T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.02.716060v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "cerebellar function and resilience in healthy adults up to 80 years",
+      "llm_evidence_cn": "80岁以下健康成人的小脑功能与韧性",
+      "llm_evidence": "80岁以下健康成人的小脑功能与韧性",
+      "canonical_evidence": "80岁以下健康成人的小脑功能与韧性",
+      "llm_tldr_en": "Examines how cerebellar function and resilience to task demands change in healthy aging adults.",
+      "llm_tldr_cn": "研究健康老年人中小脑功能及对任务需求的韧性如何变化。",
+      "llm_tldr": "研究健康老年人中小脑功能及对任务需求的韧性如何变化。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-05-716121-v1",
+      "source": "biorxiv",
+      "title": "The Role of Meningeal Lymphatic Vessels and Perivascular Cerebrospinal Fluid Flow in Age-Related Processing Speed Decline",
+      "abstract": "Meningeal lymphatic vessels (mLV) play essential roles in draining cerebrospinal fluid (CSF) into peripheral blood. The mLVs are hypothesized to be supportive structures to the glymphatic system, which is thought to remove metabolic byproducts from brain parenchyma and has been most directly studied in rodent models. Previous rodent studies have indicated a correlation between mLV function and cognitive performance, but this relationship in humans remains unexplored. Age-related declines in glymphatic system efficiency in humans and cognitive performance have been observed separately. This study investigates age- and sex-related differences in CSF production via choroid plexus volumes, mLV characteristics, and glymphatic system efficiency, overall elucidating the implication of cerebral lymphatic function on cognition. We recruited 26 healthy adults from Dallas-Fort Worth and acquired magnetic resonance images. mLVs along the sagittal sinus were visualized and segmented from T2-FLAIR images. The glymphatic system was evaluated by measuring diffusivity along the perivascular space. Choroid plexus volume and brain volume were estimated from T1-MPRAGE. Neuropsychological tests were conducted to assess cognitive function. Our findings indicate that glymphatic function diminishes with age, while mLV and choroid plexus volumes increase. Males displayed greater mLV volume than females, yet no sex differences were found in glymphatic function or choroid plexus volume. Notably, mLV volume increased as glymphatic function declined, independent of age. Moreover, a glymphatic-mLV latent variable significantly predicted processing speed, underscoring the influence of cerebral lymphatics on cognition. In conclusion, this study highlights a decline in glymphatic function with age, accompanied by increased mLV volumes and altered processing speed. These lymphatic system changes may underlie or contribute to the cognitive declines observed in healthy and pathological aging.\n\nSignificance StatementThe glymphatic system and meningeal lymphatic vessels play crucial roles in removing brain cell waste. The relationship between these systems and their effect on human cognition, particularly processing speed, is unknown. We demonstrate that these systems change with advancing age. Variations in cerebral lymphatic function contribute to differences in processing speed independent of age, ultimately affecting higher-order cognitive function. The findings presented have implications for cognitive function in both healthy and diseased states.",
+      "authors": [
+        "Andreo, M. N.",
+        "Sivakolundu, D. K.",
+        "Zuppichini, M.",
+        "West, K.",
+        "Spence, J.",
+        "Gauthier, S.",
+        "Nguyen, T.",
+        "Rypma, B."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.05.716121v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "age-related processing speed decline and cognitive performance in humans",
+      "llm_evidence_cn": "人类与年龄相关的处理速度下降和认知表现",
+      "llm_evidence": "人类与年龄相关的处理速度下降和认知表现",
+      "canonical_evidence": "人类与年龄相关的处理速度下降和认知表现",
+      "llm_tldr_en": "Examines the link between meningeal lymphatic function and age-related cognitive decline in humans.",
+      "llm_tldr_cn": "研究人类脑膜淋巴功能与年龄相关认知能力下降之间的联系。",
+      "llm_tldr": "研究人类脑膜淋巴功能与年龄相关认知能力下降之间的联系。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-05-716331-v1",
+      "source": "biorxiv",
+      "title": "Prefrontal brain-to-brain synchrony during human group hunting: Evidence from fNIRS hyperscanning",
+      "abstract": "Orca, wolves, chimpanzees and humans share a similarly impressive capacity for group hunting, where individuals coordinate behaviour together to capture prey. Studying hunting behaviours has important implications for understanding how behaviour in group contexts may be indicative of cognitive decline. Despite growing interest in brain circuits for prey capture, the brain regions involved in tracking prey during a hunt and the behaviours in group hunt linked to success remain unclear. Here we combined functional near infrared spectroscopy (fNIRS) and a virtual minecraft world to examine behaviour, brain dynamics and brain synchrony involved in group hunting behaviour. We focused on the prefrontal cortex (PFC) due to its known role in planning and social coordination and recorded from pairs of individuals as they either cooperated to hunt another person (prey) or simply followed another person. Hunters were more successful if they managed to keep a smaller distance to the prey and moved at speeds that were more synchronised with their co-predator. At high-range frequencies for fNIRS (0.1-0.2Hz), we found greater brain-to-brain synchrony in lateral and medial (frontopolar) PFC regions during hunting compared with chance levels. Together, these findings provide insights into what behaviours and brain dynamics associated with successful group hunting.",
+      "authors": [
+        "Yavuz, E.",
+        "Xu, C.",
+        "Liu, W.",
+        "Slinn, C.",
+        "Mitchell, A.",
+        "Ali, J.",
+        "Bloom, N.",
+        "Khatun, N.",
+        "Kirk, P.",
+        "Zisch, F.",
+        "Tachtsidis, I.",
+        "Pinti, P.",
+        "Ronca, F.",
+        "Patai, Z.",
+        "Burgess, P.",
+        "Hamilton, A.",
+        "Spiers, H."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-07T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.05.716331v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "virtual game world to examine group behavior and cognitive decline",
+      "llm_evidence_cn": "利用虚拟游戏世界检查群体行为与认知衰退",
+      "llm_evidence": "利用虚拟游戏世界检查群体行为与认知衰退",
+      "canonical_evidence": "利用虚拟游戏世界检查群体行为与认知衰退",
+      "llm_tldr_en": "Uses a virtual world to study brain synchrony during group coordination as a potential indicator of cognitive decline.",
+      "llm_tldr_cn": "利用虚拟世界研究群体协作中的大脑同步，作为认知衰退的潜在指标。",
+      "llm_tldr": "利用虚拟世界研究群体协作中的大脑同步，作为认知衰退的潜在指标。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-08-717271-v1",
+      "source": "biorxiv",
+      "title": "A DERIVED RELAXATION CONTRAST FROM SYNTHETIC MRI FOR DETECTING NETWORK MICROSTRUCTURAL VULNERABILITY",
+      "abstract": "Background: Odor identification impairment is an early marker of Alzheimer's disease (AD) that predicts memory decline, yet its underlying microstructural basis remains unclear. We hypothesized that mild cognitive impairment (MCI) involves early myelin and lipid disruption within olfactory and limbic circuits, detectable using a synthetic MRI derived contrast that provides complementary sensitivity to myelin volume fraction (MVF). Methods: Methods: Thirty three older adults (healthy controls [HC], n = 16; mild cognitive impairment [MCI], n = 17) completed olfactory and cognitive testing and underwent 3T brain MRI using a QALAS sequence. An MVF map and synthetic FLAIR and DIR images were generated, and a FLAIR and DIR derived metric (FD) was computed as FD = (FLAIR - DIR) / FLAIR. We investigated ROI-based group differences in olfactory and limbic gray-matter regions and associated white matter tracts, voxel wise regressions investigating FD odor identification associations, and ROI based MCI vs HC classification using cross validated logistic regression models. Results: Compared with HC, MCI showed significantly lower FD across olfactory and limbic gray matter regions and white matter pathways including hippocampus, amygdala, orbitofrontal cortex, thalamus, and corpus callosum whereas MVF differences were more limited. FD achieved moderate discrimination, with baseline performance comparable to MVF. Voxel wise analyses revealed that better odor identification was associated with higher FD in the hippocampus/parahippocampal and insula; the association persisted after adjusting for voxel wise MVF. MVF also showed significant positive voxel-wise associations with odor identification in the insula and genu of the corpus callosum. Conclusion: FD is a practical, myelin- and lipid-sensitive contrast derived from routinely acquired synthetic FLAIR & DIR images that complement quantitative MVF. It captures behaviorally relevant variance beyond local myelin content and may improve detection of early olfactory and limbic microstructural changes in MCI. These findings support FD as a scalable candidate marker linking early network disruption to olfactory symptoms across the AD continuum.",
+      "authors": [
+        "Ekanayake, A.",
+        "Hwang, S. N.",
+        "Peiris, S.",
+        "Elyan, R.",
+        "Tulchinsky, M.",
+        "Wang, J.",
+        "Eslinger, P. J.",
+        "Yang, Q.",
+        "Ghulam, M.",
+        "Karunanayaka, P."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-12T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.08.717271v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "detecting cognitive impairment in older adults using MRI",
+      "llm_evidence_cn": "使用核磁共振检测老年人的认知障碍",
+      "llm_evidence": "使用核磁共振检测老年人的认知障碍",
+      "canonical_evidence": "使用核磁共振检测老年人的认知障碍",
+      "llm_tldr_en": "Develops a new MRI contrast to detect microstructural changes in older adults with mild cognitive impairment.",
+      "llm_tldr_cn": "开发了一种新的核磁共振对比技术，用于检测轻度认知障碍老年人的微结构变化。",
+      "llm_tldr": "开发了一种新的核磁共振对比技术，用于检测轻度认知障碍老年人的微结构变化。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.03952v1",
+      "source": "arxiv",
+      "title": "Multidimensional physical fitness is associated with reduced dementia risk through proteomic and neuroimaging pathways: a prospective cohort study of the UK Biobank",
+      "abstract": "Dementia affects over 55 million people worldwide, yet whether distinct domains of physical fitness independently protect against neurodegeneration through shared or divergent biological mechanisms remains unknown. Using the UK Biobank (n = 51,517; 12-year follow-up), we integrated epidemiological, proteomic, and neuroimaging analyses to systematically characterize the multidimensional fitness-dementia relationship. Higher handgrip strength, cardiorespiratory fitness, and pulmonary function were each independently associated with reduced dementia risk (HRs 0.50, 0.62, and 0.73, respectively, for highest vs. lowest tertiles), with stronger associations in women and younger individuals. Plasma proteomic profiling revealed domain-specific molecular signatures--neurofilament light chain predominating for muscular and cardiorespiratory fitness, and inflammatory mediators including GDF15 for pulmonary function--with 22-40 proteins per domain independently predicting dementia, converging on neuroinflammatory and neurovascular pathways. Brain MRI analyses identified hippocampal volume as a significant structural mediator (proportion mediated: 3.7-10.1%), indicating structural preservation as one of multiple mechanistic pathways. Population attributable fraction analyses estimated that suboptimal fitness may account for approximately 26% of dementia cases. These findings reveal that multidimensional physical fitness shapes dementia risk through distinct yet converging neuroinflammatory, neurovascular, and structural brain mechanisms, with implications for life-course prevention.",
+      "authors": [
+        "Yiqing Sun",
+        "Runyu Lin",
+        "Jiayue Qin",
+        "Feiyue Pan",
+        "Bingjie Li",
+        "Zhigang Yao"
+      ],
+      "primary_category": "stat.AP",
+      "categories": [
+        "stat.AP",
+        "q-bio.QM"
+      ],
+      "published": "2026-04-05T04:07:37+00:00",
+      "link": "https://arxiv.org/pdf/2604.03952v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "physical fitness and dementia risk in aging",
+      "llm_evidence_cn": "身体素质与老年痴呆风险",
+      "llm_evidence": "身体素质与老年痴呆风险",
+      "canonical_evidence": "身体素质与老年痴呆风险",
+      "llm_tldr_en": "Higher physical fitness is linked to lower dementia risk through specific biological and neural pathways.",
+      "llm_tldr_cn": "较高的身体素质通过特定的生物和神经通路与降低的痴呆风险相关联。",
+      "llm_tldr": "较高的身体素质通过特定的生物和神经通路与降低的痴呆风险相关联。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.04351v1",
+      "source": "arxiv",
+      "title": "Cognibit: From Digital Exhaustion to Real-World Connection Through Gamified Territory Control and LLM-Powered Twin Networking",
+      "abstract": "We present an LLM-powered social discovery platform that uses digital twins to autonomously evaluate interpersonal compatibility through behavioral simulation. The platform unifies three key pillars: (1) digital twins that engage in autonomous multi-turn conversations on behalf of users to estimate compatibility, (2) gamified territory conquest mechanics that incentivize real-world exploration and create organic settings for in-person encounters, and (3) AI companions that preserve persistent shared memory across devices. Built upon CogniPair's cognitive architecture (Ye et al., 2026), validated on the Columbia Speed Dating dataset (551 participants), our system extends prior simulation-only matching into a fully deployed social discovery environment. Through deployment, we derive empirical cost-quality baselines and identify fundamental scaling bottlenecks that remain hidden in component-level testing alone.",
+      "authors": [
+        "Wanghao Ye",
+        "Sihan Chen",
+        "Yiting Wang",
+        "Shwai He",
+        "Bowei Tian",
+        "Guoheng Sun",
+        "Ziyi Wang",
+        "Ziyao Wang",
+        "Yexiao He",
+        "Zheyu Shen",
+        "Meng Liu",
+        "Yuning Zhang",
+        "Meng Feng",
+        "Yifei Dong",
+        "Yanhong Qian",
+        "Yang Wang",
+        "Siyuan Peng",
+        "Yilong Dai",
+        "Zhenle Duan",
+        "Joshua Liu",
+        "Lang Xiong",
+        "Hanzhang Qin",
+        "Ang Li"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-06T01:56:20+00:00",
+      "link": "https://arxiv.org/pdf/2604.04351v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "gamified platform for social discovery and behavioral simulation",
+      "llm_evidence_cn": "用于社交发现和行为模拟的游戏化平台",
+      "llm_evidence": "用于社交发现和行为模拟的游戏化平台",
+      "canonical_evidence": "用于社交发现和行为模拟的游戏化平台",
+      "llm_tldr_en": "Presents a gamified social platform using AI to simulate interpersonal compatibility and real-world connection.",
+      "llm_tldr_cn": "介绍了一个利用人工智能模拟人际兼容性和现实连接的游戏化社交平台。",
+      "llm_tldr": "介绍了一个利用人工智能模拟人际兼容性和现实连接的游戏化社交平台。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.05249v1",
+      "source": "arxiv",
+      "title": "Understanding Clinician Experiences with Game-Based Interventions for Autistic Children to Inform a Future Game Platform Focused on Improving Motor Skills",
+      "abstract": "Motor challenges are prevalent among autistic children, and games are able to simultaneously produce clinically meaningful results and provide a motivating context, but many current solutions are too rigid. We conducted a two-phase qualitative study comprised of semi-structured interviews and participatory design workshops with 7 pediatric physical and 5 occupational therapists (PTs/OTs) to investigate their perspectives and experiences with game and play-based interventions. We identified 8 prominent themes describing key characteristics of current successful interventions, opportunities, and barriers to adoption in clinical practice. We present a speculative design informed by thematic analysis that addresses current challenges of rigidity in Serious Games for Health (SG4H). Our modular platform (AutMotion Studio) hosts a suite of interventions as customizable minigames, allowing community members to contribute to and employ Wizard of Oz paradigms for flexible appropriation strategies.",
+      "authors": [
+        "Hunter M Beach",
+        "Devin Jay D San Nicolas",
+        "Carly Miller",
+        "Cathy Ly",
+        "Jared Duval"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-06T23:17:19+00:00",
+      "link": "https://arxiv.org/pdf/2604.05249v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "game-based interventions for children",
+      "llm_evidence_cn": "针对儿童的游戏干预研究",
+      "llm_evidence": "针对儿童的游戏干预研究",
+      "canonical_evidence": "针对儿童的游戏干预研究",
+      "llm_tldr_en": "Explores clinician perspectives on game-based interventions to improve motor skills in autistic children.",
+      "llm_tldr_cn": "探讨了临床医生对通过游戏干预改善自闭症儿童运动技能的看法和经验。",
+      "llm_tldr": "探讨了临床医生对通过游戏干预改善自闭症儿童运动技能的看法和经验。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.04439v1",
+      "source": "arxiv",
+      "title": "Estimating Central, Peripheral, and Temporal Visual Contributions to Human Decision Making in Atari Games",
+      "abstract": "We study how different visual information sources contribute to human decision making in dynamic visual environments. Using Atari-HEAD, a large-scale Atari gameplay dataset with synchronized eye-tracking, we introduce a controlled ablation framework as a means to reverse-engineer the contribution of peripheral visual information, explicit gaze information in form of gaze maps, and past-state information from human behavior. We train action-prediction networks under six settings that selectively include or exclude these information sources. Across 20 games, peripheral information shows by far the strongest contribution, with median prediction-accuracy drops in the range of 35.27-43.90% when removed. Gaze information yields smaller drops of 2.11-2.76%, while past-state information shows a broader range of 1.52-15.51%, with the upper end likely more informative due to reduced peripheral-information leakage. To complement aggregate accuracies, we cluster states by true-action probabilities assigned by the different model configurations. This analysis identifies coarse behavioral regimes, including focus-dominated, periphery-dominated, and more contextual decision situations. These results suggest that human decision making in Atari depends strongly on information beyond the current focus of gaze, while the proposed framework provides a way to estimate such information-source contributions from behavior.",
+      "authors": [
+        "Henrik Krauss",
+        "Takehisa Yairi"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "published": "2026-04-06T05:39:29+00:00",
+      "link": "https://arxiv.org/pdf/2604.04439v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "human decision making and visual information in Atari games",
+      "llm_evidence_cn": "Atari 游戏中人类的决策与视觉信息",
+      "llm_evidence": "Atari 游戏中人类的决策与视觉信息",
+      "canonical_evidence": "Atari 游戏中人类的决策与视觉信息",
+      "llm_tldr_en": "Analyzes how visual information contributes to human decision-making during Atari gameplay.",
+      "llm_tldr_cn": "分析视觉信息如何影响人类在 Atari 游戏过程中的决策。",
+      "llm_tldr": "分析视觉信息如何影响人类在 Atari 游戏过程中的决策。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.06469v1",
+      "source": "arxiv",
+      "title": "Predicting Alzheimer's disease progression using rs-fMRI and a history-aware graph neural network",
+      "abstract": "Alzheimer's disease (AD) is a neurodegenerative disorder that affects more than seven million people in the United States alone. AD currently has no cure, but there are ways to potentially slow its progression if caught early enough. In this study, we propose a graph neural network (GNN)-based model for predicting whether a subject will transition to a more severe stage of cognitive impairment at their next clinical visit. We consider three stages of cognitive impairment in order of severity: cognitively normal (CN), mild cognitive impairment (MCI), and AD. We use functional connectivity graphs derived from resting-state functional magnetic resonance imaging (rs-fMRI) scans of 303 subjects, each with a different number of visits. Our GNN-based model incorporates a recurrent neural network (RNN) block, enabling it to process data from the subject's entire visit history. It can also work with irregular time gaps between visits by incorporating visit distance information into our input features. Our model demonstrates robust predictive performance, even with missing visits in the subjects' visit histories. It achieves an accuracy of 82.9%, with an especially impressive accuracy of 68.8% on CN to MCI conversions - a task that poses a substantial challenge in the field. Our results highlight the effectiveness of rs-fMRI in predicting the onset of MCI or AD and, in conjunction with other modalities, could offer a viable method for enabling timely interventions to slow the progression of cognitive impairment.",
+      "authors": [
+        "Mahdi Moghaddami",
+        "Mohammad-Reza Siadat",
+        "Austin Toma",
+        "Connor Laming",
+        "Huirong Fu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-07T21:13:50+00:00",
+      "link": "https://arxiv.org/pdf/2604.06469v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "predicting cognitive impairment stages in older adults",
+      "llm_evidence_cn": "预测老年人的认知障碍阶段",
+      "llm_evidence": "预测老年人的认知障碍阶段",
+      "canonical_evidence": "预测老年人的认知障碍阶段",
+      "llm_tldr_en": "Uses GNNs and rs-fMRI to predict the progression of Alzheimer's disease across different cognitive stages.",
+      "llm_tldr_cn": "利用图神经网络和静息态磁共振成像预测阿尔茨海默病在不同认知阶段的进展。",
+      "llm_tldr": "利用图神经网络和静息态磁共振成像预测阿尔茨海默病在不同认知阶段的进展。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.05777v1",
+      "source": "arxiv",
+      "title": "Emergent social transmission of model-based representations without inference",
+      "abstract": "How do people acquire rich, flexible knowledge about their environment from others despite limited cognitive capacity? Humans are often thought to rely on computationally costly mentalizing, such as inferring others' beliefs. In contrast, cultural evolution emphasizes that behavioral transmission can be supported by simple social cues. Using reinforcement learning simulations, we show how minimal social learning can indirectly transmit higher-level representations. We simulate a naïve agent searching for rewards in a reconfigurable environment, learning either alone or by observing an expert - crucially, without inferring mental states. Instead, the learner heuristically selects actions or boosts value representations based on observed actions. Our results demonstrate that these cues bias the learner's experience, causing its representation to converge toward the expert's. Model-based learners benefit most from social exposure, showing faster learning and more expert-like representations. These findings show how cultural transmission can arise from simple, non-mentalizing processes exploiting asocial learning mechanisms.",
+      "authors": [
+        "Silja Keßler",
+        "Miriam Bautista-Salinero",
+        "Claudio Tennie",
+        "Charley M. Wu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-04-07T12:14:27+00:00",
+      "link": "https://arxiv.org/pdf/2604.05777v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "social transmission of knowledge and social learning",
+      "llm_evidence_cn": "知识的社会传递与社会学习",
+      "llm_evidence": "知识的社会传递与社会学习",
+      "canonical_evidence": "知识的社会传递与社会学习",
+      "llm_tldr_en": "Simple social cues can support the transmission of complex environmental knowledge without explicit mentalizing.",
+      "llm_tldr_cn": "简单的社会线索可以在不进行显式心理推断的情况下支持复杂环境知识的传递。",
+      "llm_tldr": "简单的社会线索可以在不进行显式心理推断的情况下支持复杂环境知识的传递。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.06758v1",
+      "source": "arxiv",
+      "title": "Multilingual Cognitive Impairment Detection in the Era of Foundation Models",
+      "abstract": "We evaluate cognitive impairment (CI) classification from transcripts of speech in English, Slovene, and Korean. We compare zero-shot large language models (LLMs) used as direct classifiers under three input settings -- transcript-only, linguistic-features-only, and combined -- with supervised tabular approaches trained under a leave-one-out protocol. The tabular models operate on engineered linguistic features, transcript embeddings, and early or late fusion of both modalities. Across languages, zero-shot LLMs provide competitive no-training baselines, but supervised tabular models generally perform better, particularly when engineered linguistic features are included and combined with embeddings. Few-shot experiments focusing on embeddings indicate that the value of limited supervision is language-dependent, with some languages benefiting substantially from additional labelled examples while others remain constrained without richer feature representations. Overall, the results suggest that, in small-data CI detection, structured linguistic signals and simple fusion-based classifiers remain strong and reliable signals.",
+      "authors": [
+        "Damar Hoogland",
+        "Boshko Koloski",
+        "Jaya Caporusso",
+        "Tine Kolenik",
+        "Ana Zwitter Vitez",
+        "Senja Pollak",
+        "Christina Manouilidou",
+        "Matthew Purver"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-04-08T07:22:43+00:00",
+      "link": "https://arxiv.org/pdf/2604.06758v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "multilingual cognitive impairment detection using foundation models",
+      "llm_evidence_cn": "使用基础模型进行多语言认知障碍检测",
+      "llm_evidence": "使用基础模型进行多语言认知障碍检测",
+      "canonical_evidence": "使用基础模型进行多语言认知障碍检测",
+      "llm_tldr_en": "Evaluates LLMs and supervised models for detecting cognitive impairment from speech transcripts.",
+      "llm_tldr_cn": "评估了大语言模型和监督模型在语音转录文本中检测认知障碍的效果。",
+      "llm_tldr": "评估了大语言模型和监督模型在语音转录文本中检测认知障碍的效果。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.06353v1",
+      "source": "arxiv",
+      "title": "Navigating Marginalization: Toward Justice-Oriented Socio-Technical Design for Parent-Child Learning among Southeast Asian Immigrant Mothers in Taiwan",
+      "abstract": "This study investigates how Southeast Asian (SEA) immigrant mothers in Taiwan participate in their children's home-based learning. Drawing on semi-structured interviews and diary studies, we explore how these mothers navigate sociocultural constraints while fostering engagement and transmitting cultural values. Despite facing diminished agency and structural marginalization, mothers engage creatively in their children's everyday learning interactions. Guided by a justice-oriented lens, we identify various harms and propose design implications for socio-technical systems that center recognition, reciprocity, and accountability in parent-child learning at the individual, familial, and societal levels. Our contribution lies in foregrounding the role of intersectional identity in parent-child learning and proposing justice-oriented design directions that support the flourishing of immigrant mothers within socio-technical systems.",
+      "authors": [
+        "Ying-Yu Chen",
+        "Yang Hong",
+        "Yan-Rong Chen",
+        "Yi-Chieh Lee"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-07T18:31:05+00:00",
+      "link": "https://arxiv.org/pdf/2604.06353v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "parent-child learning and sociocultural constraints",
+      "llm_evidence_cn": "亲子学习与社会文化约束",
+      "llm_evidence": "亲子学习与社会文化约束",
+      "canonical_evidence": "亲子学习与社会文化约束",
+      "llm_tldr_en": "Explores how immigrant mothers engage in children's home-based learning within social contexts.",
+      "llm_tldr_cn": "探讨了移民母亲在社会背景下如何参与子女的家庭学习。",
+      "llm_tldr": "探讨了移民母亲在社会背景下如何参与子女的家庭学习。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.09070v1",
+      "source": "arxiv",
+      "title": "The Speculative Future of Conversational AI for Neurocognitive Disorder Screening: a Multi-Stakeholder Perspective",
+      "abstract": "Neurocognitive disorders (NCDs), such as Alzheimer's disease, are globally prevalent and require scalable screening methods for proactive management. Prior research has explored the potential of technologies like conversational AI (CAI) to administer NCD screening tests. However, challenges remain in designing CAI-based solutions that make routine NCD screening socially acceptable, engaging, and capable of encouraging early medical consultation. In this study, we conducted interviews with 36 participants, including clinicians, individuals at risk of NCDs, and their caregivers, to explore the speculative future of adopting CAI for NCD screening. Our findings reveal shared expectations, such as deploying CAI in home or community settings to reduce social stress. Nonetheless, conflicts emerged among stakeholders, for example, users' need for emotional support may conflict with clinicians' preference for CAI's professional and standardized administration. Then, we look into the user journey of NCD screening based on the current practice of manual screening and the expected CAI-supported screening. Finally, leveraging the human-centered approach, we provide actionable implications for future CAI design in NCD screening.",
+      "authors": [
+        "Jiaxiong Hu",
+        "Ruowen Niu",
+        "Qiuxin Du",
+        "Chenzhuo Xiang",
+        "Yirui Zuo",
+        "Jihong Jeung",
+        "Xiaojuan Ma"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-10T07:52:30+00:00",
+      "link": "https://arxiv.org/pdf/2604.09070v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "conversational AI for neurocognitive disorder screening in older adults",
+      "llm_evidence_cn": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "llm_evidence": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "canonical_evidence": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "llm_tldr_en": "Explores the use of conversational AI for scalable and socially acceptable neurocognitive disorder screening.",
+      "llm_tldr_cn": "探讨了使用对话式人工智能进行可扩展且社会认可的神经认知障碍筛查的前景。",
+      "llm_tldr": "探讨了使用对话式人工智能进行可扩展且社会认可的神经认知障碍筛查的前景。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive health in healthy older adults",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.06985v1",
+      "source": "arxiv",
+      "title": "Frailty Estimation in Elderly Oncology Patients Using Multimodal Wearable Data and Multi-Instance Learning",
+      "abstract": "Frailty and functional decline strongly influence treatment tolerance and outcomes in older patients with cancer, yet assessment is typically limited to infrequent clinic visits. We propose a multimodal wearable framework to estimate frailty-related functional change between visits in elderly breast cancer patients enrolled in the multicenter CARDIOCARE study. Free-living smartwatch physical activity and sleep features are combined with ECG-derived heart rate variability (HRV) features from a chest strap and organized into patient-horizon bags aligned to month 3 (M3) and month 6 (M6) follow-ups. Our innovation is an attention-based multiple instance learning (MIL) formulation that fuses irregular, multimodal wearable instances under real-world missingness and weak supervision. An attention-based MIL model with modality-specific multilayer perceptron (MLP) encoders with embedding dimension 128 aggregates variable-length and partially missing longitudinal instances to predict discretized change-from-baseline classes (worsened, stable, improved) for FACIT-F and handgrip strength. Under subject-independent leave-one-subject-out (LOSO) evaluation, the full multimodal model achieved balanced accuracy/F1 of 0.68 +/- 0.08/0.67 +/- 0.09 at M3 and 0.70 +/- 0.10/0.69 +/- 0.08 at M6 for handgrip, and 0.59 +/- 0.04/0.58 +/- 0.06 at M3 and 0.64 +/- 0.05/0.63 +/- 0.07 at M6 for FACIT-F. Ablation results indicated that smartwatch activity and sleep provide the strongest predictive information for frailty-related functional changes, while HRV contributes complementary information when fused with smartwatch streams.",
+      "authors": [
+        "Ioannis Kyprakis",
+        "Vasileios Skaramagkas",
+        "Georgia Karanasiou",
+        "Lampros Lakkas",
+        "Andri Papakonstantinou",
+        "Domen Ribnikar",
+        "Kalliopi Keramida",
+        "Dorothea Tsekoura",
+        "Ketti Mazzocco",
+        "Anastasia Constantinidou",
+        "Konstantinos Marias",
+        "Dimitrios I. Fotiadis",
+        "Manolis Tsiknakis"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-04-08T12:00:40+00:00",
+      "link": "https://arxiv.org/pdf/2604.06985v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "frailty and functional decline in elderly patients",
+      "llm_evidence_cn": "老年患者的衰弱和功能下降",
+      "llm_evidence": "老年患者的衰弱和功能下降",
+      "canonical_evidence": "老年患者的衰弱和功能下降",
+      "llm_tldr_en": "Proposes a wearable framework to estimate frailty and functional change in elderly oncology patients.",
+      "llm_tldr_cn": "提出了一种利用可穿戴设备评估老年癌症患者衰弱和功能变化的框架。",
+      "llm_tldr": "提出了一种利用可穿戴设备评估老年癌症患者衰弱和功能变化的框架。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "healthy elderly people",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-1101-2024-10-09-617461-v2",
+      "source": "biorxiv",
+      "title": "Unveiling value functions in social cognition with multi-agentinverse reinforcement learning",
+      "abstract": "Social behavior requires individuals to consider not only their own goals but also those of others. Latent value functions that encode such goals can be recovered from behavior using inverse reinforcement learning in single-agent settings. However, extending it to multi-agent interactions is challenging, because value functions are defined over joint state spaces that grow exponentially with the number of agents. Existing approaches often manage this complexity by imposing strong structural assumptions about social interactions, thereby limiting their applicability and interpretability. Here we show that joint value functions governing social interactions can be effectively represented through value decomposition into individual value maps for each agent and low-dimensional interaction terms. We develop a multi-agent inverse reinforcement learning framework (MAIRL) to infer these representations from behavior. In mouse and primate social tasks, MAIRL reveals interpretable value maps that are conditioned on the distinct social roles animals play during group behavior. Together, these results establish MAIRL as an interpretable and scalable framework for identifying latent value representations guiding multi-agent behavior across species.",
+      "authors": [
+        "Chen, Y.",
+        "Cheng, Y.",
+        "Kwak, M.",
+        "Radulescu, A.",
+        "Wu, H. Z."
+      ],
+      "primary_category": "animal behavior and cognition",
+      "categories": [
+        "animal behavior and cognition"
+      ],
+      "published": "2026-04-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2024.10.09.617461v2.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "social behavior and social cognition with multi-agent interactions",
+      "llm_evidence_cn": "多智能体交互中的社会行为和社会认知",
+      "llm_evidence": "多智能体交互中的社会行为和社会认知",
+      "canonical_evidence": "多智能体交互中的社会行为和社会认知",
+      "llm_tldr_en": "Proposes a method to recover latent goals in social interactions using multi-agent inverse reinforcement learning.",
+      "llm_tldr_cn": "提出一种利用多智能体逆强化学习恢复社会交互中潜在目标的方法。",
+      "llm_tldr": "提出一种利用多智能体逆强化学习恢复社会交互中潜在目标的方法。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.06990v1",
+      "source": "arxiv",
+      "title": "Stress Estimation in Elderly Oncology Patients Using Visual Wearable Representations and Multi-Instance Learning",
+      "abstract": "Psychological stress is clinically relevant in cardio-oncology, yet it is typically assessed only through patient-reported outcome measures (PROMs) and is rarely integrated into continuous cardiotoxicity surveillance. We estimate perceived stress in an elderly, multicenter breast cancer cohort (CARDIOCARE) using multimodal wearable data from a smartwatch (physical activity and sleep) and a chest-worn ECG sensor. Wearable streams are transformed into heterogeneous visual representations, yielding a weakly supervised setting in which a single Perceived Stress Scale (PSS) score corresponds to many unlabeled windows. A lightweight pretrained mixture-of-experts backbone (Tiny-BioMoE) embeds each representation into 192-dimensional vectors, which are aggregated via attention-based multiple instance learning (MIL) to predict PSS at month 3 (M3) and month 6 (M6). Under leave-one-subject-out (LOSO) evaluation, predictions showed moderate agreement with questionnaire scores (M3: R^2=0.24, Pearson r=0.42, Spearman rho=0.48; M6: R^2=0.28, Pearson r=0.49, Spearman rho=0.52), with global RMSE/MAE of 6.62/6.07 at M3 and 6.13/5.54 at M6.",
+      "authors": [
+        "Ioannis Kyprakis",
+        "Vasileios Skaramagkas",
+        "Georgia Karanasiou",
+        "Vasilis Bouratzis",
+        "Andri Papakonstantinou",
+        "Dimitar Stefanovski",
+        "Kalliopi Keramida",
+        "Aristofania Simatou",
+        "Ketti Mazzocco",
+        "Anastasia Constantinidou",
+        "Konstantinos Marias",
+        "Dimitrios I. Fotiadis",
+        "Manolis Tsiknakis"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-04-08T12:06:21+00:00",
+      "link": "https://arxiv.org/pdf/2604.06990v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "stress estimation in elderly oncology patients",
+      "llm_evidence_cn": "老年肿瘤患者的压力评估",
+      "llm_evidence": "老年肿瘤患者的压力评估",
+      "canonical_evidence": "老年肿瘤患者的压力评估",
+      "llm_tldr_en": "Uses wearable data and multi-instance learning to estimate perceived stress in an elderly cancer cohort.",
+      "llm_tldr_cn": "利用可穿戴数据和多实例学习来评估老年癌症人群的感知压力。",
+      "llm_tldr": "利用可穿戴数据和多实例学习来评估老年癌症人群的感知压力。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "healthy elderly people",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.06990v1/fig-001.webp",
+      "caption": "Fig. 2. A schematic illustration of the proposed pipeline; The first two images (human icons) were generated using Google Gemini [30] (synthetic images).",
+      "page": 5,
+      "index": 1,
+      "width": 1076,
+      "height": 273
+    }
+  ]
+}

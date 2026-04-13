@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-04-12T19:27:43.070788+00:00",
-  "updated_date": "20260412",
+  "generated_at": "2026-04-13T20:08:01.174540+00:00",
+  "updated_date": "20260413",
   "carryover_days": 9,
   "tag_states": {
     "幼儿研究": {
-      "updated_date": "20260412",
+      "updated_date": "20260413",
       "carryover_days": 9,
       "items": []
     },
     "COG ELD": {
-      "updated_date": "20260412",
+      "updated_date": "20260413",
       "carryover_days": 9,
       "items": []
     }
