@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.09026v1/fig-001.webp",
+      "caption": "Figure 2: Evolution of the average Wasserstein distance matrix computed between the social representations inferred by agents.",
+      "page": 6,
+      "index": 1,
+      "width": 1040,
+      "height": 211
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09026v1/fig-002.webp",
+      "caption": "Figure 3: MDS embedding trajectory of the GW distance matrix computed from the inferred social representation structures. Numbers in black indicate time steps.",
+      "page": 6,
+      "index": 2,
+      "width": 462,
+      "height": 431
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09026v1/fig-003.webp",
+      "caption": "Figure 6: Average acceptance rate of social representations and creations between agents, aggregated over successive intervals of time steps. Edge transparency reflects the frequency with which communication resulted in a zero acceptance rate.",
+      "page": 8,
+      "index": 3,
+      "width": 905,
+      "height": 426
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09026v1/fig-004.webp",
+      "caption": "Figure 4: Temporal evolution of the distribution of observations created and memorized by each agent.",
+      "page": 7,
+      "index": 4,
+      "width": 1052,
+      "height": 185
+    }
+  ]
+}

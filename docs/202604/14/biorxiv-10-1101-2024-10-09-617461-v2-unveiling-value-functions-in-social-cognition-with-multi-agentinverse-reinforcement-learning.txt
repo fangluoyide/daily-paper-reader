@@ -1,0 +1,1392 @@
+Title: Unveiling value functions in social cognition with multi-agent inverse reinforcement learning
+
+URL Source: https://www.biorxiv.org/content/10.1101/2024.10.09.617461v2.full.pdf
+
+Number of Pages: 24
+
+Markdown Content:
+# Unveiling value functions in social cognition with multi-agent inverse reinforcement learning 
+
+Yusi Chen 1,2,→, Yuan Cheng 3, Myungji Kwak 3, Angela Radulescu 4, Herbert Zheng Wu 3,→
+
+> 1
+
+Computational Neuroscience Center, University of Washington, Seattle, WA, USA 
+
+> 2
+
+Institute of Neuroscience, Chinese Academy of Sciences, Shanghai, China 
+
+> 3
+
+Department of Neuroscience and Friedman Brain Institute, Icahn School of Medicine at Mount Sinai, New York, NY, USA 
+
+> 4
+
+Department of Psychiatry and Center for Computational Psychiatry, Icahn School of Medicine at Mount Sinai, New York, NY, USA 
+
+> →
+
+Correspondence: chenyusi151201@gmail.com (Y.C.), zheng.wu@mssm.edu (H.Z.W.) 
+
+# Abstract 
+
+Social behavior requires individuals to consider not only their own goals but also those of others. Latent value functions that encode such goals can be recovered from behavior using inverse reinforcement learning in single-agent settings. However, extending it to multi-agent interactions is challenging, because value functions are defined over joint state spaces that grow exponentially with the number of agents. Existing approaches often manage this complexity by imposing strong structural assumptions about social interactions, thereby limiting their applicability and inter-pretability. Here we show that joint value functions governing social interactions can be effectively represented through value decomposition into individual value maps for each agent and low-dimensional interaction terms. We develop a multi-agent inverse reinforcement learning framework (MAIRL) to infer these representations from behavior. In mouse and primate social tasks, MAIRL reveals interpretable value maps that are conditioned on the distinct social roles animals play during group behavior. Together, these results establish MAIRL as an interpretable and scalable framework for identifying latent value representations guiding multi-agent behavior across species. 1
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# 1 Introduction 1
+
+Social interactions are central to survival and daily life [ 1– 5], yet deciphering the computations that govern 2
+
+them remains a fundamental challenge. In these settings, one’s decisions both influence and depend on 3
+
+the actions of others, making it difficult to determine how the brain evaluates outcomes and integrates 4
+
+social information. Inverse reinforcement learning (IRL) is a powerful approach for studying single-agent 5
+
+behavior by inferring its latent value functions that encode an agent’s goals [ 6 –9]. This framework has 6
+
+been instrumental in linking behavior to neural representations [10, 11] and in understanding how these 7
+
+computations break down in neuropsychiatric disorders [ 12 , 13 ]. Extending IRL to social interactions 8
+
+is therefore essential for uncovering the computational principles underlying social cognition and its 9
+
+dysfunction. 10 
+
+However, applying this framework to social interactions introduces key challenges: the latent value 11 
+
+functions are defined over the joint state space of interacting agents, which grows exponentially with the 12 
+
+number of agents. To manage this complexity, many existing cognitive and neuroscience models rely on 13 
+
+strong structural simplifications, limiting their applicability across diverse social tasks. One common 14 
+
+strategy embeds social influences as latent variables within a single-agent Partially Observed Markov 15 
+
+Decision Process (POMDP) framework [ 14 – 17 ]. While effective for capturing behavior, these approaches 16 
+
+obscure the structure of social interactions by collapsing them into unobserved latent factors. Other 17 
+
+approaches [ 18 , 19 ] adopted multi-agent Markov Decision Processes (MDPs) to infer simplified, often 18 
+
+binary, social intentions to improve task performance, but do not recover the full value structure. Related 19 
+
+work [ 20 ] assumes distinct self-value functions across cognitive hierarchies, conflating task-related value 20 
+
+structure with agents’ recursive reasoning. These limitations highlight the need for a framework that 21 
+
+can recover the complete and interpretable value functions directly from multi-agent behavior. This 22 
+
+would enable direct inference of how agents represent both the environment and their social partners, 23 
+
+disentangling task structure from social reasoning and allowing quantitative comparison of strategies. 24 
+
+To enable inverse inference of latent value functions from behavior, we first construct a generative 25 
+
+forward model that links value functions to observable social decisions under well-defined computational 26 
+
+assumptions. We formalize social tasks within a multi-agent reinforcement learning (MARL) framework 27 
+
+[ 21 ], which specifies how multiple agents act and interact in a shared environment. We show that joint 28 
+
+value functions governing social interactions can be efficiently represented through value decomposition, 29 
+
+which factorizes them into individual value components for each agent and low-dimensional interaction 30 
+
+terms. This representation reduces the dimensionality of the inference problem while preserving task-31 
+
+relevant interactions between agents, enabling tractable and interpretable recovery of joint value functions 32 
+
+from behavior. We show analytically and numerically that, in typical social tasks where joint rewards are 33 
+
+sparse, this decomposition accurately reconstructs the full joint value function. Within this framework, 34 
+
+task structure is encoded in the joint value function, while agents’ cognitive hierarchy is captured by 35 
+
+recursive reasoning [22], with recursion depth corresponding to theory-of-mind capacity. 36 
+
+Building on this formulation, we develop a multi-agent inverse reinforcement learning (MAIRL) 37 
+
+framework [ 6, 7 , 23 ] that infers decomposed value representations from observed behavior, thereby 38 
+
+recovering agents’ internal representations of both the environment and their social partners. This 39 
+
+inference algorithm accurately recovers the ground-truth value functions in simulated social foraging 40 
+
+tasks, validating the approach under controlled conditions. We then apply MAIRL to empirical data 41 
+
+from mouse cooperative behavior, revealing how asymmetric value learning across agents gives rise to 42 
+
+leadership and followership. In a non-cooperative primate task, MAIRL uncovers mutual prediction 43 
+
+signals correlated with social hierarchy. Together, these results demonstrate that value decomposition 44 
+
+through MAIRL enables interpretable, scalable inference of the goals and strategies underlying social 45 
+
+interactions across tasks and species. 46 
+
+4
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# 2 Results 47 
+
+2.1 MAIRL with value decomposition 48 
+
+Social interactions between two agents can be modeled as a two-agent Markov Decision Process (MDP) 149 
+
+The joint state space was denoted as S = S1 → S2, with joint state s = ( s1, s 2) combining two agents’ 50 
+
+individual states, and the joint action space as A = A1 → A2, with joint action a = ( a1, a 2). The 51 
+
+transition kernel P (s↑ | s, a ) specifies the environment dynamics, ri denotes the reward function of agent 52 
+
+i, and ω ↑ [0 , 1] is the discount factor. The reward function ri assigns a scalar value to agent i when all 53 
+
+agents transition from joint state s ↑ S to s↑ ↑ S under joint action a ↑ A. Consequently, its domain 54 
+
+is defined over the joint state–action space, whose cardinality grows exponentially with the number of 55 
+
+agents. When reward functions are identical across agents ( r = r1 = r2), the formulation captures 56 
+
+cooperative interactions; when they differ, it accommodates competitive or mixed-motive social behaviors. 57 
+
+For clarity, we focus on the identical-interest setting and omit agent superscripts below. 58 
+
+In inverse reinforcement learning [ 6 , 7 , 24 ], given a known environment {P, S, A , ω} and expert 59 
+
+trajectories D = {(st, a t)}Tt=0 , the goal is to recover a reward functions r that maximize the likelihood 60 
+
+P (D|r). Under a conditional independence assumption, the trajectory likelihood factorizes as 61 
+
+P (D|r) = 
+
+> T
+
+∏
+
+> t=0
+
+εr(at|st) p(st)
+
+where policy ε is induced by the underlying value functions and thus implicitly parameterized by reward 62 
+
+r. Details of the problem formulation could be found in Section 4.1. 63 
+
+A key challenge is that joint reward functions in multi-agent settings are defined over a space that 64 
+
+grows exponentially with the number of agents, making them difficult to compute and interpret. Here we 65 
+
+show that these functions can be effectively represented through value decomposition , which expresses 66 
+
+them as individual components of each agent and low-dimensional interaction terms: 67 
+
+r(s1, s 2) = ϑ1m(s1) + ϑ2n(s2) + ϑ3ϖ(d), (1) where m and n denote value maps over individual states, ϖ(d) is an interaction term depending on the 68 
+
+behavior (e.g., Dijkstra distance d, defined as number of minimal steps), and ϑk are scalar weights. This 69 
+
+decomposition reduces the parameter space from |S1|| S2| to |S1| + |S2| + |d|, while preserving the task-70 
+
+relevant structure of social interactions. Although we refer to this formulation as value decomposition 71 
+
+following standard terminology, the inferred quantity in our framework is the reward function; the 72 
+
+resulting value function inherits the same structured decomposition through reinforcement learning 73 
+
+dynamics. In the following, we use the terms reward and value interchangeably when referring to their 74 
+
+shared decomposed structure. 75 
+
+Building on this decomposed value representation, we develop a probabilistic generative model of 76 
+
+the joint policy ε(a | s) by integrating a multi-agent reinforcement learning framework with maximum-77 
+
+entropy value iteration [ 6, 25 ] (Section 4.3) and coordination strategies (Section 4.4). Using this generative 78 
+
+model summarized in Fig. 1A, we can then infer the target reward function that best explains the observed 79 
+
+behavior using the proposed inference algorithm (Section 4.5). 80 
+
+2.2 Tractable reconstruction of joint reward functions via value decomposition 81 
+
+To illustrate how value decomposition recovers interpretable latent structure in social tasks, we consider a 82 
+
+set of canonical multi-agent foraging paradigms, described in detail below. In each case, the task defines a 83 
+
+sparse joint reward function over the combined state space. Although separability of the reward function 84 
+
+r is not guaranteed in general, we show (Section 4.2) that for many social tasks the parameters m, n, and 85 
+
+ϖ in Eq. 1 can be estimated using an ordinary least squares (OLS) solution (Fig. 1B and Fig. S1). Across 86  
+
+> 1For clarity, we present the two-agent case; the formulation extends naturally to more agents, at the cost of exponential computational growth.
+
+5
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+these tasks, we evaluated reconstruction accuracy by measuring the proportion of incorrectly recovered 87 
+
+target states as different components of Eq. 1 were included (Fig. 1C). The resulting value maps and 88 
+
+interaction terms provide a compact and interpretable description of the latent representations that guide 89 
+
+behavior. 90 
+
+In the cooperative match task (Fig. 1D), two agents must reach the same goal location (north or 91 
+
+east) simultaneously to obtain reward, resulting in two rewarded joint states. Value decomposition 92 
+
+recovers this structure by combining individual value maps that emphasize the goal locations with an 93 
+
+interaction term ϖ that peaks at zero distance, reflecting the requirement for spatial proximity. Together, 94 
+
+these components reconstruct the sparse joint value function with zero error (Fig. 1C), and provide an 95 
+
+interpretable representation of the task: agents value both goal locations and coordination with each other. 96 
+
+In the pursuit task (Fig. 1E), a reward is obtained whenever both agents occupy the same position, 97 
+
+independent of their location in the arena. Accordingly, the interaction term alone captures the task 98 
+
+structure, encoding value as a function of inter-agent distance, while individual value maps are not 99 
+
+required. This demonstrates that value decomposition isolates the relevant latent variable, i.e., agent 100 
+
+proximity, underlying the task. 101 
+
+In the cooperative mismatch task (Fig. 1F), agents must reach different goal locations simultaneously 102 
+
+to obtain a reward. Here, value decomposition recovers individual value maps that highlight the goal 103 
+
+locations, together with an interaction term that encodes the preferred separation between agents. Notably, 104 
+
+this interaction term peaks at a distance corresponding to the separation between the two reward zones, 105 
+
+reflecting the specific coordination strategy required by the task. 106 
+
+In the three-agent cooperative task (Fig. 1G), reward is delivered when any two agents reach the 107 
+
+same goal location simultaneously. Despite the large joint state space ( 25 3 = 15 ,625 states), value 108 
+
+decomposition recovers the reward structure using individual value maps and pairwise interaction terms, 109 
+
+greatly reducing the parameter space. These components capture both goal-directed behavior and pairwise 110 
+
+coordination, demonstrating scalability to interactions with more than two agents. 111 
+
+Together, these examples demonstrate that value decomposition accurately recovers the structure of 112 
+
+joint value functions in a compact and interpretable form, revealing how social tasks can be represented 113 
+
+in terms of individual goals and interaction constraints. This formulation enables efficient reconstruction 114 
+
+with a tractable number of parameters across a range of multi-agent settings. 115 
+
+2.3 Validation of MAIRL in simulated cooperative foraging with heterogeneous strategies 116 
+
+Having established the accuracy of the OLS-based reconstruction, we next asked whether MAIRL can 117 
+
+infer decomposed value functions from simulated trajectories of agents with distinct reasoning strategies 118 
+
+in the cooperative match task (Fig. 2A). Under independent action selection, the model should recover 119 
+
+each agent’s value function separately when the agents follow different decision strategies. Following 120 
+
+Section 4.4, we simulated two agents with different reasoning policies: an egocentric, theory-of-mind 121 
+
+level-0 (ToM-0) agent, which navigates to reward locations without considering its partner’s behavior, 122 
+
+and a socially aware, theory-of-mind level-1 (ToM-1) agent, which assumes that its partner behaves 123 
+
+as a ToM-0 agent and plans accordingly. Example simulated trajectories are shown in Fig. 2B and C. 124 
+
+From behavioral observations alone, including trajectory length and port choice, these two strategies are 125 
+
+difficult to distinguish. 126 
+
+We then applied MAIRL separately to each agent’s trajectories to assess model fit and identify the 127 
+
+value components underlying their distinct strategies. First, behavioral fitting using the decomposed 128 
+
+value function achieved consistently higher log-likelihood (LL) than the full joint value function across 129 
+
+ten random initializations (Fig. 2D). This improvement is likely due to the reduced parameterization of 130 
+
+the decomposed model, which makes the optimization less susceptible to local minima. Second, model 131 
+
+comparison allowed us to assess which terms in Eq. 5 are necessary for capturing and distinguishing 132 
+
+the agents’ underlying foraging strategies. The Bayesian Information Criterion (BIC) results of fitting 133 
+
+the trajectories from both agents are shown in Fig. 2E and F. A BIC drop greater than 10 is generally 134 
+
+considered strong evidence in favor of the lower-BIC model. For the socially aware agent (Fig. 2E), 135 
+
+models composed of both self position and partner distance were preferred, whereas for the egocentric 136 
+
+6
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+agent, the model containing self position only was sufficient. These selections align with the simulated 137 
+
+ground-truth reasoning logic for each agent. The decomposed value map inferred for the socially aware 138 
+
+agent features elevated values near the goal locations and in proximal states (Fig. 2G and H), mirroring 139 
+
+the numerically decomposed value structure for this task (Fig. 1D) and further validating the inference 140 
+
+procedure. Together, these results show that MAIRL recovers agent-specific value structures and supports 141 
+
+principled hypothesis testing of behavioral strategies. 142 
+
+2.4 Applications to experimental datasets 143 
+
+After validating our framework in simulations where ground truth is available, we applied the approach 144 
+
+to the observed trajectories of two mice performing a cooperative foraging task [ 26 ] and tracked how 145 
+
+their value representations evolved during learning. This analysis revealed value functions underlying 146 
+
+distinct social roles and the unique dynamics in learning. Beyond cooperative settings, we further applied 147 
+
+MAIRL to a non-cooperative "chicken" game in monkeys, demonstrating that the method generalizes 148 
+
+across a range of social decision-making tasks. 149 
+
+2.4.1 Infer value functions in cooperating mice with distinct social roles 150 
+
+We first applied MAIRL to infer the value representations underlying a cooperative match task performed 151 
+
+by a pair of mice (Fig.3A). Similar to the simulated task, the two mice must cooperate by navigating to 152 
+
+the same reward zones to obtain rewards [ 26 ]. The arena (45cm → 45cm) was discretized into a 10 → 10 153 
+
+grid, and animal movements were mapped onto this grid with nine possible actions (stay, up, down, left, 154 
+
+right, and four diagonal movements). Example trajectory pairs are shown in Fig. 3B and C, where the 155 
+
+animals selected the goal location in the east and coordinated their arrival. 156 
+
+Mice adopt an emergent leader–follower strategy [ 26 ] to solve this task: the leader arrives first at the 157 
+
+reward zone in most of the trials and has a disproportionate impact on follower’s choice. Using MAIRL, 158 
+
+we sought to infer the value functions underlying each animal’s decisions and to determine how these 159 
+
+values relate to their social roles. To this end, we constructed a set of nested models to test whether each 160 
+
+component of the decomposed value function was necessary for explaining the behavior. We analyzed 161 
+
+data from 27 well-trained animal pairs (Fig.3E-H). For most animals, models incorporating self-location 162 
+
+and partner distance provided the best fit, whereas the partner’s allocentric location contributed minimally. 163 
+
+Notably, partner distance improved model fit more for followers than for leaders. Overall, the best-fitting 164 
+
+models significantly outperformed chance-level baselines (Fig. 3F) and accurately predicted final goal 165 
+
+choices (Fig. 3G). 166 
+
+We then directly visualized the value maps inferred from observed trajectories during cooperative task. 167 
+
+Both leaders and followers (Fig. 4C, middle) assigned higher value to the goal locations. By contrast, 168 
+
+followers assigned significantly greater value on proximal partner distance compared to leaders (Fig. 4C, 169 
+
+right). Together, these results suggest that animals learn that successful coordination in this task depends 170 
+
+primarily on maintaining appropriate mutual distance, with followers relying more heavily on partner 171 
+
+distance compared to leaders. 172 
+
+To determine whether MAIRL reliably reveals decision strategies across different behavioral contexts, 173 
+
+we compared cooperative foraging to free-run sessions, when animals explore the arena out of the task 174 
+
+context while still water-restricted (Fig. 4D). Model comparison (Fig. 4E) indicates that both leaders and 175 
+
+followers were best described by models in which decisions depended only on self-location. Although 176 
+
+animals continued to assign elevated value to the goal locations (Fig.4F, middle)—likely because these 177 
+
+sessions were usually recorded right before task sessions and the well-trained animals continued to visit 178 
+
+goal locations in anticipation of potential reward—they no longer incorporated partner distance into their 179 
+
+value functions (Fig. 4F, right). This suggests that higher valuation of partner proximity is selective 180 
+
+during the cooperative task and absent when animals are not cued to coordinate. 181 
+
+Taken together, these results suggest that successful coordination in this task depends critically on 182 
+
+the value representation of partner distance, with followers relying more on partner proximity than 183 
+
+leaders. Importantly, these value maps are latent and not directly accessible from behavioral observations 184 
+
+7
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+alone, but can be inferred through MAIRL. This demonstrates that the framework enables recovery of 185 
+
+interpretable internal representations underlying social decision-making. 186 
+
+2.4.2 Reveal the dynamics of value functions during learning 187 
+
+We next applied MAIRL to track value functions across learning, enabling a closer examination of the 188 
+
+dynamics in value assignment. The behavioral trajectories from the same 27 animal pairs were used. 189 
+
+Because the value functions were estimated for each training session, we increased the discretization bin 190 
+
+size and estimated values on a coarser 5 → 5 grid. 191 
+
+Across learning, value functions for self-location remained largely stable (Fig. 5A and B), likely 192 
+
+reflecting prior training and consistent knowledge of the goal locations. In contrast, the value function for 193 
+
+partner distance progressively increased at close proximity over training (Fig. 5C), while the corresponding 194 
+
+representation in leaders showed little change (Fig. 5D). These results suggest that followers undergo 195 
+
+greater value updating during cooperative learning, selectively reinforcing proximity to their partners. 196 
+
+To quantify this effect at the population level, we pooled the values assigned to proximal partner 197 
+
+distance across all 27 animal pairs over learning (Fig. 5E and F). During early learning, followers rapidly 198 
+
+increased the value of proximal partner distance, contributing to the increase in coordination success, 199 
+
+whereas leaders showed slower and more limited adjustments. Consistent with this pattern, values for 200 
+
+proximal partner distance were indistinguishable between followers and leaders at the onset of training 201 
+
+(Fig.5G) but became significantly higher in followers after training (Fig. 5H). Together, these results 202 
+
+reveal distinct learning strategies for followers and leaders, suggesting that role differentiation emerges 203 
+
+through differences in value updating. Importantly, MAIRL reveals these latent value representations 204 
+
+that are not directly observable from the behavior, providing a window into the internal computations 205 
+
+underlying cooperative learning. 206 
+
+2.4.3 Probing additional behavioral structure via conditioning variables 207 
+
+While the core MAIRL formulation captures social value structure through a compact decomposition, it 208 
+
+also enables hypothesis-driven incorporation of additional behavioral details without explicitly expanding 209 
+
+the state space. Rather than introducing new state dimensions, we treat candidate variables as conditional 210 
+
+modulators of existing value components, allowing us to assess their contribution while preserving 211 
+
+tractability. As a proof of concept, we examine whether relative head direction modulates the value 212 
+
+associated with inter-animal distance. 213 
+
+Relative head direction ( ϱ) was defined as the angle of the partner from the instantaneous heading of 214 
+
+oneself. We model ϱ not as an independent state variable, but as a conditioning variable that modulates 215 
+
+the distance-dependent value term: 216 
+
+V (s | ϱ) = m(s1) + ϖ(d | ϱ). (2) We discretized the continuous angle ϱ into three categories—front, left, and right—and fitted these 217 
+
+conditioned distance value maps to observed trajectories from the well-trained pairs (Fig. 6). Model 218 
+
+comparison revealed that a subset of animals (6 followers and 5 leaders) showed significant improvement 219 
+
+after introducing the additional parameters (Fig.3H). For these animals, conditioning on head direction 220 
+
+reveals structured modulation of value for partner distance (Fig. 6). Notably, only when the value functions 221 
+
+are conditioned on a frontal partner position, followers showed a stronger preference for proximal states 222 
+
+than leaders (Fig. 6B), suggesting that followers are more likely to approach and reduce distance when 223 
+
+their partner is positioned directly ahead. 224 
+
+This analysis illustrates how MAIRL can flexibly test additional behavioral hypotheses without 225 
+
+increasing the dimensionality of the state space. More broadly, it demonstrates that decomposed value 226 
+
+representations provide a structured framework for incorporating and evaluating candidate variables, 227 
+
+enabling more precise and interpretable characterization of social behavior while preserving computational 228 
+
+tractability. 229 
+
+8
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+2.4.4 Infer mutual predictions in monkeys during a non-cooperative task 230 
+
+Extending beyond cooperative contexts, we used MAIRL to infer mutual predictions between monkeys 231 
+
+in a non-cooperative “chicken” game. This game is a non-cooperative task blending coordination and 232 
+
+conflict, offers insights into players’ motivations and tendencies [ 27 ]. Two monkeys are presented with 233 
+
+options: go Straight (S) or Yield (Y), resulting in four potential outcomes (Fig. S2A and B):(i) S-S leads 234 
+
+to a crash with zero reward; (ii)/(iii) S-Y yields a significant reward for the bold monkey and a small 235 
+
+one for the yielding monkey; (iv) Y-Y results in cooperation with a moderate reward for both. Fig. S2B 236 
+
+illustrates the outcome and payoff matrix from one monkey pair (trial number = 29,147), with decisions 237 
+
+exhibiting roughly independent behavior, indicated by a mutual information measure of 0.01 bits. 238 
+
+This non-cooperative task is stateless with four possible actions in the joint action space. Two separate 239 
+
+value functions, V1 and V2, need to be parameterized. The probability of agent 1’s decision could be 240 
+
+written as: 241 
+
+P1(a1) = ∑ 
+
+> i↓{S,Y }
+
+P1(a1|ˆa2 = i)P1(ˆ a2 = i ) = ∑ 
+
+> i↓{S,Y }
+
+ε1(a1|a2 = i)P1(ˆ a2 = i) (3) where ε1(a1, a 2) is a softmax transformation of V1(a1, a 2) and denote P1(ˆ a2 = S) = q1. Inference 242 
+
+details can be found in Section 4.8. The estimated Vi and qi values (Fig. S2C-E) shows that Monkey 1 243 
+
+estimates that its opponent has a lower probability of going straight. Consequently, Monkey 1 is bolder 244 
+
+and chooses to go straight more often. Interestingly, the behavior of this monkey matches its higher social 245 
+
+status as determined by a separate confrontation experiment [27]. 246 
+
+Notably, the authors of these experiments [ 27 ] developed a "hybrid RL and strategic learning model" 247 
+
+to determine one animal’s prediction about another, which is equivalent to a constrained MARL model 248 
+
+with independent control, mutual logistic prediction and hard Q-learning update. Compared to this 249 
+
+specialized model, our MAIRL model is more generally applicable to more complex predictions and 250 
+
+state-dependent behaviors. 251 
+
+# 3 Discussion 252 
+
+We developed a multi-agent inverse reinforcement learning (MAIRL) framework that enables tractable 253 
+
+and interpretable inference of latent value representations in social decision-making. The key advance is 254 
+
+a value decomposition formulation that represents joint value functions as structured combinations of 255 
+
+individual components and low-dimensional interactions, allowing recovery of high-dimensional social 256 
+
+value structure without enumerating the full joint state space. We show theoretically and numerically that 257 
+
+this representation accurately reconstructs sparse joint value functions while greatly reducing parameter 258 
+
+complexity. Building on this, MAIRL enables direct inference of agents’ strategies from behavior: in 259 
+
+simulated cooperative tasks, it distinguishes policies with different levels of social reasoning through 260 
+
+model comparison. Applying MAIRL to mouse cooperative behavior, we uncover interpretable value 261 
+
+maps that reveal social role differentiation and distinct learning dynamics, with followers progressively 262 
+
+increasing the value assigned to socially relevant states. Importantly, the interaction terms in the 263 
+
+decomposition are user-defined, allowing hypothesis-driven specification of candidate social features and 264 
+
+direct testing of their contributions to behavior. MAIRL further supports the incorporation of additional 265 
+
+behavioral features, such as head direction, as conditional modulators of value representations without 266 
+
+expanding the state space. Extending this framework to a non-cooperative “chicken” game in monkeys, 267 
+
+we show that the inferred value functions and mutual predictions capture strategic behavior and relate to 268 
+
+social hierarchy, illustrating the generality of the approach across species and social paradigms. 269 
+
+The exponential growth of the joint state space with the number of agents is not only a challenge 270 
+
+for computational modeling, but also a fundamental constraint for neural systems operating in social 271 
+
+environments. In the social tasks studied here, only a small subset of variables, such as relative spatial 272 
+
+position, are behaviorally relevant. In natural social interactions, however, agents must contend with many 273 
+
+additional factors, including identity, history, and context, leading to a rapid increase in representational 274 
+
+9
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+complexity [ 28 ]. Value decomposition provides a principled way to manage this complexity by repre-275 
+
+senting joint value functions in terms of individual components and low-dimensional interaction terms, 276 
+
+without enumerating the full joint space. In this view, socially relevant variables act as compact features 277 
+
+that capture key aspects of interaction structure. This idea is consistent with the neural representations of 278 
+
+partner distance observed during mouse cooperative behavior [ 26 ], which resemble the interaction terms 279 
+
+recovered by MAIRL. More broadly, such decomposed representations may reflect a general strategy by 280 
+
+which the brain achieves dimensionality reduction in multi-agent settings, enabling efficient coordination 281 
+
+in complex environments. 282 
+
+The present formulation focuses on a minimal setting that isolates the core computational problem 283 
+
+of inferring joint value structure from behavior. We assume full observability of the environment and 284 
+
+transition dynamics, allowing us to disentangle value structure from uncertainty about others’ states. 285 
+
+Extending the framework to partially observable settings would enable modeling how agents infer hidden 286 
+
+states and beliefs during interaction. We further consider discrete state and action spaces without imposing 287 
+
+a parametric form on the reward function, enabling flexible recovery of value structure. Extensions to 288 
+
+continuous domains using appropriate function basis would allow scaling to more complex environments 289 
+
+while preserving this interpretability. Finally, the tasks studied here primarily engage low levels of 290 
+
+recursive reasoning; applying the framework to settings that require deeper strategic inference would 291 
+
+provide a more complete characterization of cognitive hierarchy in social behavior. 292 
+
+Together, these results establish MAIRL as a general framework for uncovering the computations 293 
+
+underlying social interactions in biological and artificial systems. The framework naturally extends along 294 
+
+several directions enabled by its decomposed structure. First, additional behavioral variables, such as 295 
+
+motivation [ 29 ], movement kinetics [ 30 ], or vocal communication [ 31 ], can be incorporated to allow 296 
+
+for systematic evaluation of their contribution to social behavior. Second, value decomposition enables 297 
+
+scaling to larger groups by reducing parameter growth from exponential to approximately linear in the 298 
+
+number of agents, making it possible to study structured interaction graphs and collective dynamics in 299 
+
+larger social systems, such as schooling fish or social insects [ 5 , 32 , 33 ]. Third, applying MAIRL to 300 
+
+tasks that require deeper strategic reasoning, such as the stag-hunt game [ 34 ], would enable quantitative 301 
+
+inference of theory-of-mind capacities. These directions highlight that MAIRL provides a flexible and 302 
+
+extensible foundation for investigating the computations governing complex social behavior. 303 
+
+Lastly, with the rapid development of large language model (LLM) agents, the proposed framework 304 
+
+may also provide a useful perspective for studying interactions in artificial multi-agent systems. Recent 305 
+
+advances have enabled multiple LLM-based agents to communicate, negotiate, and coordinate in shared 306 
+
+environments, giving rise to increasingly complex collective behaviors [ 35 ]. However, the mechanisms 307 
+
+governing these interactions often remain difficult to interpret, as policies and internal representations are 308 
+
+distributed across high-dimensional neural networks. By explicitly modeling value functions, beliefs, 309 
+
+and recursive reasoning, the MAIRL framework offers a principled way to infer latent objectives and 310 
+
+predictive structures from observed social behaviors. This approach could help reveal how cooperative 311 
+
+or competitive strategies emerge, how social roles differentiate within groups of agents, and how stable 312 
+
+social conventions or equilibria arise over time. More broadly, applying such interpretable modeling 313 
+
+tools to artificial agent societies may provide a quantitative bridge between studies of biological social 314 
+
+cognition and the growing field of multi-agent artificial intelligence, enabling comparative analyses of 315 
+
+learning dynamics, coordination strategies, and the emergence of collective behavior across natural and 316 
+
+artificial systems. 317 
+
+10 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# 4 Methods 318 
+
+4.1 Formulation of multi-agent inverse reinforcement learning (MAIRL) 319 
+
+Let’s consider a Markov Decision Process 2 described by ↓S, A , P, r 1, r 2, ω↔ where: 320 
+
+• S = S1 → S2 is the set of joint environmental states constructed by the cartesian product of 321 
+
+individual state sets Si with cardinality |S| = |S 1| → |S 2|322 
+
+• A = A1 → A2 is the set of joint actions 323 
+
+• P = P (s↑|s, a ) : S →A ↗ !(S) describes the state transition dynamics of the environment, 324 
+
+where ! is a probability measure over S.325 
+
+• ri : S → A → S ↗ R is the reward function that returns a scalar value to the i-th agent for a 326 
+
+transition from s ↑ S to s↑ ↑ S, taking joint action a ↑ A.327 
+
+• ω ↑ [0 , 1] is the discount factor for future steps. 328 
+
+In inverse reinforcement learning (IRL) [ 24 ][ 6 ][ 7], given {P, S, A , ω} and N samples of expert trajec-329 
+
+tories D = {ς1, ς2, .. ςN }, we aim to infer the unknown reward function r1, r 2 such that P (D|r1, r 2)330 
+
+is maximized. Each trajectory is composed of independent state-action pairs: ςi = {(st, a t)}Tt=0 . As 331 
+
+a consequence, the posterior probability of observing expert trajectories ςi can be calculated with the 332 
+
+specific policy ε derived from value functions (Eq. 4). 333 
+
+P (ςi|r) = 
+
+> T
+
+∏
+
+> t=0
+
+ε(at|st)p(st) (4) Therefore, at the core of this problem is to parameterize the joint policy function ε(a|s) using a probabilis-334 
+
+tic modeling of social interactions based on MARL with recursive reasoning and value decomposition as 335 
+
+highlighted in Fig. 1A. 336 
+
+4.2 Value decomposition 337 
+
+Inferring the reward function r : S ↗ R without assuming a parametric form requires estimating |S| 338 
+
+parameters. In multi-agent settings, this becomes intractable, as the cardinality of S grows exponentially 339 
+
+with the number of agents. To address the issue, noting that r is usually sparse (see examples in Fig. 1D-340 
+
+G), we decompose the joint value map into marginal maps and interactions maps as Eq. 5 where si ↑ Si341 
+
+and d stands for a given interaction function between s1 and s2 (e.g., Dijkstra distance between agent 1’s 342 
+
+location s1 and agent 2’s location s2 in a grid environment). 343 
+
+r(s1, s 2) = ϑ1m(s1) + ϑ2n(s2) + ϑ3ϖ(d) (5) As a proof of principle, let’s first consider the case where the joint value function r(s1, s 2) : S ↗ R344 
+
+can be approximated by decomposing it into individual value maps m(s1) : S1 ↗ R, n(s2) : S2 ↗ R345 
+
+and an interaction term ϖ(d) as a function of Dijkstra distance d(s1, s 2). While this separability property 346 
+
+is not always guaranteed, reconstruction error r ↘ m ↘ n ↘ ϖ can be minimized through ordinary least 347 
+
+square solution (OLS) of an overdetermined linear system. 348 
+
+Formally, we approximate the joint reward function r(s1, s 2) by a separable decomposition of the 349 
+
+form m(s1) + n(s2) + ϖ(d). This poses O(|S| 2) constrains to a system with O(2 → |S| ) parameters, 350 
+
+constructing an overdetermined linear system. As depicted in Fig. S1, the reconstruction is expressed 351 
+
+(Eq. 1) as y = Xφ where y is a flattened version of r(s1, s 2), φ is a concatenated vector of parameters in 352 
+
+the m, n, ϖ and X is a fixed design matrix depending on the definition of the interaction term d and the 353   
+
+> 2For simplicity, we provide equations for two agents. These derivations naturally extend to many agents albeit with exponential growth of required computation.
+
+11 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+grid environment. Since the number of constraints is much larger than the number of parameters, this is 354 
+
+an overdetermined system. The ordinary least square (OLS) solution is expressed as ˆφ = ( XT X)↔1XT y355 
+
+and the error vector evaluated as (I ↘ X(XT X)↔1XT )y, denoted as M y . The reconstruction error is 356 
+
+the projection of vector y onto the null space of M . Since M and y both depend on the task setup and the 357 
+
+choice of the interaction term, we may calculate the reconstruction error before performing the inference 358 
+
+(Fig. 1C-G). 359 
+
+4.3 Policy parameterization 360 
+
+After parameterizing the reward function, we adopted a differentiable maximum entropy policy [ 6][ 25 ] to 361 
+
+obtain a probabilistic mapping from reward functions to policies: 362 
+
+ε(a|s) = exp Q(s, a )
+
+∑ 
+
+> a→↓A
+
+exp Q(s, a ↑) (6) where Q(s, a ) is a soft Q-function arising from performing soft value iteration: 363 
+
+Q(s, a ) = r(s, a ) + ω∑
+
+> s→
+
+P (s↑|s, a ) log( ∑
+
+> a→↓A
+
+exp Q(s↑, a ↑)) (7) Note that a temperature term is not needed in the softmax function, as it will be absorbed into absolute 364 
+
+value of Q, and subsequently r, which is the variable we aim to estimate from observations. 365 
+
+In the multi-agent scenario, the above generative model only holds for a cooperative task where two 366 
+
+agents have the same reward function and act in a centralized way. In most realistic scenarios, however, 367 
+
+agents have their own objectives and are not governed by a centralized controller. We therefore introduce 368 
+
+separate reward functions, value functions, and policies ri, Qi and εi(ai|s) for each agent. If we assume 369 
+
+that agents act independently and simultaneously, their joint policy could be expressed as ”iεi(ai|s) .370 
+
+This will be the primary policy formulation to describe multiple agents in this work. 371 
+
+4.4 Coordination and theory-of-mind (ToM) levels 372 
+
+Another source of complexity in modeling multi-agent interactions arises from the need to account for 373 
+
+coordination and recursive reasoning between agents. Each agent’s behavior depends not only on the 374 
+
+environment but also on its beliefs about the strategies of others, introducing multiple levels of reasoning 375 
+
+that must be modeled. For clarity, we focus on cooperative tasks in which agents share an identical value 376 
+
+function. We further assume that each agent’s state is fully observable to the others. The theory-of-mind 377 
+
+(ToM) levels considered in this work, corresponding to different depths of recursive reasoning, are 378 
+
+summarized in Table 1. 379 
+
+In the fully coordinated scenario, agents behave as if controlled by a centralized planner, executing 380 
+
+the optimal joint action defined by Eq. 6. In the following, ε denotes this optimal joint policy, which 381 
+
+may differ from the policies actually implemented by individual agents. 382 
+
+In a less coordinated scenario, agents independently execute their policy, which is often the case 383 
+
+in many simultaneous action games. Mathematically, we have conditional independence of individual 384 
+
+policies P (a|s) = P (a1|s)P (a2|s). The question then becomes how each agent chooses its own action 385 
+
+based solely on state information, without knowing the other agents’ action plans. The answer can be 386 
+
+formulated through a probabilistic view of recursive reasoning, as described below: 387 
+
+For a ToM level-0 agent, which does not consider the action or state of other agents, its policy only 388 
+
+depends on its own state information, i.e. P (ai|s) = P (ai|si) and can be generated as soft value iteration 389 
+
+of its own map function. For a level-1 or higher agent, it builds a predictive model of the other player and 390 
+
+is expected to act optimally based on this prediction. Let’s denote agent 1’s prediction of agent 2’s policy 391 
+
+as ˆa2, based on which, we could express the policy of agent 1 as: 392 
+
+P (a1|s) = ∑
+
+> i
+
+P (a1, ˆa2 = i|s) = ∑
+
+> i
+
+P (a1|ˆa2 = i, s )P (ˆ a2 = i|s) (8) 12 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Table 1: Generative models with different coordination levels. Coordination level Mutual predictions Agent i’s action probability Independent control egocentric P (ai|si)
+
+Independent control chance prediction |A ↔i|↔1 ∑ 
+
+> a↑i
+
+ε(ai|a↔i, s )
+
+Independent control optimal prediction ∑ 
+
+> a↑i
+
+ε(ai, a ↔i|s)
+
+Since a level-1 agent acts optimally for the joint task based on its own predictions, the first term 393 
+
+is essentially the conditional optimal policy P (a1|ˆa2, s ) = ε(a1|a2, s ). Thus, an agent’s policy is 394 
+
+determined jointly by its prediction about its counterpart’s behavior and the underlying joint value 395 
+
+function. The recursive level of this prediction defines the agent’s theory-of-mind (ToM) level. For 396 
+
+example, if agent 1 assumes agent 2 to be a level-0 agent (regardless of whether agent 2 is or not), then 397 
+
+agent 1 has a ToM level of one. If agent 2 assumes agent 1 is level-1 and forms its prediction about 398 
+
+agent 1’s policy (i.e. P ( ˆ a1|s)) based on this assumption, agent 2 has a ToM level of two. Even higher 399 
+
+levels of reasoning can be constructed using this recursive process. However, prior work suggests that 400 
+
+human and animal behavior in strategic settings is typically well described by low levels of recursive 401 
+
+reasoning [ 36 – 38 ]. Motivated by this and to maintain model tractability, we focus on low ToM levels 402 
+
+that capture basic forms of social inference. Specifically, we consider two limiting parameterizations of 403 
+
+mutual prediction under independent control: one in which agents make no informed predictions about 404 
+
+their partners, and one in which agents assume their partners act according to the optimal marginal policy. 405 
+
+These cases provide lower and upper bounds on coordination under this framework: 406 
+
+• If agent 1 has no information about agent 2’s policy, it generates chance level prediction (i.e. 407 
+
+P (ˆ a2|s) = |A 2|↔1), then P (a1|s) = |A 2|↔1 ∑ 
+
+> a2
+
+ε(a1|a2, s ).408 
+
+• If agent 1 predicts that agent 2 would act on the optimal marginal policy, it also acts on the marginal 409 
+
+probability of the optimal joint policy. (i.e. P (ˆ a2|s) = ε(a2|s)), then P (a1|s) = ∑ 
+
+> i
+
+P (a1|a2 =410 
+
+i, s )ε(a2 = i|s) = ε(a1|s). Intuitively, when an agent correctly predicts that its partner follows 411 
+
+the optimal policy, integrating over these predictions recovers its own marginal behavior under the 412 
+
+optimal joint policy. 413 
+
+Most results in this paper, except Fig. S2, were inferred under the assumption of independent control with 414 
+
+optimal prediction (last row in Table 1). These alternative assumptions about coordination and prediction 415 
+
+can be evaluated through model comparison, as described later. 416 
+
+4.5 Inference procedure 417 
+
+After establishing a generative model based on the chosen hypothesis, our objective is to learn the map 418 
+
+weights ϑk , individual value maps m, n and the interactions map ϖ that maximize the posterior of the 419 
+
+observed expert trajectories D = {(st, a t)}.420 
+
+The inference procedure is adapted from Ashwood et al. [ 7 ], noting that we have different components 421 
+
+for the joint value function. We assume all parameters have a Gaussian prior with known variance and 422 
+
+mean and individual maps have different prior variance compared to the interaction map. Mathematically, 423 
+
+ω ≃ N (1, #) where diag (#) = ( ↼20 , ↼20 , ↼21 ), m, n ≃ N (0, #m), ϖ ≃ N (0, #ω). Note that we assume 424 
+
+#m and #ω are diagonal matrices. Incorporating the map prior is equivalent to adding an L-2 regularizer 425 
+
+with coefficients ↽1 and ↽2 to the map entries. The parameter optimization can be written as: 426 
+
+ω→ = argmax ε
+
+∑
+
+> (st,a t)↓D
+
+log P (st, a t) ↘ 12 (( ω ↘ 1)T #↔1(ω ↘ 1)) (m→, n →, ϖ→) = argmax m,n, ω
+
+∑
+
+> (st,a t)↓D
+
+log P (st, a t) ↘ ↽1⇐m⇐2 ↘ ↽1⇐n⇐2 ↘ ↽2⇐ϖ⇐2 (9) We performed coordinate ascent to iteratively update weights and maps while holding the other set of 427 
+
+parameters fixed as illustrated in Alg. 1. 428 
+
+13 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Algorithm 1 MAIRL with value decomposition 
+
+Input1: MDP information: ↓S, A , P, ω↔;
+
+Input2: Expert trajectories D;
+
+Input3: Hyperparameters: ↼0, ↼1, ↽1, ↽2
+
+Initialize ω, m, n, ϖ;
+
+for i = 1... Niter do 
+
+Calculate rewards r as a function of ω, m, n, ϖ (Eq. 5); Get optimal joint policy ε using softmax iteration until convergence (Eq. 6 and 7); Get joint policy P (a|s) based on independent policy execution; Update ω given reward map fixed (Eq.9, line 1); Calculate joint reward based on m, n, ϖ and generate new policy as before; Update m, n, ϖ given weights fixed (Eq.9, line 2); 
+
+end for Output: ω, m, n, ϖ
+
+We used 80% trajectories for model fitting and the other 20% to calculate the test log-likelihood 429 
+
+as model evidence. The preset hyperparameters include: the future discount factor ω = 0 .9 and the 430 
+
+covariance strength of map weights ↼0 = ↼1 = 0 .01 . In this way, we’re imposing a strong prior of the 431 
+
+map weights to be around one, for a better comparison of the recovered maps. 432 
+
+Other hyperparameters were searched among the range provided in Table 2 in a centralized dataset 433 
+
+inferred using centralized model assumptions. We picked ⇀ε = 0 .01 , ⇀map = 0 .005 , ↽1 = 5 , ↽2 = 1 434 
+
+based on training stability, model evidence and map interpretability. 435 
+
+⇀ε learning rate for weights [0.001, 0.005, 0.01] 
+
+⇀map learning rate for the map [0.001, 0.005, 0.01] 
+
+↽1 L2-penalty (prior) for individual maps [0,1,5] 
+
+↽2 L2-penalty (prior) for the interaction map [0,1] Table 2: Range of hyperparameters tested We initialized the weights to be one, the individual maps to be uniformly sampled from 0 to 1, and the 436 
+
+location difference map to be 1/(d + 1) where d is the square Dijkstra distance between two agents. We 437 
+
+used Adam optimizer with learning rate given above to iterate for 400 epochs. Most loss curves would 438 
+
+plateau around 200 epochs. For 500 expert trajectories with approximately 30 decisions per trajectory, 439 
+
+the inference process took around 5 minutes on a single CPU thread (Intel(R) Xeon(R) CPU E5-2687W 0 440 
+
+@ 3.10GHz). 441 
+
+4.6 Simulation of the cooperative foraging task 442 
+
+For the simulated trajectories shown in Fig. 2, the arena was discretized into a 5-by-5 grid with determin-443 
+
+istic action transitions, resulting in 625 states and 25 actions in the two-agent MDP. Two terminal states 444 
+
+are defined by the simultaneous presence of both agents at the same reward location either in the north or 445 
+
+east. If an agent reaches the boundary of the arena, its position is reset to that of the previous time step. 446 
+
+The reward strength at both goal locations was set to 2, as absolute reward magnitude does not affect 447 
+
+the inferred value structure. At the beginning of each trial, both agents are placed randomly in the arena. 448 
+
+Agents are assumed to act under independent control. Agent 2 follows an egocentric (ToM level-0) policy, 449 
+
+whereas agent 1 is modeled as a ToM level-1 agent that predicts agent 2’s behavior. In all simulations, 450 
+
+500 trials were generated, each with a maximum length of 200 steps. The discount factor ω was set to 0.9. 451 
+
+14 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+4.7 Pre-processing of mouse foraging trajectories 452 
+
+For inference using observed mouse foraging trajectories, each mouse was represented as a massless 453 
+
+point anchored at its neck location. The arena was divided into a 10 !10 grid with 5cm spatial bins (10cm 454 
+
+bins in Fig. 5 and 6). An animal’s grid position was determined by assigning its actual location to the 455 
+
+nearest grid point. To minimize artifacts introduced by discretizing the arena, we excluded time steps 456 
+
+where both animals remained stationary. Each animal had nine possible actions: stay, up, down, left, right, 457 
+
+up-left, up-right, down-left, and down-right. The objective was to estimate a value map that, given both 458 
+
+animals’ current location, maximizes the probability of the observed action. The partner angle in Fig. 6 459 
+
+was defined as the angle of partner’s position relative to the agent’s own head direction. This angle was 460 
+
+discretized into three bins: front (-60 to 60 degree), left (60 to 180 degree) and right (180 to 300 degree), 461 
+
+such that ϱ ↑ {0, 1, 2}. The discretized angle was included as an input to the model. To future limit 462 
+
+model complexity, the decomposed joint value function incorporates angle only through the interaction 463 
+
+term. 464 
+
+4.8 Inference details for the chicken task 465 
+
+Unlike the previous two tasks, this non-cooperative task is stateless with four actions in the joint action 466 
+
+space. Two separate value functions, V1 and V2, need to be parameterized. Value decomposition was not 467 
+
+used due to limited number of parameters to estimate. The probability of agent 1’s decision could be 468 
+
+written as: 469 
+
+P1(a1) = ∑ 
+
+> i↓{S,Y }
+
+P1(a1|ˆa2 = i)P1(ˆ a2 = i ) = ∑ 
+
+> i↓{S,Y }
+
+ε1(a1|a2 = i)P1(ˆ a2 = i) (10) where ε1(a1, a 2) is a softmax transformation of V1(a1, a 2) and denote P1(ˆ a2 = S) = q1. Therefore, 470 
+
+Pi(ai) is parameterized by five parameters each while the observed choice probability only offers 471 
+
+two observation points. This creates an under-determined system. So we posed some constrains 472 
+
+over the value function according to the task setup. We constrained V1 to be the transpose of V2 and 473 
+
+V1(S, Y ) > V 1(Y, Y ) > V 1(Y, S ) > V 1(S, S ) = 0 according to the task’s nature. In this way, we could 474 
+
+have a faithful estimation of q1 and q2, which is usually the biggest ambiguity in these social interactions. 475 
+
+# 5 Figures 476 
+
+15 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 1: MAIRL and value decomposition for multiple social tasks. (A) Model overview. From observed joint state–action pairs (st, a t), we infer each agent’s decomposed value functions m, n, ϖ
+
+based on a generative model of social decision making. The computation graph highlights the following stages: ✁ value decomposition (Eq. 1), ✂ policy generation with soft Q-learning (Section 4.3) and ✃
+
+coordination and cognitive levels (Section 4.4). (B) Value decomposition formulated as an overdetermined linear system. The actual reward function of joint locations r(s1, s 2) is decomposed into summations of functions of each agent’s location m(s1) and n(s2) and their mutual distance ϖ(d). For two agents interact in a 2 → 2 grid world, 11 parameters a ↘ g from three functions m, n, ϖ (left) are used to reconstruct the joint reward function r on the right with 16 free parameters. The design matrix is defined by the spatial relationships and grid layout (Fig. S1). (C) Target reconstruction error of the joint reward function from the ordinary least squares (OLS) solution of the value decomposition equation. Left, in all two-agent tasks under consideration, m + n + ϖ (green bars) suffices to achieve accurate reconstruction of target locations in the joint value function. Right, in a three-agent cooperative task, incorporating each individual’s allocentric locations and their pairwise distances allows errorless target location reconstruction (purple bar). (D-G) OLS solutions of decomposed value functions mi, ϖi for different social tasks. Left, schematics for cooperative tasks in two-agent or three-agent cases; Middle: value function of individual’s self allocentric location; Right: value function of mutual distance. 16 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 2: Recovery of value functions in simulated two-agent cooperative match foraging. (A) Schematic of a simulated cooperative (match) foraging experiment in which reward is delivered only when both agents reach the target location simultaneously. (B–C) Example simulated trajectories of two agents in a 5 !5 grid environment; solid dots indicate trajectory endpoints. (D) Test log-likelihood (LL) of the inference algorithm using either decomposed value parameterization or the full joint value function. Shaded regions denote variability across ten random initializations. The decomposed parameterization achieved higher LL, reflecting improved optimization due to reduced parameter dimensionality. (E-F) Relative Bayesian Information Criterion (BIC) of models with different structural components, fit to trajectories generated by (E) a considerate agent using a ToM-1 policy and (F) an egocentric solo-foraging agent. Each row corresponds to a model in which components of the value decomposition (Eq. 1) are added sequentially, enabling systematic hypothesis testing of behavioral strategies. Relative BIC values are normalized by subtracting the minimum BIC across model hypotheses. (G–H) Inferred value maps for the ToM-1 agent, shown as functions of self-location and mutual distance, revealing strong weighting of target locations and proximal interaction states. 17 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 3: Hypothesis testing of decomposed value models reveals structured interactions and role-dependent strategies in mouse pairs (A) Schematic of the cooperative foraging task in mice. Target locations are on the east and north. (B-C) Recorded trajectories from animal pairs navigating a 10 → 10 
+
+grid, reconstructed from empirical foraging data. (D) Proportion of cooperative trials and fraction of trials led by a single animal across training days. Over time, animals developed a consistent leader–follower strategy. (E) Relative BIC for 27 animal pairs, normalized to the minimal model containing only self-position value. Purple and green denote model fits for leader and follower animals, respectively. Each row corresponds to a fitting model in which different components in Eq. 1 are added sequentially. Adding allocentric other’s position did not improve model fit for either role, whereas including mutual distance significantly improved performance for both. (F) Same format as (E) but for Log-likelihood per decision. The vertical dashed line indicates chance-level. (G) Prediction accuracy of the reward zone selected by animals, based on model-simulated trajectories. The dashed line indicates chance-level accuracy. (H) Number of animals (out of total) showing a significant improvement in model fit as each component was sequentially added. The self position model was first compared against a constant (uniform action) model; additional components were tested against the best-fitting simpler model using chi-square test. Models involving head-direction (HD) is described in Fig. 6. 18 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 4: Value maps inferred from observed trajectories during cooperative foraging and free-run sessions. Cooperative task: (A) Schematic of the cooperative task. (B) Number of animals showing significant improvement in model fit as components were sequentially added. (C) Inferred value functions in correct trials for leaders (top row) and followers (bottom row). Left, example self-position value map in allocentric space from one animal. Middle, value assigned to the middle initiation spot and to the east and north reward ports, and the mean value of all other locations across animals. Both leaders and followers assign significantly higher value to initiation and reward locations (paired t-test, *** P < 10 ↔7, n = 27 ). Right, inferred value as a function of inter-agent distance. Followers assign significantly higher value to proximal partner locations than leaders (t-test at distance = 0 , P = 6 → 10 ↔13 , n = 27 ). Free-run: 
+
+(D–E) Same format as (A–B), but for free-run sessions. (F) Left, example self-position value map. Middle, value assigned to different locations across animals: middle locations show slightly elevated values compared to other positions (* P < 0.05 ), while target locations exhibit significantly higher values (** P < 0.01 , n = 4 ). Right, inferred value as a function of inter-agent distance is not significantly different from zero, consistent with the lack of improvement from including the distance component in Fig. 4E. 19 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 5: Dynamics of inferred value functions during learning. (A–B) Mean inferred value assigned to target locations (north and east) across training days for followers (A) and leaders (B). Solid lines indicate mean values across 27 animals, shaded regions denote ±1 standard deviation, and dashed lines show the mean value assigned to non-target locations. (C-D) Example inferred value functions as a function of inter-agent distance across learning days for a follower (C) and a leader (D). The follower progressively assigns higher value to proximal states, whereas the leader shows minimal change. (E-F) Value assigned to the proximal state (distance = 0 ) over training days for followers (E) and leaders (F) (n = 27 ). (G-H) Distribution of proximal-state values at early training stage (cooperation rate < 0.6) and at the well-trained stage (cooperation rate > 0.8). Followers exhibited significantly higher proximal-state values than leaders (t-test, p < 10 ↔177 ). 20 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+Figure 6: Distance based value functions conditioned on egocentric head directions. (A)(B) Leaders’ (followers’) distance-based value functions conditioned on the partner being in front, to the left, or to the right. A significant role difference emerged only in the front-view condition, where followers assigned greater value to the proximal state (distance = 0 ) than leaders. ** P < 0.01 
+
+21 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# References 477 
+
+[1] Robin I. M. Dunbar. The social brain hypothesis. Evolutionary Anthropology: Issues, News, and 478 
+
+Reviews , 6(5):178–190, 1998. 479 
+
+[2] Joan B. Silk. Social components of fitness in primate groups. Science , 317(5843):1347–1351, 2007. 480 
+
+[3] Ralph Adolphs. The social brain: Neural basis of social knowledge. Annual Review of Psychology ,481 
+
+60:693–716, 2009. 482 
+
+[4] Dong V. Wei, Vikram Talwar, and Dayu Lin. Neural circuits of social behaviors: Innate yet flexible. 483 
+
+Neuron , 109(10):1600–1620, 2021. 484 
+
+[5] F. Engert. Social behavior: A tiny fish with prodigious skills. Current Biology , 2025. Study on 485 
+
+Danionella cerebrum social interactions. 486 
+
+[6] Brian D Ziebart, Andrew L Maas, J Andrew Bagnell, Anind K Dey, et al. Maximum entropy inverse 487 
+
+reinforcement learning. In Aaai , volume 8, pages 1433–1438. Chicago, IL, USA, 2008. 488 
+
+[7] Zoe Ashwood, Aditi Jha, and Jonathan W Pillow. Dynamic inverse reinforcement learning for 489 
+
+characterizing animal behavior. Advances in Neural Information Processing Systems , 35:29663– 490 
+
+29676, 2022. 491 
+
+[8] Feiyang Wu, Ye Zhao, and Anqi Wu. Distributional inverse reinforcement learning. arXiv preprint 492 
+
+arXiv:2510.03013 , 2025. 493 
+
+[9] Jingyang Ke, Feiyang Wu, Jiyi Wang, Jeffrey Markowitz, and Anqi Wu. Inverse reinforcement 494 
+
+learning with switching rewards and history dependency for characterizing animal behaviors. arXiv 495 
+
+preprint arXiv:2501.12633 , 2025. 496 
+
+[10] Ethan S. Bromberg-Martin, Yang-Yang Feng, Takaya Ogasawara, J. Kael White, Kaining Zhang, 497 
+
+and Ilya E. Monosov. A neural mechanism for conserved value computations integrating information 498 
+
+and rewards. Nature Neuroscience , 27(1):159–175, January 2024. 499 
+
+[11] Nir Moneta, Shany Grossman, and Nicolas W. Schuck. Representational spaces in orbitofrontal 500 
+
+and ventromedial prefrontal cortex: task states, values, and beyond. Trends in Neurosciences ,501 
+
+47(12):1055–1069, December 2024. 502 
+
+[12] Quentin J. M. Huys, Tiago V. Maia, and Michael J. Frank. Computational psychiatry as a bridge 503 
+
+from neuroscience to clinical applications. Nature Neuroscience , 19:404–413, 2016. 504 
+
+[13] P. Read Montague, Raymond J. Dolan, Karl J. Friston, and Peter Dayan. Computational psychiatry. 505 
+
+Trends in Cognitive Sciences , 16:72–80, 2012. 506 
+
+[14] Koosha Khalvati, Seongmin A Park, Jean-Claude Dreher, and Rajesh P Rao. A probabilistic 507 
+
+model of social decision making based on reward maximization. Advances in Neural Information 508 
+
+Processing Systems , 29, 2016. 509 
+
+[15] Sergey Shuvaev, Evgeny Amelchenko, Dmitry Smagin, Natalia Kudryavtseva, Grigori Enikolopov, 510 
+
+and Alex Koulakov. A normative theory of social conflict. Advances in Neural Information 511 
+
+Processing Systems , 36, 2024. 512 
+
+[16] Chris L Baker, Rebecca Saxe, and Joshua B Tenenbaum. Action understanding as inverse planning. 513 
+
+Cognition , 113(3):329–349, 2009. 514 
+
+[17] Joey Velez-Ginorio, Max H Siegel, Joshua B Tenenbaum, and Julian Jara-Ettinger. Interpreting 515 
+
+actions by attributing compositional desires. In CogSci , 2017. 516 
+
+22 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+[18] Sarah A Wu, Rose E Wang, James A Evans, Joshua B Tenenbaum, David C Parkes, and Max 517 
+
+Kleiman-Weiner. Too many cooks: Bayesian inference for coordinating multi-agent collaboration. 518 
+
+Topics in Cognitive Science , 13(2):414–432, 2021. 519 
+
+[19] Tomer Ullman, Chris Baker, Owen Macindoe, Owain Evans, Noah Goodman, and Joshua Tenen-520 
+
+baum. Help or hinder: Bayesian models of social goal inference. Advances in neural information 521 
+
+processing systems , 22, 2009. 522 
+
+[20] Wako Yoshida, Ray J Dolan, and Karl J Friston. Game theory of mind. PLoS computational biology ,523 
+
+4(12):e1000254, 2008. 524 
+
+[21] Yaodong Yang. Many-agent reinforcement learning . PhD thesis, UCL (University College London), 525 
+
+2021. 526 
+
+[22] Ying Wen, Yaodong Yang, Rui Luo, Jun Wang, and Wei Pan. Probabilistic recursive reasoning for 527 
+
+multi-agent reinforcement learning. arXiv preprint arXiv:1901.09207 , 2019. 528 
+
+[23] Saurabh Arora and Prashant Doshi. A survey of inverse reinforcement learning: Challenges, 529 
+
+methods and progress. Artificial Intelligence , 297:103500, 2021. 530 
+
+[24] Pieter Abbeel and Andrew Y Ng. Apprenticeship learning via inverse reinforcement learning. In 531 
+
+Proceedings of the twenty-first international conference on Machine learning , page 1, 2004. 532 
+
+[25] Brian D Ziebart, J Andrew Bagnell, and Anind K Dey. Modeling interaction via the principle of 533 
+
+maximum causal entropy. 2010. 534 
+
+[26] Yuan Cheng, Yusi Chen, Myungji Kwak, Ross P. Kempner, Rudramani Singha, Jared Winslow, 535 
+
+Runqi Liu, Umais Khan, Tessa Spangler, Alvi Khan, Talmo Pereira, Matthew Whiteway, Evan S. 536 
+
+Schaffer, Nuttida Rungratsameetaweemana, Nan Yang, and Herbert Zheng Wu. Asymmetric social 537 
+
+representations in the prefrontal cortex for cooperative behavior. bioRxiv , 2025. 538 
+
+[27] Wei Song Ong, Seth Madlon-Kay, and Michael L Platt. Neuronal correlates of strategic cooperation 539 
+
+in monkeys. Nature neuroscience , 24(1):116–128, 2021. 540 
+
+[28] Angela Radulescu, Yeon Soon Shin, and Yael Niv. Human representation learning. Annual Review 541 
+
+of Neuroscience , 44:253–273, 2021. 542 
+
+[29] W. E. Allen, M. Z. Chen, N. Pichamoorthy, R. H. Tien, M. Pachitariu, L. Luo, and K. Deisseroth. 543 
+
+Thirst regulates motivated behavior through modulation of brainwide neural population dynamics. 544 
+
+Science , 364(6437):eaav3932, 2019. 545 
+
+[30] Yaning Han, Ke Chen, Yunke Wang, Wenhao Liu, Zhouwei Wang, Xiaojing Wang, Chuanliang 546 
+
+Han, Jiahui Liao, Kang Huang, Shengyuan Cai, Yiting Huang, Nan Wang, Jinxiu Li, Yangwangzi 547 
+
+Song, Jing Li, Guo-Dong Wang, Liping Wang, Yaping Zhang, and Pengfei Wei. Multi-animal 3d 548 
+
+social pose estimation, identification and behaviour embedding with a few-shot learning framework. 549 
+
+Nature Machine Intelligence , 2024. 550 
+
+[31] M. R. Warren, R. S. Clein, M. S. Spurrier, E. D. Roth, and J. P. Neunuebel. A neural basis for 551 
+
+ultrasonic vocal communication in mice. Nature Neuroscience , 24:1314–1324, 2021. 552 
+
+[32] Iain D. Couzin, Jens Krause, Nigel R. Franks, and Simon A. Levin. Effective leadership and 553 
+
+decision-making in animal groups on the move. Nature , 433:513–516, 2005. 554 
+
+[33] Jo-Hsien Yu, Julia L. Napoli, and Matthew Lovett-Barron. Understanding collective behavior 555 
+
+through neurobiology. Current Opinion in Neurobiology , 2024. 556 
+
+[34] Sarah F. Brosnan, Brent J. Wilson, and Michael J. Beran. Chimpanzees coordinate in a stag hunt 557 
+
+game. Animal Behaviour , 82:1–9, 2011. 558 
+
+23 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+[35] Mrinmaya Sachan et al. Emergence of sustainable cooperation in a society of llm agents. In 559 
+
+Advances in Neural Information Processing Systems (NeurIPS) , 2024. 560 
+
+[36] Colin F Camerer, Teck-Hua Ho, and Juin-Kuan Chong. A cognitive hierarchy model of games. The 561 
+
+Quarterly Journal of Economics , 119(3):861–898, 2004. 562 
+
+[37] Terence C Burnham, David Cesarini, Magnus Johannesson, Paul Lichtenstein, and Björn Wallace. 563 
+
+Higher cognitive ability is associated with lower entries in a p-beauty contest. Journal of Economic 564 
+
+Behavior & Organization , 72(1):171–175, 2009. 565 
+
+[38] Rosemarie Nagel. Unraveling in guessing games: An experimental study. The American economic 566 
+
+review , 85(5):1313–1326, 1995. 567 
+
+24 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# A Supplementary figures 568 
+
+Figure S1: Value decomposition as an overdetermined linear system. Upper: for illustration, this task considers two agents interacting in a 2 → 2 square arena, with the interaction value function ϖ defined over Dijkstra distance d. Eleven free parameters a, b, c, d, a ↑, b ↑, c ↑, d ↑, e, f, g from three functions m, n, ϖ
+
+(left) are used to reconstruct the joint reward function r with 16 fixed values depending on the task (right). The free parameters are defined as a := m(0 , 0) , b := m(0 , 1) , c := m(1 , 0) , d := m(1 , 1) , a ↑ := 
+
+m(0 , 0) , b ↑ := m(0 , 1) , c ↑ := m(1 , 0) , d ↑ := m(1 , 1) , e := ϖ(d = 0) , f := ϖ(d = 1) , g := ϖ(d = 2) .This constructs an overdetermined linear system with 11 unknowns and 16 constrains. Lower: to make this more intuitive, we could reshape the unknowns as a column vector φ and reshape the fixed value functions as column vector y. Then design matrix X is then constructed based on the relationship between agents’ locations and the geometry of the grid environment. An optimal solution of φ could be constructed as the ordinary least square (OLS) solution of this linear system: ˆφ = ( XT X)↔1XT y.25 
+
+> .CC-BY-NC-ND 4.0 International license made available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is The copyright holder for this preprint this version posted April 8, 2026. ;https://doi.org/10.1101/2024.10.09.617461 doi: bioRxiv preprint
+
+# ! "#$%&'()*+,& Figure S2: Monkey’s mutual predictions are related to their social hierarchy in a non-cooperative task. (A) Two monkeys (red and blue circles) choose to go Straight (S) or Yield (Y) in a non-cooperative chicken task. (adapted from [ 27 ]) (B) The choices of a pair of monkeys from the experiment (Fig. 2A in [27 ]). The value pairs in parenthesis indicate the pay-off matrix. (C) (D) (E) Estimated mutual predictions and value maps using a generative model of independent control with prediction. Mutual predictions are the probability of Monkey 2 choosing S as predicted by Monkey 1 and vice versa. Monkey 1 chooses to go straight more often because it is unlikely for Monkey 2 to go straight. This strategy matches their social hierarchy where Monkey 1 has a higher rank than Monkey 2. 26
