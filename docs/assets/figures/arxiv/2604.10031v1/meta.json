@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-001.webp",
+      "caption": "Figure 1: A negotiation scenario illustrating the gap between ToM inference and ToM-aligned behavior in LLMs. (Left) The model correctly infers the user’s desire for firewood. (Middle) Under a generic task instruction, the model fails to apply this inferred mental state, producing an incoherent offer (i.e., water). (Right) When explicitly prompted to consider mental states, the model generates a contextually appropriate response.",
+      "page": 1,
+      "index": 1,
+      "width": 458,
+      "height": 287
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-002.webp",
+      "caption": "Table 1: Causal Tracing results on the NEGOTIATIONTOM dataset. The table compares reconstruction accuracy across layers for both Llama-3 and Qwen2.5. Bold indicates the best performance for each metric. Results confirm that ToM information is predominantly encoded in the shallow layers (e.g., Layer (0− 3) for both models.",
+      "page": 6,
+      "index": 2,
+      "width": 950,
+      "height": 302
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-003.webp",
+      "caption": "Table 2: Causal Tracing results on the PERSUASIVETOM dataset. The table compares mental state reconstruction accuracy across layers for both Llama-3 and Qwen2.5. Bold highlights the peak performance among probed layers. Similar to NEGOTIATIONTOM, critical ToM information is concentrated in the shallow-to-middle layers.",
+      "page": 6,
+      "index": 3,
+      "width": 950,
+      "height": 286
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-004.webp",
+      "caption": "Figure 10: LLM-as-a-Judge Scoring Rubric for Negotiation Task.",
+      "page": 15,
+      "index": 4,
+      "width": 950,
+      "height": 767
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-005.webp",
+      "caption": "Figure 4: Layer-wise reconstruction accuracy on the NEGOTIATION dataset (Llama-3). Dashed lines represent the original model, showing a rapid decay in ToM information (representation collapse) in deeper layers. Solid lines represent the COSTOM-enhanced model, which maintains robust, high-fidelity representations across all layers.",
+      "page": 7,
+      "index": 5,
+      "width": 937,
+      "height": 292
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-006.webp",
+      "caption": "Figure 5: Layer-wise reconstruction accuracy on the PERSUASIVETOM dataset (Llama-3). COSTOM not only rescues the performance in deep layers (e.g., persuadee’s intent) but also amplifies the persuader’s desire detection to near-perfect accuracy, as shown in the center plot.",
+      "page": 7,
+      "index": 6,
+      "width": 937,
+      "height": 293
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-007.webp",
+      "caption": "Table 5: Dialogue generation quality on the PERSUASIVETOM dataset (N = 200). COSTOM achieves the highest scores across nearly all metrics, validating its ability to enhance persuasion strategy effectiveness through accurate mental state attribution. (ToM: Theory of Mind Reasoning Quality, Coh.: Contextual Coherence, PSE: Persuasion Strategy Effectiveness.)",
+      "page": 14,
+      "index": 7,
+      "width": 963,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-008.webp",
+      "caption": "Figure 2: The overview of the COSTOM framework.",
+      "page": 3,
+      "index": 8,
+      "width": 950,
+      "height": 348
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-009.webp",
+      "caption": "Figure 8: Layer-wise reconstruction accuracy on the NEGOTIATION dataset (Qwen2.5).",
+      "page": 13,
+      "index": 9,
+      "width": 937,
+      "height": 293
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-010.webp",
+      "caption": "Figure 7: Layer-wise probing results on NEGOTIATIONTOM with Llama3.",
+      "page": 13,
+      "index": 10,
+      "width": 950,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-011.webp",
+      "caption": "Figure 9: Layer-wise reconstruction accuracy on the PERSUASIVETOM dataset (Qwen2.5).",
+      "page": 13,
+      "index": 11,
+      "width": 937,
+      "height": 293
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-012.webp",
+      "caption": "Table 4: Dialogue generation quality on the NEGOTIATIONTOM dataset (N =100). (ToM: Theory of Mind Reasoning Quality, Coh.: Contextual Coherence, NSE: Negotiation Strategy Effectiveness.)",
+      "page": 8,
+      "index": 12,
+      "width": 963,
+      "height": 506
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-013.webp",
+      "caption": "Figure 6: Qualitative comparison of dialogue generation across different Qwen-based variants in the persuasive task (wooden vs. electric violins). Red highlight typical reasoning pitfalls in baselines, while green demonstrates COSTOM’s ability to generate coherent and empathetic responses grounded in accurate ToM reasoning.",
+      "page": 8,
+      "index": 13,
+      "width": 461,
+      "height": 477
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-014.webp",
+      "caption": "Figure 3: Layer-wise probing results on NEGOTIATIONTOM with Qwen2.5. Details and corresponding results of Llama-3 are provided in Appendix B.",
+      "page": 5,
+      "index": 14,
+      "width": 458,
+      "height": 710
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10031v1/fig-015.webp",
+      "caption": "Figure 11: LLM-as-a-Judge Scoring Rubric for Persuasive Task.",
+      "page": 16,
+      "index": 15,
+      "width": 950,
+      "height": 683
+    }
+  ]
+}

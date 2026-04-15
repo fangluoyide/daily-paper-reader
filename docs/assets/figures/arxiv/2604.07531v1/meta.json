@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-001.webp",
+      "caption": "Fig. 3. An example of the pre and post assessment questions",
+      "page": 11,
+      "index": 1,
+      "width": 675,
+      "height": 456
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-002.webp",
+      "caption": "Table 3. Percentage of Instances in Each Group where Students Would Participate in Various Behaviors",
+      "page": 18,
+      "index": 2,
+      "width": 881,
+      "height": 248
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-003.webp",
+      "caption": "Table 1. Codebook for Student’s Classroom Utterances",
+      "page": 13,
+      "index": 3,
+      "width": 891,
+      "height": 509
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-004.webp",
+      "caption": "Fig. 1. Example of Rule-Based Educational Slide. There were 5 rules that students were taught. 2 of the criteria are shown on the left screen. Based on the number of criteria which a profile met, we recommend whether the participant to accept, reject, or further examine the request (shown on the right screen)",
+      "page": 8,
+      "index": 4,
+      "width": 895,
+      "height": 267
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-005.webp",
+      "caption": "Fig. 2. The Modules and the Challenges they Each Address",
+      "page": 8,
+      "index": 5,
+      "width": 895,
+      "height": 361
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-006.webp",
+      "caption": "Fig. 10",
+      "page": 36,
+      "index": 6,
+      "width": 895,
+      "height": 319
+    },
+    {
+      "url": "assets/figures/arxiv/2604.07531v1/fig-007.webp",
+      "caption": "Table 2. Pre=pre-intervention assessment; Post=post-intervention assessment; ^Shapiro-Wilk test was used for determining normality; ^^Means, Medians, and St.Dev are normalized by number of questions in each assessment; ^^^Wilcoxon Signed Ranked test was used for assessing non-normal data; * p-values <= 0.05, ** <= 0.01; *** <= 0.001",
+      "page": 16,
+      "index": 7,
+      "width": 845,
+      "height": 375
+    }
+  ]
+}

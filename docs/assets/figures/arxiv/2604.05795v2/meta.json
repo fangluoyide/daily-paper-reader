@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-001.webp",
+      "caption": "Figure 1: Our problem statement involves the ordinal classification of mental health conversation focusing on six therapeutic principles. We employ retrieval context generation along with knowledge distillation using a chain-of-thought in our proposed method, CARE, ordinal classification of therapist response.",
+      "page": 1,
+      "index": 1,
+      "width": 446,
+      "height": 273
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-002.webp",
+      "caption": "Figure 3: Proposed framework CARE: Therapist utterances are contextualized using intra-conversational self-attention, followed by expert-informed reasoning through knowledge-distilled chain-of-thought explanations. A fusion module integrates contextual, semantic, and distilled knowledge representations, enabling ordinal classification across six core therapeutic principles.",
+      "page": 6,
+      "index": 2,
+      "width": 1000,
+      "height": 386
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-003.webp",
+      "caption": "Figure 6: Comparison of the few-shot (top) and zero-shot (bottom) prompt formats used to evaluate GPT-4o and Mental LLaMA responses. The few-shot prompt includes in-context examples and explanations, while the zero-shot prompt relies only on task instruction and current dialogue context.",
+      "page": 15,
+      "index": 3,
+      "width": 950,
+      "height": 821
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-004.webp",
+      "caption": "Figure 7: Prompt used to extract dimension-specific Chain-of-Thought explanations from GPT-4o. The retrieved exemplars from the previous step are passed to the model along with the structured instruction, guiding the explanation of a therapeutic principle such as Active Listening.",
+      "page": 15,
+      "index": 4,
+      "width": 950,
+      "height": 325
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-005.webp",
+      "caption": "Table 5: Zero-shot performance comparison. The CARE method consistently outperforms baselines on both PTSD and CheeseBurger datasets.",
+      "page": 7,
+      "index": 5,
+      "width": 450,
+      "height": 286
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-006.webp",
+      "caption": "Table 3: Comparative analysis across multiple model classes. LLaMA-3.2 and Qwen-3 represent the strongest-performing baseline backbones, and CARE yields consistent and substantial improvements over both, indicating that gains are not specific to a single base model. LC: label-context; LE: label-exclusive; ZS: zero-shot; FS: few-shot; Enc: encoder; Dec: decoder.",
+      "page": 7,
+      "index": 6,
+      "width": 451,
+      "height": 275
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-007.webp",
+      "caption": "Table 10: Ablation Study for Relevant Context and KDCOT Modules. The best-performing configuration is highlighted.",
+      "page": 14,
+      "index": 7,
+      "width": 451,
+      "height": 883
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-008.webp",
+      "caption": "Table 1: Definitions of the six therapeutic principles used in FAITH-M, accompanied by representative Pos and Neg therapist utterances. All examples are annotated using a five-point ordinal scale, ranging from Strong Neg to Strong Pos, with Mild Neg and Mild Pos indicating intermediate levels of therapeutic alignment.",
+      "page": 3,
+      "index": 8,
+      "width": 943,
+      "height": 692
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-009.webp",
+      "caption": "Figure 11: Confusion matrices computed on FAITH-M using GPT-4o under zero-shot prompting across six therapeutic principles. The matrices reveal a strong bias toward positive predictions, with negative and neutral categories frequently collapsed into Mild Positive or Strong Positive classes.",
+      "page": 18,
+      "index": 9,
+      "width": 935,
+      "height": 584
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-010.webp",
+      "caption": "Figure 10: Confusion matrices computed on our proposed dataset, FAITH-M using our model CARE, across six therapeutic principles.",
+      "page": 18,
+      "index": 10,
+      "width": 935,
+      "height": 631
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-011.webp",
+      "caption": "Figure 5: Performance trends across KD-CoT configurations, showing the variation in Weighted F1 score with different context window sizes and exemplar retrieval.",
+      "page": 13,
+      "index": 11,
+      "width": 442,
+      "height": 277
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-012.webp",
+      "caption": "Table 9: Detailed hyperparameters used in the experiments.",
+      "page": 13,
+      "index": 12,
+      "width": 364,
+      "height": 402
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-013.webp",
+      "caption": "Figure 4: Confusion matrix for Reflecting Feelings. Refer to Figure 10 for other dimensions’ matrices.",
+      "page": 8,
+      "index": 13,
+      "width": 415,
+      "height": 434
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-014.webp",
+      "caption": "Figure 12: Confusion matrices computed on FAITH-M using GPT-4o under few-shot prompting across six therapeutic principles. While few-shot prompting sharpens confidence around positive labels, it does not correct the systematic under-recognition of negative and neutral categories.",
+      "page": 19,
+      "index": 14,
+      "width": 935,
+      "height": 585
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-015.webp",
+      "caption": "Figure 9: Complete few-shot in-context example used for GPT-4o evaluation. The prompt includes prior therapist responses with full principle-wise explanations and ordinal scores, followed by a new therapist response evaluated using the same structure.",
+      "page": 17,
+      "index": 15,
+      "width": 950,
+      "height": 869
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-016.webp",
+      "caption": "Table 8: Per-dimension macro and weighted scores for GPT-4o under zero-shot and few-shot settings. Short labels: NJ = Non-Judgmental, W&E = Warmth & Encouragement, RA = Respect for Autonomy, AL = Active Listening, RF = Reflecting Feelings, SA = Situational Appropriateness.",
+      "page": 9,
+      "index": 16,
+      "width": 451,
+      "height": 321
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-017.webp",
+      "caption": "Figure 2: Distribution of ordinal labels across therapeutic dimensions in the FAITH-M dataset.",
+      "page": 5,
+      "index": 17,
+      "width": 461,
+      "height": 346
+    },
+    {
+      "url": "assets/figures/arxiv/2604.05795v2/fig-018.webp",
+      "caption": "Figure 8: Representative example of a model-generated rationale used within the KD-CoT pipeline for the Active Listening therapeutic principle.",
+      "page": 16,
+      "index": 18,
+      "width": 950,
+      "height": 240
+    }
+  ]
+}

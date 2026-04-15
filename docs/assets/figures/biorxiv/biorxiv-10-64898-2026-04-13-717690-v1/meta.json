@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-13-717690-v1/fig-001.webp",
+      "caption": "Figure 4. Age-related differences in nodal graph properties. Cortical regions in red exhibit higher values of (A) degree centrality, (B) betweenness centrality, and (C) nodal efficiency in older adults, whereas blue-colored regions show higher nodal values in younger adults. Significant contrasts between the two groups are outlined in black. All p-values < 0.001, FDR-corrected; L: left hemisphere; R: right hemisphere.",
+      "page": 25,
+      "index": 1,
+      "width": 943,
+      "height": 600
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-13-717690-v1/fig-002.webp",
+      "caption": "Figure 2. Age-related differences in global graph properties. (A) Older adults exhibited significantly higher clustering coefficient, as compared to younger subjects. (B) Older adults demonstrated significantly greater characteristic path length, in comparison with the younger group. (C) Younger adults exhibited significantly higher small-worldness values than older participants. **: FDR-corrected p < 0.01; ***: FDR-corrected p < 0.001.",
+      "page": 22,
+      "index": 2,
+      "width": 937,
+      "height": 318
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-13-717690-v1/fig-003.webp",
+      "caption": "Figure 1. Schematic overview of analyses pipeline. After participants viewed passively neutral and negative movie in a 7 T MRI scanner (Ye et al., 2025), (A) whole-brain BOLD signals were acquired from all participants while watching neutral and negative movies, followed by (B) filling out self-reported questionnaires and performing computerized tasks ( measures of the Emotional Resilience Index (ERI) and the Cognitive Function Index (CFI)). (C) Parcellation into 454 distinct cortical and subcortical brain regions using (Schaefer et al., 2018) and (7T-S3, Tian et al., 2020) for each subject. (D) Time series of voxels within the given region were extracted, (E) subsequently, average time courses of all pairs were calculated by Pearson correlation to construct 454 × 454 correlation matrices per subject. (F) The correlation matrices were binarized and thresholded to create adjacency matrices, and (G) graph theory analysis were applied to compute the global, network and nodal measures (the graphic illustration of graph properties were adopted from (Farahani et al., 2019), and (H) mediation analyses were then conducted to investigate whether the association between age and ERI/CFI are mediated by graph properties ERI= emotional resilience index; CFI= Cognitive Function Index.",
+      "page": 10,
+      "index": 3,
+      "width": 983,
+      "height": 498
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-13-717690-v1/fig-004.webp",
+      "caption": "Figure 3. Age-related differences in network graph properties. Older adults exhibited significantly higher participation coefficient values in the SMN, FPN and DMN networks, whereas they showed lower participation coefficient values in the SUB network compared to younger adults. VIS= visual network; SMN= somatomotor network; DAN= dorsal attention network; VAN= ventral attention network; LIM= limbic network; FPN=frontoparietal network; DMN= default mode network; SUB= subcortical network; YA= younger adults; OA= older adults. *: p-values <0.01, FDR corrected.",
+      "page": 23,
+      "index": 4,
+      "width": 879,
+      "height": 613
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-13-717690-v1/fig-005.webp",
+      "caption": "Figure 5. Key nodes and Partial mediation effects of the degree centrality and nodal efficiency of right thalamus in the relationship of age and ERI. (A) two nodes in the right thalamus, one node in the right hippocampus, and two nodes in the right insula displayed higher degree centrality, betweenness centrality, and nodal efficiency values in younger adults. (B) Lower degree centrality of the right thalamus partially mediates the effect of age on ERI. (C) Lower nodal efficiency of the right thalamus partially mediates the impact of age on ERI. (D) Betweenness centrality of the right thalamus did not mediate the relationship between age and ERI. ERI= emotional resilience index; R: right hemisphere; *: p < 0.05, **: p < 0.01, ***: p < 0.001.",
+      "page": 27,
+      "index": 5,
+      "width": 916,
+      "height": 472
+    }
+  ]
+}

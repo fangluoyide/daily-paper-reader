@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.06663v1/fig-001.webp",
+      "caption": "Figure 3: MDS maps of empirical and simulated subgroup structures across segmentation configurations and LLMs.",
+      "page": 30,
+      "index": 1,
+      "width": 694,
+      "height": 1112
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06663v1/fig-002.webp",
+      "caption": "Table 2: Segmentation configurations",
+      "page": 22,
+      "index": 2,
+      "width": 977,
+      "height": 572
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06663v1/fig-003.webp",
+      "caption": "Figure 2: Comparison of structural fidelity metrics across segmentation configurations and LLMs.",
+      "page": 28,
+      "index": 3,
+      "width": 979,
+      "height": 717
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06663v1/fig-004.webp",
+      "caption": "Figure 1: Comparison of distributional fidelity metrics across segmentation configurations and LLMs.",
+      "page": 27,
+      "index": 4,
+      "width": 979,
+      "height": 629
+    },
+    {
+      "url": "assets/figures/arxiv/2604.06663v1/fig-005.webp",
+      "caption": "Table 1: Three-dimensional framework for evaluating heterogeneity restoration",
+      "page": 16,
+      "index": 5,
+      "width": 977,
+      "height": 540
+    }
+  ]
+}

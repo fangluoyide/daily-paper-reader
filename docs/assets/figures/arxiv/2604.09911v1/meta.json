@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-001.webp",
+      "caption": "Figure 6: Scree plots across algorithmic epochs. Eigenvalue decomposition of the 4-benchmark battery (MMLU, GSM8K, MATH, HumanEval) computed within each epoch. The red dashed line marks the Kaiser criterion (λ = 1). During Epoch II (2023–2024.03), a single dominant factor captures 92% of variance and no second eigenvalue approaches 1.0. In Epoch IV (2024.09+), a second eigenvalue (1.88) increases alongside the creation of inference-time reasoning models (o1, DeepSeek R1).",
+      "page": 11,
+      "index": 1,
+      "width": 832,
+      "height": 664
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-002.webp",
+      "caption": "Figure 10: Test (i): CUSUM change-point analysis on eigenvalue diagnostics. (a) Variance explained by PC1 (ρ1) in the expanding-window 4-benchmark PCA, showing a peak around the Claude 3 Opus/Gemini Ultra releases (early 2024) followed by decline. (b) CUSUM statistic on ρ1, with maximum absolute deviation marked; p = 0.004 by permutation test, confirming a significant structural break. (c) Dominance ratio δ = λ1/λ2, showing a sharp jump from ∼12 to ∼28 when the GPT-4-era models enter, followed by gradual decline. (d) CUSUM on δ; p < 0.001, the strongest signal. Vertical dotted lines mark epoch boundaries. Both CUSUM statistics identify the early2024 transition as a significant change point in the factor structure.",
+      "page": 15,
+      "index": 2,
+      "width": 902,
+      "height": 600
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-003.webp",
+      "caption": "Figure 3: The positive manifold in LLM benchmarks. Pairwise Pearson correlations across six major benchmarks, computed using pairwise-complete observations (minimum n = 5 pairs per cell). All 15 off-diagonal entries are positive, satisfying the Spearman criterion for a general factor. Note the near-zero correlation between HumanEval and MMLU-Pro (r = 0.04), suggesting that code generation and hard general knowledge are nearly independent.",
+      "page": 7,
+      "index": 3,
+      "width": 706,
+      "height": 583
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-004.webp",
+      "caption": "Figure 14: Trajectory through G-space. Four points are plotted in a space defined by mean benchmark performance, ρ1 (variance explained by G), and effective dimensionality deff. Point 1: Epoch II (within-epoch, 5-benchmark battery). Point 2: Epoch III (within-epoch). Point 3: all models, raw PCA. Point 4: all models, detrended PCA. Solid arrow: temporal trajectory (1→2). Dashed purple arrow: detrending correction (3→4). Dashed green line: Spearman prediction (performance increases, ρ1 and deff fixed). Sphere colour encodes the number of negative partial correlations out of 10 benchmark pairs. Projection lines show coordinate pairs on the floor (performance, ρ1) and back wall (performance, deff).",
+      "page": 22,
+      "index": 4,
+      "width": 786,
+      "height": 787
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-005.webp",
+      "caption": "Figure 9: Eigenvalue spectrum through time: cumulative variance partitioned by principal component. Each colored band shows one component’s marginal contribution to cumulative variance in the expanding-window PCA; the top of each band is the cumulative variance through that component. (a) 4-benchmark battery: PC1 (G, blue) accounts for 92–95% throughout; PC1+PC2 exceed 97% at every time point. The spectrum is effectively one-dimensional—a near-perfect general factor. (b) 5-benchmark battery (adding GPQA Diamond): the spectrum visibly unfolds as post-2024.09 models enter the window. With the expanded sample (n = 19), for the 5-benchmark spectrum PC1 remains near 90% throughout.",
+      "page": 14,
+      "index": 5,
+      "width": 932,
+      "height": 431
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-006.webp",
+      "caption": "Figure 12: Partial correlation structure after removing G. (a) Raw correlation matrix (5- benchmark battery, n = 19 models with complete data): all 10 off-diagonal correlations positive. (b) Partial correlation matrix after projecting out PC1: 7 of 10 correlations are now negative, with mean rresid = −0.24. The positive manifold is entirely attributable to G. (c) Revealed group factor structure derived from the residual correlations. Group I (Reasoning: MATH, GPQA) and Group II (Execution/Fluency: GSM8K, HumanEval) show positive within-group and negative between-group residual correlations; MMLU is isolated, with near-zero or negative residual correlations with all other benchmarks. Green values indicate positive residual r; red values indicate negative.",
+      "page": 18,
+      "index": 6,
+      "width": 932,
+      "height": 310
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-007.webp",
+      "caption": "Table 4: Permutation Analysis For each analysis, the observed first and second eigenvalues are compared against the 95th and 99th percentiles of the permutation null distribution (B = 10,000). A factor is retained if λobs > λ95. Exact p-values are the fraction of permuted eigenvalues exceeding the observed value.",
+      "page": 28,
+      "index": 7,
+      "width": 950,
+      "height": 976
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-008.webp",
+      "caption": "Figure 8: Effective dimensionality of the LLM benchmark space through time. Expanding-window analysis on two benchmark batteries. Top: Number of principal components required for 99% cumulative variance. On the 4-benchmark battery (blue circles), dimensionality stabilizes at 3 of 4—near-maximal compression. On the 5-benchmark battery (purple squares, adding GPQA Diamond), dimensionality rises from 3 to 5 as post-2024.09 models enter the window. Bottom: Participation ratio deff, a continuous measure ranging from 1 (perfect single-factor structure) to K (no structure). The 4-benchmark battery remains near deff ≈ 1.1 throughout—a near-perfect G. The 5-benchmark battery rises from 1.3 to 1.9, suggestive of a second factor associated with inference-time reasoning. Vertical dotted lines mark algorithmic-epoch boundaries.",
+      "page": 13,
+      "index": 8,
+      "width": 902,
+      "height": 697
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-009.webp",
+      "caption": "Figure 4: Factor loading plot for the 5-benchmark core battery. Arrows show each benchmark’s loading on PC1 (G-factor, 90% variance) and PC2 (7% variance). All benchmarks load positively on PC1, confirming a general factor. PC2 separates an execution/fluency pole (GSM8K, HumanEval—positive PC2) from a reasoning pole (MATH, GPQA—negative PC2). MMLU is near the origin on PC2, contributing primarily to G rather than to the residual structure.",
+      "page": 8,
+      "index": 9,
+      "width": 540,
+      "height": 435
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-010.webp",
+      "caption": "Table 2: Eigenvalue decomposition of the 5-benchmark core battery. PCA on standardized scores for 19 models with complete data across MMLU, GSM8K, MATH, HumanEval, and GPQA Diamond. Only PC1 exceeds the Kaiser criterion (λ > 1).",
+      "page": 8,
+      "index": 10,
+      "width": 632,
+      "height": 198
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-011.webp",
+      "caption": "Figure 1: The score matrix X. A representative subset of 21 models (rows, ordered by release date) and 14 benchmarks (columns, grouped by cognitive domain). Cell color encodes score intensity (0–100%); dashes mark missing evaluations. The matrix exhibits two key structural features: (i) a gradient from low scores (upper-left) to high scores (lower-right), reflecting the correlated improvement that the PCA must dissect; and (ii) a shifting pattern of sparsity, as early benchmarks (HellaSwag, ARC, WinoGrande) are not evaluated on late models, while late benchmarks (GPQA, MMLU-Pro, SWE-bench) do not exist for early models. Horizontal lines mark algorithmic-epoch boundaries; epoch labels are shown on the right.",
+      "page": 4,
+      "index": 11,
+      "width": 932,
+      "height": 780
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-012.webp",
+      "caption": "Figure 7: Expanding-window tracking changing G. Models are added in chronological order of release date; at each step, PCA is computed on the 4-benchmark battery. Top: ρ1, the fraction of total variance captured by PC1 (G). The 90% threshold (red dotted line) is exceeded throughout, with a peak at 95.5% around the Claude 3 Opus release (early 2024). Bottom: All four normalized variance fractions ρ1, ρ2, ρ3, ρ4 plotted on the same scale. G (blue) dominates throughout; ρ2 (red) is the only component that shows any temporal dynamics, growing modestly as post-2024.09 models enter the window. The dashed gray line at 25% marks the uniform distribution (ρk = 1/K, no factor structure).",
+      "page": 12,
+      "index": 12,
+      "width": 832,
+      "height": 666
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-013.webp",
+      "caption": "Figure 5: Normalized G: LLM general intelligence factor over time. Each point represents a model’s projection onto PC1 of the 5-benchmark battery (MMLU, GSM8K, MATH, HumanEval, GPQA Diamond), rescaled to a 0–100 range where 0 is the lowest-scoring model (Llama 2 70B Chat) and 100 is the highest (o1-preview). PC1 captures 90% of total variance across the battery. The 19 models with complete data on all five benchmarks are shown, colored by organization. The normalization makes G directly interpretable as a percentile-like score: a model at G = 50 is halfway between the least and most capable systems in the sample.",
+      "page": 9,
+      "index": 13,
+      "width": 832,
+      "height": 529
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-014.webp",
+      "caption": "Figure 13: Epoch-specific partial correlations. Partial correlation matrices after removing each epoch’s own PC1 from the 4-benchmark battery. (a) Epoch II (2023.03–2024.03, n = 8, ρ1 = 92%), (b) Epoch III (2024.04–2024.09, n = 7, ρ1 = 80%). Additional panels show the 5-benchmark and global analyses. Of 6 benchmark pairs in the 4-benchmark analysis, 4 maintain the same sign across Epochs II and III; only the two weakest pairs flip sign.",
+      "page": 20,
+      "index": 14,
+      "width": 932,
+      "height": 564
+    },
+    {
+      "url": "assets/figures/arxiv/2604.09911v1/fig-015.webp",
+      "caption": "Figure 11: Test (ii): Eigenvector alignment. (a) Angular displacement θ between consecutive first eigenvectors as each model enters the expanding window. Blue bars: 4-benchmark battery (max θ = 0.57, near-perfect stability). Purple bars: 5-benchmark battery (max θ = 6.4 at DeepSeek V3 entry). The 5-benchmark battery reveals rotations invisible to the 4-benchmark analysis because GPQA Diamond introduces a dimension along which post-2024.09 models diverge from pre-2024.09 models. (b) Individual benchmark loadings |v1j | on G over time (4-benchmark battery), confirming structural invariance: all four loadings remain within a 0.04-unit band across the entire timeline.",
+      "page": 16,
+      "index": 15,
+      "width": 902,
+      "height": 569
+    }
+  ]
+}
