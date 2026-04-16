@@ -1,0 +1,1493 @@
+Title: Resting-state fMRI foundation models enable robust and generalizable latent neural target discovery in cognitive aging interventions
+
+URL Source: https://www.biorxiv.org/content/10.64898/2025.12.30.697042v2.full.pdf
+
+Number of Pages: 19
+
+Markdown Content:
+> 1
+
+Updated August 2025 
+
+# Main Manuscript for 
+
+# Resting-state fMRI foundation models enable robust and generalizable latent neural target discovery in cognitive aging interventions Xinliang Zhou †,1 , Meishan Ai †,1 , Ehsan Adeli 1 , Yu Zhang 1 , Yang Merik Liu *,1 , Feng Vankee-Lin *,1 1 Department of Psychiatry and Behavioral Science, Stanford University School of Medicine, Palo Alto, CA 94040 * F. Vankee-Lin, Y. M. Liu 
+
+Email: vankee_lin@stanford.edu; merik.liu@stanford.edu 
+
+Author Contributions: X.Z. performed model development and experiments; M.A. preprocessed and analyzed data; E. A. and Y. Z. advised the research design; Y. M. L. and F. V. designed the research; Y. M. L. wrote the paper and drawn figures; F. V. revised the paper; all authors reviewed and approved the manuscript. 
+
+Competing Interest Statement: Authors claimed no conflict of interest. 
+
+Classification: Biological Sciences - Psychological and Cognitive Sciences. 
+
+Keywords: resting-state fMRI, foundation models, cognitive aging, intervention response, neuroplasticity. 
+
+This PDF file includes: 
+
+Main Text Figures 1 to 5 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 2
+
+Abstract 1
+
+The benefits of interventions targeting cognitive aging vary substantially across individuals, 2
+
+largely owing to heterogeneity in aging-related comorbidities. It is necessary to robustly identify 3
+
+neural patterns underlying intervention response and test their generalizability across 4
+
+heterogeneous cohorts. Resting-state functional MRI (rsfMRI) offers a potential pathway, but 5
+
+relying on predefined summary features with conventional methods has limited capacity to 6
+
+capture both within-individual longitudinal variation and between-individual differences, 7
+
+particularly in small and heterogeneous studies. Recent rsfMRI foundation models pretrained on 8
+
+large observational cohorts present a promising alternative by learning transferable 9
+
+spatiotemporal representations from time-series signals. Yet their validity and generalizability in 10 
+
+local intervention settings remain unclear. Here, we systematically evaluated rsfMRI foundation 11 
+
+models using data from two independent randomized controlled trials of older adults with mild 12 
+
+cognitive impairment, testing whether these models can robustly extract longitudinal brain 13 
+
+representations that predict post-intervention changes in episodic memory across trials. 14 
+
+Foundation models outperformed conventional machine learning and deep learning approaches 15 
+
+across both trials. Clinically informed adaptation using an external Alzheimer’s disease cohort 16 
+
+further improved performance and robustness to confounders (i.e., head motion, site, and 17 
+
+intervention arm), with accuracy up to 82%. Multivariate decomposition of foundation model 18 
+
+embeddings identified latent neural patterns associated with episodic memory change with cross-19 
+
+study consistency at baseline that became more spatially distributed at post-intervention. These 20 
+
+findings show that rsfMRI foundation models can enable robust and generalizable identification of 21 
+
+latent neural patterns linking longitudinal brain dynamics to individual intervention response, 22 
+
+laying the foundation for precision-driven neural target discovery in cognitive aging research. 23 
+
+Significance Statement 24 
+
+Interventions for cognitive aging show highly variable outcomes across individuals, limiting their 25 
+
+clinical effectiveness. This study introduces a foundation model-based approach to identify latent 26 
+
+neural patterns underlying individual differences in intervention response using resting-state fMRI. 27 
+
+By leveraging pretrained models and domain-adaptive fine-tuning, we demonstrate robust and 28 
+
+generalizable prediction of cognitive improvement across independent trials. Our findings suggest 29 
+
+that latent brain representations, rather than predefined features, provide a scalable pathway 30 
+
+toward precision-driven intervention strategies for aging populations. 31 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 3
+
+Main Text 32 
+
+> 33
+
+Introduction 34 
+
+> 35
+
+As the global population ages, scalable interventions with minimal side effects, such as cognitive 36 
+
+training and aerobic exercise, has become a focus in clinical research aimed at preventing 37 
+
+cognitive decline 1. However, the cognitive benefits of these interventions highly vary across 38 
+
+individuals due to individual heterogeneity in aging-related comorbidities 2. This variability has 39 
+
+been a primary contributor to a history of inconclusive or failed trials 3–5 . However, rather than 40 
+
+viewing these failures as mere setbacks, they represent a critical source of data. The 41 
+
+accumulation of mixed results underscores the need to move beyond a trial-and-error approach. 42 
+
+By systematically analyzing data across diverse trials, it may be possible to identify robust, 43 
+
+generalizable patterns of neuroplastic potential, i.e., the brain capacity for beneficial cognitive 44 
+
+change, paving the way for the future more consistently effective and individually tailored 45 
+
+strategies for cognitive enhancement. 46 
+
+> 47
+
+Resting-state functional magnetic resonance imaging (rsfMRI) provides an objective approach to 48 
+
+examine individuals’ neuroplastic potential 6,7 . Traditionally, the utility of rsfMRI for mechanistic 49 
+
+understanding of interventions has relied on the assumption that neuroplastic potential from 50 
+
+interventions manifest within pre-defined regions of interest (ROIs) or at the level of pairwise 51 
+
+functional connectivity (FC) 8. This assumption imposes a restrictive representational framework. 52 
+
+By aggregating BOLD signals into static ROI-level or connectivity summaries, such approaches 53 
+
+may obscure complex, higher-order interactions among distributed neural components 9, where 54 
+
+intervention-related mechanisms may instead be expressed in latent, multivariate patterns rather 55 
+
+than localized changes in individual ROIs or discrete FC edges 10 . This limitation is particularly 56 
+
+consequential in aging cohorts, where intervention-related neural responses tend to be 57 
+
+heterogeneous, dynamic, and idiosyncratic, diminishing the sensitivity of fixed anatomical targets 58 
+
+or predefined connectivity metrics for capturing individual-level response signatures 2. Analytically, 59 
+
+many statistical and machine learning (ML) approaches to rsfMRI operate directly on these pre-60 
+
+defined features 11 . Conversely, conventional deep learning (DL) that operate on raw time-series 61 
+
+data often require massive datasets that are often unavailable in real-world clinical settings 12 . In 62 
+
+limited-data regimes, DL models may either oversimplify temporal dependencies or overfit to 63 
+
+noisy BOLD signals, further constraining their utility for mechanistic inference 13 .64 
+
+> 65
+
+To uncover these understudied latent, multivariate neural patterns robustly across studies, we 66 
+
+propose a new approach that leverages Foundation Models (FMs) to learn brain representations 67 
+
+directly from raw rsfMRI timeseries. FMs, which are pre-trained on vast and diverse datasets, 68 
+
+learn fundamental, generalizable patterns of brain activity before being applied to specific 69 
+
+downstream tasks 14–16 . The strength of this approach lies in three key areas: First, FM 70 
+
+architectures, often Transformer-based, are explicitly designed to capture complex, long-range 71 
+
+temporal dependencies in BOLD signals that are lost in static FC summaries 17 . Second, the 72 
+
+extensive pre-training provides a strong inductive prior, enabling these models to extract 73 
+
+meaningful spatiotemporal dynamics for smaller, local intervention datasets while mitigating 74 
+
+overfitting. By pre-training on thousands of hours of rsfMRI data, FMs can distill robust and 75 
+
+generalizable neural representations that preserve fine-grained spatiotemporal signatures of brain 76 
+
+function 18,19 . Third, FM-derived embeddings offer a compact, low-dimensional space that can be 77 
+
+linked to behavioral outcomes, facilitating the discovery of latent neural variables. This capacity is 78 
+
+particularly useful in intervention studies of aging, where neural responses are heterogeneous 79 
+
+and individualized. However, a systematic methodology for adapting FMs to challenging small-80 
+
+sample settings, such as local, aging-focused intervention studies, has not yet been established. 81 
+
+Therefore, the central goal of our work is to develop and validate such an approach, 82 
+
+demonstrating how FMs can be reliably adapted to identify latent patterns of neuroplastic 83 
+
+potential in older adults and support data-driven brain mechanism discovery. 84 
+
+> 85
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 4
+
+In this paper, we aim to identify latent, multivariate neural patterns that are robust across 86 
+
+intervention studies by adapting rsfMRI FMs and evaluating their utility in predicting individual 87 
+
+cognitive responses in aging populations. Specifically, we address four research questions 88 
+
+relevant to applying rsfMRI foundation models in local cognitive aging intervention studies: (Q1) 89 
+
+whether FM-derived embeddings improve predictive performance over conventional approaches 90 
+
+in small, heterogeneous cohorts; (Q2) whether clinically informed domain adaptation and joint 91 
+
+modeling of baseline and post-intervention states enhance intervention-relevant representation; 92 
+
+(Q3) whether FM-derived representations remain robust under common neuroimaging 93 
+
+confounders including site variability, head motion, and intervention arm; and (Q4) whether their 94 
+
+latent structure shows consistent organization across independent intervention cohorts. 95 
+
+> 96
+
+To answer these questions, we evaluated two representative rsfMRI FMs: BrainLM 18 , trained to 97 
+
+model whole-brain activity as an inference sequence similar to a language model, and 98 
+
+BrainJEPA 19 , designed to learn shared embeddings from neighboring brain states. Both rsfMRI 99 
+
+FMs were originally pre-trained on large-scale datasets, such as UK Biobank 20 and the Human 100 
+
+Connectome Project (HCP) 21 , which predominantly consist of younger, neurologically healthy 101 
+
+adults. We further fine-tuned them using the Alzheimer's Disease Neuroimaging Initiative 102 
+
+(ADNI) 22 dataset to ensure the brain representations reflect the range of variability covering both 103 
+
+normal and abnormal cognitive aging. We then tested the adapted FMs on two independent local 104 
+
+intervention studies targeting cognitive aging: ACT 23 study (NCT03313895), a three-site 105 
+
+randomized control trial (RCT) with four arms over six-month exercise and cognitive training 106 
+
+combined, alone, or active control, and CogTE 24 study (NCT02559063), a single-site RCT with 107 
+
+two arms over six-week cognitive training or active control. Notably, both trials exemplify a 108 
+
+common challenge in aging research: neither study identified a statistically significant group-level 109 
+
+improvement in their primary outcome, episodic memory (EM) in older adults with mild cognitive 110 
+
+impairment (MCI). This very absence of a clear average treatment effect makes them ideal 111 
+
+testbeds for our purpose. The mixed results highlight the failure of traditional group-level analyses 112 
+
+and create a need for methods that can uncover the individual-level neural factors distinguishing 113 
+
+those who benefited from those who did not. To this end, we used rsfMRI data collected at 114 
+
+baseline and post-intervention from both studies. Change in EM ( ∆EM) was calculated with 115 
+
+responders defined as sustained/improved post-intervention from baseline ( ΔEM>=0) vs. non-116 
+
+responders as declined cases ( ΔEM<0). By focusing on individual-level outcome, we explicitly 117 
+
+test FM-derived brain representations can capture latent, multivariate neural patterns that robustly 118 
+
+explain variability in cognitive response across studies. The overview of the analytical flow is 119 
+
+presented in Figure 1 .120 
+
+> 121
+> 122
+
+Results 123 
+
+> 124
+
+Classification of change of episodic memory after intervention: Benchmark comparisons 125 
+
+> 126
+
+To address Q1, we first evaluated whether rsfMRI foundation models can provide more 127 
+
+informative brain representations than conventional approaches for predicting individual 128 
+
+intervention response. Evaluation was performed under stratified five-fold cross-validation, 129 
+
+balancing outcome labels and key study factors (intervention arm and site when applicable). The 130 
+
+performance of two FMs, BrainLM and BrainJEPA, was systematically compared with three 131 
+
+widely used data-driven approaches: Support Vector Machine (SVM) 25 , a ML method using 132 
+
+statistical learning theory; Multilayer Perceptron (MLP) 26 , a DL method capturing nonlinear 133 
+
+relationships; and Graph Convolutional Network (GCN) 27 , a DL method explicitly incorporating 134 
+
+brain topology. These models were chosen to represent the spectrum of existing strategies 135 
+
+commonly applied to classify outcomes, i.e., responders vs. nonresponders derived from ΔEM in 136 
+
+our case. This evaluation was performed on ACT and CogTE, respectively; sample 137 
+
+characteristics and protocol details are presented in Table S1 . All models were trained using 138 
+
+rsfMRI collected at T1 and T2. For non-FM methods (SVM, MLP, and GCN), FC features were 139 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 5
+
+derived separately at each timepoint and concatenated to encode longitudinal information. This 140 
+
+design follows standard practice in conventional rsfMRI modeling 28,29 , where FC provides a 141 
+
+stable, low-dimensional representation suitable for vector- or graph-based classifiers that do not 142 
+
+operate directly on raw time-series data. The rsfMRI FMs used ROI-level time-series as input, 143 
+
+which were temporally segmented into fixed-length patches and embedded as tokens (see 144 
+
+Methods ). 145 
+
+Figure 2a and Table S2 summarize the model performance across benchmark comparisons. 146 
+
+BrainLM outperformed other models, particularly on the CogTE dataset ( ACC: 80.3% ± 1%, F1: 147 
+
+88.2% ± 1% ). The performance advantage of BrainLM was also demonstrated on the multi-site 148 
+
+ACT dataset ( ACC 65.2% ± 5%, F1 69.1% ± 5% ) compared to other models. In contrast, 149 
+
+BrainJEPA did not achieve good performances across studies ( CogTE: ACC 60.4% ± 11%, F1 150 
+
+64.1% ± 7%; ACT: ACC 50.8% ± 13%, F1 53.4% ± 8% ). One possible explanation for this 151 
+
+performance difference lies in their respective representation learning objectives: BrainJEPA's 152 
+
+cross-view consistency constraint may be less suited to the high variability characteristic of older 153 
+
+adults' BOLD signals, though this hypothesis warrants direct empirical validation through ablation 154 
+
+or probing analyses; whereas, BrainLM’s autoregressive sequence modeling objective 155 
+
+accommodates heterogeneous temporal patterns, making it more robust to modeling the neural 156 
+
+dynamics among older adults. 157 
+
+> 158
+
+Domain adaptive fine-tuning on ADNI dataset 159 
+
+> 160
+
+To address Q2, we examined whether clinically informed adaptation and joint modeling of 161 
+
+baseline and post-intervention rsfMRI improve intervention-relevant representations. Specifically, 162 
+
+the best-performing BrainLM was fine-tuned using a supervised classification task distinguishing 163 
+
+group with Alzheimer’s disease (AD) from healthy control (HC), named as BrainLM-ADNI. The 164 
+
+design was motivated by the assumption that intervention-related EM improvement reflects, at 165 
+
+least in part, a reversal or modulation of neural patterns of EM difference between AD and HC, 166 
+
+making the HC-to-AD contrast a biologically meaningful axis for adaptation. Moreover, the 167 
+
+differences between AD and HC are more neurobiologically distinct and stable than those 168 
+
+between preclinical AD, such as MCI, offering a stronger supervisory signal for domain 169 
+
+adaptation. 170 
+
+> 171
+
+The resulting BrainLM-ADNI model was then evaluated on the ACT and CogTE datasets using 172 
+
+the same downstream inference protocol as in Section 2.1 . As shown in Figure 2b , BrainLM-173 
+
+ADNI demonstrated a substantial performance boost, particularly on the more challenging ACT 174 
+
+dataset ( CogTE: ACC 81.6% ± 5% [ ↑1.3% ], F1 88.8% ± 3% [ ↑0.6%] ); ACT: ACC 72.6% ± 13% 175 
+
+[↑7.4% ], F1 83.1% ± 10% [ ↑14%] ), which suggests that the knowledge about aging-related brain 176 
+
+patterns learned from ADNI was successfully transferred, equipping the model with a more 177 
+
+refined understanding of the neural basis and its response to intervention, supporting our 178 
+
+hypothesis. The consistent improvement across both datasets provides evidence that a clinically 179 
+
+relevant, supervised fine-tuning step may still be critical for existing rsfMRI FMs when applying to 180 
+
+a specialized clinical study. 181 
+
+> 182
+
+To further characterize how the ADNI-adapted BrainLM leverages longitudinal information, we 183 
+
+additionally evaluated model performance under different combinations of timepoints. Specifically, 184 
+
+we compared the default “T1+T2 ” setting with a “T1-only ” setting, in which downstream 185 
+
+classification was based solely on baseline rsfMRI embeddings, and a “ T2–T1 ” setting, in which 186 
+
+residuals between post-intervention and baseline rsfMRI embeddings were used as input. As 187 
+
+shown in Figure 2b , across two datasets, the default “T1+T2 ” configuration achieved the 188 
+
+strongest and most consistent performance ( CogTE: ACC 81.6% ± 5%, F1 88.8% ± 3%, ACT: 189 
+
+ACC 72.6% ± 13%, F1 83.0% ± 10%; ), indicating that jointly modeling baseline and post-190 
+
+intervention brain states provides complementary information beyond either baseline ( CogTE: 191 
+
+ACC 68.3% ± 6%, F1 76.5% ± 5%, ACT: ACC 62.3% ± 11%, F1 70.4% ± 9%, ) or isolated change 192 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 6
+
+signals ( CogTE: ACC 72.0% ± 6%, F1 79.3% ± 5%, ACT: ACC 64.2% ± 5%,, F1 72.2% ± 9%, )193 
+
+alone. 194 
+
+> 195
+
+Robustness to confounders concerning in neuroimaging and clinical trial studies 196 
+
+> 197
+
+To address Q3, we evaluated whether the adapted rsfMRI foundation model remains robust to 198 
+
+common sources of heterogeneity in intervention studies, including site variability, head motion, 199 
+
+and intervention arm. Using the multi-site ACT dataset, we evaluated the performance of 200 
+
+BrainLM-ADNI under three preprocessing conditions: (1) original data, (2) data after site 201 
+
+harmonization, and (3) data after both site harmonization and regression of head motion 202 
+
+parameters. As shown in Figure 2c , explicit correction for these confounders resulted in only 203 
+
+modest differences in classification performance ( original: ACC 72.6% ± 13%, F1 83.0% ± 10%; 204 
+
+site-harmonized: ACC 73.2% ± 7%, F1 81.0% ± 8%; site + head-motion corrected: ACC 73.8% ± 205 
+
+8%, F1 82.7% ± 6% ). Overall, these results indicate that explicit confound correction yields only 206 
+
+modest performance changes, consistent with robustness to site-related heterogeneity and 207 
+
+motion artifacts. 208 
+
+> 209
+
+Additionally, we examined whether classification performance differed across intervention arms 210 
+
+(see Figure 2d ) in both studies. We performed a Chi-square test on intervention group 211 
+
+assignment and classification performance (i.e., whether being correctly classified or not) for each 212 
+
+participant. The classification performance displayed no significant difference across intervention 213 
+
+arms for either study ( CogTE: χ²=0.01, p=0.92; ACT: χ²=5.44, p=0.14 ). These results suggest 214 
+
+that BrainLM-ADNI maintains comparable classification performance across intervention arms, 215 
+
+further supporting its robustness. 216 
+
+> 217
+
+Identifying robust latent, multivariate neural patterns 218 
+
+> 219
+
+To address Q4, we tested whether FM-derived embeddings support identification of latent neural 220 
+
+patterns that are structured consistently across independent intervention studies. Specifically, we 221 
+
+first applied Partial Least Squares (PLS) to characterize the relationship between brain activity 222 
+
+(via amplitude of low frequency fluctuations; ALFF maps) and FM embeddings derived from the 223 
+
+BrainLM-ADNI at T1 and T2, respectively, as well as components that differentiated responders 224 
+
+from non-responders. This analysis was performed independently for both the ACT and CogTE 225 
+
+studies. PSL components were selected based on their strong embedding-brain coupling and 226 
+
+ability to differentiate responders from non-responders, providing a representative view of the 227 
+
+embedding–brain relationship. Across both ACT and CogTE, for each timepoint (T1 and T2), the 228 
+
+corresponding PLS component consistently demonstrated significant associations between FM-229 
+
+derived embeddings and ALFF-derived brain activity (Figure 3a-b ). Notably, components 230 
+
+identified at each timepoint independently contributed to this differentiation, indicating that 231 
+
+relevant information is distributed across timepoints. 232 
+
+> 233
+
+Next, we examined cross-study consistency of PLS-derived brain loading patterns between ACT 234 
+
+and CogTE ( Figure 3c ). At T1, similarity was highest among the top-ranked regions (peaking at 235 
+
+top-10%) and gradually decreased as more regions were included, indicating that 236 
+
+correspondence was driven by a focal set of dominant regions. At T2, similarity was minimal at 237 
+
+the top ranks but peaked at intermediate thresholds (around top-50%), suggesting a more 238 
+
+distributed pattern across regions. This shift indicates that baseline correspondence is 239 
+
+concentrated in a core set of regions, likely reflecting aging-related constraints shared across 240 
+
+studies, whereas post-intervention correspondence is more distributed and context-dependent, 241 
+
+consistent with heterogeneity in interventions and cohorts rather than a lack of generalizability. To 242 
+
+further explore the spatial organization of these patterns, we examined the distribution of top-50% 243 
+
+PLS loadings across studies ( Figure 3d–e ). At T1, the highest-weighted regions covered brain 244 
+
+regions primarily across default mode network, visual network, and frontoparietal network, 245 
+
+especially highlighted in precuneus, paracingulate, and medical prefrontal regions, which are key 246 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 7
+
+networks involved in cognitive decline in late-life 30,31 . At T2, loading patterns became more 247 
+
+spatially diffuse, consistent with the more distributed cross-study correspondence observed post-248 
+
+intervention. 249 
+
+> 250
+> 251
+
+Discussion 252 
+
+> 253
+
+Summary of key findings across research questions 254 
+
+> 255
+
+The overarching goal of this work was to identify robust, latent multivariate neural patterns of 256 
+
+neuroplastic potential that generalize across studies and explain individual differences in 257 
+
+cognitive response. Our findings across four research questions converge to support this goal. 258 
+
+First, rsfMRI FMs, particularly the ADNI-adapted BrainLM, consistently outperformed established 259 
+
+ML approaches in predicting individual treatment response across two independent intervention 260 
+
+studies, even in small and heterogeneous samples, indicating that FM-derived embeddings 261 
+
+capture meaningful intervention-related signal beyond predefined features such as FC. This 262 
+
+finding indicates that FM-derived embeddings capture meaningful intervention-related signal 263 
+
+beyond noise and substantially beyond representations based on predefined features such as 264 
+
+FC. Second, clinically informed domain adaptation via ADNI fine-tuning was essential, and jointly 265 
+
+modeling baseline and post-intervention states provided complementary longitudinal information, 266 
+
+suggesting that intervention effects are encoded at a latent spatiotemporal representational level 267 
+
+rather than as localized or static changes. Third, these representations demonstrated robustness 268 
+
+across studies with differing designs, populations, and intervention modalities, suggesting that the 269 
+
+models capture generalizable neural patterns relevant to cognitive response rather than study-270 
+
+specific artifacts. Importantly, architectural choice and domain adaptation played a critical role, 271 
+
+with ADNI fine-tuning improving performance and BrainLM outperforming BrainJEPA, highlighting 272 
+
+the importance of aligning pretrained representations with aging-related neural variability. Finally, 273 
+
+interpretable embedding-brain relationships revealed consistent differentiation between 274 
+
+responders and non-responders with structured cross-study organization, providing evidence that 275 
+
+rsfMRI FMs can reliably identify latent neural patterns relevant to cognitive intervention outcomes. 276 
+
+> 277
+
+Identifying robust latent neural patterns with rsfMRI FMs in local intervention studies 278 
+
+> 279
+
+We emphasize a three-condition framework for establishing robust latent, multivariate 280 
+
+neural patterns in cognitive aging intervention research: First, the analytical model must learn 281 
+
+brain representations that preserve fine-grained spatiotemporal structure beyond predefined 282 
+
+features, despite noise, heterogeneity and limited sample size; Second, these representations 283 
+
+must demonstrate behavioral relevance by meaningfully relating to individual cognitive change 284 
+
+following intervention; Third, the identified neural representations must exhibit consistency across 285 
+
+independent studies, indicating shared neural signature rather than study-specific artifacts. 286 
+
+Our findings satisfy the first condition. FM-derived embeddings captured subtle spatiotemporal 287 
+
+patterns that are difficult to recover from predefined connectivity features or models trained from 288 
+
+scratch on small intervention datasets, a critical advantage in aging populations where 289 
+
+intervention effects are modest and embedded within large inter-individual variability. Importantly, 290 
+
+large-scale pretraining alone was insufficient; ADNI-based fine-tuning acted as an essential 291 
+
+intermediate step, aligning general representations with aging-related neural variance and 292 
+
+enabling transfer to intervention settings. 293 
+
+> 294
+
+The second condition was met through PLS-based latent component generation, which mapped 295 
+
+FM-derived embeddings onto low-dimensional latent variables directly coupled to behavioral 296 
+
+outcomes. Unlike fixed anatomical targets or predefined connectivity metrics, these latent 297 
+
+variables allow intervention-related variation to emerge as distributed network-level patterns, 298 
+
+which are well-suited to aging populations where neural changes are diffuse, modest, and not 299 
+
+easily localized to canonical regions. Each selected PLS component demonstrated significant 300 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 8
+
+group separation between responders and non-responders, confirming behavioral relevance 301 
+
+across studies and timepoints. 302 
+
+> 303
+
+The third condition was supported by structured cross-study consistency in PLS loading patterns. 304 
+
+At baseline, correspondence was concentrated in a focal set of highest-weighted regions 305 
+
+anchored in posterior medial cortex, reflecting shared neurobiological constraints across aging 306 
+
+cohorts. Post-intervention, correspondence emerged at broader thresholds, indicating that 307 
+
+intervention-driven neural changes are more distributed and context-dependent. Together, these 308 
+
+patterns define candidate neural signatures of intervention-relevant variation that can be 309 
+
+examined and validated across independent studies. We further conceptualize these insights into 310 
+
+a unified framework ( Figure 4 ). 311 
+
+> 312
+
+Looking forward, an important next step is to aggregate such latent neural signatures across 313 
+
+diverse intervention modalities (e.g., aerobic exercise, neuromodulation, mindfulness, and 314 
+
+cognitive training) to construct a shared reference space of intervention-associated brain 315 
+
+patterns. Within this space, FM-derived embeddings could serve as a common coordinate system 316 
+
+for comparing individuals and interventions, enabling evaluation of how an individual’s baseline 317 
+
+neural representation aligns with patterns associated with different response profiles. While this 318 
+
+application is prospective, the framework outlines a path from post-hoc analyses to prescriptive 319 
+
+medicine: a scalable, data-driven approach to personalizing interventions based on an 320 
+
+individual’s latent neuroplastic potential, not on group-average effects. 321 
+
+> 322
+
+Practical considerations for identifying robust latent neural patterns with rsfMRI FMs 323 
+
+> 324
+
+For cognitive aging intervention research to make cumulative progress toward mechanistic insight 325 
+
+and personalized treatment, it is essential for the field to consistently identify and compare latent, 326 
+
+multivariate neural patterns across studies, rather than relying on isolated within-trial findings. In 327 
+
+this context, applying rsfMRI FMs in intervention studies is best understood as a practical strategy 328 
+
+for satisfying the three conditions required for robust latent pattern identification, rather than as a 329 
+
+single fixed pipeline. Under realistic constraints such as limited sample size, heterogeneous 330 
+
+responses, and domain mismatch, each condition can be supported by both the approach used 331 
+
+here and alternative solutions. For the first condition, we used pre-trained rsfMRI FMs operating 332 
+
+on BOLD time series and further adapted them using ADNI to better align the representation 333 
+
+space with aging-related neural variation. Alternative solutions could include other pretrained 334 
+
+sequence, graph-based 32 , or multimodal models 33 , to preserve fine-grained neural dynamics 335 
+
+beyond predefined summary features. For the second condition, we evaluated whether FM-336 
+
+derived embeddings predicted intervention response and used multivariate decomposition to 337 
+
+identify latent components coupled to EM change. Alternative approaches could include other 338 
+
+brain-behavior linkage methods, such as canonical correlation analysis or supervised latent 339 
+
+variable models, to retain representations that explain meaningful individual cognitive variation, 340 
+
+not just model performance. For the third condition, we assessed consistency across two 341 
+
+independent intervention cohorts and examined robustness to confounders. Alternative 342 
+
+approaches may include cross-dataset transfer, embedding alignment, or external validation, 343 
+
+where identified patterns reflect shared neural structure rather than study-specific artifacts. In 344 
+
+practice, these steps involve trade-offs among data access, model scale, interpretability, and 345 
+
+engineering effort. 346 
+
+> 347
+> 348
+
+Materials and Methods 349 
+
+> 350
+
+Overview of the analytical framework 351 
+
+> 352
+
+To systematically evaluate whether rsfMRI foundation models can support robust and 353 
+
+generalizable identification of intervention-relevant latent neural patterns in cognitive aging 354 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 9
+
+studies, we designed a multi-component framework ( Figure 1 ). For each participant, rsfMRI data 355 
+
+(both T1 and T2) were processed in a dual-stream architecture with shared model weights to 356 
+
+extract latent embeddings for each timepoint. These embeddings were subsequently 357 
+
+concatenated as input features to explicitly encode longitudinal neural change for downstream 358 
+
+prediction of intervention response and subsequent identification of latent brain–behavior 359 
+
+patterns. To ensure a fair and controlled evaluation, all downstream analyses were conducted 360 
+
+within a stratified five-fold cross-validation framework that balanced outcome labels, intervention 361 
+
+arms, and study sites when it is applicable. This design enabled direct comparison between FMs 362 
+
+and conventional machine learning and deep learning approaches under identical data splits and 363 
+
+evaluation protocols. Model performance was primarily assessed using Accuracy (ACC) and F1-364 
+
+score, reflecting overall correctness and the balance between precision and recall, respectively. 365 
+
+To provide a complementary assessment of discriminative ability and class-specific performance, 366 
+
+Area Under the ROC Curve (AUC), Sensitivity, and Specificity were also reported (see results in 367 
+
+Supplementary Materials Table S2 ). Performance metrics were averaged across cross-368 
+
+validation folds, and the same evaluation protocol was applied consistently to all ML, DL, and 369 
+
+rsfMRI FM approaches. 370 
+
+> 371
+
+Study cohorts and preprocessing 372 
+
+Three independent datasets were included in this work for model deployment and evaluation. The 373 
+
+ADNI dataset was used exclusively for domain-adaptive fine-tuning of the FM. The ADNI dataset 374 
+
+comprises older adults spanning the cognitive spectrum from cognitively normal, MCI, to AD. In 375 
+
+this study, ADNI participants diagnosed with AD and cognitively healthy controls were selected to 376 
+
+construct a supervised fine-tuning task that captures aging- and pathology-related brain patterns. 377 
+
+No ADNI data were included in the downstream model evaluation. The ACT study is a multi-site 378 
+
+randomized controlled trial involving older adults at risk for AD, with participants assigned to 379 
+
+aerobic exercise, cognitive training, combined intervention, or active control arms over six 380 
+
+months. Resting-state fMRI and episodic memory assessments were collected at T1 and T2. The 381 
+
+CogTE study is a single-site randomized controlled trial with a six-week cognitive training 382 
+
+intervention and an active control condition, following a similar pre-post assessment design. Both 383 
+
+ACT and CogTE datasets target older adults with elevated risk for cognitive decline and serve as 384 
+
+independent cohorts for evaluating model generalizability across intervention paradigms and 385 
+
+study designs (see Figure 3a ). Both datasets exhibited substantial inter-individual variability in 386 
+
+EM change, with samples of responders and non-responders in each intervention arm (see 387 
+
+Supplementary Materials Table S1 ). 388 
+
+> 389
+
+MRI acquisition details for ADNI, ACT, and CogTE have been reported previously and are 390 
+
+summarized in Supplementary Materials Table S1 . All imaging data were preprocessed using 391 
+
+the standardized fMRIprep pipeline 34 (version 24.1.0), which is based on Nipype v1.8.6. For each 392 
+
+participant, T1-weighted anatomical images underwent skull stripping, tissue segmentation, 393 
+
+surface reconstruction, and spatial normalization to Montreal Neurological Institute (MNI) space. 394 
+
+RsfMRI images were corrected for head motion and slice timing, co-registered to the anatomical 395 
+
+image, and normalized to MNI space. Susceptibility distortion correction was applied for the ACT 396 
+
+dataset using estimated field maps from two echo-planar imaging references with TOPUP 35 that 397 
+
+were available only for this study. Following fMRIPrep , additional denoising was performed using 398 
+
+Nilearn (version 0.11.0). This included regression of twelve head motion parameters, five 399 
+
+principal components derived from white matter and cerebrospinal fluid signals using the 400 
+
+aCompCor approach, and temporal band-pass filtering (0.01–0.1 Hz). Finally, spatial smoothing 401 
+
+was applied using a 6-mm full-width-at-half-maximum Gaussian kernel. Identical preprocessing 402 
+
+procedures were applied across all datasets to minimize confounding differences arising from 403 
+
+data handling and to ensure consistency in downstream model evaluation. 404 
+
+> 405
+
+Resting-state fMRI foundation model deployment 406 
+
+> 407
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 10
+
+BrainLM is designed to model whole-brain resting-state activity as an inference sequence, 408 
+
+analogous to autoregressive language modeling. During pretraining, BrainLM learns to predict 409 
+
+future spatiotemporal patterns of brain activity conditioned on past observations, enabling it to 410 
+
+capture long-range temporal dependencies and distributed neural dynamics. BrainLM operates 411 
+
+directly on preprocessed rsfMRI time-series data, where voxel- or parcel-wise BOLD signals are 412 
+
+temporally segmented into fixed-length patches of 20 datapoints and embedded as input tokens 413 
+
+to the transformer encoder. Although three pretrained variants (13-/111-/650-million weights) 414 
+
+were described in the original paper, only the 13-million weight model was publicly released and 415 
+
+was therefore used in this study. 416 
+
+> 417
+
+BrainJEPA follows a joint embedding inference architecture. Its primary objective is to learn 418 
+
+shared latent representations by enforcing consistency between embeddings derived from 419 
+
+neighboring spatiotemporal views of the brain. BrainJEPA is trained to align representations of 420 
+
+partially observed brain states, encouraging invariance across local temporal or spatial 421 
+
+perturbations. As a result, it emphasizes representation consistency and local coherence rather 422 
+
+than explicit temporal forecasting. BrainJEPA takes preprocessed rsfMRI time-series as input, 423 
+
+formatting the signals into sequences of 160 time points and segmenting them into non-424 
+
+overlapping patches of size 16. Although three pretrained variants (22-/86-/307-million weights) 425 
+
+were described in the original paper, only the 22-million weight model was publicly released and 426 
+
+was therefore used in this study. 427 
+
+> 428
+
+To deploy these rsfMRI FMs to local intervention studies without retraining the backbone, a linear 429 
+
+probing strategy was employed. For each participant, rsfMRI data from T1 and T2 were 430 
+
+independently passed through the frozen FM using shared weights. From each session, the final 431 
+
+hidden representation corresponding to the Classification (CLS) token was extracted as a fixed-432 
+
+dimensional embedding. These embeddings summarize the participant’s brain state at each 433 
+
+timepoint in the learned representation space. The T1 and T2 embeddings were then 434 
+
+concatenated to form a longitudinal feature vector explicitly encoding pre-post neural change. 435 
+
+This fused representation was used as input to a lightweight, task-specific classifier trained to 436 
+
+> ∆
+
+EM. During linear probing, all FM weights remained frozen, and only the weights of the 437 
+
+downstream classifier were optimized. This setup isolates the representational capacity of the 438 
+
+pretrained rsfMRI FMs and allows a controlled comparison of their ability to extract longitudinal 439 
+
+representations that support both intervention-response prediction and downstream discovery of 440 
+
+latent brain-behavior patterns in small-sample intervention datasets ( Figure 3b ). Detailed training 441 
+
+configurations are described in Supplementary Materials .442 
+
+> 443
+
+Model fine-tuning 444 
+
+> 445
+
+To adapt the pretrained rsfMRI FM to aging-related neural variation before downstream 446 
+
+intervention analysis, supervised fine-tuning was performed on the ADNI dataset as a clinically 447 
+
+informed representation adaptation step. This fine-tuning step was applied exclusively to 448 
+
+BrainLM, based on its superior transfer performance in zero-shot and linear probing settings. 449 
+
+Fine-tuning was formulated as a binary classification task distinguishing participants diagnosed 450 
+
+with AD vs. HC. This task was selected to introduce aging- and pathology-relevant supervisory 451 
+
+signals into the pretrained representation space, without altering the downstream intervention 452 
+
+datasets. Only ADNI data were used during fine-tuning, and no ADNI subjects were included in 453 
+
+any downstream evaluation. To reduce overfitting risk and computational cost, lightweight Low-454 
+
+Rank Adaptation (LoRA) modules were inserted into the query, key, value, and output projection 455 
+
+layers of the self-attention blocks in the BrainLM transformer. Most pretrained FM weights 456 
+
+remained frozen, while the final transformer block was unfrozen to allow limited adaptation of 457 
+
+higher-level representations. It enables the model to incorporate domain-specific information 458 
+
+while preserving the general spatiotemporal representations learned during large-scale 459 
+
+pretraining. During fine-tuning, the downstream classifier consisted of a two-layer MLP operating 460 
+
+on the CLS token embedding produced by the BrainLM. Model optimization was conducted using 461 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 11
+
+the AdamW optimizer with differential learning rates applied to the adapted rsfMRI FM weights 462 
+
+and the downstream classifier. A cosine learning rate scheduler with warmup was used to 463 
+
+stabilize training. Early stopping was applied based on validation loss to prevent overfitting, and 464 
+
+the model checkpoint with the lowest validation loss was selected. After fine-tuning, the adapted 465 
+
+BrainLM model (denoted as BrainLM-ADNI) was used as a frozen feature extractor for all 466 
+
+downstream intervention-response prediction and latent pattern analyses. No further weight 467 
+
+updates were performed during linear probing on the ACT and CogTE datasets (see Figure 3c ). 468 
+
+> 469
+
+Compared ML and DL methods 470 
+
+> 471
+
+Support Vector Machine (SVM) served as a strong traditional machine learning method. For each 472 
+
+participant, FC matrices were computed separately for T1 and T2 rsfMRI scans. The upper 473 
+
+triangular elements of each FC matrix were flattened into feature vectors and concatenated 474 
+
+across timepoints to explicitly encode longitudinal change. The resulting feature vector was used 475 
+
+as input to a linear SVM classifier (see Figure 3d ). A linear kernel was chosen to reduce 476 
+
+overfitting risk under limited sample sizes. The regularization parameter  was optimized via grid 477 
+
+search within the training folds of the cross-validation procedure. 478 
+
+> 479
+
+Multilayer Perceptron (MLP) represents a vector-based deep learning method capable of 480 
+
+modeling nonlinear relationships. The input features were the same as those used for the SVM, 481 
+
+consisting of concatenated upper-triangular FC vectors from T1 and T2. The MLP architecture 482 
+
+comprised three fully connected layers with ReLU activation functions and dropout for 483 
+
+regularization (see Figure 3d ). Hyperparameters, including hidden layer dimensions, dropout 484 
+
+rates, and learning rate, were tuned within the training folds to mitigate overfitting. 485 
+
+> 486
+
+Graph Convolutional Network (GCN) was implemented to explicitly incorporate brain network 487 
+
+topology and model longitudinal graph-structured data. Brain regions of interest (ROIs) were 488 
+
+treated as nodes in a graph, with edges defined by a shared adjacency matrix constructed from a 489 
+
+control-group functional connectivity template. For each participant, node features were derived 490 
+
+from FC matrices at T1 and T2, resulting in two graph inputs representing baseline and post-491 
+
+intervention brain states. A dual-stream GCN architecture with shared weights was used to 492 
+
+process the T1 and T2 graphs in parallel. Each stream consisted of stacked graph convolutional 493 
+
+layers followed by graph-level pooling to produce timepoint-specific embeddings. These 494 
+
+embeddings were then fused by concatenation along with their difference to explicitly encode 495 
+
+longitudinal change. The fused representation was passed to a fully connected output layer for 496 
+
+classification (see Figure 3d ). Model parameters were optimized using the Adam optimizer, and 497 
+
+training was conducted within the same stratified cross-validation framework as all other models. 498 
+
+> 499
+
+Post-hoc latent pattern and cross-study consistency analyses 500 
+
+> 501
+
+Partial Least Squares (PLS) was performed to identify multivariate associations between FM-502 
+
+derived embeddings and whole-brain neural activity in each dataset independently. For each time 503 
+
+point (T1, T2), an embedding matrix    〕㐀〱  (d = 128) was constructed from the penultimate 504 
+
+layer of the downstream classifier, and a brain matrix    〕㐀ぃ (p = 424) was derived from parcel-505 
+
+wise ALFF values based on the A424 atlas. All variables were z-scored prior to analysis. 506 
+
+Canonical PLS (n_components = 3, max_iter = 2000) decomposed the cross-covariance ⢃ into 507 
+
+latent variables, yielding embedding scores (     け ) and brain scores (    げ), where け and 508 
+
+> げ
+
+denote the respective weight vectors. The brain loading vector げwas used to quantifies each 509 
+
+ROI’s contribution for subsequent spatial interpretation. The primary component was defined as 510 
+
+the one with the largest absolute between-group t-statistic on outcomes (responder vs. non-511 
+
+responder). This selection strategy prioritizes latent dimensions most relevant to individual 512 
+
+intervention response. Group differences in brain and embedding scores were assessed using 513 
+
+independent-samples t-tests. To account for potential violations of parametric assumptions, a 514 
+
+non-parametric permutation test (5,000 permutations) was conducted for the brain score of the 515 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 12
+
+primary component, with empirical p-values computed from the proportion of permuted 516 
+
+exceeding the observed value. Effect sizes were reported as Cohen’s d. To evaluate the 517 
+
+consistency across ACT and CogTE trials, we also tested correlation of loadings between studies 518 
+
+within each timepoints. The ROI regions were ranked by absolute values of PLS loadings within 519 
+
+studies and timepoints. We selected the union of ROIs of two trials selected by ranking 520 
+
+percentage from 10% to 90%, with 10% as interval. Based on these sets of ROIs, we tested 521 
+
+between-study correlation at each percentage thresholds. 522 
+
+> 523
+
+Data, Materials, and Software Availability 524 
+
+> 525
+
+Data from the ADNI are publicly available and can be accessed through the ADNI data-sharing 526 
+
+platform following approval of a data use application. Data from the ACT and CogTE intervention 527 
+
+studies contain information that could compromise participant privacy and are therefore not 528 
+
+publicly available; de-identified data may be made available from the corresponding authors upon 529 
+
+reasonable request and subject to institutional approval. All imaging data were processed using 530 
+
+publicly available software, including fMRIPrep and Nilearn . Publicly released checkpoints of 531 
+
+BrainLM and BrainJEPA were used in this study. Code supporting the analyses and results 532 
+
+reported here will be made publicly available upon publication. 533 
+
+> 534
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 13
+
+Acknowledgments 535 
+
+> 536
+
+The project was supported by NIH NR015452 and Stanford HAI grant. 537 
+
+> 538
+> 539
+
+References 540 
+
+> 541
+
+1. Medicine NA of S Engineering, and, Division H and M, Policy B on HS, Impairment C on PD 542 
+
+and C. Preventing Cognitive Decline and Dementia: A Way Forward . National Academies 543 
+
+Press; 2017. 544 
+
+2. Abrous DN, Blin N, Boraxbekk CJ, et al. Hallmarks of healthy cognitive aging: inter-individual 545 
+
+differences in aging trajectories. Ageing Research Reviews . Published online March 20, 546 
+
+2026:103102. doi:10.1016/j.arr.2026.103102 547 
+
+3. Chan ATC, Ip RTF, Tran JYS, Chan JYC, Tsoi KKF. Computerized cognitive training for 548 
+
+memory functions in mild cognitive impairment or dementia: a systematic review and meta-549 
+
+analysis. npj Digit Med . 2024;7(1):1. doi:10.1038/s41746-023-00987-5 550 
+
+4. Ciria LF, Román-Caballero R, Vadillo MA, et al. An umbrella review of randomized control 551 
+
+trials on the effects of physical exercise on cognition. Nat Hum Behav . 2023;7(6):928-941. 552 
+
+doi:10.1038/s41562-023-01554-4 553 
+
+5. Traut HJ, Guild RM, Munakata Y. Why Does Cognitive Training Yield Inconsistent Benefits? 554 
+
+A Meta-Analysis of Individual Differences in Baseline Cognitive Abilities and Training 555 
+
+Outcomes. Front Psychol . 2021;12. doi:10.3389/fpsyg.2021.662139 556 
+
+6. Stern Y. A framework for concepts of reserve and resilience in aging. Alzheimer’s & 557 
+
+Dementia . 2024;20(S7):e087228. doi:10.1002/alz.087228 558 
+
+7. Belleville S, Clément F, Mellah S, Gilbert B, Fontaine F, Gauthier S. Training-related brain 559 
+
+plasticity in subjects at risk of developing Alzheimer’s disease. Brain . 2011;134(6):1623-560 
+
+1634. doi:10.1093/brain/awr037 561 
+
+8. Liu ZQ, Luppi AI, Hansen JY, et al. Benchmarking methods for mapping functional 562 
+
+connectivity in the brain. Nat Methods . 2025;22(7):1593-1602. doi:10.1038/s41592-025-563 
+
+02704-4 564 
+
+9. Luppi AI, Mediano PAM, Rosas FE, et al. A synergistic core for human brain evolution and 565 
+
+cognition. Nat Neurosci . 2022;25(6):771-782. doi:10.1038/s41593-022-01070-0 566 
+
+10. Mooraj Z, Salami A, Campbell KL, et al. Toward a functional future for the cognitive 567 
+
+neuroscience of human aging. Neuron . 2025;113(1):154-183. 568 
+
+doi:10.1016/j.neuron.2024.12.008 569 
+
+11. Bastos AM, Schoffelen JM. A tutorial review of functional connectivity analysis methods and 570 
+
+their interpretational pitfalls. Frontiers in systems neuroscience . 2016;9:175. 571 
+
+12. Warren SL, Moustafa AA. Functional magnetic resonance imaging, deep learning, and 572 
+
+Alzheimer’s disease: A systematic review. Journal of Neuroimaging . 2023;33(1):5-18. 573 
+
+doi:10.1111/jon.13063 574 
+
+13. Lecoq J, Oliver M, Siegle JH, Orlova N, Ledochowitsch P, Koch C. Removing independent 575 
+
+noise in systems neuroscience data using DeepInterpolation. Nat Methods .576 
+
+2021;18(11):1401-1408. doi:10.1038/s41592-021-01285-2 577 
+
+14. Zhang K, Zhou R, Adhikarla E, et al. A generalist vision–language foundation model for 578 
+
+diverse biomedical tasks. Nat Med . 2024;30(11):3129-3141. doi:10.1038/s41591-024-03185-579 
+
+2580 
+
+15. A comprehensive survey on pretrained foundation models: a history from BERT to ChatGPT | 581 
+
+International Journal of Machine Learning and Cybernetics. Accessed January 30, 2025. 582 
+
+https://link.springer.com/article/10.1007/s13042-024-02443-6 583 
+
+16. Moor M, Banerjee O, Abad ZSH, et al. Foundation models for generalist medical artificial 584 
+
+intelligence. Nature . 2023;616(7956):259-265. doi:10.1038/s41586-023-05881-4 585 
+
+17. Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need. Advances in neural 586 
+
+information processing systems . 2017;30. 587 
+
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 14
+
+18. Caro JO, de Oliveira Fonseca AH, Rizvi SA, et al. BrainLM: A foundation model for brain 588 
+
+activity recordings. 589 
+
+19. Dong Z, Li R, Wu Y, et al. Brain-JEPA: Brain Dynamics Foundation Model with Gradient 590 
+
+Positioning and Spatiotemporal Masking. arXiv . Preprint posted online September 28, 591 
+
+2024:arXiv:2409.19407. doi:10.48550/arXiv.2409.19407 592 
+
+20. Bycroft C, Freeman C, Petkova D, et al. The UK Biobank resource with deep phenotyping 593 
+
+and genomic data. Nature . 2018;562(7726):203-209. 594 
+
+21. Van Essen DC, Ugurbil K, Auerbach E, et al. The Human Connectome Project: a data 595 
+
+acquisition perspective. Neuroimage . 2012;62(4):2222-2231. 596 
+
+22. Jack Jr CR, Bernstein MA, Fox NC, et al. The Alzheimer’s disease neuroimaging initiative 597 
+
+(ADNI): MRI methods. Journal of Magnetic Resonance Imaging: An Official Journal of the 598 
+
+International Society for Magnetic Resonance in Medicine . 2008;27(4):685-691. 599 
+
+23. Yu F, Lin FV, Salisbury DL, et al. Efficacy and mechanisms of combined aerobic exercise 600 
+
+and cognitive training in mild cognitive impairment: study protocol of the ACT trial. Trials .601 
+
+2018;19(1):700. doi:10.1186/s13063-018-3054-0 602 
+
+24. Lin FV, Tao Y, Chen Q, et al. Processing speed and attention training modifies autonomic 603 
+
+flexibility: A mechanistic intervention study. NeuroImage . 2020;213:116730. 604 
+
+doi:10.1016/j.neuroimage.2020.116730 605 
+
+25. Hearst MA, Dumais ST, Osuna E, Platt J, Scholkopf B. Support vector machines. IEEE 606 
+
+Intelligent Systems and their applications . 1998;13(4):18-28. 607 
+
+26. Rosenblatt F. The perceptron: a probabilistic model for information storage and organization 608 
+
+in the brain. Psychological review . 1958;65(6):386. 609 
+
+27. Kipf T. Semi-supervised classification with graph convolutional networks. arXiv preprint 610 
+
+arXiv:160902907 . Published online 2016. 611 
+
+28. Filippi M, Basaia S, Sarasso E, et al. Longitudinal brain connectivity changes and clinical 612 
+
+evolution in Parkinson’s disease. Mol Psychiatry . 2021;26(9):5429-5440. 613 
+
+doi:10.1038/s41380-020-0770-0 614 
+
+29. Sun L, Zhao T, Liang X, et al. Human lifespan changes in the brain’s functional connectome. 615 
+
+Nat Neurosci . 2025;28(4):891-901. doi:10.1038/s41593-025-01907-4 616 
+
+30. Dennis EL, Thompson PM. Functional Brain Connectivity Using fMRI in Aging and 617 
+
+Alzheimer’s Disease. Neuropsychol Rev . 2014;24(1):49-62. doi:10.1007/s11065-014-9249-6 618 
+
+31. Sambataro F, Murty VP, Callicott JH, et al. Age-related alterations in default mode network: 619 
+
+Impact on working memory performance. Neurobiology of Aging . 2010;31(5):839-852. 620 
+
+doi:10.1016/j.neurobiolaging.2008.05.022 621 
+
+32. Wei X, Zhao K, Jiao Y, He L, Zhang Y. A Brain Graph Foundation Model: Pre-Training and 622 
+
+Prompt-Tuning across Broad Atlases and Disorders. In: 2025. Accessed April 6, 2026. 623 
+
+https://openreview.net/forum?id=PeGHkAaRxs 624 
+
+33. Dong Z, Ruilin L, Chong JSX, et al. Brain Harmony: A Multimodal Foundation Model Unifying 625 
+
+Morphology and Function into 1D Tokens. In: 2025. Accessed January 26, 2026. 626 
+
+https://openreview.net/forum?id=tPJg65EB7D 627 
+
+34. Esteban O, Markiewicz CJ, Blair RW, et al. fMRIPrep: a robust preprocessing pipeline for 628 
+
+functional MRI. Nat Methods . 2019;16(1):111-116. doi:10.1038/s41592-018-0235-4 629 
+
+35. Andersson JLR, Skare S, Ashburner J. How to correct susceptibility distortions in spin-echo 630 
+
+echo-planar images: application to diffusion tensor imaging. NeuroImage . 2003;20(2):870-631 
+
+888. doi:10.1016/S1053-8119(03)00336-7 632 
+
+> 633
+> 634
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 15
+
+Figures and Tables 635 
+
+> 636
+
+Figure 1. Schematic overview of the analytical pipeline. rsfMRI data collected at baseline (T1) 637 
+
+and post-intervention (T2) were independently processed through a dual-stream architecture with 638 
+
+shared weights. Pretrained FMs (BrainLM or BrainJEPA) operate directly on regional-averaged 639 
+
+BOLD time-series, which are temporally segmented into patches to extract latent whole-brain 640 
+
+representations at T1 and T2 respectively. The resulting T1 and T2 embeddings were 641 
+
+concatenated to explicitly encode longitudinal neural change and used as input to a lightweight 642 
+
+downstream classifier trained to infer EM. Following model training and evaluation within a 643 
+
+stratified cross-validation framework, post-hoc multivariate analyses were performed to 644 
+
+characterize latent embedding-brain associations and assess their consistency across 645 
+
+independent studies. NOTE: rsfMRI, resting-state functional magnetic resonance imaging; FM, 646 
+
+foundation model; BOLD, blood-oxygen-level–dependent; T1/T2, baseline/post-intervention 647 
+
+timepoints; MLP, multilayer perceptron; EM, change of epsiodic memory; P, participant; RDM, 648 
+
+representational dissimilarity matrix. 649 
+
+> 650
+> 651
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 16
+
+Figure 2. Evaluation of rsfMRI FMs for classifying intervention-related episodic memory 652 
+
+response. (a) Benchmark comparison of classification performance between rsfMRI FMs 653 
+
+(BrainLM, BrainJEPA) and conventional ML and DL approaches (SVM, MLP, GCN) across two 654 
+
+independent intervention cohorts (CogTE and ACT). Models are trained to classify participants as 655 
+
+episodic memory responders vs. non-responders, based on pre-post changes in EM, using 656 
+
+baseline (T1) and post-intervention (T2) rsfMRI data. ACC and F1-score are reported as mean ± 657 
+
+standard deviation across stratified cross-validation folds. (b) Performance of the BrainLM-ADNI 658 
+
+under different timepoint combinations. Classification results for T1 + T2 , T1-only , and T2 − T1 659 
+
+input settings are shown for CogTE and ACT datasets (mean ± standard deviation across cross-660 
+
+validation folds). (c) Robustness of the adapted FM to common neuroimaging confounders in the 661 
+
+multi-site ACT dataset. Classification performance of BrainLM-ADNI is shown for original data, 662 
+
+data after site harmonization, and data after both site harmonization and head-motion regression. 663 
+
+(d) Classification performance of BrainLM-ADNI stratified by intervention arm in both CogTE and 664 
+
+ACT studies. Chi-square tests indicate no significant association between intervention 665 
+
+assignment and classification correctness. NOTE: rsfMRI, resting-state functional magnetic 666 
+
+resonance imaging; FM, foundation model; ML, machine learning; DL, deep learning; SVM, 667 
+
+support vector machine; MLP, multilayer perceptron; GCN, graph convolutional network; ACT, 668 
+
+Aerobic exercise and Cognitive Training study; CogTE, Cognitive Training and Exercise study; 669 
+
+ADNI, Alzheimer’s Disease Neuroimaging Initiative; ACC, accuracy. 670 
+
+> 671
+> 672
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 17
+
+Figure 3. PLS-derived embedding-brain associations and cross-study spatial patterns. (a-b) ACT 673 
+
+(a) and CogTE (b) PLS results. Top: T1; bottom: T2. Left: relationship between embedding scores 674 
+
+and brain scores. Middle: group differences in brain scores. Right: group differences in 675 
+
+embedding scores. Points are colored by responder status (stable vs. decline). Reported 676 
+
+statistics correspond to two-sample t-tests on subject-level PLS scores. For each study and 677 
+
+timepoint, the component shown represents the dominant embedding-brain association capturing 678 
+
+group differentiation. (c) Cross-study correlations of PLS brain loading patterns across increasing 679 
+
+thresholds of top-weighted regions (ranked by absolute loading). (d-e) Cross-study average 680 
+
+spatial distribution of top-weighted PLS loadings at baseline (T1; left) and post-intervention (T2; 681 
+
+right), shown in standard anatomical views and illustrating shared spatial organization of latent 682 
+
+neural patterns across the two intervention studies. 683 
+
+> 684
+> 685
+> 686
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 18
+
+Figure 4. Three-condition framework for identifying robust and generalizable neural patterns in 687 
+
+cognitive aging intervention studies. rsfMRI FMs are applied to local intervention studies 688 
+
+characterized by small sample sizes and heterogeneous responses. Under Condition 1 (rich 689 
+
+spatiotemporal representation), FMs extract latent neural embeddings from BOLD time series that 690 
+
+capture distributed dynamics beyond predefined features, enabling robust representation learning 691 
+
+and improved prediction of outcomes. Under Condition 2 (behavioral relevance), these 692 
+
+embeddings are linked to behavioral metrics through multivariate analysis, yielding latent 693 
+
+variables that characterize individual differences in intervention response. These latent 694 
+
+representations further support the identification of interpretable neural patterns. Under Condition 695 
+
+3 (cross-study robustness), neural patterns are evaluated across independent studies to identify 696 
+
+shared structures, distinguish arm-specific effects, and enable cross-study alignment. Together, 697 
+
+these steps define an intervention representation atlas that captures both shared and study-698 
+
+specific neural signatures. Alternative approaches, including cross-dataset transfer, embedding 699 
+
+alignment, and external validation, may provide complementary assessments of generalizability. 700 
+
+> 701
+> 702
+> 703
+> .CC-BY-NC-ND 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 15, 2026. ;https://doi.org/10.64898/2025.12.30.697042 doi: bioRxiv preprint 19
+
+Figure 5. Study datasets and implementation of rsfMRI FMs and comparison methods. (a) The 704 
+
+ACT and CogTE studies serve as independent intervention cohorts for downstream evaluation 705 
+
+and assessment of model generalizability across intervention paradigms and study designs. (b) 706 
+
+Domain-adaptive finetuning of BrainLM using the ADNI dataset via LoRA. Supervised finetuning 707 
+
+is performed to incorporate aging- and pathology-related brain patterns, yielding the adapted 708 
+
+BrainLM-ADNI model that is subsequently used as a frozen feature extractor in all downstream 709 
+
+intervention analyses. (c) Linear probing strategy for deploying pretrained rsfMRI FMs in 710 
+
+longitudinal intervention studies. The rsfMRI data collected at baseline (T1) and post-intervention 711 
+
+(T2) are processed independently through a frozen FM with shared weights, and CLS-token 712 
+
+embeddings from each timepoint are concatenated to explicitly encode longitudinal neural change 713 
+
+for downstream inference of EM outcomes. (d) Architectures of conventional comparison models. 714 
+
+FC features derived from rsfMRI data at T1 and T2 are used to train an SVM, an MLP, and a 715 
+
+dual-stream GCN that explicitly models longitudinal brain network changes. NOTE: rsfMRI, 716 
+
+resting-state functional magnetic resonance imaging; FM, foundation model; ACT, Aerobic 717 
+
+exercise and Cognitive Training study; MLA, mental leisure activity; CogTE, Cognitive Training 718 
+
+and Exercise study; ADNI, Alzheimer’s Disease Neuroimaging Initiative; EM, episodic memory; 719 
+
+FC, functional connectivity; T1/T2, baseline/post-intervention timepoints; SVM, support vector 720 
+
+machine; MLP, multilayer perceptron; GCN, graph convolutional network; LoRA, low-rank 721 
+
+adaptation; AD, Alzheimer’s Disease; HC, healthy control. 722

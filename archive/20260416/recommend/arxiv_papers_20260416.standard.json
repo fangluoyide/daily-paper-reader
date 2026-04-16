@@ -1,0 +1,704 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-04-16T20:19:19.411983+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 5,
+    "deep_cap": 7,
+    "deep_selected": 5,
+    "quick_candidates": 40,
+    "quick_skim_target": 12,
+    "quick_selected": 12
+  },
+  "deep_dive": [
+    {
+      "id": "2604.09070v1",
+      "source": "arxiv",
+      "title": "The Speculative Future of Conversational AI for Neurocognitive Disorder Screening: a Multi-Stakeholder Perspective",
+      "abstract": "Neurocognitive disorders (NCDs), such as Alzheimer's disease, are globally prevalent and require scalable screening methods for proactive management. Prior research has explored the potential of technologies like conversational AI (CAI) to administer NCD screening tests. However, challenges remain in designing CAI-based solutions that make routine NCD screening socially acceptable, engaging, and capable of encouraging early medical consultation. In this study, we conducted interviews with 36 participants, including clinicians, individuals at risk of NCDs, and their caregivers, to explore the speculative future of adopting CAI for NCD screening. Our findings reveal shared expectations, such as deploying CAI in home or community settings to reduce social stress. Nonetheless, conflicts emerged among stakeholders, for example, users' need for emotional support may conflict with clinicians' preference for CAI's professional and standardized administration. Then, we look into the user journey of NCD screening based on the current practice of manual screening and the expected CAI-supported screening. Finally, leveraging the human-centered approach, we provide actionable implications for future CAI design in NCD screening.",
+      "authors": [
+        "Jiaxiong Hu",
+        "Ruowen Niu",
+        "Qiuxin Du",
+        "Chenzhuo Xiang",
+        "Yirui Zuo",
+        "Jihong Jeung",
+        "Xiaojuan Ma"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-10T07:52:30+00:00",
+      "link": "https://arxiv.org/pdf/2604.09070v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "conversational AI for neurocognitive disorder screening in seniors",
+      "llm_evidence_cn": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "llm_evidence": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "canonical_evidence": "用于老年人神经认知障碍筛查的对话式人工智能",
+      "llm_tldr_en": "Explores the use of conversational AI for screening neurocognitive disorders in aging populations.",
+      "llm_tldr_cn": "探讨了使用对话式人工智能对老年群体进行神经认知障碍筛查的前景。",
+      "llm_tldr": "探讨了使用对话式人工智能对老年群体进行神经认知障碍筛查的前景。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2025-12-30-697042-v2",
+      "source": "biorxiv",
+      "title": "Resting-state fMRI foundation models enable robust and generalizable latent neural target discovery in cognitive aging interventions",
+      "abstract": "The benefits of interventions targeting cognitive aging vary substantially across individuals, largely owing to heterogeneity in aging-related comorbidities. It is necessary to robustly identify neural patterns underlying intervention response and test their generalizability across heterogeneous cohorts. Resting-state functional MRI (rsfMRI) offers a potential pathway, but relying on predefined summary features with conventional methods has limited capacity to capture both within-individual longitudinal variation and between-individual differences, particularly in small and heterogeneous studies. Recent rsfMRI foundation models pretrained on large observational cohorts present a promising alternative by learning transferable spatiotemporal representations from time-series signals. Yet their validity and generalizability in local intervention settings remain unclear. Here, we systematically evaluated rsfMRI foundation models using data from two independent randomized controlled trials of older adults with mild cognitive impairment, testing whether these models can robustly extract longitudinal brain representations that predict post-intervention changes in episodic memory across trials. Foundation models outperformed conventional machine learning and deep learning approaches across both trials. Clinically informed adaptation using an external Alzheimer's disease cohort further improved performance and robustness to confounders (i.e., head motion, site, and intervention arm), with accuracy up to 82%. Multivariate decomposition of foundation model embeddings identified latent neural patterns associated with episodic memory change with cross-study consistency at baseline that became more spatially distributed at post-intervention. These findings show that rsfMRI foundation models can enable robust and generalizable identification of latent neural patterns linking longitudinal brain dynamics to individual intervention response, laying the foundation for precision-driven neural target discovery in cognitive aging research.",
+      "authors": [
+        "Zhou, X.",
+        "Ai, M.",
+        "Adeli, E.",
+        "Zhang, Y.",
+        "Liu, Y. M.",
+        "Vankee-Lin, F."
+      ],
+      "primary_category": "bioengineering",
+      "categories": [
+        "bioengineering"
+      ],
+      "published": "2026-04-15T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2025.12.30.697042v2.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "neural target discovery in cognitive aging interventions",
+      "llm_evidence_cn": "认知老化干预中的神经靶点发现",
+      "llm_evidence": "认知老化干预中的神经靶点发现",
+      "canonical_evidence": "认知老化干预中的神经靶点发现",
+      "llm_tldr_en": "Uses fMRI foundation models to identify neural patterns in cognitive aging interventions for older adults.",
+      "llm_tldr_cn": "利用fMRI基础模型识别老年人认知老化干预中的神经模式。",
+      "llm_tldr": "利用fMRI基础模型识别老年人认知老化干预中的神经模式。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-08-717162-v1",
+      "source": "biorxiv",
+      "title": "Linguistic and Acoustic Biomarkers from Simulated Speech Reveal Early Cognitive Impairment Patterns in Alzheimers Disease",
+      "abstract": "BackgroundAlzheimers disease (AD) causes progressive decline in language and cognition. Automated speech analysis has emerged as a promising screening tool, yet clinical data scarcity limits progress. To address this, we generated a large-scale simulated speech dataset to model linguistic and acoustic deterioration across cognitive stages, Control, Mild Cognitive Impairment (MCI), and AD.\n\nMethodsUsing Monte Carlo simulations, we emulated the Pitt DementiaBank \"Cookie Theft\" narratives. Acoustic features (speech rate, pause duration, jitter, shimmer) and linguistic features (type-token ratio, unique-word count, filler usage) were synthetically sampled from real-world DementiaBank distributions. We trained an XGBoost classifier to distinguish diagnostic groups, and applied SHAP (Shapley Additive exPlanations) to assess feature importance.\n\nResultsThe model achieved high discriminative performance (AUC {approx} 0.94; accuracy {approx} 85%). Compared to controls, simulated MCI and AD groups showed progressive declines in fluency and lexical diversity, and increases in disfluencies and voice instability. SHAP analysis revealed that key predictors included reduced type-token ratio, higher pause and filler rates, and elevated jitter/shimmer. Classification was most accurate for Control vs. AD; MCI misclassifications highlighted intermediate profiles.\n\nInterpretationOur framework, FMN (Forget Me Not), captures clinically relevant speech changes using simulated data, offering an explainable and scalable approach for cognitive screening. While not a substitute for real datasets, FMN validates a pipeline that mirrors known AD markers and can guide future real-world deployments. External validation remains a key next step for translational impact.",
+      "authors": [
+        "Debnath, A.",
+        "Sarkar, S."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.08.717162v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "biomarkers for early cognitive impairment patterns in Alzheimer's",
+      "llm_evidence_cn": "阿尔茨海默病早期认知障碍模式的生物标志物",
+      "llm_evidence": "阿尔茨海默病早期认知障碍模式的生物标志物",
+      "canonical_evidence": "阿尔茨海默病早期认知障碍模式的生物标志物",
+      "llm_tldr_en": "Uses simulated speech to identify linguistic and acoustic biomarkers for cognitive decline in aging.",
+      "llm_tldr_cn": "利用模拟语音识别老年人认知能力下降的语言和声学生物标志物。",
+      "llm_tldr": "利用模拟语音识别老年人认知能力下降的语言和声学生物标志物。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-11-717798-v1",
+      "source": "biorxiv",
+      "title": "Network reconfiguration preserves prediction error signallingin the aging brain",
+      "abstract": "Cognitive aging is widely associated with a progressive weakening of predictive brain mechanisms. This view is supported by decades of electrophysiological studies reporting attenuated mismatch responses in older adults. Yet the literature remains inconsistent, suggesting that aging may not uniformly attenuate predictive processing. One possibility is that multiple predictive subsystems operate concurrently but have rarely been disentangled. Here we address this question by separating whole-brain networks underlying predictive processing in source-reconstructed magnetoencephalography (MEG) data from 77 younger and older adults performing the auditory local-global paradigm. Network decomposition revealed three temporally overlapping predictive subsystems with distinct functional profiles. Aging exerted selective effects across these networks. Sensory prediction error responses were enhanced within a network linking auditory cortices with medial cingulate regions, whereas responses associated with reorientation of attention and contextual pattern processing were attenuated in older adults. The level of multivariate recurrency across these networks was preserved with aging, while the processing of sensory violations induced more recurrency and less divergence relative to contextual violations in both groups. These findings challenge the prevailing view that predictive processing simply declines with age. Instead, aging redistributes predictive resources across distinct neural systems, amplifying sensory-based processes while weakening more cognitively demanding predictive mechanisms.",
+      "authors": [
+        "Andersen, M. H.",
+        "Fernandez-Rubio, G.",
+        "Quiroga-Martinez, D. R.",
+        "Rosso, M.",
+        "Klarlund, M.",
+        "Larsen, K. M.",
+        "Siebner, H. R.",
+        "Kringelbach, M. L.",
+        "Vuust, P.",
+        "Bonetti, L."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-14T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.11.717798v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "predictive brain mechanisms in the aging brain",
+      "llm_evidence_cn": "老龄化大脑中的预测性脑机制",
+      "llm_evidence": "老龄化大脑中的预测性脑机制",
+      "canonical_evidence": "老龄化大脑中的预测性脑机制",
+      "llm_tldr_en": "Investigates how network reconfiguration preserves predictive processing in healthy older adults.",
+      "llm_tldr_cn": "研究网络重构如何维持健康老年人的预测性加工能力。",
+      "llm_tldr": "研究网络重构如何维持健康老年人的预测性加工能力。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-04-13-717690-v1",
+      "source": "biorxiv",
+      "title": "Organization of functional brain networks architecture during negative movie watching in late adulthood",
+      "abstract": "Most evidence on age-related network topology derives from resting-state paradigms, leaving unclear how aging alters brain organization during naturalistic processing and whether graph-theoretical metrics relate to emotional and cognitive functioning in ecologically valid contexts. We analyzed movie-fMRI and behavioral data from 72 younger and 68 older adults, examining global (small-worldness, clustering coefficient, characteristic path length), network (participation coefficient), and nodal (degree centrality, betweenness centrality, nodal efficiency) properties. Regression models were used to test associations between nodal measures and both the Emotional Resilience Index (ERI) and the Cognitive Function Index (CFI), while mediation analyses were conducted to test whether nodal measures mediate the relationship between age and ERI. Older adults exhibited increased characteristic path length and clustering coefficient, indicating reduced global integration and greater local segregation. Although small-world organization was preserved in two groups, there was less pronounced small-world architecture in older adults compared to younger adults, suggesting a shift toward more regularized, locally clustered networks and reduced long-range connections during dynamic stimuli. Participation coefficient values were higher in the somatomotor, frontoparietal, and default mode networks, and lower in the subcortical network, among older adults reflecting greater between-network integration in cortical networks but diminished subcortical coordination in aging. Five key nodes, two thalamic regions, hippocampus, and two insular regions, showed reduced centrality and efficiency in older adults during the negative movie, indicating weakened dominance of subcortical hubs under emotional salience condition. Right thalamic nodal properties were negatively associated with ERI and CFI and served as mediators in the relationship between age and emotional resilience. These findings suggest that reduced thalamic hub centrality may reflect adaptive recalibration of salience emotional processing, linking network reorganization to improved emotional resilience in aging.",
+      "authors": [
+        "Sarebannejad, S.",
+        "Ye, S.",
+        "Ziaei, M."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-15T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.04.13.717690v1.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "aging brain organization and Cognitive Function Index",
+      "llm_evidence_cn": "老龄化大脑组织与认知功能指数",
+      "llm_evidence": "老龄化大脑组织与认知功能指数",
+      "canonical_evidence": "老龄化大脑组织与认知功能指数",
+      "llm_tldr_en": "Analyzes how aging alters functional brain networks during movie watching and its link to cognitive functioning.",
+      "llm_tldr_cn": "分析了电影观看期间老龄化如何改变功能性大脑网络及其与认知功能的联系。",
+      "llm_tldr": "分析了电影观看期间老龄化如何改变功能性大脑网络及其与认知功能的联系。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2604.06469v1",
+      "source": "arxiv",
+      "title": "Predicting Alzheimer's disease progression using rs-fMRI and a history-aware graph neural network",
+      "abstract": "Alzheimer's disease (AD) is a neurodegenerative disorder that affects more than seven million people in the United States alone. AD currently has no cure, but there are ways to potentially slow its progression if caught early enough. In this study, we propose a graph neural network (GNN)-based model for predicting whether a subject will transition to a more severe stage of cognitive impairment at their next clinical visit. We consider three stages of cognitive impairment in order of severity: cognitively normal (CN), mild cognitive impairment (MCI), and AD. We use functional connectivity graphs derived from resting-state functional magnetic resonance imaging (rs-fMRI) scans of 303 subjects, each with a different number of visits. Our GNN-based model incorporates a recurrent neural network (RNN) block, enabling it to process data from the subject's entire visit history. It can also work with irregular time gaps between visits by incorporating visit distance information into our input features. Our model demonstrates robust predictive performance, even with missing visits in the subjects' visit histories. It achieves an accuracy of 82.9%, with an especially impressive accuracy of 68.8% on CN to MCI conversions - a task that poses a substantial challenge in the field. Our results highlight the effectiveness of rs-fMRI in predicting the onset of MCI or AD and, in conjunction with other modalities, could offer a viable method for enabling timely interventions to slow the progression of cognitive impairment.",
+      "authors": [
+        "Mahdi Moghaddami",
+        "Mohammad-Reza Siadat",
+        "Austin Toma",
+        "Connor Laming",
+        "Huirong Fu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-07T21:13:50+00:00",
+      "link": "https://arxiv.org/pdf/2604.06469v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "predicting stages of cognitive impairment",
+      "llm_evidence_cn": "预测认知障碍阶段",
+      "llm_evidence": "预测认知障碍阶段",
+      "canonical_evidence": "预测认知障碍阶段",
+      "llm_tldr_en": "Uses GNN and rs-fMRI to predict the progression of cognitive impairment stages.",
+      "llm_tldr_cn": "利用图神经网络和静息态磁共振成像预测认知障碍阶段的进展。",
+      "llm_tldr": "利用图神经网络和静息态磁共振成像预测认知障碍阶段的进展。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive ability",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.07179v1",
+      "source": "arxiv",
+      "title": "NLP-Informed Dynamic Cognitive Diagnosis Modelling",
+      "abstract": "Digital learning platforms are increasingly used to support reading development while generating rich log files and item-level textual content. Using these data, this study proposes a dynamic cognitive diagnostic modelling (CDM) framework that incorporates text-derived semantic information to inform the estimation of the Q-matrix. We construct item-level semantic representations of question text and response options, and use these representations to define an informative prior on the Q-matrix. This approach treats text-derived signals as proxies for item complexity and cognitive demands, guiding the item-skill mapping in a data-driven manner. The proposed framework jointly estimates latent skill mastery profiles, item parameters, and transition dynamics over time within a Bayesian framework. We apply the model to data from Boost Reading, a digital reading supplement, focusing on students' vocabulary and comprehension skill development. We compare the proposed framework with a baseline model without any text information and show that the text-derived prior can improve Q-matrix recovery, particularly in settings where response data alone provide limited identification, as well as other model parameters for varying scenarios. This study provides a novel integration of natural language processing and dynamic CDMs, offering a data-driven approach to modelling skill acquisition and item-skill relationships in digital learning environments.",
+      "authors": [
+        "Yawen Ma",
+        "Sahoko Ishida",
+        "Kate Cain",
+        "Gabriel Wallin"
+      ],
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME"
+      ],
+      "published": "2026-04-08T15:07:38+00:00",
+      "link": "https://arxiv.org/pdf/2604.07179v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "dynamic cognitive diagnosis modelling for skill mastery",
+      "llm_evidence_cn": "技能掌握的动态认知诊断模型",
+      "llm_evidence": "技能掌握的动态认知诊断模型",
+      "canonical_evidence": "技能掌握的动态认知诊断模型",
+      "llm_tldr_en": "Proposes a dynamic cognitive diagnostic framework using NLP to estimate skill mastery in learning.",
+      "llm_tldr_cn": "提出一种利用自然语言处理评估学习中技能掌握情况的动态认知诊断框架。",
+      "llm_tldr": "提出一种利用自然语言处理评估学习中技能掌握情况的动态认知诊断框架。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive ability",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.11961v1",
+      "source": "arxiv",
+      "title": "Fall Risk and Gait Analysis in Community-Dwelling Older Adults using World-Spaced 3D Human Mesh Recovery",
+      "abstract": "Gait assessment is a key clinical indicator of fall risk and overall health in older adults. However, standard clinical practice is largely limited to stopwatch-measured gait speed. We present a pipeline that leverages a 3D Human Mesh Recovery (HMR) model to extract gait parameters from recordings of older adults completing the Timed Up and Go (TUG) test. From videos recorded across different community centers, we extract and analyze spatiotemporal gait parameters, including step time, sit-to-stand duration, and step length. We found that video-derived step time was significantly correlated with IMU-based insole measurements. Using linear mixed effects models, we confirmed that shorter, more variable step lengths and longer sit-to-stand durations were predicted by higher self-rated fall risk and fear of falling. These findings demonstrate that our pipeline can enable accessible and ecologically valid gait analysis in community settings.",
+      "authors": [
+        "Chitra Banarjee",
+        "Patrick Kwon",
+        "Ania Lipat",
+        "Rui Xie",
+        "Chen Chen",
+        "Ladda Thiamwong"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-04-13T18:52:12+00:00",
+      "link": "https://arxiv.org/pdf/2604.11961v1",
+      "tags": [
+        "keyword:COG ELD",
+        "query:COG ELD"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "gait analysis and health assessment in community-dwelling older adults",
+      "llm_evidence_cn": "社区老年人的步态分析与健康评估",
+      "llm_evidence": "社区老年人的步态分析与健康评估",
+      "canonical_evidence": "社区老年人的步态分析与健康评估",
+      "llm_tldr_en": "Develops a 3D mesh recovery pipeline for clinical gait assessment and fall risk in older adults.",
+      "llm_tldr_cn": "开发了一种3D人体网格恢复流水线，用于老年人临床步态评估和跌倒风险分析。",
+      "llm_tldr": "开发了一种3D人体网格恢复流水线，用于老年人临床步态评估和跌倒风险分析。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "healthy elderly people",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.07228v1",
+      "source": "arxiv",
+      "title": "Emergence of cooperation in nonlinear higher-order public goods games",
+      "abstract": "Evolutionary game theory has provided substantial contributions to explain the emergence of cooperation under unfavourable conditions in ecology, economics, and the social sciences. Recently, inspired by newly available empirical evidence on group interactions, higher-order networks have emerged as a natural framework to properly encode multiplayer games in structured populations. Here, we study the emergence of cooperation in a nonlinear public goods game (PGG) on hypergraphs, where collective reinforcement captures the synergistic or discounting effect associated with each additional cooperator. In well-mixed populations, single-order PGGs, where all games have the same number of players, display a change in the nature of transition from continuous to discontinuous depending on the exact form of nonlinearity. By contrast, mixed-order PGGs, where games with different number of players coexist, exhibit a richer dynamical regime wherein a state of active coexistence of bistability and cooperation can arise. We further find that scale-free hypergraphs promote cooperation, highlighting the crucial role played by both the initial placement of cooperators and the presence of hyperdegree correlations. Overall, our results provide a comprehensive characterization of nonlinear PGGs on hypergraphs and open up new avenues for richer models of evolutionary dynamics of multiplayer interactions on structured populations.",
+      "authors": [
+        "Jaume Llabrés",
+        "Onkar Sadekar",
+        "Federico Malizia",
+        "Federico Battiston"
+      ],
+      "primary_category": "physics.soc-ph",
+      "categories": [
+        "physics.soc-ph",
+        "cs.GT",
+        "cs.SI",
+        "math.DS",
+        "q-bio.PE"
+      ],
+      "published": "2026-04-08T15:51:03+00:00",
+      "link": "https://arxiv.org/pdf/2604.07228v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "emergence of cooperation in public goods games",
+      "llm_evidence_cn": "公共物品博弈中合作的产生",
+      "llm_evidence": "公共物品博弈中合作的产生",
+      "canonical_evidence": "公共物品博弈中合作的产生",
+      "llm_tldr_en": "Analyzes how cooperation emerges in higher-order social networks using evolutionary game theory.",
+      "llm_tldr_cn": "利用演化博弈论分析高阶社会网络中合作行为的产生机制。",
+      "llm_tldr": "利用演化博弈论分析高阶社会网络中合作行为的产生机制。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2604.12789v1",
+      "source": "arxiv",
+      "title": "A sequential explanatory mixed-methods study on the acceptance of a social robot for EFL speaking practice among Chinese primary school students: Insights from the Computers Are Social Actors (CASA) paradigm",
+      "abstract": "This study investigates Chinese primary school students' acceptance of a social robot for English-as-a-foreign-language (EFL) speaking practice through a sequential explanatory mixed-methods design. Integrating the Technology Acceptance Model (TAM) and the Computers Are Social Actors (CASA) paradigm, the research explores both functional and social factors influencing learners' behavioural intention to use the robot. Quantitative data from 436 students were analysed using structural equation modelling, followed by qualitative interviews with twelve students to interpret the findings. Results show that perceived enjoyment and ease of use are the strongest predictors of acceptance, while social attributes such as warmth, anthropomorphism, and social presence significantly enhance enjoyment. Perceived intelligence affects usefulness but not ease of use. The findings suggest that emotional and social engagement are central to young learners' acceptance of educational robots, highlighting the importance of designing socially intelligent technologies that promote motivation and speaking confidence in EFL learning contexts.",
+      "authors": [
+        "Yiran Du",
+        "Jinlong Li",
+        "Huimin He",
+        "Chenghao Wang",
+        "Bin Zou"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-14T14:22:03+00:00",
+      "link": "https://arxiv.org/pdf/2604.12789v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "social robot acceptance and social factors in Chinese primary students",
+      "llm_evidence_cn": "中国小学生对社交机器人的接受度及社交因素",
+      "llm_evidence": "中国小学生对社交机器人的接受度及社交因素",
+      "canonical_evidence": "中国小学生对社交机器人的接受度及社交因素",
+      "llm_tldr_en": "Studies Chinese students' acceptance of social robots for language practice using social actor paradigms.",
+      "llm_tldr_cn": "利用社交角色范式研究中国学生对用于语言练习的社交机器人的接受度。",
+      "llm_tldr": "利用社交角色范式研究中国学生对用于语言练习的社交机器人的接受度。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.07881v1",
+      "source": "arxiv",
+      "title": "From Clicking to Moving: Embodied Micro-Movements as a New Modality for Data Literacy Learning",
+      "abstract": "Widespread digital learning has expanded access to education but has resulted in highly sedentary, click-based interaction, contributing to digital fatigue, reduced cognitive flexibility, and health risks associated with prolonged passive screen time. Meanwhile, data literacy has become an essential competency in a data-driven society, yet it is typically taught through passive, disembodied interfaces that offer little physical engagement. We present Kinetiq (Kinetic+IQ), a novel system that integrates fun, full-body micro-movements directly into data and numeracy problem solving. Instead of selecting answers with a mouse, learners interact through natural gestures such as reaching, dodging, heading, elbowing, or knee-raising, thus turning abstract data problem-solving into embodied experiences that integrate thinking with movement. In a preliminary within-subjects study comparing Kinetiq with conventional platforms, participants reported significantly higher affective valence, enjoyment, engagement, and motivation, while maintaining comparable learning gains. We contribute: (1) a task-integrated movement paradigm for data learning, (2) a cross-platform web and mobile app system enabling full-body learning in constrained everyday spaces, and (3) preliminary empirical evidence that embodied micro-movements can enrich the affective experience of data literacy learning.",
+      "authors": [
+        "Annabella Sakunkoo",
+        "Jonathan Sakunkoo"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "published": "2026-04-09T06:50:55+00:00",
+      "link": "https://arxiv.org/pdf/2604.07881v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "fun movements to reduce cognitive fatigue and improve learning",
+      "llm_evidence_cn": "趣味运动以减少认知疲劳并提高学习效果",
+      "llm_evidence": "趣味运动以减少认知疲劳并提高学习效果",
+      "canonical_evidence": "趣味运动以减少认知疲劳并提高学习效果",
+      "llm_tldr_en": "Integrates full-body micro-movements into digital learning to improve engagement and cognitive flexibility.",
+      "llm_tldr_cn": "将全身微运动整合到数字化学习中，以提高参与度和认知灵活性。",
+      "llm_tldr": "将全身微运动整合到数字化学习中，以提高参与度和认知灵活性。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-1101-2024-10-09-617461-v2",
+      "source": "biorxiv",
+      "title": "Unveiling value functions in social cognition with multi-agentinverse reinforcement learning",
+      "abstract": "Social behavior requires individuals to consider not only their own goals but also those of others. Latent value functions that encode such goals can be recovered from behavior using inverse reinforcement learning in single-agent settings. However, extending it to multi-agent interactions is challenging, because value functions are defined over joint state spaces that grow exponentially with the number of agents. Existing approaches often manage this complexity by imposing strong structural assumptions about social interactions, thereby limiting their applicability and interpretability. Here we show that joint value functions governing social interactions can be effectively represented through value decomposition into individual value maps for each agent and low-dimensional interaction terms. We develop a multi-agent inverse reinforcement learning framework (MAIRL) to infer these representations from behavior. In mouse and primate social tasks, MAIRL reveals interpretable value maps that are conditioned on the distinct social roles animals play during group behavior. Together, these results establish MAIRL as an interpretable and scalable framework for identifying latent value representations guiding multi-agent behavior across species.",
+      "authors": [
+        "Chen, Y.",
+        "Cheng, Y.",
+        "Kwak, M.",
+        "Radulescu, A.",
+        "Wu, H. Z."
+      ],
+      "primary_category": "animal behavior and cognition",
+      "categories": [
+        "animal behavior and cognition"
+      ],
+      "published": "2026-04-08T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2024.10.09.617461v2.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "value functions in social cognition and behavior",
+      "llm_evidence_cn": "社会认知与行为中的价值函数",
+      "llm_evidence": "社会认知与行为中的价值函数",
+      "canonical_evidence": "社会认知与行为中的价值函数",
+      "llm_tldr_en": "Uses inverse reinforcement learning to unveil latent value functions governing multi-agent social interactions.",
+      "llm_tldr_cn": "使用逆强化学习揭示了控制多智能体社会互动的潜在价值函数。",
+      "llm_tldr": "使用逆强化学习揭示了控制多智能体社会互动的潜在价值函数。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.08062v1",
+      "source": "arxiv",
+      "title": "From Gaze to Guidance: Interpreting and Adapting to Users' Cognitive Needs with Multimodal Gaze-Aware AI Assistants",
+      "abstract": "Current LLM assistants are powerful at answering questions, but they have limited access to the behavioral context that reveals when and where a user is struggling. We present a gaze-grounded multimodal LLM assistant that uses egocentric video with gaze overlays to identify likely points of difficulty and target follow-up retrospective assistance. We instantiate this vision in a controlled study (n=36) comparing the gaze-aware AI assistant to a text-only LLM assistant. Compared to a conventional LLM assistant, the gaze-aware assistant was rated as significantly more accurate and personalized in its assessments of users' reading behavior and significantly improved people's ability to recall information. Users spoke significantly fewer words with the gaze-aware assistant, indicating more efficient interactions. Qualitative results underscored both perceived benefits in comprehension and challenges when interpretations of gaze behaviors were inaccurate. Our findings suggest that gaze-aware LLM assistants can reason about cognitive needs to improve cognitive outcomes of users.",
+      "authors": [
+        "Valdemar Danry",
+        "Javier Hernandez",
+        "Andrew Wilson",
+        "Pattie Maes",
+        "Judith Amores"
+      ],
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "published": "2026-04-09T10:25:42+00:00",
+      "link": "https://arxiv.org/pdf/2604.08062v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "adapting to users' cognitive needs with AI assistants",
+      "llm_evidence_cn": "利用人工智能助手适应用户的认知需求",
+      "llm_evidence": "利用人工智能助手适应用户的认知需求",
+      "canonical_evidence": "利用人工智能助手适应用户的认知需求",
+      "llm_tldr_en": "Presents a gaze-aware AI assistant that identifies and adapts to users' cognitive difficulties during reading.",
+      "llm_tldr_cn": "介绍一种能够识别并适应用户阅读时认知困难的视线感知AI助手。",
+      "llm_tldr": "介绍一种能够识别并适应用户阅读时认知困难的视线感知AI助手。",
+      "llm_tags": [
+        "query:cog-eld"
+      ],
+      "matched_query_tag": "query:cog-eld",
+      "matched_query_text": "cognitive ability",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-1101-2025-03-09-642165-v3",
+      "source": "biorxiv",
+      "title": "Structural Connectome Analysis using a Graph-based Deep Model for Age and Dementia Prediction",
+      "abstract": "We address the prediction of non-imaging variables based on structural brain connectivity derived from diffusion magnetic resonance images, using graph-based machine learning. We predict age and the mini-mental state examination (MMSE) score as examples of a demographic and a clinical variable. We propose a machine-learning model inspired by graph convolutional networks (GCNs), which takes a brain connectivity graph as input and processes the data separately through a parallel GCN mechanism with multiple branches. The novelty of our work lies in the model architecture, especially the Connectivity Attention Block, which learns an embedding representation of brain graphs while providing graph-level attention. We show experiments on publicly available datasets of PREVENT-AD and OASIS3. We validate our model by comparing it to existing methods and via ablations. This quantifies the degree to which the connectome varies depending on the task, which is important for improving our understanding of health and disease across the population. The proposed model generally demonstrates higher performance especially for age prediction compared to the existing machine-learning algorithms we tested, including classical methods and (graph and non-graph) deep learning.",
+      "authors": [
+        "Kazi, A.",
+        "Mora, J.",
+        "Fischl, B.",
+        "Dalca, A.",
+        "Aganj, I."
+      ],
+      "primary_category": "bioinformatics",
+      "categories": [
+        "bioinformatics"
+      ],
+      "published": "2026-04-10T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.03.09.642165v3.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "predicts age and MMSE scores using graph-based deep learning on brain connectivity",
+      "llm_evidence_cn": "利用基于图的深度学习对大脑连接进行年龄和MMSE评分预测",
+      "llm_evidence": "利用基于图的深度学习对大脑连接进行年龄和MMSE评分预测",
+      "canonical_evidence": "利用基于图的深度学习对大脑连接进行年龄和MMSE评分预测",
+      "llm_tldr_en": "Uses graph convolutional networks to predict age and cognitive status from structural brain connectomes.",
+      "llm_tldr_cn": "利用图卷积网络从结构性大脑连接组中预测年龄和认知状态。",
+      "llm_tldr": "利用图卷积网络从结构性大脑连接组中预测年龄和认知状态。",
+      "llm_tags": [
+        "query:cog-eld:composite"
+      ],
+      "matched_query_tag": "query:cog-eld:composite",
+      "matched_query_text": "Papers central to 查找游戏如何促进健康老年人认知能力的研究论文, especially work that connects or combines: g; healthy elderly people; cognitive ability; cognitive health in healthy older adults; game-based cognitive training for seniors; neuroplasticity and gaming in elderly; games promote the cognitive ability; effects of video game play on cognitive abilities in healthy elderly; systematic review of game based cognitive interventions for seniors; randomized controlled trials of gaming for cognitive health in aging.",
+      "matched_requirement_id": "req-composite-cog-eld",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.08727v1",
+      "source": "arxiv",
+      "title": "Communicate-Predict-Act: Evaluating Social Intelligence of Agents",
+      "abstract": "As large language model (LLM) agents become more prevalent in real world social settings, social intelligence will play an increasingly critical role. But social intelligence is still a poorly defined construct, for humans and artificial agents. We introduce a multiplayer arena of mixed cooperative and competitive social games to study LLM social intelligence. The controllability of LLM based agents enables systematic evaluation, which also supports broader inferences about social intelligence per se. We evaluated eight diverse LLMs (24B to 1T parameters) using a Communicate Predict Act (COMPACT) interaction protocol and fine grained probing of social dynamics. Elo style ratings reveal consistent performance differences across models, but this scalar measure provides only a partial characterization of social intelligence. To address this limitation, we analyze gameplay traces to extract sociocognitive metrics capturing action prediction, communicative influence, strategic reasoning, and tradeoffs under conflicting interests. These sociocognitive metrics exhibit strong intramodel consistency and they reliably predict pairwise agent advantage in game outcomes (AUC ROC = 0.82). Feature importance analysis indicates that surprisingly, influence, transparency, and adaptability are more predictive of success than Theory of Mind inference or deep planning. Together, our results advance a testable, multidimensional conception of social intelligence and provide empirical insights into the capacities that underpin it.",
+      "authors": [
+        "David Shoresh",
+        "Sarit Kraus",
+        "Yonatan Loewenstein"
+      ],
+      "primary_category": "cs.CY",
+      "categories": [
+        "cs.CY"
+      ],
+      "published": "2026-04-09T19:40:15+00:00",
+      "link": "https://arxiv.org/pdf/2604.08727v1",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "evaluating social intelligence through games",
+      "llm_evidence_cn": "通过游戏评估社交智能",
+      "llm_evidence": "通过游戏评估社交智能",
+      "canonical_evidence": "通过游戏评估社交智能",
+      "llm_tldr_en": "Uses multiplayer social games to evaluate the social intelligence of artificial agents.",
+      "llm_tldr_cn": "利用多玩家社交游戏评估人工智能体的社交智能。",
+      "llm_tldr": "利用多玩家社交游戏评估人工智能体的社交智能。",
+      "llm_tags": [
+        "query:profile-1:composite"
+      ],
+      "matched_query_tag": "query:profile-1:composite",
+      "matched_query_text": "Papers central to 查找有关测量幼儿游戏性与幼儿社会性或者社会技能的研究, especially work that connects or combines: sociality and social development in children; social skills development in preschoolers; p; y; Chinese scale for measuring children 's sociality.",
+      "matched_requirement_id": "req-composite-profile-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "biorxiv-10-64898-2026-01-06-697951-v2",
+      "source": "biorxiv",
+      "title": "Co-Designing Research Priorities in Developmental Neuroscience: A Community-Based Participatory Approach",
+      "abstract": "Children and adolescents, the primary participants in developmental neuroscience research, are rarely consulted or included in the research design process. By neglecting their perspectives and needs, we risk limiting the relevance and effectiveness of translational research that may emerge from this work. Here, we report on a process of co-design with adolescents to inform the generation of a new population neuroimaging research programme. We employed a two-study community-based participatory approach and used mixed methods to identify the research priorities of this community. In the first study, 79 secondary school students from four schools were introduced to fundamental neuroscience concepts during five one-hour workshops. In groups, they then designed research studies, centred around topics they deemed important, and were asked to present their ideas through poster presentations, role playing as neuroscientists. Reflexive thematic analysis was conducted on these posters, extracting ten key themes. In the second study, 376 students from four different schools, ranked these ten themes in order of importance. Mental health and stress consistently emerged as the highest priorities. Further exploratory analysis revealed that the priority for exploring everyday routines and understanding anti-social behaviours varied across schools and age groups, while the importance of mental health varied significantly between genders. This work provides an illustration of how to implement place-based participatory approaches at the early stages of a developmental neuroscience research project to maximise inclusivity and potential downstream translation and impact.",
+      "authors": [
+        "Hiley, K.",
+        "Ryan, D.",
+        "Kouara, L.",
+        "Mirza, Z.",
+        "Mon-Williams, M.",
+        "Mushtaq, F."
+      ],
+      "primary_category": "neuroscience",
+      "categories": [
+        "neuroscience"
+      ],
+      "published": "2026-04-09T00:00:00+00:00",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.01.06.697951v2.full.pdf",
+      "tags": [
+        "keyword:COG ELD",
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "developmental neuroscience research involving children and adolescents",
+      "llm_evidence_cn": "涉及儿童和青少年的发展神经科学研究",
+      "llm_evidence": "涉及儿童和青少年的发展神经科学研究",
+      "canonical_evidence": "涉及儿童和青少年的发展神经科学研究",
+      "llm_tldr_en": "Uses a participatory approach to identify research priorities in developmental neuroscience for children.",
+      "llm_tldr_cn": "采用参与式方法确定儿童发展神经科学的研究重点。",
+      "llm_tldr": "采用参与式方法确定儿童发展神经科学的研究重点。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2604.09026v1",
+      "source": "arxiv",
+      "title": "Social Reality Construction via Active Inference: Modeling the Dialectic of Conformity and Creativity",
+      "abstract": "Social agents both internalize collective norms and reshape them through creative action, yet computational models have not captured this bidirectional process within a unified framework. We propose a multi-agent simulation model grounded in active inference that formalizes the dialectical constitution of social reality on a structured social network. Each agent maintains an internal generative model, communicates with neighbors to form social priors, creates novel observations, and selectively incorporates others' creations into memory. Simulation experiments demonstrate three main findings. First, informationally cohesive social groups emerge endogenously, with representational alignment mirroring the cluster topology of the underlying network. Second, a circular mutual constitution arises between social representations and the observation distribution, maintained through agents' creative acts that project representational structure onto the external world. Third, the propagation of creations exhibits selective, heterogeneous patterns distinct from the stable diffusion of social representations, indicating that agents construct cultural niches through local interaction dynamics. These results suggest that the interplay between social conformity and creative deviation can give rise to the endogenous formation and differentiation of shared social reality.",
+      "authors": [
+        "Kentaro Nomura",
+        "Takato Horii"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.NE"
+      ],
+      "published": "2026-04-10T06:43:50+00:00",
+      "link": "https://arxiv.org/pdf/2604.09026v1",
+      "tags": [
+        "keyword:幼儿研究",
+        "query:COG ELD",
+        "query:幼儿研究"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "modeling social reality construction and conformity",
+      "llm_evidence_cn": "模拟社会现实构建与从众行为",
+      "llm_evidence": "模拟社会现实构建与从众行为",
+      "canonical_evidence": "模拟社会现实构建与从众行为",
+      "llm_tldr_en": "Proposes an active inference model to simulate how agents internalize and reshape social norms.",
+      "llm_tldr_cn": "提出一种主动推理模型，模拟个体如何内化并重塑社会规范。",
+      "llm_tldr": "提出一种主动推理模型，模拟个体如何内化并重塑社会规范。",
+      "llm_tags": [
+        "query:q1"
+      ],
+      "matched_query_tag": "query:q1",
+      "matched_query_text": "sociality and social development in children",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

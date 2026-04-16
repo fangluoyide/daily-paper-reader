@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-001.webp",
+      "caption": "Figure 5: Age-related differences in priorities for the two themes that showed statistically significant differences. Older adolescents prioritised the study of anti-social behaviour while younger participants ranked the theme of “everyday routines” more highly. Lower values indicate higher priority.",
+      "page": 21,
+      "index": 1,
+      "width": 723,
+      "height": 683
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-002.webp",
+      "caption": "Figure 6: Differences in priorities across schools for themes Mental Health, Anti-Social Behaviour and Everyday Routines. Lower values indicate higher priority.",
+      "page": 22,
+      "index": 2,
+      "width": 943,
+      "height": 527
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-003.webp",
+      "caption": "Figure 1: Indices of Multiple Deprivation for participating schools in Study 1 (1, 2, 3, 4), generating priorities and Study 2 (A, B, C, D), ranking priorities. Index deciles are presented for overall Index of Multiple Deprivation (IMD), Income, Employment, Education, Health and Disability, Crime, Barriers to Housing and Services and Living Environment. Darker colours indicate higher deprivation decile (1 = most deprived, 10 = least deprived).",
+      "page": 8,
+      "index": 3,
+      "width": 596,
+      "height": 596
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-004.webp",
+      "caption": "Figure 3: Distribution of average ranks across the ten priorities. Lower values indicate higher priority. Dots represent individual responses and boxplots summarise the central tendency and spread of ranks",
+      "page": 19,
+      "index": 4,
+      "width": 943,
+      "height": 591
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-005.webp",
+      "caption": "Figure 2: Thematic map derived from reflexive thematic analysis of the workshop posters. The map preserves participant-generated labels where possible and shows four overarching themes (in coloured circles and linked with dotted lines) alongside connected subthemes (in solid lines). Overlap indicates conceptual proximity within the analytic map.",
+      "page": 12,
+      "index": 5,
+      "width": 912,
+      "height": 648
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-01-06-697951-v2/fig-006.webp",
+      "caption": "Figure 4: Ranked importance of mental health by gender. Lower values indicate higher priority. The figure shows the only gender difference that remained significant after FDR correction.",
+      "page": 20,
+      "index": 6,
+      "width": 746,
+      "height": 743
+    }
+  ]
+}

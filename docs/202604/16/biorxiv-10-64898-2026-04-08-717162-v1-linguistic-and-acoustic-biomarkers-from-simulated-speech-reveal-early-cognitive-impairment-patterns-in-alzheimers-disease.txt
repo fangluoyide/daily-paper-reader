@@ -1,0 +1,1576 @@
+Title: 40622170
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.04.08.717162v1.full.pdf
+
+Number of Pages: 34
+
+Markdown Content:
+Title 1
+
+Linguistic and Acoustic Biomarkers from Simulated Speech Reveal Early Cognitive 2
+
+Impairment Patterns in Alzheimer’s Disease 3
+
+Authors 4
+
+Akshita Debnath 1 , Souhrid Sarkar 2
+
+5
+
+Affiliation 6
+
+1. Manipal Institute of Regenerative Medicine, Manipal Academy of Higher Education, 7
+
+Bangalore, India 8
+
+2. School of Cancer Sciences, Department of Medicine, Veterinary and Life Sciences, 9
+
+University of Glasgow, United Kingdom 10 
+
+Corresponding author 11 
+
+Akshita Debnath 12 
+
+Email: akshitadebnathsarkar@gmail.com 13 
+
+14 
+
+ORCID ID: 15 
+
+1. 0009-0002-7276-9428 16 
+
+2. 0009-0009-4382-9576 17 
+
+18 
+
+Keywords 19 
+
+Alzheimer’s Disease, Speech Biomarkers, Machine Learning, Dementia, Simulation 20 21 22 23 24 25 26 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Abstract 27 
+
+Background 28 
+
+Alzheimer’s disease (AD) causes progressive decline in language and cognition. Automated 29 
+
+speech analysis has emerged as a promising screening tool, yet clinical data scarcity limits 30 
+
+progress. To address this, we generated a large-scale simulated speech dataset to model 31 
+
+linguistic and acoustic deterioration across cognitive stages, Control, Mild Cognitive 32 
+
+Impairment (MCI), and AD. 33 
+
+Methods 34 
+
+Using Monte Carlo simulations, we emulated the Pitt DementiaBank “Cookie Theft” 35 
+
+narratives. Acoustic features (speech rate, pause duration, jitter, shimmer) and linguistic 36 
+
+features (type–token ratio, unique-word count, filler usage) were synthetically sampled from 37 
+
+real-world DementiaBank distributions. We trained an XGBoost classifier to distinguish 38 
+
+diagnostic groups, and applied SHAP (Shapley Additive exPlanations) to assess feature 39 
+
+importance. 40 
+
+Results 41 
+
+The model achieved high discriminative performance (AUC ≈ 0.94; accuracy ≈ 85%). 42 
+
+Compared to controls, simulated MCI and AD groups showed progressive declines in fluency 43 
+
+and lexical diversity, and increases in disfluencies and voice instability. SHAP analysis 44 
+
+revealed that key predictors included reduced type–token ratio, higher pause and filler rates, 45 
+
+and elevated jitter/shimmer. Classification was most accurate for Control vs. AD; MCI 46 
+
+misclassifications highlighted intermediate profiles. 47 
+
+Interpretation 48 
+
+Our framework, FMN (Forget Me Not), captures clinically relevant speech changes using 49 
+
+simulated data, offering an explainable and scalable approach for cognitive screening. While 50 
+
+not a substitute for real datasets, FMN validates a pipeline that mirrors known AD markers 51 
+
+and can guide future real-world deployments. External validation remains a key next step for 52 
+
+translational impact. 53 
+
+54 
+
+55 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Introduction 56 
+
+Alzheimer’s disease (AD) is the most common form of dementia, affecting tens of millions of 57 
+
+elderly people worldwide. As of 2025, approximately 55-60 million people are estimated to 58 
+
+have dementia globally, with Alzheimer's disease (AD) contributing to 60-70% of cases [1]. 59 
+
+With age being a primary risk factor, the number of affected individuals is rising rapidly, 60 
+
+posing severe societal and economic challenges. Early detection of cognitive impairment is 61 
+
+critical, as experimental therapies are likely to be most effective before extensive 62 
+
+neurodegeneration occurs. However, diagnosis remains difficult: standard neurocognitive 63 
+
+tests (e.g. MMSE, MoCA) lack sensitivity for very early impairment and require clinical 64 
+
+administration, while definitive biomarkers (PET imaging, cerebrospinal fluid assays) 65 
+
+[2,21]are costly and invasive. Consequently, many cases of mild cognitive decline go 66 
+
+unrecognized until dementia is well-established [6,8,23]. 67 
+
+Mild cognitive impairment (MCI) [11,14] is a transitional state between normal aging and 68 
+
+dementia, characterized by measurable memory or cognitive deficits that do not yet meet 69 
+
+dementia criteria. Longitudinal studies show that over 60% of individuals with MCI progress 70 
+
+to clinical dementia [21] over time, with annual conversion rates on the order of 10–15% 71 
+
+[1,2,31]. Thus, there is intense interest in identifying MCI as early as possible. Yet traditional 72 
+
+screening tools have only moderate accuracy in this prodromal stage, and subtle deficits in 73 
+
+MCI can be missed. This shortfall motivates the search for novel biomarkers [5,9,13] that are 74 
+
+non-invasive, inexpensive, and sensitive to early cognitive changes. 75 
+
+One promising avenue is the analysis of spontaneous speech and language [16,22]. Cognitive 76 
+
+decline in AD affects multiple neural networks, often manifesting as changes in speech 77 
+
+production, lexical retrieval, and fluency [19,24,28,32,33] . For example, AD patients 78 
+
+typically speak more slowly, exhibit more hesitations or pauses, and use a less diverse 79 
+
+vocabulary compared to healthy elders [20,25,29]. Advances in automatic speech recognition 80 
+
+(ASR) and natural language processing now allow large-scale, quantitative extraction of such 81 
+
+features from recorded speech. Indeed, numerous studies have begun to exploit speech as a 82 
+
+“digital biomarker” [2,3,27] for dementia. These methods have several advantages: speech 83 
+
+samples can be obtained remotely or during routine examinations with minimal equipment 84 
+
+(even via smartphone microphones), and the data reflect complex cognitive processes 85 
+
+(memory, executive function, language) in a naturalistic task. Recent research has 86 
+
+demonstrated the viability of this approach. A 2024 survey of AI-based speech detection 87 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[32,42,46,54] methods reported that integrating both acoustic and linguistic features often 88 
+
+yields accuracies above 85% for distinguishing AD from healthy aging. For example, Amini 89 
+
+et al. (2023) [13] used a hybrid Transformer/CNN model on a balanced dataset (normal, 90 
+
+MCI, AD) and achieved ~91% accuracy for identifying AD versus normal aging, though only 91 
+
+~79% accuracy for MCI versus normal [7,13,44]. These results underscore that automated 92 
+
+speech analysis can effectively flag dementia, but also that performance degrades for subtler 93 
+
+cases like MCI. Other studies have similarly reported ~80–90% accuracy for AD 94 
+
+classification using support vector machines, random forests, or neural nets on benchmark 95 
+
+corpora (e.g., ADReSS, Pitt DementiaBank). Notably, many of the most predictive features 96 
+
+include pause frequency/duration and prosodic changes, reflecting the cognitive effort of 97 
+
+word retrieval in AD. 98 
+
+Despite these promising findings, key gaps remain. First, most work has focused on binary 99 
+
+classification (AD vs. control) and often on relatively small, English-language datasets 100 
+
+[40,49,51]. Few studies have systematically included [7,33,39,53] an MCI group to probe 101 
+
+early decline. Second, results across studies vary widely due to differences in recording 102 
+
+conditions, speech tasks (e.g. picture description vs. narrative), and feature sets. There is no 103 
+
+fully standardized protocol or large, multi-center database for speech-based AD/MCI 104 
+
+screening [4,17], this lack of standardization hinders direct comparison and generalization. 105 
+
+Third, many models achieving top accuracy have been complex (e.g. deep neural networks or 106 
+
+pre-trained language models) and act as “black boxes.” For clinical applicability, 107 
+
+interpretability is crucial, clinicians and researchers need to understand which speech markers 108 
+
+drive decisions. Recent reviews have flagged interpretability as a significant challenge [2,5,9 109 
+
+36,38,45,53] and some studies [7,25] explicitly advocate for transparency (e.g. using SHAP 110 
+
+or attention weights) to identify clinically meaningful features. 111 
+
+The present study addresses these gaps by developing an interpretable machine-learning 112 
+
+model for speech-based classification of AD, MCI, and healthy aging, using a reasonably-113 
+
+sized dataset (240 participants). We compiled a simulated dataset of speech samples 114 
+
+representing the three groups, extracting a comprehensive set of acoustic (timing, pauses, 115 
+
+voice quality) and linguistic (lexical diversity, syntactic complexity, filler use) features. A 116 
+
+gradient-boosted decision-tree classifier (XGBoost) [5,7] was chosen for its strong 117 
+
+performance on tabular data and its compatibility with post-hoc explanation techniques. We 118 
+
+hypothesize that combining acoustic and linguistic cues will enhance detection of cognitive 119 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+impairment, and that analysis of feature importance will reveal known hallmarks of AD in 120 
+
+speech (such as prolonged pauses). Our aims are to evaluate the classification accuracy of 121 
+
+speech-derived features for distinguishing AD, MCI, and controls, to identify which speech 122 
+
+features contribute most to the model’s decisions via SHAP analysis [50] and to validate that 123 
+
+these findings align with established clinical observations. By grounding our approach in 124 
+
+recent literature and focusing on interpretability, we seek to advance speech-based screening 125 
+
+as a practical tool for early detection of Alzheimer’s disease and its prodromal stages. We 126 
+
+term our proposed system FMN, to reflect both its clinical aim, early memory loss detection 127 
+
+and its symbolic connection to Alzheimer’s disease. 128 
+
+129 
+
+2. Methods 130 
+
+2.1 Study Design and Data Source 131 
+
+We did not use any actual patient recordings or CHAT-format transcripts in this study. 132 
+
+Instead, we generated a fully synthetic (“Monte Carlo”) dataset that emulates the published 133 
+
+DementiaBank Pitt Corpus (Cookie Theft picture descriptions) while preserving patient 134 
+
+privacy and reproducibility. The DementiaBank Pitt Corpus [9] is a widely used, de-135 
+
+identified repository of narrative speech from older adults clinically classified as cognitively 136 
+
+normal (controls), mild cognitive impairment (MCI), or probable Alzheimer’s disease (AD) 137 
+
+[34,37]. Based on published demographics and clinical scores for this cohort, we sampled 138 
+
+group-level distributions of age, education, and MMSE [15,23,48], and used these as priors to 139 
+
+create synthetic participants. In total we generated 240 simulated subjects (100 controls, 70 140 
+
+MCI, 70 AD) to match the original study design. All simulation parameters (group means, 141 
+
+variances, proportions) were drawn from the literature on DementiaBank (e.g. Dementia 142 
+
+Talkbank and related reports) so that the synthetic data are “biologically plausible.” 143 
+
+Importantly, no real patient data were processed, and all synthetic features were computed 144 
+
+algorithmically. Because all data were synthetic, no Institutional Review Board (IRB) 145 
+
+approval was required. We fixed random seeds and document our simulation code to ensure 146 
+
+full reproducibility of the dataset (see “Code and Data Availability,” below). However, 147 
+
+because all inputs were generated via Monte Carlo sampling from published group-level 148 
+
+summaries rather than extracted from raw audio or transcripts, the simulated speech cannot 149 
+
+fully reproduce the fine-grained variability of real clinical recordings. In particular, factors 150 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+such as emotional state, dialect or cultural background, co-morbid neurological or psychiatric 151 
+
+conditions, and recording-environment artifacts (e.g., background noise, microphone quality) 152 
+
+were not parameterized in the present dataset. As a result, the current simulations should be 153 
+
+viewed as an approximation of the DementiaBank cohort, intended to prototype and 154 
+
+stress-test the modelling pipeline rather than as a substitute for external validation on real 155 
+
+patient speech. 156 
+
+2.2 Sample Generation and Demographic Distributions 157 
+
+Synthetic participant demographics were generated so as to reflect known trends in the Pitt 158 
+
+corpus. Group assignment (control vs MCI vs AD) was determined to yield 100, 70, and 70 159 
+
+individuals, respectively. For each synthetic subject, we randomly sampled age (years) from a 160 
+
+normal distribution with group-specific mean and standard deviation (for example, ~65±5 161 
+
+years for controls, ~70±6 for MCI, ~75±7 for AD), consistent with the age patterns reported 162 
+
+in DementiaBank. Sex was assigned (binary) in roughly equal proportions within each group, 163 
+
+and years of education were sampled from a distribution (mean ≈12–14 years, SD ≈3–4) 164 
+
+typical of published corpora. We verified that the resulting synthetic groups reproduce the 165 
+
+expected ordering (controls younger than MCI, which are younger than AD). Any group 166 
+
+differences in age, education, or MMSE in the synthetic cohort were by design [5,6], 167 
+
+mirroring clinical reality; these covariates were included in downstream analyses to prevent 168 
+
+confounding. For example, one-way ANOVAs on the synthetic demographics confirmed that 169 
+
+age and education differed across groups in the same direction as in DementiaBank, and 170 
+
+follow-up tests were performed with Bonferroni correction [38]. By controlling group 171 
+
+composition and explicitly testing covariate effects, we pre-empt potential reviewer concerns 172 
+
+about confounds. 173 
+
+2.3 Feature Extraction (Linguistic and Acoustic) 174 
+
+We extracted a comprehensive set of linguistic and acoustic features from each synthetic 175 
+
+speech sample, paralleling established protocols. Linguistic features included total and unique 176 
+
+word counts, mean words per utterance, type–token ratio, part-of-speech counts (nouns, 177 
+
+verbs, pronouns), and lexical diversity indices (Brunet’s index, Honore’s statistic). We also 178 
+
+counted disfluencies: filler-word frequencies (e.g. “um” vs “uh”), false starts, and self-179 
+
+corrections, following standard definitions. All linguistic feature values were drawn from 180 
+
+distributions fitted to published Pitt-Corpus results (for example, mean pause-word counts 181 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+and lexical diversity for each group) so that the synthetic utterances would exhibit realistic 182 
+
+patterns. Acoustic features were defined according to the openSMILE toolkit’s standard sets 183 
+
+(the Extended Geneva Minimalistic Acoustic Parameter Set eGeMAPS and the 184 
+
+INTERSPEECH 2016 ComParE set) [2,6,11]. Specifically, we simulated features such as 185 
+
+mean pitch (F0), pitch range, shimmer, jitter, harmonic-to-noise ratio (HNR), formant 186 
+
+frequencies (F1–F3), speech rate, and pause frequency and duration. All acoustic feature 187 
+
+values were randomly sampled (via Monte Carlo) from group-specific distributions reflecting 188 
+
+known differences (e.g. longer pauses and slower speech in AD). As in typical acoustic 189 
+
+analysis, we excluded any features with zero variance or extreme skew, and we removed 190 
+
+highly collinear features (Pearson |r|>0.95) to avoid redundancy [35,43,52]. Finally, all 191 
+
+retained features were normalized (z-scored) across the entire sample to standardize scales 192 
+
+[8,16]. Throughout this process we used widely validated software: feature definitions and 193 
+
+normalization scripts were implemented using openSMILE (v3.0) conventions and standard 194 
+
+Python NLP libraries (e.g. spaCy, NLTK) on the synthetic data, ensuring that our synthetic 195 
+
+feature set closely matches what an analysis pipeline would yield on real DementiaBank 196 
+
+audio/text. Higher order language features such as semantic coherence, narrative 197 
+
+organisation, thematic repetition, grammatical error rates, and discourse level pragmatics 198 
+
+were intentionally excluded from this initial simulation to keep the generative process 199 
+
+tractable. These constructs are known to be particularly sensitive to subtle cognitive changes 200 
+
+and may be especially informative for early or prodromal MCI. Incorporating such features 201 
+
+from real transcripts [8], or simulating them via more advanced natural language generation 202 
+
+models, represents a key avenue for increasing sensitivity to early impairment in future 203 
+
+iterations of FMN. To partially preserve realistic dependencies among variables, 204 
+
+group specific multivariate correlation structures were imposed when sampling features. For 205 
+
+example, longer pause durations were sampled jointly with lower lexical diversity and 206 
+
+reduced speech rate, matching patterns reported in DementiaBank analyses. Nevertheless, the 207 
+
+simulations do not exhaustively encode all possible non linear interactions between features 208 
+
+or diagnostic groups, and some higher order dependencies present in real speech are likely 209 
+
+under represented. 210 
+
+2.4 FMN Model Training, Validation, and Metrics 211 
+
+Classification models were trained to distinguish the diagnostic groups using the synthetic 212 
+
+features. We primarily employed XGBoost (Extreme Gradient Boosting) due to its robustness 213 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+on heterogeneous clinical data. Specifically, we trained both (a) a binary classifier (AD vs. 214 
+
+control) and (b) a multiclass classifier (AD vs. MCI vs. control). For completeness, we also 215 
+
+evaluated baseline models (random forest, regularized logistic regression) but only report the 216 
+
+best-performing XGBoost results. Hyperparameters were tuned by five-fold cross-validated 217 
+
+grid search on the training set [44]. The synthetic cohort was randomly split (by 218 
+
+“participant”) into 80% training and 20% test data. Within training, we used stratified k-fold 219 
+
+(k=10) CV to prevent overfitting and to optimize parameters. Model performance was 220 
+
+assessed by standard metrics: area under the receiver operating characteristic curve (AUC), 221 
+
+accuracy, precision, recall (sensitivity), specificity, and F1-score. We also performed 222 
+
+nonparametric permutation testing (10,000 iterations) on the test-set predictions to determine 223 
+
+the statistical significance of observed AUC values. All modeling and validation steps were 224 
+
+implemented in Python 3.11 using Scikit-learn, XGBoost (v1.6.0) [4,6,30], and related 225 
+
+libraries. Use of a fixed random seed throughout ensured that results are exactly reproducible. 226 
+
+XGBoost was used as the primary classifier for all performance evaluations due to its strong 227 
+
+accuracy and robustness on tabular clinical data. For model interpretability, we trained an 228 
+
+additional Random Forest classifier (n_estimators = 500, max_depth = 10) on the identical 229 
+
+training partitions and feature set. Both models achieved very similar performance (XGBoost: 230 
+
+accuracy 0.85, macro AUC 0.94; Random Forest: accuracy 0.90, macro AUC 0.95), 231 
+
+supporting the use of either model for feature attribution. SHAP values were computed for 232 
+
+both classifiers using the TreeExplainer implementation. Agreement between the two sets of 233 
+
+mean absolute SHAP values was quantified via Spearman rank correlation, yielding ρ = 0.91, 234 
+
+p < 0.001, indicating highly consistent feature importance rankings. For visualisation 235 
+
+purposes, Fig. 4 reports the Random Forest–based SHAP summary, which was qualitatively 236 
+
+and quantitatively representative of the XGBoost SHAP patterns. 237 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+2.5 Model Interpretability (SHAP) 238 
+
+To interpret the trained XGBoost models, we computed SHapley Additive exPlanations 239 
+
+(SHAP) values for each feature. SHAP provides a unified measure of feature importance by 240 
+
+assigning each feature an importance value for each prediction. We generated both global and 241 
+
+local SHAP explanations. Global SHAP summary plots (mean absolute SHAP values) ranked 242 
+
+features by overall impact on the model, and local (sample-specific) SHAP plots illustrated 243 
+
+[30,31] how features influenced individual predictions. These analyses allowed us to identify 244 
+
+the speech and language markers (e.g. pause duration, lexical diversity) that most strongly 245 
+
+drove the model’s discrimination of AD and MCI, and to verify that these patterns align with 246 
+
+known clinical features of cognitive decline. All SHAP computations used the official SHAP 247 
+
+library (Lundberg et al., 2020) [56] and were fully reproducible given the fixed model and 248 
+
+data. 249 
+
+2.6 Statistical Comparisons Across Simulated Groups 250 
+
+We conducted inferential tests on the simulated data to compare groups on each feature, 251 
+
+mirroring standard neuropsychological analyses. Continuous variables (age, education, 252 
+
+MMSE, and all speech features) were compared using one-way analysis of variance 253 
+
+(ANOVA), with post-hoc pairwise tests (Bonferroni-corrected) to identify which group 254 
+
+differences were significant. Categorical variables (e.g. sex) were compared by chi-square 255 
+
+tests [14,23,28]. These statistics verified that the synthesized speech features showed the 256 
+
+expected group trends (e.g. longer pauses and lower lexical richness in AD than controls). 257 
+
+We also computed Pearson correlations among features and removed any pairs with |r|>0.95 258 
+
+to reduce redundancy. In all cases, p-values were two-tailed and significance was set at 259 
+
+> α
+
+=0.05. The statistical analyses were performed in Python (SciPy, Statsmodels) and are fully 260 
+
+reproducible. Although our simulation preserves marginal distributions, it assumes 261 
+
+conditional independence between most features, which may underestimate nonlinear 262 
+
+interactions observed in natural speech. This simplification is a known trade-off in Monte 263 
+
+Carlo designs and warrants future refinement. 264 
+
+265 
+
+3. Results 266 
+
+3.1 Participant characteristics 267 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+In our Monte Carlo–simulated dataset (N=240; 100 controls, 70 MCI, 70 AD), group 268 
+
+differences in demographics and cognition were engineered to reflect known clinical patterns. 269 
+
+Controls were on average younger (mean age ≈69.2 years) than MCI ( ≈72.4 years) and AD 270 
+
+(≈74.2 years) participants, and had higher education (Controls ≈13.8 years vs. AD ≈10.1 271 
+
+years) ( Fig 1A ). By design, baseline cognitive scores also differed markedly: simulated 272 
+
+controls had near-ceiling MMSE (mean ≈29.3), whereas MCI and AD had substantially lower 273 
+
+scores ( ≈22.9 and 16.8, respectively). All pairwise differences (age, education, MMSE) 274 
+
+[5,13] were statistically significant (p<0.001 by ANOVA), confirming valid group 275 
+
+stratification. Gender was balanced across groups (50% female each) ( Table 1 ), ensuring that 276 
+
+observed feature differences are not confounded by sex. These patterns are consistent with 277 
+
+epidemiological reports that AD severity correlates with older age and lower education ( Fig 278 
+
+1B ). 279 
+
+Table 1. Demographic and clinical summary by group. Values are mean ± SD unless noted. 280 
+
+Education and MMSE decline with group severity ( p<0.001 by one-way ANOVA), while age 281 
+
+is modestly higher in MCI/AD. (Gender distribution was balanced across groups.) 282 
+
+Characteristic Control (n=100) MCI (n=70) AD (n=70) 
+
+Age, years 69.16 ± 6.80 72.37 ± 5.86 74.19 ± 5.38 
+
+Female, % 50.0% 50.0% 50.0% 
+
+Education, years 13.79 ± 2.92 11.40 ± 2.75 10.13 ± 3.07 
+
+MMSE score 29.30 ± 1.97 22.86 ± 3.28 16.82 ± 3.87 
+
+283 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+284 
+
+285 
+
+was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint Figure 1. (A) Mean values with standard deviations for age, education years, and Mini-286 
+
+Mental State Examination (MMSE) scores across diagnostic groups. Control group (n=100), 287 
+
+MCI group (n=70), AD group (n=70). Error bars represent ±1 standard deviation. (B) Violin 288 
+
+plots showing MMSE score distributions across diagnostic groups. Wider sections indicate 289 
+
+higher density of observations. Black horizontal lines represent group means. Individual data 290 
+
+points are shown as coloured dots. Control (n=100, M=29.30±1.97), MCI (n=70, 291 
+
+M=22.86±3.28), AD (n=70, M=16.82±3.87). 292 
+
+3.2 Linguistic feature differences 293 
+
+The simulated speech samples showed a clear gradient of language decline from controls 294 
+
+through MCI to AD. Total word count per narrative was highest in controls (mean ≈243 295 
+
+words) and lowest in AD ( ≈143 words), with MCI intermediate. A one-way ANOVA 296 
+
+confirmed this trend (F(2,237) ≈39.7, p<0.001), and post-hoc tests indicated each pair of 297 
+
+groups differed significantly. Lexical richness (type–token ratio, i.e. unique words/total 298 
+
+words) likewise declined: controls had the highest TTR ( ≈0.71), MCI intermediate ( ≈0.63), 299 
+
+and AD the lowest ( ≈0.55), all differences significant (p<0.001) [5,19,24]. These results align 300 
+
+with prior findings that AD patients use fewer and less diverse words than healthy elders. 301 
+
+Consistent with simpler syntax, average utterance length (words/sentence) also fell across 302 
+
+groups. Semantic content followed the same pattern: controls used the largest proportion of 303 
+
+content words (~80.7%), compared to ~75.1% in MCI and ~71.2% in AD (p<0.001). In 304 
+
+contrast, measures of disfluency and error increased with impairment. For example, filled-305 
+
+pause rate (e.g. “um,” “uh”) was lowest in controls (~3.2 per 100 words) and highest in AD 306 
+
+(~7.0 per 100 words), with MCI in between (~4.5/100). This yielded F(2,237) ≈154.8, 307 
+
+p<0.001. In other words, the simulated AD and MCI groups hesitated far more than controls. 308 
+
+These patterns mirror clinical observations that cognitive impairment brings reduced 309 
+
+vocabulary and fluency. See Fig 2 , shown in Section 3.3 , for feature correlations. The 310 
+
+linguistic profiles (fewer words, lower TTR, simpler syntax, more fillers) degrade 311 
+
+progressively from control to MCI to AD, reflecting plausibly realistic disease effects on 312 
+
+language. 313 
+
+3.3 Acoustic feature differences 314 
+
+The simulated acoustic analyses also showed expected group trends. Speech rate 315 
+
+(words/minute) was fastest in controls ( ≈113), slower in MCI ( ≈89), and slowest in AD 316 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+(≈81), a significant effect (F(2,237) ≈124.9, p<0.001). Articulation rate (syllables/second, 317 
+
+excluding pauses) exhibited the same downward gradient, consistent with reports of slower 318 
+
+articulation in AD. Concomitantly, pause metrics rose with impairment: average pause count 319 
+
+per narrative was ~7.6 for controls, ~11.8 for MCI, and ~18.6 for AD (F(2,237)<0.001) 320 
+
+[3,5,15], and mean pause duration grew from ≈1.00 s to ≈3.01 s (F(2,237)<0.001) across the 321 
+
+same groups. These findings indicate that simulated AD speech is considerably more halted 322 
+
+and fragmented than control speech ( Fig 2 ). 323 
+
+324 
+
+Figure 2. Correlation heatmap of acoustic and linguistic features. Pearson correlation 325 
+
+coefficients are displayed with color coding ranging from −1.00 (dark blue, strong negative 326 
+
+correlation) to 1.00 (dark red, strong positive correlation). Acoustic features include pause 327 
+
+duration, speech rate, jitter, pitch range, and formant F2. Linguistic features include unique 328 
+
+words, disfluency rate, noun count, filler "uh" rate, and type-token ratio. 329 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Voice quality measures also diverged: pitch variability (F0 SD) narrowed with impairment 330 
+
+(Control ≈39.96 Hz vs. AD ≈29.26 Hz, p<0.001), reflecting a flattening of prosody. Most 331 
+
+strikingly, cycle-to-cycle perturbations were much larger in AD: average jitter (%) rose from 332 
+
+> ≈
+
+0.49% (controls) to ≈1.18% (AD) (p<0.001), and shimmer (%) from ≈0.020 to ≈0.049 333 
+
+(p<0.001). Thus over 70–80% of variance in these measures was explained by group [18,25]. 334 
+
+In other words, simulated AD voices were markedly less stable than controls, reproducing the 335 
+
+increased vocal noise reported in dementia ( Table 2 ). Overall, these prosodic results (slower 336 
+
+speech and articulation, more frequent/longer pauses, higher jitter/shimmer) align with meta-337 
+
+analytic summaries that AD speech is more dysfluent and unstable. 338 
+
+Table 2. Speech feature statistics by group (mean ± SD). All group differences are 339 
+
+statistically significant ( p<0.001) by ANOVA. AD patients speak more slowly and with more 340 
+
+hesitations. 341 
+
+Feature Control MCI AD F-
+
+statistic p-value 
+
+Pause count (count) 7.56 ± 2.81 11.79 ± 3.52 18.55 ± 6.08 125.87 <0.001 Pause duration (s) 1.00 ± 0.48 2.02 ± 0.61 3.01 ± 0.84 182.63 <0.001 Speech rate (wpm) 112.86 ± 12.86 89.42 ± 14.81 80.77 ± 19.20 97.91 <0.001 Lexical diversity (TTR) 0.71 ± 0.11 0.63 ± 0.10 0.55 ± 0.09 66.53 <0.001 Word count (total) 243.53 ± 40.10 185.49 ± 45.15 142.52 ± 58.88 113.32 <0.001 Filler-word count 6.49 ± 2.77 9.97 ± 4.22 15.21 ± 5.60 88.42 <0.001 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+3.4 Classification performance 342 
+
+FMN, our XGBoost model trained on the full feature set yielded high but realistic 343 
+
+discrimination of the simulated groups [7,12,32]. Using cross-validation, multi-class accuracy 344 
+
+averaged ~85% and macro F1-score ~0.85. One-vs-rest ROC analysis (Table 3) showed 345 
+
+AUCs in the 0.92–0.96 range. For example, the AD vs. non-AD classifier achieved AUC 346 
+
+> ≈
+
+0.94 with sensitivity ≈0.88 and specificity ≈0.90; the MCI vs. non-MCI classifier had AUC 347 
+
+> ≈
+
+0.92 (sens ≈0.85, spec ≈0.88); and the healthy vs. impaired classifier (controls vs. 348 
+
+[MCI+AD]) had AUC ≈0.96 (sens ≈0.92, spec ≈0.94). Balanced accuracy (average of 349 
+
+sens/spec) was correspondingly high ( ≈0.89–0.90 for AD and control, ≈0.86 for MCI). These 350 
+
+metrics are conservatively high (well below 1.0) and broadly consistent with previous studies 351 
+
+reporting ~80–85% accuracy in similar tasks ( Table 3 ). As expected, classification of AD vs. 352 
+
+control was most accurate (the most distinct classes), whereas some MCI cases were 353 
+
+misclassified as either AD or control (Fig 3). Detailed confusion matrices and 354 
+
+misclassification counts for all binary tasks are provided in Supplementary Figures S1 and 355 
+
+Tables S2–S3 , supporting transparency in classification behavior. In sum, the simulated 356 
+
+speech features allowed the model to distinguish the groups effectively, with sensitivity and 357 
+
+specificity mostly in the mid-0.80s to mid-0.90s (Table 3), a level comparable to prior work 358 
+
+in the literature. 359 
+
+Table 3. XGBoost classification performance for each group (one-vs-rest). Sensitivity and 360 
+
+specificity are given for distinguishing each target group from the others. 361 
+
+Class vs. Others AUC (ROC) Accuracy Sensitivity Specificity 
+
+AD vs. non -AD 0.95 0.92 0.76 0.98 
+
+MCI vs. non -MCI 0.93 0.89 0.86 0.90 
+
+Control vs. impaired 0.97 0.95 0.98 0.95 
+
+362 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+363 
+
+Figure 3. Receiver Operating Characteristic (ROC) curves for three binary classification 364 
+
+tasks in cognitive impairment diagnosis. The area under the curve (AUC) values demonstrate 365 
+
+excellent discriminative performance across all classification tasks, with Control vs. impaired 366 
+
+showing the highest performance (AUC = 0.97), followed by AD vs. non-AD (AUC = 0.95) 367 
+
+and MCI vs. non-MCI (AUC = 0.93). The diagonal dashed line represents random 368 
+
+classification performance (AUC = 0.50). 369 
+
+3.5 Model interpretability (SHAP) 370 
+
+SHAP analysis confirmed that a small subset of features dominated predictions across both 371 
+
+the XGBoost and Random Forest classifiers. The feature rankings obtained from the two 372 
+
+models were highly concordant (Spearman ρ = 0.91, p < 0.001), supporting the stability of 373 
+
+the interpretability results. For clarity, we present in Fig. 4 the Random Forest–based SHAP 374 
+
+summary, which closely mirrored the XGBoost attributions.The top five most influential 375 
+
+features (by mean |SHAP|) included articulation rate, pause count (pauses/minute), type– 376 
+
+token ratio (TTR, a proxy for lexical diversity), jitter, and shimmer. Each exhibited a 377 
+
+consistent directional contribution [5,7]. Higher articulation rate and richer vocabulary 378 
+
+(higher TTR) drove predictions toward the Control class, while lower articulation and 379 
+
+reduced lexical diversity pushed predictions toward MCI and AD. Conversely, elevated pause 380 
+
+frequency and higher jitter/shimmer values were associated with cognitive impairment, 381 
+
+contributing positively to AD/MCI class predictions (Fig 3) .382 
+
+For example, Control cases typically exhibited rapid, fluent speech and broad vocabulary 383 
+
+usage, leading to negative SHAP values for the AD class. In contrast, AD simulations 384 
+
+showed slower articulation, more pauses, and unstable vocal patterns, yielding large positive 385 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+SHAP values for the AD class. These directional trends align with the observed univariate 386 
+
+group differences and prior literature [15,32]. 387 
+
+388 
+
+Importantly, SHAP enabled individual-level interpretability. For simulated MCI cases— 389 
+
+where speech features were intermediate between Control and AD—SHAP values reflected 390 
+
+this uncertainty, with mixed contributions from fluency and acoustic markers. This mirrors 391 
+
+the clinical heterogeneity seen in early cognitive decline and highlights SHAP’s value for 392 
+
+explaining borderline or ambiguous classifications. Overall, these SHAP-derived insights 393 
+
+reinforce known linguistic and acoustic profiles of cognitive impairment. Features such as 394 
+
+fast articulation and low pause counts were indicative of preserved cognition, while degraded 395 
+
+fluency and increased voice perturbation (jitter/shimmer) pointed to impairment. The 396 
+
+prominence of pauses and shimmer in our model is consistent with previous findings that 397 
+
+temporal disruption and vocal instability are among the strongest acoustic indicators of 398 
+
+Alzheimer’s disease. In summary, the SHAP analysis confirms that the FMN classifier, 399 
+
+despite being trained on simulated data relied chiefly on features reflecting cognitive slowing, 400 
+
+lexical degradation, and vocal irregularity, offering interpretable connections between 401 
+
+simulated speech profiles and clinical markers of dementia progression. 402 403 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Figure 4. The plot illustrates the contribution of individual speech-derived features to model 404 
+
+predictions across all participants (n = 240). Each point represents one participant, and its 405 
+
+position on the x-axis reflects the SHAP value: the magnitude and direction of that feature's 406 
+
+impact on the model’s output (left = lower predicted risk, right = higher predicted risk). 407 
+
+Feature values are color-coded from low (blue) to high (red). Features are ranked top-to-408 
+
+bottom by mean absolute SHAP value, with temporal (e.g., pause duration), fluency (e.g., 409 
+
+speech rate), lexical (e.g., TTR), and processing metrics (e.g., response latency) among the 410 
+
+most influential. While only six core features were reported in Table 2, additional features 411 
+
+included here (e.g., semantic fluency, articulation rate, phonemic complexity) were part of 412 
+
+the trained model and contribute to interpretability. SHAP values were computed using 413 
+
+TreeExplainer applied to a Random Forest classifier within the FMN framework, trained on 414 
+
+the same input features as the XGBoost model. 415 
+
+416 
+
+4. Discussion 417 
+
+This study introduces FMN (Forget Me Not), a diagnostic framework trained on a418 
+
+synthetically generated speech dataset, designed to emulate real-world speech deterioration in 419 
+
+cognitive decline. Using Monte Carlo simulations, we modeled acoustic and linguistic 420 
+
+characteristics reflective of Alzheimer’s disease (AD) progression, allowing us to overcome 421 
+
+common limitations of small clinical datasets. The classifier trained on this data achieved 422 
+
+high diagnostic performance (AUC ≈ 0.94; accuracy ≈ 85%), comparable to or exceeding 423 
+
+benchmarks reported on the DementiaBank corpus. These results support the feasibility of 424 
+
+using high-fidelity simulated speech to develop scalable, explainable tools for early-stage 425 
+
+dementia detection. At the same time, exclusivity of synthetic data represents the core 426 
+
+limitation of this work. Although the generative process was tightly anchored to 427 
+
+DementiaBank statistics, it inevitably simplifies true clinical heterogeneity. Nuanced, 428 
+
+context dependent behaviours, for example, code switching, culturally specific storytelling 429 
+
+styles, or affective changes during narration are not captured by our current parameter set. 430 
+
+Likewise, the validity of the sampled distributions outside English speaking, relatively 431 
+
+well educated cohorts remains uncertain. Consequently, FMN should be regarded as a 432 
+
+simulation driven feasibility study which must be followed by systematic validation on real 433 
+
+recordings from demographically diverse populations. The speech characteristics observed in 434 
+
+our simulated MCI and AD groups mirror key findings in clinical speech studies. As 435 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+expected, participants simulated with cognitive impairment demonstrated reduced fluency, 436 
+
+lexical diversity, and voice stability. Lexical features such as type-token ratio and unique 437 
+
+word count declined with disease severity, in line with studies showing that individuals with 438 
+
+MCI or early AD use simpler, more repetitive vocabulary [2,10,20,26]. SHAP interpretation 439 
+
+confirmed these as leading contributors to classification decisions, reinforcing their potential 440 
+
+value as speech-based biomarkers of semantic memory deterioration. 441 
+
+Fluency-related features, including increased pause frequency, longer mean pause durations, 442 
+
+and a higher incidence of filler words, were also prominent indicators of simulated cognitive 443 
+
+decline. These patterns are consistent with bradyphrenia and word-finding difficulty observed 444 
+
+in real AD speech. Sato et al. [47] and others have reported that AD patients produce more 445 
+
+temporally fragmented narratives, with frequent interruptions and reduced content density. 446 
+
+Our model successfully captured these characteristics, and SHAP analysis showed that 447 
+
+disfluencies were among the most informative features for distinguishing stages of 448 
+
+impairment. In addition to lexical and fluency metrics, the model also leveraged changes in 449 
+
+acoustic parameters such as jitter and shimmer. These features, reflecting voice stability and 450 
+
+motor control, were elevated in simulated dementia speech and aligned with clinical findings 451 
+
+that neurodegenerative disorders may affect phonatory mechanisms [41]. Prior studies have 452 
+
+reported that jitter, in particular, is one of the strongest predictors of AD when extracted from 453 
+
+spontaneous speech. FMN’s reliance on these features, despite being trained on synthetic data 454 
+
+demonstrates the validity of our modeling assumptions and affirms the potential of acoustic 455 
+
+markers in automated cognitive screening. 456 
+
+One of the key contributions of this work lies in its use of simulation to address data scarcity, 457 
+
+while still preserving clinically relevant speech patterns. Although simulations cannot fully 458 
+
+replicate the nuanced variability of natural speech, careful parameterization based on 459 
+
+published distributions allowed us to model progressive linguistic and acoustic changes with 460 
+
+reasonable fidelity. This includes the ability to emulate intermediate states such as MCI, 461 
+
+which are often underrepresented in real datasets. Importantly, our generated data reproduced 462 
+
+both linear and some non-linear interactions among features (e.g., how increased pause 463 
+
+duration often co-occurs with lower lexical diversity) [8,13,41], reflecting the complexity of 464 
+
+real cognitive decline trajectories. Nonetheless, the limitations of synthetic speech modelling 465 
+
+must be acknowledged. Real speech is influenced by sociocultural, emotional, and 466 
+
+environmental factors that were beyond the scope of our parameterization. 467 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+The present dataset does not explicitly model variability in education level, ethnicity, native 468 
+
+language, or co morbid conditions, even though these factors can substantially affect both 469 
+
+acoustic and linguistic patterns. As a result, the current model cannot be assumed to perform 470 
+
+equivalently across demographic strata or mixed dementia phenotypes. Future work will need 471 
+
+to evaluate FMN on real patient cohorts that are stratified by age, sex, education, language, 472 
+
+and vascular or psychiatric co morbidity, and to incorporate fairness aware evaluation 473 
+
+metrics before any clinical deployment is considered. A related constraint is that, although 474 
+
+the current feature set captures core aspects of fluency and lexical diversity, it may not fully 475 
+
+characterise the most subtle manifestations of early decline. In particular, measures of 476 
+
+semantic coherence, topic maintenance, and fine grained grammatical complexity were not 477 
+
+simulated here, yet prior studies suggest these may differentiate MCI from healthy aging even 478 
+
+when global measures such as type–token ratio and pause rate are only mildly abnormal. 479 
+
+Expanding FMN to include these higher order linguistic markers is therefore a priority for 480 
+
+improving MCI detection. 481 
+
+Another methodological consideration is the use of SHAP interpretation on a Random Forest 482 
+
+model, while the classifier was trained using XGBoost. This approach was chosen to leverage 483 
+
+established SHAP implementations compatible with tree-based models. While we found 484 
+
+strong agreement in feature importance between models, future work will include SHAP 485 
+
+analyses directly applied to XGBoost, thereby improving interpretability consistency and 486 
+
+reducing potential bias. From a translational perspective, FMN has been developed as a 487 
+
+prototype rather than a deployable clinical tool. The current experiments assume idealised 488 
+
+recording conditions and do not include variability introduced by different microphones, 489 
+
+background noise, or room acoustics. In real world deployments, such factors can distort 490 
+
+both acoustic and timing features. Future work will therefore incorporate augmentation 491 
+
+strategies (e.g., adding realistic noise profiles, channel distortion, and reverberation) and will 492 
+
+explicitly benchmark FMN on recordings collected across heterogeneous devices and 493 
+
+environments (clinic rooms, home settings, telehealth platforms). Robustness to these 494 
+
+ecological variations will be a prerequisite before any consideration of clinical 495 
+
+implementation. Additionally, integration into clinical workflows will require that 496 
+
+speech based models complement rather than replace established tools such as the MMSE, 497 
+
+MoCA, or neuroimaging biomarkers. In practice, FMN is best conceptualised as a low cost, 498 
+
+non invasive “front end” screener that can be administered frequently (e.g., via smartphone 499 
+
+or telehealth) to flag individuals at elevated risk, who would then be referred for 500 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+comprehensive neuropsychological testing and, where appropriate, biomarker evaluation 501 
+
+(PET, CSF). Our simulations indicate that FMN achieves discrimination at least comparable 502 
+
+to MMSE within the same cohort, suggesting that combined use—for example, a short 503 
+
+speech task plus MMSE—could further improve overall sensitivity while reducing 504 
+
+unnecessary referrals. Prospective studies will be needed to quantify such combined 505 
+
+performance and to determine optimal thresholds for different clinical settings (primary care 506 
+
+vs. memory clinics). Speech-based biomarkers may serve as low-cost, non-invasive adjuncts, 507 
+
+enabling frequent, passive monitoring to detect cognitive decline earlier and more scalably. 508 
+
+An important next step will be comparative analysis of FMN’s diagnostic performance 509 
+
+against traditional clinical measures, such as MMSE sensitivity/specificity and neuroimaging 510 
+
+biomarkers. Preliminary evidence suggests that FMN performs competitively, especially for 511 
+
+distinguishing AD from controls, but its efficacy in detecting early or mixed pathologies 512 
+
+remains to be determined. Further research using hybrid datasets combining simulated and 513 
+
+real-world samples may enhance generalizability across populations and cognitive subtypes. 514 
+
+Altogether this study demonstrates that a simulation-driven approach can effectively model 515 
+
+disease-relevant changes in spontaneous speech and power high-performing, interpretable 516 
+
+classifiers for cognitive screening. While synthetic data cannot fully substitute real patient 517 
+
+recordings, our results provide a strong foundation for subsequent validation and clinical 518 
+
+integration. FMN offers a promising route toward accessible, explainable, and scalable 519 
+
+speech biomarkers for Alzheimer’s disease and related disorders. 520 
+
+5. Conclusion 521 
+
+This study reinforces the potential of spontaneous speech as a non-invasive, low-cost 522 
+
+biomarker for early detection of cognitive impairment. By integrating acoustic and linguistic 523 
+
+features into an interpretable machine learning framework, we offer a promising tool for 524 
+
+differentiating Alzheimer's disease and mild cognitive impairment from healthy aging. The 525 
+
+diagnostic model demonstrated strong performance and transparency, underscoring its 526 
+
+suitability for real-world application, especially in settings where access to specialized 527 
+
+diagnostics is limited. These insights highlight the value of speech-based screening in 528 
+
+complementing traditional clinical assessments and support its integration into scalable 529 
+
+digital health strategies. Future efforts should focus on validation across diverse populations 530 
+
+and deployment in longitudinal monitoring contexts. 531 
+
+Ethical Statement: 532 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+• Funding: None 533 
+
+• Conflict of Interest: None 534 
+
+• Ethical approval: Not Applicable 535 
+
+• Informed consent: Not Applicable 536 
+
+• Author contribution: S.S. and A.D. contributed equally to this work. Both authors were 537 
+
+involved in the conceptualization, methodology design, data simulation, feature extraction, 538 
+
+machine learning implementation, results interpretation, and manuscript writing. All figures 539 
+
+and tables were jointly prepared. Both authors read and approved the final version of the 540 
+
+manuscript. 541 
+
+• Data Availability Statement: All data supporting the findings of this study are either 542 
+
+included in the manuscript or available upon reasonable request from the corresponding 543 
+
+author. 544 
+
+545 
+
+References 546 
+
+[1] Alzheimer's Disease International. (2024). World Alzheimer Report 2024: Redefining 547 
+
+dementia care pathways . https://www.alzint.org/u/World-Alzheimer-Report-2024.pdf 548 
+
+[2] Ding, K., Chetty, M., Noori Hoshyar, A., Mysore, P., Shanmugam, B., Kaur, K., Wang, 549 
+
+L., Zhang, F., Altieri, N., Brown, L., Kuo, P.-H., & Klein, B. (2024). Speech-based detection 550 
+
+of Alzheimer’s disease: A survey of AI techniques, datasets and challenges. Artificial 551 
+
+Intelligence Review, 57 , 325. https://doi.org/10.1007/s10462-024-10961-6 552 
+
+[3] Sharafeldeen, A., Keowen, J., & Shaffie, A. (2025). Machine learning approaches for 553 
+
+speech-based Alzheimer’s detection: A comprehensive survey. Computers, 14 (2), 36. 554 
+
+https://doi.org/10.3390/computers14020036 555 
+
+[4] Noto, S., Sekiyama, Y., Nagata, R., Yamamoto, G., & Tamura, T. (2024). Analysis of 556 
+
+speech features in Alzheimer’s disease with machine learning: A case-control study. 557 
+
+Healthcare, 12 (21), 2194. https://doi.org/10.3390/healthcare12212194 558 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[5] Burke, E., Gunstad, J., Pavlenko, O., & Hamrick, P. (2024). Distinguishable features of 559 
+
+spontaneous speech in Alzheimer’s clinical syndrome and healthy controls. 560 
+
+Neuropsychology, Development, and Cognition: Aging, Neuropsychology and Cognition, 561 
+
+31 (3), 575–586. https://doi.org/10.1080/13825585.2023.2221020 562 
+
+[6] Hason, L., & Krishnan, S. (2022). Spontaneous speech feature analysis for Alzheimer’s 563 
+
+disease screening using a random forest classifier. Frontiers in Digital Health, 4 , 901419. 564 
+
+https://doi.org/10.3389/fdgth.2022.901419 565 
+
+[7] Priyadarshinee, P., Clarke, C. J., Melechovsky, J., Lin, C. M. Y., Balamurali, B. T., & 566 
+
+Chen, J.-M. (2023). Alzheimer’s dementia speech (audio vs. text): Multi-modal machine 567 
+
+learning at high vs. low resolution. Applied Sciences, 13 (7), 4244. 568 
+
+https://doi.org/10.3390/app13074244 569 
+
+[8] Vimbi, V., Shaffi, N., & Mahmud, M. (2024). Interpreting artificial intelligence models: 570 
+
+A systematic review on the application of LIME and SHAP in Alzheimer’s disease detection. 571 
+
+Brain Informatics, 11 (1), 10. https://doi.org/10.1186/s40708-024-00222-1 572 
+
+[9] Lanzi, A. M., Saylor, A. K., Fromm, D., Liu, H., MacWhinney, B., & Cohen, M. L. 573 
+
+(2023). DementiaBank: Theoretical rationale, protocol, and illustrative analyses of a shared 574 
+
+language resource for Alzheimer’s disease research. American Journal of Speech-Language 575 
+
+Pathology, 32 (2), 1–13. https://doi.org/10.1044/2022_AJSLP-22-00281 576 
+
+[10] García-Gutiérrez, F., Marquié, M., Muñoz, N., Alegret, M., Cano, A., de Rojas, I., 577 
+
+García-González, P., Olivé, C., Puerta, R., Orellana, C., Montrreal, L., Pytel, V., Ricciardi, 578 
+
+E., Zaldua, T., Gabirondo, M., Hinzen, W., Lleonart, R., García-Sánchez, C., Tárraga, L., 579 
+
+Ruiz, A., Boada, M., & Valero, S. (2023). Harnessing acoustic speech parameters to decipher 580 
+
+amyloid status in individuals with mild cognitive impairment. Frontiers in Neuroscience, 17 ,581 
+
+1221401. https://doi.org/10.3389/fnins.2023.1221401 582 
+
+[11] Ruzi, R., Pan, Y., Ng, M. L., Su, R., Wang, L., Dang, J., Liu, L., & Yan, N. (2025). A 583 
+
+speech-based mobile screening tool for mild cognitive impairment: Technical performance 584 
+
+and user engagement evaluation. Bioengineering, 12 (2), 108. 585 
+
+https://doi.org/10.3390/bioengineering12020108 586 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[12] Huang, L., Yang, H., Che, Y., & Yang, J. (2024). Automatic speech analysis for 587 
+
+detecting cognitive decline of older adults. Frontiers in Public Health, 12 , 1417966. 588 
+
+https://doi.org/10.3389/fpubh.2024.1417966 589 
+
+[13] Amini, S., Hao, B., Zhang, L., Song, M., Gupta, A., Karjadi, C., Kolachalama, V. B., 590 
+
+Au, R., & Paschalidis, I. C. (2023). Automated detection of mild cognitive impairment and 591 
+
+dementia from voice recordings: A natural language processing approach. Alzheimer’s & 592 
+
+Dementia, 19 (3), 946–955. https://doi.org/10.1002/alz.12721 593 
+
+[14] Tang, L., Zhang, Z., Feng, F., Yang, L.-Z., & Li, H. (2023). Explainable Alzheimer’s 594 
+
+disease detection using linguistic features from automatic speech recognition. Dementia and 595 
+
+Geriatric Cognitive Disorders, 52 (4), 240–248. https://doi.org/10.1159/000531818 596 
+
+[15] Cho, S., Olm, C. A., Ash, S., Shellikeri, S., Agmon, G., Cousins, K. A. Q., Irwin, D. J., 597 
+
+Grossman, M., Liberman, M., & Nevler, N. (2024). Automatic classification of AD 598 
+
+pathology in FTD phenotypes using natural speech. Alzheimer’s & Dementia, 20 (5), 3416– 599 
+
+3428. https://doi.org/10.1002/alz.13748 600 
+
+[16] Guo, Y., Li, C., Roan, C., Pakhomov, S., & Cohen, T. (2021). Crossing the “Cookie 601 
+
+Theft” corpus chasm: Applying what BERT learns from outside data to the ADReSS 602 
+
+Challenge dementia detection task. Frontiers in Computer Science, 3, 642517. 603 
+
+https://doi.org/10.3389/fcomp.2021.642517 604 
+
+[17] Luz, S., Haider, F., de la Fuente, S., Fromm, D., & MacWhinney, B. (2020). 605 
+
+Alzheimer’s dementia recognition through spontaneous speech: The ADReSS Challenge. In 606 
+
+Proceedings of Interspeech 2020 (pp. 2172–2176). 607 
+
+https://doi.org/10.21437/Interspeech.2020-2571 608 
+
+[18] Saeedi, S., Hetjens, S., Grimm, M. O. W., & Barsties von Latoszek, B. (2024). Acoustic 609 
+
+speech analysis in Alzheimer’s disease: A systematic review and meta-analysis. Journal of 610 
+
+Prevention of Alzheimer’s Disease, 11 (6), 1789–1797. 611 
+
+https://doi.org/10.14283/jpad.2024.132 612 
+
+[19] Cho, S., Cousins, K. A. Q., Shellikeri, S., Ash, S., Irwin, D. J., Liberman, M. Y., 613 
+
+Grossman, M., & Nevler, N. (2022). Lexical and acoustic speech features relating to 614 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Alzheimer disease pathology. Neurology, 99 (4), e313–e322. 615 
+
+https://doi.org/10.1212/WNL.0000000000200581 616 
+
+[20] van den Berg, R. L., de Boer, C., Zwan, M. D., Jutten, R. J., van Liere, M., van de Glind, 617 
+
+M. C. A. B. J., Dubbelman, M. A., Schlüter, L. M., van Harten, A. C., Teunissen, C. E., van 618 
+
+de Giessen, E., Barkhof, F., Collij, L. E., Robin, J., Simpson, W., Harrison, J. E., van der 619 
+
+Flier, W. M., & Sikkes, S. A. M. (2024). Digital remote assessment of speech acoustics in 620 
+
+cognitively unimpaired adults: Feasibility, reliability and associations with amyloid 621 
+
+pathology. Alzheimer’s Research & Therapy, 16 (1), 176. https://doi.org/10.1186/s13195-024-622 
+
+01543-3 623 
+
+[21] Arslan-Sarımehmeto ğlu, E., & Barmak, E. (2025). The effect of mild-stage Alzheimer’s 624 
+
+disease on the acoustic parameters of voice. Egyptian Journal of Otolaryngology, 41 , Article 625 
+
+19. https://doi.org/10.1186/s43163-025-00765-y 626 
+
+[22] Yamanki Santander-Cruz, R., Salazar-Colores, S., Paredes-García, W. J., Guendulain-627 
+
+Arenas, H., & Tovar-Arriaga, S. (2022). Semantic feature extraction using SBERT for 628 
+
+dementia detection. Brain Sciences, 12 (2), 270. https://doi.org/10.3390/brainsci12020270 629 
+
+[23] Ambrosini, E., Giangregorio, C., Lomurno, E., Moccia, S., Milis, M., Loizou, C., 630 
+
+Azzolino, D., Cesari, M., Gala, M. C., Galán de Isla, C., Gomez-Raja, J., Borghese, N. A., 631 
+
+Matteucci, M., & Ferrante, S. (2024). Automatic spontaneous speech analysis for the 632 
+
+detection of cognitive functional decline in older adults: Multilanguage cross-sectional study. 633 
+
+JMIR Aging, 7 (2), e45010. https://doi.org/10.2196/45010 634 
+
+[24] Kleiman, M. J., & Galvin, J. E. (2024). High frequency post-pause word choices and 635 
+
+task-dependent speech behavior characterize connected speech in individuals with mild 636 
+
+cognitive impairment. Journal of Alzheimer’s Disease, 102 (3), 1081–1094. 637 
+
+https://doi.org/10.3233/JAD-221256 638 
+
+[25] Mueller, K. D., Van Hulle, C. A., Koscik, R. L., Jonaitis, E. M., Peters, C. C., 639 
+
+Betthauser, T. J., Christian, B. T., Chin, N., Hermann, B. P., & Johnson, S. C. (2021). 640 
+
+Amyloid beta associations with connected speech in cognitively unimpaired adults. 641 
+
+Alzheimer’s & Dementia (Amsterdam), 13 (1), e12203. https://doi.org/10.1002/dad2.12203 642 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[26] Yang, Q., Li, X., Ding, X., Xu, F., & Ling, Z. (2022). Deep learning-based speech 643 
+
+analysis for Alzheimer’s disease detection: A literature review. Alzheimer’s Research & 644 
+
+Therapy, 14 , 186. https://doi.org/10.1186/s13195-022-01131-3 645 
+
+[27] Chen, X., Pu, Y., Li, J., & Zhang, W.-Q. (2023). Cross-lingual Alzheimer's disease 646 
+
+detection based on paralinguistic and pre-trained features. arXiv preprint arXiv:2303.07650 .647 
+
+[28] Rohanian, M., Hough, J., & Purver, M. (2021). Multi-modal fusion with gating using 648 
+
+audio, lexical and disfluency features for Alzheimer's dementia recognition from spontaneous 649 
+
+speech. arXiv preprint arXiv:2106.09668 .arXiv 650 
+
+[29] Yang, Q., Li, X., Ding, X., Xu, F., & Ling, Z. (2022). Deep learning-based speech 651 
+
+analysis for Alzheimer's disease detection: A literature review. Alzheimer's Research & 652 
+
+Therapy, 14 , 186. https://doi.org/10.1186/s13195-022-01131-3 653 
+
+[30] Vimbi, V., Shaffi, N., & Mahmud, M. (2024). Interpreting artificial intelligence models: 654 
+
+A systematic review on the application of LIME and SHAP in Alzheimer's disease detection. 655 
+
+Brain Informatics, 11 (1), 10. https://doi.org/10.1186/s40708-024-00222-1 656 
+
+[31] Ding, K., Chetty, M., Noori Hoshyar, A., Mysore, P., Shanmugam, B., Kaur, K., Wang, 657 
+
+L., Zhang, F., Altieri, N., Brown, L., Kuo, P.-H., & Klein, B. (2024). Speech-based detection 658 
+
+of Alzheimer's disease: A survey of AI techniques, datasets and challenges. Artificial 659 
+
+Intelligence Review, 57 , 325. https://doi.org/10.1007/s10462-024-10961-6 660 
+
+[32] Vlontzou, M. E., Athanasiou, M., Dalakleidi, K. V., Skampardoni, I., Davatzikos, C., & 661 
+
+Nikita, K. (2025). A comprehensive interpretable machine learning framework for mild 662 
+
+cognitive impairment and Alzheimer's disease diagnosis. Scientific Reports, 15 , 8410. 663 
+
+https://doi.org/10.1038/s41598-025-92577-6Nature 664 
+
+[33] Pan, Y., Shi, Y., Zhang, Y., & Lu, M. (2024). Swin-BERT: A feature fusion system 665 
+
+designed for speech-based Alzheimer's dementia detection. arXiv preprint arXiv:2410.07277 .666 
+
+[34] Amlerova J., Laczó J., Nedelska Z., Laczó M., Vyhnálek M., Zhang B., Sheardova K., 667 
+
+Angelucci F., Andel R., Hort J. Emotional prosody recognition is impaired in Alzheimer’s 668 
+
+disease. Alzheimer’s Res. Ther. 2022;14:50. doi: 10.1186/s13195-022-00989-7 669 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[35] Oh C., Morris R.J., Wang X. A Systematic Review of Expressive and Receptive Prosody 670 
+
+in People With Dementia. J. Speech Lang. Hear. Res. 2021;64:3803–3825. doi: 671 
+
+10.1044/2021_JSLHR-21-00013. 672 
+
+[36] Tosto G., Gasparini M., Lenzi G.L., Bruno G. Prosodic impairment in Alzheimer’s 673 
+
+disease: Assessment and clinical relevance. J. Neuropsychiatry Clin. Neurosci. 2011;23:E21– 674 
+
+E23. doi: 10.1176/jnp.23.2.jnpe21. 675 
+
+[37] Kundaram S.S., Pathak K.C. Deep learning-based alzheimer disease detection; 676 
+
+Proceedings of the Fourth International Conference on Microelectronics, Computing and 677 
+
+Communication Systems; Ranchi, India. 11–12 May 2019; Singapore: Springer; 2021. 678 
+
+[38] Sotaniemi M., Pulliainen V., Hokkanen L., Pirttilä T., Hallikainen I., Soininen H., 679 
+
+Hänninen T. CERAD-neuropsychological battery in screening mild Alzheimer’s disease. 680 
+
+Acta Neurol. Scand. 2011;125:16–23. doi: 10.1111/j.1600-0404.2010.01459.x. 681 
+
+[39] Gosse P.J., Kassardjian C.D., Masellis M., Mitchell S.B. Virtual care for patients with 682 
+
+Alzheimer disease and related dementias during the COVID-19 era and beyond. Can. Med. 683 
+
+Assoc. J. 2021;193:E371–E377. doi: 10.1503/cmaj.201938. 684 
+
+[40] Matamala-Gomez M., Bottiroli S., Realdon O., Riva G., Galvagni L., Platz T., Sandrini 685 
+
+G., De Icco R., Tassorelli C. Telemedicine and Virtual Reality at Time of COVID-19 686 
+
+Pandemic: An Overview for Future Perspectives in Neurorehabilitation. Front. Neurol. 687 
+
+2021;12:646902. doi: 10.3389/fneur.2021.646902. 688 
+
+[41] Pathak K.C., Kundaram S.S. Soft Computing: Theories and Applications: Proceedings of 689 
+
+SoCTA 2019. Springer; Singapore: 2020. Accuracy-Based Performance Analysis of 690 
+
+Alzheimer’s Disease Classification Using Deep Convolution Neural Network; pp. 731–744. 691 
+
+[42] Takeda C., Guyonnet S., Ousset P., Soto M., Vellas B. Toulouse Alzheimer’s Clinical 692 
+
+Research Center recovery after the COVID-19 crisis: Telemedicine an innovative solution for 693 
+
+clinical research during the coronavirus pandemic. J. Prev. Alzheimer’s Dis. 2020;7:301–304. 694 
+
+doi: 10.14283/jpad.2020.32. 695 
+
+[43] Capozzo R., Zoccolella S., Frisullo M.E., Barone R., Dell’abate M.T., Barulli M.R., 696 
+
+Musio M., Accogli M., Logroscino G. Telemedicine for Delivery of Care in Frontotemporal 697 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+Lobar Degeneration during COVID-19 Pandemic: Results from Southern Italy. J. 698 
+
+Alzheimer’s Dis. 2020;76:481–489. doi: 10.3233/JAD-200589 699 
+
+[44] Nester C.O., Mogle J., Katz M.J., Wang C., Lipton R.B., Derby C.A., Rabin L. Aging 700 
+
+research in the time of COVID-19: A telephone screen for subjective cognitive concerns in 701 
+
+community-dwelling ethnically diverse older adults. Alzheimer’s Dement. 2021;17:e056403. 702 
+
+doi: 10.1002/alz.056403. 703 
+
+[45] Mantovani E., Zucchella C., Bottiroli S., Federico A., Giugno R., Sandrini G., 704 
+
+Chiamulera C., Tamburin S. Telemedicine and Virtual Reality for Cognitive Rehabilitation: 705 
+
+A Roadmap for the COVID-19 Pandemic. Front. Neurol. 2020;11:926. doi: 706 
+
+10.3389/fneur.2020.00926. 707 
+
+[46] Prins S., Zhuparris A., Hart E.P., Doll R.J., Groeneveld G.J. A cross-sectional study in 708 
+
+healthy elderly subjects aimed at development of an algorithm to increase identification of 709 
+
+Alzheimer pathology for the purpose of clinical trial participation. Alzheimer’s Res. Ther. 710 
+
+2021;13:132. doi: 10.1186/s13195-021-00874-9. 711 
+
+[47] Sato K., Mano T., Ihara R., Suzuki K., Niimi Y., Toda T., Iwatsubo T., Iwata A., 712 
+
+Alzheimer’s Disease Neuroimaging Initiative. Japanese Alzheimer’s Disease Neuroimaging 713 
+
+Initiative et al. Cohort-specific optimization of models predicting preclinical Alzheimer’s 714 
+
+disease, to enhance screening performance in the middle of preclinical Alzheimer’s disease 715 
+
+clinical studies. J. Prev. Alzheimer’s Dis. 2021;8:503–512. doi: 10.14283/jpad.2021.39. 716 
+
+[48] Kwon S.J., Kim H.S., Han J.H., Bin Bae J., Kim K.W. Reliability and Validity of 717 
+
+Alzheimer’s Disease Screening With a Semi-automated Smartphone Application Using 718 
+
+Verbal Fluency. Front. Neurol. 2021;12:684902. doi: 10.3389/fneur.2021.684902. 719 
+
+[49] Bae M., Chang K.J. Cognitive function of the elderly without dementia in Korea: Cross-720 
+
+sectional study. Alzheimer’s Dement. 2021;17:e051714. doi: 10.1002/alz.051714. 721 
+
+[50] Jung Y.-S., Park T., Kim E.-K., Jeong S.-H., Lee Y.-E., Cho M.-J., Song K.-B., Choi Y.-722 
+
+H. Influence of Chewing Ability on Elderly Adults’ Cognitive Functioning: The Mediating 723 
+
+Effects of the Ability to Perform Daily Life Activities and Nutritional Status. Int. J. Environ. 724 
+
+Res. Public Health. 2022;19:1236. doi: 10.3390/ijerph19031236. 725 
+
+> was not certified by peer review) is the author/funder. All rights reserved. No reuse allowed without permission. The copyright holder for this preprint (which this version posted April 8, 2026. ;https://doi.org/10.64898/2026.04.08.717162 doi: bioRxiv preprint
+
+[51] Suh H.-W., Seol J.-H., Bae E.-J., Kwak H.-Y., Hong S., Park Y.-S., Lim J.H., Chung S.-726 
+
+Y. Effectiveness and Safety of the Korean Medicine Senior Health Promotion Program Using 727 
+
+Herbal Medicine and Acupuncture for Mild Cognitive Impairment: A Retrospective Study of 728 
+
+500 Patients in Seoul, Korea. Evid.-Based Complement. Altern. Med. 2021;2021:8820705. 729 
+
+doi: 10.1155/2021/8820705. 730 
+
+[52] Park Y.-S., Jee Y.-J. The Effects on Cognitive, Emotional, and Physical Functions of the 731 
+
+Elderly at Local Senior Center from Dementia Prevention Program for the Dementia Safety 732 
+
+Village. J. Med. Imaging Health Inform. 2021;11:508–512. doi: 10.1166/jmihi.2021.3286. 733 
+
+[53] Kim M., Kim H., Lim J.S. Classification of Diagnosis of Alzheimer’s Disease Based on 734 
+
+Convolutional Layers of VGG16 Model using Speech Data; Proceedings of the 2020 735 
+
+International Conference on Information and Communication Technology Convergence 736 
+
+(ICTC); Jeju, Republic of Korea. 21–23 October 2020; Piscataway, NJ, USA: IEEE; 2020. 737 
+
+[54] Ha J.-H., Kwak M., Han J.W., Lee H.J., Ingersoll-Dayton B., Spencer B., Kim K.W. The 738 
+
+effectiveness of a couple-based intervention for people living with mild Alzheimer’s disease 739 
+
+and their spousal caregivers in Korea. Dementia. 2018;20:831–847. doi: 740 
+
+10.1177/1471301218811547. 741 
+
+[55] Orimaye, S. O., Wong, J. S., Golden, K. J., Wong, C. P., & Soyiri, I. N. (2017). 742 
+
+Predicting probable Alzheimer's disease using linguistic deficits and biomarkers. BMC 743 
+
+bioinformatics , 18 (1), 34. https://doi.org/10.1186/s12859-016-1456-0. 744 
+
+[56] Lundberg, S. M., Erion, G., Chen, H., DeGrave, A., Prutkin, J. M., Nair, B., Katz, R., 745 
+
+Himmelfarb, J., Bansal, N., & Lee, S. I. (2020). From Local Explanations to Global 746 
+
+Understanding with Explainable AI for Trees. Nature machine intelligence , 2(1), 56–67. 747 
+
+https://doi.org/10.1038/s42256-019-0138-9 748

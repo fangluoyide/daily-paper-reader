@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717162-v1/fig-001.webp",
+      "caption": "Table 1. Demographic and clinical summary by group. Values are mean ± SD unless noted. 280 Education and MMSE decline with group severity (p<0.001 by one-way ANOVA), while age 281 is modestly higher in MCI/AD. (Gender distribution was balanced across groups.) 282",
+      "page": 10,
+      "index": 1,
+      "width": 866,
+      "height": 512
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-08-717162-v1/fig-002.webp",
+      "caption": "Table 2. Speech feature statistics by group (mean ± SD). All group differences are 339 statistically significant (p<0.001) by ANOVA. AD patients speak more slowly and with more 340 hesitations. 341",
+      "page": 14,
+      "index": 2,
+      "width": 1004,
+      "height": 500
+    }
+  ]
+}

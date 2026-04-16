@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-001.webp",
+      "caption": "Table 2. Characteristics of Interview Participants (N = 12)",
+      "page": 6,
+      "index": 1,
+      "width": 944,
+      "height": 350
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-002.webp",
+      "caption": "Figure 2. The 3D model, printing process, and completed Lvbao",
+      "page": 6,
+      "index": 2,
+      "width": 943,
+      "height": 358
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-003.webp",
+      "caption": "Table 4. Descriptive Statistics of the Constructs",
+      "page": 11,
+      "index": 3,
+      "width": 944,
+      "height": 244
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-004.webp",
+      "caption": "Table 5. Reliability and Validity Indicators of the Constructs",
+      "page": 11,
+      "index": 4,
+      "width": 944,
+      "height": 405
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-005.webp",
+      "caption": "Table 3. Constructs and Measurement Items",
+      "page": 7,
+      "index": 5,
+      "width": 941,
+      "height": 396
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-006.webp",
+      "caption": "Figure 1. The Conceptual Model",
+      "page": 3,
+      "index": 6,
+      "width": 943,
+      "height": 696
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-007.webp",
+      "caption": "Figure 4. Structural Model Results and Hypothesis Testing",
+      "page": 13,
+      "index": 7,
+      "width": 943,
+      "height": 694
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-008.webp",
+      "caption": "Table 8. Structural Model Results and Hypothesis Testing",
+      "page": 13,
+      "index": 8,
+      "width": 944,
+      "height": 375
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-009.webp",
+      "caption": "Table 7. Model Fit Indices for the Measurement and Structural Models",
+      "page": 12,
+      "index": 9,
+      "width": 945,
+      "height": 294
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-010.webp",
+      "caption": "Table 6. Fornell–Larcker Criterion Matrix",
+      "page": 12,
+      "index": 10,
+      "width": 944,
+      "height": 479
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12789v1/fig-011.webp",
+      "caption": "Table 1. Characteristics of Questionnaire Participants (N = 436)",
+      "page": 5,
+      "index": 11,
+      "width": 944,
+      "height": 429
+    }
+  ]
+}

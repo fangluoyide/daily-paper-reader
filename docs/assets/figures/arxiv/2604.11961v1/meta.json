@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-001.webp",
+      "caption": "Table 7. SW Variability Analysis",
+      "page": 11,
+      "index": 1,
+      "width": 1036,
+      "height": 360
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-002.webp",
+      "caption": "Table 8. SL Variability Analysis",
+      "page": 11,
+      "index": 2,
+      "width": 1036,
+      "height": 342
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-003.webp",
+      "caption": "Table 6. Step Length (SL) Analysis",
+      "page": 11,
+      "index": 3,
+      "width": 1036,
+      "height": 381
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-004.webp",
+      "caption": "Figure 6. Snapshots of research assistant completing the TUG (left), with the camera-centric view overlay of the HMR (middle), and the global-centric view (right).",
+      "page": 10,
+      "index": 4,
+      "width": 829,
+      "height": 829
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-005.webp",
+      "caption": "Figure 7. Detection of heel strike using peak detection, according to the detected joints using GVHMR.",
+      "page": 10,
+      "index": 5,
+      "width": 829,
+      "height": 206
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-006.webp",
+      "caption": "Table 1. The measures in this table were completed by the participants to provide information about subjective and objective fall risk, specifically self-rated fall risk, fear of falling, and postural sway.",
+      "page": 3,
+      "index": 6,
+      "width": 1022,
+      "height": 183
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-007.webp",
+      "caption": "Table 2. Components of signals for segmentation of TUG subtask (sit-to-stand, turns, stand-to-sit).",
+      "page": 3,
+      "index": 7,
+      "width": 496,
+      "height": 244
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-008.webp",
+      "caption": "Figure 3. Automated Subtask Segmentation for three trials. Solid line refers to the hip line velocity and dashed line refers to sit-tostand and stand-to-sit (STS) signal.",
+      "page": 3,
+      "index": 8,
+      "width": 477,
+      "height": 273
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-009.webp",
+      "caption": "Figure 4. Scatterplots of mean step length (SL), SL variability, and sit-to-stand and stand-to-sit (STS) duration with fall risk factors (STEADI: self-rated fall risk, Short FES-I: fear of falling).",
+      "page": 4,
+      "index": 9,
+      "width": 477,
+      "height": 412
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11961v1/fig-010.webp",
+      "caption": "Table 9. Sit-to-Stand and Stand-to-Sit (STS) Duration Analysis",
+      "page": 12,
+      "index": 10,
+      "width": 1036,
+      "height": 380
+    }
+  ]
+}
