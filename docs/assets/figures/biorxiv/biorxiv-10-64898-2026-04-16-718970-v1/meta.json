@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-16-718970-v1/fig-001.webp",
+      "caption": "Figure 5. Neuromelanin interactions with midbrain activity, volume and memory performance on our task. A, In the SN/VTA the BOLD response to unexpected familiar objects is higher for individuals with lower levels of NM, both in typical older adults (p = 0.01) and in superagers (p < 0.010). B, Superagers and typical older adults show a trend towards and opposite relationship between neuromelanin accumulation and midbrain volume (p = 0.09). C, Relationship between NM accumulation with the unexpected behavioural outcome (subtracting the expected signal, with positive values reflecting a stronger unexpected signal and negative values reflecting a stronger expected signal). Suggesting that the effect of NM accumulation on memory outcomes did not differ between groups. Error bars represent 95% confidence intervals. Coloured asterisks denote significance levels for the simple slopes analysis.*p < 0.05, ***p<0.001",
+      "page": 30,
+      "index": 1,
+      "width": 951,
+      "height": 401
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-16-718970-v1/fig-002.webp",
+      "caption": "Figure 2. Behavioural results for the recognition phase and neuroanatomical differences between superagers and typical older adults. A, Recognition memory performance (corrected hit rate), with superagers remembering more images than typical older adults regardless of their expectation (p = 0.005). Both groups remember more unexpected compared to expected objects (p = 0.009). B, Reaction times in seconds (RTs) for the recognition phase, with superagers responding faster than typical older adults in both the expected and unexpected conditions (p = 0.003). C, Superagers show larger grey matter volumes in bilateral hippocampus, amygdala, thalamus and nucleus accumbens. TFCE family-wise error-corrected p<0.05. Error bars reflect 95% confidence interval. **p < 0.01",
+      "page": 19,
+      "index": 2,
+      "width": 999,
+      "height": 762
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-16-718970-v1/fig-003.webp",
+      "caption": "Figure 4. Encoding fMRI activity in the midbrain. A, Mean SN/VTA activity for each group (superagers vs. typical older adults) across the four experimental conditions defined by expectation (expected vs. unexpected) and item novelty (familiar vs. novel). Typical older adults exhibit decreased midbrain activation for unexpected familiar objects compared to expected novel objects (black asterisks, p = 0.006). B, Midbrain activity across experimental runs for all stimuli (expected, unexpected, familiar and novel). Typical older adults show a marked increase in SN/VTA activity over experimental runs (p < 0.001), with superagers having a stable response across the experiment (p = 0.19), with no significant expectation or novelty effects developing over time. Error bars represent 95% confidence intervals. Coloured asterisks denote significance levels for the simple slopes analysis. **p < 0.01, *** p < 0.001.",
+      "page": 27,
+      "index": 3,
+      "width": 943,
+      "height": 547
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-16-718970-v1/fig-004.webp",
+      "caption": "Figure 3. Encoding fMRI activity in the hippocampus and recognition performance. A, Hippocampal activity for expected events across experimental runs. Superagers show decreased hippocampal activation for expected events over time, regardless of their novelty status (familiar and novel), whereas typical older adults show increased hippocampal activation for expected events over time regardless of their novelty status (both for familiar and novel images). B, Hippocampal activity for unexpected events across experimental runs. Superagers show higher hippocampal activity than typical older adults for unexpected events, regardless of their novelty status (black",
+      "page": 24,
+      "index": 4,
+      "width": 970,
+      "height": 987
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-16-718970-v1/fig-005.webp",
+      "caption": "Table 1. Demographic, neuropsychological and APOE genotype differences between superagers and typical older adults.",
+      "page": 16,
+      "index": 5,
+      "width": 1010,
+      "height": 1260
+    }
+  ]
+}

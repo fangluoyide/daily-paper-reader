@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-001.webp",
+      "caption": "Figure 6. Cross-benchmark correlation of estimated fine-grained ability levels. Spearman’s ρ between paired benchmarks, computed over 19 of 35 ability dimensions with > 10 items in all benchmarks. Color: purple = MMLU-MATH vs MATH500, blue = MMLU-MATH vs MMLU-Pro-MATH, red = MMLU-Pro-MATH vs MATH500. Shape: squares (p < 0.01), triangles (p < 0.05), diamonds (p > 0.05). Dashed lines mark thresholds: ρ = 0.3 (weak), 0.5 (moderate), 0.7 (strong). 14 of these 19 dimensions show ρ > 0.5 across all pairwise comparisons.",
+      "page": 6,
+      "index": 1,
+      "width": 488,
+      "height": 310
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-002.webp",
+      "caption": "Figure 1. A diagnostic framework for evaluating LLMs via fine-grained mathematical abilities. Centered on Bloom’s taxonomy, we decompose Mathematical Abilities into two core dimensions: Knowledge (e.g., Algebra, Calculus) and Cognitive (e.g., Multi-step Problem Solving, Critical Reasoning). Each is further subdivided into interpretable sub-skills. The framework links benchmark questions (left) to their underlying abilities and maps them to real-world problem domains (right), enabling granular diagnosis beyond aggregate scores and bridging the gap between evaluation benchmarks and practical task demands.",
+      "page": 2,
+      "index": 2,
+      "width": 870,
+      "height": 508
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-003.webp",
+      "caption": "Figure 7. AUC distribution across 41 LLMs for nine prediction scenarios. Boxplots show median, IQR, and outliers (whiskers = 1.5×IQR). First three: within-benchmark prediction on MMLUMATH, MATH500, MMLU-Pro-MATH; remaining six: crossbenchmark prediction over all ordered benchmark pairs. All scenarios significantly outperform baselines under identical item assumptions: accuracy-based (AUC = 0.50), standard IRT (AUC = 0.50), and random prediction (mean AUC = 0.49).",
+      "page": 7,
+      "index": 3,
+      "width": 476,
+      "height": 303
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-004.webp",
+      "caption": "Table 1. List of evaluated language models with unique identifiers.",
+      "page": 23,
+      "index": 4,
+      "width": 687,
+      "height": 998
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-005.webp",
+      "caption": "Table 2. List of evaluated benchmarks with detailed metadata.",
+      "page": 23,
+      "index": 5,
+      "width": 883,
+      "height": 202
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-006.webp",
+      "caption": "Table 5. Cross-benchmark unseen item prediction performance per model (AUC ± std over repeat for 10 times).",
+      "page": 28,
+      "index": 6,
+      "width": 1008,
+      "height": 786
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-007.webp",
+      "caption": "Figure 3. Structure of the IRT-based fine-grained ability evaluation model. Based on the IRT method, a simple fully connected neural network is implemented on the Interaction Layer to fit model performance in downstream tasks, thereby achieving fine-grained ability evaluation.",
+      "page": 4,
+      "index": 7,
+      "width": 388,
+      "height": 323
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-008.webp",
+      "caption": "Table 4. Within-benchmark unseen item prediction performance per model (AUC ± std over 10 random splits with different seeds).",
+      "page": 27,
+      "index": 8,
+      "width": 604,
+      "height": 1071
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-009.webp",
+      "caption": "Table 3. Item coverage of per ability dimension across mathematical benchmarks.",
+      "page": 24,
+      "index": 9,
+      "width": 650,
+      "height": 958
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12191v1/fig-010.webp",
+      "caption": "Figure 4. Distribution of item coverage across 35 fine-grained abilities in three mathematical benchmarks. The distributions are inconsistent across knowledge-oriented and cognition-oriented dimensions, with pronounced differences among individual dimensions. Left: benchmark-knowledge ability associations, indicating distinct assessment emphases across benchmarks. Right: benchmarkcognition ability associations, exhibiting greater overlap in assessment tendencies while retaining benchmark-specific emphases.",
+      "page": 5,
+      "index": 10,
+      "width": 981,
+      "height": 306
+    }
+  ]
+}

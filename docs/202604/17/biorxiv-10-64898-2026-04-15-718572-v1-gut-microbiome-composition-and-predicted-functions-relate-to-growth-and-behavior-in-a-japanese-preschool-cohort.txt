@@ -1,0 +1,1774 @@
+Title: Gut microbiome composition and predicted functions relate to growth and behavior in a Japanese preschool cohort
+
+URL Source: https://www.biorxiv.org/content/10.64898/2026.04.15.718572v1.full.pdf
+
+Number of Pages: 40
+
+Markdown Content:
+1
+
+Gut microbiome composition and predicted functions relate to growth and behavior 1
+
+in a Japanese preschool cohort 2
+
+3
+
+Shunsuke Ichikawa a,d,# , Ayaka Shimura a, Aoi Kikuchi a, Rise Sanda a, Kensaku Sasayama a,4
+
+Keiko Nonoue b, Hiroko Tamura c, Takahiro Kano a, Yasuhito Shimada d,e,* 
+
+5
+
+6 
+
+> a
+
+Faculty of Education, Mie University, 1577 Kurimamachiya -cho Tsu, Mie, 514 -8507, 7
+
+Japan 8 
+
+> b
+
+Waseda Institute for Sport Science, Waseda University, 2 -579 -15 Mikajima Tokorozawa, 9
+
+Saitama, 359 -1192, Japan 10  
+
+> c
+
+Sanyo Gakuen University, 1 -14 -1 Hirai Naka -ku Okayama, Okayama, 703 -8501, Japan 11  
+
+> d
+
+Zebrafish Research Center, Mie University, 1577 Kurimamachiya -cho Tsu, Mie, 514 -12 
+
+8507, Japan 13  
+
+> e
+
+Department of Integrative Pharmacology, Graduate School of Medicine, Mie University, 14 
+
+1577 Kurimamachiya -cho Tsu, Mie, 514 -8507, Japan 15 
+
+16  
+
+> *
+
+Corresponding author: 17 
+
+E-mail:  shimada.yasuhito@mie -u.ac.jp 18 
+
+Tel: 059 -231 -5384 19  
+
+> #
+
+Co -corresponding author: 20 
+
+E-mail:  ichikawa@edu.mie -u.ac.jp 21 
+
+Tel: 059 -231 -9254 22 
+
+23 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+2
+
+ORCID 24 
+
+Shunsuke Ichikawa : 0000 -0003 -2935 -004X 25 
+
+Kensaku Sasayama : 0000 -0001 -7474 -9960 26 
+
+Yasuhito Shimada : 0000 -0002 -4111 -8262 27 
+
+28 
+
+Word count:  6819  words 29 
+
+30 
+
+Abbreviations: 31 
+
+CBCL 1½ –5: Child Behavior Checklist for ages 1½ –5; ASEBA : Achenbach System of 32 
+
+Empirically Based Assessment; ASV : Amplicon Sequence Variant; EC : Enzyme 33 
+
+Commission; KEGG : Kyoto Encyclopedia of Genes and Genomes; KO : KEGG Ortholog; 34 
+
+COG : Clusters of Orthologous Groups; PICRUSt2 : Phylogenetic Investigation of 35 
+
+Communities by Reconstruction of Unobserved States 2; QIIME 2 : Quantitative Insights 36 
+
+Into Microbial Ecology 2; SCFA : Short -Chain Fatty Acid s37 
+
+38 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+3
+
+Acknowledgements 39 
+
+We sincerely thank the children, parents, and teachers at participating kindergartens and 40 
+
+nursery schools for their cooperation with fecal sample collection and questionnaire 41 
+
+completion. 42 
+
+43 
+
+Author contributions 44 
+
+S.I. and Y.S. conceptualized and designed the study. S.I., K.S., K.N., H.T., and T.K. 45 
+
+collected the data. S.I., A.S., A.K., R.S., and Y.S. analyzed and interpreted the data. S.I. 46 
+
+and Y.S. drafted and revised the manuscript. All authors reviewed and approved the final 47 
+
+manuscript for submission. 48 
+
+49 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+4
+
+Abstract 50 
+
+Early childhood is a period of rapid brain maturation and gut microbiome assembly, when 51 
+
+emerging behavioral difficulties can shape later mental health and learning trajectories. 52 
+
+Microbiota –gut –brain communication has been implicated in neurodevelopment through 53 
+
+microbial metabolites and immune signaling. However, most pediatric evidence comes 54 
+
+from high -risk or clinically referred cohorts, and gut microbiome –related correlates of 55 
+
+typical behavioral variation in community -based preschool children remain poorly defined. 56 
+
+In a cross -sectional sample of typically developing Japanese preschool children, here we 57 
+
+show that behavioral variation within normative ranges is associated with distinct 58 
+
+microbiome configurations: internalizing domains cluster with signatures consistent with 59 
+
+higher inflammatory potential and elevated nucleotide biosynthesis, whereas somatic 60 
+
+complaints and withdrawn behavior associate with reduced respiratory and fermentative 61 
+
+activity. Sleep -related difficulties show the broadest predicted functional footprint, 62 
+
+including enrichment of pathways related to methyl -donor and heme biosynthesis, while 63 
+
+externalizing domains associate with pathways involved in cell -envelope and carbohydrate 64 
+
+remodeling. In contrast, age, height, and weight track canonical maturation of  gut 65 
+
+microbiome  composition, indicating that behavioral associations are not simple proxies of 66 
+
+growth. Together, these findings extend early -life microbiome research by resolving 67 
+
+domain -specific associations in a low -risk Asian community sample and highlighting 68 
+
+pathway -level candidates that may interface with neurodevelopment. 69 
+
+70 
+
+Keywords: 71 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+5
+
+Preschool children; Gut microbiota; Child Behavior Checklist; Behavioral problems; 72 
+
+Microbial metabolic pathways 73 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 6
+
+Introduction 74 
+
+Preschool mental health problems are common and impairing rather than transient. Large 75 
+
+epidemiological cohorts and a meta -analysis suggest that about 15 –20% of children aged 1 –76 
+
+7 years meet criteria for at least one mental disorder  [39] . Symptoms cluster into 77 
+
+internalizing, externalizing, and sleep or regulation problems, with sufficient consistency 78 
+
+that preschool adaptations of standard diagnostic nosologies have been proposed  [10] .79 
+
+Longitudinal studies show that distinct internalizing, externalizing, and co -occurring 80 
+
+profiles are detectable by 18 months to 3 years; persistent co -occurring problems predict 81 
+
+the greatest difficulties at school entry; and early symptom clusters, such as sleep problems 82 
+
+at 18 months, predict increased internalizing and externalizing problems at 5 years  [1, 32] .83 
+
+Standardi zed parent -report instruments are therefore central in research and practice. The 84 
+
+Child Behavior Checklist for Ages 1½ –5 (CBCL 1½ –5) is widely used, provides 85 
+
+empirically derived syndrome scales spanning internalizing, externalizing, and sleep -related 86 
+
+problems, and shows robust factor structure and construct validity in population -based and 87 
+
+clinical samples, including preschool children with autism spectrum disorder  [1, 26] . Its use 88 
+
+in longitudinal cohorts that track trajectories from toddlerhood into later childhood enables 89 
+
+internationally comparable phenotyping in the present study  [1, 26] .90 
+
+Among candidate biological markers, the gut microbiota and the microbiota –gut –brain axis 91 
+
+have gained prominence. Intestinal microbes shape host metabolism, immune activation, 92 
+
+and neuroendocrine signaling, and communicate with the brain via short -chain fatty acids, 93 
+
+bile acids, tryptophan metabolites, cytokines, and vagal and enteric pathways  [22] . In 94 
+
+animal models, germ -free rearing, early antibiotic exposure, and colonization with defined 95 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+7
+
+microbial communities alter microglial maturation, myelination, hippocampal and 96 
+
+prefrontal structure, stress responsivity, and anxiety - and depression -like behaviors, and 97 
+
+several effects can be partly normalized by restoring a complex microbiota or administering 98 
+
+psychobiotic strains  [19, 33] . Fecal microbiota transplantation provides further causal 99 
+
+evidence: microbiota from individuals with major depression, autism spectrum disorder, or 100 
+
+attention -deficit/hyperactivity disorder can induce changes in brain structure, functional 101 
+
+connectivity, and emotional or hyperactivity -like phenotypes in recipient mice  [31, 33] . In 102 
+
+adults, population -based metagenomics links neuroactive taxa and pathway -level features, 103 
+
+including butyrate -producing genera such as  Faecalibacterium  and  Coprococcus  and 104 
+
+microbial modules for γ -aminobutyric acid and dopamine metabolism, with depressive 105 
+
+symptoms and health -related quality of life, although effects are modest and heterogeneous 106 
+
+across cohorts  [2, 28, 35] . Together, these findings motivate testing microbiota –behavior 107 
+
+links during early childhood, when both the microbiome and neurocognitive systems 108 
+
+mature rapidly. 109 
+
+Human cohort studies now extend this evidence into development from pregnancy to 110 
+
+middle childhood, but results vary by age, population, and outcome measures. In the 111 
+
+Barwon Infant Study, higher maternal third -trimester gut microbiota α -diversity and greater 112 
+
+abundances of butyrate -producing Lachnospiraceae and Ruminococcaceae predicted fewer 113 
+
+internalizing problems at 2 years of age on the CBCL  [7] . In the same setting and other 114 
+
+birth cohorts, infant gut microbiota composition and diversity during late infancy forecast 115 
+
+CBCL internalizing problems and broader behavioral outcomes at 2 –3 years, with taxa such 116 
+
+as  Prevotella  and  Bacteroides  often implicated  [17] . Longer -term community studies report 117 
+
+that microbiota trajectories across the first 3 years relate to problem behavior and executive 118 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+8
+
+functions, and that patterns of diversity and composition across the first 14 years associate 119 
+
+with internalizing, externalizing, and social anxiety symptoms around puberty  [24, 41] . In 120 
+
+typically developing preschoolers, cross -sectional studies link α -diversity, specific genera, 121 
+
+and stool metabolomic profiles to internalizing and related dimensions; cluster -based 122 
+
+approaches also identify configurations enriched in  Bifidobacterium  or  Bacteroides  that 123 
+
+differ in adaptive skills and social functioning  [36, 37] . Parallel work in high -risk groups 124 
+
+suggests that very -low -birth -weight and preterm infants with early dysbiosis show altered 125 
+
+cognitive and CBCL -based behavioral profiles, and that children with autism spectrum 126 
+
+disorder or attention -deficit/hyperactivity disorder exhibit distinct gut microbial signatures, 127 
+
+some of which transfer autism - or hyperactivity -like behaviors to germ -free mice  [25, 31, 128 
+
+33] . Nevertheless, pediatric studies have largely focused on global internalizing or 129 
+
+externalizing scores, categorical diagnoses, or selected high -risk populations, and only a 130 
+
+few have systematically related microbial diversity, genus -level composition, and predicted 131 
+
+functions to multiple CBCL 1½ –5 syndrome scales in non -referred preschool children. 132 
+
+Functional resolution is also limited: although recent preschool work integrated 16S 133 
+
+profiling with stool metabolomics to define microbiota clusters that differ in behavioral 134 
+
+outcomes  [36] , predicted metabolic pathways have rarely been tested against specific 135 
+
+domains such as anxious/depressed, withdrawn, somatic complaints, sleep problems, 136 
+
+attention problems, and aggression. This gap matters because adult studies suggest that 137 
+
+pathway -level features show more reproducible associations with depressive 138 
+
+symptomatology than individual taxa  [2, 28] .139 
+
+Most existing cohorts are from Europe or North America, and Japanese preschool children 140 
+
+remain relatively understudied despite cultural and dietary factors that may shape both the 141 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+9
+
+gut microbiota and early behavior. In Japanese children aged 3 –4 years, temperament 142 
+
+assessed with the Children’s Behavior Questionnaire was associated with gut microbiota 143 
+
+composition and diversity, and higher negative affectivity was related to lower 144 
+
+Faecalibacterium and higher  Eggerthella  and  Flavonifractor  [34] . Another Japanese 145 
+
+preschool study reported that children at risk for explicit emotion regulation difficulties 146 
+
+showed higher relative abundance of  Actinomyces  and  Sutterella  than non -risk children 147 
+
+[11] . Building on this evidence, the present study examined whether gut microbial 148 
+
+diversity, genus -level composition, and predicted gut microbiome functions are associated 149 
+
+with anthropometric measures and the full set of CBCL 1½ –5 syndrome scales in a 150 
+
+community sample of Japanese preschool children. 151 
+
+152 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+10 
+
+Methods 153 
+
+Ethics approval and consent to participate 154 
+
+The study protocol was approved by the Ethics Committee of the Faculty of Education, Mie 155 
+
+University (approval No. 2023 -02). All methods were performed in accordance with the 156 
+
+relevant guidelines and regulations and in accordance with the Declaration of Helsinki. 157 
+
+Written informed consent was obtained from the parents or legal guardians of all 158 
+
+participating children. 159 
+
+160 
+
+Participants and stool collection 161 
+
+To examine associations between gut microbiota, physical growth, and behavioral 162 
+
+development in early childhood, we collected stool samples from 36 preschool children 163 
+
+living in Mie, Okayama and Shiga Prefectures. Guardians received a stool collection kit for 164 
+
+gut microbiota analysis (TechnoSuruga Laboratory, Shizuoka, Japan) and were instructed 165 
+
+to collect a stool sample at home and mail it to a chemistry laboratory at the Faculty of 166 
+
+Education, Mie University. Upon arrival at the laboratory, stool samples were immediately 167 
+
+frozen and stored at  –20 °C until DNA extraction. 168 
+
+169 
+
+Behavioral assessment of preschool children 170 
+
+Guardians reported each child’s sex, date of birth, and completed the Child Behavior 171 
+
+Checklist for Ages 1½ –5 (CBCL 1½ –5), a parent -report questionnaire within the 172 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+11 
+
+Achenbach System of Empirically Based Assessment (ASEBA). The CBCL 1½ –5173 
+
+comprises 100 items that are rated 0 (“Not true”), 1 (“Somewhat or sometimes true”), or 2 174 
+
+(“Very true or often true”) and are grouped into seven empirically derived syndrome scales: 175 
+
+Emotionally Reactive, Anxious/Depressed, Withdrawn, Somatic Complaints, Attention 176 
+
+Problems, Aggressive Behavior, and Sleep Problems. In this study, we used the Japanese 177 
+
+version of the CBCL 1½ –5, which has demonstrated adequate reliability and validity  [12] .178 
+
+A detailed list of questionnaire items is provided in Table S1. Item scores were summed to 179 
+
+yield raw scores for each syndrome and the broadband Internalizing, Externalizing, and 180 
+
+Total Problems scales. Raw syndrome scores were used both to describe normative, 181 
+
+borderline, and clinical ranges and as continuous variables in correlation analyses, in line 182 
+
+with Japanese CBCL 1½ –5 manuals. 183 
+
+184 
+
+Microbiome profiling and statistical analysis 185 
+
+Stool DNA was extracted using the NucleoSpin ® DNA Stool kit (Macherey‑Nagel, Düren, 186 
+
+Germany) with bead‑beating. The V3 –V4 region of the bacterial 16S rRNA gene was 187 
+
+amplified and sequenced on an Illumina MiSeq platform using paired -end 2 × 300 bp reads. 188 
+
+Reads were processed in  QIIME 2  (v2024.2) with DADA2 to generate amplicon sequence 189 
+
+variants (ASVs), and taxonomy was assigned against the EzBioCloud 16S database. 190 
+
+Functional profiles were predicted from ASVs using PICRUSt2 (v2.5.2) to obtain MetaCyc 191 
+
+pathway abundances. Associations between anthropometrics, CBCL syndrome scores, and 192 
+
+microbiome features (α -diversity indices, genus -level relative abundance, and predicted 193 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+12 
+
+MetaCyc pathways) were evaluated using Spearman’s rank correlation. Detailed laboratory 194 
+
+procedures and bioinformatic parameters are provided in Supplementary Methods. 195 
+
+196 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 13 
+
+Results 197 
+
+Physical characteristics and behavioral domains measured by CBCL 1½ –5198 
+
+A total of 36 children completed the CBCL 1½ –5 (Fig. 1, Table S2). Twenty were boys and 199 
+
+sixteen were girls. The mean age was 48.0 ± 8.2 months. Mean body size was 99.0 ± 5.2 200 
+
+cm in height (range 86.5 –112.0 cm) and 15.6 ± 1.8 kg in weight (range 12.5 –21.0 kg). Most 201 
+
+children scored within the normative range across CBCL domains. Borderline elevations 202 
+
+were most common for Internalizing Problems (7/36, 19.4%) and Sleep Problems (5/36, 203 
+
+13.9%). Clinically significant scores were observed most frequently for Externalizing 204 
+
+Problems (6/36, 16.7%), followed by Total Problems (4/36, 11.1%).  No participant met the 205 
+
+clinical threshold for Anxious/Depressed, Withdrawn, or Attention Problems (Table S2). 206 
+
+We used Spearman’s rank correlations to examine associations among age, height, weight, 207 
+
+and CBCL domains (Fig. 2). Height and weight were strongly correlated (ρ = 0.86, p < 208 
+
+0.001). Age correlated positively with height (ρ = 0.60, p <  0.001) and with weight (ρ = 209 
+
+0.48, p =  0.003). Aggressive Behavior correlated with Emotionally Reactive  (ρ = 0.59, p < 210 
+
+0.001)  and with Anxious/Depressed  (ρ = 0.55, p =  0.001) , suggesting co -occurrence of 211 
+
+aggression, emotional dysregulation, and internalizing symptoms. Emotionally Reactive 212 
+
+correlated with Anxious/Depressed  (ρ = 0.62, p <  0.001) . Anxious/Depressed also 213 
+
+correlated with Attention Problems  (ρ = 0.46, p =  0.005)  and Sleep Problems  (ρ = 0.38, p = 214 
+
+0.023) , suggesting shared underlying mechanisms among  internalizing, attentional, and 215 
+
+sleep domains. Withdrawn correlated with Attention Problems  (ρ = 0.44, p =  0.007)  and 216 
+
+Aggressive Behavior  (ρ = 0.34, p =  0.040) , indicating that social withdrawal could co -occur 217 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+14 
+
+with both attentional and externalizing features. In contrast, the Somatic Complaints scale 218 
+
+did not demonstrate any statistically significant correlations with physical measures or 219 
+
+other behavioral domains. Overall, CBCL domains were interrelated, whereas associations 220 
+
+between growth indices and behavioral traits were comparatively modest. 221 
+
+222 
+
+Specific association between attention problems and gut microbiota α -diversity 223 
+
+α-Diversity indices were not associated with age, height, or weight. At the nominal p < 0.05 224 
+
+level, Attention Problems correlated positively with observed features (ρ = 0.34, p = 0.046); 225 
+
+Chao1 richness (ρ = 0.34, p = 0.043); and Faith’s phylogenetic diversity (ρ = 0.39, p = 226 
+
+0.018) (Table S3). No other syndrome scale correlated with α -diversity indices, including 227 
+
+Emotionally Reactive, Anxious/Depressed, Somatic Complaints, Withdrawn, Sleep 228 
+
+Problems, and Aggressive Behavior. These effects were modest and should be interpreted 229 
+
+cautiously given the sample size, but they suggest that within -sample richness and 230 
+
+phylogenetic diversity may align more closely with attention -related variation than with 231 
+
+other behavioral domains or growth indicators in this cohort. 232 
+
+233 
+
+Associations between gut microbiota and behavioral and physical development in 234 
+
+preschool children 235 
+
+In total, 362 genera were identified across 36 amplicon -based microbiome profiles (Table 236 
+
+S4). Spearman’s rank correlations between genus relative abundance and 10 traits yielded 237 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+15 
+
+128 nominal associations with p < 0.05 (Table S5). We primarily interpret taxa that were 238 
+
+common, mean relative abundance ≥ 0.10%, and strongly associated with at least one trait, 239 
+
+|ρ| ≥ 0.40, while noting additional patterns in Table 1. 240 
+
+Age 241 
+
+With age,  Escherichia  decreased  (mean = 2.1%, ρ =  –0.48, p < 0.01) , and  Clostridium _g6 242 
+
+also  decreased  (0.4%, ρ =  –0.54, p < 0.01) . In contrast,  Haemophilus  increased  (1.3%, ρ = 243 
+
+0.47, p < 0.01) , Enterobacteriaceae  increased  (0.14%, ρ = 0.48 , p < 0.01 ) and  Hungatella 244 
+
+decreased  (0.32%, ρ =  –0.43 , p < 0.01 ) (Table 1). 245 
+
+Height and Weight 246 
+
+Height correlated negatively with  Coprococcus _g2  (1.71%, ρ =  –0.34, p < 0.05)  and 247 
+
+Caproiciproducens  (0.40%, ρ =  –0.36, p < 0.05) . Both taxa have been described as 248 
+
+producers of butyrate and hexanoate from complex polysaccharides  [18] . Weight correlated 249 
+
+negatively with  Caproiciproducens  (0.40%,  ρ =  –0.34, p < 0.05)  and with PAC000195_g 250 
+
+(0.14%,  ρ =  –0.34, p < 0.05) . These correlations do not establish causality in this cross -251 
+
+sectional cohort, but they suggest lower relative abundance of these fib er-fermenting taxa 252 
+
+in taller and heavier children. 253 
+
+Anxious/Depressed 254 
+
+Anxious/Depressed scores were positively associated with  Haemophilus  (1.26%, ρ = 0.39, 255 
+
+p < 0.05) and negatively with  Subdoligranulum  (0.96%, ρ =  –0.39, p < 0.05).  Haemophilus 256 
+
+can utilize host -derived sialic acids and produce lipooligosaccharides that activate Toll -like 257 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+16 
+
+receptor signaling  [14, 15] , whereas  Subdoligranulum  has been implicated in supporting 258 
+
+mucosal barrier integrity  [28, 38] . This reciprocal pattern is compatible with greater 259 
+
+inflammatory potential and reduced barrier support in children with higher 260 
+
+Anxious/Depressed scores, although these functional inferences remain speculative without 261 
+
+direct measurement of host inflammatory markers or microbial metabolites. 262 
+
+Somatic Complaints 263 
+
+Somatic Complaints were positively associated with  Ruminococcus _g4 (1.91%, ρ = 0.40, p 264 
+
+< 0.05), a taxon that ferments resistant starch to acetate and formate  [8] . Formate has been 265 
+
+proposed to influence sensory pathways involved in visceral pain  [21] , but the mechanism 266 
+
+underlying this association remains unclear. 267 
+
+Withdrawn 268 
+
+Withdrawn showed the strongest single effect size among the trait –taxon correlations. 269 
+
+Eisenbergiella  (0.63%, ρ = 0.55, p < 0.01) and  Barnesiella  (0.14%, ρ = 0.52, p < 0.01) 270 
+
+were enriched in children with higher scores.  Eisenbergiella  can generate amino -acid -271 
+
+derived butyrate, and  Barnesiella  harbors bile -salt hydrolases and has been linked to 272 
+
+modulation of host immunity and social behavior  [6] , suggesting potential relevance of 273 
+
+amino -acid - and bile -acid -related microbial pathways for social withdrawal in early 274 
+
+childhood.  Fusobacterium , a succinate and putrescine producer, was depleted  (0.23%, ρ =  –275 
+
+0.41, p < 0.05) , supporting the view that withdrawal -related variation may involve 276 
+
+opposing shifts across microbial metabolic routes rather than uniform changes in overall 277 
+
+short -chain fatty acid output. 278 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+17 
+
+Sleep Problems 279 
+
+Sleep Problems were inversely correlated with  Megamonas , a propionate producer  (1.69%, 280 
+
+ρ =  –0.37, p < 0.05) , and positively correlated with PAC000195_g  (0.14%,  ρ = 0.34, p < 281 
+
+0.05) . These contrasting associations raise the possibility that differences in the balance 282 
+
+between propionate and mixed short -chain fatty acid production relate to variation in sleep 283 
+
+regulation or circadian rhythms, although targeted metabolomic data would be needed to 284 
+
+test this hypothesis. 285 
+
+Emotional Reactivity, Attention Problems and Aggressive Behavior 286 
+
+Aggressive Behavior showed the highest correlations with  Coprobacter  (0.16%, ρ = 0.54, p 287 
+
+< 0.01) , and the Lachnospiraceae taxon PAC000195_g  (0.14%, ρ = 0.46, p < 0.01) .288 
+
+Coprobacter  was also positively associated with Emotional Reactivity  (0.16%,  ρ = 0.41, p 289 
+
+< 0.05)  but not with Attention Problems, whereas PAC000195_g was positively associated 290 
+
+with Attention Problems  (0.14%,  ρ = 0.43, p < 0.01)  but not with Emotional Reactivity. 291 
+
+Coprobacter  belongs to a Barnesiellaceae lineage that often encodes bile salt hydrolase 292 
+
+homologs, suggesting capacity to deconjugate primary bile acids. Deconjugated bile acids 293 
+
+can cross the blood –brain barrier and engage central bile acid receptors in limbic circuits, 294 
+
+and bile acid signaling has been linked to anxiety - and depression -like behaviors in rodent 295 
+
+models  [4] . These features provide one plausible route through which  Coprobacter -296 
+
+enriched communities might be linked to heightened emotional lability and aggression, 297 
+
+although such causal pathways were not tested here. PAC000195_g, in contrast, carries an 298 
+
+extensive repertoire of carbohydrate esterases, suggesting a capacity to liberate small 299 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+18 
+
+neuroactive metabolites from complex plant polysaccharides, but this mechanism and its 300 
+
+potential relevance to inattention and impulsivity remain to be directly demonstrated in 301 
+
+humans. 302 
+
+303 
+
+Associations between gut microbiome functions and behavioral and physical 304 
+
+development in preschool children 305 
+
+PICRUSt2 inference yielded 477 non -redundant MetaCyc pathways across the 36 fecal 306 
+
+microbiome profiles. Spearman correlations between pathway relative abundance and 10 307 
+
+traits identified 230 nominal associations (Table S6). We primarily interpret pathways that 308 
+
+were common  (mean relative frequency ≥ 0. 00 10%) , and at least moderately correlated 309 
+
+with a trait  (|ρ| ≥ 0.35 ) (Table 2). 310 
+
+Age 311 
+
+Older preschool children showed increased predicted capacities for branched -chain amino -312 
+
+acid catabolism and cofactor production. The strongest signal was L -leucine degradation I 313 
+
+(LEU -DEG2 -PWY ) (0. 00 43% mean relative frequency , ρ = 0.57 , p < 0.01 ), followed by 314 
+
+adenosylcobalamin biosynthesis I  (PWY -5507 ) (0.0190%,  ρ = 0.56 , p < 0.01 ). Leucine 315 
+
+degradation yields acetyl -CoA and acetoacetate, whereas adenosylcobalamin biosynthesis 316 
+
+suggests increased predicted capacity for vitamin B 12  production. Together, these patterns 317 
+
+are consistent with enhanced microbial energy harvest and cobalamin -dependent 318 
+
+metabolism with age.  Protocatechuate degradation II (PROTOCATECHUATE -ORTHO -319 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+19 
+
+CLEAVAGE -PWY ) (0.0019%,  ρ = 0.51 , p < 0.01 ) also increased with age, indicating a 320 
+
+parallel expansion of polyphenol breakdown as diets diversify. 321 
+
+Height and Weight 322 
+
+Height was positively linked to amino -acid anabolism rather than fermentation. L -arginine 323 
+
+biosynthesis III  via N -acetyl -L-citrulline (PWY -5154) , correlated positively  (0.360%,  ρ = 324 
+
+0.36 , p < 0.05 ), whereas succinate fermentation to butanoate  (PWY -5677 ) was inversely 325 
+
+related  (0.0322%,  ρ =  –0.49 , p < 0.01 ). Taller children therefore tended to host microbiota 326 
+
+with higher predicted capacity for arginine biosynthesis and lower inferred reliance on 327 
+
+reductive succinate pathways. Body weight reproduced the height pattern for arginine 328 
+
+biosynthesis  (0.360%,  ρ = 0.43 , p < 0.05 ), and for succinate  fermentation  to  butanoate 329 
+
+(0.0322%,  ρ =  –0.47 , p < 0.01 ). These associations suggest coordinated adjustments in 330 
+
+predicted amino -acid and energy metabolism along gradients of somatic growth in this 331 
+
+cohort. 332 
+
+Emotionally Reactive 333 
+
+Higher Emotional Reactivity scores coincided with enrichment of pathways related to 334 
+
+nucleotide biosynthesis pathways . The top pathway was superpathway of pyrimidine 335 
+
+deoxyribonucleotide  de novo  biosynthesis (PWY -7211 ) (0.287%,  ρ = 0.44 , p < 0.01 ), 336 
+
+followed by  superpathway of histidine, purine, and pyrimidine biosynthesis (PRPP -PWY )337 
+
+(0.315%,  ρ = 0.38 , p < 0.05 ). These associations were accompanied by a negative link to 338 
+
+allantoin degradation IV (PWY0 -41 ) (0.0078%,  ρ =  –0.36 , p < 0.05 ). Together, this pattern 339 
+
+is consistent with microbiota enriched in  de novo  nucleotide production and altered 340 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+20 
+
+nitrogen salvage in children with higher emotional reactivity, but the functional 341 
+
+implications for host neurotransmitter precursors remain speculative without direct 342 
+
+metabolomic data. 343 
+
+Anxious/Depressed 344 
+
+Anxious/Depressed scores showed a similar functional profile, with positive correlations to 345 
+
+superpathway of  pyrimidine deoxyribonucleotide s de novo  biosynthesis (PWY -7211 )346 
+
+(0.287%,  ρ = 0.44 , p < 0.0 5) and  superpathway of histidine, purine, and pyrimidine 347 
+
+biosynthesis  (PRPP -PWY ) (0.315%,  ρ = 0.38 , p < 0.05 ). No negatively correlated high -348 
+
+frequency pathways surpassed the thresholds, suggesting that enhanced predicted  de novo 349 
+
+nucleotide synthesis was the dominant shift accompanying anxious traits in this sample. 350 
+
+Somatic Complaints 351 
+
+Somatic Complaints were inversely associated with aerobic respiration I  (cytochrome c )352 
+
+(PWY -3781 ) (0.0402%,  ρ =  –0.40 , p < 0.05 ), cob(II)yrinate a,c -diamide biosynthesis I 353 
+
+(early cobalt insertion ) (PWY -7377 ) (0.145%,  ρ =  –0.40 , p < 0.05 ) and L -tyrosine 354 
+
+degradation I  (TYRFUMCAT -PWY ) (0.0014%,  ρ =  –0.39 , p < 0.05 ). These signals 355 
+
+indicate reduced predicted respiratory capacity and aromatic amino -acid catabolism in 356 
+
+children reporting more somatic symptoms. 357 
+
+Withdrawn 358 
+
+Withdrawn was most strongly associated with lower predicted fermentative capacity. Three 359 
+
+high -frequency fermentation routes were inversely correlated, including superpathway of 360 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+21 
+
+2,3 -butanediol biosynthesis  (PWY -6396 ) (0.0151%,  ρ =  –0.43 , p < 0.01 ),  heterolactic 361 
+
+fermentation  (P122 -PWY ) (0.0818%,  ρ =  –0.41 , p < 0.05 ), and the  Bifidobacterium  shunt 362 
+
+(P124 -PWY ) (0.0976%,  ρ =  –0.41 , p < 0.05 ). This pattern suggests reduced representation 363 
+
+of classical bifidobacterial and lactic fermentative pathways in children with higher 364 
+
+withdrawn scores. 365 
+
+Sleep Problems 366 
+
+Sleep disturbance displayed the broadest functional footprint, dominated by sulfur -367 
+
+containing amino -acid and heme biosynthesis. Positive correlations spanned L -methionine 368 
+
+biosynthesis III (HSERMETANA -PWY ) (0.313%,  ρ = 0.47 , p < 0.01 ), L -methionine 369 
+
+biosynthesis I (HOMOSER -METSYN -PWY ) (0.283%,  ρ = 0.47 , p < 0.01 ), superpathway 370 
+
+of S -adenosyl -L-methionine biosynthesis (MET -SAM -PWY ) (0.372%,  ρ = 0.46 , p < 0.01 ), 371 
+
+and  superpathway of  heme  b biosynthesis from uroporphyrinogen -III (PWY0 -1415 )372 
+
+(0.0442%,  ρ = 0.46 , p < 0.01 ), suggesting a potential link between microbial methyl -group 373 
+
+turnover, heme production, and sleep quality in preschool children. 374 
+
+Attention Problems 375 
+
+Higher Attention Problems scores were marked by a striking depletion of fucose and 376 
+
+rhamnose catabolism: superpathway of fucose and rhamnose degradation (FUC -377 
+
+RHAMCAT -PWY ) (0.211%,  ρ =  –0.50 , p < 0.01 ) and  L-fucose degradation  I (FUCCAT -378 
+
+PWY ) (0.157%,  ρ =  –0.44 , p < 0.01 ) were both negatively associated. Conversely, GDP -D-379 
+
+glycero -α-D-manno -heptose biosynthesis (PWY -6478 ) (0.0931%,  ρ = 0.43 , p < 0.01 ) was 380 
+
+enriched.  Together, these shifts may reflect altered microbial handling of host -derived 381 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+22 
+
+glycans and increased heptose -nucleotide sugar biosynthesis, suggesting changes in 382 
+
+bacterial cell -surface glycoconjugate metabolism in children with higher attention problem 383 
+
+scores. 384 
+
+Aggressive  Behavior 385 
+
+Aggressive Behavior correlated positively with porphyrin metabolism and core RNA 386 
+
+handling. Key pathways included  superpathway of heme  b biosynthesis from 387 
+
+uroporphyrinogen -III  (PWY0 -1415 ) (0.0442%,  ρ = 0.46 , p < 0.01 ), tRNA processing 388 
+
+(PWY0 -1479 ) (0.0981%,  ρ = 0.40 , p < 0.05 ), and ADP -L-glycero -β-D-manno -heptose 389 
+
+biosynthesis (PWY0 -1241 ) (0.0736%,  ρ = 0.38 , p < 0.05 ). These functions support 390 
+
+intensified redox activity and cell -wall maturation, a pattern compatible with microbiota 391 
+
+that have relatively high predicted biosynthetic and growth potential in children with higher 392 
+
+aggression scores. 393 
+
+394 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+23 
+
+Discussion 395 
+
+Gut microbiota along physical growth trajectories 396 
+
+Age, height, and weight were strongly intercorrelated, but their correlations with CBCL 397 
+
+domain scores were modest (Fig. 2), suggesting that behavioral variation was not a simple 398 
+
+proxy for somatic development. Somatic indices nevertheless tracked canonical microbiota 399 
+
+maturation and predicted functions. The decline of Escherichia and other facultative 400 
+
+anaerobes with age, together with increasing representation of strictly anaerobic genera, 401 
+
+mirrors cohort data describing the transition toward a more stable, adult -like microbiota 402 
+
+during the preschool years  [23] . Age -related enrichment of leucine degradation and 403 
+
+adenosylcobalamin biosynthesis suggests increasing microbial contributions to branched -404 
+
+chain amino -acid catabolism and vitamin B 12  availability as diets diversify. Height and 405 
+
+weight were positively associated with arginine biosynthesis and inversely associated with 406 
+
+succinate -to -butanoate fermentation, pointing to a shift away from reductive succinate 407 
+
+pathways in larger children. The weak coupling between growth indices and CBCL traits 408 
+
+supports the interpretation that the domain -specific signatures below are unlikely to be 409 
+
+simple proxies of maturation. 410 
+
+Overview of microbiota –behavior associations in a community sample 411 
+
+In this cross -sectional study of typically developing Japanese preschool children, gut 412 
+
+microbial community structure and predicted functions showed coordinated associations 413 
+
+with multiple CBCL 1½ –5 domains. Even within normative ranges, variation in 414 
+
+internalizing, externalizing, and sleep -related difficulties aligned with distinct taxonomic 415 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+24 
+
+and metabolic patterns. This extends early -life microbiota –gut –brain research beyond high -416 
+
+risk or clinically referred cohorts and is broadly consistent with longitudinal links between 417 
+
+infant microbiota and later internalizing and externalizing problems, executive function, 418 
+
+and temperament  [17, 23, 41] . In our data, anxious/depressed symptoms and emotional 419 
+
+reactivity clustered with taxa and pathways suggestive of higher inflammatory potential and 420 
+
+greater biosynthetic activity, whereas somatic complaints and withdrawn behavior aligned 421 
+
+with reduced respiratory and fermentative activity. This pattern resonates with preschool 422 
+
+studies implicating microbial metabolic output, including short -chain fatty acid profiles, 423 
+
+rather than diversity alone  [36, 37] .424 
+
+Attention and aggression: distinct externalizing –microbiota relationships 425 
+
+Attention problem scores were positively associated with α -diversity indices, including 426 
+
+observed features, Chao1 richness, and Faith’s phylogenetic diversity. Case –control studies 427 
+
+in children and adolescents with clinically diagnosed attention -deficit/hyperactivity 428 
+
+disorder (ADHD) variably report reduced α -diversity or no consistent differences  [3, 29] .429 
+
+Our community sample captures dimensional variation rather than categorical diagnoses 430 
+
+and suggests that higher richness can co -occur with more pronounced attentional 431 
+
+difficulties in the preschool period. A similar direction has been reported in another 432 
+
+Japanese preschool cohort, where higher gut microbiota diversity was associated with 433 
+
+greater impulsivity  [34] . These patterns motivate longitudinal cohorts that integrate dietary 434 
+
+and medication histories to clarify whether α -diversity reflects transient development, 435 
+
+confounding, or early risk. 436 
+
+Taxonomic and functional profiles further linked attention problems and aggressive 437 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+25 
+
+behavior to genera with plausible neuroactive potential.  Coprobacter  and the 438 
+
+Lachnospiraceae taxon PAC000195_g, which correlated with aggressive behavior and 439 
+
+attention problems respectively, encode bile -salt hydrolases and carbohydrate esterases, 440 
+
+suggesting an enhanced capacity to remodel host bile acids and complex polysaccharides. 441 
+
+Such remodeling may increase unconjugated bile acids and other small products that 442 
+
+influence limbic excitability and prefrontal control circuits, consistent with animal -model 443 
+
+evidence linking bile acid and microbial metabolite signaling to hyperactivity and 444 
+
+impulsivity  [9, 33] . Aggressive Behavior was associated with ADP -L-glycero -β-D-manno -445 
+
+heptose biosynthesis (PWY0 -1241). This pathway generates ADP -heptose, an inner -core 446 
+
+lipopolysaccharide precursor that can activate intracellular innate immune signaling and 447 
+
+elevate inflammatory tone  [13] .448 
+
+Microbial signatures of internalizing difficulties in preschool children 449 
+
+Internalizing traits showed a complementary microbial profile. Anxious/depressed scores 450 
+
+were positively associated with  Haemophilus  and negatively associated with 451 
+
+Subdoligranulum , a sentinel butyrate producer linked to epithelial barrier support and 452 
+
+inversely associated with depressive symptoms in adults  [16, 28] . Haemophilus  can exploit 453 
+
+host sialic acids and produce lipooligosaccharides that activate Toll -like receptor 4, 454 
+
+promoting mucosal inflammation and systemic immune activation  [5, 14] . The reciprocal 455 
+
+shift therefore supports a model in which higher anxious/depressed scores align with higher 456 
+
+inflammatory potential and reduced barrier -supportive capacity. This interpretation is 457 
+
+consistent with Japanese preschool findings linking emotion -regulation risk to higher 458 
+
+Actinomyces  and  Sutterella  [11] . Functionally, these traits aligned with enrichment of  de 459 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+26 
+
+novo  pyrimidine and broader nucleotide biosynthesis pathways, compatible with more 460 
+
+biosynthetically active communities that may influence host tryptophan, purine, and 461 
+
+pyrimidine pools relevant to stress -response circuitry  [9, 27] .462 
+
+Somatic complaints were associated with reduced inferred aerobic respiration  and tyrosine 463 
+
+degradation, suggesting lower respiratory flexibility and diminished aromatic amino -acid 464 
+
+catabolism. Because aromatic amino -acid -derived metabolites, including tyrosine -derived 465 
+
+amines, have been linked to visceral pain hypersensitivity and autonomic regulation, 466 
+
+reduced microbial engagement with these substrates may contribute to altered interoceptive 467 
+
+signaling  [42] . Withdrawn behavior, in contrast, was associated with enrichment of 468 
+
+Eisenbergiella  and  Barnesiella  and depletion of  Fusobacterium , together with reduced 469 
+
+representation of classical fermentative pathways such as the  Bifidobacterium  shunt and 470 
+
+heterolactic fermentation. These findings are consistent with reports linking lower 471 
+
+bifidobacterial activity and altered amino -acid fermentation to social withdrawal and 472 
+
+suggest that shifts in amino -acid -derived short -chain fatty acids may be relevant for social 473 
+
+engagement in early childhood  [30] .474 
+
+Microbiome functional pathways associated with sleep problems 475 
+
+Sleep problems showed the broadest functional footprint, with positive correlations to 476 
+
+microbial methionine and S -adenosyl -methionine biosynthesis and to heme production 477 
+
+pathways. These processes regulate methyl -group availability and redox -active cofactor 478 
+
+synthesis, which can influence circadian clock machinery, melatonin production, and 479 
+
+oxidative stress responses. Recent studies link sleep duration and efficiency in preschoolers 480 
+
+to microbiota profiles and to microbial genes involved in amino -acid and cofactor 481 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+27 
+
+metabolism  [20, 40] . Our data add that sleep disturbance aligns with enrichment of sulfur -482 
+
+containing amino -acid biosynthesis and porphyrin pathways, supporting pathway -level 483 
+
+candidates for future mechanistic and interventional work. 484 
+
+Methodological considerations and future directions 485 
+
+These findings should be interpreted as associative rather than causal. The modest sample 486 
+
+size limits statistical power and may reduce generalizability beyond Japanese community -487 
+
+dwelling preschool children, and the cross -sectional design cannot determine whether 488 
+
+microbiome differences precede behavioral traits, reflect shared environments, or arise 489 
+
+through bidirectional feedback. Larger longitudinal cohorts with repeated sampling and 490 
+
+direct multi -omic measurements will be required to test directionality and mechanism. 491 
+
+Across domains, signals converged on microbial capacities related to nucleotide synthesis, 492 
+
+amino -acid and methyl -group metabolism, bile -acid and glycan transformation, and 493 
+
+heptose -containing lipopolysaccharide biosynthesis. These pathways plausibly interface 494 
+
+with neurodevelopment by shaping metabolite availability, epithelial and immune tone, and 495 
+
+neuroendocrine signaling relevant to emotional regulation, attention, and sleep. Future 496 
+
+work that combines repeated stool sampling with detailed diet and medication histories and 497 
+
+concurrent measurement of relevant metabolites and host markers can test whether 498 
+
+microbial methyl -donor metabolism, bile -acid remodeling, and glycan utilization mediate 499 
+
+changes in sleep and behavior over time. If replicated, these signatures could support 500 
+
+microbiome -informed prevention studies in early childhood, including pragmatic trials of 501 
+
+dietary modulation and targeted prebiotic or probiotic approaches, with outcomes anchored 502 
+
+to standardized behavioral scales and objective sleep measures. Over the longer term, 503 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+28 
+
+microbiome -based markers could complement psychosocial and educational strategies by 504 
+
+adding a biologically grounded component to early risk monitoring and support. 505 
+
+506 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 29 
+
+Statements and Declarations 507 
+
+508 
+
+Competing interests 509 
+
+The authors declare no competing interests. 510 
+
+511 
+
+Funding 512 
+
+Matsuda Oyatsu Town Foundation provided partial funding for this study. The organization 513 
+
+had no involvement in designing the research, collecting or interpreting data, or deciding to 514 
+
+publish the results. 515 
+
+516 
+
+Ethics approval 517 
+
+The study was approved by the ethics committee in Faculty of Education, Mie University 518 
+
+(No. 2023 -02). 519 
+
+520 
+
+Consent to participate 521 
+
+Written informed consent was obtained from the children’s guardians. 522 
+
+523 
+
+Consent to publish 524 
+
+Not applicable. This manuscript does not contain any individual person’s identifiable data. 525 
+
+526 
+
+Data availability 527 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+30 
+
+Raw 16S rRNA gene sequencing data and associated metadata have been deposited in the 528 
+
+NCBI Sequence Read Archive (SRA) under accession number PRJNA1392820. Processed 529 
+
+feature tables, taxonomic assignments, and analysis scripts are available from the 530 
+
+corresponding author upon reasonable request. 531 
+
+532 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 31 
+
+Figures and tables 533 
+
+534 
+
+Fig.  1 Participant flow diagram and microbiome analysis workflow 535 
+
+536 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 32 
+
+537 
+
+Fig. 2  Correlation matrix of physical  characteristics  and CBCL 1½ –5 syndrome scores in 538 
+
+preschool children 539 
+
+540 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 33 
+
+Table 1  Representative gut microbial genera linked to physical characteristics and CBCL 541 
+
+1½ –5 behavioral measures in preschool children 542 
+
+Trait  Taxonomy 
+
+Spearman's 
+
+correlation 
+
+coefficient (ρ) 
+
+Significanc 
+
+e level 
+
+(p -value) 
+
+Direction 
+
+Age  Enterobacteriaceae  0.482  < 0.01  Positive 
+
+Age  Haemophilus  0.468  < 0.01  Positive 
+
+Age  Hungatella  -0.428  < 0.01  Negative 
+
+Age  Escherichia  -0.481  < 0.01  Negative 
+
+Age  Clostridium_g6  -0.535  < 0.01  Negative 
+
+Height  Coprococcus_g2  -0.340  < 0.05  Negative 
+
+Height  Caproiciproducens  -0.355  < 0.05  Negative 
+
+Weight  Caproiciproducens  -0.337  < 0.05  Negative 
+
+Weight  PAC000195_g  -0.340  < 0.05  Negative 
+
+Emotionally Reactive  Coprobacter  0.410  < 0.05  Positive 
+
+Anxious/Depressed  Haemophilus  0.385  < 0.05  Positive 
+
+Anxious/Depressed  Subdoligranulum  -0.391  < 0.05  Negative 
+
+Somatic Complaints  Ruminococcus_g4  0.400  < 0.05  Positive 
+
+Withdrawn  Eisenbergiella  0.546  < 0.01  Positive 
+
+Withdrawn  Barnesiella  0.517  < 0.01  Positive 
+
+Withdrawn  Fusobacterium  -0.409  < 0.05  Negative 
+
+Sleep Problems  PAC000195_g  0.340  < 0.05  Positive 
+
+Sleep Problems  Megamonas  -0.369  < 0.05  Negative 
+
+Attention Problems  PAC000195_g  0.433  < 0.01  Positive 
+
+Aggressive Behavior  Coprobacter  0.538  < 0.01  Positive 
+
+Aggressive Behavior  PAC000195_g  0.462  < 0.01  Positive 
+
+543 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+34 
+
+This table presents a subset of the microbial taxa that show significant correlations with 544 
+
+each trait. The complete list of taxa and their full taxonomic annotations can be found in 545 
+
+Table S5. 546 
+
+.CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint 35 
+
+Table 2  Gut microbiome functions significantly associated with physical and behavioral 547 
+
+traits in preschool children 548 
+
+Trait  Function  Spearman's 
+
+correlation 
+
+coefficient (ρ) 
+
+Significance 
+
+level 
+
+(p -value) 
+
+Direction 
+
+Age  L-leucine degradation I  0.571  < 0.01  Positive 
+
+Age 
+
+adenosylcobalamin 
+
+biosynthesis I 
+
+(anaerobic ) 0.564  < 0.01  Positive 
+
+Age 
+
+protocatechuate 
+
+degradation II (ortho -
+
+cleavage pathway)  0.506  < 0.01  Positive 
+
+Height 
+
+L-arginine biosynthesis 
+
+III (via N -acetyl -L-
+
+citrulline)  0.356  < 0.05  Positive 
+
+Height 
+
+succinate fermentation 
+
+to butanoate  -0.486  < 0.01  Negative 
+
+Weight 
+
+L-arginine biosynthesis 
+
+III (via N -acetyl -L-
+
+citrulline)  0.425  < 0.05  Positive 
+
+Weight 
+
+succinate fermentation 
+
+to butanoate  -0.470  < 0.01  Negative 
+
+Emotionally 
+
+Reactive 
+
+superpathway of 
+
+pyrimidine 
+
+deoxyribonucleotides 
+
+de novo biosynthesis  0.442  < 0.01  Positive 
+
+Emotionally 
+
+Reactive 
+
+superpathway of 
+
+histidine, purine, and 
+
+pyrimidine biosynthesis  0.380  < 0.05  Positive 
+
+Emotionally 
+
+Reactive 
+
+allantoin degradation IV 
+
+(anaerobic)  -0.361  < 0.05  Negative 
+
+Anxious/Depressed 
+
+superpathway of 
+
+pyrimidine 
+
+deoxyribonucleotides 
+
+de novo biosynthesis  0.440  < 0.01  Positive 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+36 
+
+Anxious/Depressed 
+
+superpathway of 
+
+histidine, purine, and 
+
+pyrimidine biosynthesis  0.378  < 0.05  Positive 
+
+Somatic 
+
+Complaints 
+
+aerobic respiration I 
+
+(cytochrome c)  -0.401  < 0.05  Negative 
+
+Somatic 
+
+Complaints 
+
+cob(II)yrinate a,c -
+
+diamide biosynthesis I 
+
+(early cobalt insertion)  -0.395  < 0.05  Negative 
+
+Somatic 
+
+Complaints  L-tyrosine degradation I  -0.387  < 0.05  Negative 
+
+Withdrawn 
+
+superpathway of 2,3 -
+
+butanediol biosynthesis  -0.433  < 0.01  Negative 
+
+Withdrawn 
+
+heterolactic 
+
+fermentation  -0.409  < 0.05  Negative 
+
+Withdrawn  Bifidobacterium shunt  -0.406  < 0.05  Negative 
+
+Sleep Problems 
+
+L-methionine 
+
+biosynthesis III  0.473  < 0.01  Positive 
+
+Sleep Problems 
+
+L-methionine 
+
+biosynthesis I  0.470  < 0.01  Positive 
+
+Sleep Problems 
+
+superpathway of S -
+
+adenosyl -L-methionine 
+
+biosynthesis  0.463  < 0.01  Positive 
+
+Sleep Problems 
+
+superpathway of heme 
+
+b biosynthesis from 
+
+uroporphyrinogen -III  0.463  < 0.01  Positive 
+
+Attention Problems 
+
+GDP -D-glycero -α-D-
+
+manno -heptose 
+
+biosynthesis  0.434  < 0.01  Positive 
+
+Attention Problems 
+
+superpathway of fucose 
+
+and rhamnose 
+
+degradation  -0.497  < 0.01  Negative 
+
+Attention Problems  L-fucose degradation I  -0.435  < 0.01  Negative 
+
+Aggressive 
+
+Behavior 
+
+superpathway of heme 
+
+b biosynthesis from 
+
+uroporphyrinogen -III  0.461  < 0.01  Positive 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+37 
+
+Aggressive 
+
+Behavior  tRNA processing  0.404  < 0.05  Positive 
+
+Aggressive 
+
+Behavior 
+
+ADP -L-glycero -β-D-
+
+manno -heptose 
+
+biosynthesis  0.379  < 0.05  Positive 
+
+549 
+
+This table lists a subset of gut microbiome functions that display significant correlations 550 
+
+with each trait. The full catalogue of functions, along with their MetaCyc pathway names, 551 
+
+is provided in Table S6. 552 
+
+553 
+
+554 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+38 
+
+References 555 
+
+1.  Basten M, Tiemeier H, Althoff RR  et al  (2016) The Stability of Problem Behavior 556 
+
+Across the Preschool Years: An Empirical Approach in the General Population. J 557 
+
+Abnorm Child Psychol 44:393 -404 558 
+
+2.  Bosch JA, Nieuwdorp M, Zwinderman AH  et al  (2022) The gut microbiota and 559 
+
+depressive symptoms across ethnic groups. Nat Commun 13:7129 560 
+
+3.  Cenit MC, Nuevo IC, Codoner -Franch P  et al  (2017) Gut microbiota and attention 561 
+
+deficit hyperactivity disorder: new perspectives for a challenging condition. Eur 562 
+
+Child Adolesc Psychiatry 26:1081 -1092 563 
+
+4.  Chen S, Shao Q, Chen J  et al  (2023) Bile acid signalling and its role in anxiety 564 
+
+disorders. Front Endocrinol (Lausanne) 14:1268865 565 
+
+5.  Choi J, Cox AD, Li J  et al  (2014) Activation of innate immune responses by 566 
+
+Haemophilus influenzae lipooligosaccharide. Clin Vaccine Immunol 21:769 -776 567 
+
+6.  Daillere R, Vetizou M, Waldschmitt N  et al  (2016) Enterococcus hirae and 568 
+
+Barnesiella intestinihominis Facilitate Cyclophosphamide -Induced Therapeutic 569 
+
+Immunomodulatory Effects. Immunity 45:931 -943 570 
+
+7.  Dawson SL, O'Hely M, Jacka FN  et al  (2021) Maternal prenatal gut microbiota 571 
+
+composition predicts child behaviour. EBioMedicine 68:103400 572 
+
+8.  Dobranowski PA, Stintzi A (2021) Resistant starch, microbiome, and precision 573 
+
+modulation. Gut Microbes 13:1926842 574 
+
+9.  Dong TS, Mayer E (2024) Advances in Brain -Gut -Microbiome Interactions: A 575 
+
+Comprehensive Update on Signaling Mechanisms, Disorders, and Therapeutic 576 
+
+Implications. Cell Mol Gastroenterol Hepatol 18:1 -13 577 
+
+10.  Egger HL, Angold A (2006) Common emotional and behavioral disorders in 578 
+
+preschool children: presentation, nosology, and epidemiology. J Child Psychol 579 
+
+Psychiatry 47:313 -337 580 
+
+11.  Fujihara H, Matsunaga M, Ueda E  et al  (2023) Altered Gut Microbiota Composition 581 
+
+Is Associated with Difficulty in Explicit Emotion Regulation in Young Children. 582 
+
+Microorganisms 11 583 
+
+12.  Funabiki Y, Murai T (2017) Standardization of a japanese version of the child 584 
+
+behavior checklist for ages 1½ -5 and the caregiver -teacher report form. Japanese 585 
+
+Journal of Child and Adolescent Psychiatry 58:713 -729 586 
+
+13.  Garcia -Weber D, Dangeard AS, Cornil J  et al  (2018) ADP -heptose is a newly 587 
+
+identified pathogen -associated molecular pattern of Shigella flexneri. EMBO Rep 588 
+
+19 589 
+
+14.  Johnston JW, Zaleski A, Allen S  et al  (2007) Regulation of sialic acid transport and 590 
+
+catabolism in Haemophilus influenzae. Mol Microbiol 66:26 -39 591 
+
+15.  Lazou Ahren I, Bjartell A, Egesten A, Riesbeck K (2001) Lipopolysaccharide -592 
+
+binding protein increases toll -like receptor 4 -dependent activation by nontypeable 593 
+
+Haemophilus influenzae. J Infect Dis 184:926 -930 594 
+
+16.  Liu RT, Rowan -Nash AD, Sheehan AE  et al  (2020) Reductions in anti -595 
+
+inflammatory gut bacteria are associated with depression in a sample of young 596 
+
+adults. Brain Behav Immun 88:308 -324 597 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+39 
+
+17.  Loughman A, Ponsonby AL, O'Hely M  et al  (2020) Gut microbiota composition 598 
+
+during infancy and subsequent behavioural outcomes. EBioMedicine 52:102640 599 
+
+18.  Louis P, Flint HJ (2009) Diversity, metabolism and microbial ecology of butyrate -600 
+
+producing bacteria from the human large intestine. FEMS Microbiol Lett 294:1 -8601 
+
+19.  Lynch CMK, Cowan CSM, Bastiaanssen TFS  et al  (2023) Critical windows of 602 
+
+early -life microbiota disruption on behaviour, neuroimmune function, and 603 
+
+neurodevelopment. Brain Behav Immun 108:309 -327 604 
+
+20.  Mao C, Xi C, Du R  et al  (2024) Characteristics of gut flora in children who go to 605 
+
+bed early versus late. Sci Rep 14:23256 606 
+
+21.  Margiotta F, Lucarini E, Toti A  et al  (2025) Gut microbiota dysbiosis affects 607 
+
+intestinal sensitivity through epithelium -to -neuron signaling: novel insights from a 608 
+
+colon organoid -based model to improve visceral pain therapy. Gut Microbes 609 
+
+17:2547029 610 
+
+22.  Margolis KG, Cryan JF, Mayer EA (2021) The Microbiota -Gut -Brain Axis: From 611 
+
+Motility to Mood. Gastroenterology 160:1486 -1501 612 
+
+23.  Ou Y, Belzer C, Smidt H, de Weerth C (2022) Development of the gut microbiota 613 
+
+in healthy children in the first ten years of life: associations with internalizing and 614 
+
+externalizing behavior. Gut Microbes 14:2038853 615 
+
+24.  Ou Y, Belzer C, Smidt H, de Weerth C (2024) Development of the gut microbiota 616 
+
+in the first 14 years of life and its relations to internalizing and externalizing 617 
+
+difficulties and social anxiety during puberty. Eur Child Adolesc Psychiatry 33:847 -618 
+
+860 619 
+
+25.  Ozorio Dutra SV, Sarkar A, Yoo JY  et al  (2023) Premature Infant Gut Microbiome 620 
+
+relationships with childhood behavioral scales: preliminary insights. Front Nutr 621 
+
+10:1294549 622 
+
+26.  Pandolfi V, Magyar CI, Dill CA (2009) Confirmatory factor analysis of the child 623 
+
+behavior checklist 1.5 -5 in a sample of children with autism spectrum disorders. J 624 
+
+Autism Dev Disord 39:986 -995 625 
+
+27.  Querdasi FR, Uy JP, Labus JS  et al  (2025) Childhood gut microbiome is linked to 626 
+
+internalizing symptoms at school age via the functional connectome. Nat Commun 627 
+
+16:9359 628 
+
+28.  Radjabzadeh D, Bosch JA, Uitterlinden AG  et al  (2022) Gut microbiome -wide 629 
+
+association study of depressive symptoms. Nat Commun 13:7128 630 
+
+29.  Richarte V, Sanchez -Mora C, Corrales M  et al  (2021) Gut microbiota signature in 631 
+
+treatment -naive attention -deficit/hyperactivity disorder. Transl Psychiatry 11:382 632 
+
+30.  Savignac HM, Tramullas M, Kiely B  et al  (2015) Bifidobacteria modulate cognitive 633 
+
+processes in an anxious mouse strain. Behav Brain Res 287:59 -72 634 
+
+31.  Sharon G, Cruz NJ, Kang DW  et al  (2019) Human Gut Microbiota from Autism 635 
+
+Spectrum Disorder Promote Behavioral Symptoms in Mice. Cell 177:1600 -1618 636 
+
+e1617 637 
+
+32.  Sivertsen B, Harvey AG, Reichborn -Kjennerud T  et al  (2015) Later emotional and 638 
+
+behavioral problems associated with sleep problems in toddlers: a longitudinal 639 
+
+study. JAMA Pediatr 169:575 -582 640 
+
+33.  Tengeler AC, Dam SA, Wiesmann M  et al  (2020) Gut microbiota from persons with 641 
+
+attention -deficit/hyperactivity disorder affects the brain in mice. Microbiome 8:44 642 
+
+> .CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made The copyright holder for this preprint this version posted April 16, 2026. ;https://doi.org/10.64898/2026.04.15.718572 doi: bioRxiv preprint
+
+40 
+
+34.  Ueda E, Matsunaga M, Fujihara H  et al  (2024) Temperament in Early Childhood Is 643 
+
+Associated With Gut Microbiota Composition and Diversity. Dev Psychobiol 644 
+
+66:e22542 645 
+
+35.  Valles -Colomer M, Falony G, Darzi Y  et al  (2019) The neuroactive potential of the 646 
+
+human gut microbiota in quality of life and depression. Nat Microbiol 4:623 -632 647 
+
+36.  van de Wouw M, Wang Y, Workentine ML  et al  (2024) Cluster -specific 648 
+
+associations between the gut microbiota and behavioral outcomes in preschool -aged 649 
+
+children. Microbiome 12:60 650 
+
+37.  van de Wouw M, Wang Y, Workentine ML  et al  (2022) Associations Between the 651 
+
+Gut Microbiota and Internalizing Behaviors in Preschool Children. Psychosom Med 652 
+
+84:159 -169 653 
+
+38.  Van Hul M, Le Roy T, Prifti E  et al  (2020) From correlation to causality: the case of 654 
+
+Subdoligranulum. Gut Microbes 12:1 -13 655 
+
+39.  Vasileva M, Graf RK, Reinelt T  et al  (2021) Research review: A meta -analysis of 656 
+
+the international prevalence and comorbidity of mental disorders in children 657 
+
+between 1 and 7 years. J Child Psychol Psychiatry 62:372 -381 658 
+
+40.  Wang Y, van de Wouw M, Drogos L  et al  (2022) Sleep and the gut microbiota in 659 
+
+preschool -aged children. Sleep 45 660 
+
+41.  Willemsen Y, Ou Y, Belzer C  et al  (2024) A longitudinal study of the gut 661 
+
+microbiota during the first three years of life: Links with problem behavior and 662 
+
+executive functions at preschool age. Dev Psychopathol 36:2032 -2048 663 
+
+42.  Zhang WX, Zhang Y, Qin G  et al  (2019) Altered profiles of fecal metabolites 664 
+
+correlate with visceral hypersensitivity and may contribute to symptom severity of 665 
+
+diarrhea -predominant irritable bowel syndrome. World J Gastroenterol 25:6416 -666 
+
+6429 667 
+
+668

@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-001.webp",
+      "caption": "Table 2. Flight Simulator Scenarios. VFR: Visual Flight Rules. IFR: Instruments Flight Rules. ILS: Instrument Landing System. Alt: Altitude.",
+      "page": 11,
+      "index": 1,
+      "width": 831,
+      "height": 256
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-002.webp",
+      "caption": "Table 5. Mixed-effects model results for simulator performance (with flight hours as covariate). Reference level: baseline session (E1).",
+      "page": 22,
+      "index": 2,
+      "width": 652,
+      "height": 291
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-003.webp",
+      "caption": "Table 6. Mixed-effects model results for subjective workload (NASA-TLX) and objective workload (Oddball missed targets). Reference level: baseline session (E1).",
+      "page": 22,
+      "index": 3,
+      "width": 1130,
+      "height": 490
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-004.webp",
+      "caption": "Fig 3. Illustration of a standard traffic pattern scenario (IFR-high) used across the four different flight scenarios (not to scale).",
+      "page": 10,
+      "index": 4,
+      "width": 540,
+      "height": 522
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-005.webp",
+      "caption": "Table 3. Space Fortress score distribution",
+      "page": 14,
+      "index": 5,
+      "width": 831,
+      "height": 502
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-006.webp",
+      "caption": "Fig 7. Untrained task scores for subjective (A) and objective (B) workloads and Flight Simulator performance (C). Vertical bars represent the 95% confidence interval. *: p < .05; ***: p < .001; ns: non-significant.",
+      "page": 23,
+      "index": 6,
+      "width": 789,
+      "height": 689
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-007.webp",
+      "caption": "Fig 1. Study timeline. Participants enrolled for 11 weeks in the following 13 sessions. Session 1 (week 1): baseline for performance assessment in MATB, SF and Flight simulator. Sessions 2 to 11 (weeks 2 to 6): 10 training sessions in MATB and SF with real HD-tRNS on rDLPFC or placebo stimulation. Sessions 12 and 13 (week 7 and 11): short- and long-term performance evaluations.",
+      "page": 8,
+      "index": 7,
+      "width": 792,
+      "height": 297
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-008.webp",
+      "caption": "Fig 5. MATB (A) and Space Fortress (B) scores through the 13 sessions during 11 weeks and logarithmic fit during the training period. E1, E2, E3: Evaluation sessions; T1-T10: training sessions. ST: short term; LT: long term. Vertical bars represent the 95% confidence interval.",
+      "page": 19,
+      "index": 8,
+      "width": 635,
+      "height": 631
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-009.webp",
+      "caption": "Fig 4. A. Participant training on Space Fortress while receiving tRNS. B. A 4× 1 electrode montage has been used with central electrode F4 (orange) as the stimulation electrode over the right DLPFC and Fz, FP2, F8 and C4 electrodes as return electrodes (white). C. Current density distribution of the active simulation over the right DLPFC white matter (extracted from NIC v2.4 software; Neuroelectrics).",
+      "page": 12,
+      "index": 9,
+      "width": 792,
+      "height": 375
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-010.webp",
+      "caption": "Fig 2. A. Trained tasks (left: MATB-II; right: Space Fortress). B. Untrained task: 3-axis flight simulator \"pegase\" of ISAE-SUPAERO.",
+      "page": 9,
+      "index": 10,
+      "width": 635,
+      "height": 664
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-10-717626-v1/fig-011.webp",
+      "caption": "Table 4. Mixed-effects model results for MATB and SF performance with gaming experience (VGexp) as covariate. Reference level: baseline session (E1).",
+      "page": 20,
+      "index": 11,
+      "width": 794,
+      "height": 1052
+    }
+  ]
+}

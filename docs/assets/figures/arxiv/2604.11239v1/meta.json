@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-001.webp",
+      "caption": "Table 2: Parameter estimates from the longitudinal GLMMmodel. Values marked with an asterisk are fixed rather than freely estimated. The cohort means are the sums of the fixed effects and the mean individual random effects within each cohort. A group of 81 patients, described in the section Data, does not belong to any of the three cohorts included in the table.",
+      "page": 15,
+      "index": 1,
+      "width": 986,
+      "height": 210
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-002.webp",
+      "caption": "Figure 3: Top: The estimated distribution of symptom severity in the population. All measurement time points are included. Bottom: The estimated distribution of symptom severity in the population over time. Darker shades represent a higher density of estimates.",
+      "page": 15,
+      "index": 2,
+      "width": 806,
+      "height": 598
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-003.webp",
+      "caption": "Table 1: Model parameters in the longitudinalmixed effects model used to estimate the trajectories of symptom severities.",
+      "page": 10,
+      "index": 3,
+      "width": 938,
+      "height": 281
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-004.webp",
+      "caption": "Figure 5: Items included in an optimal set of size 5 with different optimizationmethods. The items on the top row in the figure are included only when we select items to maximize the expected Fisher information, and the items on the second row are included only when we select items to minimize the expected standard deviation. The two items on the third row are included in the set of 5 items for both methods.",
+      "page": 18,
+      "index": 4,
+      "width": 889,
+      "height": 396
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-005.webp",
+      "caption": "Figure 2: Left: The information functions for 7 items in a 2-PL IRT model. Middle: The information function for the set of items 2, 3, 4, 5, 6 (Item set 1), and for the set of items 1, 3, 4, 5, 7 (Item set 2). Right: The standard deviation of the latent trait score estimate as a function of the true latent trait score for the set of items 2, 3, 4, 5, 6 (Item set 1), and for the set of items 1, 3, 4, 5, 7 (Item set 2).",
+      "page": 8,
+      "index": 5,
+      "width": 942,
+      "height": 274
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-006.webp",
+      "caption": "Figure 6: The expected standard deviation of an ability estimate with different methods for assembling optimal item sets for a specific size.",
+      "page": 19,
+      "index": 6,
+      "width": 821,
+      "height": 394
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-007.webp",
+      "caption": "Figure 1: Left: The distribution of the total number of visits by the patients in the data. Right: The distribution of the time span between first and last visit included in the data.",
+      "page": 5,
+      "index": 7,
+      "width": 793,
+      "height": 400
+    },
+    {
+      "url": "assets/figures/arxiv/2604.11239v1/fig-008.webp",
+      "caption": "Figure 4: Each plot shows the Fisher information of an item as a function of motor symptom severity. The dashed vertical lines capture 95 percent of the symptom severity estimates.",
+      "page": 16,
+      "index": 8,
+      "width": 900,
+      "height": 891
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-001.webp",
+      "caption": "Table 2. Comparison of Basic Information between LLM-NPC and traditional NPC group",
+      "page": 6,
+      "index": 1,
+      "width": 960,
+      "height": 335
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-002.webp",
+      "caption": "Figure 7. Differences in cognitive load of player game preferences in LLM-NPC interactions",
+      "page": 11,
+      "index": 2,
+      "width": 831,
+      "height": 565
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-003.webp",
+      "caption": "Figure 5. Comparison of differences in cognitive load and gaming experience between groups (a) Cognitive load (b) Gaming experience",
+      "page": 7,
+      "index": 3,
+      "width": 831,
+      "height": 260
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-004.webp",
+      "caption": "Figure 6. Comparison of differences in mechanistic variables between groups (a) Expression cost (b) Perceived antonomy (c) Social Presence (d) Target clarity",
+      "page": 7,
+      "index": 4,
+      "width": 831,
+      "height": 535
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-005.webp",
+      "caption": "Table 5. The results of the simple effects analysis within the module",
+      "page": 10,
+      "index": 5,
+      "width": 925,
+      "height": 776
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-006.webp",
+      "caption": "Figure 2. Overall workflow of the research",
+      "page": 3,
+      "index": 6,
+      "width": 806,
+      "height": 362
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-007.webp",
+      "caption": "Table 3. Comparison results for each dimension in the post-test between the two groups",
+      "page": 8,
+      "index": 7,
+      "width": 931,
+      "height": 646
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-008.webp",
+      "caption": "Figure 3. Implementation results and flow of each module of the prototype",
+      "page": 4,
+      "index": 8,
+      "width": 914,
+      "height": 323
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-009.webp",
+      "caption": "Table 7. Preference and statistical data of each module in the LLM-NPC group",
+      "page": 12,
+      "index": 9,
+      "width": 937,
+      "height": 236
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-010.webp",
+      "caption": "Figure 8.Analysis results of multiple linear regression model",
+      "page": 12,
+      "index": 10,
+      "width": 831,
+      "height": 562
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-011.webp",
+      "caption": "Table 6. Preference and statistical data of each module in the traditional NPC group",
+      "page": 12,
+      "index": 11,
+      "width": 937,
+      "height": 237
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-012.webp",
+      "caption": "Table 4.Mediation analysis results",
+      "page": 9,
+      "index": 12,
+      "width": 837,
+      "height": 398
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10107v1/fig-013.webp",
+      "caption": "Figure 4. Comparison of NPC interaction interfaces between the two prototype versions (a) LLM-NPC version interactive interface. (b) Traditional NPC version interactive interface.",
+      "page": 5,
+      "index": 13,
+      "width": 663,
+      "height": 206
+    }
+  ]
+}
