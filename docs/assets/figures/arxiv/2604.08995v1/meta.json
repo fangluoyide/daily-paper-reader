@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-001.webp",
+      "caption": "Figure 3: Illustration of our interactive base model. We jointly perform error-aware modeling over the past and current latent frames, while explicitly injecting action conditions into the model. This design enables autoregressive, long-horizon interactive generation and maintains consistency with the subsequent distillation stage.",
+      "page": 6,
+      "index": 1,
+      "width": 805,
+      "height": 382
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-002.webp",
+      "caption": "Figure 7: Representative scenes and agent trajectories from our data engine.",
+      "page": 11,
+      "index": 2,
+      "width": 822,
+      "height": 348
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-003.webp",
+      "caption": "Figure 9: Memory-based scene revisitation in long videos. Each row is sampled uniformly in time; the first frame is the input image, and the second-half actions reverse the first-half actions.",
+      "page": 15,
+      "index": 3,
+      "width": 826,
+      "height": 584
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-004.webp",
+      "caption": "Figure 10: Qualitative results of our 28B model on third-person video generation.",
+      "page": 15,
+      "index": 4,
+      "width": 826,
+      "height": 595
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-005.webp",
+      "caption": "Figure 4: Illustration of our memory-augmented base model. Built upon the bidirectional base model, we incorporate retrieved memory frames as additional conditions and introduce small memory perturbations to enhance robustness. This design enables the base model to jointly model long-term memory, short-term history, and the current prediction target under the same attention mode as the base model.",
+      "page": 7,
+      "index": 5,
+      "width": 813,
+      "height": 349
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-006.webp",
+      "caption": "Figure 8: Qualitative results of our interactive base model. The action symbol denotes the action of the current frame.",
+      "page": 14,
+      "index": 6,
+      "width": 826,
+      "height": 586
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-007.webp",
+      "caption": "Figure 2: Overview of Matrix-Game 3.0. Our framework unifies Unreal Engine–based data generation, memory-augmented DiT training with an error buffer, and accelerated real-time deployment. It generates long-horizon training videos with paired action and camera-pose supervision, learns action-conditioned generation with memory-enhanced consistency, and supports real-time inference through few-step sampling, quantization, and pruning, achieving 720p@40FPS with a 5B model.",
+      "page": 3,
+      "index": 7,
+      "width": 834,
+      "height": 401
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-008.webp",
+      "caption": "Figure 12: For each case, the top row shows the original video and the bottom row shows the reconstruction by the 50% pruned MG-LightVAE.",
+      "page": 17,
+      "index": 8,
+      "width": 797,
+      "height": 452
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-009.webp",
+      "caption": "Figure 6: Illustration of our few-step distillation stage. The bidirectional student performs multisegment rollouts to mimic actual few-step inference, with the final segment used for distribution matching, thereby ensuring training-inference consistency.",
+      "page": 9,
+      "index": 9,
+      "width": 804,
+      "height": 352
+    },
+    {
+      "url": "assets/figures/arxiv/2604.08995v1/fig-010.webp",
+      "caption": "Figure 11: Qualitative results of our distilled model. Each row is sampled uniformly over time.",
+      "page": 16,
+      "index": 10,
+      "width": 826,
+      "height": 584
+    }
+  ]
+}

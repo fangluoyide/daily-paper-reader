@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.10333v1/fig-001.webp",
+      "caption": "Figure 2: BabyZWM estimates optical flow and relative depth estimation zero-shot. (A) Optical flow method. (B) Flow predictions as tracks. (C) BabyZWM is competitive with stateof-the-art supervised flow models despite BabyView training and no labels. (D) Relative depth method (built on optical flow). (E) Benchmark examples (upright and flipped). (F) BabyZWM beats supervised monocular (but not supervised binocular) depth models. Error bars indicate bootstrap 95% intervals throughout the paper.",
+      "page": 6,
+      "index": 1,
+      "width": 975,
+      "height": 721
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10333v1/fig-002.webp",
+      "caption": "Figure 3: BabyZWM performs object segmentation zero-shot. (A) Motion hypotheticals and segmentation procedure. (B) Segmentation predictions. (C) BabyZWM matches supervised segmenters, except SAM2.",
+      "page": 7,
+      "index": 2,
+      "width": 976,
+      "height": 429
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10333v1/fig-003.webp",
+      "caption": "Figure 6: BabyZWM successfully develops internal representations that align with neural responses from human fMRI and macaque electrophysiology datasets. (A) Neural predictivity schematic [76], with example images from NSD and TVSD. (B) Developmental trajectory: BabyZWM’s neural predictivity for early visual areas increases quickly in training, while it takes longer for the later areas, exhibiting an “early-first” developmental trajectory. We observe this both in the steeper slope for neural predictivity of V1 than higher regions, as well as neural predictivity reaching V1’s noise ceiling at an earlier checkpoint. (C) For various visual areas in the brain, we plot the first layer of BabyZWM that reaches the noise ceiling. For earlier cortical regions, earlier model layers reach the noise ceiling, whereas later cortical regions align with deeper layers. This exhibits neuroanatomical consistency with several accounts of hierarchical visual organization. (D) Detailed plots for noise-corrected neural predictivity for the ventral stream for NSD human fMRI.",
+      "page": 10,
+      "index": 3,
+      "width": 976,
+      "height": 645
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10333v1/fig-004.webp",
+      "caption": "Figure 4: BabyZWM exhibits object knowledge and intuitive physics. (A) Short-timescale benchmark testing cohesion, support (move top/bottom object), force transfer, and force separation; given a context frame and a few target patches, predict remaining patches. (B) Interpretability methods reveal attention heads that track the hand (causal agent) when predicting the target object (marked with a blue point). (C) ZWM, BabyZWM, and V-JEPA2 near 100% across categories; Baby V-JEPA2 does not.",
+      "page": 8,
+      "index": 4,
+      "width": 876,
+      "height": 1180
+    },
+    {
+      "url": "assets/figures/arxiv/2604.10333v1/fig-005.webp",
+      "caption": "Figure 5: BabyZWM develops zero-shot capacities across training checkpoints. We plot the developmental trajectories of BabyZWM, Single-Child BabyZWM, and Single-Child BabyZWM (age-order, shuffle within each day) to observe how fast different visual-cognitive capacities emerge. We evaluate these models across a full training run, which corresponds to roughly 95 days of waking experience assuming ∼10 awake hours/day [65]. We also compare these to ZWM trained on BVD, supervised state-of-the-art baselines, and other alternative hypotheses. We plot these developmental trajectories for (A) optical flow, (B) relative depth estimation, (C) object segmentation, and (D) intuitive physical reasoning.",
+      "page": 9,
+      "index": 5,
+      "width": 968,
+      "height": 284
+    }
+  ]
+}

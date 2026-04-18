@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.12310v2/fig-001.webp",
+      "caption": "Fig. 3 Decision flow of the agent’s comment generation. The red components appear only in the proposed Sharing condition, while the baseline Non-sharing condition always follows the “No” path at this stage.",
+      "page": 7,
+      "index": 1,
+      "width": 431,
+      "height": 538
+    }
+  ]
+}

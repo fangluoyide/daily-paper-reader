@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-14-718476-v2/fig-001.webp",
+      "caption": "Figure 5. Co-housing with parous mice rescues social deficits in stressed offspring. (A) Sociability index was decreased in stressed offspring but rescued by co-housing with parous females from birth to weaning. (B) Social novelty recognition followed a similar pattern and was rescued by parous co-housing. Data are shown as means ± SEM. Sample size for sociability index is N = 7- 18 per group. *p < 0.05. Statistical tests: Kruskal-Wallis test (A) and Welch’s one-way ANOVA (B) were applied. Detailed statistics are provided in Supplementary Table 1.",
+      "page": 36,
+      "index": 1,
+      "width": 902,
+      "height": 602
+    }
+  ]
+}
