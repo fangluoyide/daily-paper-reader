@@ -1,0 +1,246 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-001.webp",
+      "caption": "Figure 1: Simulating cognitively impaired SPs across varied domains and severity levels is challenging, demanding fine-grained control.",
+      "page": 1,
+      "index": 1,
+      "width": 456,
+      "height": 302
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-002.webp",
+      "caption": "Table 13: Per-domain results on Memory.",
+      "page": 25,
+      "index": 2,
+      "width": 866,
+      "height": 505
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-003.webp",
+      "caption": "Table 14: Per-domain results on Attention.",
+      "page": 26,
+      "index": 3,
+      "width": 866,
+      "height": 505
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-004.webp",
+      "caption": "Table 19: Summary of parameter selection for StsPatient.",
+      "page": 26,
+      "index": 4,
+      "width": 461,
+      "height": 363
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-005.webp",
+      "caption": "Table 20: Boundary behavior of α across cognitive domains, confirming [1, 6] as the functional search range.",
+      "page": 26,
+      "index": 5,
+      "width": 458,
+      "height": 465
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-006.webp",
+      "caption": "Figure 4: Illustrative example showing the outputs from the unified generation pipeline and the subsequent derivation of prompt inputs.",
+      "page": 15,
+      "index": 6,
+      "width": 461,
+      "height": 502
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-007.webp",
+      "caption": "Table 7: Evolution of responses under increasing intervention probability s for the Memory domain. Darker shading indicates higher severity levels.",
+      "page": 21,
+      "index": 7,
+      "width": 461,
+      "height": 861
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-008.webp",
+      "caption": "Table 8: Evolution of responses under increasing intervention probability s for the Attention domain. Darker shading indicates higher severity levels.",
+      "page": 21,
+      "index": 8,
+      "width": 458,
+      "height": 655
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-009.webp",
+      "caption": "Figure 7: The core prompt utilized for data generation (Memory domain configuration).",
+      "page": 30,
+      "index": 9,
+      "width": 950,
+      "height": 1250
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-010.webp",
+      "caption": "Figure 3: (a) Severity analysis (Continuous) via ISC scores averaged across all domains. (b): Cross-domain ambiguity. High diagonal values indicate strong domain specificity. (c-d): SVs similarity.",
+      "page": 7,
+      "index": 10,
+      "width": 950,
+      "height": 213
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-011.webp",
+      "caption": "Table 17: Per-domain results on Social Cognition.",
+      "page": 29,
+      "index": 11,
+      "width": 866,
+      "height": 515
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-012.webp",
+      "caption": "Table 9: Evolution of responses under increasing intervention probability s for the Processing Speed domain. Darker shading indicates higher severity levels.",
+      "page": 22,
+      "index": 12,
+      "width": 461,
+      "height": 738
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-013.webp",
+      "caption": "Table 10: Evolution of responses under increasing intervention probability s for the Reasoning & Problem Solving domain. Darker shading indicates higher severity levels.",
+      "page": 22,
+      "index": 13,
+      "width": 458,
+      "height": 717
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-014.webp",
+      "caption": "Figure 14: The evaluator prompt template used to calculate Impairment Severity Consistency (ISC). The placeholder [Insert Domain] is dynamically replaced with the specific cognitive domain being evaluated (e.g., Memory, Social Cognition). The model is tasked with recovering the correct severity order (Severe > Moderate > Mild).",
+      "page": 34,
+      "index": 14,
+      "width": 950,
+      "height": 523
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-015.webp",
+      "caption": "Figure 2: Overview of StsPatient. An LLM-generated contrastive dataset is utilized to extract a domain-specific SV (vd). Then, STM is applied during inference. Here, the modulation signal is probabilistically injected into token hidden states (the total T tokens) based on the severity level s, generating responses that reflect the deficit d.",
+      "page": 3,
+      "index": 15,
+      "width": 931,
+      "height": 471
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-016.webp",
+      "caption": "Figure 12: System prompt utilized for extracting neutral non-medical user profiles from clinical case reports.",
+      "page": 33,
+      "index": 16,
+      "width": 950,
+      "height": 314
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-017.webp",
+      "caption": "Figure 13: System prompt configuration for the conversational Therapist Agent.",
+      "page": 33,
+      "index": 17,
+      "width": 950,
+      "height": 456
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-018.webp",
+      "caption": "Table 11: Evolution of responses under increasing intervention probability s for the Social Cognition domain. Darker shading indicates higher severity levels.",
+      "page": 23,
+      "index": 18,
+      "width": 461,
+      "height": 927
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-019.webp",
+      "caption": "Table 12: SV interpretability analysis using the query ‘What does ♢ represent?’ Warning! Harmful Contents.",
+      "page": 23,
+      "index": 19,
+      "width": 483,
+      "height": 263
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-020.webp",
+      "caption": "Table 16: Per-domain results on Reasoning & Problem Solving.",
+      "page": 28,
+      "index": 20,
+      "width": 866,
+      "height": 505
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-021.webp",
+      "caption": "Table 3: SV interpretability analysis using the query ‘What does ♢ represent?’ Warning! Harmful Contents.",
+      "page": 8,
+      "index": 21,
+      "width": 485,
+      "height": 263
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-022.webp",
+      "caption": "Table 5: Dynamic focus guidance injected into the Therapist Agent’s prompt. This mechanism ensures the agent naturally probes specific deficits in a fixed sequence without breaking character.",
+      "page": 19,
+      "index": 22,
+      "width": 950,
+      "height": 284
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-023.webp",
+      "caption": "Figure 6: Representative governing principles for simulating cognitive deficits derived via the Roleplay-doh framework.",
+      "page": 17,
+      "index": 23,
+      "width": 461,
+      "height": 842
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-024.webp",
+      "caption": "Figure 11: Prompt structure for synthesizing deficit-specific Cognitive Conceptualization Diagrams (CCDs).",
+      "page": 32,
+      "index": 24,
+      "width": 950,
+      "height": 702
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-025.webp",
+      "caption": "Figure 10: System prompt configuration for the Direct Prompting baseline, featuring dynamic domain injection.",
+      "page": 32,
+      "index": 25,
+      "width": 950,
+      "height": 535
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-026.webp",
+      "caption": "Table 15: Per-domain results on Processing Speed.",
+      "page": 27,
+      "index": 26,
+      "width": 866,
+      "height": 505
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-027.webp",
+      "caption": "Figure 8: The clinical rater instructions for cognitive domain evaluation.",
+      "page": 31,
+      "index": 27,
+      "width": 950,
+      "height": 963
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-028.webp",
+      "caption": "Figure 9: System prompt configuration for the Healthy Control baseline.",
+      "page": 31,
+      "index": 28,
+      "width": 950,
+      "height": 339
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-029.webp",
+      "caption": "Table 6: The Modified MaSP Scale Items. Items 1–10 correspond to the Authenticity Score (Auth), and Items 11–20 correspond to the Training Score (Tra). [DOMAIN] is a placeholder for the specific cognitive deficit.",
+      "page": 20,
+      "index": 29,
+      "width": 950,
+      "height": 848
+    },
+    {
+      "url": "assets/figures/arxiv/2604.12210v1/fig-030.webp",
+      "caption": "Figure 5: Example transformation from a neutral profile to a memory-specific Cognitive Conceptualization Diagram (JSON).",
+      "page": 16,
+      "index": 30,
+      "width": 458,
+      "height": 779
+    }
+  ]
+}

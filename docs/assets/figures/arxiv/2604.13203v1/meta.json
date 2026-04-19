@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-001.webp",
+      "caption": "Figure 2 Normalized CLIP similarity scores per image",
+      "page": 6,
+      "index": 1,
+      "width": 962,
+      "height": 438
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-002.webp",
+      "caption": "Figure 7 Original and M1-Generated Cognitive-Friendly Versions of The Six Kitchen Images Used in the User Validation Survey.",
+      "page": 11,
+      "index": 2,
+      "width": 976,
+      "height": 264
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-003.webp",
+      "caption": "Table 1 CLIP Scores Per Model. % Quality Relative to Best Model (M1-M4). Vs Input = % Change Relative to M0 Baseline.",
+      "page": 7,
+      "index": 3,
+      "width": 921,
+      "height": 350
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-004.webp",
+      "caption": "Table 2 Raw GIQA-GMM Log-Likelihood Scores Per Model. % Quality Relative to Best Model (M1M4). Vs Input = % Change Relative to M0 Baseline.",
+      "page": 7,
+      "index": 4,
+      "width": 921,
+      "height": 295
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-005.webp",
+      "caption": "Figure 3 Normalized GIQA GMM Scores Per Image",
+      "page": 7,
+      "index": 5,
+      "width": 976,
+      "height": 443
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-006.webp",
+      "caption": "Table 5 Preference for Optimized Kitchens by Image Pair (N = 33)",
+      "page": 10,
+      "index": 6,
+      "width": 921,
+      "height": 497
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-007.webp",
+      "caption": "Figure 5 Average Normalized CLIP, GIQA-GMM, and GIQA-KNN Scores Per Model",
+      "page": 8,
+      "index": 7,
+      "width": 921,
+      "height": 351
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-008.webp",
+      "caption": "Table 3 Raw GIQA-KNN Log-Likelihood Scores Per Model. % Quality Relative to Best Model (M1M4). Vs Input = % Change Relative to M0 Baseline.",
+      "page": 8,
+      "index": 8,
+      "width": 976,
+      "height": 444
+    },
+    {
+      "url": "assets/figures/arxiv/2604.13203v1/fig-009.webp",
+      "caption": "Figure 6 Visual and Quantitative Model Comparison Per Model",
+      "page": 9,
+      "index": 9,
+      "width": 887,
+      "height": 635
+    }
+  ]
+}
