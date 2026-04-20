@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.14465v1/fig-001.webp",
+      "caption": "Figure 1: Win rate and standard error of each single-intervention strategy across ratings.",
+      "page": 7,
+      "index": 1,
+      "width": 385,
+      "height": 368
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14465v1/fig-002.webp",
+      "caption": "Figure 3: Human performance of each intervention strategy across ratings.",
+      "page": 10,
+      "index": 2,
+      "width": 385,
+      "height": 377
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14465v1/fig-003.webp",
+      "caption": "Table 2: Top concepts whose frequency differs most between intervention and non-intervention states for each rating level in the 5% intervention frequency setting. Concepts are derived from the Stockfish evaluation function and discretized into Low, Medium, and High categories. ∆ denotes the absolute difference in frequency between intervention and non-intervention positions.",
+      "page": 14,
+      "index": 3,
+      "width": 822,
+      "height": 230
+    },
+    {
+      "url": "assets/figures/arxiv/2604.14465v1/fig-004.webp",
+      "caption": "Figure 2: Win rate of each multipleintervention strategy across player ratings and intervention frequency budgets.",
+      "page": 8,
+      "index": 4,
+      "width": 350,
+      "height": 751
+    }
+  ]
+}

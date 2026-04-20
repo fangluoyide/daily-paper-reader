@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-001.webp",
+      "caption": "Table 4: Estimation accuracy of item parameters (g, s) evaluated by MAE and RMSE across sample size (N ) and test length (J).",
+      "page": 11,
+      "index": 1,
+      "width": 760,
+      "height": 239
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-002.webp",
+      "caption": "Table 3: Estimation accuracy of transition covariate effects (γ01 slopes) evaluated by MAE and RMSE across conditions.",
+      "page": 7,
+      "index": 2,
+      "width": 520,
+      "height": 284
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-003.webp",
+      "caption": "Table 1: Attribute recovery (AAR) under Joint and Stepwise.",
+      "page": 7,
+      "index": 3,
+      "width": 463,
+      "height": 262
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-004.webp",
+      "caption": "Table 2: Estimation accuracy of initial covariate effects (β) evaluated by MAE and RMSE across conditions.",
+      "page": 7,
+      "index": 4,
+      "width": 760,
+      "height": 264
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-005.webp",
+      "caption": "Table 7: Sensitivity analysis results under varying covariate correlation levels for regression parameters.",
+      "page": 14,
+      "index": 5,
+      "width": 836,
+      "height": 722
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-006.webp",
+      "caption": "Table 6: Sensitivity analysis results under varying covariate correlation levels.",
+      "page": 13,
+      "index": 6,
+      "width": 753,
+      "height": 688
+    },
+    {
+      "url": "assets/figures/arxiv/2604.16031v1/fig-007.webp",
+      "caption": "Table 5: True Q-matrices with K = 2 attributes under different test lengths: (a) J = 6, (b) J = 18, and (c) J = 30.",
+      "page": 12,
+      "index": 7,
+      "width": 540,
+      "height": 761
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-001.webp",
+      "caption": "Figure 3: Results of the MSE behavioural partial least squares analysis. A) Each significant LV, 1 and 2, are represented by two plots: 1) a bar plot of the correlation of each behaviour to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the MSE curves from each region interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere) indicating where correlations with behaviour, age, and sex were most reliable. B & C) Descriptive plots of multiscale entropy curves [mean ± standard error] grouped by age and sex respectively.",
+      "page": 15,
+      "index": 1,
+      "width": 979,
+      "height": 661
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-002.webp",
+      "caption": "Figure 6: A) Results of the age grouped power spectrum behavioural partial least squares analysis. Each significant LV is represented by two plots: 1) a bar plot of the correlation of each behaviour to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the power spectrum from each region of interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere). B) A scatterplot representing each participant’s score on LV1. Participants were grouped by age and sex, represented by colour. A linear regression was used to overlay a line of best fit for each group.",
+      "page": 18,
+      "index": 2,
+      "width": 979,
+      "height": 419
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-003.webp",
+      "caption": "Figure 2: Results of the power spectrum task partial least squares analysis. A) Each significant LV, 1 and 2, are represented by two plots: 1) a bar plot of the brain scores of each group to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the power spectrum from each region of interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere). B&C) Descriptive plots of the power spectrum grouped by age and sex respectively [mean ± standard error].",
+      "page": 13,
+      "index": 3,
+      "width": 982,
+      "height": 527
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-004.webp",
+      "caption": "Figure 5: A) Results of the age grouped MSE behavioural partial least squares analysis. Each significant LV is represented by two plots: 1) a bar plot of the correlation of each behaviour to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the MSE curves from each region of interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere). Figure 3B is a scatterplot representing each participant’s score on LV1. Participants are grouped by age and sex, represented by colour. A linear regression was used to overlay a line of best fit for each group.",
+      "page": 17,
+      "index": 4,
+      "width": 979,
+      "height": 333
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-005.webp",
+      "caption": "Figure 1: Results of the task partial least squares (PLS) analysis based on the multi-scale (MSE) curves. A) Each significant latent variables (LV), LV1 and LV2, is represented by two plots: 1) a bar plot of the brain scores of each group to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the MSE curves from each region of interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere) indicating where the group e ects were most reliable. B&C) Results of a task PLS analysis on the middle-aged participants and old participants respectively. The presentation of the significant LVs follows the formatting of subplot A. D) Descriptive plots of the peak of each multiscale entropy curve [mean ± standard error]. Each subplot represents the young, middle aged and old participants (in descending order) and each plot has two series, one for each sex.",
+      "page": 12,
+      "index": 5,
+      "width": 979,
+      "height": 594
+    },
+    {
+      "url": "assets/figures/biorxiv/biorxiv-10-64898-2026-04-09-717268-v1/fig-006.webp",
+      "caption": "Figure 4: Results of the power spectrum behavioural partial least squares analysis. Each significant LV is represented by two plots: 1) a bar plot of the correlation of each behaviour to the LV ± a 95% confidence interval and 2) a color plot of the bootstrap ratios for the power spectrum from each region of interest (68 total, 34 in each hemisphere; RH = Right hemisphere, LH = Left hemisphere).",
+      "page": 16,
+      "index": 6,
+      "width": 982,
+      "height": 742
+    }
+  ]
+}
